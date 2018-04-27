@@ -317,7 +317,7 @@ null (empty response body)
 
 <a name="updateMenuItemOptionSetItem"></a>
 # **updateMenuItemOptionSetItem**
-> updateMenuItemOptionSetItem(menuId, menuSectionId, menuSectionItemId, optionSetId, menuItemOptionSetItemId, menuItemOptionSetItem, undoAfter)
+> updateMenuItemOptionSetItem(menuId, menuSectionId, menuSectionItemId, optionSetId, menuItemOptionSetItemId, menuItemOptionSetItem, opts)
 
 Update menu item option set item
 
@@ -344,8 +344,9 @@ var menuItemOptionSetItemId = 56; // Number | Option set item identifier
 
 var menuItemOptionSetItem = new Flipdish.MenuItemOptionSetItemBase(); // MenuItemOptionSetItemBase | Option set item (delta)
 
-var undoAfter = 1.2; // Number | An optional time period, in hours, after which the hide-section operaton will be undone.
-
+var opts = { 
+  'undoAfter': 1.2 // Number | An optional time period, in hours, after which the hide-section operaton will be undone.
+};
 
 var callback = function(error, data, response) {
   if (error) {
@@ -354,7 +355,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.updateMenuItemOptionSetItem(menuId, menuSectionId, menuSectionItemId, optionSetId, menuItemOptionSetItemId, menuItemOptionSetItem, undoAfter, callback);
+apiInstance.updateMenuItemOptionSetItem(menuId, menuSectionId, menuSectionItemId, optionSetId, menuItemOptionSetItemId, menuItemOptionSetItem, opts, callback);
 ```
 
 ### Parameters
@@ -367,7 +368,7 @@ Name | Type | Description  | Notes
  **optionSetId** | **Number**| Option set identifier | 
  **menuItemOptionSetItemId** | **Number**| Option set item identifier | 
  **menuItemOptionSetItem** | [**MenuItemOptionSetItemBase**](MenuItemOptionSetItemBase.md)| Option set item (delta) | 
- **undoAfter** | **Number**| An optional time period, in hours, after which the hide-section operaton will be undone. | 
+ **undoAfter** | **Number**| An optional time period, in hours, after which the hide-section operaton will be undone. | [optional] 
 
 ### Return type
 

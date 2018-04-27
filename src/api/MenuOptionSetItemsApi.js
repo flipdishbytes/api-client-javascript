@@ -428,10 +428,12 @@
      * @param {Number} optionSetId Option set identifier
      * @param {Number} menuItemOptionSetItemId Option set item identifier
      * @param {module:model/MenuItemOptionSetItemBase} menuItemOptionSetItem Option set item (delta)
-     * @param {Number} undoAfter An optional time period, in hours, after which the hide-section operaton will be undone.
+     * @param {Object} opts Optional parameters
+     * @param {Number} opts.undoAfter An optional time period, in hours, after which the hide-section operaton will be undone.
      * @param {module:api/MenuOptionSetItemsApi~updateMenuItemOptionSetItemCallback} callback The callback function, accepting three arguments: error, data, response
      */
-    this.updateMenuItemOptionSetItem = function(menuId, menuSectionId, menuSectionItemId, optionSetId, menuItemOptionSetItemId, menuItemOptionSetItem, undoAfter, callback) {
+    this.updateMenuItemOptionSetItem = function(menuId, menuSectionId, menuSectionItemId, optionSetId, menuItemOptionSetItemId, menuItemOptionSetItem, opts, callback) {
+      opts = opts || {};
       var postBody = menuItemOptionSetItem;
 
       // verify the required parameter 'menuId' is set
@@ -464,11 +466,6 @@
         throw new Error("Missing the required parameter 'menuItemOptionSetItem' when calling updateMenuItemOptionSetItem");
       }
 
-      // verify the required parameter 'undoAfter' is set
-      if (undoAfter === undefined || undoAfter === null) {
-        throw new Error("Missing the required parameter 'undoAfter' when calling updateMenuItemOptionSetItem");
-      }
-
 
       var pathParams = {
         'menuId': menuId,
@@ -478,7 +475,7 @@
         'menuItemOptionSetItemId': menuItemOptionSetItemId
       };
       var queryParams = {
-        'undoAfter': undoAfter,
+        'undoAfter': opts['undoAfter'],
       };
       var collectionQueryParams = {
       };
