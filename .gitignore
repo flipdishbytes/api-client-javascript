@@ -1,2 +1,3 @@
 .swagger-codegen-ignore
+.travis.yml
 /.swagger-codegen
