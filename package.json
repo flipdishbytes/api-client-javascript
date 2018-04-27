@@ -1,0 +1,35 @@
+{
+  "name": "@flipdish/api-client-javascript",
+  "version": "1.0.0",
+  "description": "Javascript Flipdish API client",
+  "license": "Unlicense",
+  "main": "src/index.js",  
+  "author": "Flipdish",  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flipdishbytes/api-client-javascript.git"
+  },  
+  "keywords": [
+    "flipdish",
+    "client",
+    "javascript"
+  ],
+  "bugs": {
+    "url": "https://github.com/flipdishbytes/api-client-javascript/issues"
+  },
+  "homepage": "https://github.com/flipdishbytes/api-client-javascript#readme",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha --recursive"
+  },
+  "browser": {
+    "fs": false
+  },
+  "dependencies": {
+    "superagent": "3.5.2"
+  },
+  "devDependencies": {
+    "mocha": "~2.3.4",
+    "sinon": "1.17.3",
+    "expect.js": "~0.3.1"
+  }
+}
