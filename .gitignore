@@ -2,3 +2,4 @@
 .travis.yml
 /.swagger-codegen
 /node_modules
+npm-debug.log*
