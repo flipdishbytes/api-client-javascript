@@ -1,4 +1,4 @@
-# Flipdish.DeliveryLocation
+# FlipdishOpenApiV10.DeliveryLocation
 
 ## Properties
 Name | Type | Description | Notes

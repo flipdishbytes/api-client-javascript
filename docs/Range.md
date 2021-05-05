@@ -1,4 +1,4 @@
-# Flipdish.Range
+# FlipdishOpenApiV10.Range
 
 ## Properties
 Name | Type | Description | Notes
@@ -12,19 +12,19 @@ Name | Type | Description | Notes
 ## Enum: DayOfWeekEnum
 
 
-* `Sunday` (value: `"Sunday"`)
+* `sunday` (value: `"Sunday"`)
 
-* `Monday` (value: `"Monday"`)
+* `monday` (value: `"Monday"`)
 
-* `Tuesday` (value: `"Tuesday"`)
+* `tuesday` (value: `"Tuesday"`)
 
-* `Wednesday` (value: `"Wednesday"`)
+* `wednesday` (value: `"Wednesday"`)
 
-* `Thursday` (value: `"Thursday"`)
+* `thursday` (value: `"Thursday"`)
 
-* `Friday` (value: `"Friday"`)
+* `friday` (value: `"Friday"`)
 
-* `Saturday` (value: `"Saturday"`)
+* `saturday` (value: `"Saturday"`)
 
 
 

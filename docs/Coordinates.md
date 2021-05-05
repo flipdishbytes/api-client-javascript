@@ -1,4 +1,4 @@
-# Flipdish.Coordinates
+# FlipdishOpenApiV10.Coordinates
 
 ## Properties
 Name | Type | Description | Notes

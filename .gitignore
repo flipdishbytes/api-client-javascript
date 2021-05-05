@@ -11,3 +11,4 @@ jspm_packages/
 .npm
 .eslintcache
 .node_repl_history
+swagger-codegen-cli-*.jar

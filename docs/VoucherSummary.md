@@ -1,48 +1,66 @@
-# Flipdish.VoucherSummary
+# FlipdishOpenApiV10.VoucherSummary
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **String** | Voucher name | [optional] 
-**description** | **String** | Voucher description | [optional] 
-**code** | **String** | Voucher code | [optional] 
-**amount** | **Number** | Voucher amount | [optional] 
-**type** | **String** | Voucher type | [optional] 
-**subType** | **String** | Voucher sub type | [optional] 
+**voucherId** | **Number** | Voucher Id | [optional] 
+**code** | **String** | Voucher Code | [optional] 
+**status** | **String** | Voucher Status | [optional] 
+**voucherType** | **String** | Voucher Type | [optional] 
+**voucherSubType** | **String** | Voucher Sub Type | [optional] 
+**description** | **String** | Voucher Description (Visible on printout) | [optional] 
+**isEnabled** | **Boolean** | Is voucher enabled | [optional] 
 
 
-<a name="TypeEnum"></a>
-## Enum: TypeEnum
+<a name="StatusEnum"></a>
+## Enum: StatusEnum
 
 
-* `PercentageDiscount` (value: `"PercentageDiscount"`)
+* `valid` (value: `"Valid"`)
 
-* `LumpDiscount` (value: `"LumpDiscount"`)
+* `notYetValid` (value: `"NotYetValid"`)
 
-* `AddItem` (value: `"AddItem"`)
+* `expired` (value: `"Expired"`)
 
-* `CreditNote` (value: `"CreditNote"`)
+* `used` (value: `"Used"`)
 
-
-
-
-<a name="SubTypeEnum"></a>
-## Enum: SubTypeEnum
+* `disabled` (value: `"Disabled"`)
 
 
-* `None` (value: `"None"`)
 
-* `SignUp` (value: `"SignUp"`)
 
-* `Loyalty` (value: `"Loyalty"`)
+<a name="VoucherTypeEnum"></a>
+## Enum: VoucherTypeEnum
 
-* `Loyalty25` (value: `"Loyalty25"`)
 
-* `Retention` (value: `"Retention"`)
+* `percentageDiscount` (value: `"PercentageDiscount"`)
 
-* `SecondaryRetention` (value: `"SecondaryRetention"`)
+* `lumpDiscount` (value: `"LumpDiscount"`)
 
-* `Custom` (value: `"Custom"`)
+* `addItem` (value: `"AddItem"`)
+
+* `creditNote` (value: `"CreditNote"`)
+
+
+
+
+<a name="VoucherSubTypeEnum"></a>
+## Enum: VoucherSubTypeEnum
+
+
+* `none` (value: `"None"`)
+
+* `signUp` (value: `"SignUp"`)
+
+* `loyalty` (value: `"Loyalty"`)
+
+* `loyalty25` (value: `"Loyalty25"`)
+
+* `retention` (value: `"Retention"`)
+
+* `secondaryRetention` (value: `"SecondaryRetention"`)
+
+* `custom` (value: `"Custom"`)
 
 
 

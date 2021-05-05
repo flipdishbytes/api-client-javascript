@@ -1,4 +1,4 @@
-# Flipdish.FeeSummary
+# FlipdishOpenApiV10.FeeSummary
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# Flipdish.ValidationErrorResult
+# FlipdishOpenApiV10.ValidationErrorResult
 
 ## Properties
 Name | Type | Description | Notes

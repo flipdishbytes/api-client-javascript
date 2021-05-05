@@ -1,36 +1,36 @@
-# Flipdish.EventsApi
+# FlipdishOpenApiV10.EventsApi
 
 All URIs are relative to *https://api.flipdish.co*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getCustomerEvents**](EventsApi.md#getCustomerEvents) | **GET** /api/v1.0/events/customer/{customerId} | Get customer events
-[**getEvents**](EventsApi.md#getEvents) | **GET** /api/v1.0/events | Get events
-[**getEventsById**](EventsApi.md#getEventsById) | **GET** /api/v1.0/events/{eventId} | Get event by Id
-[**getMenuEvents**](EventsApi.md#getMenuEvents) | **GET** /api/v1.0/events/menu/{menuId} | Get menu events
-[**getOrderEvents**](EventsApi.md#getOrderEvents) | **GET** /api/v1.0/events/order/{orderId} | Get order events
-[**getOrderEventsByCustomer**](EventsApi.md#getOrderEventsByCustomer) | **GET** /api/v1.0/events/order | Get order events by customer
-[**getStoreEvents**](EventsApi.md#getStoreEvents) | **GET** /api/v1.0/events/store/{storeId} | Get store events
-[**getUserEvents**](EventsApi.md#getUserEvents) | **GET** /api/v1.0/events/user/{userId} | Get user events
-[**getWhiteLabelEvents**](EventsApi.md#getWhiteLabelEvents) | **GET** /api/v1.0/events/whitelabel/{whitelabelId} | Get WhiteLabel events
+[**getCustomerEvents**](EventsApi.md#getCustomerEvents) | **GET** /api/v1.0/events/customer/{customerId} | Get customer events  For technical reasons, the number of records returned is limited to 100.
+[**getEvents**](EventsApi.md#getEvents) | **GET** /api/v1.0/events | Get events  For technical reasons, the number of records returned is limited to 100.
+[**getEventsById**](EventsApi.md#getEventsById) | **GET** /api/v1.0/events/{eventId} | Get event by Id  For technical reasons, the number of records returned is limited to 100.
+[**getMenuEvents**](EventsApi.md#getMenuEvents) | **GET** /api/v1.0/events/menu/{menuId} | Get menu events  For technical reasons, the number of records returned is limited to 100.
+[**getOrderEvents**](EventsApi.md#getOrderEvents) | **GET** /api/v1.0/events/order/{orderId} | Get order events  For technical reasons, the number of records returned is limited to 100.
+[**getOrderEventsByCustomer**](EventsApi.md#getOrderEventsByCustomer) | **GET** /api/v1.0/events/order | Get order events by customer  For technical reasons, the number of records returned is limited to 100.
+[**getStoreEvents**](EventsApi.md#getStoreEvents) | **GET** /api/v1.0/events/store/{storeId} | Get store events  For technical reasons, the number of records returned is limited to 100.
+[**getUserEvents**](EventsApi.md#getUserEvents) | **GET** /api/v1.0/events/user/{userId} | Get user events  For technical reasons, the number of records returned is limited to 100.
+[**getWhiteLabelEvents**](EventsApi.md#getWhiteLabelEvents) | **GET** /api/v1.0/events/whitelabel/{whitelabelId} | Get WhiteLabel events  For technical reasons, the number of records returned is limited to 100.
 
 
 <a name="getCustomerEvents"></a>
 # **getCustomerEvents**
 > RestApiEventSearchPaginationResult getCustomerEvents(customerId, opts)
 
-Get customer events
+Get customer events  For technical reasons, the number of records returned is limited to 100.
 
 ### Example
 ```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
+var FlipdishOpenApiV10 = require('flipdish_open_api_v10');
+var defaultClient = FlipdishOpenApiV10.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.EventsApi();
+var apiInstance = new FlipdishOpenApiV10.EventsApi();
 
 var customerId = 56; // Number | Customer identifier identifier
 
@@ -39,7 +39,15 @@ var opts = {
   'page': 56, // Number | The index of the page to return, starting by 1
   'start': new Date("2013-10-20T19:20:30+01:00"), // Date | Start date
   'end': new Date("2013-10-20T19:20:30+01:00"), // Date | End date
-  'name': ["name_example"] // [String] | Event names to filter in
+  'orderId': 56, // Number | Events that have Order Id
+  'storeId': 56, // Number | Events that have Store Id
+  'storeGroupId': 56, // Number | Events that have Store Group Id
+  'userId': 56, // Number | Events that have User Id
+  'userEmail': "userEmail_example", // String | Events that have User Email
+  'userName': "userName_example", // String | Events that have User Name
+  'voucherCode': "voucherCode_example", // String | Events that have voucher code
+  'eventType': ["eventType_example"], // [String] | Events that have event type\\s
+  'flipdishEventId': "flipdishEventId_example" // String | Unique Identifier of Event, if this is specified, all other criteria are ignored.
 };
 
 var callback = function(error, data, response) {
@@ -61,7 +69,15 @@ Name | Type | Description  | Notes
  **page** | **Number**| The index of the page to return, starting by 1 | [optional] 
  **start** | **Date**| Start date | [optional] 
  **end** | **Date**| End date | [optional] 
- **name** | [**[String]**](String.md)| Event names to filter in | [optional] 
+ **orderId** | **Number**| Events that have Order Id | [optional] 
+ **storeId** | **Number**| Events that have Store Id | [optional] 
+ **storeGroupId** | **Number**| Events that have Store Group Id | [optional] 
+ **userId** | **Number**| Events that have User Id | [optional] 
+ **userEmail** | **String**| Events that have User Email | [optional] 
+ **userName** | **String**| Events that have User Name | [optional] 
+ **voucherCode** | **String**| Events that have voucher code | [optional] 
+ **eventType** | [**[String]**](String.md)| Events that have event type\\s | [optional] 
+ **flipdishEventId** | **String**| Unique Identifier of Event, if this is specified, all other criteria are ignored. | [optional] 
 
 ### Return type
 
@@ -80,28 +96,35 @@ Name | Type | Description  | Notes
 # **getEvents**
 > RestApiEventSearchPaginationResult getEvents(opts)
 
-Get events
+Get events  For technical reasons, the number of records returned is limited to 100.
 
 ### Example
 ```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
+var FlipdishOpenApiV10 = require('flipdish_open_api_v10');
+var defaultClient = FlipdishOpenApiV10.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.EventsApi();
+var apiInstance = new FlipdishOpenApiV10.EventsApi();
 
 var opts = { 
-  'storeId': 56, // Number | Store Id
   'whiteLabelId': 56, // Number | White Label Id
   'customerId': 56, // Number | Customer Id
   'limit': 56, // Number | The maximum elements to return
   'page': 56, // Number | The index of the page to return, starting by 1
   'start': new Date("2013-10-20T19:20:30+01:00"), // Date | Start date
   'end': new Date("2013-10-20T19:20:30+01:00"), // Date | End date
-  'name': ["name_example"] // [String] | Event names to filter in
+  'orderId': 56, // Number | Events that have Order Id
+  'storeId': 56, // Number | Events that have Store Id
+  'storeGroupId': 56, // Number | Events that have Store Group Id
+  'userId': 56, // Number | Events that have User Id
+  'userEmail': "userEmail_example", // String | Events that have User Email
+  'userName': "userName_example", // String | Events that have User Name
+  'voucherCode': "voucherCode_example", // String | Events that have voucher code
+  'eventType': ["eventType_example"], // [String] | Events that have event type\\s
+  'flipdishEventId': "flipdishEventId_example" // String | Unique Identifier of Event, if this is specified, all other criteria are ignored.
 };
 
 var callback = function(error, data, response) {
@@ -118,14 +141,21 @@ apiInstance.getEvents(opts, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **storeId** | **Number**| Store Id | [optional] 
  **whiteLabelId** | **Number**| White Label Id | [optional] 
  **customerId** | **Number**| Customer Id | [optional] 
  **limit** | **Number**| The maximum elements to return | [optional] 
  **page** | **Number**| The index of the page to return, starting by 1 | [optional] 
  **start** | **Date**| Start date | [optional] 
  **end** | **Date**| End date | [optional] 
- **name** | [**[String]**](String.md)| Event names to filter in | [optional] 
+ **orderId** | **Number**| Events that have Order Id | [optional] 
+ **storeId** | **Number**| Events that have Store Id | [optional] 
+ **storeGroupId** | **Number**| Events that have Store Group Id | [optional] 
+ **userId** | **Number**| Events that have User Id | [optional] 
+ **userEmail** | **String**| Events that have User Email | [optional] 
+ **userName** | **String**| Events that have User Name | [optional] 
+ **voucherCode** | **String**| Events that have voucher code | [optional] 
+ **eventType** | [**[String]**](String.md)| Events that have event type\\s | [optional] 
+ **flipdishEventId** | **String**| Unique Identifier of Event, if this is specified, all other criteria are ignored. | [optional] 
 
 ### Return type
 
@@ -144,18 +174,18 @@ Name | Type | Description  | Notes
 # **getEventsById**
 > EventSearchResult getEventsById(eventId)
 
-Get event by Id
+Get event by Id  For technical reasons, the number of records returned is limited to 100.
 
 ### Example
 ```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
+var FlipdishOpenApiV10 = require('flipdish_open_api_v10');
+var defaultClient = FlipdishOpenApiV10.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.EventsApi();
+var apiInstance = new FlipdishOpenApiV10.EventsApi();
 
 var eventId = "eventId_example"; // String | Event identifier (Guid)
 
@@ -193,18 +223,18 @@ Name | Type | Description  | Notes
 # **getMenuEvents**
 > RestApiEventSearchPaginationResult getMenuEvents(menuId, opts)
 
-Get menu events
+Get menu events  For technical reasons, the number of records returned is limited to 100.
 
 ### Example
 ```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
+var FlipdishOpenApiV10 = require('flipdish_open_api_v10');
+var defaultClient = FlipdishOpenApiV10.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.EventsApi();
+var apiInstance = new FlipdishOpenApiV10.EventsApi();
 
 var menuId = 56; // Number | Menu Identifier
 
@@ -213,7 +243,15 @@ var opts = {
   'page': 56, // Number | The index of the page to return, starting by 1
   'start': new Date("2013-10-20T19:20:30+01:00"), // Date | Start date
   'end': new Date("2013-10-20T19:20:30+01:00"), // Date | End date
-  'name': ["name_example"] // [String] | Event names to filter in
+  'orderId': 56, // Number | Events that have Order Id
+  'storeId': 56, // Number | Events that have Store Id
+  'storeGroupId': 56, // Number | Events that have Store Group Id
+  'userId': 56, // Number | Events that have User Id
+  'userEmail': "userEmail_example", // String | Events that have User Email
+  'userName': "userName_example", // String | Events that have User Name
+  'voucherCode': "voucherCode_example", // String | Events that have voucher code
+  'eventType': ["eventType_example"], // [String] | Events that have event type\\s
+  'flipdishEventId': "flipdishEventId_example" // String | Unique Identifier of Event, if this is specified, all other criteria are ignored.
 };
 
 var callback = function(error, data, response) {
@@ -235,7 +273,15 @@ Name | Type | Description  | Notes
  **page** | **Number**| The index of the page to return, starting by 1 | [optional] 
  **start** | **Date**| Start date | [optional] 
  **end** | **Date**| End date | [optional] 
- **name** | [**[String]**](String.md)| Event names to filter in | [optional] 
+ **orderId** | **Number**| Events that have Order Id | [optional] 
+ **storeId** | **Number**| Events that have Store Id | [optional] 
+ **storeGroupId** | **Number**| Events that have Store Group Id | [optional] 
+ **userId** | **Number**| Events that have User Id | [optional] 
+ **userEmail** | **String**| Events that have User Email | [optional] 
+ **userName** | **String**| Events that have User Name | [optional] 
+ **voucherCode** | **String**| Events that have voucher code | [optional] 
+ **eventType** | [**[String]**](String.md)| Events that have event type\\s | [optional] 
+ **flipdishEventId** | **String**| Unique Identifier of Event, if this is specified, all other criteria are ignored. | [optional] 
 
 ### Return type
 
@@ -254,18 +300,18 @@ Name | Type | Description  | Notes
 # **getOrderEvents**
 > RestApiEventSearchPaginationResult getOrderEvents(orderId, opts)
 
-Get order events
+Get order events  For technical reasons, the number of records returned is limited to 100.
 
 ### Example
 ```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
+var FlipdishOpenApiV10 = require('flipdish_open_api_v10');
+var defaultClient = FlipdishOpenApiV10.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.EventsApi();
+var apiInstance = new FlipdishOpenApiV10.EventsApi();
 
 var orderId = 56; // Number | Order identifier
 
@@ -274,7 +320,15 @@ var opts = {
   'page': 56, // Number | The index of the page to return, starting by 1
   'start': new Date("2013-10-20T19:20:30+01:00"), // Date | Start date
   'end': new Date("2013-10-20T19:20:30+01:00"), // Date | End date
-  'name': ["name_example"] // [String] | Event names to filter in
+  'orderId2': 56, // Number | Events that have Order Id
+  'storeId': 56, // Number | Events that have Store Id
+  'storeGroupId': 56, // Number | Events that have Store Group Id
+  'userId': 56, // Number | Events that have User Id
+  'userEmail': "userEmail_example", // String | Events that have User Email
+  'userName': "userName_example", // String | Events that have User Name
+  'voucherCode': "voucherCode_example", // String | Events that have voucher code
+  'eventType': ["eventType_example"], // [String] | Events that have event type\\s
+  'flipdishEventId': "flipdishEventId_example" // String | Unique Identifier of Event, if this is specified, all other criteria are ignored.
 };
 
 var callback = function(error, data, response) {
@@ -296,7 +350,15 @@ Name | Type | Description  | Notes
  **page** | **Number**| The index of the page to return, starting by 1 | [optional] 
  **start** | **Date**| Start date | [optional] 
  **end** | **Date**| End date | [optional] 
- **name** | [**[String]**](String.md)| Event names to filter in | [optional] 
+ **orderId2** | **Number**| Events that have Order Id | [optional] 
+ **storeId** | **Number**| Events that have Store Id | [optional] 
+ **storeGroupId** | **Number**| Events that have Store Group Id | [optional] 
+ **userId** | **Number**| Events that have User Id | [optional] 
+ **userEmail** | **String**| Events that have User Email | [optional] 
+ **userName** | **String**| Events that have User Name | [optional] 
+ **voucherCode** | **String**| Events that have voucher code | [optional] 
+ **eventType** | [**[String]**](String.md)| Events that have event type\\s | [optional] 
+ **flipdishEventId** | **String**| Unique Identifier of Event, if this is specified, all other criteria are ignored. | [optional] 
 
 ### Return type
 
@@ -315,18 +377,18 @@ Name | Type | Description  | Notes
 # **getOrderEventsByCustomer**
 > RestApiEventSearchPaginationResult getOrderEventsByCustomer(customerId, opts)
 
-Get order events by customer
+Get order events by customer  For technical reasons, the number of records returned is limited to 100.
 
 ### Example
 ```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
+var FlipdishOpenApiV10 = require('flipdish_open_api_v10');
+var defaultClient = FlipdishOpenApiV10.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.EventsApi();
+var apiInstance = new FlipdishOpenApiV10.EventsApi();
 
 var customerId = 56; // Number | Customer identifier
 
@@ -335,7 +397,15 @@ var opts = {
   'page': 56, // Number | The index of the page to return, starting by 1
   'start': new Date("2013-10-20T19:20:30+01:00"), // Date | Start date
   'end': new Date("2013-10-20T19:20:30+01:00"), // Date | End date
-  'name': ["name_example"] // [String] | Event names to filter in
+  'orderId': 56, // Number | Events that have Order Id
+  'storeId': 56, // Number | Events that have Store Id
+  'storeGroupId': 56, // Number | Events that have Store Group Id
+  'userId': 56, // Number | Events that have User Id
+  'userEmail': "userEmail_example", // String | Events that have User Email
+  'userName': "userName_example", // String | Events that have User Name
+  'voucherCode': "voucherCode_example", // String | Events that have voucher code
+  'eventType': ["eventType_example"], // [String] | Events that have event type\\s
+  'flipdishEventId': "flipdishEventId_example" // String | Unique Identifier of Event, if this is specified, all other criteria are ignored.
 };
 
 var callback = function(error, data, response) {
@@ -357,7 +427,15 @@ Name | Type | Description  | Notes
  **page** | **Number**| The index of the page to return, starting by 1 | [optional] 
  **start** | **Date**| Start date | [optional] 
  **end** | **Date**| End date | [optional] 
- **name** | [**[String]**](String.md)| Event names to filter in | [optional] 
+ **orderId** | **Number**| Events that have Order Id | [optional] 
+ **storeId** | **Number**| Events that have Store Id | [optional] 
+ **storeGroupId** | **Number**| Events that have Store Group Id | [optional] 
+ **userId** | **Number**| Events that have User Id | [optional] 
+ **userEmail** | **String**| Events that have User Email | [optional] 
+ **userName** | **String**| Events that have User Name | [optional] 
+ **voucherCode** | **String**| Events that have voucher code | [optional] 
+ **eventType** | [**[String]**](String.md)| Events that have event type\\s | [optional] 
+ **flipdishEventId** | **String**| Unique Identifier of Event, if this is specified, all other criteria are ignored. | [optional] 
 
 ### Return type
 
@@ -376,18 +454,18 @@ Name | Type | Description  | Notes
 # **getStoreEvents**
 > RestApiEventSearchPaginationResult getStoreEvents(storeId, opts)
 
-Get store events
+Get store events  For technical reasons, the number of records returned is limited to 100.
 
 ### Example
 ```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
+var FlipdishOpenApiV10 = require('flipdish_open_api_v10');
+var defaultClient = FlipdishOpenApiV10.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.EventsApi();
+var apiInstance = new FlipdishOpenApiV10.EventsApi();
 
 var storeId = 56; // Number | Id of the store
 
@@ -396,7 +474,15 @@ var opts = {
   'page': 56, // Number | The index of the page to return, starting by 1
   'start': new Date("2013-10-20T19:20:30+01:00"), // Date | Start date
   'end': new Date("2013-10-20T19:20:30+01:00"), // Date | End date
-  'name': ["name_example"] // [String] | Event names to filter in
+  'orderId': 56, // Number | Events that have Order Id
+  'storeId2': 56, // Number | Events that have Store Id
+  'storeGroupId': 56, // Number | Events that have Store Group Id
+  'userId': 56, // Number | Events that have User Id
+  'userEmail': "userEmail_example", // String | Events that have User Email
+  'userName': "userName_example", // String | Events that have User Name
+  'voucherCode': "voucherCode_example", // String | Events that have voucher code
+  'eventType': ["eventType_example"], // [String] | Events that have event type\\s
+  'flipdishEventId': "flipdishEventId_example" // String | Unique Identifier of Event, if this is specified, all other criteria are ignored.
 };
 
 var callback = function(error, data, response) {
@@ -418,7 +504,15 @@ Name | Type | Description  | Notes
  **page** | **Number**| The index of the page to return, starting by 1 | [optional] 
  **start** | **Date**| Start date | [optional] 
  **end** | **Date**| End date | [optional] 
- **name** | [**[String]**](String.md)| Event names to filter in | [optional] 
+ **orderId** | **Number**| Events that have Order Id | [optional] 
+ **storeId2** | **Number**| Events that have Store Id | [optional] 
+ **storeGroupId** | **Number**| Events that have Store Group Id | [optional] 
+ **userId** | **Number**| Events that have User Id | [optional] 
+ **userEmail** | **String**| Events that have User Email | [optional] 
+ **userName** | **String**| Events that have User Name | [optional] 
+ **voucherCode** | **String**| Events that have voucher code | [optional] 
+ **eventType** | [**[String]**](String.md)| Events that have event type\\s | [optional] 
+ **flipdishEventId** | **String**| Unique Identifier of Event, if this is specified, all other criteria are ignored. | [optional] 
 
 ### Return type
 
@@ -437,18 +531,18 @@ Name | Type | Description  | Notes
 # **getUserEvents**
 > RestApiEventSearchPaginationResult getUserEvents(userId, opts)
 
-Get user events
+Get user events  For technical reasons, the number of records returned is limited to 100.
 
 ### Example
 ```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
+var FlipdishOpenApiV10 = require('flipdish_open_api_v10');
+var defaultClient = FlipdishOpenApiV10.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.EventsApi();
+var apiInstance = new FlipdishOpenApiV10.EventsApi();
 
 var userId = 56; // Number | User identifier
 
@@ -457,7 +551,15 @@ var opts = {
   'page': 56, // Number | The index of the page to return, starting by 1
   'start': new Date("2013-10-20T19:20:30+01:00"), // Date | Start date
   'end': new Date("2013-10-20T19:20:30+01:00"), // Date | End date
-  'name': ["name_example"] // [String] | Event names to filter in
+  'orderId': 56, // Number | Events that have Order Id
+  'storeId': 56, // Number | Events that have Store Id
+  'storeGroupId': 56, // Number | Events that have Store Group Id
+  'userId2': 56, // Number | Events that have User Id
+  'userEmail': "userEmail_example", // String | Events that have User Email
+  'userName': "userName_example", // String | Events that have User Name
+  'voucherCode': "voucherCode_example", // String | Events that have voucher code
+  'eventType': ["eventType_example"], // [String] | Events that have event type\\s
+  'flipdishEventId': "flipdishEventId_example" // String | Unique Identifier of Event, if this is specified, all other criteria are ignored.
 };
 
 var callback = function(error, data, response) {
@@ -479,7 +581,15 @@ Name | Type | Description  | Notes
  **page** | **Number**| The index of the page to return, starting by 1 | [optional] 
  **start** | **Date**| Start date | [optional] 
  **end** | **Date**| End date | [optional] 
- **name** | [**[String]**](String.md)| Event names to filter in | [optional] 
+ **orderId** | **Number**| Events that have Order Id | [optional] 
+ **storeId** | **Number**| Events that have Store Id | [optional] 
+ **storeGroupId** | **Number**| Events that have Store Group Id | [optional] 
+ **userId2** | **Number**| Events that have User Id | [optional] 
+ **userEmail** | **String**| Events that have User Email | [optional] 
+ **userName** | **String**| Events that have User Name | [optional] 
+ **voucherCode** | **String**| Events that have voucher code | [optional] 
+ **eventType** | [**[String]**](String.md)| Events that have event type\\s | [optional] 
+ **flipdishEventId** | **String**| Unique Identifier of Event, if this is specified, all other criteria are ignored. | [optional] 
 
 ### Return type
 
@@ -498,18 +608,18 @@ Name | Type | Description  | Notes
 # **getWhiteLabelEvents**
 > RestApiEventSearchPaginationResult getWhiteLabelEvents(whitelabelId, opts)
 
-Get WhiteLabel events
+Get WhiteLabel events  For technical reasons, the number of records returned is limited to 100.
 
 ### Example
 ```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
+var FlipdishOpenApiV10 = require('flipdish_open_api_v10');
+var defaultClient = FlipdishOpenApiV10.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.EventsApi();
+var apiInstance = new FlipdishOpenApiV10.EventsApi();
 
 var whitelabelId = 56; // Number | White Label Identifier
 
@@ -518,7 +628,15 @@ var opts = {
   'page': 56, // Number | The index of the page to return, starting by 1
   'start': new Date("2013-10-20T19:20:30+01:00"), // Date | Start date
   'end': new Date("2013-10-20T19:20:30+01:00"), // Date | End date
-  'name': ["name_example"] // [String] | Event names to filter in
+  'orderId': 56, // Number | Events that have Order Id
+  'storeId': 56, // Number | Events that have Store Id
+  'storeGroupId': 56, // Number | Events that have Store Group Id
+  'userId': 56, // Number | Events that have User Id
+  'userEmail': "userEmail_example", // String | Events that have User Email
+  'userName': "userName_example", // String | Events that have User Name
+  'voucherCode': "voucherCode_example", // String | Events that have voucher code
+  'eventType': ["eventType_example"], // [String] | Events that have event type\\s
+  'flipdishEventId': "flipdishEventId_example" // String | Unique Identifier of Event, if this is specified, all other criteria are ignored.
 };
 
 var callback = function(error, data, response) {
@@ -540,7 +658,15 @@ Name | Type | Description  | Notes
  **page** | **Number**| The index of the page to return, starting by 1 | [optional] 
  **start** | **Date**| Start date | [optional] 
  **end** | **Date**| End date | [optional] 
- **name** | [**[String]**](String.md)| Event names to filter in | [optional] 
+ **orderId** | **Number**| Events that have Order Id | [optional] 
+ **storeId** | **Number**| Events that have Store Id | [optional] 
+ **storeGroupId** | **Number**| Events that have Store Group Id | [optional] 
+ **userId** | **Number**| Events that have User Id | [optional] 
+ **userEmail** | **String**| Events that have User Email | [optional] 
+ **userName** | **String**| Events that have User Name | [optional] 
+ **voucherCode** | **String**| Events that have voucher code | [optional] 
+ **eventType** | [**[String]**](String.md)| Events that have event type\\s | [optional] 
+ **flipdishEventId** | **String**| Unique Identifier of Event, if this is specified, all other criteria are ignored. | [optional] 
 
 ### Return type
 

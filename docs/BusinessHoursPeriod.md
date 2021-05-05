@@ -1,35 +1,35 @@
-# Flipdish.BusinessHoursPeriod
+# FlipdishOpenApiV10.BusinessHoursPeriod
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**early** | [**Range**](Range.md) | Early | [optional] 
+**late** | [**Range**](Range.md) | Late | [optional] 
+**ranges** | [**[Range]**](Range.md) | Ranges | [optional] 
 **dayOfWeek** | **String** | Day of week | [optional] 
 **startTime** | **String** | Start time | [optional] 
 **period** | **String** | Period | [optional] 
 **startTimeEarly** | **String** | Start time early | [optional] 
 **periodEarly** | **String** | Period early | [optional] 
-**early** | [**Range**](Range.md) | Early | [optional] 
-**late** | [**Range**](Range.md) | Late | [optional] 
-**ranges** | [**[Range]**](Range.md) | Ranges | [optional] 
 
 
 <a name="DayOfWeekEnum"></a>
 ## Enum: DayOfWeekEnum
 
 
-* `Sunday` (value: `"Sunday"`)
+* `sunday` (value: `"Sunday"`)
 
-* `Monday` (value: `"Monday"`)
+* `monday` (value: `"Monday"`)
 
-* `Tuesday` (value: `"Tuesday"`)
+* `tuesday` (value: `"Tuesday"`)
 
-* `Wednesday` (value: `"Wednesday"`)
+* `wednesday` (value: `"Wednesday"`)
 
-* `Thursday` (value: `"Thursday"`)
+* `thursday` (value: `"Thursday"`)
 
-* `Friday` (value: `"Friday"`)
+* `friday` (value: `"Friday"`)
 
-* `Saturday` (value: `"Saturday"`)
+* `saturday` (value: `"Saturday"`)
 
 
 

@@ -1,4 +1,4 @@
-# Flipdish.StoreNote
+# FlipdishOpenApiV10.StoreNote
 
 ## Properties
 Name | Type | Description | Notes

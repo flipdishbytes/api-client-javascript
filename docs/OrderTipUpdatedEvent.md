@@ -1,4 +1,4 @@
-# Flipdish.OrderTipUpdatedEvent
+# FlipdishOpenApiV10.OrderTipUpdatedEvent
 
 ## Properties
 Name | Type | Description | Notes
@@ -10,5 +10,6 @@ Name | Type | Description | Notes
 **flipdishEventId** | **String** | The identitfier of the event | [optional] 
 **createTime** | **Date** | The time of creation of the event | [optional] 
 **position** | **Number** | Position | [optional] 
+**appId** | **String** | App id | [optional] 
 
 

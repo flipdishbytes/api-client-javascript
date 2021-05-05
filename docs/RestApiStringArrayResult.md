@@ -1,8 +1,8 @@
-# Flipdish.RestApiStringArrayResult
+# FlipdishOpenApiV10.RestApiStringArrayResult
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**data** | **[String]** | Data string array | [optional] 
+**data** | **[String]** | Data string array | 
 
 

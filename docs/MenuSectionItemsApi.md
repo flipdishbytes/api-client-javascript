@@ -1,17 +1,75 @@
-# Flipdish.MenuSectionItemsApi
+# FlipdishOpenApiV10.MenuSectionItemsApi
 
 All URIs are relative to *https://api.flipdish.co*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**cloneMenuSectionItem**](MenuSectionItemsApi.md#cloneMenuSectionItem) | **POST** /api/v1.0/menus/{menuId}/sections/{menuSectionId}/sectionitems/{menuSectionItemId}/clone | Clone menu section item
 [**createMenuSectionItem**](MenuSectionItemsApi.md#createMenuSectionItem) | **POST** /api/v1.0/menus/{menuId}/sections/{menuSectionId}/sectionitems | Create menu section item
 [**deleteMenuSectionItem**](MenuSectionItemsApi.md#deleteMenuSectionItem) | **DELETE** /api/v1.0/menus/{menuId}/sections/{menuSectionId}/sectionitems/{menuSectionItemId} | Delete menu section item
 [**deleteMenuSectionItemImage**](MenuSectionItemsApi.md#deleteMenuSectionItemImage) | **DELETE** /api/v1.0/menus/{menuId}/sections/{menuSectionId}/sectionitems/{menuSectionItemId}/image | Delete menu section item image
 [**getMenuItemById**](MenuSectionItemsApi.md#getMenuItemById) | **GET** /api/v1.0/menus/{menuId}/sections/{menuSectionId}/sectionitems/{menuSectionItemId} | Get menu item by identifier
 [**getMenuItems**](MenuSectionItemsApi.md#getMenuItems) | **GET** /api/v1.0/menus/{menuId}/sections/{menuSectionId}/sectionitems | Get menu items
+[**moveMenuItem**](MenuSectionItemsApi.md#moveMenuItem) | **POST** /api/v1.0/menus/{menuId}/sections/{menuSectionId}/sectionitems/{menuSectionItemId}/setorder/{destinationDisplayOrder} | [PRIVATE API]Move an Item within a menu
+[**setSectionItemTax**](MenuSectionItemsApi.md#setSectionItemTax) | **POST** /api/v1.0/menus/{menuId}/sections/{menuSectionId}/sectionitems/{menuSectionItemId}/taxrate/{taxRateId} | [PRIVATE API]Move an Item within a menu
 [**updateMenuSectionItem**](MenuSectionItemsApi.md#updateMenuSectionItem) | **POST** /api/v1.0/menus/{menuId}/sections/{menuSectionId}/sectionitems/{menuSectionItemId} | Update menu section item
 [**uploadMenuSectionItemImage**](MenuSectionItemsApi.md#uploadMenuSectionItemImage) | **POST** /api/v1.0/menus/{menuId}/sections/{menuSectionId}/sectionitems/{menuSectionItemId}/image | Upload menu section item image
 
+
+<a name="cloneMenuSectionItem"></a>
+# **cloneMenuSectionItem**
+> RestApiResultMenuSectionItem cloneMenuSectionItem(menuId, menuSectionId, menuSectionItemId)
+
+Clone menu section item
+
+### Example
+```javascript
+var FlipdishOpenApiV10 = require('flipdish_open_api_v10');
+var defaultClient = FlipdishOpenApiV10.ApiClient.instance;
+
+// Configure OAuth2 access token for authorization: oauth2
+var oauth2 = defaultClient.authentications['oauth2'];
+oauth2.accessToken = 'YOUR ACCESS TOKEN';
+
+var apiInstance = new FlipdishOpenApiV10.MenuSectionItemsApi();
+
+var menuId = 56; // Number | Menu identifier
+
+var menuSectionId = 56; // Number | Menu section identifier
+
+var menuSectionItemId = 56; // Number | Menu section item identifier
+
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.cloneMenuSectionItem(menuId, menuSectionId, menuSectionItemId, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **menuId** | **Number**| Menu identifier | 
+ **menuSectionId** | **Number**| Menu section identifier | 
+ **menuSectionItemId** | **Number**| Menu section item identifier | 
+
+### Return type
+
+[**RestApiResultMenuSectionItem**](RestApiResultMenuSectionItem.md)
+
+### Authorization
+
+[oauth2](../README.md#oauth2)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json, text/json, application/xml, text/xml
 
 <a name="createMenuSectionItem"></a>
 # **createMenuSectionItem**
@@ -21,20 +79,20 @@ Create menu section item
 
 ### Example
 ```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
+var FlipdishOpenApiV10 = require('flipdish_open_api_v10');
+var defaultClient = FlipdishOpenApiV10.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.MenuSectionItemsApi();
+var apiInstance = new FlipdishOpenApiV10.MenuSectionItemsApi();
 
 var menuId = 56; // Number | Menu identifier
 
 var menuSectionId = 56; // Number | Menu section identifier
 
-var menuSectionItem = new Flipdish.MenuSectionItemBase(); // MenuSectionItemBase | Menu section item
+var menuSectionItem = new FlipdishOpenApiV10.MenuSectionItemBase(); // MenuSectionItemBase | Menu section item
 
 
 var callback = function(error, data, response) {
@@ -76,14 +134,14 @@ Delete menu section item
 
 ### Example
 ```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
+var FlipdishOpenApiV10 = require('flipdish_open_api_v10');
+var defaultClient = FlipdishOpenApiV10.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.MenuSectionItemsApi();
+var apiInstance = new FlipdishOpenApiV10.MenuSectionItemsApi();
 
 var menuId = 56; // Number | Menu identifier
 
@@ -131,14 +189,14 @@ Delete menu section item image
 
 ### Example
 ```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
+var FlipdishOpenApiV10 = require('flipdish_open_api_v10');
+var defaultClient = FlipdishOpenApiV10.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.MenuSectionItemsApi();
+var apiInstance = new FlipdishOpenApiV10.MenuSectionItemsApi();
 
 var menuId = 56; // Number | Menu identifier
 
@@ -186,14 +244,14 @@ Get menu item by identifier
 
 ### Example
 ```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
+var FlipdishOpenApiV10 = require('flipdish_open_api_v10');
+var defaultClient = FlipdishOpenApiV10.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.MenuSectionItemsApi();
+var apiInstance = new FlipdishOpenApiV10.MenuSectionItemsApi();
 
 var menuId = 56; // Number | Menu identifier
 
@@ -241,14 +299,14 @@ Get menu items
 
 ### Example
 ```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
+var FlipdishOpenApiV10 = require('flipdish_open_api_v10');
+var defaultClient = FlipdishOpenApiV10.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.MenuSectionItemsApi();
+var apiInstance = new FlipdishOpenApiV10.MenuSectionItemsApi();
 
 var menuId = 56; // Number | Menu identifier
 
@@ -285,6 +343,122 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/json, application/xml, text/xml
 
+<a name="moveMenuItem"></a>
+# **moveMenuItem**
+> moveMenuItem(menuId, menuSectionId, menuSectionItemId, destinationDisplayOrder)
+
+[PRIVATE API]Move an Item within a menu
+
+### Example
+```javascript
+var FlipdishOpenApiV10 = require('flipdish_open_api_v10');
+var defaultClient = FlipdishOpenApiV10.ApiClient.instance;
+
+// Configure OAuth2 access token for authorization: oauth2
+var oauth2 = defaultClient.authentications['oauth2'];
+oauth2.accessToken = 'YOUR ACCESS TOKEN';
+
+var apiInstance = new FlipdishOpenApiV10.MenuSectionItemsApi();
+
+var menuId = 56; // Number | Menu identifier
+
+var menuSectionId = 56; // Number | Section to put item in (will usually be original section)
+
+var menuSectionItemId = 56; // Number | ID of Item to be moved
+
+var destinationDisplayOrder = 56; // Number | New Display Order of item
+
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully.');
+  }
+};
+apiInstance.moveMenuItem(menuId, menuSectionId, menuSectionItemId, destinationDisplayOrder, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **menuId** | **Number**| Menu identifier | 
+ **menuSectionId** | **Number**| Section to put item in (will usually be original section) | 
+ **menuSectionItemId** | **Number**| ID of Item to be moved | 
+ **destinationDisplayOrder** | **Number**| New Display Order of item | 
+
+### Return type
+
+null (empty response body)
+
+### Authorization
+
+[oauth2](../README.md#oauth2)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json, text/json, application/xml, text/xml
+
+<a name="setSectionItemTax"></a>
+# **setSectionItemTax**
+> setSectionItemTax(menuId, menuSectionId, menuSectionItemId, taxRateId)
+
+[PRIVATE API]Move an Item within a menu
+
+### Example
+```javascript
+var FlipdishOpenApiV10 = require('flipdish_open_api_v10');
+var defaultClient = FlipdishOpenApiV10.ApiClient.instance;
+
+// Configure OAuth2 access token for authorization: oauth2
+var oauth2 = defaultClient.authentications['oauth2'];
+oauth2.accessToken = 'YOUR ACCESS TOKEN';
+
+var apiInstance = new FlipdishOpenApiV10.MenuSectionItemsApi();
+
+var menuId = 56; // Number | Menu identifier
+
+var menuSectionId = 56; // Number | Section to put item in (will usually be original section)
+
+var menuSectionItemId = 56; // Number | ID of Item to be moved
+
+var taxRateId = 56; // Number | tax rate to be set against item
+
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully.');
+  }
+};
+apiInstance.setSectionItemTax(menuId, menuSectionId, menuSectionItemId, taxRateId, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **menuId** | **Number**| Menu identifier | 
+ **menuSectionId** | **Number**| Section to put item in (will usually be original section) | 
+ **menuSectionItemId** | **Number**| ID of Item to be moved | 
+ **taxRateId** | **Number**| tax rate to be set against item | 
+
+### Return type
+
+null (empty response body)
+
+### Authorization
+
+[oauth2](../README.md#oauth2)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json, text/json, application/xml, text/xml
+
 <a name="updateMenuSectionItem"></a>
 # **updateMenuSectionItem**
 > updateMenuSectionItem(menuId, menuSectionId, menuSectionItemId, menuSectionItem, opts)
@@ -293,14 +467,14 @@ Update menu section item
 
 ### Example
 ```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
+var FlipdishOpenApiV10 = require('flipdish_open_api_v10');
+var defaultClient = FlipdishOpenApiV10.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.MenuSectionItemsApi();
+var apiInstance = new FlipdishOpenApiV10.MenuSectionItemsApi();
 
 var menuId = 56; // Number | Menu identifier
 
@@ -308,7 +482,7 @@ var menuSectionId = 56; // Number | Menu section identifier
 
 var menuSectionItemId = 56; // Number | Menu section item identifier
 
-var menuSectionItem = new Flipdish.MenuSectionItemBase(); // MenuSectionItemBase | Menu section item (delta)
+var menuSectionItem = new FlipdishOpenApiV10.MenuSectionItemBase(); // MenuSectionItemBase | Menu section item (delta)
 
 var opts = { 
   'undoAfter': 1.2 // Number | An optional time period, in hours, after which the hide-section operaton will be undone.
@@ -355,14 +529,14 @@ Upload menu section item image
 
 ### Example
 ```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
+var FlipdishOpenApiV10 = require('flipdish_open_api_v10');
+var defaultClient = FlipdishOpenApiV10.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.MenuSectionItemsApi();
+var apiInstance = new FlipdishOpenApiV10.MenuSectionItemsApi();
 
 var menuId = 56; // Number | Menu identifier
 

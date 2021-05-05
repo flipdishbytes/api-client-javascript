@@ -1,8 +1,9 @@
-# Flipdish.HttpRequestAndResponseLog
+# FlipdishOpenApiV10.HttpRequestAndResponseLog
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**guid** | **String** | Id of the log | [optional] 
 **verb** | **String** | Verb associated with the HTTP call. | [optional] 
 **requestUri** | **String** | Http request URI. | [optional] 
 **statusCode** | **Number** | Http response status code. | [optional] 

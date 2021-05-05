@@ -1,4 +1,4 @@
-# Flipdish.OauthClientRedirectUri
+# FlipdishOpenApiV10.OauthClientRedirectUri
 
 ## Properties
 Name | Type | Description | Notes

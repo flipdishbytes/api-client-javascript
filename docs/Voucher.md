@@ -1,44 +1,65 @@
-# Flipdish.Voucher
+# FlipdishOpenApiV10.Voucher
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**voucherId** | **Number** | Voucher identifier | [optional] 
-**voucherType** | **String** | Voucher type | [optional] 
+**voucherId** | **Number** | Voucher Id | [optional] 
+**status** | **String** | Voucher Status | [optional] 
+**voucherType** | **String** | Voucher Type | [optional] 
+**voucherSubType** | **String** | Voucher Sub Type | [optional] 
+**currency** | **String** | Currency of the voucher | [optional] 
+**stores** | **[Number]** | Stores that this voucher applies to | [optional] 
+**storeNames** | **[String]** | Stores that this voucher applies to | [optional] 
+**addItemDetails** | [**AddItemDetails**](AddItemDetails.md) | Add item details | [optional] 
+**creditNoteDetails** | [**CreditNoteDetails**](CreditNoteDetails.md) | Credit note details | [optional] 
+**lumpDiscountDetails** | [**LumpDiscountDetails**](LumpDiscountDetails.md) | Lump discount details | [optional] 
+**percentDiscountDetails** | [**PercentDiscountDetails**](PercentDiscountDetails.md) | Percent discount details | [optional] 
+**code** | **String** | Voucher Code | [optional] 
+**description** | **String** | Voucher Description (Visible on printout) | [optional] 
+**validOnOrdersOver** | **Number** | Valid on orders on or above | [optional] 
+**takesPriority** | **Boolean** | Takes priority | [optional] 
 **isEnabled** | **Boolean** | Is voucher enabled | [optional] 
-**isUsedUp** | **Boolean** | Is voucher used up | [optional] 
-**voucherSubType** | **String** | Voucher subtype | [optional] 
-**publicDescription** | **String** | Public description | [optional] 
-**privateDescription** | **String** | Private description | [optional] 
-**validFrom** | **Date** | Valid from | [optional] 
-**expiry** | **Date** | Expiry | [optional] 
-**voucherPayer** | **String** | Define who foots the bill for the voucher | [optional] 
-**isVisibleToStore** | **Boolean** | Define whether we show the fact that a voucher was applied to the restaurant | [optional] 
-**isReusable** | **Boolean** | Is reusable | [optional] 
-**isValidForDeliveryOrders** | **Boolean** | Is valid for delivery orders | [optional] 
-**isValidForPickupOrders** | **Boolean** | Is valid for pickup orders | [optional] 
-**isValidForCardOrders** | **Boolean** | Is valid for card orders | [optional] 
-**isValidForCashOrders** | **Boolean** | Is valid for cash orders | [optional] 
-**isValidForFirstOrderOnly** | **Boolean** | Is valid for first order only | [optional] 
-**minimumOrderAmount** | **Number** | Minimum order amount. | [optional] 
-**isValidOncePerCustomer** | **Boolean** | Is valid once per customer | [optional] 
-**autoApply** | **Boolean** | Auto apply | [optional] 
-**autoApplyOrder** | **Number** | Auto apply order.  Lower numbers get applied first. | [optional] 
-**includeDeliveryFee** | **Boolean** | Include delivery fee | [optional] 
-**code** | **String** | Voucher code | [optional] 
+**isAutomaticallyApplied** | **Boolean** | Is voucher automatically applied | [optional] 
+**includeDeliveryFee** | **Boolean** | Include delivery fees | [optional] 
+**isValidForDeliveryOrders** | **Boolean** | Valid for delivery orders | [optional] 
+**isValidForPickupOrders** | **Boolean** | Valid for pickup orders | [optional] 
+**isValidForOrdersPayedOnline** | **Boolean** | Valid for orders payed online | [optional] 
+**isValidForOrdersPayedByCash** | **Boolean** | Valid for orders payed in cash | [optional] 
+**isValidForFirstOrderOnly** | **Boolean** | Valid only on the first order by the customer | [optional] 
+**isValidOncePerCustomer** | **Boolean** | Valid once per customer | [optional] 
+**isValidOnlyOnce** | **Boolean** | Valid only once, by any customer (once used cannot be used again by any other customer) | [optional] 
+**startDate** | **Date** | Voucher Starts On (Time in UTC) | [optional] 
+**expiryDate** | **Date** | Voucher Expires On (Time in UTC) | [optional] 
+
+
+<a name="StatusEnum"></a>
+## Enum: StatusEnum
+
+
+* `valid` (value: `"Valid"`)
+
+* `notYetValid` (value: `"NotYetValid"`)
+
+* `expired` (value: `"Expired"`)
+
+* `used` (value: `"Used"`)
+
+* `disabled` (value: `"Disabled"`)
+
+
 
 
 <a name="VoucherTypeEnum"></a>
 ## Enum: VoucherTypeEnum
 
 
-* `PercentageDiscount` (value: `"PercentageDiscount"`)
+* `percentageDiscount` (value: `"PercentageDiscount"`)
 
-* `LumpDiscount` (value: `"LumpDiscount"`)
+* `lumpDiscount` (value: `"LumpDiscount"`)
 
-* `AddItem` (value: `"AddItem"`)
+* `addItem` (value: `"AddItem"`)
 
-* `CreditNote` (value: `"CreditNote"`)
+* `creditNote` (value: `"CreditNote"`)
 
 
 
@@ -47,30 +68,252 @@ Name | Type | Description | Notes
 ## Enum: VoucherSubTypeEnum
 
 
-* `None` (value: `"None"`)
+* `none` (value: `"None"`)
 
-* `SignUp` (value: `"SignUp"`)
+* `signUp` (value: `"SignUp"`)
 
-* `Loyalty` (value: `"Loyalty"`)
+* `loyalty` (value: `"Loyalty"`)
 
-* `Loyalty25` (value: `"Loyalty25"`)
+* `loyalty25` (value: `"Loyalty25"`)
 
-* `Retention` (value: `"Retention"`)
+* `retention` (value: `"Retention"`)
 
-* `SecondaryRetention` (value: `"SecondaryRetention"`)
+* `secondaryRetention` (value: `"SecondaryRetention"`)
 
-* `Custom` (value: `"Custom"`)
-
-
+* `custom` (value: `"Custom"`)
 
 
-<a name="VoucherPayerEnum"></a>
-## Enum: VoucherPayerEnum
 
 
-* `Flipdish` (value: `"Flipdish"`)
+<a name="CurrencyEnum"></a>
+## Enum: CurrencyEnum
 
-* `Store` (value: `"Store"`)
+
+* `EUR` (value: `"EUR"`)
+
+* `USD` (value: `"USD"`)
+
+* `GBP` (value: `"GBP"`)
+
+* `CAD` (value: `"CAD"`)
+
+* `AUD` (value: `"AUD"`)
+
+* `DJF` (value: `"DJF"`)
+
+* `ZAR` (value: `"ZAR"`)
+
+* `ETB` (value: `"ETB"`)
+
+* `AED` (value: `"AED"`)
+
+* `BHD` (value: `"BHD"`)
+
+* `DZD` (value: `"DZD"`)
+
+* `EGP` (value: `"EGP"`)
+
+* `IQD` (value: `"IQD"`)
+
+* `JOD` (value: `"JOD"`)
+
+* `KWD` (value: `"KWD"`)
+
+* `LBP` (value: `"LBP"`)
+
+* `LYD` (value: `"LYD"`)
+
+* `MAD` (value: `"MAD"`)
+
+* `OMR` (value: `"OMR"`)
+
+* `QAR` (value: `"QAR"`)
+
+* `SAR` (value: `"SAR"`)
+
+* `SYP` (value: `"SYP"`)
+
+* `TND` (value: `"TND"`)
+
+* `YER` (value: `"YER"`)
+
+* `CLP` (value: `"CLP"`)
+
+* `INR` (value: `"INR"`)
+
+* `AZN` (value: `"AZN"`)
+
+* `RUB` (value: `"RUB"`)
+
+* `BYN` (value: `"BYN"`)
+
+* `BGN` (value: `"BGN"`)
+
+* `NGN` (value: `"NGN"`)
+
+* `BDT` (value: `"BDT"`)
+
+* `CNY` (value: `"CNY"`)
+
+* `BAM` (value: `"BAM"`)
+
+* `CZK` (value: `"CZK"`)
+
+* `DKK` (value: `"DKK"`)
+
+* `CHF` (value: `"CHF"`)
+
+* `MVR` (value: `"MVR"`)
+
+* `BTN` (value: `"BTN"`)
+
+* `XCD` (value: `"XCD"`)
+
+* `BZD` (value: `"BZD"`)
+
+* `HKD` (value: `"HKD"`)
+
+* `IDR` (value: `"IDR"`)
+
+* `JMD` (value: `"JMD"`)
+
+* `MYR` (value: `"MYR"`)
+
+* `NZD` (value: `"NZD"`)
+
+* `PHP` (value: `"PHP"`)
+
+* `SGD` (value: `"SGD"`)
+
+* `TTD` (value: `"TTD"`)
+
+* `XDR` (value: `"XDR"`)
+
+* `ARS` (value: `"ARS"`)
+
+* `BOB` (value: `"BOB"`)
+
+* `COP` (value: `"COP"`)
+
+* `CRC` (value: `"CRC"`)
+
+* `CUP` (value: `"CUP"`)
+
+* `DOP` (value: `"DOP"`)
+
+* `GTQ` (value: `"GTQ"`)
+
+* `HNL` (value: `"HNL"`)
+
+* `MXN` (value: `"MXN"`)
+
+* `NIO` (value: `"NIO"`)
+
+* `PAB` (value: `"PAB"`)
+
+* `PEN` (value: `"PEN"`)
+
+* `PYG` (value: `"PYG"`)
+
+* `UYU` (value: `"UYU"`)
+
+* `VEF` (value: `"VEF"`)
+
+* `IRR` (value: `"IRR"`)
+
+* `XOF` (value: `"XOF"`)
+
+* `CDF` (value: `"CDF"`)
+
+* `XAF` (value: `"XAF"`)
+
+* `HTG` (value: `"HTG"`)
+
+* `ILS` (value: `"ILS"`)
+
+* `HRK` (value: `"HRK"`)
+
+* `HUF` (value: `"HUF"`)
+
+* `AMD` (value: `"AMD"`)
+
+* `ISK` (value: `"ISK"`)
+
+* `JPY` (value: `"JPY"`)
+
+* `GEL` (value: `"GEL"`)
+
+* `KZT` (value: `"KZT"`)
+
+* `KHR` (value: `"KHR"`)
+
+* `KRW` (value: `"KRW"`)
+
+* `KGS` (value: `"KGS"`)
+
+* `LAK` (value: `"LAK"`)
+
+* `MKD` (value: `"MKD"`)
+
+* `MNT` (value: `"MNT"`)
+
+* `BND` (value: `"BND"`)
+
+* `MMK` (value: `"MMK"`)
+
+* `NOK` (value: `"NOK"`)
+
+* `NPR` (value: `"NPR"`)
+
+* `PKR` (value: `"PKR"`)
+
+* `PLN` (value: `"PLN"`)
+
+* `AFN` (value: `"AFN"`)
+
+* `BRL` (value: `"BRL"`)
+
+* `MDL` (value: `"MDL"`)
+
+* `RON` (value: `"RON"`)
+
+* `RWF` (value: `"RWF"`)
+
+* `SEK` (value: `"SEK"`)
+
+* `LKR` (value: `"LKR"`)
+
+* `SOS` (value: `"SOS"`)
+
+* `ALL` (value: `"ALL"`)
+
+* `RSD` (value: `"RSD"`)
+
+* `KES` (value: `"KES"`)
+
+* `TJS` (value: `"TJS"`)
+
+* `THB` (value: `"THB"`)
+
+* `ERN` (value: `"ERN"`)
+
+* `TMT` (value: `"TMT"`)
+
+* `BWP` (value: `"BWP"`)
+
+* `TRY` (value: `"TRY"`)
+
+* `UAH` (value: `"UAH"`)
+
+* `UZS` (value: `"UZS"`)
+
+* `VND` (value: `"VND"`)
+
+* `MOP` (value: `"MOP"`)
+
+* `TWD` (value: `"TWD"`)
+
+* `BMD` (value: `"BMD"`)
 
 
 

@@ -1,8 +1,8 @@
-# Flipdish.RestApiResultMenuSectionItem
+# FlipdishOpenApiV10.RestApiResultMenuSectionItem
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**data** | [**MenuSectionItem**](MenuSectionItem.md) | Generic data object. | [optional] 
+**data** | [**MenuSectionItem**](MenuSectionItem.md) | Generic data object. | 
 
 

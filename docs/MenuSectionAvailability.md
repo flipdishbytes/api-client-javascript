@@ -1,4 +1,4 @@
-# Flipdish.MenuSectionAvailability
+# FlipdishOpenApiV10.MenuSectionAvailability
 
 ## Properties
 Name | Type | Description | Notes
@@ -11,13 +11,13 @@ Name | Type | Description | Notes
 ## Enum: AvailabilityModeEnum
 
 
-* `DisplayAlways` (value: `"DisplayAlways"`)
+* `displayAlways` (value: `"DisplayAlways"`)
 
-* `DisplayBasedOnTimes` (value: `"DisplayBasedOnTimes"`)
+* `displayBasedOnTimes` (value: `"DisplayBasedOnTimes"`)
 
-* `DisplayAlwaysStartCollapsed` (value: `"DisplayAlwaysStartCollapsed"`)
+* `displayAlwaysStartCollapsed` (value: `"DisplayAlwaysStartCollapsed"`)
 
-* `DisplayAlwaysStartCollapsedBasedOnTimes` (value: `"DisplayAlwaysStartCollapsedBasedOnTimes"`)
+* `displayAlwaysStartCollapsedBasedOnTimes` (value: `"DisplayAlwaysStartCollapsedBasedOnTimes"`)
 
 
 

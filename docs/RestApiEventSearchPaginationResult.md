@@ -1,11 +1,11 @@
-# Flipdish.RestApiEventSearchPaginationResult
+# FlipdishOpenApiV10.RestApiEventSearchPaginationResult
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**data** | [**EventSearchResult**](EventSearchResult.md) | Event results | [optional] 
-**page** | **Number** | Current page index | [optional] 
-**limit** | **Number** | Current page size | [optional] 
-**totalRecordCount** | **Number** | Total record count | [optional] 
+**data** | [**EventSearchResult**](EventSearchResult.md) | Event results | 
+**page** | **Number** | Current page index | 
+**limit** | **Number** | Current page size | 
+**totalRecordCount** | **Number** | Total record count | 
 
 

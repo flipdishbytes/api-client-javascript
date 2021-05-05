@@ -1,41 +1,36 @@
-# Flipdish.VouchersApi
+# FlipdishOpenApiV10.VouchersApi
 
 All URIs are relative to *https://api.flipdish.co*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**deleteVoucherMetadata**](VouchersApi.md#deleteVoucherMetadata) | **DELETE** /api/v1.0/vouchers/{voucherId}/menu/{menuId}/store/{storeId}/metadata/{key} | Delete voucher metadata
-[**getVoucherById**](VouchersApi.md#getVoucherById) | **GET** /api/v1.0/vouchers/{voucherId} | Get voucher by identifier
-[**getVoucherMetadata**](VouchersApi.md#getVoucherMetadata) | **GET** /api/v1.0/vouchers/{voucherId}/menu/{menuId}/store/{storeId}/metadata | Get voucher metadata
-[**getVoucherMetadata_0**](VouchersApi.md#getVoucherMetadata_0) | **GET** /api/v1.0/vouchers/{voucherId}/menu/{menuId}/store/{storeId}/metadata/{key} | Get voucher metadata
-[**getVouchers**](VouchersApi.md#getVouchers) | **GET** /api/v1.0/vouchers | Get vouchers
-[**setVoucherMetadata**](VouchersApi.md#setVoucherMetadata) | **PUT** /api/v1.0/vouchers/{voucherId}/menu/{menuId}/store/{storeId}/metadata/{key} | Add voucher metadata
+[**createVoucher**](VouchersApi.md#createVoucher) | **POST** /api/v1.0/vouchers/{appId} | [PRIVATE API] Create voucher
+[**getVoucherById**](VouchersApi.md#getVoucherById) | **GET** /api/v1.0/vouchers/{voucherId} | [PRIVATE API] Get voucher by identifier
+[**getVoucherStatsById**](VouchersApi.md#getVoucherStatsById) | **GET** /api/v1.0/vouchers/stats/{voucherId} | [PRIVATE API] Get voucher stats by identifier
+[**getVouchers**](VouchersApi.md#getVouchers) | **GET** /api/v1.0/{appId}/vouchers/summaries | [PRIVATE API] Get vouchers summaries for App Id
+[**updateVoucher**](VouchersApi.md#updateVoucher) | **POST** /api/v1.0/vouchers/{voucherId} | [PRIVATE API] Updates voucher
 
 
-<a name="deleteVoucherMetadata"></a>
-# **deleteVoucherMetadata**
-> RestApiArrayResultRestApiDefaultResponse deleteVoucherMetadata(voucherId, menuId, storeId, key)
+<a name="createVoucher"></a>
+# **createVoucher**
+> RestApiResultVoucherWithStats createVoucher(appId, voucher)
 
-Delete voucher metadata
+[PRIVATE API] Create voucher
 
 ### Example
 ```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
+var FlipdishOpenApiV10 = require('flipdish_open_api_v10');
+var defaultClient = FlipdishOpenApiV10.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.VouchersApi();
+var apiInstance = new FlipdishOpenApiV10.VouchersApi();
 
-var voucherId = 56; // Number | 
+var appId = "appId_example"; // String | App Name Id
 
-var menuId = 56; // Number | 
-
-var storeId = 56; // Number | 
-
-var key = "key_example"; // String | 
+var voucher = new FlipdishOpenApiV10.CreateVoucher(); // CreateVoucher | Voucher Details
 
 
 var callback = function(error, data, response) {
@@ -45,21 +40,19 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.deleteVoucherMetadata(voucherId, menuId, storeId, key, callback);
+apiInstance.createVoucher(appId, voucher, callback);
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **voucherId** | **Number**|  | 
- **menuId** | **Number**|  | 
- **storeId** | **Number**|  | 
- **key** | **String**|  | 
+ **appId** | **String**| App Name Id | 
+ **voucher** | [**CreateVoucher**](CreateVoucher.md)| Voucher Details | 
 
 ### Return type
 
-[**RestApiArrayResultRestApiDefaultResponse**](RestApiArrayResultRestApiDefaultResponse.md)
+[**RestApiResultVoucherWithStats**](RestApiResultVoucherWithStats.md)
 
 ### Authorization
 
@@ -67,27 +60,27 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
  - **Accept**: application/json, text/json, application/xml, text/xml
 
 <a name="getVoucherById"></a>
 # **getVoucherById**
-> RestApiResultVoucher getVoucherById(voucherId)
+> RestApiResultVoucherWithStats getVoucherById(voucherId)
 
-Get voucher by identifier
+[PRIVATE API] Get voucher by identifier
 
 ### Example
 ```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
+var FlipdishOpenApiV10 = require('flipdish_open_api_v10');
+var defaultClient = FlipdishOpenApiV10.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.VouchersApi();
+var apiInstance = new FlipdishOpenApiV10.VouchersApi();
 
-var voucherId = 56; // Number | 
+var voucherId = 56; // Number | Id of the voucher
 
 
 var callback = function(error, data, response) {
@@ -104,11 +97,11 @@ apiInstance.getVoucherById(voucherId, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **voucherId** | **Number**|  | 
+ **voucherId** | **Number**| Id of the voucher | 
 
 ### Return type
 
-[**RestApiResultVoucher**](RestApiResultVoucher.md)
+[**RestApiResultVoucherWithStats**](RestApiResultVoucherWithStats.md)
 
 ### Authorization
 
@@ -119,29 +112,30 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/json, application/xml, text/xml
 
-<a name="getVoucherMetadata"></a>
-# **getVoucherMetadata**
-> RestApiArrayResultMetadata getVoucherMetadata(voucherId, menuId, storeId)
+<a name="getVoucherStatsById"></a>
+# **getVoucherStatsById**
+> RestApiArrayResultVoucherDataPoint getVoucherStatsById(voucherId, aggregateDataBy, opts)
 
-Get voucher metadata
+[PRIVATE API] Get voucher stats by identifier
 
 ### Example
 ```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
+var FlipdishOpenApiV10 = require('flipdish_open_api_v10');
+var defaultClient = FlipdishOpenApiV10.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.VouchersApi();
+var apiInstance = new FlipdishOpenApiV10.VouchersApi();
 
-var voucherId = 56; // Number | 
+var voucherId = 56; // Number | Id of the voucher
 
-var menuId = 56; // Number | 
+var aggregateDataBy = "aggregateDataBy_example"; // String | Aggregate data by day \\ week \\ month
 
-var storeId = 56; // Number | 
-
+var opts = { 
+  'dataPointLimit': 56 // Number | Amount of data points per request
+};
 
 var callback = function(error, data, response) {
   if (error) {
@@ -150,78 +144,20 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getVoucherMetadata(voucherId, menuId, storeId, callback);
+apiInstance.getVoucherStatsById(voucherId, aggregateDataBy, opts, callback);
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **voucherId** | **Number**|  | 
- **menuId** | **Number**|  | 
- **storeId** | **Number**|  | 
+ **voucherId** | **Number**| Id of the voucher | 
+ **aggregateDataBy** | **String**| Aggregate data by day \\ week \\ month | 
+ **dataPointLimit** | **Number**| Amount of data points per request | [optional] 
 
 ### Return type
 
-[**RestApiArrayResultMetadata**](RestApiArrayResultMetadata.md)
-
-### Authorization
-
-[oauth2](../README.md#oauth2)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml
-
-<a name="getVoucherMetadata_0"></a>
-# **getVoucherMetadata_0**
-> RestApiResultMetadata getVoucherMetadata_0(voucherId, menuId, storeId, key)
-
-Get voucher metadata
-
-### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
-
-// Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
-oauth2.accessToken = 'YOUR ACCESS TOKEN';
-
-var apiInstance = new Flipdish.VouchersApi();
-
-var voucherId = 56; // Number | 
-
-var menuId = 56; // Number | 
-
-var storeId = 56; // Number | 
-
-var key = "key_example"; // String | 
-
-
-var callback = function(error, data, response) {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-};
-apiInstance.getVoucherMetadata_0(voucherId, menuId, storeId, key, callback);
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **voucherId** | **Number**|  | 
- **menuId** | **Number**|  | 
- **storeId** | **Number**|  | 
- **key** | **String**|  | 
-
-### Return type
-
-[**RestApiResultMetadata**](RestApiResultMetadata.md)
+[**RestApiArrayResultVoucherDataPoint**](RestApiArrayResultVoucherDataPoint.md)
 
 ### Authorization
 
@@ -234,37 +170,31 @@ Name | Type | Description  | Notes
 
 <a name="getVouchers"></a>
 # **getVouchers**
-> RestApiPaginationResultVoucher getVouchers(opts)
+> RestApiPaginationResultVoucherSummary getVouchers(appId, opts)
 
-Get vouchers
+[PRIVATE API] Get vouchers summaries for App Id
 
 ### Example
 ```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
+var FlipdishOpenApiV10 = require('flipdish_open_api_v10');
+var defaultClient = FlipdishOpenApiV10.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.VouchersApi();
+var apiInstance = new FlipdishOpenApiV10.VouchersApi();
+
+var appId = "appId_example"; // String | Application Id
 
 var opts = { 
-  'filter': "filter_example", // String | 
-  'pageNumber': 56, // Number | 
-  'pageSize': 56, // Number | 
-  'sortOrder': "sortOrder_example", // String | 
-  'orderBy': "orderBy_example", // String | 
-  'subType': "subType_example", // String | 
-  'status': "status_example", // String | 
-  'code': "code_example", // String | 
-  'validFromBegin': new Date("2013-10-20T19:20:30+01:00"), // Date | 
-  'validFromEnd': new Date("2013-10-20T19:20:30+01:00"), // Date | 
-  'expiryBegin': new Date("2013-10-20T19:20:30+01:00"), // Date | 
-  'expiryEnd': new Date("2013-10-20T19:20:30+01:00"), // Date | 
-  'amount': 1.2, // Number | 
-  'voucherType': "voucherType_example", // String | 
-  'description': "description_example" // String | 
+  'pageIndex': 56, // Number | Page Number
+  'pageSize': 56, // Number | Page Size
+  'searchCodes': ["searchCodes_example"], // [String] | Search by Voucher Code\\s
+  'statusSearch': ["statusSearch_example"], // [String] | Search by Status
+  'typeSearch': ["typeSearch_example"], // [String] | Search by Type
+  'subTypeSearch': ["subTypeSearch_example"], // [String] | Search by Sub Type
+  'storeIds': [3.4] // [Number] | Search by Store Ids
 };
 
 var callback = function(error, data, response) {
@@ -274,32 +204,25 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getVouchers(opts, callback);
+apiInstance.getVouchers(appId, opts, callback);
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **filter** | **String**|  | [optional] 
- **pageNumber** | **Number**|  | [optional] 
- **pageSize** | **Number**|  | [optional] 
- **sortOrder** | **String**|  | [optional] 
- **orderBy** | **String**|  | [optional] 
- **subType** | **String**|  | [optional] 
- **status** | **String**|  | [optional] 
- **code** | **String**|  | [optional] 
- **validFromBegin** | **Date**|  | [optional] 
- **validFromEnd** | **Date**|  | [optional] 
- **expiryBegin** | **Date**|  | [optional] 
- **expiryEnd** | **Date**|  | [optional] 
- **amount** | **Number**|  | [optional] 
- **voucherType** | **String**|  | [optional] 
- **description** | **String**|  | [optional] 
+ **appId** | **String**| Application Id | 
+ **pageIndex** | **Number**| Page Number | [optional] 
+ **pageSize** | **Number**| Page Size | [optional] 
+ **searchCodes** | [**[String]**](String.md)| Search by Voucher Code\\s | [optional] 
+ **statusSearch** | [**[String]**](String.md)| Search by Status | [optional] 
+ **typeSearch** | [**[String]**](String.md)| Search by Type | [optional] 
+ **subTypeSearch** | [**[String]**](String.md)| Search by Sub Type | [optional] 
+ **storeIds** | [**[Number]**](Number.md)| Search by Store Ids | [optional] 
 
 ### Return type
 
-[**RestApiPaginationResultVoucher**](RestApiPaginationResultVoucher.md)
+[**RestApiPaginationResultVoucherSummary**](RestApiPaginationResultVoucherSummary.md)
 
 ### Authorization
 
@@ -310,57 +233,58 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/json, application/xml, text/xml
 
-<a name="setVoucherMetadata"></a>
-# **setVoucherMetadata**
-> setVoucherMetadata(voucherId, menuId, storeId, key, value)
+<a name="updateVoucher"></a>
+# **updateVoucher**
+> RestApiResultVoucherWithStats updateVoucher(voucherId, voucher, opts)
 
-Add voucher metadata
+[PRIVATE API] Updates voucher
 
 ### Example
 ```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
+var FlipdishOpenApiV10 = require('flipdish_open_api_v10');
+var defaultClient = FlipdishOpenApiV10.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.VouchersApi();
+var apiInstance = new FlipdishOpenApiV10.VouchersApi();
 
-var voucherId = 56; // Number | 
+var voucherId = 56; // Number | Id of the voucher
 
-var menuId = 56; // Number | 
+var voucher = new FlipdishOpenApiV10.VoucherBase(); // VoucherBase | Updated details for the voucher
 
-var storeId = 56; // Number | 
-
-var key = "key_example"; // String | 
-
-var value = "value_example"; // String | 
-
+var opts = { 
+  'storeId': [3.4], // [Number] | 
+  'percentValue': 56, // Number | Percent voucher value (can have 1 of 3)
+  'lumpValue': 1.2, // Number | Lump voucher value (can have 1 of 3)
+  'freeItemId': 56 // Number | Free Item Id (can have 1 of 3)
+};
 
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
   } else {
-    console.log('API called successfully.');
+    console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.setVoucherMetadata(voucherId, menuId, storeId, key, value, callback);
+apiInstance.updateVoucher(voucherId, voucher, opts, callback);
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **voucherId** | **Number**|  | 
- **menuId** | **Number**|  | 
- **storeId** | **Number**|  | 
- **key** | **String**|  | 
- **value** | **String**|  | 
+ **voucherId** | **Number**| Id of the voucher | 
+ **voucher** | [**VoucherBase**](VoucherBase.md)| Updated details for the voucher | 
+ **storeId** | [**[Number]**](Number.md)|  | [optional] 
+ **percentValue** | **Number**| Percent voucher value (can have 1 of 3) | [optional] 
+ **lumpValue** | **Number**| Lump voucher value (can have 1 of 3) | [optional] 
+ **freeItemId** | **Number**| Free Item Id (can have 1 of 3) | [optional] 
 
 ### Return type
 
-null (empty response body)
+[**RestApiResultVoucherWithStats**](RestApiResultVoucherWithStats.md)
 
 ### Authorization
 

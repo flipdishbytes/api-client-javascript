@@ -1,4 +1,4 @@
-# Flipdish.MenuOptionSetsApi
+# FlipdishOpenApiV10.MenuOptionSetsApi
 
 All URIs are relative to *https://api.flipdish.co*
 
@@ -21,14 +21,14 @@ Create menu item option set
 
 ### Example
 ```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
+var FlipdishOpenApiV10 = require('flipdish_open_api_v10');
+var defaultClient = FlipdishOpenApiV10.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.MenuOptionSetsApi();
+var apiInstance = new FlipdishOpenApiV10.MenuOptionSetsApi();
 
 var menuId = 56; // Number | Menu identifier
 
@@ -36,7 +36,7 @@ var menuSectionId = 56; // Number | Menu section identifier
 
 var menuSectionItemId = 56; // Number | Menu section item identifier
 
-var menuItemOptionSet = new Flipdish.MenuItemOptionSetBase(); // MenuItemOptionSetBase | Menu item option set
+var menuItemOptionSet = new FlipdishOpenApiV10.MenuItemOptionSetBase(); // MenuItemOptionSetBase | Menu item option set
 
 
 var callback = function(error, data, response) {
@@ -79,14 +79,14 @@ Delete menu item option set
 
 ### Example
 ```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
+var FlipdishOpenApiV10 = require('flipdish_open_api_v10');
+var defaultClient = FlipdishOpenApiV10.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.MenuOptionSetsApi();
+var apiInstance = new FlipdishOpenApiV10.MenuOptionSetsApi();
 
 var menuId = 56; // Number | Menu identifier
 
@@ -137,14 +137,14 @@ Delete option set image
 
 ### Example
 ```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
+var FlipdishOpenApiV10 = require('flipdish_open_api_v10');
+var defaultClient = FlipdishOpenApiV10.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.MenuOptionSetsApi();
+var apiInstance = new FlipdishOpenApiV10.MenuOptionSetsApi();
 
 var menuId = 56; // Number | Menu identifier
 
@@ -195,14 +195,14 @@ Get menu item option set by identifier
 
 ### Example
 ```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
+var FlipdishOpenApiV10 = require('flipdish_open_api_v10');
+var defaultClient = FlipdishOpenApiV10.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.MenuOptionSetsApi();
+var apiInstance = new FlipdishOpenApiV10.MenuOptionSetsApi();
 
 var menuId = 56; // Number | Menu identifier
 
@@ -253,14 +253,14 @@ Get menu item option sets
 
 ### Example
 ```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
+var FlipdishOpenApiV10 = require('flipdish_open_api_v10');
+var defaultClient = FlipdishOpenApiV10.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.MenuOptionSetsApi();
+var apiInstance = new FlipdishOpenApiV10.MenuOptionSetsApi();
 
 var menuId = 56; // Number | Menu identifier
 
@@ -302,30 +302,30 @@ Name | Type | Description  | Notes
 
 <a name="updateMenuItemOptionSet"></a>
 # **updateMenuItemOptionSet**
-> updateMenuItemOptionSet(menuId, menuSectionItemId, menuSectionId, optionSetId, menuItemOptionSet)
+> updateMenuItemOptionSet(menuId, menuSectionId, menuSectionItemId, optionSetId, menuItemOptionSet)
 
 Update menu item option set
 
 ### Example
 ```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
+var FlipdishOpenApiV10 = require('flipdish_open_api_v10');
+var defaultClient = FlipdishOpenApiV10.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.MenuOptionSetsApi();
+var apiInstance = new FlipdishOpenApiV10.MenuOptionSetsApi();
 
 var menuId = 56; // Number | Menu identifier
 
-var menuSectionItemId = 56; // Number | Menu section item identifier
-
 var menuSectionId = 56; // Number | Menu section identifier
+
+var menuSectionItemId = 56; // Number | Menu section item identifier
 
 var optionSetId = 56; // Number | Option set identifier
 
-var menuItemOptionSet = new Flipdish.MenuItemOptionSetBase(); // MenuItemOptionSetBase | Menu item option set (delta)
+var menuItemOptionSet = new FlipdishOpenApiV10.MenuItemOptionSetBase(); // MenuItemOptionSetBase | Menu item option set (delta)
 
 
 var callback = function(error, data, response) {
@@ -335,7 +335,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.updateMenuItemOptionSet(menuId, menuSectionItemId, menuSectionId, optionSetId, menuItemOptionSet, callback);
+apiInstance.updateMenuItemOptionSet(menuId, menuSectionId, menuSectionItemId, optionSetId, menuItemOptionSet, callback);
 ```
 
 ### Parameters
@@ -343,8 +343,8 @@ apiInstance.updateMenuItemOptionSet(menuId, menuSectionItemId, menuSectionId, op
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **menuId** | **Number**| Menu identifier | 
- **menuSectionItemId** | **Number**| Menu section item identifier | 
  **menuSectionId** | **Number**| Menu section identifier | 
+ **menuSectionItemId** | **Number**| Menu section item identifier | 
  **optionSetId** | **Number**| Option set identifier | 
  **menuItemOptionSet** | [**MenuItemOptionSetBase**](MenuItemOptionSetBase.md)| Menu item option set (delta) | 
 
@@ -369,14 +369,14 @@ Upload menu item option set image
 
 ### Example
 ```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
+var FlipdishOpenApiV10 = require('flipdish_open_api_v10');
+var defaultClient = FlipdishOpenApiV10.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.MenuOptionSetsApi();
+var apiInstance = new FlipdishOpenApiV10.MenuOptionSetsApi();
 
 var menuId = 56; // Number | Menu identifier
 

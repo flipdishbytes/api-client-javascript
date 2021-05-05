@@ -1,35 +1,38 @@
-# Flipdish.HttpRequestResponseLogsApi
+# FlipdishOpenApiV10.HttpRequestResponseLogsApi
 
 All URIs are relative to *https://api.flipdish.co*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getHttpLogsByUserIdAsync**](HttpRequestResponseLogsApi.md#getHttpLogsByUserIdAsync) | **GET** /api/v1.0/interactions/logs | Get API interaction logs
+[**getLogs**](HttpRequestResponseLogsApi.md#getLogs) | **GET** /api/v1.0/{appId}/interactions/logs | Get API interaction logs
 
 
-<a name="getHttpLogsByUserIdAsync"></a>
-# **getHttpLogsByUserIdAsync**
-> RestApiPaginationResultHttpRequestAndResponseLog getHttpLogsByUserIdAsync(start, end, opts)
+<a name="getLogs"></a>
+# **getLogs**
+> RestApiPaginationResultHttpRequestAndResponseLog getLogs(start, end, appId, opts)
 
 Get API interaction logs
 
 ### Example
 ```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
+var FlipdishOpenApiV10 = require('flipdish_open_api_v10');
+var defaultClient = FlipdishOpenApiV10.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.HttpRequestResponseLogsApi();
+var apiInstance = new FlipdishOpenApiV10.HttpRequestResponseLogsApi();
 
 var start = new Date("2013-10-20T19:20:30+01:00"); // Date | Start date time
 
 var end = new Date("2013-10-20T19:20:30+01:00"); // Date | End date time
 
+var appId = "appId_example"; // String | 
+
 var opts = { 
   'filterByUserId': 56, // Number | User id (optional)
+  'guid': "guid_example", // String | Id of the log
   'page': 56, // Number | Page number
   'limit': 56 // Number | Page size
 };
@@ -41,7 +44,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getHttpLogsByUserIdAsync(start, end, opts, callback);
+apiInstance.getLogs(start, end, appId, opts, callback);
 ```
 
 ### Parameters
@@ -50,7 +53,9 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **start** | **Date**| Start date time | 
  **end** | **Date**| End date time | 
+ **appId** | **String**|  | 
  **filterByUserId** | **Number**| User id (optional) | [optional] 
+ **guid** | **String**| Id of the log | [optional] 
  **page** | **Number**| Page number | [optional] 
  **limit** | **Number**| Page size | [optional] 
 

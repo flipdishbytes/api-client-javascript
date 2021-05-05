@@ -1,32 +1,33 @@
-# Flipdish.Reject
+# FlipdishOpenApiV10.Reject
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**rejectReason** | **String** | Reject reason | [optional] 
+**rejectReason** | **String** | Reject reason. | 
+**doNotNotifyCustomer** | **Boolean** | Notify customer. The server will not send and SMS to the customer if the value is true. | [optional] 
 
 
 <a name="RejectReasonEnum"></a>
 ## Enum: RejectReasonEnum
 
 
-* `TooBusy` (value: `"TooBusy"`)
+* `tooBusy` (value: `"TooBusy"`)
 
-* `FoodUnavailable` (value: `"FoodUnavailable"`)
+* `foodUnavailable` (value: `"FoodUnavailable"`)
 
-* `UnableToDeliver` (value: `"UnableToDeliver"`)
+* `unableToDeliver` (value: `"UnableToDeliver"`)
 
-* `UnknownAddress` (value: `"UnknownAddress"`)
+* `unknownAddress` (value: `"UnknownAddress"`)
 
-* `UnknownReason` (value: `"UnknownReason"`)
+* `unknownReason` (value: `"UnknownReason"`)
 
-* `TooSoon` (value: `"TooSoon"`)
+* `tooSoon` (value: `"TooSoon"`)
 
-* `TimeUnavailable` (value: `"TimeUnavailable"`)
+* `timeUnavailable` (value: `"TimeUnavailable"`)
 
-* `DontDeliverToArea` (value: `"DontDeliverToArea"`)
+* `dontDeliverToArea` (value: `"DontDeliverToArea"`)
 
-* `StoreUncontactable` (value: `"StoreUncontactable"`)
+* `storeUncontactable` (value: `"StoreUncontactable"`)
 
 
 

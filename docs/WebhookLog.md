@@ -1,4 +1,4 @@
-# Flipdish.WebhookLog
+# FlipdishOpenApiV10.WebhookLog
 
 ## Properties
 Name | Type | Description | Notes

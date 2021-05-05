@@ -1,8 +1,8 @@
-# Flipdish.RestApiIntegerResult
+# FlipdishOpenApiV10.RestApiIntegerResult
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**data** | **Number** | Data integer | [optional] 
+**data** | **Number** | Data integer | 
 
 

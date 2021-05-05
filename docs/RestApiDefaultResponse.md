@@ -1,4 +1,4 @@
-# Flipdish.RestApiDefaultResponse
+# FlipdishOpenApiV10.RestApiDefaultResponse
 
 ## Properties
 Name | Type | Description | Notes

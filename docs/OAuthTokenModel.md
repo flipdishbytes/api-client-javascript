@@ -1,4 +1,4 @@
-# Flipdish.OAuthTokenModel
+# FlipdishOpenApiV10.OAuthTokenModel
 
 ## Properties
 Name | Type | Description | Notes

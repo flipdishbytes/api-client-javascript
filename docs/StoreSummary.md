@@ -1,4 +1,4 @@
-# Flipdish.StoreSummary
+# FlipdishOpenApiV10.StoreSummary
 
 ## Properties
 Name | Type | Description | Notes
@@ -8,6 +8,9 @@ Name | Type | Description | Notes
 **menuId** | **Number** | Stores menu identifier | [optional] 
 **metadata** | **{String: String}** | Store metadata | [optional] 
 **currency** | **String** | Currency which used by the Store | [optional] 
+**coordinates** | [**Coordinates**](Coordinates.md) | Latitude and longitude of the store | [optional] 
+**storeTimezone** | **String** | Timezone of store | [optional] 
+**storeGroupId** | **Number** | Store group id of store | [optional] 
 
 
 <a name="CurrencyEnum"></a>
@@ -237,6 +240,8 @@ Name | Type | Description | Notes
 * `MOP` (value: `"MOP"`)
 
 * `TWD` (value: `"TWD"`)
+
+* `BMD` (value: `"BMD"`)
 
 
 

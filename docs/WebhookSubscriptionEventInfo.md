@@ -1,4 +1,4 @@
-# Flipdish.WebhookSubscriptionEventInfo
+# FlipdishOpenApiV10.WebhookSubscriptionEventInfo
 
 ## Properties
 Name | Type | Description | Notes

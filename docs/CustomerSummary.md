@@ -1,4 +1,4 @@
-# Flipdish.CustomerSummary
+# FlipdishOpenApiV10.CustomerSummary
 
 ## Properties
 Name | Type | Description | Notes

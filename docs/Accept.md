@@ -1,4 +1,4 @@
-# Flipdish.Accept
+# FlipdishOpenApiV10.Accept
 
 ## Properties
 Name | Type | Description | Notes
