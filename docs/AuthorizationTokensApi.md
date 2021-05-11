@@ -4,13 +4,13 @@ All URIs are relative to *https://api.flipdish.co*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getAuthorizationTokens**](AuthorizationTokensApi.md#getAuthorizationTokens) | **GET** /api/v1.0/authorizationtokens/{clientId} | Get authorization tokens
-[**revokeToken**](AuthorizationTokensApi.md#revokeToken) | **DELETE** /api/v1.0/authorizationtokens/{key} | Revoke token
+[**getAuthorizationTokens**](AuthorizationTokensApi.md#getAuthorizationTokens) | **GET** /api/v1.0/{appId}/authorizationtokens/{oauthAppId} | Get authorization tokens
+[**revokeToken**](AuthorizationTokensApi.md#revokeToken) | **DELETE** /api/v1.0/{appId}/authorizationtokens/{key} | Revoke token
 
 
 <a name="getAuthorizationTokens"></a>
 # **getAuthorizationTokens**
-> RestApiPaginationResultOAuthTokenModel getAuthorizationTokens(clientId, opts)
+> RestApiPaginationResultOAuthTokenModel getAuthorizationTokens(oauthAppId, appId, opts)
 
 Get authorization tokens
 
@@ -27,7 +27,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new Flipdish.AuthorizationTokensApi();
 
-var clientId = "clientId_example"; // String | Client identifier
+var oauthAppId = "oauthAppId_example"; // String | Client identifier
+
+var appId = "appId_example"; // String | 
 
 var opts = { 
   'page': 56, // Number | Requested page number
@@ -41,14 +43,15 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getAuthorizationTokens(clientId, opts, callback);
+apiInstance.getAuthorizationTokens(oauthAppId, appId, opts, callback);
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **clientId** | **String**| Client identifier | 
+ **oauthAppId** | **String**| Client identifier | 
+ **appId** | **String**|  | 
  **page** | **Number**| Requested page number | [optional] 
  **limit** | **Number**| Requested page limit | [optional] 
 
@@ -67,7 +70,7 @@ Name | Type | Description  | Notes
 
 <a name="revokeToken"></a>
 # **revokeToken**
-> revokeToken(key)
+> revokeToken(key, appId)
 
 Revoke token
 
@@ -84,6 +87,8 @@ var apiInstance = new Flipdish.AuthorizationTokensApi();
 
 var key = "key_example"; // String | Token identifier key
 
+var appId = "appId_example"; // String | 
+
 
 var callback = function(error, data, response) {
   if (error) {
@@ -92,7 +97,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.revokeToken(key, callback);
+apiInstance.revokeToken(key, appId, callback);
 ```
 
 ### Parameters
@@ -100,6 +105,7 @@ apiInstance.revokeToken(key, callback);
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **key** | **String**| Token identifier key | 
+ **appId** | **String**|  | 
 
 ### Return type
 

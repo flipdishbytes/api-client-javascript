@@ -3,16 +3,34 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **String** | Voucher name | [optional] 
-**description** | **String** | Voucher description | [optional] 
-**code** | **String** | Voucher code | [optional] 
-**amount** | **Number** | Voucher amount | [optional] 
-**type** | **String** | Voucher type | [optional] 
-**subType** | **String** | Voucher sub type | [optional] 
+**VoucherId** | **Number** | Voucher Id | [optional] 
+**Code** | **String** | Voucher Code | [optional] 
+**Status** | **String** | Voucher Status | [optional] 
+**VoucherType** | **String** | Voucher Type | [optional] 
+**VoucherSubType** | **String** | Voucher Sub Type | [optional] 
+**Description** | **String** | Voucher Description (Visible on printout) | [optional] 
+**IsEnabled** | **Boolean** | Is voucher enabled | [optional] 
 
 
-<a name="TypeEnum"></a>
-## Enum: TypeEnum
+<a name="StatusEnum"></a>
+## Enum: StatusEnum
+
+
+* `Valid` (value: `"Valid"`)
+
+* `NotYetValid` (value: `"NotYetValid"`)
+
+* `Expired` (value: `"Expired"`)
+
+* `Used` (value: `"Used"`)
+
+* `Disabled` (value: `"Disabled"`)
+
+
+
+
+<a name="VoucherTypeEnum"></a>
+## Enum: VoucherTypeEnum
 
 
 * `PercentageDiscount` (value: `"PercentageDiscount"`)
@@ -26,8 +44,8 @@ Name | Type | Description | Notes
 
 
 
-<a name="SubTypeEnum"></a>
-## Enum: SubTypeEnum
+<a name="VoucherSubTypeEnum"></a>
+## Enum: VoucherSubTypeEnum
 
 
 * `None` (value: `"None"`)

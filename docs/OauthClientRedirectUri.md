@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **Number** | Redirect uri identifier | [optional] 
-**uri** | **String** | Redirect uri | [optional] 
+**Id** | **Number** | Redirect uri identifier | [optional] 
+**Uri** | **String** | Redirect uri | [optional] 
 
 

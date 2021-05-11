@@ -3,18 +3,22 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**menuItemId** | **Number** | Menu item identifier | [optional] 
-**actualPrice** | **Number** | Actual price - the minimum price possible when all required option set items prices are included. | [optional] 
-**imageUrl** | **String** | Image url | [optional] 
-**menuItemOptionSets** | [**[MenuItemOptionSet]**](MenuItemOptionSet.md) | Menu item option sets | [optional] 
-**name** | **String** | Menu item name (like \&quot;Korma\&quot;) | [optional] 
-**description** | **String** | Description (like \&quot;A lovely dish from the east\&quot;) | [optional] 
-**spicinessRating** | **String** | Spiciness rating | [optional] 
-**price** | **Number** | Price - this is only used when there is no master option set and should be set to 0 if a master option set exists. | [optional] 
-**displayOrder** | **Number** | Display order | [optional] 
-**alcohol** | **Boolean** | To be set true if the item or an option of the item contains an alcoholic drink. | [optional] 
-**isAvailable** | **Boolean** | True if we accept orders for this item still | [optional] 
-**cellLayoutType** | **String** | Small | Medium | Large  Affects the layout of the menu. | [optional] 
+**MenuItemId** | **Number** | Menu item identifier. This ID may change at any time. Use `PublicId` if you need a perminant reference to the item. | [optional] 
+**ActualPrice** | **Number** | Actual price - the minimum price possible when all required option set items prices are included. | [optional] 
+**MenuItemOptionSets** | [**[MenuItemOptionSet]**](MenuItemOptionSet.md) | Menu item option sets | [optional] 
+**DailySpecialHours** | [**[BusinessHoursPeriod]**](BusinessHoursPeriod.md) | Daily special hours | [optional] 
+**PublicId** | **String** | Permanent reference to the item. | [optional] 
+**Metadata** | [**[CreateMetadata]**](CreateMetadata.md) | List of metadata | [optional] 
+**Name** | **String** | Menu item name (like \"Korma\") | [optional] 
+**Description** | **String** | Description (like \"A lovely dish from the east\") | [optional] 
+**SpicinessRating** | **String** | Spiciness rating | [optional] 
+**Price** | **Number** | Price - this is only used when there is no master option set and should be set to 0 if a master option set exists. | [optional] 
+**DisplayOrder** | **Number** | Display order | [optional] 
+**Alcohol** | **Boolean** | To be set true if the item or an option of the item contains an alcoholic drink. | [optional] 
+**IsAvailable** | **Boolean** | True if we accept orders for this item still | [optional] 
+**CellLayoutType** | **String** | Small | Medium | Large  Affects the layout of the menu. | [optional] 
+**DisableVouchers** | **Boolean** | If true, then vouchers won't be applied for this item | [optional] 
+**ImageUrl** | **String** | Image url | [optional] 
 
 
 <a name="SpicinessRatingEnum"></a>
@@ -41,6 +45,8 @@ Name | Type | Description | Notes
 * `Medium` (value: `"Medium"`)
 
 * `Large` (value: `"Large"`)
+
+* `HiddenImage` (value: `"HiddenImage"`)
 
 
 

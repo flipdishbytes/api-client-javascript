@@ -3,10 +3,18 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**limit** | **Number** | The maximum elements to return | [optional] 
-**page** | **Number** | The index of the page to return, starting by 1 | [optional] 
-**start** | **Date** | Start date | [optional] 
-**end** | **Date** | End date | [optional] 
-**name** | **[String]** | Event names to filter in | [optional] 
+**Limit** | **Number** | The maximum elements to return | [optional] 
+**Page** | **Number** | The index of the page to return, starting by 1 | [optional] 
+**Start** | **Date** | Start date | [optional] 
+**End** | **Date** | End date | [optional] 
+**OrderId** | **Number** | Events that have Order Id | [optional] 
+**StoreId** | **Number** | Events that have Store Id | [optional] 
+**StoreGroupId** | **Number** | Events that have Store Group Id | [optional] 
+**UserId** | **Number** | Events that have User Id | [optional] 
+**UserEmail** | **String** | Events that have User Email | [optional] 
+**UserName** | **String** | Events that have User Name | [optional] 
+**VoucherCode** | **String** | Events that have voucher code | [optional] 
+**EventType** | **[String]** | Events that have event type\\s | [optional] 
+**FlipdishEventId** | **String** | Unique Identifier of Event, if this is specified, all other criteria are ignored. | [optional] 
 
 

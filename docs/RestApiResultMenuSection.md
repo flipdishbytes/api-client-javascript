@@ -3,6 +3,6 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**data** | [**MenuSection**](MenuSection.md) | Generic data object. | [optional] 
+**Data** | [**MenuSection**](MenuSection.md) | Generic data object. | 
 
 

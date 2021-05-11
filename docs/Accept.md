@@ -3,6 +3,6 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**estimatedMinutesForDelivery** | **Number** | Estimated minutes for delivery | [optional] 
+**EstimatedMinutesForDelivery** | **Number** | Estimated minutes for delivery | [optional] 
 
 

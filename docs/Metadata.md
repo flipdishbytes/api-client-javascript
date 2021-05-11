@@ -3,7 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**key** | **String** | Metadata key (Unique identifier) | [optional] 
-**value** | **String** | Metadata value | [optional] 
+**MenuEntityId** | **Number** | Menu entity identifier (eg: MenuItemId, MenuItemOptionSetItemId) | [optional] 
+**Key** | **String** | Metadata key (Unique identifier) | [optional] 
+**Value** | **String** | Metadata value | [optional] 
 
 

@@ -4,22 +4,24 @@ All URIs are relative to *https://api.flipdish.co*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**addRedirectUri**](OAuthClientsApi.md#addRedirectUri) | **POST** /api/v1.0/oauthclients/{oAuthClientId}/redirecturis | Create OAuth client redirect uri
-[**createOAuthClient**](OAuthClientsApi.md#createOAuthClient) | **POST** /api/v1.0/oauthclients | Create OAuth client
-[**deleteOAuthClient**](OAuthClientsApi.md#deleteOAuthClient) | **DELETE** /api/v1.0/oauthclients/{oAuthClientId} | Delete OAuth client
-[**getOAuthClientByClientId**](OAuthClientsApi.md#getOAuthClientByClientId) | **GET** /api/v1.0/oauthclients/{clientId} | Get OAuth client by identifier
-[**getOAuthClientSecret**](OAuthClientsApi.md#getOAuthClientSecret) | **GET** /api/v1.0/oauthclients/{clientId}/secret | Get OAuth client secret key
-[**getOAuthClients**](OAuthClientsApi.md#getOAuthClients) | **GET** /api/v1.0/oauthclients | Get all OAuth client
-[**getOauthAccessToken**](OAuthClientsApi.md#getOauthAccessToken) | **GET** /api/v1.0/oauthclients/{oAuthClientId}/accesstoken | Get OAuth access token for client
-[**getRedirectUris**](OAuthClientsApi.md#getRedirectUris) | **GET** /api/v1.0/oauthclients/{oAuthClientId}/redirecturis | Get OAuth client redirect uris
-[**removeRedirectUri**](OAuthClientsApi.md#removeRedirectUri) | **DELETE** /api/v1.0/oauthclients/{oAuthClientId}/redirecturis/{uriId} | Delete OAuth client redirect uri
+[**addRedirectUri**](OAuthClientsApi.md#addRedirectUri) | **POST** /api/v1.0/{appId}/oauthclients/{oauthAppId}/redirecturis | Create OAuth App redirect uri
+[**createOAuthApp**](OAuthClientsApi.md#createOAuthApp) | **POST** /api/v1.0/{appId}/oauthclients | Create OAuth App
+[**deleteOAuthApp**](OAuthClientsApi.md#deleteOAuthApp) | **DELETE** /api/v1.0/{appId}/oauthclients/{oauthAppId} | Delete OAuth App
+[**getOAuthApps**](OAuthClientsApi.md#getOAuthApps) | **GET** /api/v1.0/{appId}/oauthclients | Get all OAuth Apps
+[**getOAuthClientByClientId**](OAuthClientsApi.md#getOAuthClientByClientId) | **GET** /api/v1.0/{appId}/oauthclients/{oauthAppId} | Get OAuth App by identifier
+[**getOAuthClientSecret**](OAuthClientsApi.md#getOAuthClientSecret) | **GET** /api/v1.0/{appId}/oauthclients/{oauthAppId}/secret | Get OAuth App secret key
+[**getOauthAccessToken**](OAuthClientsApi.md#getOauthAccessToken) | **GET** /api/v1.0/{appId}/oauthclients/{oauthAppId}/accesstoken | Get OAuth access token for App
+[**getRedirectUris**](OAuthClientsApi.md#getRedirectUris) | **GET** /api/v1.0/{appId}/oauthclients/{oauthAppId}/redirecturis | Get OAuth App redirect uris
+[**oAuthClientsGetApplications**](OAuthClientsApi.md#oAuthClientsGetApplications) | **GET** /api/v1.0/{appId}/oauthclients/appnames | 
+[**removeRedirectUri**](OAuthClientsApi.md#removeRedirectUri) | **DELETE** /api/v1.0/{appId}/oauthclients/{oauthAppId}/redirecturis/{uriId} | Delete OAuth App redirect uri
+[**updateOAuthApp**](OAuthClientsApi.md#updateOAuthApp) | **POST** /api/v1.0/{appId}/oauthclients/{oauthAppId} | Update OAuth App
 
 
 <a name="addRedirectUri"></a>
 # **addRedirectUri**
-> RestApiResultOauthClientRedirectUri addRedirectUri(oAuthClientId, uri)
+> RestApiResultOauthClientRedirectUri addRedirectUri(oauthAppId, uri, appId)
 
-Create OAuth client redirect uri
+Create OAuth App redirect uri
 
 ### Example
 ```javascript
@@ -32,9 +34,11 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new Flipdish.OAuthClientsApi();
 
-var oAuthClientId = "oAuthClientId_example"; // String | OAuth client identifier
+var oauthAppId = "oauthAppId_example"; // String | OAuth App identifier
 
 var uri = "uri_example"; // String | Redirect uri
+
+var appId = "appId_example"; // String | 
 
 
 var callback = function(error, data, response) {
@@ -44,15 +48,16 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.addRedirectUri(oAuthClientId, uri, callback);
+apiInstance.addRedirectUri(oauthAppId, uri, appId, callback);
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **oAuthClientId** | **String**| OAuth client identifier | 
+ **oauthAppId** | **String**| OAuth App identifier | 
  **uri** | **String**| Redirect uri | 
+ **appId** | **String**|  | 
 
 ### Return type
 
@@ -67,11 +72,11 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
  - **Accept**: application/json, text/json, application/xml, text/xml
 
-<a name="createOAuthClient"></a>
-# **createOAuthClient**
-> createOAuthClient(oAuthClient)
+<a name="createOAuthApp"></a>
+# **createOAuthApp**
+> createOAuthApp(oAuthApp, appId)
 
-Create OAuth client
+Create OAuth App
 
 ### Example
 ```javascript
@@ -84,7 +89,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new Flipdish.OAuthClientsApi();
 
-var oAuthClient = new Flipdish.OAuthClient(); // OAuthClient | OAuth client
+var oAuthApp = new Flipdish.OAuthApp(); // OAuthApp | OAuth App
+
+var appId = "appId_example"; // String | 
 
 
 var callback = function(error, data, response) {
@@ -94,14 +101,15 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.createOAuthClient(oAuthClient, callback);
+apiInstance.createOAuthApp(oAuthApp, appId, callback);
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **oAuthClient** | [**OAuthClient**](OAuthClient.md)| OAuth client | 
+ **oAuthApp** | [**OAuthApp**](OAuthApp.md)| OAuth App | 
+ **appId** | **String**|  | 
 
 ### Return type
 
@@ -116,11 +124,11 @@ null (empty response body)
  - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
  - **Accept**: application/json, text/json, application/xml, text/xml
 
-<a name="deleteOAuthClient"></a>
-# **deleteOAuthClient**
-> deleteOAuthClient(oAuthClientId)
+<a name="deleteOAuthApp"></a>
+# **deleteOAuthApp**
+> deleteOAuthApp(oauthAppId, appId)
 
-Delete OAuth client
+Delete OAuth App
 
 ### Example
 ```javascript
@@ -133,7 +141,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new Flipdish.OAuthClientsApi();
 
-var oAuthClientId = "oAuthClientId_example"; // String | OAuth client identifier
+var oauthAppId = "oauthAppId_example"; // String | OAuth App identifier
+
+var appId = "appId_example"; // String | 
 
 
 var callback = function(error, data, response) {
@@ -143,14 +153,15 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.deleteOAuthClient(oAuthClientId, callback);
+apiInstance.deleteOAuthApp(oauthAppId, appId, callback);
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **oAuthClientId** | **String**| OAuth client identifier | 
+ **oauthAppId** | **String**| OAuth App identifier | 
+ **appId** | **String**|  | 
 
 ### Return type
 
@@ -165,11 +176,11 @@ null (empty response body)
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/json, application/xml, text/xml
 
-<a name="getOAuthClientByClientId"></a>
-# **getOAuthClientByClientId**
-> RestApiResultOAuthClient getOAuthClientByClientId(clientId)
+<a name="getOAuthApps"></a>
+# **getOAuthApps**
+> RestApiArrayResultOAuthApp getOAuthApps(appId, opts)
 
-Get OAuth client by identifier
+Get all OAuth Apps
 
 ### Example
 ```javascript
@@ -182,7 +193,62 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new Flipdish.OAuthClientsApi();
 
-var clientId = "clientId_example"; // String | OAuth client identifier
+var appId = "appId_example"; // String | 
+
+var opts = { 
+  'oauthAppName': "oauthAppName_example" // String | 
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.getOAuthApps(appId, opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **appId** | **String**|  | 
+ **oauthAppName** | **String**|  | [optional] 
+
+### Return type
+
+[**RestApiArrayResultOAuthApp**](RestApiArrayResultOAuthApp.md)
+
+### Authorization
+
+[oauth2](../README.md#oauth2)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json, text/json, application/xml, text/xml
+
+<a name="getOAuthClientByClientId"></a>
+# **getOAuthClientByClientId**
+> RestApiResultOAuthApp getOAuthClientByClientId(oauthAppId, appId)
+
+Get OAuth App by identifier
+
+### Example
+```javascript
+var Flipdish = require('@flipdish/api-client-javascript');
+var defaultClient = Flipdish.ApiClient.instance;
+
+// Configure OAuth2 access token for authorization: oauth2
+var oauth2 = defaultClient.authentications['oauth2'];
+oauth2.accessToken = 'YOUR ACCESS TOKEN';
+
+var apiInstance = new Flipdish.OAuthClientsApi();
+
+var oauthAppId = "oauthAppId_example"; // String | OAuth App identifier
+
+var appId = "appId_example"; // String | 
 
 
 var callback = function(error, data, response) {
@@ -192,18 +258,19 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getOAuthClientByClientId(clientId, callback);
+apiInstance.getOAuthClientByClientId(oauthAppId, appId, callback);
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **clientId** | **String**| OAuth client identifier | 
+ **oauthAppId** | **String**| OAuth App identifier | 
+ **appId** | **String**|  | 
 
 ### Return type
 
-[**RestApiResultOAuthClient**](RestApiResultOAuthClient.md)
+[**RestApiResultOAuthApp**](RestApiResultOAuthApp.md)
 
 ### Authorization
 
@@ -216,9 +283,9 @@ Name | Type | Description  | Notes
 
 <a name="getOAuthClientSecret"></a>
 # **getOAuthClientSecret**
-> RestApiStringResult getOAuthClientSecret(clientId)
+> RestApiStringResult getOAuthClientSecret(oauthAppId, appId)
 
-Get OAuth client secret key
+Get OAuth App secret key
 
 ### Example
 ```javascript
@@ -231,7 +298,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new Flipdish.OAuthClientsApi();
 
-var clientId = "clientId_example"; // String | OAuth client identifier
+var oauthAppId = "oauthAppId_example"; // String | OAuth App identifier
+
+var appId = "appId_example"; // String | 
 
 
 var callback = function(error, data, response) {
@@ -241,14 +310,15 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getOAuthClientSecret(clientId, callback);
+apiInstance.getOAuthClientSecret(oauthAppId, appId, callback);
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **clientId** | **String**| OAuth client identifier | 
+ **oauthAppId** | **String**| OAuth App identifier | 
+ **appId** | **String**|  | 
 
 ### Return type
 
@@ -263,54 +333,11 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/json, application/xml, text/xml
 
-<a name="getOAuthClients"></a>
-# **getOAuthClients**
-> RestApiArrayResultOAuthClient getOAuthClients()
-
-Get all OAuth client
-
-### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
-
-// Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
-oauth2.accessToken = 'YOUR ACCESS TOKEN';
-
-var apiInstance = new Flipdish.OAuthClientsApi();
-
-var callback = function(error, data, response) {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-};
-apiInstance.getOAuthClients(callback);
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**RestApiArrayResultOAuthClient**](RestApiArrayResultOAuthClient.md)
-
-### Authorization
-
-[oauth2](../README.md#oauth2)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml
-
 <a name="getOauthAccessToken"></a>
 # **getOauthAccessToken**
-> RestApiStringResult getOauthAccessToken(oAuthClientId)
+> RestApiStringResult getOauthAccessToken(oauthAppId, appId)
 
-Get OAuth access token for client
+Get OAuth access token for App
 
 ### Example
 ```javascript
@@ -323,7 +350,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new Flipdish.OAuthClientsApi();
 
-var oAuthClientId = "oAuthClientId_example"; // String | OAuth client identifier
+var oauthAppId = "oauthAppId_example"; // String | OAuth App identifier
+
+var appId = "appId_example"; // String | 
 
 
 var callback = function(error, data, response) {
@@ -333,14 +362,15 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getOauthAccessToken(oAuthClientId, callback);
+apiInstance.getOauthAccessToken(oauthAppId, appId, callback);
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **oAuthClientId** | **String**| OAuth client identifier | 
+ **oauthAppId** | **String**| OAuth App identifier | 
+ **appId** | **String**|  | 
 
 ### Return type
 
@@ -357,9 +387,9 @@ Name | Type | Description  | Notes
 
 <a name="getRedirectUris"></a>
 # **getRedirectUris**
-> RestApiArrayResultOauthClientRedirectUri getRedirectUris(oAuthClientId)
+> RestApiArrayResultOauthClientRedirectUri getRedirectUris(oauthAppId, appId)
 
-Get OAuth client redirect uris
+Get OAuth App redirect uris
 
 ### Example
 ```javascript
@@ -372,7 +402,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new Flipdish.OAuthClientsApi();
 
-var oAuthClientId = "oAuthClientId_example"; // String | OAuth client identifier
+var oauthAppId = "oauthAppId_example"; // String | OAuth App identifier
+
+var appId = "appId_example"; // String | 
 
 
 var callback = function(error, data, response) {
@@ -382,14 +414,15 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getRedirectUris(oAuthClientId, callback);
+apiInstance.getRedirectUris(oauthAppId, appId, callback);
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **oAuthClientId** | **String**| OAuth client identifier | 
+ **oauthAppId** | **String**| OAuth App identifier | 
+ **appId** | **String**|  | 
 
 ### Return type
 
@@ -404,11 +437,11 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/json, application/xml, text/xml
 
-<a name="removeRedirectUri"></a>
-# **removeRedirectUri**
-> removeRedirectUri(oAuthClientId, uriId)
+<a name="oAuthClientsGetApplications"></a>
+# **oAuthClientsGetApplications**
+> Object oAuthClientsGetApplications(appId)
 
-Delete OAuth client redirect uri
+
 
 ### Example
 ```javascript
@@ -421,9 +454,60 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new Flipdish.OAuthClientsApi();
 
-var oAuthClientId = "oAuthClientId_example"; // String | OAuth client identifier
+var appId = "appId_example"; // String | 
+
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.oAuthClientsGetApplications(appId, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **appId** | **String**|  | 
+
+### Return type
+
+**Object**
+
+### Authorization
+
+[oauth2](../README.md#oauth2)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json, text/json, application/xml, text/xml
+
+<a name="removeRedirectUri"></a>
+# **removeRedirectUri**
+> removeRedirectUri(oauthAppId, uriId, appId)
+
+Delete OAuth App redirect uri
+
+### Example
+```javascript
+var Flipdish = require('@flipdish/api-client-javascript');
+var defaultClient = Flipdish.ApiClient.instance;
+
+// Configure OAuth2 access token for authorization: oauth2
+var oauth2 = defaultClient.authentications['oauth2'];
+oauth2.accessToken = 'YOUR ACCESS TOKEN';
+
+var apiInstance = new Flipdish.OAuthClientsApi();
+
+var oauthAppId = "oauthAppId_example"; // String | OAuth App identifier
 
 var uriId = 56; // Number | Redirect uri identifier
+
+var appId = "appId_example"; // String | 
 
 
 var callback = function(error, data, response) {
@@ -433,15 +517,16 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.removeRedirectUri(oAuthClientId, uriId, callback);
+apiInstance.removeRedirectUri(oauthAppId, uriId, appId, callback);
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **oAuthClientId** | **String**| OAuth client identifier | 
+ **oauthAppId** | **String**| OAuth App identifier | 
  **uriId** | **Number**| Redirect uri identifier | 
+ **appId** | **String**|  | 
 
 ### Return type
 
@@ -454,5 +539,60 @@ null (empty response body)
 ### HTTP request headers
 
  - **Content-Type**: Not defined
+ - **Accept**: application/json, text/json, application/xml, text/xml
+
+<a name="updateOAuthApp"></a>
+# **updateOAuthApp**
+> updateOAuthApp(oauthAppId, oAuthApp, appId)
+
+Update OAuth App
+
+### Example
+```javascript
+var Flipdish = require('@flipdish/api-client-javascript');
+var defaultClient = Flipdish.ApiClient.instance;
+
+// Configure OAuth2 access token for authorization: oauth2
+var oauth2 = defaultClient.authentications['oauth2'];
+oauth2.accessToken = 'YOUR ACCESS TOKEN';
+
+var apiInstance = new Flipdish.OAuthClientsApi();
+
+var oauthAppId = "oauthAppId_example"; // String | OAuth App identifier
+
+var oAuthApp = new Flipdish.OAuthApp(); // OAuthApp | OAuth App
+
+var appId = "appId_example"; // String | 
+
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully.');
+  }
+};
+apiInstance.updateOAuthApp(oauthAppId, oAuthApp, appId, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **oauthAppId** | **String**| OAuth App identifier | 
+ **oAuthApp** | [**OAuthApp**](OAuthApp.md)| OAuth App | 
+ **appId** | **String**|  | 
+
+### Return type
+
+null (empty response body)
+
+### Authorization
+
+[oauth2](../README.md#oauth2)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
  - **Accept**: application/json, text/json, application/xml, text/xml
 

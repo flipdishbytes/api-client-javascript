@@ -3,12 +3,13 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**eventName** | **String** | The event name | [optional] 
-**rating** | **Number** | New User Rating | [optional] 
-**description** | **String** | Description | [optional] 
-**order** | [**Order**](Order.md) | Order | [optional] 
-**flipdishEventId** | **String** | The identitfier of the event | [optional] 
-**createTime** | **Date** | The time of creation of the event | [optional] 
-**position** | **Number** | Position | [optional] 
+**EventName** | **String** | The event name | [optional] 
+**Rating** | **Number** | New User Rating | [optional] 
+**Description** | **String** | Description | [optional] 
+**Order** | [**Order**](Order.md) | Order | [optional] 
+**FlipdishEventId** | **String** | The identitfier of the event | [optional] 
+**CreateTime** | **Date** | The time of creation of the event | [optional] 
+**Position** | **Number** | Position | [optional] 
+**AppId** | **String** | App id | [optional] 
 
 

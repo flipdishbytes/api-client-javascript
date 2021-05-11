@@ -302,7 +302,7 @@ Name | Type | Description  | Notes
 
 <a name="updateMenuItemOptionSet"></a>
 # **updateMenuItemOptionSet**
-> updateMenuItemOptionSet(menuId, menuSectionItemId, menuSectionId, optionSetId, menuItemOptionSet)
+> updateMenuItemOptionSet(menuId, menuSectionId, menuSectionItemId, optionSetId, menuItemOptionSet)
 
 Update menu item option set
 
@@ -319,9 +319,9 @@ var apiInstance = new Flipdish.MenuOptionSetsApi();
 
 var menuId = 56; // Number | Menu identifier
 
-var menuSectionItemId = 56; // Number | Menu section item identifier
-
 var menuSectionId = 56; // Number | Menu section identifier
+
+var menuSectionItemId = 56; // Number | Menu section item identifier
 
 var optionSetId = 56; // Number | Option set identifier
 
@@ -335,7 +335,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.updateMenuItemOptionSet(menuId, menuSectionItemId, menuSectionId, optionSetId, menuItemOptionSet, callback);
+apiInstance.updateMenuItemOptionSet(menuId, menuSectionId, menuSectionItemId, optionSetId, menuItemOptionSet, callback);
 ```
 
 ### Parameters
@@ -343,8 +343,8 @@ apiInstance.updateMenuItemOptionSet(menuId, menuSectionItemId, menuSectionId, op
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **menuId** | **Number**| Menu identifier | 
- **menuSectionItemId** | **Number**| Menu section item identifier | 
  **menuSectionId** | **Number**| Menu section identifier | 
+ **menuSectionItemId** | **Number**| Menu section item identifier | 
  **optionSetId** | **Number**| Option set identifier | 
  **menuItemOptionSet** | [**MenuItemOptionSetBase**](MenuItemOptionSetBase.md)| Menu item option set (delta) | 
 
@@ -363,7 +363,7 @@ null (empty response body)
 
 <a name="uploadOptionSetImage"></a>
 # **uploadOptionSetImage**
-> RestApiStringResult uploadOptionSetImage(menuId, menuSectionId, menuSectionItemId, optionSetId, image)
+> RestApiStringResult uploadOptionSetImage(menuId, menuSectionId, menuSectionItemId, optionSetId, Image)
 
 Upload menu item option set image
 
@@ -386,7 +386,7 @@ var menuSectionItemId = 56; // Number | Menu section item identifier
 
 var optionSetId = 56; // Number | Option set identifier
 
-var image = "/path/to/file.txt"; // File | Option set image
+var Image = "/path/to/file.txt"; // File | Option set image
 
 
 var callback = function(error, data, response) {
@@ -396,7 +396,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.uploadOptionSetImage(menuId, menuSectionId, menuSectionItemId, optionSetId, image, callback);
+apiInstance.uploadOptionSetImage(menuId, menuSectionId, menuSectionItemId, optionSetId, Image, callback);
 ```
 
 ### Parameters
@@ -407,7 +407,7 @@ Name | Type | Description  | Notes
  **menuSectionId** | **Number**| Menu section identifier | 
  **menuSectionItemId** | **Number**| Menu section item identifier | 
  **optionSetId** | **Number**| Option set identifier | 
- **image** | **File**| Option set image | 
+ **Image** | **File**| Option set image | 
 
 ### Return type
 
