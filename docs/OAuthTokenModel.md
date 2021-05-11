@@ -3,10 +3,10 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**key** | **String** | Identitifier key | [optional] 
-**tokenType** | **String** | Token type | [optional] 
-**subjectId** | **String** | Oauth subject identifier | [optional] 
-**clientId** | **String** | Oauth client identifier | [optional] 
-**expiry** | **Date** | Token expiry | [optional] 
+**Key** | **String** | Identitifier key | [optional] 
+**TokenType** | **String** | Token type | [optional] 
+**SubjectId** | **String** | Oauth subject identifier | [optional] 
+**ClientId** | **String** | Oauth client identifier | [optional] 
+**Expiry** | **Date** | Token expiry | [optional] 
 
 

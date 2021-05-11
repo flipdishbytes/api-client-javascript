@@ -50,11 +50,11 @@ command above from.
 #### git
 #
 If the library is hosted at a git repository, e.g.
-https://github.com/YOUR_USERNAME/@flipdish/api-client-javascript
+https://github.com/flipdishbytes/api-client-javascript
 then install it via:
 
 ```shell
-    npm install YOUR_USERNAME/@flipdish/api-client-javascript --save
+    npm install flipdishbytes/api-client-javascript --save
 ```
 
 ### For browser
@@ -101,23 +101,21 @@ var defaultClient = Flipdish.ApiClient.instance;
 var oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = "YOUR ACCESS TOKEN"
 
-var api = new Flipdish.AuthorizationTokensApi()
+var api = new Flipdish.AccountsApi()
 
-var clientId = "clientId_example"; // {String} Client identifier
+var signupStepAction = "signupStepAction_example"; // {String} Signup step action
 
-var opts = { 
-  'page': 56, // {Number} Requested page number
-  'limit': 56 // {Number} Requested page limit
-};
+var answerId = 56; // {Number} Identifier of the answer
+
 
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
   } else {
-    console.log('API called successfully. Returned data: ' + data);
+    console.log('API called successfully.');
   }
 };
-api.getAuthorizationTokens(clientId, opts, callback);
+api.answerSignUpQuestion(signupStepAction, answerId, callback);
 
 ```
 
@@ -127,23 +125,135 @@ All URIs are relative to *https://api.flipdish.co*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*Flipdish.AuthorizationTokensApi* | [**getAuthorizationTokens**](docs/AuthorizationTokensApi.md#getAuthorizationTokens) | **GET** /api/v1.0/authorizationtokens/{clientId} | Get authorization tokens
-*Flipdish.AuthorizationTokensApi* | [**revokeToken**](docs/AuthorizationTokensApi.md#revokeToken) | **DELETE** /api/v1.0/authorizationtokens/{key} | Revoke token
-*Flipdish.EventsApi* | [**getCustomerEvents**](docs/EventsApi.md#getCustomerEvents) | **GET** /api/v1.0/events/customer/{customerId} | Get customer events
-*Flipdish.EventsApi* | [**getEvents**](docs/EventsApi.md#getEvents) | **GET** /api/v1.0/events | Get events
-*Flipdish.EventsApi* | [**getEventsById**](docs/EventsApi.md#getEventsById) | **GET** /api/v1.0/events/{eventId} | Get event by Id
-*Flipdish.EventsApi* | [**getMenuEvents**](docs/EventsApi.md#getMenuEvents) | **GET** /api/v1.0/events/menu/{menuId} | Get menu events
-*Flipdish.EventsApi* | [**getOrderEvents**](docs/EventsApi.md#getOrderEvents) | **GET** /api/v1.0/events/order/{orderId} | Get order events
-*Flipdish.EventsApi* | [**getOrderEventsByCustomer**](docs/EventsApi.md#getOrderEventsByCustomer) | **GET** /api/v1.0/events/order | Get order events by customer
-*Flipdish.EventsApi* | [**getStoreEvents**](docs/EventsApi.md#getStoreEvents) | **GET** /api/v1.0/events/store/{storeId} | Get store events
-*Flipdish.EventsApi* | [**getUserEvents**](docs/EventsApi.md#getUserEvents) | **GET** /api/v1.0/events/user/{userId} | Get user events
-*Flipdish.EventsApi* | [**getWhiteLabelEvents**](docs/EventsApi.md#getWhiteLabelEvents) | **GET** /api/v1.0/events/whitelabel/{whitelabelId} | Get WhiteLabel events
-*Flipdish.HttpRequestResponseLogsApi* | [**getHttpLogsByUserIdAsync**](docs/HttpRequestResponseLogsApi.md#getHttpLogsByUserIdAsync) | **GET** /api/v1.0/interactions/logs | Get API interaction logs
+*Flipdish.AccountsApi* | [**answerSignUpQuestion**](docs/AccountsApi.md#answerSignUpQuestion) | **POST** /api/v1.0/accounts/signupstep/{signupStepAction}/answer | Answer a signup question
+*Flipdish.AccountsApi* | [**changePassword**](docs/AccountsApi.md#changePassword) | **PUT** /api/v1.0/accounts/password | Change password
+*Flipdish.AccountsApi* | [**changePasswordWithPin**](docs/AccountsApi.md#changePasswordWithPin) | **PUT** /api/v1.0/accounts/password/pin | Change password
+*Flipdish.AccountsApi* | [**createAccount**](docs/AccountsApi.md#createAccount) | **POST** /api/v1.0/accounts | Create account with email address and store name
+*Flipdish.AccountsApi* | [**getAccountDetails**](docs/AccountsApi.md#getAccountDetails) | **GET** /api/v1.0/accounts | Gets the current account detail
+*Flipdish.AccountsApi* | [**getLocalisedTimeZones**](docs/AccountsApi.md#getLocalisedTimeZones) | **GET** /api/v1.0/accounts/timezones | [PRIVATE API] Get timezones localised to users language
+*Flipdish.AccountsApi* | [**login**](docs/AccountsApi.md#login) | **POST** /api/v1.0/accounts/login | Login with username and password
+*Flipdish.AccountsApi* | [**loginWithPin**](docs/AccountsApi.md#loginWithPin) | **POST** /api/v1.0/accounts/login/pin | Login with username and password
+*Flipdish.AccountsApi* | [**logout**](docs/AccountsApi.md#logout) | **POST** /api/v1.0/accounts/logout | Log out. It removes Flipdish authorization Cookie.
+*Flipdish.AccountsApi* | [**passwordResetWithToken**](docs/AccountsApi.md#passwordResetWithToken) | **POST** /api/v1.0/accounts/password | Reset password with token.
+*Flipdish.AccountsApi* | [**requestLoginPin**](docs/AccountsApi.md#requestLoginPin) | **POST** /api/v1.0/accounts/pin | Request login PIN. The server sends the PIN to the email address.
+*Flipdish.AccountsApi* | [**requestPasswordReset**](docs/AccountsApi.md#requestPasswordReset) | **POST** /api/v1.0/accounts/passwordreset | Request password reset. Flipdish system will send a token via email.
+*Flipdish.AccountsApi* | [**skipSignupStep**](docs/AccountsApi.md#skipSignupStep) | **POST** /api/v1.0/accounts/signupstep/{signupStepAction}/skip | Skip a signup question
+*Flipdish.AccountsApi* | [**updateAccount**](docs/AccountsApi.md#updateAccount) | **PUT** /api/v1.0/accounts | Update account with name and language
+*Flipdish.ApmApi* | [**getApmStatus**](docs/ApmApi.md#getApmStatus) | **GET** /api/v1.0/{appId}/apm/status | [PRIVATE API] Returns true if APM is enabled on at least one store in an application
+*Flipdish.ApmApi* | [**getBasicStatistics**](docs/ApmApi.md#getBasicStatistics) | **GET** /api/v1.0/{appId}/apm/statistics | [PRIVATE API] Get Basic Statistics
+*Flipdish.ApmApi* | [**getCalendarWeekStatistics**](docs/ApmApi.md#getCalendarWeekStatistics) | **GET** /api/v1.0/{appId}/apm/statistics/calendar | [PRIVATE API] Get Calendar statistics
+*Flipdish.ApmApi* | [**getCallsStatistics**](docs/ApmApi.md#getCallsStatistics) | **GET** /api/v1.0/{appId}/apm/statistics/calls/{aggregateDataBy} | [PRIVATE API] Get Calls Statistics
+*Flipdish.ApmApi* | [**getOrderStatistics**](docs/ApmApi.md#getOrderStatistics) | **GET** /api/v1.0/{appId}/apm/statistics/orders/{aggregateDataBy} | [PRIVATE API] Get Order Statistics (Value of Orders)
+*Flipdish.ApmApi* | [**getPaginatedCallList**](docs/ApmApi.md#getPaginatedCallList) | **GET** /api/v1.0/{appId}/apm/calls | [PRIVATE API] Get paginated APM call list
+*Flipdish.AppsApi* | [**getApp**](docs/AppsApi.md#getApp) | **GET** /api/v1.0/apps/{appId} | Get the application configuration
+*Flipdish.AppsApi* | [**getAppHostnameStatus**](docs/AppsApi.md#getAppHostnameStatus) | **GET** /api/v1.0/apps/{appId}/hostnamestatus | Get the application hostname DNS delegation states for A and CNAME records.
+*Flipdish.AppsApi* | [**getApps**](docs/AppsApi.md#getApps) | **GET** /api/v1.0/apps | Get Apps
+*Flipdish.AppsApi* | [**getCompliance**](docs/AppsApi.md#getCompliance) | **GET** /api/v1.0/apps/{appId}/compliance | Get the application compliance configuration
+*Flipdish.AppsApi* | [**getPanaceaVanityUrl**](docs/AppsApi.md#getPanaceaVanityUrl) | **GET** /api/v1.0/apps/{appId}/panacea/url | Get panacea vanity url. This sets the URL which the Panacea website is available at. ie. my.flipdish.com/[vanityurl]
+*Flipdish.AppsApi* | [**getSupportedCountries**](docs/AppsApi.md#getSupportedCountries) | **GET** /api/v1.0/apps/supportedcountries | Get all supported countries.
+*Flipdish.AppsApi* | [**isPanaceaVanityUrlAvailable**](docs/AppsApi.md#isPanaceaVanityUrlAvailable) | **GET** /api/v1.0/apps/{appId}/panacea/url/available | Is panacea vanity url available
+*Flipdish.AppsApi* | [**setAppConfig**](docs/AppsApi.md#setAppConfig) | **POST** /api/v1.0/apps/{appId}/config | Set the application configuration
+*Flipdish.AppsApi* | [**setAppHostname**](docs/AppsApi.md#setAppHostname) | **POST** /api/v1.0/apps/{appId}/hostname | Set the application hostname.
+*Flipdish.AppsApi* | [**setAppLanguages**](docs/AppsApi.md#setAppLanguages) | **POST** /api/v1.0/apps/{appId}/config/languages | Set the application languages
+*Flipdish.AppsApi* | [**setCompliance**](docs/AppsApi.md#setCompliance) | **POST** /api/v1.0/apps/{appId}/compliance | Set the application compliance configuration
+*Flipdish.AppsApi* | [**setPanaceaVanityUrl**](docs/AppsApi.md#setPanaceaVanityUrl) | **POST** /api/v1.0/apps/{appId}/panacea/url | Set panacea vanity url
+*Flipdish.AppsApi* | [**uploadAppLogo**](docs/AppsApi.md#uploadAppLogo) | **POST** /api/v1.0/apps/{appId}/logo | Set the application logo \\ icon
+*Flipdish.AuthorizationTokensApi* | [**getAuthorizationTokens**](docs/AuthorizationTokensApi.md#getAuthorizationTokens) | **GET** /api/v1.0/{appId}/authorizationtokens/{oauthAppId} | Get authorization tokens
+*Flipdish.AuthorizationTokensApi* | [**revokeToken**](docs/AuthorizationTokensApi.md#revokeToken) | **DELETE** /api/v1.0/{appId}/authorizationtokens/{key} | Revoke token
+*Flipdish.BankAccountApi* | [**attachBankAccountToStore**](docs/BankAccountApi.md#attachBankAccountToStore) | **POST** /api/v1.0/{appId}/bankaccounts/{bankAccountId}/store/{storeId} | [PRIVATE API] Attach Bank Account to Store
+*Flipdish.BankAccountApi* | [**createBankAccount**](docs/BankAccountApi.md#createBankAccount) | **POST** /api/v1.0/{appId}/bankaccounts | Create a new Bank Account and attach to this App
+*Flipdish.BankAccountApi* | [**deleteBankAccount**](docs/BankAccountApi.md#deleteBankAccount) | **DELETE** /api/v1.0/{appId}/bankaccounts/{bankAccountId} | Delete BankAccount
+*Flipdish.BankAccountApi* | [**getBankAccountById**](docs/BankAccountApi.md#getBankAccountById) | **GET** /api/v1.0/{appId}/bankaccounts/{bankAccountId} | Get BankAccount Detail by Id
+*Flipdish.BankAccountApi* | [**getBankAccounts**](docs/BankAccountApi.md#getBankAccounts) | **GET** /api/v1.0/{appId}/bankaccounts | Get List of BankAccounts for WL
+*Flipdish.BankAccountApi* | [**getCountriesWithFieldDefinitions**](docs/BankAccountApi.md#getCountriesWithFieldDefinitions) | **GET** /api/v1.0/{appId}/bankaccounts/countries-field-definitions | Get bank account fields definitions
+*Flipdish.BankAccountApi* | [**getFieldDefinitions**](docs/BankAccountApi.md#getFieldDefinitions) | **GET** /api/v1.0/{appId}/bankaccounts/field-definitions | Get bank account fields definitions
+*Flipdish.BankAccountApi* | [**updateBankAccount**](docs/BankAccountApi.md#updateBankAccount) | **POST** /api/v1.0/{appId}/bankaccounts/{bankAccountId} | Update BankAccount
+*Flipdish.BankAccountApi* | [**updateBankAccountState**](docs/BankAccountApi.md#updateBankAccountState) | **POST** /api/v1.0/{appId}/bankaccounts/{bankAccountId}/state/{state} | [PRIVATE API] Update State of Bank Account
+*Flipdish.CampaignsApi* | [**createLoyaltyCampaign**](docs/CampaignsApi.md#createLoyaltyCampaign) | **POST** /api/v1.0/{appId}/campaigns/loyalty | Creates loyalty campaign
+*Flipdish.CampaignsApi* | [**createRetentionCampaign**](docs/CampaignsApi.md#createRetentionCampaign) | **POST** /api/v1.0/{appId}/campaigns/retention | Creates retention campaign
+*Flipdish.CampaignsApi* | [**getLoyaltyCampaignsForApp**](docs/CampaignsApi.md#getLoyaltyCampaignsForApp) | **GET** /api/v1.0/{appId}/campaigns/loyalty | Gets loyalty campaigns for app
+*Flipdish.CampaignsApi* | [**getLoyaltyCampaignsForStore**](docs/CampaignsApi.md#getLoyaltyCampaignsForStore) | **GET** /api/v1.0/{appId}/campaigns/loyalty/{storeId} | Gets loyalty campaigns for store
+*Flipdish.CampaignsApi* | [**getRetentionCampaignsForApp**](docs/CampaignsApi.md#getRetentionCampaignsForApp) | **GET** /api/v1.0/{appId}/campaigns/retention | Gets retention campaigns for app
+*Flipdish.CampaignsApi* | [**getRetentionCampaignsForStore**](docs/CampaignsApi.md#getRetentionCampaignsForStore) | **GET** /api/v1.0/{appId}/campaigns/retention/{storeId} | Gets retention campaigns for store
+*Flipdish.CampaignsApi* | [**getStoreList**](docs/CampaignsApi.md#getStoreList) | **GET** /api/v1.0/{appId}/campaigns/stores | Gets list of stores for app
+*Flipdish.CampaignsApi* | [**removeCampaign**](docs/CampaignsApi.md#removeCampaign) | **DELETE** /api/v1.0/{appId}/campaigns/{campaignId} | Deletes a campaign
+*Flipdish.CampaignsApi* | [**updateLoyaltyCampaign**](docs/CampaignsApi.md#updateLoyaltyCampaign) | **POST** /api/v1.0/{appId}/campaigns/loyalty/{campaignId} | Updates loyalty campaign
+*Flipdish.CampaignsApi* | [**updateRetentionCampaign**](docs/CampaignsApi.md#updateRetentionCampaign) | **POST** /api/v1.0/{appId}/campaigns/retention/{campaignId} | Updates retention campaign
+*Flipdish.CardReadersApi* | [**authorizeStripeTerminal**](docs/CardReadersApi.md#authorizeStripeTerminal) | **POST** /api/v1.0/cardreaders/authorize/stripe | Get Authorization Key for Stripe Terminal
+*Flipdish.CardReadersApi* | [**authorizeStripeTerminal_0**](docs/CardReadersApi.md#authorizeStripeTerminal_0) | **POST** /api/v1.0/{appId}/stripeterminal/authorize | Get Authorization Key for Stripe Terminal
+*Flipdish.CardReadersApi* | [**getBluetoothTerminalStatus**](docs/CardReadersApi.md#getBluetoothTerminalStatus) | **POST** /api/v1.0/{appId}/cardreaders/kiosk/{deviceId}/bluetooth/status | Get the status of the bluetooth terminal
+*Flipdish.CardReadersApi* | [**initiateBluetoothTerminalDeviceUpdateCheck**](docs/CardReadersApi.md#initiateBluetoothTerminalDeviceUpdateCheck) | **POST** /api/v1.0/{appId}/cardreaders/kiosk/{deviceId}/bluetooth/{terminalType}/checkForUpdate | Trigger check for Bluetooth device update on Kiosk
+*Flipdish.CardReadersApi* | [**initiateKioskBluetoothPairingMode**](docs/CardReadersApi.md#initiateKioskBluetoothPairingMode) | **POST** /api/v1.0/{appId}/cardreaders/kiosk/{deviceId}/bluetooth/{terminalType}/pair | Initiate stripe terminal pairing mode
+*Flipdish.CardReadersApi* | [**initiateKioskUpdateInstallForBluetoothTerminal**](docs/CardReadersApi.md#initiateKioskUpdateInstallForBluetoothTerminal) | **POST** /api/v1.0/{appId}/cardreaders/kiosk/{deviceId}/bluetooth/{terminalType}/installUpdate | 
+*Flipdish.CardReadersApi* | [**unpairCurrentlyPairedBluetoothDevice**](docs/CardReadersApi.md#unpairCurrentlyPairedBluetoothDevice) | **DELETE** /api/v1.0/{appId}/cardreaders/kiosk/{deviceId}/bluetooth/unpair | Unpair the currently paired stripe terminal
+*Flipdish.ContentSecurityPolicyApi* | [**contentSecurityPolicyReport**](docs/ContentSecurityPolicyApi.md#contentSecurityPolicyReport) | **POST** /api/v1.0/csp/report | 
+*Flipdish.CustomersApi* | [**getCustomerById**](docs/CustomersApi.md#getCustomerById) | **GET** /api/v1.0/{appId}/customers/{customerId} | Get customer of an app by Id
+*Flipdish.CustomersApi* | [**updateCustomerById**](docs/CustomersApi.md#updateCustomerById) | **POST** /api/v1.0/{appId}/customers/{customerId} | Update customer of an app by Id
+*Flipdish.DeliveryTrackingApi* | [**assignDriverToOrder**](docs/DeliveryTrackingApi.md#assignDriverToOrder) | **POST** /api/v1.0/{appId}/drivers/{driverId}/orders/{orderId} | [PRIVATE] Assign driver to order
+*Flipdish.DeliveryTrackingApi* | [**assignDriverToOrders**](docs/DeliveryTrackingApi.md#assignDriverToOrders) | **POST** /api/v1.0/{appId}/drivers/{driverId}/orders | Assign driver to multiple orders
+*Flipdish.DeliveryTrackingApi* | [**getDrivers**](docs/DeliveryTrackingApi.md#getDrivers) | **GET** /api/v1.0/{appId}/drivers | [PRIVATE] Get drivers by App
+*Flipdish.DeliveryTrackingApi* | [**inviteDriverToApp**](docs/DeliveryTrackingApi.md#inviteDriverToApp) | **POST** /api/v1.0/{appId}/drivers | [PRIVATE] Invite driver
+*Flipdish.DeliveryTrackingApi* | [**removeDriverFromApp**](docs/DeliveryTrackingApi.md#removeDriverFromApp) | **DELETE** /api/v1.0/{appId}/drivers/{driverId} | [PRIVATE] Unassign driver from app
+*Flipdish.DeliveryTrackingApi* | [**unassignDriverFromOrder**](docs/DeliveryTrackingApi.md#unassignDriverFromOrder) | **DELETE** /api/v1.0/{appId}/orders/{orderId}/driver | [PRIVATE] Unassign driver from order
+*Flipdish.DeliveryZoneApi* | [**addDeliveryZone**](docs/DeliveryZoneApi.md#addDeliveryZone) | **POST** /api/v1.0/stores/{storeId}/deliveryzones | Adds a delivery zone to the store id
+*Flipdish.DeliveryZoneApi* | [**getDeliveryZones**](docs/DeliveryZoneApi.md#getDeliveryZones) | **GET** /api/v1.0/stores/{storeId}/deliveryzones | Get all the delivery zones associated with a store
+*Flipdish.DeliveryZoneApi* | [**removeDeliveryZone**](docs/DeliveryZoneApi.md#removeDeliveryZone) | **DELETE** /api/v1.0/stores/{storeId}/deliveryzones/{deliveryZoneId} | Removes the existing delivery zone
+*Flipdish.DeliveryZoneApi* | [**updateDeliveryZone**](docs/DeliveryZoneApi.md#updateDeliveryZone) | **POST** /api/v1.0/stores/{storeId}/deliveryzones/{deliveryZoneId} | Updates the existing delivery zone
+*Flipdish.DriversApi* | [**addDriverNotificationToken**](docs/DriversApi.md#addDriverNotificationToken) | **POST** /api/v1.0/drivers/token | Add driver token
+*Flipdish.DriversApi* | [**deleteDriverProfileImage**](docs/DriversApi.md#deleteDriverProfileImage) | **DELETE** /api/v1.0/drivers/profile/image | Delete driver profile image
+*Flipdish.DriversApi* | [**driverLogin**](docs/DriversApi.md#driverLogin) | **POST** /api/v1.0/drivers/login | [PRIVATE] Login with phone number and pin
+*Flipdish.DriversApi* | [**driverRequestLoginCodeSms**](docs/DriversApi.md#driverRequestLoginCodeSms) | **POST** /api/v1.0/drivers/pin | [PRIVATE] Request an SMS to be sent to the driver with their login code
+*Flipdish.DriversApi* | [**getDriverProfile**](docs/DriversApi.md#getDriverProfile) | **GET** /api/v1.0/drivers/profile | Get driver profile
+*Flipdish.DriversApi* | [**getStoresForDriver**](docs/DriversApi.md#getStoresForDriver) | **GET** /api/v1.0/drivers/assignedstores | Get stores for driver
+*Flipdish.DriversApi* | [**removeDriverNotificationToken**](docs/DriversApi.md#removeDriverNotificationToken) | **DELETE** /api/v1.0/drivers/token | Delete driver token
+*Flipdish.DriversApi* | [**setDriverPresenceForStore**](docs/DriversApi.md#setDriverPresenceForStore) | **POST** /api/v1.0/drivers/stores/{storeId}/presence/{presence} | 
+*Flipdish.DriversApi* | [**setDriverProfileImage**](docs/DriversApi.md#setDriverProfileImage) | **POST** /api/v1.0/drivers/profile/image | Set driver profile image and returns it's url
+*Flipdish.DriversApi* | [**updateDeliveryTrackingStatus**](docs/DriversApi.md#updateDeliveryTrackingStatus) | **POST** /api/v1.0/orders/{orderId}/tracking/{deliveryTrackingStatus} | Change delivery tracking status and return the updated status.
+*Flipdish.DriversApi* | [**updateDriverProfile**](docs/DriversApi.md#updateDriverProfile) | **POST** /api/v1.0/drivers/profile | Update driver profile
+*Flipdish.EventsApi* | [**getCustomerEvents**](docs/EventsApi.md#getCustomerEvents) | **GET** /api/v1.0/events/customer/{customerId} | Get customer events  For technical reasons, the number of records returned is limited to 100.
+*Flipdish.EventsApi* | [**getEvents**](docs/EventsApi.md#getEvents) | **GET** /api/v1.0/events | Get events  For technical reasons, the number of records returned is limited to 100.
+*Flipdish.EventsApi* | [**getEventsById**](docs/EventsApi.md#getEventsById) | **GET** /api/v1.0/events/{eventId} | Get event by Id  For technical reasons, the number of records returned is limited to 100.
+*Flipdish.EventsApi* | [**getMenuEvents**](docs/EventsApi.md#getMenuEvents) | **GET** /api/v1.0/events/menu/{menuId} | Get menu events  For technical reasons, the number of records returned is limited to 100.
+*Flipdish.EventsApi* | [**getOrderEvents**](docs/EventsApi.md#getOrderEvents) | **GET** /api/v1.0/events/order/{orderId} | Get order events  For technical reasons, the number of records returned is limited to 100.
+*Flipdish.EventsApi* | [**getOrderEventsByCustomer**](docs/EventsApi.md#getOrderEventsByCustomer) | **GET** /api/v1.0/events/order | Get order events by customer  For technical reasons, the number of records returned is limited to 100.
+*Flipdish.EventsApi* | [**getStoreEvents**](docs/EventsApi.md#getStoreEvents) | **GET** /api/v1.0/events/store/{storeId} | Get store events  For technical reasons, the number of records returned is limited to 100.
+*Flipdish.EventsApi* | [**getUserEvents**](docs/EventsApi.md#getUserEvents) | **GET** /api/v1.0/events/user/{userId} | Get user events  For technical reasons, the number of records returned is limited to 100.
+*Flipdish.EventsApi* | [**getWhiteLabelEvents**](docs/EventsApi.md#getWhiteLabelEvents) | **GET** /api/v1.0/events/whitelabel/{whitelabelId} | Get WhiteLabel events  For technical reasons, the number of records returned is limited to 100.
+*Flipdish.FilesApi* | [**downloadFile**](docs/FilesApi.md#downloadFile) | **GET** /api/v1.0/{appId}/files/download/{fileId} | Get file from storage
+*Flipdish.HeartbeatApi* | [**headHostname**](docs/HeartbeatApi.md#headHostname) | **HEAD** /api/v1.0/heartbeat/Hostname | 
+*Flipdish.HeartbeatApi* | [**headPing**](docs/HeartbeatApi.md#headPing) | **HEAD** /api/v1.0/heartbeat | 
+*Flipdish.HeartbeatApi* | [**hostname**](docs/HeartbeatApi.md#hostname) | **GET** /api/v1.0/heartbeat/Hostname | 
+*Flipdish.HeartbeatApi* | [**ping**](docs/HeartbeatApi.md#ping) | **GET** /api/v1.0/heartbeat | 
+*Flipdish.HomeApi* | [**completeHomeAction**](docs/HomeApi.md#completeHomeAction) | **POST** /api/v1.0/{appId}/home/{homeActionId} | [PRIVATE API] Complete Home Action
+*Flipdish.HomeApi* | [**dismissOldPortalAction**](docs/HomeApi.md#dismissOldPortalAction) | **POST** /api/v1.0/home/dismissoldportalaction | [PRIVATE API] Complete Home Action
+*Flipdish.HomeApi* | [**getHomeActions**](docs/HomeApi.md#getHomeActions) | **GET** /api/v1.0/{appId}/home | [PRIVATE API] Get Home Actions
+*Flipdish.HomeApi* | [**getHomeStatistics**](docs/HomeApi.md#getHomeStatistics) | **GET** /api/v1.0/{appId}/home/stats | [PRIVATE API] Get Home Statistics
+*Flipdish.HttpRequestResponseLogsApi* | [**getLogs**](docs/HttpRequestResponseLogsApi.md#getLogs) | **GET** /api/v1.0/{appId}/interactions/logs | Get API interaction logs
+*Flipdish.HydraApi* | [**assignEmv**](docs/HydraApi.md#assignEmv) | **POST** /api/v1.0/{appId}/hydra/emvterminal/assign/{hydraConfigId}/{emvTerminalId} | Assign an EMV terminal to a kiosk
+*Flipdish.HydraApi* | [**attachStoreToTerminal**](docs/HydraApi.md#attachStoreToTerminal) | **POST** /api/v1.0/{appId}/hydra/{deviceId}/attach/{storeId} | [Private]
+*Flipdish.HydraApi* | [**cancelEmvPayment**](docs/HydraApi.md#cancelEmvPayment) | **POST** /api/v1.0/{appId}/hydra/cancelemvpayment/{orderId} | 
+*Flipdish.HydraApi* | [**detachStoreFromTerminal**](docs/HydraApi.md#detachStoreFromTerminal) | **POST** /api/v1.0/{appId}/hydra/{deviceId}/detach/{storeId} | [Private]
+*Flipdish.HydraApi* | [**getAttachedDevices**](docs/HydraApi.md#getAttachedDevices) | **GET** /api/v1.0/{appId}/hydra/{deviceType}/list | [Private]
+*Flipdish.HydraApi* | [**getEMVTerminalDetails**](docs/HydraApi.md#getEMVTerminalDetails) | **GET** /api/v1.0/{appId}/hydra/emvterminal | [Private]
+*Flipdish.HydraApi* | [**getEmvOrderState**](docs/HydraApi.md#getEmvOrderState) | **GET** /api/v1.0/{appId}/hydra/emvorderstate/{orderId} | [Private]
+*Flipdish.HydraApi* | [**getRegistration**](docs/HydraApi.md#getRegistration) | **GET** /api/v1.0/hydra/registration | 
+*Flipdish.HydraApi* | [**getSettings**](docs/HydraApi.md#getSettings) | **GET** /api/v1.0/hydra/settings | [Private]
+*Flipdish.HydraApi* | [**hydraCreateEmv**](docs/HydraApi.md#hydraCreateEmv) | **POST** /api/v1.0/{appId}/emvterminals | [Private]
+*Flipdish.HydraApi* | [**hydraDeleteEmv**](docs/HydraApi.md#hydraDeleteEmv) | **DELETE** /api/v1.0/{appId}/emvterminals/{id} | [Private]
+*Flipdish.HydraApi* | [**hydraGetEmvsForAppId**](docs/HydraApi.md#hydraGetEmvsForAppId) | **GET** /api/v1.0/{appId}/emvterminals | List EMV terminals belonging to the given AppNameId
+*Flipdish.HydraApi* | [**loginWithDeviceId**](docs/HydraApi.md#loginWithDeviceId) | **POST** /api/v1.0/hydra/{deviceId}/login | [Private]
+*Flipdish.HydraApi* | [**register**](docs/HydraApi.md#register) | **POST** /api/v1.0/{appId}/hydra/registration | [Private]
+*Flipdish.HydraApi* | [**unAssign**](docs/HydraApi.md#unAssign) | **DELETE** /api/v1.0/{appId}/hydra/{deviceId}/registration | [Private]
+*Flipdish.HydraApi* | [**unassignEmv**](docs/HydraApi.md#unassignEmv) | **POST** /api/v1.0/{appId}/hydra/emvterminal/unassign/{hydraConfigId} | Unassign the currently assigned EMV terminal from a kiosk
+*Flipdish.LightspeedApi* | [**lightspeedGenerateMenu**](docs/LightspeedApi.md#lightspeedGenerateMenu) | **POST** /api/v1.0/lightspeed/{storeId}/menu/generate | 
+*Flipdish.LightspeedApi* | [**lightspeedGetStoreSettings**](docs/LightspeedApi.md#lightspeedGetStoreSettings) | **GET** /api/v1.0/lightspeed/{storeId}/settings | 
+*Flipdish.LightspeedApi* | [**lightspeedSaveStoreSettings**](docs/LightspeedApi.md#lightspeedSaveStoreSettings) | **POST** /api/v1.0/lightspeed/{storeId}/settings | 
 *Flipdish.MenuOptionSetItemsApi* | [**addMenuItemOptionSetItem**](docs/MenuOptionSetItemsApi.md#addMenuItemOptionSetItem) | **POST** /api/v1.0/menus/{menuId}/sections/{menuSectionId}/sectionitems/{menuSectionItemId}/optionsets/{optionSetId}/optionsetitems | Create menu item option set item
 *Flipdish.MenuOptionSetItemsApi* | [**deleteOptionSetItemImage**](docs/MenuOptionSetItemsApi.md#deleteOptionSetItemImage) | **DELETE** /api/v1.0/menus/{menuId}/sections/{menuSectionId}/sectionitems/{menuSectionItemId}/optionsets/{optionSetId}/optionsetitems/{menuItemOptionSetItemId}/image | Delete menu item option set item image
 *Flipdish.MenuOptionSetItemsApi* | [**getMenuItemOptionSetItemById**](docs/MenuOptionSetItemsApi.md#getMenuItemOptionSetItemById) | **GET** /api/v1.0/menus/{menuId}/sections/{menuSectionId}/sectionitems/{menuSectionItemId}/optionsets/{optionSetId}/optionsetitems/{menuItemOptionSetItemId} | Get menu item option set item by identifier
 *Flipdish.MenuOptionSetItemsApi* | [**getMenuItemOptionSetItems**](docs/MenuOptionSetItemsApi.md#getMenuItemOptionSetItems) | **GET** /api/v1.0/menus/{menuId}/sections/{menuSectionId}/sectionitems/{menuSectionItemId}/optionsets/{optionSetId}/optionsetitems | Get menu item option set items
 *Flipdish.MenuOptionSetItemsApi* | [**removeMenuItemOptionSetItem**](docs/MenuOptionSetItemsApi.md#removeMenuItemOptionSetItem) | **DELETE** /api/v1.0/menus/{menuId}/sections/{menuSectionId}/sectionitems/{menuSectionItemId}/optionsets/{optionSetId}/optionsetitems/{menuItemOptionSetItemId} | Delete menu item option set item
+*Flipdish.MenuOptionSetItemsApi* | [**setOptionSetItemTax**](docs/MenuOptionSetItemsApi.md#setOptionSetItemTax) | **POST** /api/v1.0/menus/{menuId}/sections/{menuSectionId}/sectionitems/{menuSectionItemId}/optionsets/{optionSetId}/optionsetitems/{menuItemOptionSetItemId}/taxrate/{taxRateId} | [Private API] Set Tax Rate on OptionSetItem
 *Flipdish.MenuOptionSetItemsApi* | [**updateMenuItemOptionSetItem**](docs/MenuOptionSetItemsApi.md#updateMenuItemOptionSetItem) | **POST** /api/v1.0/menus/{menuId}/sections/{menuSectionId}/sectionitems/{menuSectionItemId}/optionsets/{optionSetId}/optionsetitems/{menuItemOptionSetItemId} | Update menu item option set item
 *Flipdish.MenuOptionSetItemsApi* | [**uploadOptionSetItemImage**](docs/MenuOptionSetItemsApi.md#uploadOptionSetItemImage) | **POST** /api/v1.0/menus/{menuId}/sections/{menuSectionId}/sectionitems/{menuSectionItemId}/optionsets/{optionSetId}/optionsetitems/{menuItemOptionSetItemId}/image | Upload menu item option set item image
 *Flipdish.MenuOptionSetsApi* | [**createMenuItemOptionSet**](docs/MenuOptionSetsApi.md#createMenuItemOptionSet) | **POST** /api/v1.0/menus/{menuId}/sections/{menuSectionId}/sectionitems/{menuSectionItemId}/optionsets | Create menu item option set
@@ -153,162 +263,613 @@ Class | Method | HTTP request | Description
 *Flipdish.MenuOptionSetsApi* | [**getMenuItemOptionSets**](docs/MenuOptionSetsApi.md#getMenuItemOptionSets) | **GET** /api/v1.0/menus/{menuId}/sections/{menuSectionId}/sectionitems/{menuSectionItemId}/optionsets | Get menu item option sets
 *Flipdish.MenuOptionSetsApi* | [**updateMenuItemOptionSet**](docs/MenuOptionSetsApi.md#updateMenuItemOptionSet) | **POST** /api/v1.0/menus/{menuId}/sections/{menuSectionId}/sectionitems/{menuSectionItemId}/optionsets/{optionSetId} | Update menu item option set
 *Flipdish.MenuOptionSetsApi* | [**uploadOptionSetImage**](docs/MenuOptionSetsApi.md#uploadOptionSetImage) | **POST** /api/v1.0/menus/{menuId}/sections/{menuSectionId}/sectionitems/{menuSectionItemId}/optionsets/{optionSetId}/image | Upload menu item option set image
+*Flipdish.MenuSectionItemsApi* | [**cloneMenuSectionItem**](docs/MenuSectionItemsApi.md#cloneMenuSectionItem) | **POST** /api/v1.0/menus/{menuId}/sections/{menuSectionId}/sectionitems/{menuSectionItemId}/clone | Clone menu section item
 *Flipdish.MenuSectionItemsApi* | [**createMenuSectionItem**](docs/MenuSectionItemsApi.md#createMenuSectionItem) | **POST** /api/v1.0/menus/{menuId}/sections/{menuSectionId}/sectionitems | Create menu section item
 *Flipdish.MenuSectionItemsApi* | [**deleteMenuSectionItem**](docs/MenuSectionItemsApi.md#deleteMenuSectionItem) | **DELETE** /api/v1.0/menus/{menuId}/sections/{menuSectionId}/sectionitems/{menuSectionItemId} | Delete menu section item
 *Flipdish.MenuSectionItemsApi* | [**deleteMenuSectionItemImage**](docs/MenuSectionItemsApi.md#deleteMenuSectionItemImage) | **DELETE** /api/v1.0/menus/{menuId}/sections/{menuSectionId}/sectionitems/{menuSectionItemId}/image | Delete menu section item image
 *Flipdish.MenuSectionItemsApi* | [**getMenuItemById**](docs/MenuSectionItemsApi.md#getMenuItemById) | **GET** /api/v1.0/menus/{menuId}/sections/{menuSectionId}/sectionitems/{menuSectionItemId} | Get menu item by identifier
 *Flipdish.MenuSectionItemsApi* | [**getMenuItems**](docs/MenuSectionItemsApi.md#getMenuItems) | **GET** /api/v1.0/menus/{menuId}/sections/{menuSectionId}/sectionitems | Get menu items
+*Flipdish.MenuSectionItemsApi* | [**moveMenuItem**](docs/MenuSectionItemsApi.md#moveMenuItem) | **POST** /api/v1.0/menus/{menuId}/sections/{menuSectionId}/sectionitems/{menuSectionItemId}/setorder/{destinationDisplayOrder} | [PRIVATE API]Move an Item within a menu
+*Flipdish.MenuSectionItemsApi* | [**setSectionItemTax**](docs/MenuSectionItemsApi.md#setSectionItemTax) | **POST** /api/v1.0/menus/{menuId}/sections/{menuSectionId}/sectionitems/{menuSectionItemId}/taxrate/{taxRateId} | [PRIVATE API]Move an Item within a menu
 *Flipdish.MenuSectionItemsApi* | [**updateMenuSectionItem**](docs/MenuSectionItemsApi.md#updateMenuSectionItem) | **POST** /api/v1.0/menus/{menuId}/sections/{menuSectionId}/sectionitems/{menuSectionItemId} | Update menu section item
 *Flipdish.MenuSectionItemsApi* | [**uploadMenuSectionItemImage**](docs/MenuSectionItemsApi.md#uploadMenuSectionItemImage) | **POST** /api/v1.0/menus/{menuId}/sections/{menuSectionId}/sectionitems/{menuSectionItemId}/image | Upload menu section item image
+*Flipdish.MenuSectionsApi* | [**cloneMenuSection**](docs/MenuSectionsApi.md#cloneMenuSection) | **POST** /api/v1.0/menus/{menuId}/sections/{menuSectionId}/clone | Clone menu section
+*Flipdish.MenuSectionsApi* | [**createMenuAvailabilityForDay**](docs/MenuSectionsApi.md#createMenuAvailabilityForDay) | **POST** /api/v1.0/menus/{menuId}/sections/{menuSectionId}/availability/times/{dayOfWeek} | Set/update menu section availability hours.
 *Flipdish.MenuSectionsApi* | [**createMenuSection**](docs/MenuSectionsApi.md#createMenuSection) | **POST** /api/v1.0/menus/{menuId}/sections | Create menu section
+*Flipdish.MenuSectionsApi* | [**createMenuSectionAvailability**](docs/MenuSectionsApi.md#createMenuSectionAvailability) | **POST** /api/v1.0/menus/{menuId}/sections/{menuSectionId}/availability | Create menu availability type
 *Flipdish.MenuSectionsApi* | [**deleteMenuSection**](docs/MenuSectionsApi.md#deleteMenuSection) | **DELETE** /api/v1.0/menus/{menuId}/sections/{menuSectionId} | Delete menu section
 *Flipdish.MenuSectionsApi* | [**deleteMenuSectionImage**](docs/MenuSectionsApi.md#deleteMenuSectionImage) | **DELETE** /api/v1.0/menus/{menuId}/sections/{menuSectionId}/image | Delete menu section image
 *Flipdish.MenuSectionsApi* | [**getMenuSectionById**](docs/MenuSectionsApi.md#getMenuSectionById) | **GET** /api/v1.0/menus/{menuId}/sections/{menuSectionId} | Get menu section by identifier
 *Flipdish.MenuSectionsApi* | [**getMenuSections**](docs/MenuSectionsApi.md#getMenuSections) | **GET** /api/v1.0/menus/{menuId}/sections | Get menu sections
+*Flipdish.MenuSectionsApi* | [**menuSectionsSetItemDisplayOrders**](docs/MenuSectionsApi.md#menuSectionsSetItemDisplayOrders) | **POST** /api/v1.0/menus/{menuId}/sections/{menuSectionId}/sectionitemdisplayorders | Re-arrange Items within a Section
 *Flipdish.MenuSectionsApi* | [**updateMenuSection**](docs/MenuSectionsApi.md#updateMenuSection) | **POST** /api/v1.0/menus/{menuId}/sections/{menuSectionId} | Update menu section
 *Flipdish.MenuSectionsApi* | [**uploadMenuSectionImage**](docs/MenuSectionsApi.md#uploadMenuSectionImage) | **POST** /api/v1.0/menus/{menuId}/sections/{menuSectionId}/image | Upload menu section image
-*Flipdish.MenusApi* | [**deleteMenuItemMetadata**](docs/MenusApi.md#deleteMenuItemMetadata) | **GET** /api/v1.0/menus/{menuId}/menuitem/{menuItemId}/metadata/{key}/store/{storeId} | Get a menu item metadata by key
-*Flipdish.MenusApi* | [**deleteMenuItemMetadata_0**](docs/MenusApi.md#deleteMenuItemMetadata_0) | **DELETE** /api/v1.0/menus/{menuId}/menuitem/{menuItemId}/metadata/{key}/store/{storeId} | Update a menu items metadata
-*Flipdish.MenusApi* | [**deleteMenuSectionImage**](docs/MenusApi.md#deleteMenuSectionImage) | **DELETE** /api/v1.0/menus/{menuId}/image | Delete menu image
+*Flipdish.MenusApi* | [**createDraftMenuFromExistingMenu**](docs/MenusApi.md#createDraftMenuFromExistingMenu) | **POST** /api/v1.0/menus/{menuId}/clone/{newName} | [PRIVATE API]Clone a menu, (without attaching stores)
+*Flipdish.MenusApi* | [**createNewMenuForApp**](docs/MenusApi.md#createNewMenuForApp) | **POST** /api/v1.0/{appId}/menus | Create a new menu. If request body is empty, the system will create a menu with default items.
+*Flipdish.MenusApi* | [**deleteMenu**](docs/MenusApi.md#deleteMenu) | **DELETE** /api/v1.0/menus/{menuId} | [PRIVATE API]Mark a Menu as Deleted
+*Flipdish.MenusApi* | [**deleteMenuImage**](docs/MenusApi.md#deleteMenuImage) | **DELETE** /api/v1.0/menus/{menuId}/image | Delete menu image
+*Flipdish.MenusApi* | [**deleteMenuItemMetadata**](docs/MenusApi.md#deleteMenuItemMetadata) | **DELETE** /api/v1.0/menus/{menuId}/menuitem/{menuItemId}/metadata/{key}/store/{storeId} | Delete menu item metadata
+*Flipdish.MenusApi* | [**getAllMenuMetadataByMenuIdAndStoreId**](docs/MenusApi.md#getAllMenuMetadataByMenuIdAndStoreId) | **GET** /api/v1.0/menus/{menuId}/metadata/store/{storeId} | Get all menu metadata by menu ID and store ID
 *Flipdish.MenusApi* | [**getMenuById**](docs/MenusApi.md#getMenuById) | **GET** /api/v1.0/menus/{menuId} | Get menu by identifier
-*Flipdish.MenusApi* | [**getMenuItemMetadata**](docs/MenusApi.md#getMenuItemMetadata) | **GET** /api/v1.0/menus/{menuId}/menuitem/{menuItemId}/metadata/store/{storeId} | Get a menu items metadata
-*Flipdish.MenusApi* | [**getMenuItemOptionSetItemMetadata**](docs/MenusApi.md#getMenuItemOptionSetItemMetadata) | **GET** /api/v1.0/menus/{menuId}/optionsetitem/{optionSetItemId}/metadata/store/{storeId} | Get a menu item option set item metadata by key
-*Flipdish.MenusApi* | [**setMenuItemMetadata**](docs/MenusApi.md#setMenuItemMetadata) | **PUT** /api/v1.0/menus/{menuId}/menuitem/{menuItemId}/metadata/store/{storeId} | Update a menu items metadata
-*Flipdish.MenusApi* | [**setMenuItemOptionSetItemMetadata**](docs/MenusApi.md#setMenuItemOptionSetItemMetadata) | **PUT** /api/v1.0/menus/{menuId}/optionsetitem/{optionSetItemId}/metadata/store/{storeId} | Update a menu item option set items metadata
+*Flipdish.MenusApi* | [**getMenuItemMetadata**](docs/MenusApi.md#getMenuItemMetadata) | **GET** /api/v1.0/menus/{menuId}/menuitem/{menuItemId}/metadata/store/{storeId} | Get menu item metadata
+*Flipdish.MenusApi* | [**getMenuItemMetadataByKey**](docs/MenusApi.md#getMenuItemMetadataByKey) | **GET** /api/v1.0/menus/{menuId}/menuitem/{menuItemId}/metadata/{key}/store/{storeId} | Get menu item metadata by key
+*Flipdish.MenusApi* | [**getMenuItemOptionSetItemMetadata**](docs/MenusApi.md#getMenuItemOptionSetItemMetadata) | **GET** /api/v1.0/menus/{menuId}/optionsetitem/{optionSetItemId}/metadata/store/{storeId} | Get menu item option set item metadata by key
+*Flipdish.MenusApi* | [**getMenuStoreNames**](docs/MenusApi.md#getMenuStoreNames) | **GET** /api/v1.0/menus/{menuId}/stores | [PRIVATE API]Get menus store names
+*Flipdish.MenusApi* | [**getMenuTaxDetails**](docs/MenusApi.md#getMenuTaxDetails) | **GET** /api/v1.0/menus/{menuId}/tax | [PRIVATE API]Get menus tax details
+*Flipdish.MenusApi* | [**getMenusByAppId**](docs/MenusApi.md#getMenusByAppId) | **GET** /api/v1.0/{appId}/menus | [PRIVATE API]Get menus by appId
+*Flipdish.MenusApi* | [**getMenusCheckpoints**](docs/MenusApi.md#getMenusCheckpoints) | **GET** /api/v1.0/menus/{menuId}/checkpoints | [PRIVATE API]Get a Menus Checkpoints
+*Flipdish.MenusApi* | [**menusDeleteTaxRate**](docs/MenusApi.md#menusDeleteTaxRate) | **DELETE** /api/v1.0/menus/{menuId}/tax/{taxId} | [PRIVATE API]Remove a Menus Tax Rate, can only remove a tax rate that does not have items/optionSetItems attached
+*Flipdish.MenusApi* | [**menusSetDisplayOnMenuTax**](docs/MenusApi.md#menusSetDisplayOnMenuTax) | **POST** /api/v1.0/menus/{menuId}/tax/show/{show} | [PRIVATE API]Set if tax shows for a Menu
+*Flipdish.MenusApi* | [**menusSetItemDisplayOrders**](docs/MenusApi.md#menusSetItemDisplayOrders) | **POST** /api/v1.0/menus/{menuId}/sectiondisplayorders | [PRIVATE API]Re-arrange Sections within a Menu
+*Flipdish.MenusApi* | [**menusShowHideBulkItems**](docs/MenusApi.md#menusShowHideBulkItems) | **POST** /api/v1.0/menus/{menuId}/bulkshowhide | 
+*Flipdish.MenusApi* | [**menusUpdateTaxType**](docs/MenusApi.md#menusUpdateTaxType) | **POST** /api/v1.0/menus/{menuId}/tax/type/{type} | [PRIVATE API]Set the type of Tax on a Menu
+*Flipdish.MenusApi* | [**menusUpsertTaxRate**](docs/MenusApi.md#menusUpsertTaxRate) | **POST** /api/v1.0/menus/{menuId}/taxrate | [PRIVATE API]Add/Update a Tax Rate
+*Flipdish.MenusApi* | [**restoreAMenuCheckpoint**](docs/MenusApi.md#restoreAMenuCheckpoint) | **POST** /api/v1.0/menus/{menuId}/checkpoints/{checkpointId}/restore | [PRIVATE API]Restore a Menu to a checkpoint
+*Flipdish.MenusApi* | [**setMenuItemMetadata**](docs/MenusApi.md#setMenuItemMetadata) | **PUT** /api/v1.0/menus/{menuId}/menuitem/{menuItemId}/metadata/store/{storeId} | Update menu item metadata
+*Flipdish.MenusApi* | [**setMenuItemOptionSetItemMetadata**](docs/MenusApi.md#setMenuItemOptionSetItemMetadata) | **PUT** /api/v1.0/menus/{menuId}/optionsetitem/{optionSetItemId}/metadata/store/{storeId} | Update menu item option set item metadata
+*Flipdish.MenusApi* | [**setMenuLock**](docs/MenusApi.md#setMenuLock) | **POST** /api/v1.0/menus/{menuId}/lock | [PRIVATE API]Lock/Unlock a Menu for Editing
+*Flipdish.MenusApi* | [**setMenuName**](docs/MenusApi.md#setMenuName) | **POST** /api/v1.0/menus/{menuId}/name | [PRIVATE API]Set Menus Name
 *Flipdish.MenusApi* | [**updateMenu**](docs/MenusApi.md#updateMenu) | **POST** /api/v1.0/menus/{menuId} | Update menu
-*Flipdish.MenusApi* | [**uploadMenuSectionImage**](docs/MenusApi.md#uploadMenuSectionImage) | **POST** /api/v1.0/menus/{menuId}/image | Upload menu image
-*Flipdish.OAuthClientsApi* | [**addRedirectUri**](docs/OAuthClientsApi.md#addRedirectUri) | **POST** /api/v1.0/oauthclients/{oAuthClientId}/redirecturis | Create OAuth client redirect uri
-*Flipdish.OAuthClientsApi* | [**createOAuthClient**](docs/OAuthClientsApi.md#createOAuthClient) | **POST** /api/v1.0/oauthclients | Create OAuth client
-*Flipdish.OAuthClientsApi* | [**deleteOAuthClient**](docs/OAuthClientsApi.md#deleteOAuthClient) | **DELETE** /api/v1.0/oauthclients/{oAuthClientId} | Delete OAuth client
-*Flipdish.OAuthClientsApi* | [**getOAuthClientByClientId**](docs/OAuthClientsApi.md#getOAuthClientByClientId) | **GET** /api/v1.0/oauthclients/{clientId} | Get OAuth client by identifier
-*Flipdish.OAuthClientsApi* | [**getOAuthClientSecret**](docs/OAuthClientsApi.md#getOAuthClientSecret) | **GET** /api/v1.0/oauthclients/{clientId}/secret | Get OAuth client secret key
-*Flipdish.OAuthClientsApi* | [**getOAuthClients**](docs/OAuthClientsApi.md#getOAuthClients) | **GET** /api/v1.0/oauthclients | Get all OAuth client
-*Flipdish.OAuthClientsApi* | [**getOauthAccessToken**](docs/OAuthClientsApi.md#getOauthAccessToken) | **GET** /api/v1.0/oauthclients/{oAuthClientId}/accesstoken | Get OAuth access token for client
-*Flipdish.OAuthClientsApi* | [**getRedirectUris**](docs/OAuthClientsApi.md#getRedirectUris) | **GET** /api/v1.0/oauthclients/{oAuthClientId}/redirecturis | Get OAuth client redirect uris
-*Flipdish.OAuthClientsApi* | [**removeRedirectUri**](docs/OAuthClientsApi.md#removeRedirectUri) | **DELETE** /api/v1.0/oauthclients/{oAuthClientId}/redirecturis/{uriId} | Delete OAuth client redirect uri
+*Flipdish.MenusApi* | [**uploadMenuImage**](docs/MenusApi.md#uploadMenuImage) | **POST** /api/v1.0/menus/{menuId}/image | Upload menu image
+*Flipdish.MenusApi* | [**uploadNewMenuForApp**](docs/MenusApi.md#uploadNewMenuForApp) | **POST** /api/v1.0/{appId}/menus/xlsx | Create a new menu from xlsx file.
+*Flipdish.OAuthClientsApi* | [**addRedirectUri**](docs/OAuthClientsApi.md#addRedirectUri) | **POST** /api/v1.0/{appId}/oauthclients/{oauthAppId}/redirecturis | Create OAuth App redirect uri
+*Flipdish.OAuthClientsApi* | [**createOAuthApp**](docs/OAuthClientsApi.md#createOAuthApp) | **POST** /api/v1.0/{appId}/oauthclients | Create OAuth App
+*Flipdish.OAuthClientsApi* | [**deleteOAuthApp**](docs/OAuthClientsApi.md#deleteOAuthApp) | **DELETE** /api/v1.0/{appId}/oauthclients/{oauthAppId} | Delete OAuth App
+*Flipdish.OAuthClientsApi* | [**getOAuthApps**](docs/OAuthClientsApi.md#getOAuthApps) | **GET** /api/v1.0/{appId}/oauthclients | Get all OAuth Apps
+*Flipdish.OAuthClientsApi* | [**getOAuthClientByClientId**](docs/OAuthClientsApi.md#getOAuthClientByClientId) | **GET** /api/v1.0/{appId}/oauthclients/{oauthAppId} | Get OAuth App by identifier
+*Flipdish.OAuthClientsApi* | [**getOAuthClientSecret**](docs/OAuthClientsApi.md#getOAuthClientSecret) | **GET** /api/v1.0/{appId}/oauthclients/{oauthAppId}/secret | Get OAuth App secret key
+*Flipdish.OAuthClientsApi* | [**getOauthAccessToken**](docs/OAuthClientsApi.md#getOauthAccessToken) | **GET** /api/v1.0/{appId}/oauthclients/{oauthAppId}/accesstoken | Get OAuth access token for App
+*Flipdish.OAuthClientsApi* | [**getRedirectUris**](docs/OAuthClientsApi.md#getRedirectUris) | **GET** /api/v1.0/{appId}/oauthclients/{oauthAppId}/redirecturis | Get OAuth App redirect uris
+*Flipdish.OAuthClientsApi* | [**oAuthClientsGetApplications**](docs/OAuthClientsApi.md#oAuthClientsGetApplications) | **GET** /api/v1.0/{appId}/oauthclients/appnames | 
+*Flipdish.OAuthClientsApi* | [**removeRedirectUri**](docs/OAuthClientsApi.md#removeRedirectUri) | **DELETE** /api/v1.0/{appId}/oauthclients/{oauthAppId}/redirecturis/{uriId} | Delete OAuth App redirect uri
+*Flipdish.OAuthClientsApi* | [**updateOAuthApp**](docs/OAuthClientsApi.md#updateOAuthApp) | **POST** /api/v1.0/{appId}/oauthclients/{oauthAppId} | Update OAuth App
 *Flipdish.OrdersApi* | [**acceptOrder**](docs/OrdersApi.md#acceptOrder) | **POST** /api/v1.0/orders/{id}/accept | Accept order
+*Flipdish.OrdersApi* | [**dispatchOrder**](docs/OrdersApi.md#dispatchOrder) | **POST** /api/v1.0/orders/{id}/dispatch | Dispatch order
 *Flipdish.OrdersApi* | [**getOrderById**](docs/OrdersApi.md#getOrderById) | **GET** /api/v1.0/orders/{id} | Get order by ID
 *Flipdish.OrdersApi* | [**getOrders**](docs/OrdersApi.md#getOrders) | **GET** /api/v1.0/orders | Get orders by filter
+*Flipdish.OrdersApi* | [**getOrdersSummary**](docs/OrdersApi.md#getOrdersSummary) | **GET** /api/v1.0/{appId}/orders/summaries | [PRIVATE API] Get summary of orders by filter
 *Flipdish.OrdersApi* | [**refundOrder**](docs/OrdersApi.md#refundOrder) | **POST** /api/v1.0/orders/{id}/refund | Refund order
 *Flipdish.OrdersApi* | [**rejectOrder**](docs/OrdersApi.md#rejectOrder) | **POST** /api/v1.0/orders/{id}/reject | Reject order
+*Flipdish.PaymentsApi* | [**getOrderPaymentInformation**](docs/PaymentsApi.md#getOrderPaymentInformation) | **GET** /api/v1.0/payments/payment/{orderId}/refundable | Returns payment refund information related to the order with the order id
+*Flipdish.PayoutsApi* | [**exportPayoutChargebacks**](docs/PayoutsApi.md#exportPayoutChargebacks) | **GET** /api/v1.0/{appId}/bankaccounts/{bankAccountId}/payouts/{payoutId}/chargebacks/export | Export a list of payout's chargebacks as CSV
+*Flipdish.PayoutsApi* | [**exportPayoutOrders**](docs/PayoutsApi.md#exportPayoutOrders) | **GET** /api/v1.0/{appId}/bankaccounts/{bankAccountId}/payouts/{payoutId}/orders/export | Export a list of payout's orders as CSV
+*Flipdish.PayoutsApi* | [**exportPayoutOtherCharges**](docs/PayoutsApi.md#exportPayoutOtherCharges) | **GET** /api/v1.0/{appId}/bankaccounts/{bankAccountId}/payouts/{payoutId}/othercharges/export | Export a list of payout's other charges as CSV
+*Flipdish.PayoutsApi* | [**exportPayoutRefunds**](docs/PayoutsApi.md#exportPayoutRefunds) | **GET** /api/v1.0/{appId}/bankaccounts/{bankAccountId}/payouts/{payoutId}/refunds/export | Export a list of payout's refunds as CSV
+*Flipdish.PayoutsApi* | [**exportPayoutStores**](docs/PayoutsApi.md#exportPayoutStores) | **GET** /api/v1.0/{appId}/bankaccounts/{bankAccountId}/payouts/{payoutId}/export | Export payout's details as CSV
+*Flipdish.PayoutsApi* | [**getPayout**](docs/PayoutsApi.md#getPayout) | **GET** /api/v1.0/{appId}/bankaccounts/{bankAccountId}/payouts/{payoutId} | Get Payout details broken down by Store
+*Flipdish.PayoutsApi* | [**getPayoutChargebacks**](docs/PayoutsApi.md#getPayoutChargebacks) | **GET** /api/v1.0/{appId}/bankaccounts/{bankAccountId}/payouts/{payoutId}/chargebacks | Get list of payout's chargebacks
+*Flipdish.PayoutsApi* | [**getPayoutOrders**](docs/PayoutsApi.md#getPayoutOrders) | **GET** /api/v1.0/{appId}/bankaccounts/{bankAccountId}/payouts/{payoutId}/orders | Get list of payout's orders
+*Flipdish.PayoutsApi* | [**getPayoutOtherCharges**](docs/PayoutsApi.md#getPayoutOtherCharges) | **GET** /api/v1.0/{appId}/bankaccounts/{bankAccountId}/payouts/{payoutId}/othercharges | Get list of payout's other charges
+*Flipdish.PayoutsApi* | [**getPayoutRefunds**](docs/PayoutsApi.md#getPayoutRefunds) | **GET** /api/v1.0/{appId}/bankaccounts/{bankAccountId}/payouts/{payoutId}/refunds | Get list of payout's refunds
+*Flipdish.PayoutsApi* | [**getPayoutSummaries**](docs/PayoutsApi.md#getPayoutSummaries) | **GET** /api/v1.0/{appId}/payouts/summaries | Get list of payout summaries
+*Flipdish.PayoutsApi* | [**getPayouts**](docs/PayoutsApi.md#getPayouts) | **GET** /api/v1.0/{appId}/payouts | Get list of payouts
+*Flipdish.ProcessingFeeConfigsApi* | [**getProcessingFeeConfigsByStoreIds**](docs/ProcessingFeeConfigsApi.md#getProcessingFeeConfigsByStoreIds) | **GET** /api/v1.0/processingfeeconfigs | Get processing fee configs by store identifiers
+*Flipdish.PushNotificationsApi* | [**deletePushNotification**](docs/PushNotificationsApi.md#deletePushNotification) | **DELETE** /api/v1.0/{appId}/pushnotifications/{scheduledPushNotificationId} | [PRIVATE] Push notification to cutomers
+*Flipdish.PushNotificationsApi* | [**getPushNotifications**](docs/PushNotificationsApi.md#getPushNotifications) | **GET** /api/v1.0/{appId}/pushnotifications | [PRIVATE] Push notification to cutomers
+*Flipdish.PushNotificationsApi* | [**schedulePushNotification**](docs/PushNotificationsApi.md#schedulePushNotification) | **POST** /api/v1.0/{appId}/pushnotifications | [PRIVATE] Push notification to cutomers
+*Flipdish.PushNotificationsApi* | [**updatePushNotification**](docs/PushNotificationsApi.md#updatePushNotification) | **POST** /api/v1.0/{appId}/pushnotifications/{scheduledPushNotificationId} | [PRIVATE] Update the push notification
+*Flipdish.StoreGroupsApi* | [**createStoreGroup**](docs/StoreGroupsApi.md#createStoreGroup) | **POST** /api/v1.0/{appNameId}/storegroups | Creates a Store Group  It will be attached to an existing App
+*Flipdish.StoreGroupsApi* | [**getStoreGroup**](docs/StoreGroupsApi.md#getStoreGroup) | **GET** /api/v1.0/storegroups/{storeGroupId} | Returns a Store Groups
+*Flipdish.StoreGroupsApi* | [**getStoreGroups**](docs/StoreGroupsApi.md#getStoreGroups) | **GET** /api/v1.0/{appNameId}/storegroups | Returns a paginated list of Store Groups
+*Flipdish.StoreGroupsApi* | [**getStoreGroupsExtended**](docs/StoreGroupsApi.md#getStoreGroupsExtended) | **GET** /api/v1.0/{appNameId}/storegroups/extended | [PRIVATE API] Returns a paginated list of Extended Store Groups
+*Flipdish.StoreGroupsApi* | [**removeStoreGroup**](docs/StoreGroupsApi.md#removeStoreGroup) | **DELETE** /api/v1.0/storegroups/{storeGroupId} | Deletes a Store Group  Can only remove a store group if there is no stores attached to the group
+*Flipdish.StoreGroupsApi* | [**updateStoreGroup**](docs/StoreGroupsApi.md#updateStoreGroup) | **POST** /api/v1.0/storegroups/{storeGroupId} | Updates Store Group
+*Flipdish.StoreOrderCapacityApi* | [**getStoreOrderCapacity**](docs/StoreOrderCapacityApi.md#getStoreOrderCapacity) | **GET** /api/v1.0/{appId}/storeordercapacity/{storeId}/{deliveryType} | Get store's order capacity configuration
+*Flipdish.StoreOrderCapacityApi* | [**updateStoreOrderCapacityConfig**](docs/StoreOrderCapacityApi.md#updateStoreOrderCapacityConfig) | **POST** /api/v1.0/{appId}/storeordercapacity/{storeId} | Create or update a store's order capacity configuration
+*Flipdish.StoresApi* | [**archiveStore**](docs/StoresApi.md#archiveStore) | **POST** /api/v1.0/stores/{storeId}/archive | Archive store
+*Flipdish.StoresApi* | [**assignMenu**](docs/StoresApi.md#assignMenu) | **POST** /api/v1.0/stores/{storeId}/menu/{menuId} | Assign Menu to Store
+*Flipdish.StoresApi* | [**cloneStore**](docs/StoresApi.md#cloneStore) | **POST** /api/v1.0/stores/{storeId}/clone | Clone store with store clone settings
+*Flipdish.StoresApi* | [**createBusinessHoursOverrideByStoreId**](docs/StoresApi.md#createBusinessHoursOverrideByStoreId) | **POST** /api/v1.0/stores/{storeId}/businesshoursoverrides | Create Business Hours Override for a store
+*Flipdish.StoresApi* | [**createStore**](docs/StoresApi.md#createStore) | **POST** /api/v1.0/stores | Create store with Store Group identifier
+*Flipdish.StoresApi* | [**deleteBusinessHoursOverride**](docs/StoresApi.md#deleteBusinessHoursOverride) | **DELETE** /api/v1.0/stores/{storeId}/businesshoursoverrides/{businessHoursOverrideId} | Delete Business Hours Override for a store
+*Flipdish.StoresApi* | [**getBankAccountForStore**](docs/StoresApi.md#getBankAccountForStore) | **GET** /api/v1.0/stores/{storeId}/bankaccount | Get Stores Bank Account Id
+*Flipdish.StoresApi* | [**getBusinessHours**](docs/StoresApi.md#getBusinessHours) | **GET** /api/v1.0/stores/{storeId}/availability/{deliveryType} | Get Business hours
+*Flipdish.StoresApi* | [**getBusinessHoursOverrideByStoreId**](docs/StoresApi.md#getBusinessHoursOverrideByStoreId) | **GET** /api/v1.0/stores/{storeId}/businesshoursoverrides | Get business hours overrides by store identifier
+*Flipdish.StoresApi* | [**getEndOfDayReport**](docs/StoresApi.md#getEndOfDayReport) | **GET** /api/v1.0/stores/{storeId}/endofdayreport | Get store end of day report
+*Flipdish.StoresApi* | [**getPreOrderConfig**](docs/StoresApi.md#getPreOrderConfig) | **GET** /api/v1.0/stores/{storeId}/preorderconfig/{deliveryType} | Get the pre order config for a store, by type
+*Flipdish.StoresApi* | [**getPreOrderPreview**](docs/StoresApi.md#getPreOrderPreview) | **GET** /api/v1.0/stores/{storeId}/preorderconfig/{deliveryType}/preview | Get the Preview times of the pre-order configuration
+*Flipdish.StoresApi* | [**getProcessingFeeConfigsByStoreId**](docs/StoresApi.md#getProcessingFeeConfigsByStoreId) | **GET** /api/v1.0/stores/{storeId}/processingfeeconfigs | Get processing fee configs by store identifier
+*Flipdish.StoresApi* | [**getProcessingFeeConfigsByStoreIdAndPaymentAccountType**](docs/StoresApi.md#getProcessingFeeConfigsByStoreIdAndPaymentAccountType) | **GET** /api/v1.0/stores/{storeId}/processingfeeconfigs/{paymentAccountType} | Get processing fee configs by store identifier
 *Flipdish.StoresApi* | [**getStoreById**](docs/StoresApi.md#getStoreById) | **GET** /api/v1.0/stores/{storeId} | Get store by identifier
-*Flipdish.StoresApi* | [**getStores**](docs/StoresApi.md#getStores) | **GET** /api/v1.0/stores | Get all stores
+*Flipdish.StoresApi* | [**getStoreHeadersByAppId**](docs/StoresApi.md#getStoreHeadersByAppId) | **GET** /api/v1.0/{appId}/stores/header | Get all stores by app name id
+*Flipdish.StoresApi* | [**getStoreNetSales**](docs/StoresApi.md#getStoreNetSales) | **GET** /api/v1.0/{appId}/stores/stats | Get stores statistics by app name id and storeIds
+*Flipdish.StoresApi* | [**getStores**](docs/StoresApi.md#getStores) | **GET** /api/v1.0/stores | Get all stores, excluding archived ones
+*Flipdish.StoresApi* | [**getStoresByAppId**](docs/StoresApi.md#getStoresByAppId) | **GET** /api/v1.0/{appId}/stores | Get all stores by app name id
+*Flipdish.StoresApi* | [**publishStore**](docs/StoresApi.md#publishStore) | **POST** /api/v1.0/stores/{storeId}/publish | Publish store
+*Flipdish.StoresApi* | [**setBusinessHours**](docs/StoresApi.md#setBusinessHours) | **POST** /api/v1.0/stores/{storeId}/availability/{deliveryType} | Set Business hours
+*Flipdish.StoresApi* | [**setPreOrdeEnabled**](docs/StoresApi.md#setPreOrdeEnabled) | **POST** /api/v1.0/stores/{storeId}/preorderconfig/{deliveryType}/enabled | UPDATE pre order config for a store, by type
+*Flipdish.StoresApi* | [**unpublishStore**](docs/StoresApi.md#unpublishStore) | **POST** /api/v1.0/stores/{storeId}/unpublish | Unpublish store
+*Flipdish.StoresApi* | [**updatePreOrderConfig**](docs/StoresApi.md#updatePreOrderConfig) | **POST** /api/v1.0/stores/{storeId}/preorderconfig/{deliveryType} | UPDATE pre order config for a store, by type
+*Flipdish.StoresApi* | [**updateStore**](docs/StoresApi.md#updateStore) | **POST** /api/v1.0/stores/{storeId} | Update store by identifier
+*Flipdish.StoresApi* | [**updateStoreAddress**](docs/StoresApi.md#updateStoreAddress) | **POST** /api/v1.0/stores/{storeId}/address | Update store address
+*Flipdish.StoresApi* | [**updateStoreAddressCoordinates**](docs/StoresApi.md#updateStoreAddressCoordinates) | **POST** /api/v1.0/stores/{storeId}/address/coordinates | Update store address coordinates
+*Flipdish.StripeCustomConnectApi* | [**createBankAccountAndConnectedAccount**](docs/StripeCustomConnectApi.md#createBankAccountAndConnectedAccount) | **POST** /api/v1.0/{appId}/customconnect/bank-account | Create a new Bank Account and Stripe connected account
+*Flipdish.StripeCustomConnectApi* | [**createStripeConnectedAccount**](docs/StripeCustomConnectApi.md#createStripeConnectedAccount) | **POST** /api/v1.0/{appId}/customconnect/{bankAccountId}/create-update-account | Create or update a Stripe connected account associated with the bank account of bankAccountId
+*Flipdish.StripeCustomConnectApi* | [**createStripeConnectedAccountLink**](docs/StripeCustomConnectApi.md#createStripeConnectedAccountLink) | **POST** /api/v1.0/{appId}/customconnect/{stripeConnectedAccountId}/create-account-link | Gets a single-use Stripe URL for the given account
+*Flipdish.StripeCustomConnectApi* | [**getVerificationStatus**](docs/StripeCustomConnectApi.md#getVerificationStatus) | **GET** /api/v1.0/{appId}/customconnect/verification-status | Gets the current verification status of the given connected account
+*Flipdish.StripeCustomConnectApi* | [**setBankAccountBusinessType**](docs/StripeCustomConnectApi.md#setBankAccountBusinessType) | **POST** /api/v1.0/{appId}/customconnect/bank-account/{bankAccountId}/businesstype | Update bank account's BusinessType and create a Stripe Connected Account
+*Flipdish.StripeCustomConnectApi* | [**stripeCustomConnectRefresh**](docs/StripeCustomConnectApi.md#stripeCustomConnectRefresh) | **GET** /api/v1.0/{appId}/customconnect/refresh-link | 
+*Flipdish.StripeCustomConnectApi* | [**updateBankAccountDetails**](docs/StripeCustomConnectApi.md#updateBankAccountDetails) | **POST** /api/v1.0/{appId}/customconnect/{bankAccountId}/update-bank-account-details | Update bank account details
+*Flipdish.StuartApi* | [**stuartCancelJob**](docs/StuartApi.md#stuartCancelJob) | **DELETE** /api/v1.0/stuart/jobs/{jobId} | Cancel a stuart job
+*Flipdish.StuartApi* | [**stuartGetJob**](docs/StuartApi.md#stuartGetJob) | **GET** /api/v1.0/stuart/jobs/{jobId} | Get start job details
+*Flipdish.StuartApi* | [**stuartGetStuartSettings**](docs/StuartApi.md#stuartGetStuartSettings) | **GET** /api/v1.0/stuart/settings/{storeId} | Get stuart settings for a store
+*Flipdish.StuartApi* | [**stuartPostStuartSettings**](docs/StuartApi.md#stuartPostStuartSettings) | **POST** /api/v1.0/stuart/settings/{storeId} | Set stuart settings for a store
+*Flipdish.TeammatesApi* | [**createTeammate**](docs/TeammatesApi.md#createTeammate) | **POST** /api/v1.0/{appId}/teammates | Create teammate and send an invite.
+*Flipdish.TeammatesApi* | [**deleteTeammate**](docs/TeammatesApi.md#deleteTeammate) | **DELETE** /api/v1.0/{appId}/teammates/{id} | Delete teammate
+*Flipdish.TeammatesApi* | [**getTeammateByAppIdAndTeammateId**](docs/TeammatesApi.md#getTeammateByAppIdAndTeammateId) | **GET** /api/v1.0/{appId}/teammates/{id} | Get a teammates by email address
+*Flipdish.TeammatesApi* | [**getTeammatesByAppId**](docs/TeammatesApi.md#getTeammatesByAppId) | **GET** /api/v1.0/{appId}/teammates | Get all teammates
+*Flipdish.TeammatesApi* | [**redeemInvitation**](docs/TeammatesApi.md#redeemInvitation) | **GET** /api/v1.0/{appId}/teammates/redeem/{otc} | Redeem one-time code from invitation
+*Flipdish.TeammatesApi* | [**updateTeammate**](docs/TeammatesApi.md#updateTeammate) | **POST** /api/v1.0/{appId}/teammates/{id} | Update teammates (this method does not support Deltas!)
+*Flipdish.UsersApi* | [**getPreviousOrderCountForStore**](docs/UsersApi.md#getPreviousOrderCountForStore) | **GET** /api/v1.0/users/{userId}/previousordercount/{storeId} | 
 *Flipdish.UsersApi* | [**getRoles**](docs/UsersApi.md#getRoles) | **GET** /api/v1.0/users/roles | Get role names
-*Flipdish.VouchersApi* | [**deleteVoucherMetadata**](docs/VouchersApi.md#deleteVoucherMetadata) | **DELETE** /api/v1.0/vouchers/{voucherId}/menu/{menuId}/store/{storeId}/metadata/{key} | Delete voucher metadata
-*Flipdish.VouchersApi* | [**getVoucherById**](docs/VouchersApi.md#getVoucherById) | **GET** /api/v1.0/vouchers/{voucherId} | Get voucher by identifier
-*Flipdish.VouchersApi* | [**getVoucherMetadata**](docs/VouchersApi.md#getVoucherMetadata) | **GET** /api/v1.0/vouchers/{voucherId}/menu/{menuId}/store/{storeId}/metadata | Get voucher metadata
-*Flipdish.VouchersApi* | [**getVoucherMetadata_0**](docs/VouchersApi.md#getVoucherMetadata_0) | **GET** /api/v1.0/vouchers/{voucherId}/menu/{menuId}/store/{storeId}/metadata/{key} | Get voucher metadata
-*Flipdish.VouchersApi* | [**getVouchers**](docs/VouchersApi.md#getVouchers) | **GET** /api/v1.0/vouchers | Get vouchers
-*Flipdish.VouchersApi* | [**setVoucherMetadata**](docs/VouchersApi.md#setVoucherMetadata) | **PUT** /api/v1.0/vouchers/{voucherId}/menu/{menuId}/store/{storeId}/metadata/{key} | Add voucher metadata
-*Flipdish.WebhooksApi* | [**craeteWebhookSubscription**](docs/WebhooksApi.md#craeteWebhookSubscription) | **POST** /api/v1.0/webhooks/{clientId}/subscriptions | Create a webhook subscription for you Oauth client
-*Flipdish.WebhooksApi* | [**createWebhookSubscriptionEventNames**](docs/WebhooksApi.md#createWebhookSubscriptionEventNames) | **POST** /api/v1.0/webhooks/{clientId}/subscriptions/{webhookSubscriptionId}/events/{eventName} | Add event name to your webhook subscription
-*Flipdish.WebhooksApi* | [**deleteWebhookSubscription**](docs/WebhooksApi.md#deleteWebhookSubscription) | **DELETE** /api/v1.0/webhooks/{clientId}/subscriptions/{webhookSubscriptionId} | Delete you webhook subscription
-*Flipdish.WebhooksApi* | [**deleteWebhookSubscriptionEventName**](docs/WebhooksApi.md#deleteWebhookSubscriptionEventName) | **DELETE** /api/v1.0/webhooks/{clientId}/subscriptions/{webhookSubscriptionId}/events/{eventName} | Remove event name to your webhook subscription
-*Flipdish.WebhooksApi* | [**getWebhookEventNames**](docs/WebhooksApi.md#getWebhookEventNames) | **GET** /api/v1.0/webhooks/events | Get all webhook subscription event names
-*Flipdish.WebhooksApi* | [**getWebhookEventNamesBySubscriptionId**](docs/WebhooksApi.md#getWebhookEventNamesBySubscriptionId) | **GET** /api/v1.0/webhooks/{clientId}/subscriptions/{webhookSubscriptionId}/events | Get your webhook subscriptions selected event names
-*Flipdish.WebhooksApi* | [**getWebhookLogs**](docs/WebhooksApi.md#getWebhookLogs) | **GET** /api/v1.0/webhooks/{clientId}/subscriptions/{webhookSubscriptionId}/logs | Get logs for your webhook subscription
-*Flipdish.WebhooksApi* | [**getWebhookSubscriptions**](docs/WebhooksApi.md#getWebhookSubscriptions) | **GET** /api/v1.0/webhooks/{clientId}/subscriptions | Get all webhook subscriptions by your Oauth client id
-*Flipdish.WebhooksApi* | [**updateWebhookSubscription**](docs/WebhooksApi.md#updateWebhookSubscription) | **PUT** /api/v1.0/webhooks/{clientId}/subscriptions/{webhookSubscriptionId} | Update a webhook subscription object
+*Flipdish.VouchersApi* | [**createVoucher**](docs/VouchersApi.md#createVoucher) | **POST** /api/v1.0/vouchers/{appId} | [PRIVATE API] Create voucher
+*Flipdish.VouchersApi* | [**getVoucherById**](docs/VouchersApi.md#getVoucherById) | **GET** /api/v1.0/vouchers/{voucherId} | [PRIVATE API] Get voucher by identifier
+*Flipdish.VouchersApi* | [**getVoucherStatsById**](docs/VouchersApi.md#getVoucherStatsById) | **GET** /api/v1.0/vouchers/stats/{voucherId} | [PRIVATE API] Get voucher stats by identifier
+*Flipdish.VouchersApi* | [**getVouchers**](docs/VouchersApi.md#getVouchers) | **GET** /api/v1.0/{appId}/vouchers/summaries | [PRIVATE API] Get vouchers summaries for App Id
+*Flipdish.VouchersApi* | [**updateVoucher**](docs/VouchersApi.md#updateVoucher) | **POST** /api/v1.0/vouchers/{voucherId} | [PRIVATE API] Updates voucher
+*Flipdish.WebhooksApi* | [**craeteWebhookSubscription**](docs/WebhooksApi.md#craeteWebhookSubscription) | **POST** /api/v1.0/{appId}/webhooks/{oauthAppId}/subscriptions | Create a webhook subscription for you Oauth App
+*Flipdish.WebhooksApi* | [**createWebhookSubscriptionEventNames**](docs/WebhooksApi.md#createWebhookSubscriptionEventNames) | **POST** /api/v1.0/{appId}/webhooks/{oauthAppId}/subscriptions/{webhookSubscriptionId}/events/{eventName} | Add event name to your webhook subscription
+*Flipdish.WebhooksApi* | [**deleteWebhookSubscription**](docs/WebhooksApi.md#deleteWebhookSubscription) | **DELETE** /api/v1.0/{appId}/webhooks/{oauthAppId}/subscriptions/{webhookSubscriptionId} | Delete you webhook subscription
+*Flipdish.WebhooksApi* | [**deleteWebhookSubscriptionEventName**](docs/WebhooksApi.md#deleteWebhookSubscriptionEventName) | **DELETE** /api/v1.0/{appId}/webhooks/{oauthAppId}/subscriptions/{webhookSubscriptionId}/events/{eventName} | Remove event name to your webhook subscription
+*Flipdish.WebhooksApi* | [**getWebhookEventNames**](docs/WebhooksApi.md#getWebhookEventNames) | **GET** /api/v1.0/{appId}/webhooks/events | Get all webhook subscription event names
+*Flipdish.WebhooksApi* | [**getWebhookEventNamesBySubscriptionId**](docs/WebhooksApi.md#getWebhookEventNamesBySubscriptionId) | **GET** /api/v1.0/{appId}/webhooks/{oauthAppId}/subscriptions/{webhookSubscriptionId}/events | Get your webhook subscriptions selected event names
+*Flipdish.WebhooksApi* | [**getWebhookEventSample**](docs/WebhooksApi.md#getWebhookEventSample) | **GET** /api/v1.0/{appId}/webhooks/{oauthAppId}/subscriptions/{webhookSubscriptionId}/events/{eventName}/test | Get a sample event from a webhook subscription
+*Flipdish.WebhooksApi* | [**getWebhookLogs**](docs/WebhooksApi.md#getWebhookLogs) | **GET** /api/v1.0/{appId}/webhooks/{oauthAppId}/subscriptions/{webhookSubscriptionId}/logs | Get logs for your webhook subscription
+*Flipdish.WebhooksApi* | [**getWebhookSubscriptions**](docs/WebhooksApi.md#getWebhookSubscriptions) | **GET** /api/v1.0/{appId}/webhooks/{oauthAppId}/subscriptions | Get all webhook subscriptions by your Oauth App id
+*Flipdish.WebhooksApi* | [**updateWebhookSubscription**](docs/WebhooksApi.md#updateWebhookSubscription) | **PUT** /api/v1.0/{appId}/webhooks/{oauthAppId}/subscriptions/{webhookSubscriptionId} | Update a webhook subscription object
+*Flipdish.WebsiteApi* | [**addTestimonial**](docs/WebsiteApi.md#addTestimonial) | **POST** /api/v1.0/{appId}/website/testimonial | Add a testimonial
+*Flipdish.WebsiteApi* | [**deleteTestimonial**](docs/WebsiteApi.md#deleteTestimonial) | **DELETE** /api/v1.0/{appId}/website/testimonial/{testimonialId} | Delete a testimonial
+*Flipdish.WebsiteApi* | [**deleteWebsiteImage**](docs/WebsiteApi.md#deleteWebsiteImage) | **DELETE** /api/v1.0/{appId}/website/image/{imageId} | Delete Website Image
+*Flipdish.WebsiteApi* | [**editTestimonial**](docs/WebsiteApi.md#editTestimonial) | **POST** /api/v1.0/{appId}/website/testimonial/{testimonialId} | Edit a testimonial
+*Flipdish.WebsiteApi* | [**getIndexConfiguration**](docs/WebsiteApi.md#getIndexConfiguration) | **GET** /api/v1.0/{appId}/website/index | Get Index Configuration
+*Flipdish.WebsiteApi* | [**setIndexConfiguration**](docs/WebsiteApi.md#setIndexConfiguration) | **POST** /api/v1.0/{appId}/website/index | Set Index Configuration
+*Flipdish.WebsiteApi* | [**uploadWebsiteImage**](docs/WebsiteApi.md#uploadWebsiteImage) | **POST** /api/v1.0/{appId}/website/image/{imageLocation} | Upload Website Image
+*Flipdish.WebsiteApi* | [**websiteCheckNow**](docs/WebsiteApi.md#websiteCheckNow) | **GET** /api/v1.0/{appId}/website/dnscheck | Triggers a Check DNS Process
 
 
 ## Documentation for Models
 
  - [Flipdish.Accept](docs/Accept.md)
+ - [Flipdish.AccountDetail](docs/AccountDetail.md)
+ - [Flipdish.AccountDetailBase](docs/AccountDetailBase.md)
+ - [Flipdish.AccountFieldDefinition](docs/AccountFieldDefinition.md)
+ - [Flipdish.AccountFieldKeyValuePair](docs/AccountFieldKeyValuePair.md)
+ - [Flipdish.AccountFieldsDefinitions](docs/AccountFieldsDefinitions.md)
+ - [Flipdish.AddItemDetails](docs/AddItemDetails.md)
+ - [Flipdish.AllMetadataResult](docs/AllMetadataResult.md)
+ - [Flipdish.AnalyticsClientEvent](docs/AnalyticsClientEvent.md)
+ - [Flipdish.ApmCurrencyDataPoint](docs/ApmCurrencyDataPoint.md)
+ - [Flipdish.ApmDataPoint](docs/ApmDataPoint.md)
+ - [Flipdish.ApmHourlyDataPoint](docs/ApmHourlyDataPoint.md)
+ - [Flipdish.ApmStatistics](docs/ApmStatistics.md)
+ - [Flipdish.ApmStatus](docs/ApmStatus.md)
+ - [Flipdish.App](docs/App.md)
+ - [Flipdish.AppCompliance](docs/AppCompliance.md)
+ - [Flipdish.AppConfigUpdateModel](docs/AppConfigUpdateModel.md)
+ - [Flipdish.AppCreatedEvent](docs/AppCreatedEvent.md)
+ - [Flipdish.AppUpdatedEvent](docs/AppUpdatedEvent.md)
+ - [Flipdish.AssignedBankAccount](docs/AssignedBankAccount.md)
+ - [Flipdish.BalanceDetails](docs/BalanceDetails.md)
+ - [Flipdish.BankAccount](docs/BankAccount.md)
+ - [Flipdish.BankAccountCreate](docs/BankAccountCreate.md)
+ - [Flipdish.BankAccountCreatedEvent](docs/BankAccountCreatedEvent.md)
+ - [Flipdish.BankAccountDeletedEvent](docs/BankAccountDeletedEvent.md)
+ - [Flipdish.BankAccountDetail](docs/BankAccountDetail.md)
+ - [Flipdish.BankAccountDetailsUpdateRequest](docs/BankAccountDetailsUpdateRequest.md)
+ - [Flipdish.BankAccountSummary](docs/BankAccountSummary.md)
+ - [Flipdish.BankAccountUpdatedEvent](docs/BankAccountUpdatedEvent.md)
+ - [Flipdish.BluetoothTerminalStatus](docs/BluetoothTerminalStatus.md)
+ - [Flipdish.BusinessHoursOverride](docs/BusinessHoursOverride.md)
+ - [Flipdish.BusinessHoursOverrideBase](docs/BusinessHoursOverrideBase.md)
  - [Flipdish.BusinessHoursPeriod](docs/BusinessHoursPeriod.md)
- - [Flipdish.CampaignCreatedEvent](docs/CampaignCreatedEvent.md)
+ - [Flipdish.BusinessHoursPeriodBase](docs/BusinessHoursPeriodBase.md)
+ - [Flipdish.CampaignStatistics](docs/CampaignStatistics.md)
+ - [Flipdish.CertificateCreatedEvent](docs/CertificateCreatedEvent.md)
+ - [Flipdish.CertificateRenewedEvent](docs/CertificateRenewedEvent.md)
+ - [Flipdish.ChangePasswordModel](docs/ChangePasswordModel.md)
+ - [Flipdish.ChargebackDetails](docs/ChargebackDetails.md)
  - [Flipdish.Coordinates](docs/Coordinates.md)
+ - [Flipdish.CountryWithAccountFieldsDefinitions](docs/CountryWithAccountFieldsDefinitions.md)
+ - [Flipdish.CreateAccountModel](docs/CreateAccountModel.md)
+ - [Flipdish.CreateFullMenu](docs/CreateFullMenu.md)
+ - [Flipdish.CreateFullMenuItemOptionSet](docs/CreateFullMenuItemOptionSet.md)
+ - [Flipdish.CreateFullMenuItemOptionSetItem](docs/CreateFullMenuItemOptionSetItem.md)
+ - [Flipdish.CreateFullMenuSection](docs/CreateFullMenuSection.md)
+ - [Flipdish.CreateFullMenuSectionItem](docs/CreateFullMenuSectionItem.md)
+ - [Flipdish.CreateMenuTaxRate](docs/CreateMenuTaxRate.md)
+ - [Flipdish.CreateMetadata](docs/CreateMetadata.md)
+ - [Flipdish.CreateTeammate](docs/CreateTeammate.md)
+ - [Flipdish.CreateVoucher](docs/CreateVoucher.md)
+ - [Flipdish.CreditNoteDetails](docs/CreditNoteDetails.md)
+ - [Flipdish.CspReport](docs/CspReport.md)
+ - [Flipdish.CspReportRequest](docs/CspReportRequest.md)
+ - [Flipdish.CurrencyData](docs/CurrencyData.md)
+ - [Flipdish.Customer](docs/Customer.md)
  - [Flipdish.CustomerConsentUpdatedEvent](docs/CustomerConsentUpdatedEvent.md)
  - [Flipdish.CustomerCreatedEvent](docs/CustomerCreatedEvent.md)
+ - [Flipdish.CustomerDeliveryTrackingOrder](docs/CustomerDeliveryTrackingOrder.md)
+ - [Flipdish.CustomerDeliveryTrackingOrderLine](docs/CustomerDeliveryTrackingOrderLine.md)
  - [Flipdish.CustomerSummary](docs/CustomerSummary.md)
+ - [Flipdish.CustomerUpdateModel](docs/CustomerUpdateModel.md)
  - [Flipdish.CustomerUpdatedEvent](docs/CustomerUpdatedEvent.md)
- - [Flipdish.DeliveryFeeArea](docs/DeliveryFeeArea.md)
  - [Flipdish.DeliveryLocation](docs/DeliveryLocation.md)
+ - [Flipdish.DeliveryZone](docs/DeliveryZone.md)
+ - [Flipdish.DeliveryZoneBase](docs/DeliveryZoneBase.md)
+ - [Flipdish.DeliveryZoneCreatedEvent](docs/DeliveryZoneCreatedEvent.md)
+ - [Flipdish.DeliveryZoneDeletedEvent](docs/DeliveryZoneDeletedEvent.md)
+ - [Flipdish.DeliveryZoneUpdatedEvent](docs/DeliveryZoneUpdatedEvent.md)
+ - [Flipdish.DeviceSettings](docs/DeviceSettings.md)
+ - [Flipdish.DnsRecordInformation](docs/DnsRecordInformation.md)
+ - [Flipdish.DnsVerifiedEvent](docs/DnsVerifiedEvent.md)
+ - [Flipdish.Driver](docs/Driver.md)
+ - [Flipdish.DriverInvitation](docs/DriverInvitation.md)
+ - [Flipdish.DriverLoginModel](docs/DriverLoginModel.md)
+ - [Flipdish.DriverRequestLoginPinModel](docs/DriverRequestLoginPinModel.md)
+ - [Flipdish.DriverStore](docs/DriverStore.md)
+ - [Flipdish.EmvNotificationEvent](docs/EmvNotificationEvent.md)
+ - [Flipdish.EmvTerminal](docs/EmvTerminal.md)
+ - [Flipdish.EmvTerminalWithAssignments](docs/EmvTerminalWithAssignments.md)
  - [Flipdish.EventSearchResult](docs/EventSearchResult.md)
  - [Flipdish.FeeSummary](docs/FeeSummary.md)
+ - [Flipdish.FlipdishEventBase](docs/FlipdishEventBase.md)
+ - [Flipdish.FlipdishFeesDetails](docs/FlipdishFeesDetails.md)
+ - [Flipdish.GroupedCoordinates](docs/GroupedCoordinates.md)
+ - [Flipdish.HomeAction](docs/HomeAction.md)
+ - [Flipdish.HomeStatistics](docs/HomeStatistics.md)
  - [Flipdish.HttpRequestAndResponseLog](docs/HttpRequestAndResponseLog.md)
+ - [Flipdish.HydraAssignedEvent](docs/HydraAssignedEvent.md)
+ - [Flipdish.HydraConfig](docs/HydraConfig.md)
+ - [Flipdish.HydraConnectionStatusChangedEvent](docs/HydraConnectionStatusChangedEvent.md)
+ - [Flipdish.HydraDeviceDetails](docs/HydraDeviceDetails.md)
+ - [Flipdish.HydraRegistrationRequest](docs/HydraRegistrationRequest.md)
+ - [Flipdish.HydraRequestResetEvent](docs/HydraRequestResetEvent.md)
+ - [Flipdish.HydraSettingChangedEvent](docs/HydraSettingChangedEvent.md)
+ - [Flipdish.HydraStatus](docs/HydraStatus.md)
+ - [Flipdish.HydraStoreAssignedEvent](docs/HydraStoreAssignedEvent.md)
+ - [Flipdish.HydraStoreData](docs/HydraStoreData.md)
+ - [Flipdish.HydraStoreUnassignedEvent](docs/HydraStoreUnassignedEvent.md)
+ - [Flipdish.HydraUnAssignedEvent](docs/HydraUnAssignedEvent.md)
+ - [Flipdish.IndexPage](docs/IndexPage.md)
+ - [Flipdish.IndexPageBase](docs/IndexPageBase.md)
+ - [Flipdish.JobAddress](docs/JobAddress.md)
+ - [Flipdish.JobCancellation](docs/JobCancellation.md)
+ - [Flipdish.JobContact](docs/JobContact.md)
+ - [Flipdish.JobDelivery](docs/JobDelivery.md)
+ - [Flipdish.JobDeliveryDetail](docs/JobDeliveryDetail.md)
+ - [Flipdish.JobDriver](docs/JobDriver.md)
+ - [Flipdish.JobEta](docs/JobEta.md)
+ - [Flipdish.JobPricing](docs/JobPricing.md)
+ - [Flipdish.JobProof](docs/JobProof.md)
+ - [Flipdish.JobResponse](docs/JobResponse.md)
+ - [Flipdish.KioskBluetoothInstallUpdateInitiateEvent](docs/KioskBluetoothInstallUpdateInitiateEvent.md)
+ - [Flipdish.KioskBluetoothPairingModeEvent](docs/KioskBluetoothPairingModeEvent.md)
+ - [Flipdish.KioskBluetoothTerminalInitiateUpdateCheckEvent](docs/KioskBluetoothTerminalInitiateUpdateCheckEvent.md)
+ - [Flipdish.KioskBluetoothTerminalUpdatedEvent](docs/KioskBluetoothTerminalUpdatedEvent.md)
+ - [Flipdish.KioskBluetoothUnpairingModeEvent](docs/KioskBluetoothUnpairingModeEvent.md)
+ - [Flipdish.Language](docs/Language.md)
+ - [Flipdish.LightspeedSettings](docs/LightspeedSettings.md)
+ - [Flipdish.LocalisedTimeZone](docs/LocalisedTimeZone.md)
+ - [Flipdish.LoginModel](docs/LoginModel.md)
+ - [Flipdish.LoginWithPinModel](docs/LoginWithPinModel.md)
+ - [Flipdish.LoyaltyCampaign](docs/LoyaltyCampaign.md)
+ - [Flipdish.LoyaltyCampaignBase](docs/LoyaltyCampaignBase.md)
+ - [Flipdish.LoyaltyCampaignCreatedEvent](docs/LoyaltyCampaignCreatedEvent.md)
+ - [Flipdish.LoyaltyCampaignDeletedEvent](docs/LoyaltyCampaignDeletedEvent.md)
+ - [Flipdish.LoyaltyCampaignUpdatedEvent](docs/LoyaltyCampaignUpdatedEvent.md)
+ - [Flipdish.LumpDiscountDetails](docs/LumpDiscountDetails.md)
+ - [Flipdish.MaskedPhoneNumber](docs/MaskedPhoneNumber.md)
  - [Flipdish.Menu](docs/Menu.md)
  - [Flipdish.MenuBase](docs/MenuBase.md)
+ - [Flipdish.MenuCheckpoint](docs/MenuCheckpoint.md)
+ - [Flipdish.MenuCheckpointCreatedEvent](docs/MenuCheckpointCreatedEvent.md)
  - [Flipdish.MenuCreatedEvent](docs/MenuCreatedEvent.md)
+ - [Flipdish.MenuElementEditResponse](docs/MenuElementEditResponse.md)
+ - [Flipdish.MenuElementHide](docs/MenuElementHide.md)
  - [Flipdish.MenuItemOptionSet](docs/MenuItemOptionSet.md)
  - [Flipdish.MenuItemOptionSetBase](docs/MenuItemOptionSetBase.md)
+ - [Flipdish.MenuItemOptionSetCreatedEvent](docs/MenuItemOptionSetCreatedEvent.md)
+ - [Flipdish.MenuItemOptionSetDeletedEvent](docs/MenuItemOptionSetDeletedEvent.md)
  - [Flipdish.MenuItemOptionSetItem](docs/MenuItemOptionSetItem.md)
  - [Flipdish.MenuItemOptionSetItemBase](docs/MenuItemOptionSetItemBase.md)
+ - [Flipdish.MenuItemOptionSetItemCreatedEvent](docs/MenuItemOptionSetItemCreatedEvent.md)
+ - [Flipdish.MenuItemOptionSetItemDeletedEvent](docs/MenuItemOptionSetItemDeletedEvent.md)
+ - [Flipdish.MenuItemOptionSetItemUpdatedEvent](docs/MenuItemOptionSetItemUpdatedEvent.md)
+ - [Flipdish.MenuItemOptionSetUpdatedEvent](docs/MenuItemOptionSetUpdatedEvent.md)
+ - [Flipdish.MenuObjectDisplayOrders](docs/MenuObjectDisplayOrders.md)
  - [Flipdish.MenuSection](docs/MenuSection.md)
  - [Flipdish.MenuSectionAvailability](docs/MenuSectionAvailability.md)
+ - [Flipdish.MenuSectionAvailabilityBase](docs/MenuSectionAvailabilityBase.md)
  - [Flipdish.MenuSectionBase](docs/MenuSectionBase.md)
+ - [Flipdish.MenuSectionCreatedEvent](docs/MenuSectionCreatedEvent.md)
+ - [Flipdish.MenuSectionDeletedEvent](docs/MenuSectionDeletedEvent.md)
  - [Flipdish.MenuSectionItem](docs/MenuSectionItem.md)
  - [Flipdish.MenuSectionItemBase](docs/MenuSectionItemBase.md)
+ - [Flipdish.MenuSectionItemCreatedEvent](docs/MenuSectionItemCreatedEvent.md)
+ - [Flipdish.MenuSectionItemDeletedEvent](docs/MenuSectionItemDeletedEvent.md)
+ - [Flipdish.MenuSectionItemUpdatedEvent](docs/MenuSectionItemUpdatedEvent.md)
+ - [Flipdish.MenuSectionUpdatedEvent](docs/MenuSectionUpdatedEvent.md)
+ - [Flipdish.MenuStoreNames](docs/MenuStoreNames.md)
+ - [Flipdish.MenuSummary](docs/MenuSummary.md)
+ - [Flipdish.MenuTaxDetails](docs/MenuTaxDetails.md)
+ - [Flipdish.MenuTaxRate](docs/MenuTaxRate.md)
  - [Flipdish.MenuUpdatedEvent](docs/MenuUpdatedEvent.md)
+ - [Flipdish.MenuUploadedEvent](docs/MenuUploadedEvent.md)
  - [Flipdish.Metadata](docs/Metadata.md)
- - [Flipdish.OAuthClient](docs/OAuthClient.md)
+ - [Flipdish.OAuthApp](docs/OAuthApp.md)
  - [Flipdish.OAuthTokenModel](docs/OAuthTokenModel.md)
  - [Flipdish.OauthClientRedirectUri](docs/OauthClientRedirectUri.md)
+ - [Flipdish.ObjectDisplayOrder](docs/ObjectDisplayOrder.md)
  - [Flipdish.Order](docs/Order.md)
  - [Flipdish.OrderAcceptedEvent](docs/OrderAcceptedEvent.md)
+ - [Flipdish.OrderCapacityConfigUpdatedEvent](docs/OrderCapacityConfigUpdatedEvent.md)
  - [Flipdish.OrderCreatedEvent](docs/OrderCreatedEvent.md)
+ - [Flipdish.OrderCustomerTrackingCreatedEvent](docs/OrderCustomerTrackingCreatedEvent.md)
+ - [Flipdish.OrderDeliveryTrackingStatusUpdatedEvent](docs/OrderDeliveryTrackingStatusUpdatedEvent.md)
+ - [Flipdish.OrderDispatchedEvent](docs/OrderDispatchedEvent.md)
+ - [Flipdish.OrderIdAndSequenceNumber](docs/OrderIdAndSequenceNumber.md)
  - [Flipdish.OrderItem](docs/OrderItem.md)
  - [Flipdish.OrderItemOption](docs/OrderItemOption.md)
+ - [Flipdish.OrderPaymentInformation](docs/OrderPaymentInformation.md)
  - [Flipdish.OrderRatingUpdatedEvent](docs/OrderRatingUpdatedEvent.md)
  - [Flipdish.OrderRefundedEvent](docs/OrderRefundedEvent.md)
  - [Flipdish.OrderRejectedEvent](docs/OrderRejectedEvent.md)
+ - [Flipdish.OrderSummary](docs/OrderSummary.md)
  - [Flipdish.OrderTipUpdatedEvent](docs/OrderTipUpdatedEvent.md)
+ - [Flipdish.OrderVoucherSummary](docs/OrderVoucherSummary.md)
+ - [Flipdish.OtherChargesDetails](docs/OtherChargesDetails.md)
+ - [Flipdish.PasswordResetModel](docs/PasswordResetModel.md)
+ - [Flipdish.PaymentTerminalDetails](docs/PaymentTerminalDetails.md)
+ - [Flipdish.PaymentTerminalTransactionDetails](docs/PaymentTerminalTransactionDetails.md)
+ - [Flipdish.Payout](docs/Payout.md)
+ - [Flipdish.PayoutChargeback](docs/PayoutChargeback.md)
+ - [Flipdish.PayoutDetail](docs/PayoutDetail.md)
+ - [Flipdish.PayoutOrder](docs/PayoutOrder.md)
+ - [Flipdish.PayoutOtherCharge](docs/PayoutOtherCharge.md)
+ - [Flipdish.PayoutRefund](docs/PayoutRefund.md)
+ - [Flipdish.PayoutStore](docs/PayoutStore.md)
+ - [Flipdish.PayoutSummary](docs/PayoutSummary.md)
+ - [Flipdish.PercentDiscountDetails](docs/PercentDiscountDetails.md)
+ - [Flipdish.PhoneCall](docs/PhoneCall.md)
+ - [Flipdish.PhoneCallEndedEvent](docs/PhoneCallEndedEvent.md)
+ - [Flipdish.PhoneCallStartedEvent](docs/PhoneCallStartedEvent.md)
+ - [Flipdish.PreOrderConfig](docs/PreOrderConfig.md)
+ - [Flipdish.PreOrderTime](docs/PreOrderTime.md)
+ - [Flipdish.PredefinedAnswer](docs/PredefinedAnswer.md)
+ - [Flipdish.Printer](docs/Printer.md)
+ - [Flipdish.PrinterAssignedToStoreEvent](docs/PrinterAssignedToStoreEvent.md)
+ - [Flipdish.PrinterTurnedOffEvent](docs/PrinterTurnedOffEvent.md)
+ - [Flipdish.PrinterTurnedOnEvent](docs/PrinterTurnedOnEvent.md)
+ - [Flipdish.PrinterUnassignedFromStoreEvent](docs/PrinterUnassignedFromStoreEvent.md)
+ - [Flipdish.ProcessingFeeConfig](docs/ProcessingFeeConfig.md)
+ - [Flipdish.PushNotificationDeletedEvent](docs/PushNotificationDeletedEvent.md)
+ - [Flipdish.PushNotificationRequest](docs/PushNotificationRequest.md)
+ - [Flipdish.PushNotificationResponse](docs/PushNotificationResponse.md)
+ - [Flipdish.PushNotificationScheduledEvent](docs/PushNotificationScheduledEvent.md)
+ - [Flipdish.PushNotificationSentEvent](docs/PushNotificationSentEvent.md)
  - [Flipdish.Range](docs/Range.md)
+ - [Flipdish.RedeemInvitationResult](docs/RedeemInvitationResult.md)
  - [Flipdish.Refund](docs/Refund.md)
  - [Flipdish.Reject](docs/Reject.md)
+ - [Flipdish.RequestLoginPinModel](docs/RequestLoginPinModel.md)
+ - [Flipdish.RequestLoginPinResposne](docs/RequestLoginPinResposne.md)
+ - [Flipdish.RequestPasswordResetModel](docs/RequestPasswordResetModel.md)
+ - [Flipdish.RestApiArrayResultAllMetadataResult](docs/RestApiArrayResultAllMetadataResult.md)
+ - [Flipdish.RestApiArrayResultApmCurrencyDataPoint](docs/RestApiArrayResultApmCurrencyDataPoint.md)
+ - [Flipdish.RestApiArrayResultApmDataPoint](docs/RestApiArrayResultApmDataPoint.md)
+ - [Flipdish.RestApiArrayResultApmHourlyDataPoint](docs/RestApiArrayResultApmHourlyDataPoint.md)
+ - [Flipdish.RestApiArrayResultBankAccountSummary](docs/RestApiArrayResultBankAccountSummary.md)
+ - [Flipdish.RestApiArrayResultBusinessHoursPeriod](docs/RestApiArrayResultBusinessHoursPeriod.md)
+ - [Flipdish.RestApiArrayResultCountryWithAccountFieldsDefinitions](docs/RestApiArrayResultCountryWithAccountFieldsDefinitions.md)
+ - [Flipdish.RestApiArrayResultDeliveryZone](docs/RestApiArrayResultDeliveryZone.md)
+ - [Flipdish.RestApiArrayResultDriver](docs/RestApiArrayResultDriver.md)
+ - [Flipdish.RestApiArrayResultDriverStore](docs/RestApiArrayResultDriverStore.md)
+ - [Flipdish.RestApiArrayResultEmvTerminalWithAssignments](docs/RestApiArrayResultEmvTerminalWithAssignments.md)
+ - [Flipdish.RestApiArrayResultHomeAction](docs/RestApiArrayResultHomeAction.md)
+ - [Flipdish.RestApiArrayResultLocalisedTimeZone](docs/RestApiArrayResultLocalisedTimeZone.md)
+ - [Flipdish.RestApiArrayResultLoyaltyCampaign](docs/RestApiArrayResultLoyaltyCampaign.md)
+ - [Flipdish.RestApiArrayResultMenuCheckpoint](docs/RestApiArrayResultMenuCheckpoint.md)
+ - [Flipdish.RestApiArrayResultMenuElementEditResponse](docs/RestApiArrayResultMenuElementEditResponse.md)
  - [Flipdish.RestApiArrayResultMenuItemOptionSet](docs/RestApiArrayResultMenuItemOptionSet.md)
  - [Flipdish.RestApiArrayResultMenuItemOptionSetItem](docs/RestApiArrayResultMenuItemOptionSetItem.md)
  - [Flipdish.RestApiArrayResultMenuSection](docs/RestApiArrayResultMenuSection.md)
  - [Flipdish.RestApiArrayResultMenuSectionItem](docs/RestApiArrayResultMenuSectionItem.md)
+ - [Flipdish.RestApiArrayResultMenuStoreNames](docs/RestApiArrayResultMenuStoreNames.md)
+ - [Flipdish.RestApiArrayResultMenuSummary](docs/RestApiArrayResultMenuSummary.md)
+ - [Flipdish.RestApiArrayResultMenuTaxDetails](docs/RestApiArrayResultMenuTaxDetails.md)
  - [Flipdish.RestApiArrayResultMetadata](docs/RestApiArrayResultMetadata.md)
- - [Flipdish.RestApiArrayResultOAuthClient](docs/RestApiArrayResultOAuthClient.md)
+ - [Flipdish.RestApiArrayResultOAuthApp](docs/RestApiArrayResultOAuthApp.md)
  - [Flipdish.RestApiArrayResultOauthClientRedirectUri](docs/RestApiArrayResultOauthClientRedirectUri.md)
+ - [Flipdish.RestApiArrayResultPayoutSummary](docs/RestApiArrayResultPayoutSummary.md)
+ - [Flipdish.RestApiArrayResultPreOrderTime](docs/RestApiArrayResultPreOrderTime.md)
+ - [Flipdish.RestApiArrayResultProcessingFeeConfig](docs/RestApiArrayResultProcessingFeeConfig.md)
  - [Flipdish.RestApiArrayResultRestApiDefaultResponse](docs/RestApiArrayResultRestApiDefaultResponse.md)
- - [Flipdish.RestApiArrayResultWebhookSubscription](docs/RestApiArrayResultWebhookSubscription.md)
+ - [Flipdish.RestApiArrayResultRetentionCampaign](docs/RestApiArrayResultRetentionCampaign.md)
+ - [Flipdish.RestApiArrayResultStoreListItem](docs/RestApiArrayResultStoreListItem.md)
+ - [Flipdish.RestApiArrayResultStoreStatistics](docs/RestApiArrayResultStoreStatistics.md)
+ - [Flipdish.RestApiArrayResultSupportedCountry](docs/RestApiArrayResultSupportedCountry.md)
+ - [Flipdish.RestApiArrayResultTeammate](docs/RestApiArrayResultTeammate.md)
+ - [Flipdish.RestApiArrayResultVoucherDataPoint](docs/RestApiArrayResultVoucherDataPoint.md)
  - [Flipdish.RestApiDefaultResponse](docs/RestApiDefaultResponse.md)
  - [Flipdish.RestApiErrorResult](docs/RestApiErrorResult.md)
  - [Flipdish.RestApiEventSearchPaginationResult](docs/RestApiEventSearchPaginationResult.md)
  - [Flipdish.RestApiForbiddenResult](docs/RestApiForbiddenResult.md)
  - [Flipdish.RestApiIntegerResult](docs/RestApiIntegerResult.md)
+ - [Flipdish.RestApiPaginationResultApp](docs/RestApiPaginationResultApp.md)
+ - [Flipdish.RestApiPaginationResultBusinessHoursOverride](docs/RestApiPaginationResultBusinessHoursOverride.md)
  - [Flipdish.RestApiPaginationResultHttpRequestAndResponseLog](docs/RestApiPaginationResultHttpRequestAndResponseLog.md)
+ - [Flipdish.RestApiPaginationResultHydraDeviceDetails](docs/RestApiPaginationResultHydraDeviceDetails.md)
  - [Flipdish.RestApiPaginationResultOAuthTokenModel](docs/RestApiPaginationResultOAuthTokenModel.md)
  - [Flipdish.RestApiPaginationResultOrder](docs/RestApiPaginationResultOrder.md)
+ - [Flipdish.RestApiPaginationResultOrderSummary](docs/RestApiPaginationResultOrderSummary.md)
+ - [Flipdish.RestApiPaginationResultPayout](docs/RestApiPaginationResultPayout.md)
+ - [Flipdish.RestApiPaginationResultPayoutChargeback](docs/RestApiPaginationResultPayoutChargeback.md)
+ - [Flipdish.RestApiPaginationResultPayoutOrder](docs/RestApiPaginationResultPayoutOrder.md)
+ - [Flipdish.RestApiPaginationResultPayoutOtherCharge](docs/RestApiPaginationResultPayoutOtherCharge.md)
+ - [Flipdish.RestApiPaginationResultPayoutRefund](docs/RestApiPaginationResultPayoutRefund.md)
+ - [Flipdish.RestApiPaginationResultPhoneCall](docs/RestApiPaginationResultPhoneCall.md)
+ - [Flipdish.RestApiPaginationResultPushNotificationResponse](docs/RestApiPaginationResultPushNotificationResponse.md)
  - [Flipdish.RestApiPaginationResultStore](docs/RestApiPaginationResultStore.md)
- - [Flipdish.RestApiPaginationResultVoucher](docs/RestApiPaginationResultVoucher.md)
+ - [Flipdish.RestApiPaginationResultStoreGroup](docs/RestApiPaginationResultStoreGroup.md)
+ - [Flipdish.RestApiPaginationResultStoreGroupExtended](docs/RestApiPaginationResultStoreGroupExtended.md)
+ - [Flipdish.RestApiPaginationResultStoreHeader](docs/RestApiPaginationResultStoreHeader.md)
+ - [Flipdish.RestApiPaginationResultVoucherSummary](docs/RestApiPaginationResultVoucherSummary.md)
  - [Flipdish.RestApiPaginationResultWebhookLog](docs/RestApiPaginationResultWebhookLog.md)
+ - [Flipdish.RestApiPaginationResultWebhookSubscription](docs/RestApiPaginationResultWebhookSubscription.md)
+ - [Flipdish.RestApiResultAccountDetail](docs/RestApiResultAccountDetail.md)
+ - [Flipdish.RestApiResultAccountFieldsDefinitions](docs/RestApiResultAccountFieldsDefinitions.md)
+ - [Flipdish.RestApiResultApmStatistics](docs/RestApiResultApmStatistics.md)
+ - [Flipdish.RestApiResultApmStatus](docs/RestApiResultApmStatus.md)
+ - [Flipdish.RestApiResultApp](docs/RestApiResultApp.md)
+ - [Flipdish.RestApiResultAppCompliance](docs/RestApiResultAppCompliance.md)
+ - [Flipdish.RestApiResultAssignedBankAccount](docs/RestApiResultAssignedBankAccount.md)
+ - [Flipdish.RestApiResultBankAccountDetail](docs/RestApiResultBankAccountDetail.md)
+ - [Flipdish.RestApiResultBluetoothTerminalStatus](docs/RestApiResultBluetoothTerminalStatus.md)
+ - [Flipdish.RestApiResultBusinessHoursOverride](docs/RestApiResultBusinessHoursOverride.md)
+ - [Flipdish.RestApiResultBusinessHoursPeriod](docs/RestApiResultBusinessHoursPeriod.md)
+ - [Flipdish.RestApiResultCoordinates](docs/RestApiResultCoordinates.md)
+ - [Flipdish.RestApiResultCustomer](docs/RestApiResultCustomer.md)
+ - [Flipdish.RestApiResultDeliveryZone](docs/RestApiResultDeliveryZone.md)
+ - [Flipdish.RestApiResultDnsRecordInformation](docs/RestApiResultDnsRecordInformation.md)
+ - [Flipdish.RestApiResultDriver](docs/RestApiResultDriver.md)
+ - [Flipdish.RestApiResultHomeStatistics](docs/RestApiResultHomeStatistics.md)
+ - [Flipdish.RestApiResultHydraConfig](docs/RestApiResultHydraConfig.md)
+ - [Flipdish.RestApiResultHydraStatus](docs/RestApiResultHydraStatus.md)
+ - [Flipdish.RestApiResultIndexPage](docs/RestApiResultIndexPage.md)
+ - [Flipdish.RestApiResultIndexPageBase](docs/RestApiResultIndexPageBase.md)
+ - [Flipdish.RestApiResultJobResponse](docs/RestApiResultJobResponse.md)
+ - [Flipdish.RestApiResultLightspeedSettings](docs/RestApiResultLightspeedSettings.md)
+ - [Flipdish.RestApiResultLoyaltyCampaign](docs/RestApiResultLoyaltyCampaign.md)
  - [Flipdish.RestApiResultMenu](docs/RestApiResultMenu.md)
  - [Flipdish.RestApiResultMenuItemOptionSet](docs/RestApiResultMenuItemOptionSet.md)
  - [Flipdish.RestApiResultMenuItemOptionSetItem](docs/RestApiResultMenuItemOptionSetItem.md)
  - [Flipdish.RestApiResultMenuSection](docs/RestApiResultMenuSection.md)
+ - [Flipdish.RestApiResultMenuSectionAvailability](docs/RestApiResultMenuSectionAvailability.md)
  - [Flipdish.RestApiResultMenuSectionItem](docs/RestApiResultMenuSectionItem.md)
  - [Flipdish.RestApiResultMetadata](docs/RestApiResultMetadata.md)
- - [Flipdish.RestApiResultOAuthClient](docs/RestApiResultOAuthClient.md)
+ - [Flipdish.RestApiResultOAuthApp](docs/RestApiResultOAuthApp.md)
  - [Flipdish.RestApiResultOauthClientRedirectUri](docs/RestApiResultOauthClientRedirectUri.md)
  - [Flipdish.RestApiResultOrder](docs/RestApiResultOrder.md)
+ - [Flipdish.RestApiResultOrderPaymentInformation](docs/RestApiResultOrderPaymentInformation.md)
+ - [Flipdish.RestApiResultPaymentTerminalDetails](docs/RestApiResultPaymentTerminalDetails.md)
+ - [Flipdish.RestApiResultPaymentTerminalTransactionDetails](docs/RestApiResultPaymentTerminalTransactionDetails.md)
+ - [Flipdish.RestApiResultPreOrderConfig](docs/RestApiResultPreOrderConfig.md)
+ - [Flipdish.RestApiResultProcessingFeeConfig](docs/RestApiResultProcessingFeeConfig.md)
+ - [Flipdish.RestApiResultPushNotificationResponse](docs/RestApiResultPushNotificationResponse.md)
+ - [Flipdish.RestApiResultRedeemInvitationResult](docs/RestApiResultRedeemInvitationResult.md)
+ - [Flipdish.RestApiResultRetentionCampaign](docs/RestApiResultRetentionCampaign.md)
  - [Flipdish.RestApiResultStore](docs/RestApiResultStore.md)
- - [Flipdish.RestApiResultVoucher](docs/RestApiResultVoucher.md)
+ - [Flipdish.RestApiResultStoreAddress](docs/RestApiResultStoreAddress.md)
+ - [Flipdish.RestApiResultStoreEndOfDayReport](docs/RestApiResultStoreEndOfDayReport.md)
+ - [Flipdish.RestApiResultStoreGroup](docs/RestApiResultStoreGroup.md)
+ - [Flipdish.RestApiResultStoreGroupBase](docs/RestApiResultStoreGroupBase.md)
+ - [Flipdish.RestApiResultStoreOrderCapacityConfig](docs/RestApiResultStoreOrderCapacityConfig.md)
+ - [Flipdish.RestApiResultStripeConnectedAccount](docs/RestApiResultStripeConnectedAccount.md)
+ - [Flipdish.RestApiResultStripeTerminalPrivateKey](docs/RestApiResultStripeTerminalPrivateKey.md)
+ - [Flipdish.RestApiResultStuartSettings](docs/RestApiResultStuartSettings.md)
+ - [Flipdish.RestApiResultTeammate](docs/RestApiResultTeammate.md)
+ - [Flipdish.RestApiResultVoucherWithStats](docs/RestApiResultVoucherWithStats.md)
+ - [Flipdish.RestApiResultWebsiteImage](docs/RestApiResultWebsiteImage.md)
+ - [Flipdish.RestApiResultWebsiteTestimonial](docs/RestApiResultWebsiteTestimonial.md)
  - [Flipdish.RestApiStringArrayResult](docs/RestApiStringArrayResult.md)
  - [Flipdish.RestApiStringResult](docs/RestApiStringResult.md)
  - [Flipdish.RestApiUnauthorizedResult](docs/RestApiUnauthorizedResult.md)
+ - [Flipdish.RetentionCampaign](docs/RetentionCampaign.md)
+ - [Flipdish.RetentionCampaignBase](docs/RetentionCampaignBase.md)
+ - [Flipdish.RetentionCampaignCreatedEvent](docs/RetentionCampaignCreatedEvent.md)
+ - [Flipdish.RetentionCampaignDeletedEvent](docs/RetentionCampaignDeletedEvent.md)
+ - [Flipdish.RetentionCampaignUpdatedEvent](docs/RetentionCampaignUpdatedEvent.md)
+ - [Flipdish.RevenueAdjustmentsDetails](docs/RevenueAdjustmentsDetails.md)
+ - [Flipdish.RevenueDetail](docs/RevenueDetail.md)
  - [Flipdish.SearchCriteria](docs/SearchCriteria.md)
+ - [Flipdish.SetPasswordWithPinModel](docs/SetPasswordWithPinModel.md)
+ - [Flipdish.SignupStep](docs/SignupStep.md)
+ - [Flipdish.SmsInfo](docs/SmsInfo.md)
+ - [Flipdish.SmsReceivedEvent](docs/SmsReceivedEvent.md)
+ - [Flipdish.StatisticsCurrencyDataPoint](docs/StatisticsCurrencyDataPoint.md)
  - [Flipdish.Store](docs/Store.md)
  - [Flipdish.StoreAddress](docs/StoreAddress.md)
+ - [Flipdish.StoreAddressBase](docs/StoreAddressBase.md)
+ - [Flipdish.StoreAddressUpdatedEvent](docs/StoreAddressUpdatedEvent.md)
+ - [Flipdish.StoreArchivedEvent](docs/StoreArchivedEvent.md)
+ - [Flipdish.StoreBase](docs/StoreBase.md)
+ - [Flipdish.StoreBusinessHoursOverrideCreatedEvent](docs/StoreBusinessHoursOverrideCreatedEvent.md)
+ - [Flipdish.StoreBusinessHoursOverrideDeletedEvent](docs/StoreBusinessHoursOverrideDeletedEvent.md)
+ - [Flipdish.StoreCampaignStartTime](docs/StoreCampaignStartTime.md)
+ - [Flipdish.StoreCloneSettings](docs/StoreCloneSettings.md)
+ - [Flipdish.StoreCreateBase](docs/StoreCreateBase.md)
  - [Flipdish.StoreCreatedEvent](docs/StoreCreatedEvent.md)
+ - [Flipdish.StoreDataPoint](docs/StoreDataPoint.md)
  - [Flipdish.StoreDeletedEvent](docs/StoreDeletedEvent.md)
- - [Flipdish.StoreDeliveryZoneUpdatedEvent](docs/StoreDeliveryZoneUpdatedEvent.md)
+ - [Flipdish.StoreEndOfDayReport](docs/StoreEndOfDayReport.md)
+ - [Flipdish.StoreGroup](docs/StoreGroup.md)
+ - [Flipdish.StoreGroupBase](docs/StoreGroupBase.md)
+ - [Flipdish.StoreGroupCreatedEvent](docs/StoreGroupCreatedEvent.md)
+ - [Flipdish.StoreGroupDeletedEvent](docs/StoreGroupDeletedEvent.md)
+ - [Flipdish.StoreGroupExtended](docs/StoreGroupExtended.md)
+ - [Flipdish.StoreGroupUpdatedEvent](docs/StoreGroupUpdatedEvent.md)
+ - [Flipdish.StoreHeader](docs/StoreHeader.md)
+ - [Flipdish.StoreKioskSetting](docs/StoreKioskSetting.md)
+ - [Flipdish.StoreKioskSettingUpdatedEvent](docs/StoreKioskSettingUpdatedEvent.md)
+ - [Flipdish.StoreListItem](docs/StoreListItem.md)
+ - [Flipdish.StoreLogoCreatedEvent](docs/StoreLogoCreatedEvent.md)
+ - [Flipdish.StoreLogoDeletedEvent](docs/StoreLogoDeletedEvent.md)
+ - [Flipdish.StoreLogoUpdatedEvent](docs/StoreLogoUpdatedEvent.md)
+ - [Flipdish.StoreMenuAssignedEvent](docs/StoreMenuAssignedEvent.md)
  - [Flipdish.StoreNote](docs/StoreNote.md)
  - [Flipdish.StoreOpeningHoursUpdatedEvent](docs/StoreOpeningHoursUpdatedEvent.md)
+ - [Flipdish.StoreOrderCapacityConfig](docs/StoreOrderCapacityConfig.md)
+ - [Flipdish.StoreOrderCapacityConfigEditModel](docs/StoreOrderCapacityConfigEditModel.md)
+ - [Flipdish.StoreOrderCapacityPeriod](docs/StoreOrderCapacityPeriod.md)
+ - [Flipdish.StorePreOrderConfigUpdatedEvent](docs/StorePreOrderConfigUpdatedEvent.md)
+ - [Flipdish.StorePublishedEvent](docs/StorePublishedEvent.md)
+ - [Flipdish.StoreStatistics](docs/StoreStatistics.md)
  - [Flipdish.StoreSummary](docs/StoreSummary.md)
+ - [Flipdish.StoreUnarchivedEvent](docs/StoreUnarchivedEvent.md)
+ - [Flipdish.StoreUnpublishedEvent](docs/StoreUnpublishedEvent.md)
  - [Flipdish.StoreUpdatedEvent](docs/StoreUpdatedEvent.md)
+ - [Flipdish.StripeAccountLinkRequest](docs/StripeAccountLinkRequest.md)
+ - [Flipdish.StripeConnectedAccount](docs/StripeConnectedAccount.md)
+ - [Flipdish.StripeConnectedAccountInfo](docs/StripeConnectedAccountInfo.md)
+ - [Flipdish.StripeTerminalPrivateKey](docs/StripeTerminalPrivateKey.md)
+ - [Flipdish.StuartSettings](docs/StuartSettings.md)
+ - [Flipdish.StuartSettingsTransportPrices](docs/StuartSettingsTransportPrices.md)
+ - [Flipdish.SupportedCountry](docs/SupportedCountry.md)
+ - [Flipdish.Teammate](docs/Teammate.md)
+ - [Flipdish.TeammateBase](docs/TeammateBase.md)
+ - [Flipdish.TeammateDeletedEvent](docs/TeammateDeletedEvent.md)
+ - [Flipdish.TeammateInviteAcceptedEvent](docs/TeammateInviteAcceptedEvent.md)
+ - [Flipdish.TeammateInviteSentEvent](docs/TeammateInviteSentEvent.md)
+ - [Flipdish.TeammateUpdatedEvent](docs/TeammateUpdatedEvent.md)
+ - [Flipdish.UpdateDriverNotificationToken](docs/UpdateDriverNotificationToken.md)
+ - [Flipdish.UpdateDriverProfileModel](docs/UpdateDriverProfileModel.md)
+ - [Flipdish.UserAnsweredSignupQuestionsEvent](docs/UserAnsweredSignupQuestionsEvent.md)
+ - [Flipdish.UserCreatedEvent](docs/UserCreatedEvent.md)
+ - [Flipdish.UserDeletedEvent](docs/UserDeletedEvent.md)
  - [Flipdish.UserEventInfo](docs/UserEventInfo.md)
+ - [Flipdish.UserLoginEvent](docs/UserLoginEvent.md)
+ - [Flipdish.UserPasswordCreatedEvent](docs/UserPasswordCreatedEvent.md)
+ - [Flipdish.UserUpdatedEvent](docs/UserUpdatedEvent.md)
  - [Flipdish.ValidationErrorResult](docs/ValidationErrorResult.md)
  - [Flipdish.Voucher](docs/Voucher.md)
+ - [Flipdish.VoucherBase](docs/VoucherBase.md)
+ - [Flipdish.VoucherCreatedEvent](docs/VoucherCreatedEvent.md)
+ - [Flipdish.VoucherDataPoint](docs/VoucherDataPoint.md)
+ - [Flipdish.VoucherDeletedEvent](docs/VoucherDeletedEvent.md)
  - [Flipdish.VoucherSummary](docs/VoucherSummary.md)
+ - [Flipdish.VoucherUpdatedEvent](docs/VoucherUpdatedEvent.md)
+ - [Flipdish.VoucherWithStats](docs/VoucherWithStats.md)
+ - [Flipdish.WebhookEventSample](docs/WebhookEventSample.md)
  - [Flipdish.WebhookLog](docs/WebhookLog.md)
  - [Flipdish.WebhookSubscription](docs/WebhookSubscription.md)
  - [Flipdish.WebhookSubscriptionCreatedEvent](docs/WebhookSubscriptionCreatedEvent.md)
  - [Flipdish.WebhookSubscriptionDeletedEvent](docs/WebhookSubscriptionDeletedEvent.md)
  - [Flipdish.WebhookSubscriptionEventInfo](docs/WebhookSubscriptionEventInfo.md)
  - [Flipdish.WebhookSubscriptionUpdatedEvent](docs/WebhookSubscriptionUpdatedEvent.md)
+ - [Flipdish.WebsiteImage](docs/WebsiteImage.md)
+ - [Flipdish.WebsiteTestimonial](docs/WebsiteTestimonial.md)
+ - [Flipdish.WebsiteTestimonialBase](docs/WebsiteTestimonialBase.md)
+ - [Flipdish.WebsiteUpdatedEvent](docs/WebsiteUpdatedEvent.md)
+ - [Flipdish.WebsiteVanityUrlUpdatedEvent](docs/WebsiteVanityUrlUpdatedEvent.md)
 
 
 ## Documentation for Authorization
@@ -318,7 +879,7 @@ Class | Method | HTTP request | Description
 
 - **Type**: OAuth
 - **Flow**: implicit
-- **Authorization URL**: https://app.getflipdish.com/identity/connect/authorize
+- **Authorization URL**: https://api.flipdish.co/identity/connect/authorize
 - **Scopes**: 
   - api: Access to Flipdish API
 

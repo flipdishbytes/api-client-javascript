@@ -3,9 +3,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**page** | **Number** | Current page index | [optional] 
-**limit** | **Number** | Current page size | [optional] 
-**totalRecordCount** | **Number** | Total record count | [optional] 
-**data** | [**[HttpRequestAndResponseLog]**](HttpRequestAndResponseLog.md) | Generic data object. | [optional] 
+**Page** | **Number** | Current page index | 
+**Limit** | **Number** | Current page size | 
+**TotalRecordCount** | **Number** | Total record count | 
+**Data** | [**[HttpRequestAndResponseLog]**](HttpRequestAndResponseLog.md) | Generic data object. | 
 
 

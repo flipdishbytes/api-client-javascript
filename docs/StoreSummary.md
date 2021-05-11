@@ -3,11 +3,14 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **Number** | Store identifier | [optional] 
-**name** | **String** | Store name | [optional] 
-**menuId** | **Number** | Stores menu identifier | [optional] 
-**metadata** | **{String: String}** | Store metadata | [optional] 
-**currency** | **String** | Currency which used by the Store | [optional] 
+**Id** | **Number** | Store identifier | [optional] 
+**Name** | **String** | Store name | [optional] 
+**MenuId** | **Number** | Stores menu identifier | [optional] 
+**Metadata** | **{String: String}** | Store metadata | [optional] 
+**Currency** | **String** | Currency which used by the Store | [optional] 
+**Coordinates** | [**Coordinates**](Coordinates.md) | Latitude and longitude of the store | [optional] 
+**StoreTimezone** | **String** | Timezone of store | [optional] 
+**StoreGroupId** | **Number** | Store group id of store | [optional] 
 
 
 <a name="CurrencyEnum"></a>
@@ -237,6 +240,8 @@ Name | Type | Description | Notes
 * `MOP` (value: `"MOP"`)
 
 * `TWD` (value: `"TWD"`)
+
+* `BMD` (value: `"BMD"`)
 
 
 

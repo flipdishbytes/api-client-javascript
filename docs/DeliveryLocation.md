@@ -3,12 +3,12 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**coordinates** | [**Coordinates**](Coordinates.md) | Geo cordinate | [optional] 
-**building** | **String** | Building | [optional] 
-**street** | **String** | Street | [optional] 
-**town** | **String** | Town | [optional] 
-**postCode** | **String** | Post code | [optional] 
-**deliveryInstructions** | **String** | Delivery instructions | [optional] 
-**prettyAddressString** | **String** | Formatted, pretty address string | [optional] 
+**Coordinates** | [**Coordinates**](Coordinates.md) | Geo cordinate | [optional] 
+**Building** | **String** | Building | [optional] 
+**Street** | **String** | Street | [optional] 
+**Town** | **String** | Town | [optional] 
+**PostCode** | **String** | Post code | [optional] 
+**DeliveryInstructions** | **String** | Delivery instructions | [optional] 
+**PrettyAddressString** | **String** | Formatted, pretty address string | [optional] 
 
 

@@ -3,14 +3,14 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**dayOfWeek** | **String** | Day of week | [optional] 
-**startTime** | **String** | Start time | [optional] 
-**period** | **String** | Period | [optional] 
-**startTimeEarly** | **String** | Start time early | [optional] 
-**periodEarly** | **String** | Period early | [optional] 
-**early** | [**Range**](Range.md) | Early | [optional] 
-**late** | [**Range**](Range.md) | Late | [optional] 
-**ranges** | [**[Range]**](Range.md) | Ranges | [optional] 
+**Early** | [**Range**](Range.md) | Early | [optional] 
+**Late** | [**Range**](Range.md) | Late | [optional] 
+**Ranges** | [**[Range]**](Range.md) | Ranges | [optional] 
+**DayOfWeek** | **String** | Day of week | [optional] 
+**StartTime** | **String** | Start time | [optional] 
+**Period** | **String** | Period | [optional] 
+**StartTimeEarly** | **String** | Start time early | [optional] 
+**PeriodEarly** | **String** | Period early | [optional] 
 
 
 <a name="DayOfWeekEnum"></a>

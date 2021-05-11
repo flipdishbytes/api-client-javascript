@@ -3,10 +3,11 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **String** | Name | [optional] 
-**description** | **String** | Description | [optional] 
-**displayOrder** | **Number** | Display order | [optional] 
-**isAvailable** | **Boolean** | Is available | [optional] 
-**isHiddenFromCustomers** | **Boolean** | Is hidden from customer. Perhaps when the item is out of stock. | [optional] 
+**Name** | **String** | Name | [optional] 
+**Description** | **String** | Description | [optional] 
+**DisplayOrder** | **Number** | Display order | [optional] 
+**IsAvailable** | **Boolean** | Is available | [optional] 
+**IsHiddenFromCustomers** | **Boolean** | Is hidden from customer. Perhaps when the item is out of stock. | [optional] 
+**ImageUrl** | **String** | Image url | [optional] 
 
 

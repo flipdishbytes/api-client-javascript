@@ -3,9 +3,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**data** | [**EventSearchResult**](EventSearchResult.md) | Event results | [optional] 
-**page** | **Number** | Current page index | [optional] 
-**limit** | **Number** | Current page size | [optional] 
-**totalRecordCount** | **Number** | Total record count | [optional] 
+**Data** | [**EventSearchResult**](EventSearchResult.md) | Event results | 
+**Page** | **Number** | Current page index | 
+**Limit** | **Number** | Current page size | 
+**TotalRecordCount** | **Number** | Total record count | 
 
 

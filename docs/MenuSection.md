@@ -3,14 +3,15 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**menuSectionId** | **Number** | Menu section identifier | [optional] 
-**imageUrl** | **String** | Image url | [optional] 
-**menuItems** | [**[MenuSectionItem]**](MenuSectionItem.md) | Menu items | [optional] 
-**menuSectionAvailability** | [**MenuSectionAvailability**](MenuSectionAvailability.md) | Menu section availability | [optional] 
-**name** | **String** | Name | [optional] 
-**description** | **String** | Description | [optional] 
-**displayOrder** | **Number** | Display order | [optional] 
-**isAvailable** | **Boolean** | Is available | [optional] 
-**isHiddenFromCustomers** | **Boolean** | Is hidden from customer. Perhaps when the item is out of stock. | [optional] 
+**MenuSectionId** | **Number** | Menu section identifier | [optional] 
+**MenuItems** | [**[MenuSectionItem]**](MenuSectionItem.md) | Menu items | [optional] 
+**MenuSectionAvailability** | [**MenuSectionAvailability**](MenuSectionAvailability.md) | Menu section availability | [optional] 
+**PublicId** | **String** | Permanent reference to the item. | [optional] 
+**Name** | **String** | Name | [optional] 
+**Description** | **String** | Description | [optional] 
+**DisplayOrder** | **Number** | Display order | [optional] 
+**IsAvailable** | **Boolean** | Is available | [optional] 
+**IsHiddenFromCustomers** | **Boolean** | Is hidden from customer. Perhaps when the item is out of stock. | [optional] 
+**ImageUrl** | **String** | Image url | [optional] 
 
 

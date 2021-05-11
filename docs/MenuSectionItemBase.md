@@ -3,14 +3,16 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **String** | Menu item name (like \&quot;Korma\&quot;) | [optional] 
-**description** | **String** | Description (like \&quot;A lovely dish from the east\&quot;) | [optional] 
-**spicinessRating** | **String** | Spiciness rating | [optional] 
-**price** | **Number** | Price - this is only used when there is no master option set and should be set to 0 if a master option set exists. | [optional] 
-**displayOrder** | **Number** | Display order | [optional] 
-**alcohol** | **Boolean** | To be set true if the item or an option of the item contains an alcoholic drink. | [optional] 
-**isAvailable** | **Boolean** | True if we accept orders for this item still | [optional] 
-**cellLayoutType** | **String** | Small | Medium | Large  Affects the layout of the menu. | [optional] 
+**Name** | **String** | Menu item name (like \"Korma\") | [optional] 
+**Description** | **String** | Description (like \"A lovely dish from the east\") | [optional] 
+**SpicinessRating** | **String** | Spiciness rating | [optional] 
+**Price** | **Number** | Price - this is only used when there is no master option set and should be set to 0 if a master option set exists. | [optional] 
+**DisplayOrder** | **Number** | Display order | [optional] 
+**Alcohol** | **Boolean** | To be set true if the item or an option of the item contains an alcoholic drink. | [optional] 
+**IsAvailable** | **Boolean** | True if we accept orders for this item still | [optional] 
+**CellLayoutType** | **String** | Small | Medium | Large  Affects the layout of the menu. | [optional] 
+**DisableVouchers** | **Boolean** | If true, then vouchers won't be applied for this item | [optional] 
+**ImageUrl** | **String** | Image url | [optional] 
 
 
 <a name="SpicinessRatingEnum"></a>
@@ -37,6 +39,8 @@ Name | Type | Description | Notes
 * `Medium` (value: `"Medium"`)
 
 * `Large` (value: `"Large"`)
+
+* `HiddenImage` (value: `"HiddenImage"`)
 
 
 
