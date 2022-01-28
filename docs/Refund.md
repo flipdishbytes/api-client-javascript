@@ -3,8 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**refundReason** | **String** | Refund reason | [optional] 
-**refundAmount** | **Number** | Refund amount | [optional] 
-**notifyCustomer** | **Boolean** | If ture, the system sends notification to the customer about the refund | [optional] 
+**RefundReason** | **String** | Refund reason | [optional] 
+**RefundAmount** | **Number** | Refund amount | 
+**NotifyCustomer** | **Boolean** | If true, the system sends notification to the customer about the refund | 
 
 

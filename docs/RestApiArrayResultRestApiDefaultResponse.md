@@ -3,6 +3,6 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**data** | [**[RestApiDefaultResponse]**](RestApiDefaultResponse.md) | Generic data object. | [optional] 
+**Data** | [**[RestApiDefaultResponse]**](RestApiDefaultResponse.md) | Generic data object. | 
 
 

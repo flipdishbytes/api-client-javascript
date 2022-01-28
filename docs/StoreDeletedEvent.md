@@ -3,12 +3,15 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**eventName** | **String** | The event name | [optional] 
-**storeId** | **Number** | Store Id | [optional] 
-**user** | [**UserEventInfo**](UserEventInfo.md) | Info User | [optional] 
-**description** | **String** | Description | [optional] 
-**flipdishEventId** | **String** | The identitfier of the event | [optional] 
-**createTime** | **Date** | The time of creation of the event | [optional] 
-**position** | **Number** | Position | [optional] 
+**EventName** | **String** | The event name | [optional] 
+**StoreId** | **Number** | Store Id | [optional] 
+**StoreGroupId** | **Number** | Store group Id | [optional] 
+**User** | [**UserEventInfo**](UserEventInfo.md) | User which deleted this store | [optional] 
+**Description** | **String** | Description | [optional] 
+**Store** | [**Store**](Store.md) | Deleted Store | [optional] 
+**FlipdishEventId** | **String** | The identitfier of the event | [optional] 
+**CreateTime** | **Date** | The time of creation of the event | [optional] 
+**Position** | **Number** | Position | [optional] 
+**AppId** | **String** | App id | [optional] 
 
 

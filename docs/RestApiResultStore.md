@@ -3,6 +3,6 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**data** | [**Store**](Store.md) | Generic data object. | [optional] 
+**Data** | [**Store**](Store.md) | Generic data object. | 
 
 

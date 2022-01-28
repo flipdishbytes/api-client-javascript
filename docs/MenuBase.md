@@ -3,8 +3,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**displaySectionLinks** | **Boolean** | Display menu section link on UI | [optional] 
-**menuSectionBehaviour** | **String** | Menu section behaviour | [optional] 
+**DisplaySectionLinks** | **Boolean** | Display menu section link on UI | [optional] 
+**MenuSectionBehaviour** | **String** | Menu section behaviour | [optional] 
+**TaxType** | **String** | Tax type | [optional] 
 
 
 <a name="MenuSectionBehaviourEnum"></a>
@@ -14,6 +15,17 @@ Name | Type | Description | Notes
 * `ExpandSingle` (value: `"ExpandSingle"`)
 
 * `ExpandMultiple` (value: `"ExpandMultiple"`)
+
+
+
+
+<a name="TaxTypeEnum"></a>
+## Enum: TaxTypeEnum
+
+
+* `IncludedInBasePrice` (value: `"IncludedInBasePrice"`)
+
+* `ExcludedFromBasePrice` (value: `"ExcludedFromBasePrice"`)
 
 
 

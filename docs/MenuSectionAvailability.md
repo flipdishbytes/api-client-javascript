@@ -3,8 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**availableTimes** | [**[BusinessHoursPeriod]**](BusinessHoursPeriod.md) | Available times | [optional] 
-**availabilityMode** | **String** | Availability mode | [optional] 
+**AvailableTimes** | [**[BusinessHoursPeriod]**](BusinessHoursPeriod.md) | Available times | [optional] 
+**AvailabilityMode** | **String** | Availability mode | [optional] 
 
 
 <a name="AvailabilityModeEnum"></a>
