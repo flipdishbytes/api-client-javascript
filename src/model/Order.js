@@ -87,10 +87,6 @@
         obj.ChannelOrderId = ApiClient.convertToType(data['ChannelOrderId'], 'String');
       if (data.hasOwnProperty('ChannelOrderDisplayId'))
         obj.ChannelOrderDisplayId = ApiClient.convertToType(data['ChannelOrderDisplayId'], 'String');
-      if (data.hasOwnProperty('ExternalOrderId'))
-        obj.ExternalOrderId = ApiClient.convertToType(data['ExternalOrderId'], 'String');
-      if (data.hasOwnProperty('ExternalOrderDisplayId'))
-        obj.ExternalOrderDisplayId = ApiClient.convertToType(data['ExternalOrderDisplayId'], 'String');
       if (data.hasOwnProperty('Channel'))
         obj.Channel = Channel.constructFromObject(data['Channel']);
       if (data.hasOwnProperty('ReceiptCode'))
@@ -246,18 +242,6 @@
    * @member {String} ChannelOrderDisplayId
    */
   exports.prototype.ChannelOrderDisplayId = undefined;
-
-  /**
-   * ExternalOrderId from external channel
-   * @member {String} ExternalOrderId
-   */
-  exports.prototype.ExternalOrderId = undefined;
-
-  /**
-   * ExternalOrderDisplayId from external channel
-   * @member {String} ExternalOrderDisplayId
-   */
-  exports.prototype.ExternalOrderDisplayId = undefined;
 
   /**
    * Channel where the Order comes from

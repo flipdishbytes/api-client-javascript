@@ -16,18 +16,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/CreateCatalogGroupReference'], factory);
+    define(['ApiClient', 'model/CreateCatalogGroupReference', 'model/Metafield'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./CreateCatalogGroupReference'));
+    module.exports = factory(require('../ApiClient'), require('./CreateCatalogGroupReference'), require('./Metafield'));
   } else {
     // Browser globals (root is window)
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.CreateCatalogItem = factory(root.Flipdish.ApiClient, root.Flipdish.CreateCatalogGroupReference);
+    root.Flipdish.CreateCatalogItem = factory(root.Flipdish.ApiClient, root.Flipdish.CreateCatalogGroupReference, root.Flipdish.Metafield);
   }
-}(this, function(ApiClient, CreateCatalogGroupReference) {
+}(this, function(ApiClient, CreateCatalogGroupReference, Metafield) {
   'use strict';
 
   /**
@@ -65,6 +65,8 @@
       obj = obj || new exports();
       if (data.hasOwnProperty('Groups'))
         obj.Groups = ApiClient.convertToType(data['Groups'], [CreateCatalogGroupReference]);
+      if (data.hasOwnProperty('Metafields'))
+        obj.Metafields = ApiClient.convertToType(data['Metafields'], [Metafield]);
       if (data.hasOwnProperty('ItemType'))
         obj.ItemType = ApiClient.convertToType(data['ItemType'], 'String');
       if (data.hasOwnProperty('Sku'))
@@ -88,6 +90,12 @@
    * @member {Array.<module:model/CreateCatalogGroupReference>} Groups
    */
   exports.prototype.Groups = undefined;
+
+  /**
+   * Collection of metafields
+   * @member {Array.<module:model/Metafield>} Metafields
+   */
+  exports.prototype.Metafields = undefined;
 
   /**
    * Type of item (Product, Modifier, etc)

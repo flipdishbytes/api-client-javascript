@@ -16,18 +16,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/UpdateCatalogGroupReference'], factory);
+    define(['ApiClient', 'model/Metafield', 'model/UpdateCatalogGroupReference'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./UpdateCatalogGroupReference'));
+    module.exports = factory(require('../ApiClient'), require('./Metafield'), require('./UpdateCatalogGroupReference'));
   } else {
     // Browser globals (root is window)
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.UpdateCatalogItem = factory(root.Flipdish.ApiClient, root.Flipdish.UpdateCatalogGroupReference);
+    root.Flipdish.UpdateCatalogItem = factory(root.Flipdish.ApiClient, root.Flipdish.Metafield, root.Flipdish.UpdateCatalogGroupReference);
   }
-}(this, function(ApiClient, UpdateCatalogGroupReference) {
+}(this, function(ApiClient, Metafield, UpdateCatalogGroupReference) {
   'use strict';
 
   /**
@@ -69,6 +69,8 @@
         obj.Alcohol = ApiClient.convertToType(data['Alcohol'], 'Boolean');
       if (data.hasOwnProperty('Groups'))
         obj.Groups = ApiClient.convertToType(data['Groups'], [UpdateCatalogGroupReference]);
+      if (data.hasOwnProperty('Metafields'))
+        obj.Metafields = ApiClient.convertToType(data['Metafields'], [Metafield]);
     }
     return obj;
   }
@@ -114,6 +116,12 @@
    * @member {Array.<module:model/UpdateCatalogGroupReference>} Groups
    */
   exports.prototype.Groups = undefined;
+
+  /**
+   * Collection of metafields
+   * @member {Array.<module:model/Metafield>} Metafields
+   */
+  exports.prototype.Metafields = undefined;
 
 
   return exports;

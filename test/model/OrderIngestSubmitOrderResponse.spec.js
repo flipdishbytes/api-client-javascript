@@ -82,12 +82,6 @@
         // expect(instance.ChannelOrderId).to.be(expectedValueLiteral);
       });
 
-      it('should have the property ExternalOrderId (base name: "ExternalOrderId")', function() {
-        // TODO: update the code to test the property ExternalOrderId
-        expect(instance).to.have.property('ExternalOrderId');
-        // expect(instance.ExternalOrderId).to.be(expectedValueLiteral);
-      });
-
     });
   });
 

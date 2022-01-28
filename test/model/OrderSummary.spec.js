@@ -190,18 +190,6 @@
         // expect(instance.ChannelOrderDisplayId).to.be(expectedValueLiteral);
       });
 
-      it('should have the property ExternalOrderId (base name: "ExternalOrderId")', function() {
-        // TODO: update the code to test the property ExternalOrderId
-        expect(instance).to.have.property('ExternalOrderId');
-        // expect(instance.ExternalOrderId).to.be(expectedValueLiteral);
-      });
-
-      it('should have the property ExternalOrderDisplayId (base name: "ExternalOrderDisplayId")', function() {
-        // TODO: update the code to test the property ExternalOrderDisplayId
-        expect(instance).to.have.property('ExternalOrderDisplayId');
-        // expect(instance.ExternalOrderDisplayId).to.be(expectedValueLiteral);
-      });
-
     });
   });
 

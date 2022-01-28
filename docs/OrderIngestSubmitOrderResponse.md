@@ -10,7 +10,6 @@ Name | Type | Description | Notes
 **DeliveryFee** | [**Price**](Price.md) |  | [optional] 
 **EstimatedDeliveryTime** | **Date** |  | [optional] 
 **ChannelOrderId** | **String** |  | [optional] 
-**ExternalOrderId** | **String** |  | [optional] 
 
 
 <a name="CurrencyCodeEnum"></a>

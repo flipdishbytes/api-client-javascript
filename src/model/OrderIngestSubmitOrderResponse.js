@@ -68,8 +68,6 @@
         obj.EstimatedDeliveryTime = ApiClient.convertToType(data['EstimatedDeliveryTime'], 'Date');
       if (data.hasOwnProperty('ChannelOrderId'))
         obj.ChannelOrderId = ApiClient.convertToType(data['ChannelOrderId'], 'String');
-      if (data.hasOwnProperty('ExternalOrderId'))
-        obj.ExternalOrderId = ApiClient.convertToType(data['ExternalOrderId'], 'String');
     }
     return obj;
   }
@@ -108,11 +106,6 @@
    * @member {String} ChannelOrderId
    */
   exports.prototype.ChannelOrderId = undefined;
-
-  /**
-   * @member {String} ExternalOrderId
-   */
-  exports.prototype.ExternalOrderId = undefined;
 
 
 

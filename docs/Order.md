@@ -19,8 +19,6 @@ Name | Type | Description | Notes
 **RejectedByUserId** | **Number** | Id of user who rejected order, if available | [optional] 
 **ChannelOrderId** | **String** | ChannelOrderId from external channel | [optional] 
 **ChannelOrderDisplayId** | **String** | ChannelOrderDisplayId from external channel | [optional] 
-**ExternalOrderId** | **String** | ExternalOrderId from external channel | [optional] 
-**ExternalOrderDisplayId** | **String** | ExternalOrderDisplayId from external channel | [optional] 
 **Channel** | [**Channel**](Channel.md) | Channel where the Order comes from | [optional] 
 **ReceiptCode** | **String** | Generated receipt code for an order | [optional] 
 **OrderId** | **Number** | Order identifier | [optional] 

@@ -10,5 +10,6 @@ Name | Type | Description | Notes
 **ImageFileName** | **String** | Image File Name | [optional] 
 **Alcohol** | **Boolean** | Product contains alcohol | [optional] 
 **Groups** | [**[UpdateCatalogGroupReference]**](UpdateCatalogGroupReference.md) | Collection of groups associated with this item | [optional] 
+**Metafields** | [**[Metafield]**](Metafield.md) | Collection of metafields | [optional] 
 
 

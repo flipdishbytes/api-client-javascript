@@ -28,8 +28,6 @@ Name | Type | Description | Notes
 **UnusualHighValueOrder** | **Boolean** | Is order of unusually high value | [optional] 
 **ChannelOrderId** | **String** | ChannelOrderId from external channel | [optional] 
 **ChannelOrderDisplayId** | **String** | ChannelOrderDisplayId from external channel | [optional] 
-**ExternalOrderId** | **String** | ExternalOrderId from external channel | [optional] 
-**ExternalOrderDisplayId** | **String** | ExternalOrderDisplayId from external channel | [optional] 
 
 
 <a name="DeliveryTypeEnum"></a>
