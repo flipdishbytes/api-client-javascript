@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 **MinSelectCount** | **Number** | Minimum number of items that the user has to select | [optional] 
 **MaxSelectCount** | **Number** | Maximum number of items that the user has to select | [optional] 
 **Items** | [**[CatalogItemReference]**](CatalogItemReference.md) | Collection of items associated with this product | [optional] 
+**Metafields** | [**[Metafield]**](Metafield.md) | Collection of metafields | [optional] 
 **GroupType** | **String** | Type of group (ModifierGroup, etc) | 
 **Sku** | **String** | Stock Keeping Unit (SKU) | 
 **Name** | **String** | Group name | 

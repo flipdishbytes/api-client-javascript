@@ -16,18 +16,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/UpdateCatalogItemReference'], factory);
+    define(['ApiClient', 'model/Metafield', 'model/UpdateCatalogItemReference'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./UpdateCatalogItemReference'));
+    module.exports = factory(require('../ApiClient'), require('./Metafield'), require('./UpdateCatalogItemReference'));
   } else {
     // Browser globals (root is window)
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.UpdateCatalogGroup = factory(root.Flipdish.ApiClient, root.Flipdish.UpdateCatalogItemReference);
+    root.Flipdish.UpdateCatalogGroup = factory(root.Flipdish.ApiClient, root.Flipdish.Metafield, root.Flipdish.UpdateCatalogItemReference);
   }
-}(this, function(ApiClient, UpdateCatalogItemReference) {
+}(this, function(ApiClient, Metafield, UpdateCatalogItemReference) {
   'use strict';
 
   /**
@@ -67,6 +67,8 @@
         obj.MaxSelectCount = ApiClient.convertToType(data['MaxSelectCount'], 'Number');
       if (data.hasOwnProperty('Items'))
         obj.Items = ApiClient.convertToType(data['Items'], [UpdateCatalogItemReference]);
+      if (data.hasOwnProperty('Metafields'))
+        obj.Metafields = ApiClient.convertToType(data['Metafields'], [Metafield]);
     }
     return obj;
   }
@@ -106,6 +108,12 @@
    * @member {Array.<module:model/UpdateCatalogItemReference>} Items
    */
   exports.prototype.Items = undefined;
+
+  /**
+   * Collection of metafields
+   * @member {Array.<module:model/Metafield>} Metafields
+   */
+  exports.prototype.Metafields = undefined;
 
 
   return exports;

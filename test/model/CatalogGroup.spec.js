@@ -70,6 +70,12 @@
         // expect(instance.Items).to.be(expectedValueLiteral);
       });
 
+      it('should have the property Metafields (base name: "Metafields")', function() {
+        // TODO: update the code to test the property Metafields
+        expect(instance).to.have.property('Metafields');
+        // expect(instance.Metafields).to.be(expectedValueLiteral);
+      });
+
       it('should have the property GroupType (base name: "GroupType")', function() {
         // TODO: update the code to test the property GroupType
         expect(instance).to.have.property('GroupType');
