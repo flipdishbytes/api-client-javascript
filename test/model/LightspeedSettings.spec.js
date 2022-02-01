@@ -154,6 +154,24 @@
         // expect(instance.SendTableNumberToTableId).to.be(expectedValueLiteral);
       });
 
+      it('should have the property AddChefNoteToProduct (base name: "AddChefNoteToProduct")', function() {
+        // TODO: update the code to test the property AddChefNoteToProduct
+        expect(instance).to.have.property('AddChefNoteToProduct');
+        // expect(instance.AddChefNoteToProduct).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property ChefNoteItemId (base name: "ChefNoteItemId")', function() {
+        // TODO: update the code to test the property ChefNoteItemId
+        expect(instance).to.have.property('ChefNoteItemId');
+        // expect(instance.ChefNoteItemId).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property ChefNoteModifierId (base name: "ChefNoteModifierId")', function() {
+        // TODO: update the code to test the property ChefNoteModifierId
+        expect(instance).to.have.property('ChefNoteModifierId');
+        // expect(instance.ChefNoteModifierId).to.be(expectedValueLiteral);
+      });
+
     });
   });
 

@@ -93,6 +93,12 @@
         obj.SkipStatusCheckAndAcceptOrderAfterSending = ApiClient.convertToType(data['SkipStatusCheckAndAcceptOrderAfterSending'], 'Boolean');
       if (data.hasOwnProperty('SendTableNumberToTableId'))
         obj.SendTableNumberToTableId = ApiClient.convertToType(data['SendTableNumberToTableId'], 'Boolean');
+      if (data.hasOwnProperty('AddChefNoteToProduct'))
+        obj.AddChefNoteToProduct = ApiClient.convertToType(data['AddChefNoteToProduct'], 'Boolean');
+      if (data.hasOwnProperty('ChefNoteItemId'))
+        obj.ChefNoteItemId = ApiClient.convertToType(data['ChefNoteItemId'], 'String');
+      if (data.hasOwnProperty('ChefNoteModifierId'))
+        obj.ChefNoteModifierId = ApiClient.convertToType(data['ChefNoteModifierId'], 'String');
     }
     return obj;
   }
@@ -210,6 +216,24 @@
    * @member {Boolean} SendTableNumberToTableId
    */
   exports.prototype.SendTableNumberToTableId = undefined;
+
+  /**
+   * Add ChefNote To Product
+   * @member {Boolean} AddChefNoteToProduct
+   */
+  exports.prototype.AddChefNoteToProduct = undefined;
+
+  /**
+   * The Lightspeed Chef Note Item Id to map
+   * @member {String} ChefNoteItemId
+   */
+  exports.prototype.ChefNoteItemId = undefined;
+
+  /**
+   * The Lightspeed Chef Note Modifier Id to map
+   * @member {String} ChefNoteModifierId
+   */
+  exports.prototype.ChefNoteModifierId = undefined;
 
 
 

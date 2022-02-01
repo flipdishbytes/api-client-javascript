@@ -22,6 +22,9 @@ Name | Type | Description | Notes
 **UseTaxInclusivePrices** | **Boolean** | Exclude tax | [optional] 
 **SkipStatusCheckAndAcceptOrderAfterSending** | **Boolean** | WARNING: only use this option if the Liteserver is not synchronizing within max 5 minutes with Lightspeed cloud! | [optional] 
 **SendTableNumberToTableId** | **Boolean** | Send Table Number to Table Id | [optional] 
+**AddChefNoteToProduct** | **Boolean** | Add ChefNote To Product | [optional] 
+**ChefNoteItemId** | **String** | The Lightspeed Chef Note Item Id to map | [optional] 
+**ChefNoteModifierId** | **String** | The Lightspeed Chef Note Modifier Id to map | [optional] 
 
 
 <a name="PriceTypeEnum"></a>
