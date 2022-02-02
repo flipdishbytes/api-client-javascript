@@ -792,6 +792,36 @@
     DeleteCatalogElements: "DeleteCatalogElements",
 
     /**
+     * value: "ViewMetafieldDefinitions"
+     * @const
+     */
+    ViewMetafieldDefinitions: "ViewMetafieldDefinitions",
+
+    /**
+     * value: "CreateMetafieldDefinitions"
+     * @const
+     */
+    CreateMetafieldDefinitions: "CreateMetafieldDefinitions",
+
+    /**
+     * value: "UpdateMetafieldDefinitions"
+     * @const
+     */
+    UpdateMetafieldDefinitions: "UpdateMetafieldDefinitions",
+
+    /**
+     * value: "DeleteMetafieldDefinitions"
+     * @const
+     */
+    DeleteMetafieldDefinitions: "DeleteMetafieldDefinitions",
+
+    /**
+     * value: "UpdateMetafields"
+     * @const
+     */
+    UpdateMetafields: "UpdateMetafields",
+
+    /**
      * value: "ViewAppStatistics"
      * @const
      */

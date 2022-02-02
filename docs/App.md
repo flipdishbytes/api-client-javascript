@@ -223,6 +223,16 @@ Name | Type | Description | Notes
 
 * `DeleteCatalogElements` (value: `"DeleteCatalogElements"`)
 
+* `ViewMetafieldDefinitions` (value: `"ViewMetafieldDefinitions"`)
+
+* `CreateMetafieldDefinitions` (value: `"CreateMetafieldDefinitions"`)
+
+* `UpdateMetafieldDefinitions` (value: `"UpdateMetafieldDefinitions"`)
+
+* `DeleteMetafieldDefinitions` (value: `"DeleteMetafieldDefinitions"`)
+
+* `UpdateMetafields` (value: `"UpdateMetafields"`)
+
 * `ViewAppStatistics` (value: `"ViewAppStatistics"`)
 
 * `ViewApmStatistics` (value: `"ViewApmStatistics"`)
