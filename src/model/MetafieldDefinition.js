@@ -59,12 +59,12 @@
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
+      if (data.hasOwnProperty('IsReadOnly'))
+        obj.IsReadOnly = ApiClient.convertToType(data['IsReadOnly'], 'Boolean');
       if (data.hasOwnProperty('OwnerEntity'))
         obj.OwnerEntity = ApiClient.convertToType(data['OwnerEntity'], 'String');
       if (data.hasOwnProperty('Key'))
         obj.Key = ApiClient.convertToType(data['Key'], 'String');
-      if (data.hasOwnProperty('IsReadOnly'))
-        obj.IsReadOnly = ApiClient.convertToType(data['IsReadOnly'], 'Boolean');
       if (data.hasOwnProperty('ValueType'))
         obj.ValueType = ApiClient.convertToType(data['ValueType'], 'String');
       if (data.hasOwnProperty('Name'))
@@ -78,7 +78,13 @@
   }
 
   /**
-   * The Metafield will extend the specified {Flipdish.PublicModels.V1.Metafields.MetafieldDefinition.OwnerEntity}
+   * Indicates if a definition can be edited or not
+   * @member {Boolean} IsReadOnly
+   */
+  exports.prototype.IsReadOnly = undefined;
+
+  /**
+   * The Metafield will extend the specified {Flipdish.PublicModels.V1.Metafields.MetafieldDefinitionBase.OwnerEntity}
    * @member {module:model/MetafieldDefinition.OwnerEntityEnum} OwnerEntity
    */
   exports.prototype.OwnerEntity = undefined;
@@ -88,12 +94,6 @@
    * @member {String} Key
    */
   exports.prototype.Key = undefined;
-
-  /**
-   * Indicates if a definition can be edited or not
-   * @member {Boolean} IsReadOnly
-   */
-  exports.prototype.IsReadOnly = undefined;
 
   /**
    * The excepted type for the Value field

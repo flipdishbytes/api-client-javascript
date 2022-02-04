@@ -40,6 +40,12 @@
         expect(instance).to.be.a(Flipdish.MetafieldDefinition);
       });
 
+      it('should have the property IsReadOnly (base name: "IsReadOnly")', function() {
+        // TODO: update the code to test the property IsReadOnly
+        expect(instance).to.have.property('IsReadOnly');
+        // expect(instance.IsReadOnly).to.be(expectedValueLiteral);
+      });
+
       it('should have the property OwnerEntity (base name: "OwnerEntity")', function() {
         // TODO: update the code to test the property OwnerEntity
         expect(instance).to.have.property('OwnerEntity');
@@ -50,12 +56,6 @@
         // TODO: update the code to test the property Key
         expect(instance).to.have.property('Key');
         // expect(instance.Key).to.be(expectedValueLiteral);
-      });
-
-      it('should have the property IsReadOnly (base name: "IsReadOnly")', function() {
-        // TODO: update the code to test the property IsReadOnly
-        expect(instance).to.have.property('IsReadOnly');
-        // expect(instance.IsReadOnly).to.be(expectedValueLiteral);
       });
 
       it('should have the property ValueType (base name: "ValueType")', function() {

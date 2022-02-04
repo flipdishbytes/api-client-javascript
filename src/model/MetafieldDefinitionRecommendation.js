@@ -25,21 +25,21 @@
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.CreateMetafieldDefinition = factory(root.Flipdish.ApiClient);
+    root.Flipdish.MetafieldDefinitionRecommendation = factory(root.Flipdish.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
 
   /**
-   * The CreateMetafieldDefinition model module.
-   * @module model/CreateMetafieldDefinition
+   * The MetafieldDefinitionRecommendation model module.
+   * @module model/MetafieldDefinitionRecommendation
    * @version 1.0.0
    */
 
   /**
-   * Constructs a new <code>CreateMetafieldDefinition</code>.
-   * Information to create a {Flipdish.PublicModels.V1.Metafields.MetafieldDefinition}
-   * @alias module:model/CreateMetafieldDefinition
+   * Constructs a new <code>MetafieldDefinitionRecommendation</code>.
+   * OwnerEntity Metafield Definition Recommendation
+   * @alias module:model/MetafieldDefinitionRecommendation
    * @class
    * @param Key {String} Key of the metafield.  Allowed characters: lowercase letters, numbers, hyphen, underscore and dot
    * @param Name {String} Field Name
@@ -50,17 +50,15 @@
   };
 
   /**
-   * Constructs a <code>CreateMetafieldDefinition</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>MetafieldDefinitionRecommendation</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/CreateMetafieldDefinition} obj Optional instance to populate.
-   * @return {module:model/CreateMetafieldDefinition} The populated <code>CreateMetafieldDefinition</code> instance.
+   * @param {module:model/MetafieldDefinitionRecommendation} obj Optional instance to populate.
+   * @return {module:model/MetafieldDefinitionRecommendation} The populated <code>MetafieldDefinitionRecommendation</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
-      if (data.hasOwnProperty('IsReadOnly'))
-        obj.IsReadOnly = ApiClient.convertToType(data['IsReadOnly'], 'Boolean');
       if (data.hasOwnProperty('OwnerEntity'))
         obj.OwnerEntity = ApiClient.convertToType(data['OwnerEntity'], 'String');
       if (data.hasOwnProperty('Key'))
@@ -78,14 +76,8 @@
   }
 
   /**
-   * Indicates if a definition can be edited or not
-   * @member {Boolean} IsReadOnly
-   */
-  exports.prototype.IsReadOnly = undefined;
-
-  /**
    * The Metafield will extend the specified {Flipdish.PublicModels.V1.Metafields.MetafieldDefinitionBase.OwnerEntity}
-   * @member {module:model/CreateMetafieldDefinition.OwnerEntityEnum} OwnerEntity
+   * @member {module:model/MetafieldDefinitionRecommendation.OwnerEntityEnum} OwnerEntity
    */
   exports.prototype.OwnerEntity = undefined;
 
@@ -97,7 +89,7 @@
 
   /**
    * The excepted type for the Value field
-   * @member {module:model/CreateMetafieldDefinition.ValueTypeEnum} ValueType
+   * @member {module:model/MetafieldDefinitionRecommendation.ValueTypeEnum} ValueType
    */
   exports.prototype.ValueType = undefined;
 
@@ -115,7 +107,7 @@
 
   /**
    * Enable Metafield Behaviors
-   * @member {Array.<module:model/CreateMetafieldDefinition.BehaviorsEnum>} Behaviors
+   * @member {Array.<module:model/MetafieldDefinitionRecommendation.BehaviorsEnum>} Behaviors
    */
   exports.prototype.Behaviors = undefined;
 

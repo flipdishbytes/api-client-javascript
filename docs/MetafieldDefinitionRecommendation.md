@@ -1,9 +1,8 @@
-# Flipdish.CreateMetafieldDefinition
+# Flipdish.MetafieldDefinitionRecommendation
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**IsReadOnly** | **Boolean** | Indicates if a definition can be edited or not | [optional] 
 **OwnerEntity** | **String** | The Metafield will extend the specified {Flipdish.PublicModels.V1.Metafields.MetafieldDefinitionBase.OwnerEntity} | [optional] 
 **Key** | **String** | Key of the metafield.  Allowed characters: lowercase letters, numbers, hyphen, underscore and dot | 
 **ValueType** | **String** | The excepted type for the Value field | [optional] 

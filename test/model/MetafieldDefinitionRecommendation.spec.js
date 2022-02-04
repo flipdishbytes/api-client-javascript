@@ -30,20 +30,14 @@
   var instance;
 
   describe('(package)', function() {
-    describe('CreateMetafieldDefinition', function() {
+    describe('MetafieldDefinitionRecommendation', function() {
       beforeEach(function() {
-        instance = new Flipdish.CreateMetafieldDefinition();
+        instance = new Flipdish.MetafieldDefinitionRecommendation();
       });
 
-      it('should create an instance of CreateMetafieldDefinition', function() {
-        // TODO: update the code to test CreateMetafieldDefinition
-        expect(instance).to.be.a(Flipdish.CreateMetafieldDefinition);
-      });
-
-      it('should have the property IsReadOnly (base name: "IsReadOnly")', function() {
-        // TODO: update the code to test the property IsReadOnly
-        expect(instance).to.have.property('IsReadOnly');
-        // expect(instance.IsReadOnly).to.be(expectedValueLiteral);
+      it('should create an instance of MetafieldDefinitionRecommendation', function() {
+        // TODO: update the code to test MetafieldDefinitionRecommendation
+        expect(instance).to.be.a(Flipdish.MetafieldDefinitionRecommendation);
       });
 
       it('should have the property OwnerEntity (base name: "OwnerEntity")', function() {
