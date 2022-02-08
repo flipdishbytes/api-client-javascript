@@ -70,6 +70,24 @@
         // expect(instance.ProductId).to.be(expectedValueLiteral);
       });
 
+      it('should have the property TaxRateName (base name: "TaxRateName")', function() {
+        // TODO: update the code to test the property TaxRateName
+        expect(instance).to.have.property('TaxRateName');
+        // expect(instance.TaxRateName).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property TaxRateId (base name: "TaxRateId")', function() {
+        // TODO: update the code to test the property TaxRateId
+        expect(instance).to.have.property('TaxRateId');
+        // expect(instance.TaxRateId).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property TaxValue (base name: "TaxValue")', function() {
+        // TODO: update the code to test the property TaxValue
+        expect(instance).to.have.property('TaxValue');
+        // expect(instance.TaxValue).to.be(expectedValueLiteral);
+      });
+
       it('should have the property Name (base name: "Name")', function() {
         // TODO: update the code to test the property Name
         expect(instance).to.have.property('Name');

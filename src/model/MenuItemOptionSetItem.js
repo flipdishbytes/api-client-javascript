@@ -65,6 +65,12 @@
         obj.NextMenuItemOptionSetId = ApiClient.convertToType(data['NextMenuItemOptionSetId'], 'Number');
       if (data.hasOwnProperty('ProductId'))
         obj.ProductId = ApiClient.convertToType(data['ProductId'], 'String');
+      if (data.hasOwnProperty('TaxRateName'))
+        obj.TaxRateName = ApiClient.convertToType(data['TaxRateName'], 'String');
+      if (data.hasOwnProperty('TaxRateId'))
+        obj.TaxRateId = ApiClient.convertToType(data['TaxRateId'], 'Number');
+      if (data.hasOwnProperty('TaxValue'))
+        obj.TaxValue = ApiClient.convertToType(data['TaxValue'], 'Number');
       if (data.hasOwnProperty('Name'))
         obj.Name = ApiClient.convertToType(data['Name'], 'String');
       if (data.hasOwnProperty('Price'))
@@ -110,6 +116,22 @@
    * @member {String} ProductId
    */
   exports.prototype.ProductId = undefined;
+
+  /**
+   * Tax rate name
+   * @member {String} TaxRateName
+   */
+  exports.prototype.TaxRateName = undefined;
+
+  /**
+   * @member {Number} TaxRateId
+   */
+  exports.prototype.TaxRateId = undefined;
+
+  /**
+   * @member {Number} TaxValue
+   */
+  exports.prototype.TaxValue = undefined;
 
   /**
    * Name
