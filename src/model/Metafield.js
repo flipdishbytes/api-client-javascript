@@ -41,8 +41,12 @@
    * Metafield
    * @alias module:model/Metafield
    * @class
+   * @param Key {String} Key of the metafield.  Allowed characters: lowercase letters, numbers, hyphen, underscore and dot
+   * @param Value {String} Value of the metafield.
    */
-  var exports = function() {
+  var exports = function(Key, Value) {
+    this.Key = Key;
+    this.Value = Value;
   };
 
   /**

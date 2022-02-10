@@ -41,7 +41,7 @@
    * OwnerEntity Metafield Definition Recommendation
    * @alias module:model/MetafieldDefinitionRecommendation
    * @class
-   * @param Key {String} Key of the metafield.  Allowed characters: lowercase letters, numbers, hyphen, underscore and dot
+   * @param Key {String} Key of the metafield.  The key must have two parts, separated by a dot. The first part acts as a category, for organizational purposes.  The parts can be composed of lowercase letters, numbers, hyphen and underscore
    * @param Name {String} Field Name
    */
   var exports = function(Key, Name) {
@@ -71,6 +71,8 @@
         obj.Description = ApiClient.convertToType(data['Description'], 'String');
       if (data.hasOwnProperty('Behaviors'))
         obj.Behaviors = ApiClient.convertToType(data['Behaviors'], ['String']);
+      if (data.hasOwnProperty('MetafieldDefinitionRecommendationId'))
+        obj.MetafieldDefinitionRecommendationId = ApiClient.convertToType(data['MetafieldDefinitionRecommendationId'], 'Number');
     }
     return obj;
   }
@@ -82,7 +84,7 @@
   exports.prototype.OwnerEntity = undefined;
 
   /**
-   * Key of the metafield.  Allowed characters: lowercase letters, numbers, hyphen, underscore and dot
+   * Key of the metafield.  The key must have two parts, separated by a dot. The first part acts as a category, for organizational purposes.  The parts can be composed of lowercase letters, numbers, hyphen and underscore
    * @member {String} Key
    */
   exports.prototype.Key = undefined;
@@ -110,6 +112,12 @@
    * @member {Array.<module:model/MetafieldDefinitionRecommendation.BehaviorsEnum>} Behaviors
    */
   exports.prototype.Behaviors = undefined;
+
+  /**
+   * Metafield Recommendation Id
+   * @member {Number} MetafieldDefinitionRecommendationId
+   */
+  exports.prototype.MetafieldDefinitionRecommendationId = undefined;
 
 
 

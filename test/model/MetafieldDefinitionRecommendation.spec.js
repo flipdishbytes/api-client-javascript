@@ -76,6 +76,12 @@
         // expect(instance.Behaviors).to.be(expectedValueLiteral);
       });
 
+      it('should have the property MetafieldDefinitionRecommendationId (base name: "MetafieldDefinitionRecommendationId")', function() {
+        // TODO: update the code to test the property MetafieldDefinitionRecommendationId
+        expect(instance).to.have.property('MetafieldDefinitionRecommendationId');
+        // expect(instance.MetafieldDefinitionRecommendationId).to.be(expectedValueLiteral);
+      });
+
     });
   });
 
