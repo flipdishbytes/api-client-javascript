@@ -271,7 +271,13 @@
      * value: "FinanceManger"
      * @const
      */
-    FinanceManger: "FinanceManger"
+    FinanceManger: "FinanceManger",
+
+    /**
+     * value: "Support"
+     * @const
+     */
+    Support: "Support"
   };
 
 
