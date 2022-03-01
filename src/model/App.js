@@ -1104,10 +1104,10 @@
     ViewPayouts: "ViewPayouts",
 
     /**
-     * value: "Channels"
+     * value: "ViewChannels"
      * @const
      */
-    Channels: "Channels"
+    ViewChannels: "ViewChannels"
   };
 
 

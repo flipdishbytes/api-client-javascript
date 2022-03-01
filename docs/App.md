@@ -327,7 +327,7 @@ Name | Type | Description | Notes
 
 * `ViewPayouts` (value: `"ViewPayouts"`)
 
-* `Channels` (value: `"Channels"`)
+* `ViewChannels` (value: `"ViewChannels"`)
 
 
 
