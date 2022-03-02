@@ -15,6 +15,8 @@ Name | Type | Description | Notes
 **SetupInstructions** | **String** | Setup Instructions | [optional] 
 **ExternalSetupLink** | **String** | External Setup Link | [optional] 
 **OAuthAppId** | **String** | OAuth App Id | 
+**TeammateAppAccessLevel** | **String** | Teammate App Access Level | [optional] 
+**PermissionsType** | **String** | Permissions Type | 
 **Name** | **String** | Name | 
 **Description** | **String** | Description | 
 **Logo** | **String** | Logo | [optional] 
@@ -44,6 +46,38 @@ Name | Type | Description | Notes
 * `Single` (value: `"Single"`)
 
 * `Multiple` (value: `"Multiple"`)
+
+
+
+
+<a name="TeammateAppAccessLevelEnum"></a>
+## Enum: TeammateAppAccessLevelEnum
+
+
+* `Owner` (value: `"Owner"`)
+
+* `StoreOwner` (value: `"StoreOwner"`)
+
+* `ManagedOwner` (value: `"ManagedOwner"`)
+
+* `Integrator` (value: `"Integrator"`)
+
+* `StoreManager` (value: `"StoreManager"`)
+
+* `StoreStaff` (value: `"StoreStaff"`)
+
+* `StoreReadOnlyAccess` (value: `"StoreReadOnlyAccess"`)
+
+* `FinanceManger` (value: `"FinanceManger"`)
+
+
+
+
+<a name="PermissionsTypeEnum"></a>
+## Enum: PermissionsTypeEnum
+
+
+* `Teammate` (value: `"Teammate"`)
 
 
 

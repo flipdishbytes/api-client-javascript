@@ -82,6 +82,18 @@
         // expect(instance.OAuthAppId).to.be(expectedValueLiteral);
       });
 
+      it('should have the property TeammateAppAccessLevel (base name: "TeammateAppAccessLevel")', function() {
+        // TODO: update the code to test the property TeammateAppAccessLevel
+        expect(instance).to.have.property('TeammateAppAccessLevel');
+        // expect(instance.TeammateAppAccessLevel).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property PermissionsType (base name: "PermissionsType")', function() {
+        // TODO: update the code to test the property PermissionsType
+        expect(instance).to.have.property('PermissionsType');
+        // expect(instance.PermissionsType).to.be(expectedValueLiteral);
+      });
+
       it('should have the property Name (base name: "Name")', function() {
         // TODO: update the code to test the property Name
         expect(instance).to.have.property('Name');

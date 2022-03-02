@@ -44,16 +44,18 @@
    * @param ConfigurationType {module:model/AppDetailBase.ConfigurationTypeEnum} Configuration Type  <example>ExternalLink</example><example>FlipdishHosted</example>
    * @param StoreSelectorType {module:model/AppDetailBase.StoreSelectorTypeEnum} Store Selector Type
    * @param OAuthAppId {String} OAuth App Id
+   * @param PermissionsType {module:model/AppDetailBase.PermissionsTypeEnum} Permissions Type
    * @param Name {String} Name
    * @param Description {String} Description
    * @param VerificationStatus {module:model/AppDetailBase.VerificationStatusEnum} Application verification status
    * @param Tags {Array.<String>} Tags
    * @param Regions {Array.<String>} Regions
    */
-  var exports = function(ConfigurationType, StoreSelectorType, OAuthAppId, Name, Description, VerificationStatus, Tags, Regions) {
+  var exports = function(ConfigurationType, StoreSelectorType, OAuthAppId, PermissionsType, Name, Description, VerificationStatus, Tags, Regions) {
     this.ConfigurationType = ConfigurationType;
     this.StoreSelectorType = StoreSelectorType;
     this.OAuthAppId = OAuthAppId;
+    this.PermissionsType = PermissionsType;
     this.Name = Name;
     this.Description = Description;
     this.VerificationStatus = VerificationStatus;
@@ -83,6 +85,10 @@
         obj.ExternalSetupLink = ApiClient.convertToType(data['ExternalSetupLink'], 'String');
       if (data.hasOwnProperty('OAuthAppId'))
         obj.OAuthAppId = ApiClient.convertToType(data['OAuthAppId'], 'String');
+      if (data.hasOwnProperty('TeammateAppAccessLevel'))
+        obj.TeammateAppAccessLevel = ApiClient.convertToType(data['TeammateAppAccessLevel'], 'String');
+      if (data.hasOwnProperty('PermissionsType'))
+        obj.PermissionsType = ApiClient.convertToType(data['PermissionsType'], 'String');
       if (data.hasOwnProperty('Name'))
         obj.Name = ApiClient.convertToType(data['Name'], 'String');
       if (data.hasOwnProperty('Description'))
@@ -138,6 +144,18 @@
    * @member {String} OAuthAppId
    */
   exports.prototype.OAuthAppId = undefined;
+
+  /**
+   * Teammate App Access Level
+   * @member {module:model/AppDetailBase.TeammateAppAccessLevelEnum} TeammateAppAccessLevel
+   */
+  exports.prototype.TeammateAppAccessLevel = undefined;
+
+  /**
+   * Permissions Type
+   * @member {module:model/AppDetailBase.PermissionsTypeEnum} PermissionsType
+   */
+  exports.prototype.PermissionsType = undefined;
 
   /**
    * Name
@@ -232,6 +250,76 @@
      * @const
      */
     Multiple: "Multiple"
+  };
+
+
+  /**
+   * Allowed values for the <code>TeammateAppAccessLevel</code> property.
+   * @enum {String}
+   * @readonly
+   */
+  exports.TeammateAppAccessLevelEnum = {
+    /**
+     * value: "Owner"
+     * @const
+     */
+    Owner: "Owner",
+
+    /**
+     * value: "StoreOwner"
+     * @const
+     */
+    StoreOwner: "StoreOwner",
+
+    /**
+     * value: "ManagedOwner"
+     * @const
+     */
+    ManagedOwner: "ManagedOwner",
+
+    /**
+     * value: "Integrator"
+     * @const
+     */
+    Integrator: "Integrator",
+
+    /**
+     * value: "StoreManager"
+     * @const
+     */
+    StoreManager: "StoreManager",
+
+    /**
+     * value: "StoreStaff"
+     * @const
+     */
+    StoreStaff: "StoreStaff",
+
+    /**
+     * value: "StoreReadOnlyAccess"
+     * @const
+     */
+    StoreReadOnlyAccess: "StoreReadOnlyAccess",
+
+    /**
+     * value: "FinanceManger"
+     * @const
+     */
+    FinanceManger: "FinanceManger"
+  };
+
+
+  /**
+   * Allowed values for the <code>PermissionsType</code> property.
+   * @enum {String}
+   * @readonly
+   */
+  exports.PermissionsTypeEnum = {
+    /**
+     * value: "Teammate"
+     * @const
+     */
+    Teammate: "Teammate"
   };
 
 

@@ -1,4 +1,4 @@
-# Flipdish.AppConfiguration
+# Flipdish.UpdateAppConfiguration
 
 ## Properties
 Name | Type | Description | Notes

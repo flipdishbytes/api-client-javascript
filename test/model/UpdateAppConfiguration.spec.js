@@ -30,14 +30,14 @@
   var instance;
 
   describe('(package)', function() {
-    describe('AppConfiguration', function() {
+    describe('UpdateAppConfiguration', function() {
       beforeEach(function() {
-        instance = new Flipdish.AppConfiguration();
+        instance = new Flipdish.UpdateAppConfiguration();
       });
 
-      it('should create an instance of AppConfiguration', function() {
-        // TODO: update the code to test AppConfiguration
-        expect(instance).to.be.a(Flipdish.AppConfiguration);
+      it('should create an instance of UpdateAppConfiguration', function() {
+        // TODO: update the code to test UpdateAppConfiguration
+        expect(instance).to.be.a(Flipdish.UpdateAppConfiguration);
       });
 
       it('should have the property Id (base name: "Id")', function() {

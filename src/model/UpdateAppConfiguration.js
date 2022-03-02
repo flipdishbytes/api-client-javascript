@@ -25,31 +25,31 @@
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.AppConfiguration = factory(root.Flipdish.ApiClient, root.Flipdish.AppConfigurationSetting);
+    root.Flipdish.UpdateAppConfiguration = factory(root.Flipdish.ApiClient, root.Flipdish.AppConfigurationSetting);
   }
 }(this, function(ApiClient, AppConfigurationSetting) {
   'use strict';
 
   /**
-   * The AppConfiguration model module.
-   * @module model/AppConfiguration
+   * The UpdateAppConfiguration model module.
+   * @module model/UpdateAppConfiguration
    * @version 1.0.0
    */
 
   /**
-   * Constructs a new <code>AppConfiguration</code>.
-   * @alias module:model/AppConfiguration
+   * Constructs a new <code>UpdateAppConfiguration</code>.
+   * @alias module:model/UpdateAppConfiguration
    * @class
    */
   var exports = function() {
   };
 
   /**
-   * Constructs a <code>AppConfiguration</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>UpdateAppConfiguration</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/AppConfiguration} obj Optional instance to populate.
-   * @return {module:model/AppConfiguration} The populated <code>AppConfiguration</code> instance.
+   * @param {module:model/UpdateAppConfiguration} obj Optional instance to populate.
+   * @return {module:model/UpdateAppConfiguration} The populated <code>UpdateAppConfiguration</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
