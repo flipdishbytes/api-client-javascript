@@ -329,6 +329,10 @@ Name | Type | Description | Notes
 
 * `ViewChannels` (value: `"ViewChannels"`)
 
+* `ViewOnboarding` (value: `"ViewOnboarding"`)
+
+* `UpdateOnboarding` (value: `"UpdateOnboarding"`)
+
 
 
 

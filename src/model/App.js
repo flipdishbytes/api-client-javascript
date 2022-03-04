@@ -1107,7 +1107,19 @@
      * value: "ViewChannels"
      * @const
      */
-    ViewChannels: "ViewChannels"
+    ViewChannels: "ViewChannels",
+
+    /**
+     * value: "ViewOnboarding"
+     * @const
+     */
+    ViewOnboarding: "ViewOnboarding",
+
+    /**
+     * value: "UpdateOnboarding"
+     * @const
+     */
+    UpdateOnboarding: "UpdateOnboarding"
   };
 
 
