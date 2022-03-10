@@ -38,7 +38,7 @@
 
   /**
    * Constructs a new <code>ConfiguredPhysicalRestaurant</code>.
-   * Configured physical restaurants
+   * Configured stores
    * @alias module:model/ConfiguredPhysicalRestaurant
    * @class
    */
@@ -64,7 +64,7 @@
   }
 
   /**
-   * Store Id
+   * Store id
    * @member {Number} StoreId
    */
   exports.prototype.StoreId = undefined;

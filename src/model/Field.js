@@ -44,7 +44,7 @@
    * @param Name {String} Name
    * @param Description {String} Description
    * @param Key {String} Key
-   * @param Position {Number} Position  <remarks>Position order in the fields list to display</remarks>
+   * @param Position {Number} Position
    * @param FieldType {module:model/Field.FieldTypeEnum} Field Type
    */
   var exports = function(Name, Description, Key, Position, FieldType) {
@@ -112,13 +112,13 @@
   exports.prototype.Tooltip = undefined;
 
   /**
-   * Position  <remarks>Position order in the fields list to display</remarks>
+   * Position
    * @member {Number} Position
    */
   exports.prototype.Position = undefined;
 
   /**
-   * Default Value  <example>10</example><example>true</example>
+   * Default Value
    * @member {String} DefaultValue
    */
   exports.prototype.DefaultValue = undefined;

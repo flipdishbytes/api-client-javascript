@@ -16,18 +16,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/AppConfigurationBase'], factory);
+    define(['ApiClient', 'model/UpdateAppStoreAppConfigurationWebhookDTO'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./AppConfigurationBase'));
+    module.exports = factory(require('../ApiClient'), require('./UpdateAppStoreAppConfigurationWebhookDTO'));
   } else {
     // Browser globals (root is window)
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.AppStoreConfigUpdatedEvent = factory(root.Flipdish.ApiClient, root.Flipdish.AppConfigurationBase);
+    root.Flipdish.AppStoreConfigUpdatedEvent = factory(root.Flipdish.ApiClient, root.Flipdish.UpdateAppStoreAppConfigurationWebhookDTO);
   }
-}(this, function(ApiClient, AppConfigurationBase) {
+}(this, function(ApiClient, UpdateAppStoreAppConfigurationWebhookDTO) {
   'use strict';
 
   /**
@@ -59,8 +59,8 @@
         obj.EventName = ApiClient.convertToType(data['EventName'], 'String');
       if (data.hasOwnProperty('AppStoreAppId'))
         obj.AppStoreAppId = ApiClient.convertToType(data['AppStoreAppId'], 'String');
-      if (data.hasOwnProperty('AppStoreAppConfiguration'))
-        obj.AppStoreAppConfiguration = AppConfigurationBase.constructFromObject(data['AppStoreAppConfiguration']);
+      if (data.hasOwnProperty('UpdateAppStoreAppStoreAppStoreAppConfiguration'))
+        obj.UpdateAppStoreAppStoreAppStoreAppConfiguration = UpdateAppStoreAppConfigurationWebhookDTO.constructFromObject(data['UpdateAppStoreAppStoreAppStoreAppConfiguration']);
       if (data.hasOwnProperty('FlipdishEventId'))
         obj.FlipdishEventId = ApiClient.convertToType(data['FlipdishEventId'], 'String');
       if (data.hasOwnProperty('CreateTime'))
@@ -87,9 +87,9 @@
 
   /**
    * App Configuration
-   * @member {module:model/AppConfigurationBase} AppStoreAppConfiguration
+   * @member {module:model/UpdateAppStoreAppConfigurationWebhookDTO} UpdateAppStoreAppStoreAppStoreAppConfiguration
    */
-  exports.prototype.AppStoreAppConfiguration = undefined;
+  exports.prototype.UpdateAppStoreAppStoreAppStoreAppConfiguration = undefined;
 
   /**
    * The identitfier of the event

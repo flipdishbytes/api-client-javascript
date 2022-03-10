@@ -52,10 +52,10 @@
         // expect(instance.AppStoreAppId).to.be(expectedValueLiteral);
       });
 
-      it('should have the property AppStoreAppConfiguration (base name: "AppStoreAppConfiguration")', function() {
-        // TODO: update the code to test the property AppStoreAppConfiguration
-        expect(instance).to.have.property('AppStoreAppConfiguration');
-        // expect(instance.AppStoreAppConfiguration).to.be(expectedValueLiteral);
+      it('should have the property UpdateAppStoreAppStoreAppStoreAppConfiguration (base name: "UpdateAppStoreAppStoreAppStoreAppConfiguration")', function() {
+        // TODO: update the code to test the property UpdateAppStoreAppStoreAppStoreAppConfiguration
+        expect(instance).to.have.property('UpdateAppStoreAppStoreAppStoreAppConfiguration');
+        // expect(instance.UpdateAppStoreAppStoreAppStoreAppConfiguration).to.be(expectedValueLiteral);
       });
 
       it('should have the property FlipdishEventId (base name: "FlipdishEventId")', function() {

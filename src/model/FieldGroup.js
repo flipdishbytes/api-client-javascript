@@ -38,7 +38,7 @@
 
   /**
    * Constructs a new <code>FieldGroup</code>.
-   * Field Group
+   * Field group
    * @alias module:model/FieldGroup
    * @class
    * @param Name {String} Name

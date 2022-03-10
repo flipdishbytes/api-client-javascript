@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**StoreId** | **Number** | Store Id | [optional] 
+**StoreId** | **Number** | Store id | [optional] 
 **Name** | **String** | Name of store | [optional] 
 
 
