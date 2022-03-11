@@ -30,32 +30,14 @@
   var instance;
 
   describe('(package)', function() {
-    describe('RestApiPaginationResultChannel', function() {
+    describe('RestApiArrayResultStoreChannelAssignment', function() {
       beforeEach(function() {
-        instance = new Flipdish.RestApiPaginationResultChannel();
+        instance = new Flipdish.RestApiArrayResultStoreChannelAssignment();
       });
 
-      it('should create an instance of RestApiPaginationResultChannel', function() {
-        // TODO: update the code to test RestApiPaginationResultChannel
-        expect(instance).to.be.a(Flipdish.RestApiPaginationResultChannel);
-      });
-
-      it('should have the property Page (base name: "Page")', function() {
-        // TODO: update the code to test the property Page
-        expect(instance).to.have.property('Page');
-        // expect(instance.Page).to.be(expectedValueLiteral);
-      });
-
-      it('should have the property Limit (base name: "Limit")', function() {
-        // TODO: update the code to test the property Limit
-        expect(instance).to.have.property('Limit');
-        // expect(instance.Limit).to.be(expectedValueLiteral);
-      });
-
-      it('should have the property TotalRecordCount (base name: "TotalRecordCount")', function() {
-        // TODO: update the code to test the property TotalRecordCount
-        expect(instance).to.have.property('TotalRecordCount');
-        // expect(instance.TotalRecordCount).to.be(expectedValueLiteral);
+      it('should create an instance of RestApiArrayResultStoreChannelAssignment', function() {
+        // TODO: update the code to test RestApiArrayResultStoreChannelAssignment
+        expect(instance).to.be.a(Flipdish.RestApiArrayResultStoreChannelAssignment);
       });
 
       it('should have the property Data (base name: "Data")', function() {
