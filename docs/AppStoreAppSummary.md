@@ -27,3 +27,65 @@ Name | Type | Description | Notes
 
 
 
+<a name="[TagsEnum]"></a>
+## Enum: [TagsEnum]
+
+
+* `PointOfSale` (value: `"PointOfSale"`)
+
+* `DeliveryAndLogistics` (value: `"DeliveryAndLogistics"`)
+
+* `CRM` (value: `"CRM"`)
+
+* `GiftCard` (value: `"GiftCard"`)
+
+* `Accounting` (value: `"Accounting"`)
+
+* `LoyaltyAndMarketing` (value: `"LoyaltyAndMarketing"`)
+
+* `Other` (value: `"Other"`)
+
+
+
+
+<a name="[RegionsEnum]"></a>
+## Enum: [RegionsEnum]
+
+
+* `GB` (value: `"GB"`)
+
+* `IE` (value: `"IE"`)
+
+* `FR` (value: `"FR"`)
+
+* `ES` (value: `"ES"`)
+
+* `PT` (value: `"PT"`)
+
+* `IT` (value: `"IT"`)
+
+* `DE` (value: `"DE"`)
+
+* `PL` (value: `"PL"`)
+
+* `BE` (value: `"BE"`)
+
+* `LU` (value: `"LU"`)
+
+* `NL` (value: `"NL"`)
+
+* `US` (value: `"US"`)
+
+* `CA` (value: `"CA"`)
+
+* `BG` (value: `"BG"`)
+
+* `MX` (value: `"MX"`)
+
+* `AU` (value: `"AU"`)
+
+* `NZ` (value: `"NZ"`)
+
+
+
+

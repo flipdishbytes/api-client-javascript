@@ -44,8 +44,8 @@
    * @param VerificationStatus {module:model/AppStoreAppSummary.VerificationStatusEnum} Application verification status
    * @param Name {String} Name
    * @param Description {String} Description
-   * @param Tags {Array.<String>} Tags
-   * @param Regions {Array.<String>} Regions
+   * @param Tags {Array.<module:model/AppStoreAppSummary.TagsEnum>} Tags
+   * @param Regions {Array.<module:model/AppStoreAppSummary.RegionsEnum>} Regions
    */
   var exports = function(VerificationStatus, Name, Description, Tags, Regions) {
     this.VerificationStatus = VerificationStatus;
@@ -125,13 +125,13 @@
 
   /**
    * Tags
-   * @member {Array.<String>} Tags
+   * @member {Array.<module:model/AppStoreAppSummary.TagsEnum>} Tags
    */
   exports.prototype.Tags = undefined;
 
   /**
    * Regions
-   * @member {Array.<String>} Regions
+   * @member {Array.<module:model/AppStoreAppSummary.RegionsEnum>} Regions
    */
   exports.prototype.Regions = undefined;
 
@@ -166,6 +166,166 @@
      * @const
      */
     Verified: "Verified"
+  };
+
+
+  /**
+   * Allowed values for the <code>Tags</code> property.
+   * @enum {String}
+   * @readonly
+   */
+  exports.TagsEnum = {
+    /**
+     * value: "PointOfSale"
+     * @const
+     */
+    PointOfSale: "PointOfSale",
+
+    /**
+     * value: "DeliveryAndLogistics"
+     * @const
+     */
+    DeliveryAndLogistics: "DeliveryAndLogistics",
+
+    /**
+     * value: "CRM"
+     * @const
+     */
+    CRM: "CRM",
+
+    /**
+     * value: "GiftCard"
+     * @const
+     */
+    GiftCard: "GiftCard",
+
+    /**
+     * value: "Accounting"
+     * @const
+     */
+    Accounting: "Accounting",
+
+    /**
+     * value: "LoyaltyAndMarketing"
+     * @const
+     */
+    LoyaltyAndMarketing: "LoyaltyAndMarketing",
+
+    /**
+     * value: "Other"
+     * @const
+     */
+    Other: "Other"
+  };
+
+
+  /**
+   * Allowed values for the <code>Regions</code> property.
+   * @enum {String}
+   * @readonly
+   */
+  exports.RegionsEnum = {
+    /**
+     * value: "GB"
+     * @const
+     */
+    GB: "GB",
+
+    /**
+     * value: "IE"
+     * @const
+     */
+    IE: "IE",
+
+    /**
+     * value: "FR"
+     * @const
+     */
+    FR: "FR",
+
+    /**
+     * value: "ES"
+     * @const
+     */
+    ES: "ES",
+
+    /**
+     * value: "PT"
+     * @const
+     */
+    PT: "PT",
+
+    /**
+     * value: "IT"
+     * @const
+     */
+    IT: "IT",
+
+    /**
+     * value: "DE"
+     * @const
+     */
+    DE: "DE",
+
+    /**
+     * value: "PL"
+     * @const
+     */
+    PL: "PL",
+
+    /**
+     * value: "BE"
+     * @const
+     */
+    BE: "BE",
+
+    /**
+     * value: "LU"
+     * @const
+     */
+    LU: "LU",
+
+    /**
+     * value: "NL"
+     * @const
+     */
+    NL: "NL",
+
+    /**
+     * value: "US"
+     * @const
+     */
+    US: "US",
+
+    /**
+     * value: "CA"
+     * @const
+     */
+    CA: "CA",
+
+    /**
+     * value: "BG"
+     * @const
+     */
+    BG: "BG",
+
+    /**
+     * value: "MX"
+     * @const
+     */
+    MX: "MX",
+
+    /**
+     * value: "AU"
+     * @const
+     */
+    AU: "AU",
+
+    /**
+     * value: "NZ"
+     * @const
+     */
+    NZ: "NZ"
   };
 
   return exports;
