@@ -16,56 +16,56 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/Product'], factory);
+    define(['ApiClient', 'model/TipConfiguration'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./Product'));
+    module.exports = factory(require('../ApiClient'), require('./TipConfiguration'));
   } else {
     // Browser globals (root is window)
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.RestApiResultProduct = factory(root.Flipdish.ApiClient, root.Flipdish.Product);
+    root.Flipdish.RestApiResultTipConfiguration = factory(root.Flipdish.ApiClient, root.Flipdish.TipConfiguration);
   }
-}(this, function(ApiClient, Product) {
+}(this, function(ApiClient, TipConfiguration) {
   'use strict';
 
   /**
-   * The RestApiResultProduct model module.
-   * @module model/RestApiResultProduct
+   * The RestApiResultTipConfiguration model module.
+   * @module model/RestApiResultTipConfiguration
    * @version 1.0.0
    */
 
   /**
-   * Constructs a new <code>RestApiResultProduct</code>.
+   * Constructs a new <code>RestApiResultTipConfiguration</code>.
    * Rest api result
-   * @alias module:model/RestApiResultProduct
+   * @alias module:model/RestApiResultTipConfiguration
    * @class
-   * @param Data {module:model/Product} Generic data object.
+   * @param Data {module:model/TipConfiguration} Generic data object.
    */
   var exports = function(Data) {
     this.Data = Data;
   };
 
   /**
-   * Constructs a <code>RestApiResultProduct</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>RestApiResultTipConfiguration</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/RestApiResultProduct} obj Optional instance to populate.
-   * @return {module:model/RestApiResultProduct} The populated <code>RestApiResultProduct</code> instance.
+   * @param {module:model/RestApiResultTipConfiguration} obj Optional instance to populate.
+   * @return {module:model/RestApiResultTipConfiguration} The populated <code>RestApiResultTipConfiguration</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
       if (data.hasOwnProperty('Data'))
-        obj.Data = Product.constructFromObject(data['Data']);
+        obj.Data = TipConfiguration.constructFromObject(data['Data']);
     }
     return obj;
   }
 
   /**
    * Generic data object.
-   * @member {module:model/Product} Data
+   * @member {module:model/TipConfiguration} Data
    */
   exports.prototype.Data = undefined;
 

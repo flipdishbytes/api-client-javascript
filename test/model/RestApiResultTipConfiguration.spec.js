@@ -30,14 +30,14 @@
   var instance;
 
   describe('(package)', function() {
-    describe('RestApiResultProduct', function() {
+    describe('RestApiResultTipConfiguration', function() {
       beforeEach(function() {
-        instance = new Flipdish.RestApiResultProduct();
+        instance = new Flipdish.RestApiResultTipConfiguration();
       });
 
-      it('should create an instance of RestApiResultProduct', function() {
-        // TODO: update the code to test RestApiResultProduct
-        expect(instance).to.be.a(Flipdish.RestApiResultProduct);
+      it('should create an instance of RestApiResultTipConfiguration', function() {
+        // TODO: update the code to test RestApiResultTipConfiguration
+        expect(instance).to.be.a(Flipdish.RestApiResultTipConfiguration);
       });
 
       it('should have the property Data (base name: "Data")', function() {
