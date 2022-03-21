@@ -138,11 +138,13 @@
   exports.prototype.TaxRateName = undefined;
 
   /**
+   * TaxRate
    * @member {Number} TaxRateId
    */
   exports.prototype.TaxRateId = undefined;
 
   /**
+   * TaxValue - the tax associated with this item, based on TaxRate / TaxType and Currency (currency determines decimal point precision)
    * @member {Number} TaxValue
    */
   exports.prototype.TaxValue = undefined;
