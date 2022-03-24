@@ -41,6 +41,7 @@
    * Update App store app
    * @alias module:model/UpdateAppStoreApp
    * @class
+   * @param Details {String} Details
    * @param ConfigurationType {module:model/UpdateAppStoreApp.ConfigurationTypeEnum} Configuration type  <example>External link</example><example>Flipdish hosted</example>
    * @param StoreSelectorType {module:model/UpdateAppStoreApp.StoreSelectorTypeEnum} Store selector type
    * @param OAuthAppId {String} OAuth app id
@@ -50,7 +51,8 @@
    * @param Tags {Array.<module:model/UpdateAppStoreApp.TagsEnum>} Tags
    * @param Regions {Array.<module:model/UpdateAppStoreApp.RegionsEnum>} Regions
    */
-  var exports = function(ConfigurationType, StoreSelectorType, OAuthAppId, PermissionsType, Name, Description, Tags, Regions) {
+  var exports = function(Details, ConfigurationType, StoreSelectorType, OAuthAppId, PermissionsType, Name, Description, Tags, Regions) {
+    this.Details = Details;
     this.ConfigurationType = ConfigurationType;
     this.StoreSelectorType = StoreSelectorType;
     this.OAuthAppId = OAuthAppId;
@@ -71,6 +73,8 @@
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
+      if (data.hasOwnProperty('Details'))
+        obj.Details = ApiClient.convertToType(data['Details'], 'String');
       if (data.hasOwnProperty('ConfigurationType'))
         obj.ConfigurationType = ApiClient.convertToType(data['ConfigurationType'], 'String');
       if (data.hasOwnProperty('StoreSelectorType'))
@@ -102,6 +106,12 @@
     }
     return obj;
   }
+
+  /**
+   * Details
+   * @member {String} Details
+   */
+  exports.prototype.Details = undefined;
 
   /**
    * Configuration type  <example>External link</example><example>Flipdish hosted</example>

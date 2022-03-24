@@ -30,20 +30,14 @@
   var instance;
 
   describe('(package)', function() {
-    describe('LocationAreaLocation', function() {
+    describe('CreateLocation', function() {
       beforeEach(function() {
-        instance = new Flipdish.LocationAreaLocation();
+        instance = new Flipdish.CreateLocation();
       });
 
-      it('should create an instance of LocationAreaLocation', function() {
-        // TODO: update the code to test LocationAreaLocation
-        expect(instance).to.be.a(Flipdish.LocationAreaLocation);
-      });
-
-      it('should have the property LocationId (base name: "LocationId")', function() {
-        // TODO: update the code to test the property LocationId
-        expect(instance).to.have.property('LocationId');
-        // expect(instance.LocationId).to.be(expectedValueLiteral);
+      it('should create an instance of CreateLocation', function() {
+        // TODO: update the code to test CreateLocation
+        expect(instance).to.be.a(Flipdish.CreateLocation);
       });
 
       it('should have the property LocationName (base name: "LocationName")', function() {

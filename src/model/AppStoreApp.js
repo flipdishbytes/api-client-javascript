@@ -43,6 +43,7 @@
    * @class
    * @param Id {String} Unique App store app id
    * @param VerificationStatus {module:model/AppStoreApp.VerificationStatusEnum} Application verification status
+   * @param Details {String} Details
    * @param ConfigurationType {module:model/AppStoreApp.ConfigurationTypeEnum} Configuration type  <example>External link</example><example>Flipdish hosted</example>
    * @param StoreSelectorType {module:model/AppStoreApp.StoreSelectorTypeEnum} Store selector type
    * @param OAuthAppId {String} OAuth app id
@@ -52,9 +53,10 @@
    * @param Tags {Array.<module:model/AppStoreApp.TagsEnum>} Tags
    * @param Regions {Array.<module:model/AppStoreApp.RegionsEnum>} Regions
    */
-  var exports = function(Id, VerificationStatus, ConfigurationType, StoreSelectorType, OAuthAppId, PermissionsType, Name, Description, Tags, Regions) {
+  var exports = function(Id, VerificationStatus, Details, ConfigurationType, StoreSelectorType, OAuthAppId, PermissionsType, Name, Description, Tags, Regions) {
     this.Id = Id;
     this.VerificationStatus = VerificationStatus;
+    this.Details = Details;
     this.ConfigurationType = ConfigurationType;
     this.StoreSelectorType = StoreSelectorType;
     this.OAuthAppId = OAuthAppId;
@@ -81,6 +83,8 @@
         obj.VerificationStatus = ApiClient.convertToType(data['VerificationStatus'], 'String');
       if (data.hasOwnProperty('Logo'))
         obj.Logo = ApiClient.convertToType(data['Logo'], 'String');
+      if (data.hasOwnProperty('Details'))
+        obj.Details = ApiClient.convertToType(data['Details'], 'String');
       if (data.hasOwnProperty('ConfigurationType'))
         obj.ConfigurationType = ApiClient.convertToType(data['ConfigurationType'], 'String');
       if (data.hasOwnProperty('StoreSelectorType'))
@@ -130,6 +134,12 @@
    * @member {String} Logo
    */
   exports.prototype.Logo = undefined;
+
+  /**
+   * Details
+   * @member {String} Details
+   */
+  exports.prototype.Details = undefined;
 
   /**
    * Configuration type  <example>External link</example><example>Flipdish hosted</example>

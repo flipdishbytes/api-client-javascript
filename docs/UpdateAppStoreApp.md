@@ -3,6 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**Details** | **String** | Details | 
 **ConfigurationType** | **String** | Configuration type  <example>External link</example><example>Flipdish hosted</example> | 
 **StoreSelectorType** | **String** | Store selector type | 
 **FieldGroups** | [**[FieldGroup]**](FieldGroup.md) | Field groups | [optional] 

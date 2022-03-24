@@ -40,6 +40,12 @@
         expect(instance).to.be.a(Flipdish.UpdateAppStoreApp);
       });
 
+      it('should have the property Details (base name: "Details")', function() {
+        // TODO: update the code to test the property Details
+        expect(instance).to.have.property('Details');
+        // expect(instance.Details).to.be(expectedValueLiteral);
+      });
+
       it('should have the property ConfigurationType (base name: "ConfigurationType")', function() {
         // TODO: update the code to test the property ConfigurationType
         expect(instance).to.have.property('ConfigurationType');

@@ -25,38 +25,36 @@
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.LocationAreaLocation = factory(root.Flipdish.ApiClient);
+    root.Flipdish.CreateLocation = factory(root.Flipdish.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
 
   /**
-   * The LocationAreaLocation model module.
-   * @module model/LocationAreaLocation
+   * The CreateLocation model module.
+   * @module model/CreateLocation
    * @version 1.0.0
    */
 
   /**
-   * Constructs a new <code>LocationAreaLocation</code>.
-   * Representation of a Location i.e: (Table, Hotel Room, Car Park, etc )
-   * @alias module:model/LocationAreaLocation
+   * Constructs a new <code>CreateLocation</code>.
+   * Input model for creating a Location
+   * @alias module:model/CreateLocation
    * @class
    */
   var exports = function() {
   };
 
   /**
-   * Constructs a <code>LocationAreaLocation</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>CreateLocation</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/LocationAreaLocation} obj Optional instance to populate.
-   * @return {module:model/LocationAreaLocation} The populated <code>LocationAreaLocation</code> instance.
+   * @param {module:model/CreateLocation} obj Optional instance to populate.
+   * @return {module:model/CreateLocation} The populated <code>CreateLocation</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
-      if (data.hasOwnProperty('LocationId'))
-        obj.LocationId = ApiClient.convertToType(data['LocationId'], 'Number');
       if (data.hasOwnProperty('LocationName'))
         obj.LocationName = ApiClient.convertToType(data['LocationName'], 'String');
       if (data.hasOwnProperty('DisplayOrder'))
@@ -68,13 +66,7 @@
   }
 
   /**
-   * Id of the Location
-   * @member {Number} LocationId
-   */
-  exports.prototype.LocationId = undefined;
-
-  /**
-   * Name of the Location
+   * Descriptive LocationArea name
    * @member {String} LocationName
    */
   exports.prototype.LocationName = undefined;

@@ -46,6 +46,7 @@
    * @param AppStoreAppId {String} App store app id
    * @param IsEnabled {Boolean} Is enabled
    * @param VerificationStatus {module:model/AppStoreAppConfiguration.VerificationStatusEnum} Application verification status
+   * @param Details {String} Details
    * @param ConfigurationType {module:model/AppStoreAppConfiguration.ConfigurationTypeEnum} Configuration type  <example>External link</example><example>Flipdish hosted</example>
    * @param StoreSelectorType {module:model/AppStoreAppConfiguration.StoreSelectorTypeEnum} Store selector type
    * @param OAuthAppId {String} OAuth app id
@@ -55,12 +56,13 @@
    * @param Tags {Array.<module:model/AppStoreAppConfiguration.TagsEnum>} Tags
    * @param Regions {Array.<module:model/AppStoreAppConfiguration.RegionsEnum>} Regions
    */
-  var exports = function(Id, AppId, AppStoreAppId, IsEnabled, VerificationStatus, ConfigurationType, StoreSelectorType, OAuthAppId, PermissionsType, Name, Description, Tags, Regions) {
+  var exports = function(Id, AppId, AppStoreAppId, IsEnabled, VerificationStatus, Details, ConfigurationType, StoreSelectorType, OAuthAppId, PermissionsType, Name, Description, Tags, Regions) {
     this.Id = Id;
     this.AppId = AppId;
     this.AppStoreAppId = AppStoreAppId;
     this.IsEnabled = IsEnabled;
     this.VerificationStatus = VerificationStatus;
+    this.Details = Details;
     this.ConfigurationType = ConfigurationType;
     this.StoreSelectorType = StoreSelectorType;
     this.OAuthAppId = OAuthAppId;
@@ -97,6 +99,8 @@
         obj.VerificationStatus = ApiClient.convertToType(data['VerificationStatus'], 'String');
       if (data.hasOwnProperty('Logo'))
         obj.Logo = ApiClient.convertToType(data['Logo'], 'String');
+      if (data.hasOwnProperty('Details'))
+        obj.Details = ApiClient.convertToType(data['Details'], 'String');
       if (data.hasOwnProperty('ConfigurationType'))
         obj.ConfigurationType = ApiClient.convertToType(data['ConfigurationType'], 'String');
       if (data.hasOwnProperty('StoreSelectorType'))
@@ -174,6 +178,12 @@
    * @member {String} Logo
    */
   exports.prototype.Logo = undefined;
+
+  /**
+   * Details
+   * @member {String} Details
+   */
+  exports.prototype.Details = undefined;
 
   /**
    * Configuration type  <example>External link</example><example>Flipdish hosted</example>
