@@ -209,14 +209,6 @@ Name | Type | Description | Notes
 
 * `EditCustomers` (value: `"EditCustomers"`)
 
-* `CreateProduct` (value: `"CreateProduct"`)
-
-* `UpdateProduct` (value: `"UpdateProduct"`)
-
-* `ViewProduct` (value: `"ViewProduct"`)
-
-* `DeleteProduct` (value: `"DeleteProduct"`)
-
 * `CreateCatalogElements` (value: `"CreateCatalogElements"`)
 
 * `UpdateCatalogElements` (value: `"UpdateCatalogElements"`)
@@ -234,6 +226,10 @@ Name | Type | Description | Notes
 * `DeleteMetafieldDefinitions` (value: `"DeleteMetafieldDefinitions"`)
 
 * `UpdateMetafields` (value: `"UpdateMetafields"`)
+
+* `ViewCatalogMenuChanges` (value: `"ViewCatalogMenuChanges"`)
+
+* `PublishCatalogMenuChanges` (value: `"PublishCatalogMenuChanges"`)
 
 * `ViewAppStatistics` (value: `"ViewAppStatistics"`)
 

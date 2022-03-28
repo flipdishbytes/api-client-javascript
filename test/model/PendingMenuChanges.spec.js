@@ -40,10 +40,10 @@
         expect(instance).to.be.a(Flipdish.PendingMenuChanges);
       });
 
-      it('should have the property ProductId (base name: "ProductId")', function() {
-        // TODO: update the code to test the property ProductId
-        expect(instance).to.have.property('ProductId');
-        // expect(instance.ProductId).to.be(expectedValueLiteral);
+      it('should have the property CatalogElementId (base name: "CatalogElementId")', function() {
+        // TODO: update the code to test the property CatalogElementId
+        expect(instance).to.have.property('CatalogElementId');
+        // expect(instance.CatalogElementId).to.be(expectedValueLiteral);
       });
 
       it('should have the property MenuId (base name: "MenuId")', function() {

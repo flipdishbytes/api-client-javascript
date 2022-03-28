@@ -55,8 +55,8 @@
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
-      if (data.hasOwnProperty('ProductId'))
-        obj.ProductId = ApiClient.convertToType(data['ProductId'], 'String');
+      if (data.hasOwnProperty('CatalogElementId'))
+        obj.CatalogElementId = ApiClient.convertToType(data['CatalogElementId'], 'String');
       if (data.hasOwnProperty('MenuId'))
         obj.MenuId = ApiClient.convertToType(data['MenuId'], 'Number');
       if (data.hasOwnProperty('LastUpdatedAt'))
@@ -66,10 +66,10 @@
   }
 
   /**
-   * Unique product id
-   * @member {String} ProductId
+   * Unique catalog element id
+   * @member {String} CatalogElementId
    */
-  exports.prototype.ProductId = undefined;
+  exports.prototype.CatalogElementId = undefined;
 
   /**
    * Unique menu id

@@ -750,30 +750,6 @@
     EditCustomers: "EditCustomers",
 
     /**
-     * value: "CreateProduct"
-     * @const
-     */
-    CreateProduct: "CreateProduct",
-
-    /**
-     * value: "UpdateProduct"
-     * @const
-     */
-    UpdateProduct: "UpdateProduct",
-
-    /**
-     * value: "ViewProduct"
-     * @const
-     */
-    ViewProduct: "ViewProduct",
-
-    /**
-     * value: "DeleteProduct"
-     * @const
-     */
-    DeleteProduct: "DeleteProduct",
-
-    /**
      * value: "CreateCatalogElements"
      * @const
      */
@@ -826,6 +802,18 @@
      * @const
      */
     UpdateMetafields: "UpdateMetafields",
+
+    /**
+     * value: "ViewCatalogMenuChanges"
+     * @const
+     */
+    ViewCatalogMenuChanges: "ViewCatalogMenuChanges",
+
+    /**
+     * value: "PublishCatalogMenuChanges"
+     * @const
+     */
+    PublishCatalogMenuChanges: "PublishCatalogMenuChanges",
 
     /**
      * value: "ViewAppStatistics"
