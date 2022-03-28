@@ -784,6 +784,12 @@
         // expect(instance.CatalogGroupArchivedEvent).to.be(expectedValueLiteral);
       });
 
+      it('should have the property StoreTipUpdatedEvent (base name: "StoreTipUpdatedEvent")', function() {
+        // TODO: update the code to test the property StoreTipUpdatedEvent
+        expect(instance).to.have.property('StoreTipUpdatedEvent');
+        // expect(instance.StoreTipUpdatedEvent).to.be(expectedValueLiteral);
+      });
+
     });
   });
 

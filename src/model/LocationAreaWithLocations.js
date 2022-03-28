@@ -63,6 +63,8 @@
         obj.LocationAreaName = ApiClient.convertToType(data['LocationAreaName'], 'String');
       if (data.hasOwnProperty('Locations'))
         obj.Locations = ApiClient.convertToType(data['Locations'], [LocationAreaLocation]);
+      if (data.hasOwnProperty('IsDeleted'))
+        obj.IsDeleted = ApiClient.convertToType(data['IsDeleted'], 'Boolean');
     }
     return obj;
   }
@@ -90,6 +92,12 @@
    * @member {Array.<module:model/LocationAreaLocation>} Locations
    */
   exports.prototype.Locations = undefined;
+
+  /**
+   * Returns if the LocationArea is deleted or not
+   * @member {Boolean} IsDeleted
+   */
+  exports.prototype.IsDeleted = undefined;
 
 
   return exports;

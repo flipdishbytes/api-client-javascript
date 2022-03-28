@@ -127,5 +127,6 @@ Name | Type | Description | Notes
 **CatalogGroupCreatedEvent** | [**[CatalogGroupCreatedEvent]**](CatalogGroupCreatedEvent.md) | Catalog Group Created | [optional] 
 **CatalogGroupUpdatedEvent** | [**[CatalogGroupUpdatedEvent]**](CatalogGroupUpdatedEvent.md) | Catalog Group Updated | [optional] 
 **CatalogGroupArchivedEvent** | [**[CatalogGroupArchivedEvent]**](CatalogGroupArchivedEvent.md) | Catalog Group Archived | [optional] 
+**StoreTipUpdatedEvent** | [**[StoreTipUpdatedEvent]**](StoreTipUpdatedEvent.md) | Store Tip Updated Event | [optional] 
 
 

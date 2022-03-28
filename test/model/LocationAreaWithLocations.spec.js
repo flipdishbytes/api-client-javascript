@@ -64,6 +64,12 @@
         // expect(instance.Locations).to.be(expectedValueLiteral);
       });
 
+      it('should have the property IsDeleted (base name: "IsDeleted")', function() {
+        // TODO: update the code to test the property IsDeleted
+        expect(instance).to.have.property('IsDeleted');
+        // expect(instance.IsDeleted).to.be(expectedValueLiteral);
+      });
+
     });
   });
 
