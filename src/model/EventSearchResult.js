@@ -231,6 +231,8 @@
         obj.BankAccountUpdatedEvent = ApiClient.convertToType(data['BankAccountUpdatedEvent'], [BankAccountUpdatedEvent]);
       if (data.hasOwnProperty('BankAccountDeletedEvent'))
         obj.BankAccountDeletedEvent = ApiClient.convertToType(data['BankAccountDeletedEvent'], [BankAccountDeletedEvent]);
+      if (data.hasOwnProperty('BankAccountAssignedEvent'))
+        obj.BankAccountAssignedEvent = ApiClient.convertToType(data['BankAccountAssignedEvent'], [BankAccountDeletedEvent]);
       if (data.hasOwnProperty('HydraAssignedEvent'))
         obj.HydraAssignedEvent = ApiClient.convertToType(data['HydraAssignedEvent'], [HydraAssignedEvent]);
       if (data.hasOwnProperty('HydraRequestResetEvent'))
@@ -832,6 +834,12 @@
    * @member {Array.<module:model/BankAccountDeletedEvent>} BankAccountDeletedEvent
    */
   exports.prototype.BankAccountDeletedEvent = undefined;
+
+  /**
+   * Bank account assigned event
+   * @member {Array.<module:model/BankAccountDeletedEvent>} BankAccountAssignedEvent
+   */
+  exports.prototype.BankAccountAssignedEvent = undefined;
 
   /**
    * Hydra assigned event

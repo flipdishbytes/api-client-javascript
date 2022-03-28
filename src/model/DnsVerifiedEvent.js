@@ -67,6 +67,8 @@
         obj.Position = ApiClient.convertToType(data['Position'], 'Number');
       if (data.hasOwnProperty('AppId'))
         obj.AppId = ApiClient.convertToType(data['AppId'], 'String');
+      if (data.hasOwnProperty('IpAddress'))
+        obj.IpAddress = ApiClient.convertToType(data['IpAddress'], 'String');
     }
     return obj;
   }
@@ -106,6 +108,12 @@
    * @member {String} AppId
    */
   exports.prototype.AppId = undefined;
+
+  /**
+   * Ip Address
+   * @member {String} IpAddress
+   */
+  exports.prototype.IpAddress = undefined;
 
 
   return exports;

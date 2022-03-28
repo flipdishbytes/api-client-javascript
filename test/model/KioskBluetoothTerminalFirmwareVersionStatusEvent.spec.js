@@ -112,6 +112,12 @@
         // expect(instance.AppId).to.be(expectedValueLiteral);
       });
 
+      it('should have the property IpAddress (base name: "IpAddress")', function() {
+        // TODO: update the code to test the property IpAddress
+        expect(instance).to.have.property('IpAddress');
+        // expect(instance.IpAddress).to.be(expectedValueLiteral);
+      });
+
     });
   });
 

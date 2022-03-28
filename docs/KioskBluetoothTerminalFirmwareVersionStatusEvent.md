@@ -15,6 +15,7 @@ Name | Type | Description | Notes
 **CreateTime** | **Date** | The time of creation of the event | [optional] 
 **Position** | **Number** | Position | [optional] 
 **AppId** | **String** | App id | [optional] 
+**IpAddress** | **String** | Ip Address | [optional] 
 
 
 <a name="UpdateTimeEstimateEnum"></a>

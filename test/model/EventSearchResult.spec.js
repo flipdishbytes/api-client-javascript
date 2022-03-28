@@ -568,6 +568,12 @@
         // expect(instance.BankAccountDeletedEvent).to.be(expectedValueLiteral);
       });
 
+      it('should have the property BankAccountAssignedEvent (base name: "BankAccountAssignedEvent")', function() {
+        // TODO: update the code to test the property BankAccountAssignedEvent
+        expect(instance).to.have.property('BankAccountAssignedEvent');
+        // expect(instance.BankAccountAssignedEvent).to.be(expectedValueLiteral);
+      });
+
       it('should have the property HydraAssignedEvent (base name: "HydraAssignedEvent")', function() {
         // TODO: update the code to test the property HydraAssignedEvent
         expect(instance).to.have.property('HydraAssignedEvent');
