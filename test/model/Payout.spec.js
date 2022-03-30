@@ -136,6 +136,12 @@
         // expect(instance.OnlineSalesTips).to.be(expectedValueLiteral);
       });
 
+      it('should have the property OnlineSalesServiceCharges (base name: "OnlineSalesServiceCharges")', function() {
+        // TODO: update the code to test the property OnlineSalesServiceCharges
+        expect(instance).to.have.property('OnlineSalesServiceCharges');
+        // expect(instance.OnlineSalesServiceCharges).to.be(expectedValueLiteral);
+      });
+
       it('should have the property OnlineSalesRefundedFees (base name: "OnlineSalesRefundedFees")', function() {
         // TODO: update the code to test the property OnlineSalesRefundedFees
         expect(instance).to.have.property('OnlineSalesRefundedFees');

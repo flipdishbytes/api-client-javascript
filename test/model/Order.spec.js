@@ -196,6 +196,12 @@
         // expect(instance.OrderItemsAmount).to.be(expectedValueLiteral);
       });
 
+      it('should have the property ServiceChargeAmount (base name: "ServiceChargeAmount")', function() {
+        // TODO: update the code to test the property ServiceChargeAmount
+        expect(instance).to.have.property('ServiceChargeAmount');
+        // expect(instance.ServiceChargeAmount).to.be(expectedValueLiteral);
+      });
+
       it('should have the property Amount (base name: "Amount")', function() {
         // TODO: update the code to test the property Amount
         expect(instance).to.have.property('Amount');

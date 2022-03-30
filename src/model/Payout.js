@@ -87,6 +87,8 @@
         obj.OnlineSalesDeliveryCharges = ApiClient.convertToType(data['OnlineSalesDeliveryCharges'], 'Number');
       if (data.hasOwnProperty('OnlineSalesTips'))
         obj.OnlineSalesTips = ApiClient.convertToType(data['OnlineSalesTips'], 'Number');
+      if (data.hasOwnProperty('OnlineSalesServiceCharges'))
+        obj.OnlineSalesServiceCharges = ApiClient.convertToType(data['OnlineSalesServiceCharges'], 'Number');
       if (data.hasOwnProperty('OnlineSalesRefundedFees'))
         obj.OnlineSalesRefundedFees = ApiClient.convertToType(data['OnlineSalesRefundedFees'], 'Number');
       if (data.hasOwnProperty('OnlineSalesFees'))
@@ -220,6 +222,12 @@
    * @member {Number} OnlineSalesTips
    */
   exports.prototype.OnlineSalesTips = undefined;
+
+  /**
+   * Payout online sales service charges
+   * @member {Number} OnlineSalesServiceCharges
+   */
+  exports.prototype.OnlineSalesServiceCharges = undefined;
 
   /**
    * Payout online sales refunded fees
