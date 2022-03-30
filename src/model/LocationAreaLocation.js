@@ -63,6 +63,8 @@
         obj.DisplayOrder = ApiClient.convertToType(data['DisplayOrder'], 'Number');
       if (data.hasOwnProperty('ExternalLocationId'))
         obj.ExternalLocationId = ApiClient.convertToType(data['ExternalLocationId'], 'String');
+      if (data.hasOwnProperty('IsDeleted'))
+        obj.IsDeleted = ApiClient.convertToType(data['IsDeleted'], 'Boolean');
     }
     return obj;
   }
@@ -90,6 +92,12 @@
    * @member {String} ExternalLocationId
    */
   exports.prototype.ExternalLocationId = undefined;
+
+  /**
+   * Shows if the Location is deleted or not
+   * @member {Boolean} IsDeleted
+   */
+  exports.prototype.IsDeleted = undefined;
 
 
   return exports;
