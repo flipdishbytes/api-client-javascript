@@ -70,6 +70,12 @@
         // expect(instance.DisplayForCustomer).to.be(expectedValueLiteral);
       });
 
+      it('should have the property AddressFields (base name: "AddressFields")', function() {
+        // TODO: update the code to test the property AddressFields
+        expect(instance).to.have.property('AddressFields');
+        // expect(instance.AddressFields).to.be(expectedValueLiteral);
+      });
+
     });
   });
 

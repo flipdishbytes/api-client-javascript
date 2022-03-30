@@ -10,5 +10,6 @@ Name | Type | Description | Notes
 **City** | **String** | City | [optional] 
 **CountryCode** | **String** | Country code (ISO-alpha2) | [optional] 
 **DisplayForCustomer** | **String** | Display for customer | [optional] 
+**AddressFields** | **{String: Object}** | Dyanmic field/value pairs, defined by the form assigned to the given country code. | [optional] 
 
 

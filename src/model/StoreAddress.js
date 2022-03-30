@@ -69,6 +69,8 @@
         obj.CountryCode = ApiClient.convertToType(data['CountryCode'], 'String');
       if (data.hasOwnProperty('DisplayForCustomer'))
         obj.DisplayForCustomer = ApiClient.convertToType(data['DisplayForCustomer'], 'String');
+      if (data.hasOwnProperty('AddressFields'))
+        obj.AddressFields = ApiClient.convertToType(data['AddressFields'], {'String': Object});
     }
     return obj;
   }
@@ -114,6 +116,12 @@
    * @member {String} DisplayForCustomer
    */
   exports.prototype.DisplayForCustomer = undefined;
+
+  /**
+   * Dyanmic field/value pairs, defined by the form assigned to the given country code.
+   * @member {Object.<String, Object>} AddressFields
+   */
+  exports.prototype.AddressFields = undefined;
 
 
   return exports;
