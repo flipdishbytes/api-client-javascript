@@ -16,18 +16,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/DynamicFormFieldMapping', 'model/DynamicFormRules'], factory);
+    define(['ApiClient', 'model/DynamicFormRules'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./DynamicFormFieldMapping'), require('./DynamicFormRules'));
+    module.exports = factory(require('../ApiClient'), require('./DynamicFormRules'));
   } else {
     // Browser globals (root is window)
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.DynamicFormField = factory(root.Flipdish.ApiClient, root.Flipdish.DynamicFormFieldMapping, root.Flipdish.DynamicFormRules);
+    root.Flipdish.DynamicFormField = factory(root.Flipdish.ApiClient, root.Flipdish.DynamicFormRules);
   }
-}(this, function(ApiClient, DynamicFormFieldMapping, DynamicFormRules) {
+}(this, function(ApiClient, DynamicFormRules) {
   'use strict';
 
   /**
@@ -63,7 +63,7 @@
       if (data.hasOwnProperty('Rules'))
         obj.Rules = DynamicFormRules.constructFromObject(data['Rules']);
       if (data.hasOwnProperty('Mapping'))
-        obj.Mapping = DynamicFormFieldMapping.constructFromObject(data['Mapping']);
+        obj.Mapping = ApiClient.convertToType(data['Mapping'], {'String': 'String'});
       if (data.hasOwnProperty('Value'))
         obj.Value = ApiClient.convertToType(data['Value'], Object);
     }
@@ -91,7 +91,7 @@
   exports.prototype.Rules = undefined;
 
   /**
-   * @member {module:model/DynamicFormFieldMapping} Mapping
+   * @member {Object.<String, String>} Mapping
    */
   exports.prototype.Mapping = undefined;
 

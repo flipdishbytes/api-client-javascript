@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **Label** | **String** |  | [optional] 
 **Placeholder** | **String** |  | [optional] 
 **Rules** | [**DynamicFormRules**](DynamicFormRules.md) |  | [optional] 
-**Mapping** | [**DynamicFormFieldMapping**](DynamicFormFieldMapping.md) |  | [optional] 
+**Mapping** | **{String: String}** |  | [optional] 
 **Value** | **Object** |  | [optional] 
 
 
