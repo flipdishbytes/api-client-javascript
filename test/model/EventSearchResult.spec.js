@@ -790,6 +790,12 @@
         // expect(instance.StoreTipUpdatedEvent).to.be(expectedValueLiteral);
       });
 
+      it('should have the property StoreServiceChargeUpdatedEvent (base name: "StoreServiceChargeUpdatedEvent")', function() {
+        // TODO: update the code to test the property StoreServiceChargeUpdatedEvent
+        expect(instance).to.have.property('StoreServiceChargeUpdatedEvent');
+        // expect(instance.StoreServiceChargeUpdatedEvent).to.be(expectedValueLiteral);
+      });
+
     });
   });
 
