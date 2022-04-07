@@ -64,6 +64,8 @@
         obj.Rules = DynamicFormRules.constructFromObject(data['Rules']);
       if (data.hasOwnProperty('Mapping'))
         obj.Mapping = ApiClient.convertToType(data['Mapping'], {'String': 'String'});
+      if (data.hasOwnProperty('Modifiers'))
+        obj.Modifiers = ApiClient.convertToType(data['Modifiers'], ['String']);
       if (data.hasOwnProperty('Value'))
         obj.Value = ApiClient.convertToType(data['Value'], Object);
     }
@@ -94,6 +96,11 @@
    * @member {Object.<String, String>} Mapping
    */
   exports.prototype.Mapping = undefined;
+
+  /**
+   * @member {Array.<String>} Modifiers
+   */
+  exports.prototype.Modifiers = undefined;
 
   /**
    * @member {Object} Value

@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 **Placeholder** | **String** |  | [optional] 
 **Rules** | [**DynamicFormRules**](DynamicFormRules.md) |  | [optional] 
 **Mapping** | **{String: String}** |  | [optional] 
+**Modifiers** | **[String]** |  | [optional] 
 **Value** | **Object** |  | [optional] 
 
 

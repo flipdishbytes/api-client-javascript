@@ -70,6 +70,12 @@
         // expect(instance.Mapping).to.be(expectedValueLiteral);
       });
 
+      it('should have the property Modifiers (base name: "Modifiers")', function() {
+        // TODO: update the code to test the property Modifiers
+        expect(instance).to.have.property('Modifiers');
+        // expect(instance.Modifiers).to.be(expectedValueLiteral);
+      });
+
       it('should have the property Value (base name: "Value")', function() {
         // TODO: update the code to test the property Value
         expect(instance).to.have.property('Value');
