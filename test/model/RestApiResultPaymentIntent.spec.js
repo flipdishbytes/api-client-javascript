@@ -30,26 +30,20 @@
   var instance;
 
   describe('(package)', function() {
-    describe('PendingMenuChanges', function() {
+    describe('RestApiResultPaymentIntent', function() {
       beforeEach(function() {
-        instance = new Flipdish.PendingMenuChanges();
+        instance = new Flipdish.RestApiResultPaymentIntent();
       });
 
-      it('should create an instance of PendingMenuChanges', function() {
-        // TODO: update the code to test PendingMenuChanges
-        expect(instance).to.be.a(Flipdish.PendingMenuChanges);
+      it('should create an instance of RestApiResultPaymentIntent', function() {
+        // TODO: update the code to test RestApiResultPaymentIntent
+        expect(instance).to.be.a(Flipdish.RestApiResultPaymentIntent);
       });
 
-      it('should have the property CatalogElementId (base name: "CatalogElementId")', function() {
-        // TODO: update the code to test the property CatalogElementId
-        expect(instance).to.have.property('CatalogElementId');
-        // expect(instance.CatalogElementId).to.be(expectedValueLiteral);
-      });
-
-      it('should have the property MenuId (base name: "MenuId")', function() {
-        // TODO: update the code to test the property MenuId
-        expect(instance).to.have.property('MenuId');
-        // expect(instance.MenuId).to.be(expectedValueLiteral);
+      it('should have the property Data (base name: "Data")', function() {
+        // TODO: update the code to test the property Data
+        expect(instance).to.have.property('Data');
+        // expect(instance.Data).to.be(expectedValueLiteral);
       });
 
     });

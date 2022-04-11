@@ -16,64 +16,58 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient'], factory);
+    define(['ApiClient', 'model/PaymentIntent'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'));
+    module.exports = factory(require('../ApiClient'), require('./PaymentIntent'));
   } else {
     // Browser globals (root is window)
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.PendingMenuChanges = factory(root.Flipdish.ApiClient);
+    root.Flipdish.RestApiResultPaymentIntent = factory(root.Flipdish.ApiClient, root.Flipdish.PaymentIntent);
   }
-}(this, function(ApiClient) {
+}(this, function(ApiClient, PaymentIntent) {
   'use strict';
 
   /**
-   * The PendingMenuChanges model module.
-   * @module model/PendingMenuChanges
+   * The RestApiResultPaymentIntent model module.
+   * @module model/RestApiResultPaymentIntent
    * @version 1.0.0
    */
 
   /**
-   * Constructs a new <code>PendingMenuChanges</code>.
-   * Pending Menu Changes
-   * @alias module:model/PendingMenuChanges
+   * Constructs a new <code>RestApiResultPaymentIntent</code>.
+   * Rest api result
+   * @alias module:model/RestApiResultPaymentIntent
    * @class
+   * @param Data {module:model/PaymentIntent} Generic data object.
    */
-  var exports = function() {
+  var exports = function(Data) {
+    this.Data = Data;
   };
 
   /**
-   * Constructs a <code>PendingMenuChanges</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>RestApiResultPaymentIntent</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/PendingMenuChanges} obj Optional instance to populate.
-   * @return {module:model/PendingMenuChanges} The populated <code>PendingMenuChanges</code> instance.
+   * @param {module:model/RestApiResultPaymentIntent} obj Optional instance to populate.
+   * @return {module:model/RestApiResultPaymentIntent} The populated <code>RestApiResultPaymentIntent</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
-      if (data.hasOwnProperty('CatalogElementId'))
-        obj.CatalogElementId = ApiClient.convertToType(data['CatalogElementId'], 'String');
-      if (data.hasOwnProperty('MenuId'))
-        obj.MenuId = ApiClient.convertToType(data['MenuId'], 'Number');
+      if (data.hasOwnProperty('Data'))
+        obj.Data = PaymentIntent.constructFromObject(data['Data']);
     }
     return obj;
   }
 
   /**
-   * Unique catalog element id
-   * @member {String} CatalogElementId
+   * Generic data object.
+   * @member {module:model/PaymentIntent} Data
    */
-  exports.prototype.CatalogElementId = undefined;
-
-  /**
-   * Unique menu id
-   * @member {Number} MenuId
-   */
-  exports.prototype.MenuId = undefined;
+  exports.prototype.Data = undefined;
 
 
   return exports;
