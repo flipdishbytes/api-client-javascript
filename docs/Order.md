@@ -21,6 +21,7 @@ Name | Type | Description | Notes
 **ChannelOrderDisplayId** | **String** | ChannelOrderDisplayId from external channel | [optional] 
 **Channel** | [**Channel**](Channel.md) | Channel where the Order comes from | [optional] 
 **ReceiptCode** | **String** | Generated receipt code for an order | [optional] 
+**OrderDropOffLocation** | [**OrderDropOffLocation**](OrderDropOffLocation.md) | Order Drop Off Location | [optional] 
 **OrderId** | **Number** | Order identifier | [optional] 
 **LocalOrderId** | **String** | Local order Id. This is used for displaying a \"shorter\" order ID for customers (eg. Kiosk orders) | [optional] 
 **DeliveryType** | **String** | Delivery type | [optional] 
