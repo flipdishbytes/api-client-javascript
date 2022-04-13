@@ -43,23 +43,23 @@
    * @class
    * @param Id {String} Unique App store app id
    * @param VerificationStatus {module:model/AppStoreApp.VerificationStatusEnum} Application verification status
+   * @param OAuthAppId {String} OAuth App identifier
    * @param Details {String} Details
    * @param ConfigurationType {module:model/AppStoreApp.ConfigurationTypeEnum} Configuration type  <example>External link</example><example>Flipdish hosted</example>
    * @param StoreSelectorType {module:model/AppStoreApp.StoreSelectorTypeEnum} Store selector type
-   * @param OAuthAppId {String} OAuth app id
    * @param PermissionsType {module:model/AppStoreApp.PermissionsTypeEnum} Permissions type
    * @param Name {String} Name
    * @param Description {String} Description
    * @param Tags {Array.<module:model/AppStoreApp.TagsEnum>} Tags
    * @param Regions {Array.<module:model/AppStoreApp.RegionsEnum>} Regions
    */
-  var exports = function(Id, VerificationStatus, Details, ConfigurationType, StoreSelectorType, OAuthAppId, PermissionsType, Name, Description, Tags, Regions) {
+  var exports = function(Id, VerificationStatus, OAuthAppId, Details, ConfigurationType, StoreSelectorType, PermissionsType, Name, Description, Tags, Regions) {
     this.Id = Id;
     this.VerificationStatus = VerificationStatus;
+    this.OAuthAppId = OAuthAppId;
     this.Details = Details;
     this.ConfigurationType = ConfigurationType;
     this.StoreSelectorType = StoreSelectorType;
-    this.OAuthAppId = OAuthAppId;
     this.PermissionsType = PermissionsType;
     this.Name = Name;
     this.Description = Description;
@@ -83,6 +83,8 @@
         obj.VerificationStatus = ApiClient.convertToType(data['VerificationStatus'], 'String');
       if (data.hasOwnProperty('Logo'))
         obj.Logo = ApiClient.convertToType(data['Logo'], 'String');
+      if (data.hasOwnProperty('OAuthAppId'))
+        obj.OAuthAppId = ApiClient.convertToType(data['OAuthAppId'], 'String');
       if (data.hasOwnProperty('Details'))
         obj.Details = ApiClient.convertToType(data['Details'], 'String');
       if (data.hasOwnProperty('ConfigurationType'))
@@ -95,8 +97,6 @@
         obj.SetupInstructions = ApiClient.convertToType(data['SetupInstructions'], 'String');
       if (data.hasOwnProperty('ExternalSetupLink'))
         obj.ExternalSetupLink = ApiClient.convertToType(data['ExternalSetupLink'], 'String');
-      if (data.hasOwnProperty('OAuthAppId'))
-        obj.OAuthAppId = ApiClient.convertToType(data['OAuthAppId'], 'String');
       if (data.hasOwnProperty('TeammateAppAccessLevel'))
         obj.TeammateAppAccessLevel = ApiClient.convertToType(data['TeammateAppAccessLevel'], 'String');
       if (data.hasOwnProperty('PermissionsType'))
@@ -136,6 +136,12 @@
   exports.prototype.Logo = undefined;
 
   /**
+   * OAuth App identifier
+   * @member {String} OAuthAppId
+   */
+  exports.prototype.OAuthAppId = undefined;
+
+  /**
    * Details
    * @member {String} Details
    */
@@ -170,12 +176,6 @@
    * @member {String} ExternalSetupLink
    */
   exports.prototype.ExternalSetupLink = undefined;
-
-  /**
-   * OAuth app id
-   * @member {String} OAuthAppId
-   */
-  exports.prototype.OAuthAppId = undefined;
 
   /**
    * Teammate app access level

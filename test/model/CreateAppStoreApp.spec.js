@@ -76,12 +76,6 @@
         // expect(instance.ExternalSetupLink).to.be(expectedValueLiteral);
       });
 
-      it('should have the property OAuthAppId (base name: "OAuthAppId")', function() {
-        // TODO: update the code to test the property OAuthAppId
-        expect(instance).to.have.property('OAuthAppId');
-        // expect(instance.OAuthAppId).to.be(expectedValueLiteral);
-      });
-
       it('should have the property TeammateAppAccessLevel (base name: "TeammateAppAccessLevel")', function() {
         // TODO: update the code to test the property TeammateAppAccessLevel
         expect(instance).to.have.property('TeammateAppAccessLevel');

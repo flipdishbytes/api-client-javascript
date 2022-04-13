@@ -55,6 +55,8 @@
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
+      if (data.hasOwnProperty('LocationId'))
+        obj.LocationId = ApiClient.convertToType(data['LocationId'], 'Number');
       if (data.hasOwnProperty('LocationName'))
         obj.LocationName = ApiClient.convertToType(data['LocationName'], 'String');
       if (data.hasOwnProperty('DisplayOrder'))
@@ -64,6 +66,12 @@
     }
     return obj;
   }
+
+  /**
+   * Location Id
+   * @member {Number} LocationId
+   */
+  exports.prototype.LocationId = undefined;
 
   /**
    * Descriptive LocationArea name

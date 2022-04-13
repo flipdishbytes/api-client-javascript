@@ -996,54 +996,6 @@
     ViewCatalogAuditLogs: "ViewCatalogAuditLogs",
 
     /**
-     * value: "CreateAppStoreApp"
-     * @const
-     */
-    CreateAppStoreApp: "CreateAppStoreApp",
-
-    /**
-     * value: "ViewAppStoreApp"
-     * @const
-     */
-    ViewAppStoreApp: "ViewAppStoreApp",
-
-    /**
-     * value: "UpdateAppStoreApp"
-     * @const
-     */
-    UpdateAppStoreApp: "UpdateAppStoreApp",
-
-    /**
-     * value: "DeleteAppStoreApp"
-     * @const
-     */
-    DeleteAppStoreApp: "DeleteAppStoreApp",
-
-    /**
-     * value: "CreateAppStoreAppConfiguration"
-     * @const
-     */
-    CreateAppStoreAppConfiguration: "CreateAppStoreAppConfiguration",
-
-    /**
-     * value: "ViewAppStoreAppConfiguration"
-     * @const
-     */
-    ViewAppStoreAppConfiguration: "ViewAppStoreAppConfiguration",
-
-    /**
-     * value: "UpdateAppStoreAppConfiguration"
-     * @const
-     */
-    UpdateAppStoreAppConfiguration: "UpdateAppStoreAppConfiguration",
-
-    /**
-     * value: "DeleteAppStoreAppConfiguration"
-     * @const
-     */
-    DeleteAppStoreAppConfiguration: "DeleteAppStoreAppConfiguration",
-
-    /**
      * value: "SendPushNotificationToCustomer"
      * @const
      */
@@ -1107,7 +1059,31 @@
      * value: "UpdateOnboarding"
      * @const
      */
-    UpdateOnboarding: "UpdateOnboarding"
+    UpdateOnboarding: "UpdateOnboarding",
+
+    /**
+     * value: "CreateAppStoreAppConfiguration"
+     * @const
+     */
+    CreateAppStoreAppConfiguration: "CreateAppStoreAppConfiguration",
+
+    /**
+     * value: "ViewAppStoreAppConfiguration"
+     * @const
+     */
+    ViewAppStoreAppConfiguration: "ViewAppStoreAppConfiguration",
+
+    /**
+     * value: "UpdateAppStoreAppConfiguration"
+     * @const
+     */
+    UpdateAppStoreAppConfiguration: "UpdateAppStoreAppConfiguration",
+
+    /**
+     * value: "DeleteAppStoreAppConfiguration"
+     * @const
+     */
+    DeleteAppStoreAppConfiguration: "DeleteAppStoreAppConfiguration"
   };
 
 

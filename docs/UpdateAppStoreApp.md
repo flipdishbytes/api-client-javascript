@@ -9,7 +9,6 @@ Name | Type | Description | Notes
 **FieldGroups** | [**[FieldGroup]**](FieldGroup.md) | Field groups | [optional] 
 **SetupInstructions** | **String** | Setup instructions | [optional] 
 **ExternalSetupLink** | **String** | External setup link | [optional] 
-**OAuthAppId** | **String** | OAuth app id | 
 **TeammateAppAccessLevel** | **String** | Teammate app access level | [optional] 
 **PermissionsType** | **String** | Permissions type | 
 **Name** | **String** | Name | 

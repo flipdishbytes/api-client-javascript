@@ -40,6 +40,12 @@
         expect(instance).to.be.a(Flipdish.CreateLocation);
       });
 
+      it('should have the property LocationId (base name: "LocationId")', function() {
+        // TODO: update the code to test the property LocationId
+        expect(instance).to.have.property('LocationId');
+        // expect(instance.LocationId).to.be(expectedValueLiteral);
+      });
+
       it('should have the property LocationName (base name: "LocationName")', function() {
         // TODO: update the code to test the property LocationName
         expect(instance).to.have.property('LocationName');

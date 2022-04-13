@@ -58,6 +58,24 @@
         // expect(instance.Enabled).to.be(expectedValueLiteral);
       });
 
+      it('should have the property IsOptional (base name: "IsOptional")', function() {
+        // TODO: update the code to test the property IsOptional
+        expect(instance).to.have.property('IsOptional');
+        // expect(instance.IsOptional).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property DisplayWithProcessingFee (base name: "DisplayWithProcessingFee")', function() {
+        // TODO: update the code to test the property DisplayWithProcessingFee
+        expect(instance).to.have.property('DisplayWithProcessingFee');
+        // expect(instance.DisplayWithProcessingFee).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property IncludesVouchers (base name: "IncludesVouchers")', function() {
+        // TODO: update the code to test the property IncludesVouchers
+        expect(instance).to.have.property('IncludesVouchers');
+        // expect(instance.IncludesVouchers).to.be(expectedValueLiteral);
+      });
+
     });
   });
 

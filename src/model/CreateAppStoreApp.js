@@ -44,18 +44,16 @@
    * @param Details {String} Details
    * @param ConfigurationType {module:model/CreateAppStoreApp.ConfigurationTypeEnum} Configuration type  <example>External link</example><example>Flipdish hosted</example>
    * @param StoreSelectorType {module:model/CreateAppStoreApp.StoreSelectorTypeEnum} Store selector type
-   * @param OAuthAppId {String} OAuth app id
    * @param PermissionsType {module:model/CreateAppStoreApp.PermissionsTypeEnum} Permissions type
    * @param Name {String} Name
    * @param Description {String} Description
    * @param Tags {Array.<module:model/CreateAppStoreApp.TagsEnum>} Tags
    * @param Regions {Array.<module:model/CreateAppStoreApp.RegionsEnum>} Regions
    */
-  var exports = function(Details, ConfigurationType, StoreSelectorType, OAuthAppId, PermissionsType, Name, Description, Tags, Regions) {
+  var exports = function(Details, ConfigurationType, StoreSelectorType, PermissionsType, Name, Description, Tags, Regions) {
     this.Details = Details;
     this.ConfigurationType = ConfigurationType;
     this.StoreSelectorType = StoreSelectorType;
-    this.OAuthAppId = OAuthAppId;
     this.PermissionsType = PermissionsType;
     this.Name = Name;
     this.Description = Description;
@@ -85,8 +83,6 @@
         obj.SetupInstructions = ApiClient.convertToType(data['SetupInstructions'], 'String');
       if (data.hasOwnProperty('ExternalSetupLink'))
         obj.ExternalSetupLink = ApiClient.convertToType(data['ExternalSetupLink'], 'String');
-      if (data.hasOwnProperty('OAuthAppId'))
-        obj.OAuthAppId = ApiClient.convertToType(data['OAuthAppId'], 'String');
       if (data.hasOwnProperty('TeammateAppAccessLevel'))
         obj.TeammateAppAccessLevel = ApiClient.convertToType(data['TeammateAppAccessLevel'], 'String');
       if (data.hasOwnProperty('PermissionsType'))
@@ -142,12 +138,6 @@
    * @member {String} ExternalSetupLink
    */
   exports.prototype.ExternalSetupLink = undefined;
-
-  /**
-   * OAuth app id
-   * @member {String} OAuthAppId
-   */
-  exports.prototype.OAuthAppId = undefined;
 
   /**
    * Teammate app access level

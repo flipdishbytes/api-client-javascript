@@ -291,22 +291,6 @@ Name | Type | Description | Notes
 
 * `ViewCatalogAuditLogs` (value: `"ViewCatalogAuditLogs"`)
 
-* `CreateAppStoreApp` (value: `"CreateAppStoreApp"`)
-
-* `ViewAppStoreApp` (value: `"ViewAppStoreApp"`)
-
-* `UpdateAppStoreApp` (value: `"UpdateAppStoreApp"`)
-
-* `DeleteAppStoreApp` (value: `"DeleteAppStoreApp"`)
-
-* `CreateAppStoreAppConfiguration` (value: `"CreateAppStoreAppConfiguration"`)
-
-* `ViewAppStoreAppConfiguration` (value: `"ViewAppStoreAppConfiguration"`)
-
-* `UpdateAppStoreAppConfiguration` (value: `"UpdateAppStoreAppConfiguration"`)
-
-* `DeleteAppStoreAppConfiguration` (value: `"DeleteAppStoreAppConfiguration"`)
-
 * `SendPushNotificationToCustomer` (value: `"SendPushNotificationToCustomer"`)
 
 * `InviteDriverToApp` (value: `"InviteDriverToApp"`)
@@ -328,6 +312,14 @@ Name | Type | Description | Notes
 * `ViewOnboarding` (value: `"ViewOnboarding"`)
 
 * `UpdateOnboarding` (value: `"UpdateOnboarding"`)
+
+* `CreateAppStoreAppConfiguration` (value: `"CreateAppStoreAppConfiguration"`)
+
+* `ViewAppStoreAppConfiguration` (value: `"ViewAppStoreAppConfiguration"`)
+
+* `UpdateAppStoreAppConfiguration` (value: `"UpdateAppStoreAppConfiguration"`)
+
+* `DeleteAppStoreAppConfiguration` (value: `"DeleteAppStoreAppConfiguration"`)
 
 
 

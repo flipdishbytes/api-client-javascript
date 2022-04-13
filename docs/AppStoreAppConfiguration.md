@@ -11,13 +11,13 @@ Name | Type | Description | Notes
 **Settings** | [**[Setting]**](Setting.md) | Settings | [optional] 
 **VerificationStatus** | **String** | Application verification status | 
 **Logo** | **String** | Logo | [optional] 
+**OAuthAppId** | **String** | OAuth App identifier | 
 **Details** | **String** | Details | 
 **ConfigurationType** | **String** | Configuration type  <example>External link</example><example>Flipdish hosted</example> | 
 **StoreSelectorType** | **String** | Store selector type | 
 **FieldGroups** | [**[FieldGroup]**](FieldGroup.md) | Field groups | [optional] 
 **SetupInstructions** | **String** | Setup instructions | [optional] 
 **ExternalSetupLink** | **String** | External setup link | [optional] 
-**OAuthAppId** | **String** | OAuth app id | 
 **TeammateAppAccessLevel** | **String** | Teammate app access level | [optional] 
 **PermissionsType** | **String** | Permissions type | 
 **Name** | **String** | Name | 

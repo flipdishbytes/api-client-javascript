@@ -260,7 +260,7 @@
   exports.prototype.ReceiptCode = undefined;
 
   /**
-   * Order Drop Off Location
+   * DropOffLocation selected for this order
    * @member {module:model/OrderDropOffLocation} OrderDropOffLocation
    */
   exports.prototype.OrderDropOffLocation = undefined;

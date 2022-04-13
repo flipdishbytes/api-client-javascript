@@ -61,6 +61,12 @@
         obj.PercentageValue = ApiClient.convertToType(data['PercentageValue'], 'Number');
       if (data.hasOwnProperty('Enabled'))
         obj.Enabled = ApiClient.convertToType(data['Enabled'], 'Boolean');
+      if (data.hasOwnProperty('IsOptional'))
+        obj.IsOptional = ApiClient.convertToType(data['IsOptional'], 'Boolean');
+      if (data.hasOwnProperty('DisplayWithProcessingFee'))
+        obj.DisplayWithProcessingFee = ApiClient.convertToType(data['DisplayWithProcessingFee'], 'Boolean');
+      if (data.hasOwnProperty('IncludesVouchers'))
+        obj.IncludesVouchers = ApiClient.convertToType(data['IncludesVouchers'], 'Boolean');
     }
     return obj;
   }
@@ -82,6 +88,24 @@
    * @member {Boolean} Enabled
    */
   exports.prototype.Enabled = undefined;
+
+  /**
+   * Sets the service charge to be optional
+   * @member {Boolean} IsOptional
+   */
+  exports.prototype.IsOptional = undefined;
+
+  /**
+   * Display service charge together with processing fee
+   * @member {Boolean} DisplayWithProcessingFee
+   */
+  exports.prototype.DisplayWithProcessingFee = undefined;
+
+  /**
+   * If true, will include voucher value in calculation   i.e 10E order with 1E service charge and 5E voucher would have service charge at 0.5E
+   * @member {Boolean} IncludesVouchers
+   */
+  exports.prototype.IncludesVouchers = undefined;
 
 
   return exports;
