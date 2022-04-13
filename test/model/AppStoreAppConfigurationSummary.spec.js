@@ -58,10 +58,10 @@
         // expect(instance.IsEnabled).to.be(expectedValueLiteral);
       });
 
-      it('should have the property PhysicalRestaurants (base name: "PhysicalRestaurants")', function() {
-        // TODO: update the code to test the property PhysicalRestaurants
-        expect(instance).to.have.property('PhysicalRestaurants');
-        // expect(instance.PhysicalRestaurants).to.be(expectedValueLiteral);
+      it('should have the property Stores (base name: "Stores")', function() {
+        // TODO: update the code to test the property Stores
+        expect(instance).to.have.property('Stores');
+        // expect(instance.Stores).to.be(expectedValueLiteral);
       });
 
       it('should have the property ConfigurationType (base name: "ConfigurationType")', function() {

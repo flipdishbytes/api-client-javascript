@@ -30,14 +30,14 @@
   var instance;
 
   describe('(package)', function() {
-    describe('ConfiguredPhysicalRestaurant', function() {
+    describe('ConfiguredStore', function() {
       beforeEach(function() {
-        instance = new Flipdish.ConfiguredPhysicalRestaurant();
+        instance = new Flipdish.ConfiguredStore();
       });
 
-      it('should create an instance of ConfiguredPhysicalRestaurant', function() {
-        // TODO: update the code to test ConfiguredPhysicalRestaurant
-        expect(instance).to.be.a(Flipdish.ConfiguredPhysicalRestaurant);
+      it('should create an instance of ConfiguredStore', function() {
+        // TODO: update the code to test ConfiguredStore
+        expect(instance).to.be.a(Flipdish.ConfiguredStore);
       });
 
       it('should have the property StoreId (base name: "StoreId")', function() {

@@ -25,32 +25,32 @@
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.ConfiguredPhysicalRestaurant = factory(root.Flipdish.ApiClient);
+    root.Flipdish.ConfiguredStore = factory(root.Flipdish.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
 
   /**
-   * The ConfiguredPhysicalRestaurant model module.
-   * @module model/ConfiguredPhysicalRestaurant
+   * The ConfiguredStore model module.
+   * @module model/ConfiguredStore
    * @version 1.0.0
    */
 
   /**
-   * Constructs a new <code>ConfiguredPhysicalRestaurant</code>.
+   * Constructs a new <code>ConfiguredStore</code>.
    * Configured stores
-   * @alias module:model/ConfiguredPhysicalRestaurant
+   * @alias module:model/ConfiguredStore
    * @class
    */
   var exports = function() {
   };
 
   /**
-   * Constructs a <code>ConfiguredPhysicalRestaurant</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>ConfiguredStore</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/ConfiguredPhysicalRestaurant} obj Optional instance to populate.
-   * @return {module:model/ConfiguredPhysicalRestaurant} The populated <code>ConfiguredPhysicalRestaurant</code> instance.
+   * @param {module:model/ConfiguredStore} obj Optional instance to populate.
+   * @return {module:model/ConfiguredStore} The populated <code>ConfiguredStore</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {

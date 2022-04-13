@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **AppId** | **String** | App id | 
 **AppStoreAppId** | **String** | App store app id | 
 **IsEnabled** | **Boolean** | Is enabled | 
-**PhysicalRestaurants** | **[Number]** | Stores id's | [optional] 
+**StoreIds** | **[Number]** | Stores id's | [optional] 
 **Settings** | [**[Setting]**](Setting.md) | Settings | [optional] 
 **VerificationStatus** | **String** | Application verification status | 
 **Logo** | **String** | Logo | [optional] 
@@ -22,8 +22,8 @@ Name | Type | Description | Notes
 **PermissionsType** | **String** | Permissions type | 
 **Name** | **String** | Name | 
 **Description** | **String** | Description | 
-**Tags** | **[String]** | Tags | 
-**Regions** | **[String]** | Regions | 
+**Categories** | **[String]** | Categories | 
+**Countries** | **[String]** | Countries | 
 **DeveloperName** | **String** | Developer Name | [optional] 
 
 
@@ -96,8 +96,8 @@ Name | Type | Description | Notes
 
 
 
-<a name="[TagsEnum]"></a>
-## Enum: [TagsEnum]
+<a name="[CategoriesEnum]"></a>
+## Enum: [CategoriesEnum]
 
 
 * `PointOfSale` (value: `"PointOfSale"`)
@@ -117,8 +117,8 @@ Name | Type | Description | Notes
 
 
 
-<a name="[RegionsEnum]"></a>
-## Enum: [RegionsEnum]
+<a name="[CountriesEnum]"></a>
+## Enum: [CountriesEnum]
 
 
 * `GB` (value: `"GB"`)

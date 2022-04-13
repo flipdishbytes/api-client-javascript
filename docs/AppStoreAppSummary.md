@@ -9,8 +9,8 @@ Name | Type | Description | Notes
 **Name** | **String** | Name | 
 **Description** | **String** | Description | 
 **IsEnabled** | **Boolean** | Is application enabled | [optional] 
-**Tags** | **[String]** | Tags | 
-**Regions** | **[String]** | Regions | 
+**Categories** | **[String]** | Categories | 
+**Countries** | **[String]** | Countries | 
 **DeveloperName** | **String** | Developer Name | [optional] 
 
 
@@ -27,8 +27,8 @@ Name | Type | Description | Notes
 
 
 
-<a name="[TagsEnum]"></a>
-## Enum: [TagsEnum]
+<a name="[CategoriesEnum]"></a>
+## Enum: [CategoriesEnum]
 
 
 * `PointOfSale` (value: `"PointOfSale"`)
@@ -48,8 +48,8 @@ Name | Type | Description | Notes
 
 
 
-<a name="[RegionsEnum]"></a>
-## Enum: [RegionsEnum]
+<a name="[CountriesEnum]"></a>
+## Enum: [CountriesEnum]
 
 
 * `GB` (value: `"GB"`)

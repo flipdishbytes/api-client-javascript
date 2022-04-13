@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 **Id** | **String** | Unique App store app configuration id | 
 **AppId** | **String** | App Id | 
 **IsEnabled** | **Boolean** | Is enabled | 
-**PhysicalRestaurants** | [**[ConfiguredPhysicalRestaurant]**](ConfiguredPhysicalRestaurant.md) | List of stores | 
+**Stores** | [**[ConfiguredStore]**](ConfiguredStore.md) | List of stores | 
 **ConfigurationType** | **String** | Configuration type | [optional] 
 **StoreSelectorType** | **String** | Store selector type | [optional] 
 **AppStoreAppId** | **String** | Unique App store app id | 

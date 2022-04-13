@@ -1,4 +1,4 @@
-# Flipdish.ConfiguredPhysicalRestaurant
+# Flipdish.ConfiguredStore
 
 ## Properties
 Name | Type | Description | Notes

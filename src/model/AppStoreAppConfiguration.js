@@ -53,10 +53,10 @@
    * @param PermissionsType {module:model/AppStoreAppConfiguration.PermissionsTypeEnum} Permissions type
    * @param Name {String} Name
    * @param Description {String} Description
-   * @param Tags {Array.<module:model/AppStoreAppConfiguration.TagsEnum>} Tags
-   * @param Regions {Array.<module:model/AppStoreAppConfiguration.RegionsEnum>} Regions
+   * @param Categories {Array.<module:model/AppStoreAppConfiguration.CategoriesEnum>} Categories
+   * @param Countries {Array.<module:model/AppStoreAppConfiguration.CountriesEnum>} Countries
    */
-  var exports = function(Id, AppId, AppStoreAppId, IsEnabled, VerificationStatus, OAuthAppId, Details, ConfigurationType, StoreSelectorType, PermissionsType, Name, Description, Tags, Regions) {
+  var exports = function(Id, AppId, AppStoreAppId, IsEnabled, VerificationStatus, OAuthAppId, Details, ConfigurationType, StoreSelectorType, PermissionsType, Name, Description, Categories, Countries) {
     this.Id = Id;
     this.AppId = AppId;
     this.AppStoreAppId = AppStoreAppId;
@@ -69,8 +69,8 @@
     this.PermissionsType = PermissionsType;
     this.Name = Name;
     this.Description = Description;
-    this.Tags = Tags;
-    this.Regions = Regions;
+    this.Categories = Categories;
+    this.Countries = Countries;
   };
 
   /**
@@ -91,8 +91,8 @@
         obj.AppStoreAppId = ApiClient.convertToType(data['AppStoreAppId'], 'String');
       if (data.hasOwnProperty('IsEnabled'))
         obj.IsEnabled = ApiClient.convertToType(data['IsEnabled'], 'Boolean');
-      if (data.hasOwnProperty('PhysicalRestaurants'))
-        obj.PhysicalRestaurants = ApiClient.convertToType(data['PhysicalRestaurants'], ['Number']);
+      if (data.hasOwnProperty('StoreIds'))
+        obj.StoreIds = ApiClient.convertToType(data['StoreIds'], ['Number']);
       if (data.hasOwnProperty('Settings'))
         obj.Settings = ApiClient.convertToType(data['Settings'], [Setting]);
       if (data.hasOwnProperty('VerificationStatus'))
@@ -121,10 +121,10 @@
         obj.Name = ApiClient.convertToType(data['Name'], 'String');
       if (data.hasOwnProperty('Description'))
         obj.Description = ApiClient.convertToType(data['Description'], 'String');
-      if (data.hasOwnProperty('Tags'))
-        obj.Tags = ApiClient.convertToType(data['Tags'], ['String']);
-      if (data.hasOwnProperty('Regions'))
-        obj.Regions = ApiClient.convertToType(data['Regions'], ['String']);
+      if (data.hasOwnProperty('Categories'))
+        obj.Categories = ApiClient.convertToType(data['Categories'], ['String']);
+      if (data.hasOwnProperty('Countries'))
+        obj.Countries = ApiClient.convertToType(data['Countries'], ['String']);
       if (data.hasOwnProperty('DeveloperName'))
         obj.DeveloperName = ApiClient.convertToType(data['DeveloperName'], 'String');
     }
@@ -157,9 +157,9 @@
 
   /**
    * Stores id's
-   * @member {Array.<Number>} PhysicalRestaurants
+   * @member {Array.<Number>} StoreIds
    */
-  exports.prototype.PhysicalRestaurants = undefined;
+  exports.prototype.StoreIds = undefined;
 
   /**
    * Settings
@@ -246,16 +246,16 @@
   exports.prototype.Description = undefined;
 
   /**
-   * Tags
-   * @member {Array.<module:model/AppStoreAppConfiguration.TagsEnum>} Tags
+   * Categories
+   * @member {Array.<module:model/AppStoreAppConfiguration.CategoriesEnum>} Categories
    */
-  exports.prototype.Tags = undefined;
+  exports.prototype.Categories = undefined;
 
   /**
-   * Regions
-   * @member {Array.<module:model/AppStoreAppConfiguration.RegionsEnum>} Regions
+   * Countries
+   * @member {Array.<module:model/AppStoreAppConfiguration.CountriesEnum>} Countries
    */
-  exports.prototype.Regions = undefined;
+  exports.prototype.Countries = undefined;
 
   /**
    * Developer Name
@@ -408,11 +408,11 @@
 
 
   /**
-   * Allowed values for the <code>Tags</code> property.
+   * Allowed values for the <code>Categories</code> property.
    * @enum {String}
    * @readonly
    */
-  exports.TagsEnum = {
+  exports.CategoriesEnum = {
     /**
      * value: "PointOfSale"
      * @const
@@ -458,11 +458,11 @@
 
 
   /**
-   * Allowed values for the <code>Regions</code> property.
+   * Allowed values for the <code>Countries</code> property.
    * @enum {String}
    * @readonly
    */
-  exports.RegionsEnum = {
+  exports.CountriesEnum = {
     /**
      * value: "GB"
      * @const

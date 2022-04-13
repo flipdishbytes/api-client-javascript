@@ -63,8 +63,8 @@
         obj.Id = ApiClient.convertToType(data['Id'], 'String');
       if (data.hasOwnProperty('IsEnabled'))
         obj.IsEnabled = ApiClient.convertToType(data['IsEnabled'], 'Boolean');
-      if (data.hasOwnProperty('PhysicalRestaurants'))
-        obj.PhysicalRestaurants = ApiClient.convertToType(data['PhysicalRestaurants'], ['Number']);
+      if (data.hasOwnProperty('StoreIds'))
+        obj.StoreIds = ApiClient.convertToType(data['StoreIds'], ['Number']);
       if (data.hasOwnProperty('Settings'))
         obj.Settings = ApiClient.convertToType(data['Settings'], [Setting]);
     }
@@ -85,9 +85,9 @@
 
   /**
    * Store id's
-   * @member {Array.<Number>} PhysicalRestaurants
+   * @member {Array.<Number>} StoreIds
    */
-  exports.prototype.PhysicalRestaurants = undefined;
+  exports.prototype.StoreIds = undefined;
 
   /**
    * Settings

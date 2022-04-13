@@ -16,18 +16,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/ConfiguredPhysicalRestaurant'], factory);
+    define(['ApiClient', 'model/ConfiguredStore'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./ConfiguredPhysicalRestaurant'));
+    module.exports = factory(require('../ApiClient'), require('./ConfiguredStore'));
   } else {
     // Browser globals (root is window)
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.AppStoreAppConfigurationSummary = factory(root.Flipdish.ApiClient, root.Flipdish.ConfiguredPhysicalRestaurant);
+    root.Flipdish.AppStoreAppConfigurationSummary = factory(root.Flipdish.ApiClient, root.Flipdish.ConfiguredStore);
   }
-}(this, function(ApiClient, ConfiguredPhysicalRestaurant) {
+}(this, function(ApiClient, ConfiguredStore) {
   'use strict';
 
   /**
@@ -44,16 +44,16 @@
    * @param Id {String} Unique App store app configuration id
    * @param AppId {String} App Id
    * @param IsEnabled {Boolean} Is enabled
-   * @param PhysicalRestaurants {Array.<module:model/ConfiguredPhysicalRestaurant>} List of stores
+   * @param Stores {Array.<module:model/ConfiguredStore>} List of stores
    * @param AppStoreAppId {String} Unique App store app id
    * @param Name {String} Name of Appstore app
    * @param Description {String} Description
    */
-  var exports = function(Id, AppId, IsEnabled, PhysicalRestaurants, AppStoreAppId, Name, Description) {
+  var exports = function(Id, AppId, IsEnabled, Stores, AppStoreAppId, Name, Description) {
     this.Id = Id;
     this.AppId = AppId;
     this.IsEnabled = IsEnabled;
-    this.PhysicalRestaurants = PhysicalRestaurants;
+    this.Stores = Stores;
     this.AppStoreAppId = AppStoreAppId;
     this.Name = Name;
     this.Description = Description;
@@ -75,8 +75,8 @@
         obj.AppId = ApiClient.convertToType(data['AppId'], 'String');
       if (data.hasOwnProperty('IsEnabled'))
         obj.IsEnabled = ApiClient.convertToType(data['IsEnabled'], 'Boolean');
-      if (data.hasOwnProperty('PhysicalRestaurants'))
-        obj.PhysicalRestaurants = ApiClient.convertToType(data['PhysicalRestaurants'], [ConfiguredPhysicalRestaurant]);
+      if (data.hasOwnProperty('Stores'))
+        obj.Stores = ApiClient.convertToType(data['Stores'], [ConfiguredStore]);
       if (data.hasOwnProperty('ConfigurationType'))
         obj.ConfigurationType = ApiClient.convertToType(data['ConfigurationType'], 'String');
       if (data.hasOwnProperty('StoreSelectorType'))
@@ -115,9 +115,9 @@
 
   /**
    * List of stores
-   * @member {Array.<module:model/ConfiguredPhysicalRestaurant>} PhysicalRestaurants
+   * @member {Array.<module:model/ConfiguredStore>} Stores
    */
-  exports.prototype.PhysicalRestaurants = undefined;
+  exports.prototype.Stores = undefined;
 
   /**
    * Configuration type

@@ -50,10 +50,10 @@
    * @param PermissionsType {module:model/AppStoreApp.PermissionsTypeEnum} Permissions type
    * @param Name {String} Name
    * @param Description {String} Description
-   * @param Tags {Array.<module:model/AppStoreApp.TagsEnum>} Tags
-   * @param Regions {Array.<module:model/AppStoreApp.RegionsEnum>} Regions
+   * @param Categories {Array.<module:model/AppStoreApp.CategoriesEnum>} Categories
+   * @param Countries {Array.<module:model/AppStoreApp.CountriesEnum>} Countries
    */
-  var exports = function(Id, VerificationStatus, OAuthAppId, Details, ConfigurationType, StoreSelectorType, PermissionsType, Name, Description, Tags, Regions) {
+  var exports = function(Id, VerificationStatus, OAuthAppId, Details, ConfigurationType, StoreSelectorType, PermissionsType, Name, Description, Categories, Countries) {
     this.Id = Id;
     this.VerificationStatus = VerificationStatus;
     this.OAuthAppId = OAuthAppId;
@@ -63,8 +63,8 @@
     this.PermissionsType = PermissionsType;
     this.Name = Name;
     this.Description = Description;
-    this.Tags = Tags;
-    this.Regions = Regions;
+    this.Categories = Categories;
+    this.Countries = Countries;
   };
 
   /**
@@ -107,10 +107,10 @@
         obj.Description = ApiClient.convertToType(data['Description'], 'String');
       if (data.hasOwnProperty('IsEnabled'))
         obj.IsEnabled = ApiClient.convertToType(data['IsEnabled'], 'Boolean');
-      if (data.hasOwnProperty('Tags'))
-        obj.Tags = ApiClient.convertToType(data['Tags'], ['String']);
-      if (data.hasOwnProperty('Regions'))
-        obj.Regions = ApiClient.convertToType(data['Regions'], ['String']);
+      if (data.hasOwnProperty('Categories'))
+        obj.Categories = ApiClient.convertToType(data['Categories'], ['String']);
+      if (data.hasOwnProperty('Countries'))
+        obj.Countries = ApiClient.convertToType(data['Countries'], ['String']);
       if (data.hasOwnProperty('DeveloperName'))
         obj.DeveloperName = ApiClient.convertToType(data['DeveloperName'], 'String');
     }
@@ -208,16 +208,16 @@
   exports.prototype.IsEnabled = undefined;
 
   /**
-   * Tags
-   * @member {Array.<module:model/AppStoreApp.TagsEnum>} Tags
+   * Categories
+   * @member {Array.<module:model/AppStoreApp.CategoriesEnum>} Categories
    */
-  exports.prototype.Tags = undefined;
+  exports.prototype.Categories = undefined;
 
   /**
-   * Regions
-   * @member {Array.<module:model/AppStoreApp.RegionsEnum>} Regions
+   * Countries
+   * @member {Array.<module:model/AppStoreApp.CountriesEnum>} Countries
    */
-  exports.prototype.Regions = undefined;
+  exports.prototype.Countries = undefined;
 
   /**
    * Developer Name
@@ -370,11 +370,11 @@
 
 
   /**
-   * Allowed values for the <code>Tags</code> property.
+   * Allowed values for the <code>Categories</code> property.
    * @enum {String}
    * @readonly
    */
-  exports.TagsEnum = {
+  exports.CategoriesEnum = {
     /**
      * value: "PointOfSale"
      * @const
@@ -420,11 +420,11 @@
 
 
   /**
-   * Allowed values for the <code>Regions</code> property.
+   * Allowed values for the <code>Countries</code> property.
    * @enum {String}
    * @readonly
    */
-  exports.RegionsEnum = {
+  exports.CountriesEnum = {
     /**
      * value: "GB"
      * @const

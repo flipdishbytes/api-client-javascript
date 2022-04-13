@@ -64,10 +64,10 @@
         // expect(instance.IsEnabled).to.be(expectedValueLiteral);
       });
 
-      it('should have the property PhysicalRestaurants (base name: "PhysicalRestaurants")', function() {
-        // TODO: update the code to test the property PhysicalRestaurants
-        expect(instance).to.have.property('PhysicalRestaurants');
-        // expect(instance.PhysicalRestaurants).to.be(expectedValueLiteral);
+      it('should have the property StoreIds (base name: "StoreIds")', function() {
+        // TODO: update the code to test the property StoreIds
+        expect(instance).to.have.property('StoreIds');
+        // expect(instance.StoreIds).to.be(expectedValueLiteral);
       });
 
       it('should have the property Settings (base name: "Settings")', function() {
@@ -154,16 +154,16 @@
         // expect(instance.Description).to.be(expectedValueLiteral);
       });
 
-      it('should have the property Tags (base name: "Tags")', function() {
-        // TODO: update the code to test the property Tags
-        expect(instance).to.have.property('Tags');
-        // expect(instance.Tags).to.be(expectedValueLiteral);
+      it('should have the property Categories (base name: "Categories")', function() {
+        // TODO: update the code to test the property Categories
+        expect(instance).to.have.property('Categories');
+        // expect(instance.Categories).to.be(expectedValueLiteral);
       });
 
-      it('should have the property Regions (base name: "Regions")', function() {
-        // TODO: update the code to test the property Regions
-        expect(instance).to.have.property('Regions');
-        // expect(instance.Regions).to.be(expectedValueLiteral);
+      it('should have the property Countries (base name: "Countries")', function() {
+        // TODO: update the code to test the property Countries
+        expect(instance).to.have.property('Countries');
+        // expect(instance.Countries).to.be(expectedValueLiteral);
       });
 
       it('should have the property DeveloperName (base name: "DeveloperName")', function() {
