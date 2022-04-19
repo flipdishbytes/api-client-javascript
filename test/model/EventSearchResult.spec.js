@@ -790,6 +790,30 @@
         // expect(instance.StoreTipUpdatedEvent).to.be(expectedValueLiteral);
       });
 
+      it('should have the property LocationAreaCreatedEvent (base name: "LocationAreaCreatedEvent")', function() {
+        // TODO: update the code to test the property LocationAreaCreatedEvent
+        expect(instance).to.have.property('LocationAreaCreatedEvent');
+        // expect(instance.LocationAreaCreatedEvent).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property LocationAreaUpdatedEvent (base name: "LocationAreaUpdatedEvent")', function() {
+        // TODO: update the code to test the property LocationAreaUpdatedEvent
+        expect(instance).to.have.property('LocationAreaUpdatedEvent');
+        // expect(instance.LocationAreaUpdatedEvent).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property LocationCreatedEvent (base name: "LocationCreatedEvent")', function() {
+        // TODO: update the code to test the property LocationCreatedEvent
+        expect(instance).to.have.property('LocationCreatedEvent');
+        // expect(instance.LocationCreatedEvent).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property LocationDeletedEvent (base name: "LocationDeletedEvent")', function() {
+        // TODO: update the code to test the property LocationDeletedEvent
+        expect(instance).to.have.property('LocationDeletedEvent');
+        // expect(instance.LocationDeletedEvent).to.be(expectedValueLiteral);
+      });
+
       it('should have the property StoreServiceChargeUpdatedEvent (base name: "StoreServiceChargeUpdatedEvent")', function() {
         // TODO: update the code to test the property StoreServiceChargeUpdatedEvent
         expect(instance).to.have.property('StoreServiceChargeUpdatedEvent');
