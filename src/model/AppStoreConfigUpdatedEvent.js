@@ -59,8 +59,8 @@
         obj.EventName = ApiClient.convertToType(data['EventName'], 'String');
       if (data.hasOwnProperty('AppStoreAppId'))
         obj.AppStoreAppId = ApiClient.convertToType(data['AppStoreAppId'], 'String');
-      if (data.hasOwnProperty('UpdateAppStoreAppStoreAppStoreAppConfiguration'))
-        obj.UpdateAppStoreAppStoreAppStoreAppConfiguration = UpdateAppStoreAppConfigurationWebhookDTO.constructFromObject(data['UpdateAppStoreAppStoreAppStoreAppConfiguration']);
+      if (data.hasOwnProperty('AppStoreAppConfiguration'))
+        obj.AppStoreAppConfiguration = UpdateAppStoreAppConfigurationWebhookDTO.constructFromObject(data['AppStoreAppConfiguration']);
       if (data.hasOwnProperty('FlipdishEventId'))
         obj.FlipdishEventId = ApiClient.convertToType(data['FlipdishEventId'], 'String');
       if (data.hasOwnProperty('CreateTime'))
@@ -89,9 +89,9 @@
 
   /**
    * App Configuration
-   * @member {module:model/UpdateAppStoreAppConfigurationWebhookDTO} UpdateAppStoreAppStoreAppStoreAppConfiguration
+   * @member {module:model/UpdateAppStoreAppConfigurationWebhookDTO} AppStoreAppConfiguration
    */
-  exports.prototype.UpdateAppStoreAppStoreAppStoreAppConfiguration = undefined;
+  exports.prototype.AppStoreAppConfiguration = undefined;
 
   /**
    * The identitfier of the event
