@@ -41,8 +41,12 @@
    * Representation of a Location and its External Mapping
    * @alias module:model/MappedLocation
    * @class
+   * @param LocationId {Number} Id of the Location
+   * @param ExternalLocationId {String} Id of the Location on an external system
    */
-  var exports = function() {
+  var exports = function(LocationId, ExternalLocationId) {
+    this.LocationId = LocationId;
+    this.ExternalLocationId = ExternalLocationId;
   };
 
   /**

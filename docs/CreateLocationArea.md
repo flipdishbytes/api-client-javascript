@@ -3,6 +3,6 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**LocationAreaName** | **String** | Descriptive LocationArea name | [optional] 
+**LocationAreaName** | **String** | Descriptive LocationArea name | 
 
 

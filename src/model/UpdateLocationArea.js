@@ -41,8 +41,12 @@
    * Input model for updating a LocationArea
    * @alias module:model/UpdateLocationArea
    * @class
+   * @param LocationAreaId {Number} Location Area Id
+   * @param LocationAreaName {String} Descriptive LocationArea name
    */
-  var exports = function() {
+  var exports = function(LocationAreaId, LocationAreaName) {
+    this.LocationAreaId = LocationAreaId;
+    this.LocationAreaName = LocationAreaName;
   };
 
   /**

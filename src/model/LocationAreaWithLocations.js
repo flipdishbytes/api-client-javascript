@@ -41,8 +41,14 @@
    * Represents a LocationArea and its Location list
    * @alias module:model/LocationAreaWithLocations
    * @class
+   * @param LocationAreaId {Number} Id of the LocationArea
+   * @param StoreId {Number} Id of the Store that this LocationArea belongs to
+   * @param LocationAreaName {String} Descriptive LocationArea name
    */
-  var exports = function() {
+  var exports = function(LocationAreaId, StoreId, LocationAreaName) {
+    this.LocationAreaId = LocationAreaId;
+    this.StoreId = StoreId;
+    this.LocationAreaName = LocationAreaName;
   };
 
   /**

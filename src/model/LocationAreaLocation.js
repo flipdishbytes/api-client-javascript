@@ -41,8 +41,14 @@
    * Representation of a Location i.e: (Table, Hotel Room, Car Park, etc )
    * @alias module:model/LocationAreaLocation
    * @class
+   * @param LocationId {Number} Id of the Location
+   * @param LocationName {String} Name of the Location
+   * @param DisplayOrder {Number} The order that the Location should be displayed on the screen
    */
-  var exports = function() {
+  var exports = function(LocationId, LocationName, DisplayOrder) {
+    this.LocationId = LocationId;
+    this.LocationName = LocationName;
+    this.DisplayOrder = DisplayOrder;
   };
 
   /**

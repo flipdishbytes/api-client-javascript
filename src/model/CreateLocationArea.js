@@ -41,8 +41,10 @@
    * Input model for creating a LocationArea
    * @alias module:model/CreateLocationArea
    * @class
+   * @param LocationAreaName {String} Descriptive LocationArea name
    */
-  var exports = function() {
+  var exports = function(LocationAreaName) {
+    this.LocationAreaName = LocationAreaName;
   };
 
   /**
