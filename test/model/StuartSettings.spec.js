@@ -64,6 +64,12 @@
         // expect(instance.WebhookUrlBasicAuthentication).to.be(expectedValueLiteral);
       });
 
+      it('should have the property OverrideWebhookUrl (base name: "OverrideWebhookUrl")', function() {
+        // TODO: update the code to test the property OverrideWebhookUrl
+        expect(instance).to.have.property('OverrideWebhookUrl');
+        // expect(instance.OverrideWebhookUrl).to.be(expectedValueLiteral);
+      });
+
       it('should have the property MinutesToPickupBeforeThanDeliveryTime (base name: "MinutesToPickupBeforeThanDeliveryTime")', function() {
         // TODO: update the code to test the property MinutesToPickupBeforeThanDeliveryTime
         expect(instance).to.have.property('MinutesToPickupBeforeThanDeliveryTime');

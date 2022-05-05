@@ -63,6 +63,8 @@
         obj.Enabled = ApiClient.convertToType(data['Enabled'], 'Boolean');
       if (data.hasOwnProperty('WebhookUrlBasicAuthentication'))
         obj.WebhookUrlBasicAuthentication = ApiClient.convertToType(data['WebhookUrlBasicAuthentication'], 'String');
+      if (data.hasOwnProperty('OverrideWebhookUrl'))
+        obj.OverrideWebhookUrl = ApiClient.convertToType(data['OverrideWebhookUrl'], 'Boolean');
       if (data.hasOwnProperty('MinutesToPickupBeforeThanDeliveryTime'))
         obj.MinutesToPickupBeforeThanDeliveryTime = ApiClient.convertToType(data['MinutesToPickupBeforeThanDeliveryTime'], 'Number');
       if (data.hasOwnProperty('PackageType'))
@@ -100,6 +102,12 @@
    * @member {String} WebhookUrlBasicAuthentication
    */
   exports.prototype.WebhookUrlBasicAuthentication = undefined;
+
+  /**
+   * Override Flipdish Webhook Url
+   * @member {Boolean} OverrideWebhookUrl
+   */
+  exports.prototype.OverrideWebhookUrl = undefined;
 
   /**
    * MinutesToPickupBeforeThanDeliveryTime
