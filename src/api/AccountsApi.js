@@ -16,18 +16,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/AccountDetailBase', 'model/ChangePasswordModel', 'model/CreateAccountModel', 'model/LoginModel', 'model/LoginWithPinModel', 'model/PasswordResetModel', 'model/RequestLoginPinModel', 'model/RequestLoginPinResposne', 'model/RequestPasswordResetModel', 'model/RestApiArrayResultLocalisedTimeZone', 'model/RestApiErrorResult', 'model/RestApiForbiddenResult', 'model/RestApiResultAccountDetail', 'model/RestApiUnauthorizedResult', 'model/SetPasswordWithPinModel'], factory);
+    define(['ApiClient', 'model/AccountDetailBase', 'model/ChangePasswordModel', 'model/CreateAccountModel', 'model/LoginModel', 'model/LoginWithPinModel', 'model/PasswordResetModel', 'model/RequestLoginPinModel', 'model/RequestLoginPinResposne', 'model/RequestPasswordResetModel', 'model/RequestPasswordResetPinResponse', 'model/RestApiArrayResultLocalisedTimeZone', 'model/RestApiErrorResult', 'model/RestApiForbiddenResult', 'model/RestApiResultAccountDetail', 'model/RestApiUnauthorizedResult', 'model/SetPasswordWithPinModel'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../model/AccountDetailBase'), require('../model/ChangePasswordModel'), require('../model/CreateAccountModel'), require('../model/LoginModel'), require('../model/LoginWithPinModel'), require('../model/PasswordResetModel'), require('../model/RequestLoginPinModel'), require('../model/RequestLoginPinResposne'), require('../model/RequestPasswordResetModel'), require('../model/RestApiArrayResultLocalisedTimeZone'), require('../model/RestApiErrorResult'), require('../model/RestApiForbiddenResult'), require('../model/RestApiResultAccountDetail'), require('../model/RestApiUnauthorizedResult'), require('../model/SetPasswordWithPinModel'));
+    module.exports = factory(require('../ApiClient'), require('../model/AccountDetailBase'), require('../model/ChangePasswordModel'), require('../model/CreateAccountModel'), require('../model/LoginModel'), require('../model/LoginWithPinModel'), require('../model/PasswordResetModel'), require('../model/RequestLoginPinModel'), require('../model/RequestLoginPinResposne'), require('../model/RequestPasswordResetModel'), require('../model/RequestPasswordResetPinResponse'), require('../model/RestApiArrayResultLocalisedTimeZone'), require('../model/RestApiErrorResult'), require('../model/RestApiForbiddenResult'), require('../model/RestApiResultAccountDetail'), require('../model/RestApiUnauthorizedResult'), require('../model/SetPasswordWithPinModel'));
   } else {
     // Browser globals (root is window)
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.AccountsApi = factory(root.Flipdish.ApiClient, root.Flipdish.AccountDetailBase, root.Flipdish.ChangePasswordModel, root.Flipdish.CreateAccountModel, root.Flipdish.LoginModel, root.Flipdish.LoginWithPinModel, root.Flipdish.PasswordResetModel, root.Flipdish.RequestLoginPinModel, root.Flipdish.RequestLoginPinResposne, root.Flipdish.RequestPasswordResetModel, root.Flipdish.RestApiArrayResultLocalisedTimeZone, root.Flipdish.RestApiErrorResult, root.Flipdish.RestApiForbiddenResult, root.Flipdish.RestApiResultAccountDetail, root.Flipdish.RestApiUnauthorizedResult, root.Flipdish.SetPasswordWithPinModel);
+    root.Flipdish.AccountsApi = factory(root.Flipdish.ApiClient, root.Flipdish.AccountDetailBase, root.Flipdish.ChangePasswordModel, root.Flipdish.CreateAccountModel, root.Flipdish.LoginModel, root.Flipdish.LoginWithPinModel, root.Flipdish.PasswordResetModel, root.Flipdish.RequestLoginPinModel, root.Flipdish.RequestLoginPinResposne, root.Flipdish.RequestPasswordResetModel, root.Flipdish.RequestPasswordResetPinResponse, root.Flipdish.RestApiArrayResultLocalisedTimeZone, root.Flipdish.RestApiErrorResult, root.Flipdish.RestApiForbiddenResult, root.Flipdish.RestApiResultAccountDetail, root.Flipdish.RestApiUnauthorizedResult, root.Flipdish.SetPasswordWithPinModel);
   }
-}(this, function(ApiClient, AccountDetailBase, ChangePasswordModel, CreateAccountModel, LoginModel, LoginWithPinModel, PasswordResetModel, RequestLoginPinModel, RequestLoginPinResposne, RequestPasswordResetModel, RestApiArrayResultLocalisedTimeZone, RestApiErrorResult, RestApiForbiddenResult, RestApiResultAccountDetail, RestApiUnauthorizedResult, SetPasswordWithPinModel) {
+}(this, function(ApiClient, AccountDetailBase, ChangePasswordModel, CreateAccountModel, LoginModel, LoginWithPinModel, PasswordResetModel, RequestLoginPinModel, RequestLoginPinResposne, RequestPasswordResetModel, RequestPasswordResetPinResponse, RestApiArrayResultLocalisedTimeZone, RestApiErrorResult, RestApiForbiddenResult, RestApiResultAccountDetail, RestApiUnauthorizedResult, SetPasswordWithPinModel) {
   'use strict';
 
   /**
@@ -574,6 +574,52 @@
 
       return this.apiClient.callApi(
         '/api/v1.0/accounts/passwordreset', 'POST',
+        pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the sendPinForPasswordReset operation.
+     * @callback module:api/AccountsApi~sendPinForPasswordResetCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/RequestPasswordResetPinResponse} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * Request Password Reset PIN. The server sends the PIN to the email address.
+     * @param {module:model/RequestPasswordResetModel} requestPasswordResetRequest 
+     * @param {module:api/AccountsApi~sendPinForPasswordResetCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/RequestPasswordResetPinResponse}
+     */
+    this.sendPinForPasswordReset = function(requestPasswordResetRequest, callback) {
+      var postBody = requestPasswordResetRequest;
+
+      // verify the required parameter 'requestPasswordResetRequest' is set
+      if (requestPasswordResetRequest === undefined || requestPasswordResetRequest === null) {
+        throw new Error("Missing the required parameter 'requestPasswordResetRequest' when calling sendPinForPasswordReset");
+      }
+
+
+      var pathParams = {
+      };
+      var queryParams = {
+      };
+      var collectionQueryParams = {
+      };
+      var headerParams = {
+      };
+      var formParams = {
+      };
+
+      var authNames = ['oauth2'];
+      var contentTypes = ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded'];
+      var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
+      var returnType = RequestPasswordResetPinResponse;
+
+      return this.apiClient.callApi(
+        '/api/v1.0/accounts/password/resetpin', 'POST',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );

@@ -351,6 +351,30 @@
           done();
         });
       });
+      describe('sendPinForPasswordReset', function() {
+        it('should call sendPinForPasswordReset successfully', function(done) {
+          // TODO: uncomment, update parameter values for sendPinForPasswordReset call and complete the assertions
+          /*
+          var requestPasswordResetRequest = new Flipdish.RequestPasswordResetModel();
+          requestPasswordResetRequest.Email = "";
+
+          instance.sendPinForPasswordReset(requestPasswordResetRequest, function(error, data, response) {
+            if (error) {
+              done(error);
+              return;
+            }
+            // TODO: update response assertions
+            expect(data).to.be.a(Flipdish.RequestPasswordResetPinResponse);
+            expect(data.PasswordResetPinSentViaEmail).to.be.a('boolean');
+            expect(data.PasswordResetPinSentViaEmail).to.be(false);
+
+            done();
+          });
+          */
+          // TODO: uncomment and complete method invocation above, then delete this line and the next:
+          done();
+        });
+      });
       describe('skipSignupStep', function() {
         it('should call skipSignupStep successfully', function(done) {
           // TODO: uncomment, update parameter values for skipSignupStep call
