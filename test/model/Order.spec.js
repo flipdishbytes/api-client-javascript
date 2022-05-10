@@ -208,6 +208,12 @@
         // expect(instance.ServiceChargeAmount).to.be(expectedValueLiteral);
       });
 
+      it('should have the property ServiceChargePercentage (base name: "ServiceChargePercentage")', function() {
+        // TODO: update the code to test the property ServiceChargePercentage
+        expect(instance).to.have.property('ServiceChargePercentage');
+        // expect(instance.ServiceChargePercentage).to.be(expectedValueLiteral);
+      });
+
       it('should have the property Amount (base name: "Amount")', function() {
         // TODO: update the code to test the property Amount
         expect(instance).to.have.property('Amount');

@@ -111,6 +111,8 @@
         obj.OrderItemsAmount = ApiClient.convertToType(data['OrderItemsAmount'], 'Number');
       if (data.hasOwnProperty('ServiceChargeAmount'))
         obj.ServiceChargeAmount = ApiClient.convertToType(data['ServiceChargeAmount'], 'Number');
+      if (data.hasOwnProperty('ServiceChargePercentage'))
+        obj.ServiceChargePercentage = ApiClient.convertToType(data['ServiceChargePercentage'], 'Number');
       if (data.hasOwnProperty('Amount'))
         obj.Amount = ApiClient.convertToType(data['Amount'], 'Number');
       if (data.hasOwnProperty('ProcessingFee'))
@@ -318,6 +320,12 @@
    * @member {Number} ServiceChargeAmount
    */
   exports.prototype.ServiceChargeAmount = undefined;
+
+  /**
+   * Service Charge Percentage
+   * @member {Number} ServiceChargePercentage
+   */
+  exports.prototype.ServiceChargePercentage = undefined;
 
   /**
    * This is the sum of the OrderItemsAmount, DeliveryAmount, TipAmount and Voucher.Amount (which is usually negative) and OnlineOrderingFee for cash orders.  It does not include the OnlineOrderingFee in the case of card orders as this fee is charged by Flipdish directly to the customer.
