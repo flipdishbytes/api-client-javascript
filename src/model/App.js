@@ -738,6 +738,12 @@
     InitiateBluetoothPairingMode: "InitiateBluetoothPairingMode",
 
     /**
+     * value: "DeleteTerminal"
+     * @const
+     */
+    DeleteTerminal: "DeleteTerminal",
+
+    /**
      * value: "ViewCustomers"
      * @const
      */

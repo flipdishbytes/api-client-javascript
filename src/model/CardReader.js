@@ -67,6 +67,8 @@
         obj.RegistrationCode = ApiClient.convertToType(data['RegistrationCode'], 'String');
       if (data.hasOwnProperty('DeviceType'))
         obj.DeviceType = ApiClient.convertToType(data['DeviceType'], 'String');
+      if (data.hasOwnProperty('Deleted'))
+        obj.Deleted = ApiClient.convertToType(data['Deleted'], 'Boolean');
     }
     return obj;
   }
@@ -106,6 +108,12 @@
    * @member {String} DeviceType
    */
   exports.prototype.DeviceType = undefined;
+
+  /**
+   * Indicates that the reader is deleted or not
+   * @member {Boolean} Deleted
+   */
+  exports.prototype.Deleted = undefined;
 
 
   return exports;

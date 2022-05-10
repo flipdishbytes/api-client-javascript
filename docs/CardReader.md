@@ -9,5 +9,6 @@ Name | Type | Description | Notes
 **Status** | **String** | Device status online or offline | [optional] 
 **RegistrationCode** | **String** | Registration code | [optional] 
 **DeviceType** | **String** | Device type | [optional] 
+**Deleted** | **Boolean** | Indicates that the reader is deleted or not | [optional] 
 
 

@@ -205,6 +205,8 @@ Name | Type | Description | Notes
 
 * `InitiateBluetoothPairingMode` (value: `"InitiateBluetoothPairingMode"`)
 
+* `DeleteTerminal` (value: `"DeleteTerminal"`)
+
 * `ViewCustomers` (value: `"ViewCustomers"`)
 
 * `EditCustomers` (value: `"EditCustomers"`)

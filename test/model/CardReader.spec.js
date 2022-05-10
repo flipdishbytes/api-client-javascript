@@ -76,6 +76,12 @@
         // expect(instance.DeviceType).to.be(expectedValueLiteral);
       });
 
+      it('should have the property Deleted (base name: "Deleted")', function() {
+        // TODO: update the code to test the property Deleted
+        expect(instance).to.have.property('Deleted');
+        // expect(instance.Deleted).to.be(expectedValueLiteral);
+      });
+
     });
   });
 
