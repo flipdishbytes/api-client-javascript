@@ -137,7 +137,13 @@
      * value: "WISEPAD_3"
      * @const
      */
-    WISEPAD_3: "WISEPAD_3"
+    WISEPAD_3: "WISEPAD_3",
+
+    /**
+     * value: "WISEPOS_E"
+     * @const
+     */
+    WISEPOS_E: "WISEPOS_E"
   };
 
 

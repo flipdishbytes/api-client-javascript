@@ -26,6 +26,8 @@ Name | Type | Description | Notes
 
 * `WISEPAD_3` (value: `"WISEPAD_3"`)
 
+* `WISEPOS_E` (value: `"WISEPOS_E"`)
+
 
 
 
