@@ -112,6 +112,12 @@
         // expect(instance.TotalOnlineRevenue).to.be(expectedValueLiteral);
       });
 
+      it('should have the property OnlineSalesServiceCharges (base name: "OnlineSalesServiceCharges")', function() {
+        // TODO: update the code to test the property OnlineSalesServiceCharges
+        expect(instance).to.have.property('OnlineSalesServiceCharges');
+        // expect(instance.OnlineSalesServiceCharges).to.be(expectedValueLiteral);
+      });
+
     });
   });
 

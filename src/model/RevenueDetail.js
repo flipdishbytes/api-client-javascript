@@ -79,6 +79,8 @@
         obj.OnlineSalesTips = ApiClient.convertToType(data['OnlineSalesTips'], 'Number');
       if (data.hasOwnProperty('TotalOnlineRevenue'))
         obj.TotalOnlineRevenue = ApiClient.convertToType(data['TotalOnlineRevenue'], 'Number');
+      if (data.hasOwnProperty('OnlineSalesServiceCharges'))
+        obj.OnlineSalesServiceCharges = ApiClient.convertToType(data['OnlineSalesServiceCharges'], 'Number');
     }
     return obj;
   }
@@ -154,6 +156,12 @@
    * @member {Number} TotalOnlineRevenue
    */
   exports.prototype.TotalOnlineRevenue = undefined;
+
+  /**
+   * Service charge on online sales
+   * @member {Number} OnlineSalesServiceCharges
+   */
+  exports.prototype.OnlineSalesServiceCharges = undefined;
 
 
   return exports;
