@@ -76,6 +76,12 @@
         // expect(instance.UpdateTime).to.be(expectedValueLiteral);
       });
 
+      it('should have the property ReaderId (base name: "ReaderId")', function() {
+        // TODO: update the code to test the property ReaderId
+        expect(instance).to.have.property('ReaderId');
+        // expect(instance.ReaderId).to.be(expectedValueLiteral);
+      });
+
     });
   });
 

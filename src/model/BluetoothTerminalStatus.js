@@ -67,6 +67,8 @@
         obj.BatteryLevel = ApiClient.convertToType(data['BatteryLevel'], 'Number');
       if (data.hasOwnProperty('UpdateTime'))
         obj.UpdateTime = ApiClient.convertToType(data['UpdateTime'], 'Date');
+      if (data.hasOwnProperty('ReaderId'))
+        obj.ReaderId = ApiClient.convertToType(data['ReaderId'], 'String');
     }
     return obj;
   }
@@ -106,6 +108,12 @@
    * @member {Date} UpdateTime
    */
   exports.prototype.UpdateTime = undefined;
+
+  /**
+   * ReaderId for Stripe Terminal
+   * @member {String} ReaderId
+   */
+  exports.prototype.ReaderId = undefined;
 
 
 
@@ -169,7 +177,19 @@
      * value: "Connected"
      * @const
      */
-    Connected: "Connected"
+    Connected: "Connected",
+
+    /**
+     * value: "Online"
+     * @const
+     */
+    Online: "Online",
+
+    /**
+     * value: "Offline"
+     * @const
+     */
+    Offline: "Offline"
   };
 
   return exports;

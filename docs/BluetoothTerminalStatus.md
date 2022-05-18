@@ -9,6 +9,7 @@ Name | Type | Description | Notes
 **Status** | **String** | Device Status | [optional] 
 **BatteryLevel** | **Number** | Indication of the battery level from 0 to 1 | [optional] 
 **UpdateTime** | **Date** | Last time the status was updated | [optional] 
+**ReaderId** | **String** | ReaderId for Stripe Terminal | [optional] 
 
 
 <a name="DeviceTypeEnum"></a>
@@ -37,6 +38,10 @@ Name | Type | Description | Notes
 * `Connecting` (value: `"Connecting"`)
 
 * `Connected` (value: `"Connected"`)
+
+* `Online` (value: `"Online"`)
+
+* `Offline` (value: `"Offline"`)
 
 
 
