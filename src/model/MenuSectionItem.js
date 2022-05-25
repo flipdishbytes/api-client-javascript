@@ -73,8 +73,8 @@
         obj.TaxValue = ApiClient.convertToType(data['TaxValue'], 'Number');
       if (data.hasOwnProperty('Metadata'))
         obj.Metadata = ApiClient.convertToType(data['Metadata'], [CreateMetadata]);
-      if (data.hasOwnProperty('ProductId'))
-        obj.ProductId = ApiClient.convertToType(data['ProductId'], 'String');
+      if (data.hasOwnProperty('CatalogItemId'))
+        obj.CatalogItemId = ApiClient.convertToType(data['CatalogItemId'], 'String');
       if (data.hasOwnProperty('Name'))
         obj.Name = ApiClient.convertToType(data['Name'], 'String');
       if (data.hasOwnProperty('Description'))
@@ -156,10 +156,10 @@
   exports.prototype.Metadata = undefined;
 
   /**
-   * Product Id when the Item is associated to a Product
-   * @member {String} ProductId
+   * Catalog item Id when the Item is associated to a Product
+   * @member {String} CatalogItemId
    */
-  exports.prototype.ProductId = undefined;
+  exports.prototype.CatalogItemId = undefined;
 
   /**
    * Menu item name (like \"Korma\")

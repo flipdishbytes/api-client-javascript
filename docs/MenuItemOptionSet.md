@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **ImageUrl** | **String** | Image url | [optional] 
 **MenuItemOptionSetItems** | [**[MenuItemOptionSetItem]**](MenuItemOptionSetItem.md) | Option set items | [optional] 
 **PublicId** | **String** | Permanent reference to the item. | [optional] 
-**ProductId** | **String** | Product Id when the OptionSet is associated to a Product | [optional] 
+**CatalogItemId** | **String** | Catalog item Id when the OptionSet is associated to a Product | [optional] 
 **Name** | **String** | Menu item option set name | [optional] 
 **IsMasterOptionSet** | **Boolean** | Is master option set. This can affect the layout of the options in the menu displayed to the customer. Usually it is true if the option could be considerd a standalone item as opposed to an addition (\"with ketchup\") or modifier (\"large\"). | [optional] 
 **DisplayOrder** | **Number** | Display order. Displayed in ascending order. | [optional] 

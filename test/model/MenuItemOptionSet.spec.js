@@ -70,10 +70,10 @@
         // expect(instance.PublicId).to.be(expectedValueLiteral);
       });
 
-      it('should have the property ProductId (base name: "ProductId")', function() {
-        // TODO: update the code to test the property ProductId
-        expect(instance).to.have.property('ProductId');
-        // expect(instance.ProductId).to.be(expectedValueLiteral);
+      it('should have the property CatalogItemId (base name: "CatalogItemId")', function() {
+        // TODO: update the code to test the property CatalogItemId
+        expect(instance).to.have.property('CatalogItemId');
+        // expect(instance.CatalogItemId).to.be(expectedValueLiteral);
       });
 
       it('should have the property Name (base name: "Name")', function() {

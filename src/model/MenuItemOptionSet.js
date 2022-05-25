@@ -65,8 +65,8 @@
         obj.MenuItemOptionSetItems = ApiClient.convertToType(data['MenuItemOptionSetItems'], [MenuItemOptionSetItem]);
       if (data.hasOwnProperty('PublicId'))
         obj.PublicId = ApiClient.convertToType(data['PublicId'], 'String');
-      if (data.hasOwnProperty('ProductId'))
-        obj.ProductId = ApiClient.convertToType(data['ProductId'], 'String');
+      if (data.hasOwnProperty('CatalogItemId'))
+        obj.CatalogItemId = ApiClient.convertToType(data['CatalogItemId'], 'String');
       if (data.hasOwnProperty('Name'))
         obj.Name = ApiClient.convertToType(data['Name'], 'String');
       if (data.hasOwnProperty('IsMasterOptionSet'))
@@ -114,10 +114,10 @@
   exports.prototype.PublicId = undefined;
 
   /**
-   * Product Id when the OptionSet is associated to a Product
-   * @member {String} ProductId
+   * Catalog item Id when the OptionSet is associated to a Product
+   * @member {String} CatalogItemId
    */
-  exports.prototype.ProductId = undefined;
+  exports.prototype.CatalogItemId = undefined;
 
   /**
    * Menu item option set name

@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **TaxRateId** | **Number** | TaxRate | [optional] 
 **TaxValue** | **Number** | TaxValue - the tax associated with this item, based on TaxRate / TaxType and Currency (currency determines decimal point precision) | [optional] 
 **Metadata** | [**[CreateMetadata]**](CreateMetadata.md) | List of metadata | [optional] 
-**ProductId** | **String** | Product Id when the Item is associated to a Product | [optional] 
+**CatalogItemId** | **String** | Catalog item Id when the Item is associated to a Product | [optional] 
 **Name** | **String** | Menu item name (like \"Korma\") | [optional] 
 **Description** | **String** | Description (like \"A lovely dish from the east\") | [optional] 
 **SpicinessRating** | **String** | Spiciness rating | [optional] 

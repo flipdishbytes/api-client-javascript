@@ -63,8 +63,8 @@
         obj.Metadata = ApiClient.convertToType(data['Metadata'], [CreateMetadata]);
       if (data.hasOwnProperty('NextMenuItemOptionSetId'))
         obj.NextMenuItemOptionSetId = ApiClient.convertToType(data['NextMenuItemOptionSetId'], 'Number');
-      if (data.hasOwnProperty('ProductId'))
-        obj.ProductId = ApiClient.convertToType(data['ProductId'], 'String');
+      if (data.hasOwnProperty('CatalogItemId'))
+        obj.CatalogItemId = ApiClient.convertToType(data['CatalogItemId'], 'String');
       if (data.hasOwnProperty('TaxRateName'))
         obj.TaxRateName = ApiClient.convertToType(data['TaxRateName'], 'String');
       if (data.hasOwnProperty('TaxRateId'))
@@ -112,10 +112,10 @@
   exports.prototype.NextMenuItemOptionSetId = undefined;
 
   /**
-   * Product Id when the OptionSet is associated to a Product
-   * @member {String} ProductId
+   * Catalog item Id when the OptionSet is associated to a Product
+   * @member {String} CatalogItemId
    */
-  exports.prototype.ProductId = undefined;
+  exports.prototype.CatalogItemId = undefined;
 
   /**
    * Tax rate name
