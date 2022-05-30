@@ -63,6 +63,8 @@
         obj.Group = CatalogGroup.constructFromObject(data['Group']);
       if (data.hasOwnProperty('CatalogGroupId'))
         obj.CatalogGroupId = ApiClient.convertToType(data['CatalogGroupId'], 'String');
+      if (data.hasOwnProperty('CatalogItemId'))
+        obj.CatalogItemId = ApiClient.convertToType(data['CatalogItemId'], 'String');
       if (data.hasOwnProperty('GroupType'))
         obj.GroupType = ApiClient.convertToType(data['GroupType'], 'String');
     }
@@ -80,6 +82,12 @@
    * @member {String} CatalogGroupId
    */
   exports.prototype.CatalogGroupId = undefined;
+
+  /**
+   * Identifier of the ProductId to use as SubProduct
+   * @member {String} CatalogItemId
+   */
+  exports.prototype.CatalogItemId = undefined;
 
   /**
    * Type of the SupProduct

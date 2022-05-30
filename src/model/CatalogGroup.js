@@ -63,6 +63,8 @@
       obj = obj || new exports();
       if (data.hasOwnProperty('CatalogGroupId'))
         obj.CatalogGroupId = ApiClient.convertToType(data['CatalogGroupId'], 'String');
+      if (data.hasOwnProperty('CatalogItemId'))
+        obj.CatalogItemId = ApiClient.convertToType(data['CatalogItemId'], 'String');
       if (data.hasOwnProperty('IsArchived'))
         obj.IsArchived = ApiClient.convertToType(data['IsArchived'], 'Boolean');
       if (data.hasOwnProperty('MinSelectCount'))
@@ -92,6 +94,12 @@
    * @member {String} CatalogGroupId
    */
   exports.prototype.CatalogGroupId = undefined;
+
+  /**
+   * Unique catalog item id
+   * @member {String} CatalogItemId
+   */
+  exports.prototype.CatalogItemId = undefined;
 
   /**
    * Returns true if the group is archived
