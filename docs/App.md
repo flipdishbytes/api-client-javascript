@@ -207,6 +207,8 @@ Name | Type | Description | Notes
 
 * `DeleteTerminal` (value: `"DeleteTerminal"`)
 
+* `ViewKioskTelemetry` (value: `"ViewKioskTelemetry"`)
+
 * `ViewCustomers` (value: `"ViewCustomers"`)
 
 * `EditCustomers` (value: `"EditCustomers"`)

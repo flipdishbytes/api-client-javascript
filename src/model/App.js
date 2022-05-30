@@ -744,6 +744,12 @@
     DeleteTerminal: "DeleteTerminal",
 
     /**
+     * value: "ViewKioskTelemetry"
+     * @const
+     */
+    ViewKioskTelemetry: "ViewKioskTelemetry",
+
+    /**
      * value: "ViewCustomers"
      * @const
      */
