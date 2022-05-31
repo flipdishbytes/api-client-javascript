@@ -41,13 +41,13 @@
    * Product
    * @alias module:model/Product
    * @class
-   * @param ItemType {module:model/Product.ItemTypeEnum} Type of item (Product, Modifier, etc)
+   * @param ProductType {module:model/Product.ProductTypeEnum} Type of item (Product, Modifier, etc)
    * @param Sku {String} Stock Keeping Unit (SKU)
    * @param Name {String} Item name
    * @param Price {Number} Item price
    */
-  var exports = function(ItemType, Sku, Name, Price) {
-    this.ItemType = ItemType;
+  var exports = function(ProductType, Sku, Name, Price) {
+    this.ProductType = ProductType;
     this.Sku = Sku;
     this.Name = Name;
     this.Price = Price;
@@ -71,8 +71,8 @@
         obj.Groups = ApiClient.convertToType(data['Groups'], [GroupReference]);
       if (data.hasOwnProperty('Metafields'))
         obj.Metafields = ApiClient.convertToType(data['Metafields'], [Metafield]);
-      if (data.hasOwnProperty('ItemType'))
-        obj.ItemType = ApiClient.convertToType(data['ItemType'], 'String');
+      if (data.hasOwnProperty('ProductType'))
+        obj.ProductType = ApiClient.convertToType(data['ProductType'], 'String');
       if (data.hasOwnProperty('Sku'))
         obj.Sku = ApiClient.convertToType(data['Sku'], 'String');
       if (data.hasOwnProperty('Name'))
@@ -115,9 +115,9 @@
 
   /**
    * Type of item (Product, Modifier, etc)
-   * @member {module:model/Product.ItemTypeEnum} ItemType
+   * @member {module:model/Product.ProductTypeEnum} ProductType
    */
-  exports.prototype.ItemType = undefined;
+  exports.prototype.ProductType = undefined;
 
   /**
    * Stock Keeping Unit (SKU)
@@ -158,11 +158,11 @@
 
 
   /**
-   * Allowed values for the <code>ItemType</code> property.
+   * Allowed values for the <code>ProductType</code> property.
    * @enum {String}
    * @readonly
    */
-  exports.ItemTypeEnum = {
+  exports.ProductTypeEnum = {
     /**
      * value: "Product"
      * @const

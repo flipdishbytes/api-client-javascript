@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **IsArchived** | **Boolean** | Returns true if the item is archived | [optional] 
 **Groups** | [**[GroupReference]**](GroupReference.md) | Collection of groups associated with this item | [optional] 
 **Metafields** | [**[Metafield]**](Metafield.md) | Collection of metafields | [optional] 
-**ItemType** | **String** | Type of item (Product, Modifier, etc) | 
+**ProductType** | **String** | Type of item (Product, Modifier, etc) | 
 **Sku** | **String** | Stock Keeping Unit (SKU) | 
 **Name** | **String** | Item name | 
 **Description** | **String** | Item description | [optional] 
@@ -16,8 +16,8 @@ Name | Type | Description | Notes
 **Alcohol** | **Boolean** | item contains alcohol | [optional] 
 
 
-<a name="ItemTypeEnum"></a>
-## Enum: ItemTypeEnum
+<a name="ProductTypeEnum"></a>
+## Enum: ProductTypeEnum
 
 
 * `Product` (value: `"Product"`)
