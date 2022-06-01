@@ -38,6 +38,7 @@
 
   /**
    * Constructs a new <code>OnboardingItemUpdate</code>.
+   * 
    * @alias module:model/OnboardingItemUpdate
    * @class
    */
@@ -61,6 +62,7 @@
   }
 
   /**
+   * Completion Status for Onboarding Item
    * @member {module:model/OnboardingItemUpdate.StatusEnum} Status
    */
   exports.prototype.Status = undefined;

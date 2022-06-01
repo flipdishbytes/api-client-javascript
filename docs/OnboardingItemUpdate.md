@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Status** | **String** |  | [optional] 
+**Status** | **String** | Completion Status for Onboarding Item | [optional] 
 
 
 <a name="StatusEnum"></a>
