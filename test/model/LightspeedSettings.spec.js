@@ -172,6 +172,12 @@
         // expect(instance.ChefNoteModifierId).to.be(expectedValueLiteral);
       });
 
+      it('should have the property ServiceChargeId (base name: "ServiceChargeId")', function() {
+        // TODO: update the code to test the property ServiceChargeId
+        expect(instance).to.have.property('ServiceChargeId');
+        // expect(instance.ServiceChargeId).to.be(expectedValueLiteral);
+      });
+
     });
   });
 

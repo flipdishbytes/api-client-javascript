@@ -99,6 +99,8 @@
         obj.ChefNoteItemId = ApiClient.convertToType(data['ChefNoteItemId'], 'String');
       if (data.hasOwnProperty('ChefNoteModifierId'))
         obj.ChefNoteModifierId = ApiClient.convertToType(data['ChefNoteModifierId'], 'String');
+      if (data.hasOwnProperty('ServiceChargeId'))
+        obj.ServiceChargeId = ApiClient.convertToType(data['ServiceChargeId'], 'String');
     }
     return obj;
   }
@@ -234,6 +236,12 @@
    * @member {String} ChefNoteModifierId
    */
   exports.prototype.ChefNoteModifierId = undefined;
+
+  /**
+   * The Lightspeed Service Charge Id to map
+   * @member {String} ServiceChargeId
+   */
+  exports.prototype.ServiceChargeId = undefined;
 
 
 
