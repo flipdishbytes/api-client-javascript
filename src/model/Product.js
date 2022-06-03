@@ -43,8 +43,8 @@
    * @class
    * @param ProductType {module:model/Product.ProductTypeEnum} Type of item (Product, Modifier, etc)
    * @param Sku {String} Stock Keeping Unit (SKU)
-   * @param Name {String} Item name
-   * @param Price {Number} Item price
+   * @param Name {String} Product name
+   * @param Price {Number} Product price
    */
   var exports = function(ProductType, Sku, Name, Price) {
     this.ProductType = ProductType;
@@ -126,19 +126,19 @@
   exports.prototype.Sku = undefined;
 
   /**
-   * Item name
+   * Product name
    * @member {String} Name
    */
   exports.prototype.Name = undefined;
 
   /**
-   * Item description
+   * Product description
    * @member {String} Description
    */
   exports.prototype.Description = undefined;
 
   /**
-   * Item price
+   * Product price
    * @member {Number} Price
    */
   exports.prototype.Price = undefined;
@@ -150,7 +150,7 @@
   exports.prototype.ImageFileName = undefined;
 
   /**
-   * item contains alcohol
+   * Product contains alcohol
    * @member {Boolean} Alcohol
    */
   exports.prototype.Alcohol = undefined;

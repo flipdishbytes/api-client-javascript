@@ -7,11 +7,11 @@ Name | Type | Description | Notes
 **Metafields** | [**[Metafield]**](Metafield.md) | Collection of metafields | [optional] 
 **ProductType** | **String** | Type of item (Product, Modifier, etc) | 
 **Sku** | **String** | Stock Keeping Unit (SKU) | 
-**Name** | **String** | Item name | 
-**Description** | **String** | Item description | [optional] 
-**Price** | **Number** | Item price | 
+**Name** | **String** | Product name | 
+**Description** | **String** | Product description | [optional] 
+**Price** | **Number** | Product price | 
 **ImageFileName** | **String** | Image File Name | [optional] 
-**Alcohol** | **Boolean** | item contains alcohol | [optional] 
+**Alcohol** | **Boolean** | Product contains alcohol | [optional] 
 
 
 <a name="ProductTypeEnum"></a>
