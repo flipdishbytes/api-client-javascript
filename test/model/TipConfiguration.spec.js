@@ -58,6 +58,12 @@
         // expect(instance.AllowCustomTips).to.be(expectedValueLiteral);
       });
 
+      it('should have the property AllowRoundUp (base name: "AllowRoundUp")', function() {
+        // TODO: update the code to test the property AllowRoundUp
+        expect(instance).to.have.property('AllowRoundUp');
+        // expect(instance.AllowRoundUp).to.be(expectedValueLiteral);
+      });
+
       it('should have the property Percentages (base name: "Percentages")', function() {
         // TODO: update the code to test the property Percentages
         expect(instance).to.have.property('Percentages');

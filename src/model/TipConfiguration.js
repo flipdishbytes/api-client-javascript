@@ -61,6 +61,8 @@
         obj.IsEnabled = ApiClient.convertToType(data['IsEnabled'], 'Boolean');
       if (data.hasOwnProperty('AllowCustomTips'))
         obj.AllowCustomTips = ApiClient.convertToType(data['AllowCustomTips'], 'Boolean');
+      if (data.hasOwnProperty('AllowRoundUp'))
+        obj.AllowRoundUp = ApiClient.convertToType(data['AllowRoundUp'], 'Boolean');
       if (data.hasOwnProperty('Percentages'))
         obj.Percentages = ApiClient.convertToType(data['Percentages'], ['Number']);
       if (data.hasOwnProperty('DefaultPercentage'))
@@ -86,6 +88,12 @@
    * @member {Boolean} AllowCustomTips
    */
   exports.prototype.AllowCustomTips = undefined;
+
+  /**
+   * Is round up allowed?
+   * @member {Boolean} AllowRoundUp
+   */
+  exports.prototype.AllowRoundUp = undefined;
 
   /**
    * Ordered list of tip breakpoints (smallest -&gt; largest)
