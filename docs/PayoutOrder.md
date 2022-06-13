@@ -22,6 +22,8 @@ Name | Type | Description | Notes
 **CashFeeChargedToCustomer** | **Number** | Cash fee charged to customer | [optional] 
 **NetSales** | **Number** | Order net sales amount | [optional] 
 **StoreId** | **Number** | Store id | [optional] 
+**ServiceChargeAmount** | **Number** | Order ServiceChargeAmount amount | [optional] 
+**ServiceChargePercentage** | **Number** | Order ServiceChargePercentage amount | [optional] 
 
 
 <a name="OrderTypeEnum"></a>

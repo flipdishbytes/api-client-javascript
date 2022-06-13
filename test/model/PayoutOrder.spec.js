@@ -154,6 +154,18 @@
         // expect(instance.StoreId).to.be(expectedValueLiteral);
       });
 
+      it('should have the property ServiceChargeAmount (base name: "ServiceChargeAmount")', function() {
+        // TODO: update the code to test the property ServiceChargeAmount
+        expect(instance).to.have.property('ServiceChargeAmount');
+        // expect(instance.ServiceChargeAmount).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property ServiceChargePercentage (base name: "ServiceChargePercentage")', function() {
+        // TODO: update the code to test the property ServiceChargePercentage
+        expect(instance).to.have.property('ServiceChargePercentage');
+        // expect(instance.ServiceChargePercentage).to.be(expectedValueLiteral);
+      });
+
     });
   });
 
