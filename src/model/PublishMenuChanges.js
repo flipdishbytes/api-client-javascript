@@ -55,8 +55,8 @@
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
-      if (data.hasOwnProperty('CatalogElementId'))
-        obj.CatalogElementId = ApiClient.convertToType(data['CatalogElementId'], 'String');
+      if (data.hasOwnProperty('CatalogItemId'))
+        obj.CatalogItemId = ApiClient.convertToType(data['CatalogItemId'], 'String');
       if (data.hasOwnProperty('MenuIds'))
         obj.MenuIds = ApiClient.convertToType(data['MenuIds'], ['Number']);
     }
@@ -64,10 +64,10 @@
   }
 
   /**
-   * Optional Catalog element id
-   * @member {String} CatalogElementId
+   * Optional Catalog item id
+   * @member {String} CatalogItemId
    */
-  exports.prototype.CatalogElementId = undefined;
+  exports.prototype.CatalogItemId = undefined;
 
   /**
    * Optional Collection of Menu id

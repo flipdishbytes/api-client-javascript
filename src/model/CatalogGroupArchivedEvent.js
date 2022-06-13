@@ -16,18 +16,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/CatalogGroup', 'model/UserEventInfo'], factory);
+    define(['ApiClient', 'model/Group', 'model/UserEventInfo'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./CatalogGroup'), require('./UserEventInfo'));
+    module.exports = factory(require('../ApiClient'), require('./Group'), require('./UserEventInfo'));
   } else {
     // Browser globals (root is window)
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.CatalogGroupArchivedEvent = factory(root.Flipdish.ApiClient, root.Flipdish.CatalogGroup, root.Flipdish.UserEventInfo);
+    root.Flipdish.CatalogGroupArchivedEvent = factory(root.Flipdish.ApiClient, root.Flipdish.Group, root.Flipdish.UserEventInfo);
   }
-}(this, function(ApiClient, CatalogGroup, UserEventInfo) {
+}(this, function(ApiClient, Group, UserEventInfo) {
   'use strict';
 
   /**
@@ -61,8 +61,8 @@
         obj.Description = ApiClient.convertToType(data['Description'], 'String');
       if (data.hasOwnProperty('User'))
         obj.User = UserEventInfo.constructFromObject(data['User']);
-      if (data.hasOwnProperty('CatalogGroup'))
-        obj.CatalogGroup = CatalogGroup.constructFromObject(data['CatalogGroup']);
+      if (data.hasOwnProperty('Group'))
+        obj.Group = Group.constructFromObject(data['Group']);
       if (data.hasOwnProperty('FlipdishEventId'))
         obj.FlipdishEventId = ApiClient.convertToType(data['FlipdishEventId'], 'String');
       if (data.hasOwnProperty('CreateTime'))
@@ -97,9 +97,9 @@
 
   /**
    * Catalog group created
-   * @member {module:model/CatalogGroup} CatalogGroup
+   * @member {module:model/Group} Group
    */
-  exports.prototype.CatalogGroup = undefined;
+  exports.prototype.Group = undefined;
 
   /**
    * The identitfier of the event

@@ -16,55 +16,57 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/CatalogItem'], factory);
+    define(['ApiClient', 'model/Product'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./CatalogItem'));
+    module.exports = factory(require('../ApiClient'), require('./Product'));
   } else {
     // Browser globals (root is window)
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.CatalogItemReference = factory(root.Flipdish.ApiClient, root.Flipdish.CatalogItem);
+    root.Flipdish.ProductReference = factory(root.Flipdish.ApiClient, root.Flipdish.Product);
   }
-}(this, function(ApiClient, CatalogItem) {
+}(this, function(ApiClient, Product) {
   'use strict';
 
   /**
-   * The CatalogItemReference model module.
-   * @module model/CatalogItemReference
+   * The ProductReference model module.
+   * @module model/ProductReference
    * @version 1.0.0
    */
 
   /**
-   * Constructs a new <code>CatalogItemReference</code>.
+   * Constructs a new <code>ProductReference</code>.
    * Catalog Item associated
-   * @alias module:model/CatalogItemReference
+   * @alias module:model/ProductReference
    * @class
    * @param CatalogItemId {String} Identifier of the CatalogItemId to use as SubProduct
-   * @param ItemType {module:model/CatalogItemReference.ItemTypeEnum} Type of the SupProduct
+   * @param ProductType {module:model/ProductReference.ProductTypeEnum} Type of the SupProduct
    */
-  var exports = function(CatalogItemId, ItemType) {
+  var exports = function(CatalogItemId, ProductType) {
     this.CatalogItemId = CatalogItemId;
-    this.ItemType = ItemType;
+    this.ProductType = ProductType;
   };
 
   /**
-   * Constructs a <code>CatalogItemReference</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>ProductReference</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/CatalogItemReference} obj Optional instance to populate.
-   * @return {module:model/CatalogItemReference} The populated <code>CatalogItemReference</code> instance.
+   * @param {module:model/ProductReference} obj Optional instance to populate.
+   * @return {module:model/ProductReference} The populated <code>ProductReference</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
       if (data.hasOwnProperty('Item'))
-        obj.Item = CatalogItem.constructFromObject(data['Item']);
+        obj.Item = Product.constructFromObject(data['Item']);
+      if (data.hasOwnProperty('Product'))
+        obj.Product = Product.constructFromObject(data['Product']);
       if (data.hasOwnProperty('CatalogItemId'))
         obj.CatalogItemId = ApiClient.convertToType(data['CatalogItemId'], 'String');
-      if (data.hasOwnProperty('ItemType'))
-        obj.ItemType = ApiClient.convertToType(data['ItemType'], 'String');
+      if (data.hasOwnProperty('ProductType'))
+        obj.ProductType = ApiClient.convertToType(data['ProductType'], 'String');
       if (data.hasOwnProperty('PreselectedQuantity'))
         obj.PreselectedQuantity = ApiClient.convertToType(data['PreselectedQuantity'], 'Number');
     }
@@ -72,10 +74,16 @@
   }
 
   /**
-   * Details of the referenced {Flipdish.PublicModels.V1.Catalog.Items.CatalogItem}
-   * @member {module:model/CatalogItem} Item
+   * Details of the referenced {Flipdish.PublicModels.V1.Catalog.Groups.ProductReference.Product}
+   * @member {module:model/Product} Item
    */
   exports.prototype.Item = undefined;
+
+  /**
+   * Details of the referenced {Flipdish.PublicModels.V1.Catalog.Groups.ProductReference.Product}
+   * @member {module:model/Product} Product
+   */
+  exports.prototype.Product = undefined;
 
   /**
    * Identifier of the CatalogItemId to use as SubProduct
@@ -85,9 +93,9 @@
 
   /**
    * Type of the SupProduct
-   * @member {module:model/CatalogItemReference.ItemTypeEnum} ItemType
+   * @member {module:model/ProductReference.ProductTypeEnum} ProductType
    */
-  exports.prototype.ItemType = undefined;
+  exports.prototype.ProductType = undefined;
 
   /**
    * Quantity of the modifier that will be set when the parent product is placed in the basket
@@ -98,11 +106,11 @@
 
 
   /**
-   * Allowed values for the <code>ItemType</code> property.
+   * Allowed values for the <code>ProductType</code> property.
    * @enum {String}
    * @readonly
    */
-  exports.ItemTypeEnum = {
+  exports.ProductTypeEnum = {
     /**
      * value: "Product"
      * @const

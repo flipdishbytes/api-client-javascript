@@ -16,18 +16,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/CatalogGroup'], factory);
+    define(['ApiClient', 'model/Group'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./CatalogGroup'));
+    module.exports = factory(require('../ApiClient'), require('./Group'));
   } else {
     // Browser globals (root is window)
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.GroupReference = factory(root.Flipdish.ApiClient, root.Flipdish.CatalogGroup);
+    root.Flipdish.GroupReference = factory(root.Flipdish.ApiClient, root.Flipdish.Group);
   }
-}(this, function(ApiClient, CatalogGroup) {
+}(this, function(ApiClient, Group) {
   'use strict';
 
   /**
@@ -38,14 +38,14 @@
 
   /**
    * Constructs a new <code>GroupReference</code>.
-   * Reference to an existing {Flipdish.PublicModels.V1.Catalog.Groups.CatalogGroup}
+   * Reference to an existing {Flipdish.PublicModels.V1.Catalog.Groups.Group}
    * @alias module:model/GroupReference
    * @class
-   * @param CatalogGroupId {String} Identifier of the ProductId to use as SubProduct
+   * @param CatalogItemId {String} Identifier of the ProductId to use as SubProduct
    * @param GroupType {module:model/GroupReference.GroupTypeEnum} Type of the SupProduct
    */
-  var exports = function(CatalogGroupId, GroupType) {
-    this.CatalogGroupId = CatalogGroupId;
+  var exports = function(CatalogItemId, GroupType) {
+    this.CatalogItemId = CatalogItemId;
     this.GroupType = GroupType;
   };
 
@@ -60,9 +60,7 @@
     if (data) {
       obj = obj || new exports();
       if (data.hasOwnProperty('Group'))
-        obj.Group = CatalogGroup.constructFromObject(data['Group']);
-      if (data.hasOwnProperty('CatalogGroupId'))
-        obj.CatalogGroupId = ApiClient.convertToType(data['CatalogGroupId'], 'String');
+        obj.Group = Group.constructFromObject(data['Group']);
       if (data.hasOwnProperty('CatalogItemId'))
         obj.CatalogItemId = ApiClient.convertToType(data['CatalogItemId'], 'String');
       if (data.hasOwnProperty('GroupType'))
@@ -72,16 +70,10 @@
   }
 
   /**
-   * Details of the referenced {Flipdish.PublicModels.V1.Catalog.Products.Product}
-   * @member {module:model/CatalogGroup} Group
+   * Details of the referenced {Flipdish.PublicModels.V1.Catalog.Products.GroupReference.Group}
+   * @member {module:model/Group} Group
    */
   exports.prototype.Group = undefined;
-
-  /**
-   * Identifier of the ProductId to use as SubProduct
-   * @member {String} CatalogGroupId
-   */
-  exports.prototype.CatalogGroupId = undefined;
 
   /**
    * Identifier of the ProductId to use as SubProduct

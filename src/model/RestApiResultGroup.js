@@ -16,56 +16,56 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/CatalogGroup'], factory);
+    define(['ApiClient', 'model/Group'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./CatalogGroup'));
+    module.exports = factory(require('../ApiClient'), require('./Group'));
   } else {
     // Browser globals (root is window)
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.RestApiResultCatalogGroup = factory(root.Flipdish.ApiClient, root.Flipdish.CatalogGroup);
+    root.Flipdish.RestApiResultGroup = factory(root.Flipdish.ApiClient, root.Flipdish.Group);
   }
-}(this, function(ApiClient, CatalogGroup) {
+}(this, function(ApiClient, Group) {
   'use strict';
 
   /**
-   * The RestApiResultCatalogGroup model module.
-   * @module model/RestApiResultCatalogGroup
+   * The RestApiResultGroup model module.
+   * @module model/RestApiResultGroup
    * @version 1.0.0
    */
 
   /**
-   * Constructs a new <code>RestApiResultCatalogGroup</code>.
+   * Constructs a new <code>RestApiResultGroup</code>.
    * Rest api result
-   * @alias module:model/RestApiResultCatalogGroup
+   * @alias module:model/RestApiResultGroup
    * @class
-   * @param Data {module:model/CatalogGroup} Generic data object.
+   * @param Data {module:model/Group} Generic data object.
    */
   var exports = function(Data) {
     this.Data = Data;
   };
 
   /**
-   * Constructs a <code>RestApiResultCatalogGroup</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>RestApiResultGroup</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/RestApiResultCatalogGroup} obj Optional instance to populate.
-   * @return {module:model/RestApiResultCatalogGroup} The populated <code>RestApiResultCatalogGroup</code> instance.
+   * @param {module:model/RestApiResultGroup} obj Optional instance to populate.
+   * @return {module:model/RestApiResultGroup} The populated <code>RestApiResultGroup</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
       if (data.hasOwnProperty('Data'))
-        obj.Data = CatalogGroup.constructFromObject(data['Data']);
+        obj.Data = Group.constructFromObject(data['Data']);
     }
     return obj;
   }
 
   /**
    * Generic data object.
-   * @member {module:model/CatalogGroup} Data
+   * @member {module:model/Group} Data
    */
   exports.prototype.Data = undefined;
 

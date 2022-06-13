@@ -30,14 +30,44 @@
   var instance;
 
   describe('(package)', function() {
-    describe('UpdateCatalogGroup', function() {
+    describe('CreateGroup', function() {
       beforeEach(function() {
-        instance = new Flipdish.UpdateCatalogGroup();
+        instance = new Flipdish.CreateGroup();
       });
 
-      it('should create an instance of UpdateCatalogGroup', function() {
-        // TODO: update the code to test UpdateCatalogGroup
-        expect(instance).to.be.a(Flipdish.UpdateCatalogGroup);
+      it('should create an instance of CreateGroup', function() {
+        // TODO: update the code to test CreateGroup
+        expect(instance).to.be.a(Flipdish.CreateGroup);
+      });
+
+      it('should have the property MinSelectCount (base name: "MinSelectCount")', function() {
+        // TODO: update the code to test the property MinSelectCount
+        expect(instance).to.have.property('MinSelectCount');
+        // expect(instance.MinSelectCount).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property MaxSelectCount (base name: "MaxSelectCount")', function() {
+        // TODO: update the code to test the property MaxSelectCount
+        expect(instance).to.have.property('MaxSelectCount');
+        // expect(instance.MaxSelectCount).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property Products (base name: "Products")', function() {
+        // TODO: update the code to test the property Products
+        expect(instance).to.have.property('Products');
+        // expect(instance.Products).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property Metafields (base name: "Metafields")', function() {
+        // TODO: update the code to test the property Metafields
+        expect(instance).to.have.property('Metafields');
+        // expect(instance.Metafields).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property GroupType (base name: "GroupType")', function() {
+        // TODO: update the code to test the property GroupType
+        expect(instance).to.have.property('GroupType');
+        // expect(instance.GroupType).to.be(expectedValueLiteral);
       });
 
       it('should have the property Sku (base name: "Sku")', function() {
@@ -62,30 +92,6 @@
         // TODO: update the code to test the property ImageFileName
         expect(instance).to.have.property('ImageFileName');
         // expect(instance.ImageFileName).to.be(expectedValueLiteral);
-      });
-
-      it('should have the property MinSelectCount (base name: "MinSelectCount")', function() {
-        // TODO: update the code to test the property MinSelectCount
-        expect(instance).to.have.property('MinSelectCount');
-        // expect(instance.MinSelectCount).to.be(expectedValueLiteral);
-      });
-
-      it('should have the property MaxSelectCount (base name: "MaxSelectCount")', function() {
-        // TODO: update the code to test the property MaxSelectCount
-        expect(instance).to.have.property('MaxSelectCount');
-        // expect(instance.MaxSelectCount).to.be(expectedValueLiteral);
-      });
-
-      it('should have the property Items (base name: "Items")', function() {
-        // TODO: update the code to test the property Items
-        expect(instance).to.have.property('Items');
-        // expect(instance.Items).to.be(expectedValueLiteral);
-      });
-
-      it('should have the property Metafields (base name: "Metafields")', function() {
-        // TODO: update the code to test the property Metafields
-        expect(instance).to.have.property('Metafields');
-        // expect(instance.Metafields).to.be(expectedValueLiteral);
       });
 
     });

@@ -30,14 +30,14 @@
   var instance;
 
   describe('(package)', function() {
-    describe('RestApiPaginationResultCatalogGroup', function() {
+    describe('RestApiPaginationResultGroup', function() {
       beforeEach(function() {
-        instance = new Flipdish.RestApiPaginationResultCatalogGroup();
+        instance = new Flipdish.RestApiPaginationResultGroup();
       });
 
-      it('should create an instance of RestApiPaginationResultCatalogGroup', function() {
-        // TODO: update the code to test RestApiPaginationResultCatalogGroup
-        expect(instance).to.be.a(Flipdish.RestApiPaginationResultCatalogGroup);
+      it('should create an instance of RestApiPaginationResultGroup', function() {
+        // TODO: update the code to test RestApiPaginationResultGroup
+        expect(instance).to.be.a(Flipdish.RestApiPaginationResultGroup);
       });
 
       it('should have the property Page (base name: "Page")', function() {

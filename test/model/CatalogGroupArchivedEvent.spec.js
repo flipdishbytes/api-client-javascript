@@ -58,10 +58,10 @@
         // expect(instance.User).to.be(expectedValueLiteral);
       });
 
-      it('should have the property CatalogGroup (base name: "CatalogGroup")', function() {
-        // TODO: update the code to test the property CatalogGroup
-        expect(instance).to.have.property('CatalogGroup');
-        // expect(instance.CatalogGroup).to.be(expectedValueLiteral);
+      it('should have the property Group (base name: "Group")', function() {
+        // TODO: update the code to test the property Group
+        expect(instance).to.have.property('Group');
+        // expect(instance.Group).to.be(expectedValueLiteral);
       });
 
       it('should have the property FlipdishEventId (base name: "FlipdishEventId")', function() {

@@ -25,44 +25,44 @@
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.UpdateCatalogItemReference = factory(root.Flipdish.ApiClient);
+    root.Flipdish.UpdateProductReference = factory(root.Flipdish.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
 
   /**
-   * The UpdateCatalogItemReference model module.
-   * @module model/UpdateCatalogItemReference
+   * The UpdateProductReference model module.
+   * @module model/UpdateProductReference
    * @version 1.0.0
    */
 
   /**
-   * Constructs a new <code>UpdateCatalogItemReference</code>.
-   * Data to update a {!:CatalogGroupReference}
-   * @alias module:model/UpdateCatalogItemReference
+   * Constructs a new <code>UpdateProductReference</code>.
+   * Data to update a {Flipdish.PublicModels.V1.Catalog.Groups.UpdateProductReference}
+   * @alias module:model/UpdateProductReference
    * @class
    * @param CatalogItemId {String} Identifier of the CatalogItemId to use as SubProduct
-   * @param ItemType {module:model/UpdateCatalogItemReference.ItemTypeEnum} Type of the SupProduct
+   * @param ProductType {module:model/UpdateProductReference.ProductTypeEnum} Type of the SupProduct
    */
-  var exports = function(CatalogItemId, ItemType) {
+  var exports = function(CatalogItemId, ProductType) {
     this.CatalogItemId = CatalogItemId;
-    this.ItemType = ItemType;
+    this.ProductType = ProductType;
   };
 
   /**
-   * Constructs a <code>UpdateCatalogItemReference</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>UpdateProductReference</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/UpdateCatalogItemReference} obj Optional instance to populate.
-   * @return {module:model/UpdateCatalogItemReference} The populated <code>UpdateCatalogItemReference</code> instance.
+   * @param {module:model/UpdateProductReference} obj Optional instance to populate.
+   * @return {module:model/UpdateProductReference} The populated <code>UpdateProductReference</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
       if (data.hasOwnProperty('CatalogItemId'))
         obj.CatalogItemId = ApiClient.convertToType(data['CatalogItemId'], 'String');
-      if (data.hasOwnProperty('ItemType'))
-        obj.ItemType = ApiClient.convertToType(data['ItemType'], 'String');
+      if (data.hasOwnProperty('ProductType'))
+        obj.ProductType = ApiClient.convertToType(data['ProductType'], 'String');
       if (data.hasOwnProperty('PreselectedQuantity'))
         obj.PreselectedQuantity = ApiClient.convertToType(data['PreselectedQuantity'], 'Number');
     }
@@ -77,9 +77,9 @@
 
   /**
    * Type of the SupProduct
-   * @member {module:model/UpdateCatalogItemReference.ItemTypeEnum} ItemType
+   * @member {module:model/UpdateProductReference.ProductTypeEnum} ProductType
    */
-  exports.prototype.ItemType = undefined;
+  exports.prototype.ProductType = undefined;
 
   /**
    * Quantity of the modifier that will be set when the parent product is placed in the basket
@@ -90,11 +90,11 @@
 
 
   /**
-   * Allowed values for the <code>ItemType</code> property.
+   * Allowed values for the <code>ProductType</code> property.
    * @enum {String}
    * @readonly
    */
-  exports.ItemTypeEnum = {
+  exports.ProductTypeEnum = {
     /**
      * value: "Product"
      * @const

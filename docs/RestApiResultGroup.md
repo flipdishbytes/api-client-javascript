@@ -1,8 +1,8 @@
-# Flipdish.RestApiResultCatalogGroup
+# Flipdish.RestApiResultGroup
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Data** | [**CatalogGroup**](CatalogGroup.md) | Generic data object. | 
+**Data** | [**Group**](Group.md) | Generic data object. | 
 
 

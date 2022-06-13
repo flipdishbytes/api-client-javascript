@@ -30,20 +30,14 @@
   var instance;
 
   describe('(package)', function() {
-    describe('CatalogItemReference', function() {
+    describe('UpdateProductReference', function() {
       beforeEach(function() {
-        instance = new Flipdish.CatalogItemReference();
+        instance = new Flipdish.UpdateProductReference();
       });
 
-      it('should create an instance of CatalogItemReference', function() {
-        // TODO: update the code to test CatalogItemReference
-        expect(instance).to.be.a(Flipdish.CatalogItemReference);
-      });
-
-      it('should have the property Item (base name: "Item")', function() {
-        // TODO: update the code to test the property Item
-        expect(instance).to.have.property('Item');
-        // expect(instance.Item).to.be(expectedValueLiteral);
+      it('should create an instance of UpdateProductReference', function() {
+        // TODO: update the code to test UpdateProductReference
+        expect(instance).to.be.a(Flipdish.UpdateProductReference);
       });
 
       it('should have the property CatalogItemId (base name: "CatalogItemId")', function() {
@@ -52,10 +46,10 @@
         // expect(instance.CatalogItemId).to.be(expectedValueLiteral);
       });
 
-      it('should have the property ItemType (base name: "ItemType")', function() {
-        // TODO: update the code to test the property ItemType
-        expect(instance).to.have.property('ItemType');
-        // expect(instance.ItemType).to.be(expectedValueLiteral);
+      it('should have the property ProductType (base name: "ProductType")', function() {
+        // TODO: update the code to test the property ProductType
+        expect(instance).to.have.property('ProductType');
+        // expect(instance.ProductType).to.be(expectedValueLiteral);
       });
 
       it('should have the property PreselectedQuantity (base name: "PreselectedQuantity")', function() {

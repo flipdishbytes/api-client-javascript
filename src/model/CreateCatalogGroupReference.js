@@ -38,7 +38,7 @@
 
   /**
    * Constructs a new <code>CreateCatalogGroupReference</code>.
-   * Information to create a reference to a {Flipdish.PublicModels.V1.Catalog.Groups.CatalogGroup}
+   * Information to create a reference to a {Flipdish.PublicModels.V1.Catalog.Groups.Group}
    * @alias module:model/CreateCatalogGroupReference
    * @class
    * @param CatalogGroupId {String} Identifier of the ProductId to use as SubProduct

@@ -25,44 +25,44 @@
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.CreateCatalogItemReference = factory(root.Flipdish.ApiClient);
+    root.Flipdish.CreateProductReference = factory(root.Flipdish.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
 
   /**
-   * The CreateCatalogItemReference model module.
-   * @module model/CreateCatalogItemReference
+   * The CreateProductReference model module.
+   * @module model/CreateProductReference
    * @version 1.0.0
    */
 
   /**
-   * Constructs a new <code>CreateCatalogItemReference</code>.
-   * Information to create a reference to a {Flipdish.PublicModels.V1.Catalog.Items.CatalogItem}
-   * @alias module:model/CreateCatalogItemReference
+   * Constructs a new <code>CreateProductReference</code>.
+   * Information to create a reference to a {Flipdish.PublicModels.V1.Catalog.Product}
+   * @alias module:model/CreateProductReference
    * @class
    * @param CatalogItemId {String} Identifier of the CatalogItemId to use as SubProduct
-   * @param ItemType {module:model/CreateCatalogItemReference.ItemTypeEnum} Type of the SupProduct
+   * @param ProductType {module:model/CreateProductReference.ProductTypeEnum} Type of the SupProduct
    */
-  var exports = function(CatalogItemId, ItemType) {
+  var exports = function(CatalogItemId, ProductType) {
     this.CatalogItemId = CatalogItemId;
-    this.ItemType = ItemType;
+    this.ProductType = ProductType;
   };
 
   /**
-   * Constructs a <code>CreateCatalogItemReference</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>CreateProductReference</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/CreateCatalogItemReference} obj Optional instance to populate.
-   * @return {module:model/CreateCatalogItemReference} The populated <code>CreateCatalogItemReference</code> instance.
+   * @param {module:model/CreateProductReference} obj Optional instance to populate.
+   * @return {module:model/CreateProductReference} The populated <code>CreateProductReference</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
       if (data.hasOwnProperty('CatalogItemId'))
         obj.CatalogItemId = ApiClient.convertToType(data['CatalogItemId'], 'String');
-      if (data.hasOwnProperty('ItemType'))
-        obj.ItemType = ApiClient.convertToType(data['ItemType'], 'String');
+      if (data.hasOwnProperty('ProductType'))
+        obj.ProductType = ApiClient.convertToType(data['ProductType'], 'String');
       if (data.hasOwnProperty('PreselectedQuantity'))
         obj.PreselectedQuantity = ApiClient.convertToType(data['PreselectedQuantity'], 'Number');
     }
@@ -77,9 +77,9 @@
 
   /**
    * Type of the SupProduct
-   * @member {module:model/CreateCatalogItemReference.ItemTypeEnum} ItemType
+   * @member {module:model/CreateProductReference.ProductTypeEnum} ProductType
    */
-  exports.prototype.ItemType = undefined;
+  exports.prototype.ProductType = undefined;
 
   /**
    * Quantity of the modifier that will be set when the parent product is placed in the basket
@@ -90,11 +90,11 @@
 
 
   /**
-   * Allowed values for the <code>ItemType</code> property.
+   * Allowed values for the <code>ProductType</code> property.
    * @enum {String}
    * @readonly
    */
-  exports.ItemTypeEnum = {
+  exports.ProductTypeEnum = {
     /**
      * value: "Product"
      * @const

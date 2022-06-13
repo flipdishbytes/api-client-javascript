@@ -30,14 +30,26 @@
   var instance;
 
   describe('(package)', function() {
-    describe('UpdateCatalogItemReference', function() {
+    describe('ProductReference', function() {
       beforeEach(function() {
-        instance = new Flipdish.UpdateCatalogItemReference();
+        instance = new Flipdish.ProductReference();
       });
 
-      it('should create an instance of UpdateCatalogItemReference', function() {
-        // TODO: update the code to test UpdateCatalogItemReference
-        expect(instance).to.be.a(Flipdish.UpdateCatalogItemReference);
+      it('should create an instance of ProductReference', function() {
+        // TODO: update the code to test ProductReference
+        expect(instance).to.be.a(Flipdish.ProductReference);
+      });
+
+      it('should have the property Item (base name: "Item")', function() {
+        // TODO: update the code to test the property Item
+        expect(instance).to.have.property('Item');
+        // expect(instance.Item).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property Product (base name: "Product")', function() {
+        // TODO: update the code to test the property Product
+        expect(instance).to.have.property('Product');
+        // expect(instance.Product).to.be(expectedValueLiteral);
       });
 
       it('should have the property CatalogItemId (base name: "CatalogItemId")', function() {
@@ -46,10 +58,10 @@
         // expect(instance.CatalogItemId).to.be(expectedValueLiteral);
       });
 
-      it('should have the property ItemType (base name: "ItemType")', function() {
-        // TODO: update the code to test the property ItemType
-        expect(instance).to.have.property('ItemType');
-        // expect(instance.ItemType).to.be(expectedValueLiteral);
+      it('should have the property ProductType (base name: "ProductType")', function() {
+        // TODO: update the code to test the property ProductType
+        expect(instance).to.have.property('ProductType');
+        // expect(instance.ProductType).to.be(expectedValueLiteral);
       });
 
       it('should have the property PreselectedQuantity (base name: "PreselectedQuantity")', function() {

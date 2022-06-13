@@ -1,4 +1,4 @@
-# Flipdish.CatalogGroup
+# Flipdish.Group
 
 ## Properties
 Name | Type | Description | Notes
@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **IsArchived** | **Boolean** | Returns true if the group is archived | [optional] 
 **MinSelectCount** | **Number** | Minimum number of items that the user has to select | [optional] 
 **MaxSelectCount** | **Number** | Maximum number of items that the user has to select | [optional] 
-**Items** | [**[CatalogItemReference]**](CatalogItemReference.md) | Collection of items associated with this product | [optional] 
+**Products** | [**[ProductReference]**](ProductReference.md) | Collection of items associated with this product | [optional] 
 **Metafields** | [**[Metafield]**](Metafield.md) | Collection of metafields | [optional] 
 **GroupType** | **String** | Type of group (ModifierGroup, etc) | 
 **Sku** | **String** | Stock Keeping Unit (SKU) | 

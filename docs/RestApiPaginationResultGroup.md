@@ -1,4 +1,4 @@
-# Flipdish.RestApiPaginationResultCatalogGroup
+# Flipdish.RestApiPaginationResultGroup
 
 ## Properties
 Name | Type | Description | Notes
@@ -6,6 +6,6 @@ Name | Type | Description | Notes
 **Page** | **Number** | Current page index | 
 **Limit** | **Number** | Current page size | 
 **TotalRecordCount** | **Number** | Total record count | 
-**Data** | [**[CatalogGroup]**](CatalogGroup.md) | Generic data object. | 
+**Data** | [**[Group]**](Group.md) | Generic data object. | 
 
 

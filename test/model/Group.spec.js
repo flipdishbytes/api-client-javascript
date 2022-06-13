@@ -30,14 +30,32 @@
   var instance;
 
   describe('(package)', function() {
-    describe('CreateCatalogGroup', function() {
+    describe('Group', function() {
       beforeEach(function() {
-        instance = new Flipdish.CreateCatalogGroup();
+        instance = new Flipdish.Group();
       });
 
-      it('should create an instance of CreateCatalogGroup', function() {
-        // TODO: update the code to test CreateCatalogGroup
-        expect(instance).to.be.a(Flipdish.CreateCatalogGroup);
+      it('should create an instance of Group', function() {
+        // TODO: update the code to test Group
+        expect(instance).to.be.a(Flipdish.Group);
+      });
+
+      it('should have the property CatalogGroupId (base name: "CatalogGroupId")', function() {
+        // TODO: update the code to test the property CatalogGroupId
+        expect(instance).to.have.property('CatalogGroupId');
+        // expect(instance.CatalogGroupId).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property CatalogItemId (base name: "CatalogItemId")', function() {
+        // TODO: update the code to test the property CatalogItemId
+        expect(instance).to.have.property('CatalogItemId');
+        // expect(instance.CatalogItemId).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property IsArchived (base name: "IsArchived")', function() {
+        // TODO: update the code to test the property IsArchived
+        expect(instance).to.have.property('IsArchived');
+        // expect(instance.IsArchived).to.be(expectedValueLiteral);
       });
 
       it('should have the property MinSelectCount (base name: "MinSelectCount")', function() {
@@ -52,10 +70,10 @@
         // expect(instance.MaxSelectCount).to.be(expectedValueLiteral);
       });
 
-      it('should have the property Items (base name: "Items")', function() {
-        // TODO: update the code to test the property Items
-        expect(instance).to.have.property('Items');
-        // expect(instance.Items).to.be(expectedValueLiteral);
+      it('should have the property Products (base name: "Products")', function() {
+        // TODO: update the code to test the property Products
+        expect(instance).to.have.property('Products');
+        // expect(instance.Products).to.be(expectedValueLiteral);
       });
 
       it('should have the property Metafields (base name: "Metafields")', function() {

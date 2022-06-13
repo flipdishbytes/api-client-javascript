@@ -16,41 +16,41 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/Metafield', 'model/UpdateCatalogItemReference'], factory);
+    define(['ApiClient', 'model/Metafield', 'model/UpdateProductReference'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./Metafield'), require('./UpdateCatalogItemReference'));
+    module.exports = factory(require('../ApiClient'), require('./Metafield'), require('./UpdateProductReference'));
   } else {
     // Browser globals (root is window)
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.UpdateCatalogGroup = factory(root.Flipdish.ApiClient, root.Flipdish.Metafield, root.Flipdish.UpdateCatalogItemReference);
+    root.Flipdish.UpdateGroup = factory(root.Flipdish.ApiClient, root.Flipdish.Metafield, root.Flipdish.UpdateProductReference);
   }
-}(this, function(ApiClient, Metafield, UpdateCatalogItemReference) {
+}(this, function(ApiClient, Metafield, UpdateProductReference) {
   'use strict';
 
   /**
-   * The UpdateCatalogGroup model module.
-   * @module model/UpdateCatalogGroup
+   * The UpdateGroup model module.
+   * @module model/UpdateGroup
    * @version 1.0.0
    */
 
   /**
-   * Constructs a new <code>UpdateCatalogGroup</code>.
+   * Constructs a new <code>UpdateGroup</code>.
    * Update Catalog Group
-   * @alias module:model/UpdateCatalogGroup
+   * @alias module:model/UpdateGroup
    * @class
    */
   var exports = function() {
   };
 
   /**
-   * Constructs a <code>UpdateCatalogGroup</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>UpdateGroup</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/UpdateCatalogGroup} obj Optional instance to populate.
-   * @return {module:model/UpdateCatalogGroup} The populated <code>UpdateCatalogGroup</code> instance.
+   * @param {module:model/UpdateGroup} obj Optional instance to populate.
+   * @return {module:model/UpdateGroup} The populated <code>UpdateGroup</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
@@ -67,8 +67,8 @@
         obj.MinSelectCount = ApiClient.convertToType(data['MinSelectCount'], 'Number');
       if (data.hasOwnProperty('MaxSelectCount'))
         obj.MaxSelectCount = ApiClient.convertToType(data['MaxSelectCount'], 'Number');
-      if (data.hasOwnProperty('Items'))
-        obj.Items = ApiClient.convertToType(data['Items'], [UpdateCatalogItemReference]);
+      if (data.hasOwnProperty('Products'))
+        obj.Products = ApiClient.convertToType(data['Products'], [UpdateProductReference]);
       if (data.hasOwnProperty('Metafields'))
         obj.Metafields = ApiClient.convertToType(data['Metafields'], [Metafield]);
     }
@@ -113,9 +113,9 @@
 
   /**
    * Collection of items associated with this group
-   * @member {Array.<module:model/UpdateCatalogItemReference>} Items
+   * @member {Array.<module:model/UpdateProductReference>} Products
    */
-  exports.prototype.Items = undefined;
+  exports.prototype.Products = undefined;
 
   /**
    * Collection of metafields

@@ -30,14 +30,14 @@
   var instance;
 
   describe('(package)', function() {
-    describe('RestApiResultCatalogGroup', function() {
+    describe('RestApiResultGroup', function() {
       beforeEach(function() {
-        instance = new Flipdish.RestApiResultCatalogGroup();
+        instance = new Flipdish.RestApiResultGroup();
       });
 
-      it('should create an instance of RestApiResultCatalogGroup', function() {
-        // TODO: update the code to test RestApiResultCatalogGroup
-        expect(instance).to.be.a(Flipdish.RestApiResultCatalogGroup);
+      it('should create an instance of RestApiResultGroup', function() {
+        // TODO: update the code to test RestApiResultGroup
+        expect(instance).to.be.a(Flipdish.RestApiResultGroup);
       });
 
       it('should have the property Data (base name: "Data")', function() {

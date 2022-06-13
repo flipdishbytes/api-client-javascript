@@ -16,18 +16,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/CatalogGroup'], factory);
+    define(['ApiClient', 'model/Group'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./CatalogGroup'));
+    module.exports = factory(require('../ApiClient'), require('./Group'));
   } else {
     // Browser globals (root is window)
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.CatalogGroupReference = factory(root.Flipdish.ApiClient, root.Flipdish.CatalogGroup);
+    root.Flipdish.CatalogGroupReference = factory(root.Flipdish.ApiClient, root.Flipdish.Group);
   }
-}(this, function(ApiClient, CatalogGroup) {
+}(this, function(ApiClient, Group) {
   'use strict';
 
   /**
@@ -38,7 +38,7 @@
 
   /**
    * Constructs a new <code>CatalogGroupReference</code>.
-   * Reference to an existing {Flipdish.PublicModels.V1.Catalog.Groups.CatalogGroup}
+   * Reference to an existing {Flipdish.PublicModels.V1.Catalog.Groups.Group}
    * @alias module:model/CatalogGroupReference
    * @class
    * @param CatalogGroupId {String} Identifier of the ProductId to use as SubProduct
@@ -60,7 +60,7 @@
     if (data) {
       obj = obj || new exports();
       if (data.hasOwnProperty('Group'))
-        obj.Group = CatalogGroup.constructFromObject(data['Group']);
+        obj.Group = Group.constructFromObject(data['Group']);
       if (data.hasOwnProperty('CatalogGroupId'))
         obj.CatalogGroupId = ApiClient.convertToType(data['CatalogGroupId'], 'String');
       if (data.hasOwnProperty('CatalogItemId'))
@@ -73,7 +73,7 @@
 
   /**
    * Details of the referenced {Flipdish.PublicModels.V1.Catalog.Items.CatalogItem}
-   * @member {module:model/CatalogGroup} Group
+   * @member {module:model/Group} Group
    */
   exports.prototype.Group = undefined;
 

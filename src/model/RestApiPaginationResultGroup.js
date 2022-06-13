@@ -16,35 +16,35 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/CatalogGroup'], factory);
+    define(['ApiClient', 'model/Group'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./CatalogGroup'));
+    module.exports = factory(require('../ApiClient'), require('./Group'));
   } else {
     // Browser globals (root is window)
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.RestApiPaginationResultCatalogGroup = factory(root.Flipdish.ApiClient, root.Flipdish.CatalogGroup);
+    root.Flipdish.RestApiPaginationResultGroup = factory(root.Flipdish.ApiClient, root.Flipdish.Group);
   }
-}(this, function(ApiClient, CatalogGroup) {
+}(this, function(ApiClient, Group) {
   'use strict';
 
   /**
-   * The RestApiPaginationResultCatalogGroup model module.
-   * @module model/RestApiPaginationResultCatalogGroup
+   * The RestApiPaginationResultGroup model module.
+   * @module model/RestApiPaginationResultGroup
    * @version 1.0.0
    */
 
   /**
-   * Constructs a new <code>RestApiPaginationResultCatalogGroup</code>.
+   * Constructs a new <code>RestApiPaginationResultGroup</code>.
    * Rest api pagination result
-   * @alias module:model/RestApiPaginationResultCatalogGroup
+   * @alias module:model/RestApiPaginationResultGroup
    * @class
    * @param Page {Number} Current page index
    * @param Limit {Number} Current page size
    * @param TotalRecordCount {Number} Total record count
-   * @param Data {Array.<module:model/CatalogGroup>} Generic data object.
+   * @param Data {Array.<module:model/Group>} Generic data object.
    */
   var exports = function(Page, Limit, TotalRecordCount, Data) {
     this.Page = Page;
@@ -54,11 +54,11 @@
   };
 
   /**
-   * Constructs a <code>RestApiPaginationResultCatalogGroup</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>RestApiPaginationResultGroup</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/RestApiPaginationResultCatalogGroup} obj Optional instance to populate.
-   * @return {module:model/RestApiPaginationResultCatalogGroup} The populated <code>RestApiPaginationResultCatalogGroup</code> instance.
+   * @param {module:model/RestApiPaginationResultGroup} obj Optional instance to populate.
+   * @return {module:model/RestApiPaginationResultGroup} The populated <code>RestApiPaginationResultGroup</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
@@ -70,7 +70,7 @@
       if (data.hasOwnProperty('TotalRecordCount'))
         obj.TotalRecordCount = ApiClient.convertToType(data['TotalRecordCount'], 'Number');
       if (data.hasOwnProperty('Data'))
-        obj.Data = ApiClient.convertToType(data['Data'], [CatalogGroup]);
+        obj.Data = ApiClient.convertToType(data['Data'], [Group]);
     }
     return obj;
   }
@@ -95,7 +95,7 @@
 
   /**
    * Generic data object.
-   * @member {Array.<module:model/CatalogGroup>} Data
+   * @member {Array.<module:model/Group>} Data
    */
   exports.prototype.Data = undefined;
 

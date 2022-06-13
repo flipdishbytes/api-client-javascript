@@ -16,32 +16,32 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/CatalogItemReference', 'model/Metafield'], factory);
+    define(['ApiClient', 'model/CreateProductReference', 'model/Metafield'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./CatalogItemReference'), require('./Metafield'));
+    module.exports = factory(require('../ApiClient'), require('./CreateProductReference'), require('./Metafield'));
   } else {
     // Browser globals (root is window)
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.CatalogGroup = factory(root.Flipdish.ApiClient, root.Flipdish.CatalogItemReference, root.Flipdish.Metafield);
+    root.Flipdish.CreateGroup = factory(root.Flipdish.ApiClient, root.Flipdish.CreateProductReference, root.Flipdish.Metafield);
   }
-}(this, function(ApiClient, CatalogItemReference, Metafield) {
+}(this, function(ApiClient, CreateProductReference, Metafield) {
   'use strict';
 
   /**
-   * The CatalogGroup model module.
-   * @module model/CatalogGroup
+   * The CreateGroup model module.
+   * @module model/CreateGroup
    * @version 1.0.0
    */
 
   /**
-   * Constructs a new <code>CatalogGroup</code>.
-   * CatalogGroup
-   * @alias module:model/CatalogGroup
+   * Constructs a new <code>CreateGroup</code>.
+   * Create a Catalog Group
+   * @alias module:model/CreateGroup
    * @class
-   * @param GroupType {module:model/CatalogGroup.GroupTypeEnum} Type of group (ModifierGroup, etc)
+   * @param GroupType {module:model/CreateGroup.GroupTypeEnum} Type of group (ModifierGroup, etc)
    * @param Sku {String} Stock Keeping Unit (SKU)
    * @param Name {String} Group name
    */
@@ -52,27 +52,21 @@
   };
 
   /**
-   * Constructs a <code>CatalogGroup</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>CreateGroup</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/CatalogGroup} obj Optional instance to populate.
-   * @return {module:model/CatalogGroup} The populated <code>CatalogGroup</code> instance.
+   * @param {module:model/CreateGroup} obj Optional instance to populate.
+   * @return {module:model/CreateGroup} The populated <code>CreateGroup</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
-      if (data.hasOwnProperty('CatalogGroupId'))
-        obj.CatalogGroupId = ApiClient.convertToType(data['CatalogGroupId'], 'String');
-      if (data.hasOwnProperty('CatalogItemId'))
-        obj.CatalogItemId = ApiClient.convertToType(data['CatalogItemId'], 'String');
-      if (data.hasOwnProperty('IsArchived'))
-        obj.IsArchived = ApiClient.convertToType(data['IsArchived'], 'Boolean');
       if (data.hasOwnProperty('MinSelectCount'))
         obj.MinSelectCount = ApiClient.convertToType(data['MinSelectCount'], 'Number');
       if (data.hasOwnProperty('MaxSelectCount'))
         obj.MaxSelectCount = ApiClient.convertToType(data['MaxSelectCount'], 'Number');
-      if (data.hasOwnProperty('Items'))
-        obj.Items = ApiClient.convertToType(data['Items'], [CatalogItemReference]);
+      if (data.hasOwnProperty('Products'))
+        obj.Products = ApiClient.convertToType(data['Products'], [CreateProductReference]);
       if (data.hasOwnProperty('Metafields'))
         obj.Metafields = ApiClient.convertToType(data['Metafields'], [Metafield]);
       if (data.hasOwnProperty('GroupType'))
@@ -90,24 +84,6 @@
   }
 
   /**
-   * Unique catalog group id
-   * @member {String} CatalogGroupId
-   */
-  exports.prototype.CatalogGroupId = undefined;
-
-  /**
-   * Unique catalog item id
-   * @member {String} CatalogItemId
-   */
-  exports.prototype.CatalogItemId = undefined;
-
-  /**
-   * Returns true if the group is archived
-   * @member {Boolean} IsArchived
-   */
-  exports.prototype.IsArchived = undefined;
-
-  /**
    * Minimum number of items that the user has to select
    * @member {Number} MinSelectCount
    */
@@ -120,10 +96,10 @@
   exports.prototype.MaxSelectCount = undefined;
 
   /**
-   * Collection of items associated with this product
-   * @member {Array.<module:model/CatalogItemReference>} Items
+   * Collection of items associated with this group
+   * @member {Array.<module:model/CreateProductReference>} Products
    */
-  exports.prototype.Items = undefined;
+  exports.prototype.Products = undefined;
 
   /**
    * Collection of metafields
@@ -133,7 +109,7 @@
 
   /**
    * Type of group (ModifierGroup, etc)
-   * @member {module:model/CatalogGroup.GroupTypeEnum} GroupType
+   * @member {module:model/CreateGroup.GroupTypeEnum} GroupType
    */
   exports.prototype.GroupType = undefined;
 

@@ -46,12 +46,6 @@
         // expect(instance.Group).to.be(expectedValueLiteral);
       });
 
-      it('should have the property CatalogGroupId (base name: "CatalogGroupId")', function() {
-        // TODO: update the code to test the property CatalogGroupId
-        expect(instance).to.have.property('CatalogGroupId');
-        // expect(instance.CatalogGroupId).to.be(expectedValueLiteral);
-      });
-
       it('should have the property CatalogItemId (base name: "CatalogItemId")', function() {
         // TODO: update the code to test the property CatalogItemId
         expect(instance).to.have.property('CatalogItemId');

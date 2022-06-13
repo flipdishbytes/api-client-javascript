@@ -41,11 +41,11 @@
    * Information to create a reference to a {System.Text.RegularExpressions.Group}
    * @alias module:model/CreateGroupReference
    * @class
-   * @param CatalogGroupId {String} Identifier of the ProductId to use as SubProduct
+   * @param CatalogItemId {String} Identifier of the ProductId to use as SubProduct
    * @param GroupType {module:model/CreateGroupReference.GroupTypeEnum} Type of the SupProduct
    */
-  var exports = function(CatalogGroupId, GroupType) {
-    this.CatalogGroupId = CatalogGroupId;
+  var exports = function(CatalogItemId, GroupType) {
+    this.CatalogItemId = CatalogItemId;
     this.GroupType = GroupType;
   };
 
@@ -59,8 +59,6 @@
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
-      if (data.hasOwnProperty('CatalogGroupId'))
-        obj.CatalogGroupId = ApiClient.convertToType(data['CatalogGroupId'], 'String');
       if (data.hasOwnProperty('CatalogItemId'))
         obj.CatalogItemId = ApiClient.convertToType(data['CatalogItemId'], 'String');
       if (data.hasOwnProperty('GroupType'))
@@ -68,12 +66,6 @@
     }
     return obj;
   }
-
-  /**
-   * Identifier of the ProductId to use as SubProduct
-   * @member {String} CatalogGroupId
-   */
-  exports.prototype.CatalogGroupId = undefined;
 
   /**
    * Identifier of the ProductId to use as SubProduct

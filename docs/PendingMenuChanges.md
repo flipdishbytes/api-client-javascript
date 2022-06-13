@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**CatalogElementId** | **String** | Unique catalog element id | [optional] 
+**CatalogItemId** | **String** | Unique catalog item id | [optional] 
 **MenuId** | **Number** | Unique menu id | [optional] 
 
 
