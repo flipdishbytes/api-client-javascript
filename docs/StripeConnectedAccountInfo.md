@@ -6,6 +6,7 @@ Name | Type | Description | Notes
 **AccountStatus** | **String** | Stripe connected account status | [optional] 
 **StripeId** | **String** | Stripe connected account id | [optional] 
 **CardPaymentStatus** | **String** | Current status of the Card Payment capability of the account | [optional] 
+**PayoutScheduleInterval** | **String** | Payouts Schedule Interval | [optional] 
 
 
 <a name="AccountStatusEnum"></a>
@@ -40,6 +41,21 @@ Name | Type | Description | Notes
 * `Active` (value: `"Active"`)
 
 * `Unrequested` (value: `"Unrequested"`)
+
+
+
+
+<a name="PayoutScheduleIntervalEnum"></a>
+## Enum: PayoutScheduleIntervalEnum
+
+
+* `Manual` (value: `"Manual"`)
+
+* `Daily` (value: `"Daily"`)
+
+* `Weekly` (value: `"Weekly"`)
+
+* `Monthly` (value: `"Monthly"`)
 
 
 

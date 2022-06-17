@@ -58,6 +58,12 @@
         // expect(instance.CardPaymentStatus).to.be(expectedValueLiteral);
       });
 
+      it('should have the property PayoutScheduleInterval (base name: "PayoutScheduleInterval")', function() {
+        // TODO: update the code to test the property PayoutScheduleInterval
+        expect(instance).to.have.property('PayoutScheduleInterval');
+        // expect(instance.PayoutScheduleInterval).to.be(expectedValueLiteral);
+      });
+
     });
   });
 

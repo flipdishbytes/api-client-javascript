@@ -61,6 +61,8 @@
         obj.StripeId = ApiClient.convertToType(data['StripeId'], 'String');
       if (data.hasOwnProperty('CardPaymentStatus'))
         obj.CardPaymentStatus = ApiClient.convertToType(data['CardPaymentStatus'], 'String');
+      if (data.hasOwnProperty('PayoutScheduleInterval'))
+        obj.PayoutScheduleInterval = ApiClient.convertToType(data['PayoutScheduleInterval'], 'String');
     }
     return obj;
   }
@@ -82,6 +84,12 @@
    * @member {module:model/StripeConnectedAccountInfo.CardPaymentStatusEnum} CardPaymentStatus
    */
   exports.prototype.CardPaymentStatus = undefined;
+
+  /**
+   * Payouts Schedule Interval
+   * @member {module:model/StripeConnectedAccountInfo.PayoutScheduleIntervalEnum} PayoutScheduleInterval
+   */
+  exports.prototype.PayoutScheduleInterval = undefined;
 
 
 
@@ -164,6 +172,38 @@
      * @const
      */
     Unrequested: "Unrequested"
+  };
+
+
+  /**
+   * Allowed values for the <code>PayoutScheduleInterval</code> property.
+   * @enum {String}
+   * @readonly
+   */
+  exports.PayoutScheduleIntervalEnum = {
+    /**
+     * value: "Manual"
+     * @const
+     */
+    Manual: "Manual",
+
+    /**
+     * value: "Daily"
+     * @const
+     */
+    Daily: "Daily",
+
+    /**
+     * value: "Weekly"
+     * @const
+     */
+    Weekly: "Weekly",
+
+    /**
+     * value: "Monthly"
+     * @const
+     */
+    Monthly: "Monthly"
   };
 
   return exports;
