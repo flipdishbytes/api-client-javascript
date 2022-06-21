@@ -309,6 +309,8 @@ Name | Type | Description | Notes
 
 * `UpdateOrdersDeliveryTrackingStatus` (value: `"UpdateOrdersDeliveryTrackingStatus"`)
 
+* `UpdateOrderFulfillmentStatus` (value: `"UpdateOrderFulfillmentStatus"`)
+
 * `ViewPayouts` (value: `"ViewPayouts"`)
 
 * `ViewChannels` (value: `"ViewChannels"`)

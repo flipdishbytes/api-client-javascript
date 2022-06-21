@@ -1050,6 +1050,12 @@
     UpdateOrdersDeliveryTrackingStatus: "UpdateOrdersDeliveryTrackingStatus",
 
     /**
+     * value: "UpdateOrderFulfillmentStatus"
+     * @const
+     */
+    UpdateOrderFulfillmentStatus: "UpdateOrderFulfillmentStatus",
+
+    /**
      * value: "ViewPayouts"
      * @const
      */
