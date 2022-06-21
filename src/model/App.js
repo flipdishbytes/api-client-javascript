@@ -1008,6 +1008,12 @@
     ViewCatalogAuditLogs: "ViewCatalogAuditLogs",
 
     /**
+     * value: "ViewOrderFulfillmentAuditLogs"
+     * @const
+     */
+    ViewOrderFulfillmentAuditLogs: "ViewOrderFulfillmentAuditLogs",
+
+    /**
      * value: "SendPushNotificationToCustomer"
      * @const
      */

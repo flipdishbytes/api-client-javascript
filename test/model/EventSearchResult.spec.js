@@ -730,6 +730,12 @@
         // expect(instance.ExternalStoreEvent).to.be(expectedValueLiteral);
       });
 
+      it('should have the property OrderFulfillmentStatusUpdatedEvent (base name: "OrderFulfillmentStatusUpdatedEvent")', function() {
+        // TODO: update the code to test the property OrderFulfillmentStatusUpdatedEvent
+        expect(instance).to.have.property('OrderFulfillmentStatusUpdatedEvent');
+        // expect(instance.OrderFulfillmentStatusUpdatedEvent).to.be(expectedValueLiteral);
+      });
+
       it('should have the property AppStoreConfigCreatedEvent (base name: "AppStoreConfigCreatedEvent")', function() {
         // TODO: update the code to test the property AppStoreConfigCreatedEvent
         expect(instance).to.have.property('AppStoreConfigCreatedEvent');

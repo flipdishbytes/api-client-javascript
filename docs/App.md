@@ -295,6 +295,8 @@ Name | Type | Description | Notes
 
 * `ViewCatalogAuditLogs` (value: `"ViewCatalogAuditLogs"`)
 
+* `ViewOrderFulfillmentAuditLogs` (value: `"ViewOrderFulfillmentAuditLogs"`)
+
 * `SendPushNotificationToCustomer` (value: `"SendPushNotificationToCustomer"`)
 
 * `InviteDriverToApp` (value: `"InviteDriverToApp"`)

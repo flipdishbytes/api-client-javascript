@@ -38,7 +38,7 @@
 
   /**
    * Constructs a new <code>OrderFulfillmentStatus</code>.
-   * Order Delivery Status Information
+   * Order Fulfillment Status Information
    * @alias module:model/OrderFulfillmentStatus
    * @class
    */
