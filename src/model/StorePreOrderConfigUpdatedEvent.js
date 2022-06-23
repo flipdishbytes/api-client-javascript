@@ -65,6 +65,8 @@
         obj.Description = ApiClient.convertToType(data['Description'], 'String');
       if (data.hasOwnProperty('PreOrderConfig'))
         obj.PreOrderConfig = PreOrderConfig.constructFromObject(data['PreOrderConfig']);
+      if (data.hasOwnProperty('OldPreOrderConfig'))
+        obj.OldPreOrderConfig = PreOrderConfig.constructFromObject(data['OldPreOrderConfig']);
       if (data.hasOwnProperty('FlipdishEventId'))
         obj.FlipdishEventId = ApiClient.convertToType(data['FlipdishEventId'], 'String');
       if (data.hasOwnProperty('CreateTime'))
@@ -108,6 +110,12 @@
    * @member {module:model/PreOrderConfig} PreOrderConfig
    */
   exports.prototype.PreOrderConfig = undefined;
+
+  /**
+   * Old Pre Order Configuration
+   * @member {module:model/PreOrderConfig} OldPreOrderConfig
+   */
+  exports.prototype.OldPreOrderConfig = undefined;
 
   /**
    * The identitfier of the event

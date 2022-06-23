@@ -70,6 +70,12 @@
         // expect(instance.PreOrderConfig).to.be(expectedValueLiteral);
       });
 
+      it('should have the property OldPreOrderConfig (base name: "OldPreOrderConfig")', function() {
+        // TODO: update the code to test the property OldPreOrderConfig
+        expect(instance).to.have.property('OldPreOrderConfig');
+        // expect(instance.OldPreOrderConfig).to.be(expectedValueLiteral);
+      });
+
       it('should have the property FlipdishEventId (base name: "FlipdishEventId")', function() {
         // TODO: update the code to test the property FlipdishEventId
         expect(instance).to.have.property('FlipdishEventId');
