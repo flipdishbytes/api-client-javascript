@@ -76,6 +76,8 @@ Name | Type | Description | Notes
 
 * `DriveThrough` (value: `"DriveThrough"`)
 
+* `Team` (value: `"Team"`)
+
 
 
 

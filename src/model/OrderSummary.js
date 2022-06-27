@@ -365,7 +365,13 @@
      * value: "DriveThrough"
      * @const
      */
-    DriveThrough: "DriveThrough"
+    DriveThrough: "DriveThrough",
+
+    /**
+     * value: "Team"
+     * @const
+     */
+    Team: "Team"
   };
 
 
