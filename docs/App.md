@@ -313,6 +313,14 @@ Name | Type | Description | Notes
 
 * `UpdateOrderFulfillmentStatus` (value: `"UpdateOrderFulfillmentStatus"`)
 
+* `ViewFulfillmentStatesConfiguration` (value: `"ViewFulfillmentStatesConfiguration"`)
+
+* `CreateFulfillmentStatesConfiguration` (value: `"CreateFulfillmentStatesConfiguration"`)
+
+* `UpdateFulfillmentStatesConfiguration` (value: `"UpdateFulfillmentStatesConfiguration"`)
+
+* `DeleteFulfillmentStatesConfiguration` (value: `"DeleteFulfillmentStatesConfiguration"`)
+
 * `ViewPayouts` (value: `"ViewPayouts"`)
 
 * `ViewChannels` (value: `"ViewChannels"`)

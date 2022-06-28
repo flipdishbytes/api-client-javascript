@@ -9,5 +9,6 @@ Name | Type | Description | Notes
 **StoreGroupName** | **String** | Store Group Name | [optional] 
 **HasLoyaltyCampaign** | **Boolean** | Store has loyalty campaign | [optional] 
 **HasRetentionCampaign** | **Boolean** | Store has retention campaign | [optional] 
+**IsPublished** | **Boolean** | Is Published store | [optional] 
 
 

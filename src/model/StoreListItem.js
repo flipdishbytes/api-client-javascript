@@ -67,6 +67,8 @@
         obj.HasLoyaltyCampaign = ApiClient.convertToType(data['HasLoyaltyCampaign'], 'Boolean');
       if (data.hasOwnProperty('HasRetentionCampaign'))
         obj.HasRetentionCampaign = ApiClient.convertToType(data['HasRetentionCampaign'], 'Boolean');
+      if (data.hasOwnProperty('IsPublished'))
+        obj.IsPublished = ApiClient.convertToType(data['IsPublished'], 'Boolean');
     }
     return obj;
   }
@@ -106,6 +108,12 @@
    * @member {Boolean} HasRetentionCampaign
    */
   exports.prototype.HasRetentionCampaign = undefined;
+
+  /**
+   * Is Published store
+   * @member {Boolean} IsPublished
+   */
+  exports.prototype.IsPublished = undefined;
 
 
   return exports;

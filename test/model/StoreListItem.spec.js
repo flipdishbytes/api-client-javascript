@@ -76,6 +76,12 @@
         // expect(instance.HasRetentionCampaign).to.be(expectedValueLiteral);
       });
 
+      it('should have the property IsPublished (base name: "IsPublished")', function() {
+        // TODO: update the code to test the property IsPublished
+        expect(instance).to.have.property('IsPublished');
+        // expect(instance.IsPublished).to.be(expectedValueLiteral);
+      });
+
     });
   });
 

@@ -1062,6 +1062,30 @@
     UpdateOrderFulfillmentStatus: "UpdateOrderFulfillmentStatus",
 
     /**
+     * value: "ViewFulfillmentStatesConfiguration"
+     * @const
+     */
+    ViewFulfillmentStatesConfiguration: "ViewFulfillmentStatesConfiguration",
+
+    /**
+     * value: "CreateFulfillmentStatesConfiguration"
+     * @const
+     */
+    CreateFulfillmentStatesConfiguration: "CreateFulfillmentStatesConfiguration",
+
+    /**
+     * value: "UpdateFulfillmentStatesConfiguration"
+     * @const
+     */
+    UpdateFulfillmentStatesConfiguration: "UpdateFulfillmentStatesConfiguration",
+
+    /**
+     * value: "DeleteFulfillmentStatesConfiguration"
+     * @const
+     */
+    DeleteFulfillmentStatesConfiguration: "DeleteFulfillmentStatesConfiguration",
+
+    /**
      * value: "ViewPayouts"
      * @const
      */
