@@ -16,18 +16,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/Channel', 'model/Coordinates', 'model/CustomerSummary', 'model/DeliveryLocation', 'model/FeeSummary', 'model/MaskedPhoneNumber', 'model/OrderDropOffLocation', 'model/OrderItem', 'model/OrderVoucherSummary', 'model/StoreSummary'], factory);
+    define(['ApiClient', 'model/Channel', 'model/Coordinates', 'model/CustomerSummary', 'model/DeliveryLocation', 'model/FeeSummary', 'model/MaskedPhoneNumber', 'model/OrderDropOffLocation', 'model/OrderFulfillmentStatusBase', 'model/OrderItem', 'model/OrderVoucherSummary', 'model/StoreSummary'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./Channel'), require('./Coordinates'), require('./CustomerSummary'), require('./DeliveryLocation'), require('./FeeSummary'), require('./MaskedPhoneNumber'), require('./OrderDropOffLocation'), require('./OrderItem'), require('./OrderVoucherSummary'), require('./StoreSummary'));
+    module.exports = factory(require('../ApiClient'), require('./Channel'), require('./Coordinates'), require('./CustomerSummary'), require('./DeliveryLocation'), require('./FeeSummary'), require('./MaskedPhoneNumber'), require('./OrderDropOffLocation'), require('./OrderFulfillmentStatusBase'), require('./OrderItem'), require('./OrderVoucherSummary'), require('./StoreSummary'));
   } else {
     // Browser globals (root is window)
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.Order = factory(root.Flipdish.ApiClient, root.Flipdish.Channel, root.Flipdish.Coordinates, root.Flipdish.CustomerSummary, root.Flipdish.DeliveryLocation, root.Flipdish.FeeSummary, root.Flipdish.MaskedPhoneNumber, root.Flipdish.OrderDropOffLocation, root.Flipdish.OrderItem, root.Flipdish.OrderVoucherSummary, root.Flipdish.StoreSummary);
+    root.Flipdish.Order = factory(root.Flipdish.ApiClient, root.Flipdish.Channel, root.Flipdish.Coordinates, root.Flipdish.CustomerSummary, root.Flipdish.DeliveryLocation, root.Flipdish.FeeSummary, root.Flipdish.MaskedPhoneNumber, root.Flipdish.OrderDropOffLocation, root.Flipdish.OrderFulfillmentStatusBase, root.Flipdish.OrderItem, root.Flipdish.OrderVoucherSummary, root.Flipdish.StoreSummary);
   }
-}(this, function(ApiClient, Channel, Coordinates, CustomerSummary, DeliveryLocation, FeeSummary, MaskedPhoneNumber, OrderDropOffLocation, OrderItem, OrderVoucherSummary, StoreSummary) {
+}(this, function(ApiClient, Channel, Coordinates, CustomerSummary, DeliveryLocation, FeeSummary, MaskedPhoneNumber, OrderDropOffLocation, OrderFulfillmentStatusBase, OrderItem, OrderVoucherSummary, StoreSummary) {
   'use strict';
 
   /**
@@ -93,6 +93,8 @@
         obj.ReceiptCode = ApiClient.convertToType(data['ReceiptCode'], 'String');
       if (data.hasOwnProperty('OrderDropOffLocation'))
         obj.OrderDropOffLocation = OrderDropOffLocation.constructFromObject(data['OrderDropOffLocation']);
+      if (data.hasOwnProperty('FulfillmentStatus'))
+        obj.FulfillmentStatus = OrderFulfillmentStatusBase.constructFromObject(data['FulfillmentStatus']);
       if (data.hasOwnProperty('OrderId'))
         obj.OrderId = ApiClient.convertToType(data['OrderId'], 'Number');
       if (data.hasOwnProperty('LocalOrderId'))
@@ -266,6 +268,12 @@
    * @member {module:model/OrderDropOffLocation} OrderDropOffLocation
    */
   exports.prototype.OrderDropOffLocation = undefined;
+
+  /**
+   * Fulfillment status for this order
+   * @member {module:model/OrderFulfillmentStatusBase} FulfillmentStatus
+   */
+  exports.prototype.FulfillmentStatus = undefined;
 
   /**
    * Order identifier

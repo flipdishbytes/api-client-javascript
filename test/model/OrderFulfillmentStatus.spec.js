@@ -52,6 +52,18 @@
         // expect(instance.StatusId).to.be(expectedValueLiteral);
       });
 
+      it('should have the property StatusName (base name: "StatusName")', function() {
+        // TODO: update the code to test the property StatusName
+        expect(instance).to.have.property('StatusName');
+        // expect(instance.StatusName).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property Icon (base name: "Icon")', function() {
+        // TODO: update the code to test the property Icon
+        expect(instance).to.have.property('Icon');
+        // expect(instance.Icon).to.be(expectedValueLiteral);
+      });
+
     });
   });
 

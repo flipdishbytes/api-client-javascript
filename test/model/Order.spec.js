@@ -154,6 +154,12 @@
         // expect(instance.OrderDropOffLocation).to.be(expectedValueLiteral);
       });
 
+      it('should have the property FulfillmentStatus (base name: "FulfillmentStatus")', function() {
+        // TODO: update the code to test the property FulfillmentStatus
+        expect(instance).to.have.property('FulfillmentStatus');
+        // expect(instance.FulfillmentStatus).to.be(expectedValueLiteral);
+      });
+
       it('should have the property OrderId (base name: "OrderId")', function() {
         // TODO: update the code to test the property OrderId
         expect(instance).to.have.property('OrderId');

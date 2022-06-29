@@ -57,6 +57,10 @@
       obj = obj || new exports();
       if (data.hasOwnProperty('StatusId'))
         obj.StatusId = ApiClient.convertToType(data['StatusId'], 'String');
+      if (data.hasOwnProperty('StatusName'))
+        obj.StatusName = ApiClient.convertToType(data['StatusName'], 'String');
+      if (data.hasOwnProperty('Icon'))
+        obj.Icon = ApiClient.convertToType(data['Icon'], 'String');
     }
     return obj;
   }
@@ -66,6 +70,18 @@
    * @member {String} StatusId
    */
   exports.prototype.StatusId = undefined;
+
+  /**
+   * Fulfillment Status Name
+   * @member {String} StatusName
+   */
+  exports.prototype.StatusName = undefined;
+
+  /**
+   * Status Icon
+   * @member {String} Icon
+   */
+  exports.prototype.Icon = undefined;
 
 
   return exports;
