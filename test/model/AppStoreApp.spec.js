@@ -112,6 +112,12 @@
         // expect(instance.PermissionsType).to.be(expectedValueLiteral);
       });
 
+      it('should have the property Support (base name: "Support")', function() {
+        // TODO: update the code to test the property Support
+        expect(instance).to.have.property('Support');
+        // expect(instance.Support).to.be(expectedValueLiteral);
+      });
+
       it('should have the property Name (base name: "Name")', function() {
         // TODO: update the code to test the property Name
         expect(instance).to.have.property('Name');

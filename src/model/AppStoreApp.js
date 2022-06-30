@@ -16,18 +16,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/FieldGroup'], factory);
+    define(['ApiClient', 'model/AppStoreAppSupportInfo', 'model/FieldGroup'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./FieldGroup'));
+    module.exports = factory(require('../ApiClient'), require('./AppStoreAppSupportInfo'), require('./FieldGroup'));
   } else {
     // Browser globals (root is window)
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.AppStoreApp = factory(root.Flipdish.ApiClient, root.Flipdish.FieldGroup);
+    root.Flipdish.AppStoreApp = factory(root.Flipdish.ApiClient, root.Flipdish.AppStoreAppSupportInfo, root.Flipdish.FieldGroup);
   }
-}(this, function(ApiClient, FieldGroup) {
+}(this, function(ApiClient, AppStoreAppSupportInfo, FieldGroup) {
   'use strict';
 
   /**
@@ -101,6 +101,8 @@
         obj.TeammateAppAccessLevel = ApiClient.convertToType(data['TeammateAppAccessLevel'], 'String');
       if (data.hasOwnProperty('PermissionsType'))
         obj.PermissionsType = ApiClient.convertToType(data['PermissionsType'], 'String');
+      if (data.hasOwnProperty('Support'))
+        obj.Support = AppStoreAppSupportInfo.constructFromObject(data['Support']);
       if (data.hasOwnProperty('Name'))
         obj.Name = ApiClient.convertToType(data['Name'], 'String');
       if (data.hasOwnProperty('Description'))
@@ -188,6 +190,12 @@
    * @member {module:model/AppStoreApp.PermissionsTypeEnum} PermissionsType
    */
   exports.prototype.PermissionsType = undefined;
+
+  /**
+   * Support information
+   * @member {module:model/AppStoreAppSupportInfo} Support
+   */
+  exports.prototype.Support = undefined;
 
   /**
    * Name

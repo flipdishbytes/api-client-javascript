@@ -11,6 +11,7 @@ Name | Type | Description | Notes
 **ExternalSetupLink** | **String** | External setup link | [optional] 
 **TeammateAppAccessLevel** | **String** | Teammate app access level | [optional] 
 **PermissionsType** | **String** | Permissions type | 
+**Support** | [**AppStoreAppSupportInfo**](AppStoreAppSupportInfo.md) | Support information | [optional] 
 **Name** | **String** | Name | 
 **Description** | **String** | Description | 
 **IsEnabled** | **Boolean** | Is application enabled | [optional] 
