@@ -57,6 +57,8 @@
       obj = obj || new exports();
       if (data.hasOwnProperty('IsEnabled'))
         obj.IsEnabled = ApiClient.convertToType(data['IsEnabled'], 'Boolean');
+      if (data.hasOwnProperty('IsWelcomeScreenEnabled'))
+        obj.IsWelcomeScreenEnabled = ApiClient.convertToType(data['IsWelcomeScreenEnabled'], 'Boolean');
     }
     return obj;
   }
@@ -66,6 +68,11 @@
    * @member {Boolean} IsEnabled
    */
   exports.prototype.IsEnabled = undefined;
+
+  /**
+   * @member {Boolean} IsWelcomeScreenEnabled
+   */
+  exports.prototype.IsWelcomeScreenEnabled = undefined;
 
 
   return exports;

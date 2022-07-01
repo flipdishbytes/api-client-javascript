@@ -46,6 +46,12 @@
         // expect(instance.IsEnabled).to.be(expectedValueLiteral);
       });
 
+      it('should have the property IsWelcomeScreenEnabled (base name: "IsWelcomeScreenEnabled")', function() {
+        // TODO: update the code to test the property IsWelcomeScreenEnabled
+        expect(instance).to.have.property('IsWelcomeScreenEnabled');
+        // expect(instance.IsWelcomeScreenEnabled).to.be(expectedValueLiteral);
+      });
+
     });
   });
 
