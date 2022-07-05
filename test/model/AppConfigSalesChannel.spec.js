@@ -52,6 +52,12 @@
         // expect(instance.WebToAppRedirect).to.be(expectedValueLiteral);
       });
 
+      it('should have the property AddressEntryType (base name: "AddressEntryType")', function() {
+        // TODO: update the code to test the property AddressEntryType
+        expect(instance).to.have.property('AddressEntryType');
+        // expect(instance.AddressEntryType).to.be(expectedValueLiteral);
+      });
+
       it('should have the property DisplayDeliveryRestaurantListScreen (base name: "DisplayDeliveryRestaurantListScreen")', function() {
         // TODO: update the code to test the property DisplayDeliveryRestaurantListScreen
         expect(instance).to.have.property('DisplayDeliveryRestaurantListScreen');

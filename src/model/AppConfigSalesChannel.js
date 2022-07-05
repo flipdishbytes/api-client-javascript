@@ -59,6 +59,8 @@
         obj.EmailRequestMode = ApiClient.convertToType(data['EmailRequestMode'], 'String');
       if (data.hasOwnProperty('WebToAppRedirect'))
         obj.WebToAppRedirect = ApiClient.convertToType(data['WebToAppRedirect'], 'String');
+      if (data.hasOwnProperty('AddressEntryType'))
+        obj.AddressEntryType = ApiClient.convertToType(data['AddressEntryType'], 'String');
       if (data.hasOwnProperty('DisplayDeliveryRestaurantListScreen'))
         obj.DisplayDeliveryRestaurantListScreen = ApiClient.convertToType(data['DisplayDeliveryRestaurantListScreen'], 'Boolean');
     }
@@ -76,6 +78,12 @@
    * @member {module:model/AppConfigSalesChannel.WebToAppRedirectEnum} WebToAppRedirect
    */
   exports.prototype.WebToAppRedirect = undefined;
+
+  /**
+   * Address entry type
+   * @member {module:model/AppConfigSalesChannel.AddressEntryTypeEnum} AddressEntryType
+   */
+  exports.prototype.AddressEntryType = undefined;
 
   /**
    * Display Pickup Restaurant List Screen
@@ -146,6 +154,32 @@
      * @const
      */
     ForcePwa: "ForcePwa"
+  };
+
+
+  /**
+   * Allowed values for the <code>AddressEntryType</code> property.
+   * @enum {String}
+   * @readonly
+   */
+  exports.AddressEntryTypeEnum = {
+    /**
+     * value: "MapFirst"
+     * @const
+     */
+    MapFirst: "MapFirst",
+
+    /**
+     * value: "TextEntryManualAllowed"
+     * @const
+     */
+    TextEntryManualAllowed: "TextEntryManualAllowed",
+
+    /**
+     * value: "TextEntryManualDisallowed"
+     * @const
+     */
+    TextEntryManualDisallowed: "TextEntryManualDisallowed"
   };
 
   return exports;
