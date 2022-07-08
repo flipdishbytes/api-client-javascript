@@ -88,6 +88,18 @@
         // expect(instance.AddressFields).to.be(expectedValueLiteral);
       });
 
+      it('should have the property SingleLineDisplay (base name: "SingleLineDisplay")', function() {
+        // TODO: update the code to test the property SingleLineDisplay
+        expect(instance).to.have.property('SingleLineDisplay');
+        // expect(instance.SingleLineDisplay).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property TwoLinesDisplay (base name: "TwoLinesDisplay")', function() {
+        // TODO: update the code to test the property TwoLinesDisplay
+        expect(instance).to.have.property('TwoLinesDisplay');
+        // expect(instance.TwoLinesDisplay).to.be(expectedValueLiteral);
+      });
+
     });
   });
 

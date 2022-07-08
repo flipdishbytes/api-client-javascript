@@ -9,5 +9,7 @@ Name | Type | Description | Notes
 **CountryCode** | **String** | Country code (ISO-alpha2) | [optional] 
 **DisplayForCustomer** | **String** | Display for customer | [optional] 
 **AddressFields** | **{String: Object}** | Dyanmic field/value pairs, defined by the form assigned to the given country code. | [optional] 
+**SingleLineDisplay** | **String** | Single line display i18n, may be empty for not supported countries | [optional] 
+**TwoLinesDisplay** | **[String]** | Two line display i18n, may be empty for not supported countries | [optional] 
 
 

@@ -71,6 +71,10 @@
         obj.DisplayForCustomer = ApiClient.convertToType(data['DisplayForCustomer'], 'String');
       if (data.hasOwnProperty('AddressFields'))
         obj.AddressFields = ApiClient.convertToType(data['AddressFields'], {'String': Object});
+      if (data.hasOwnProperty('SingleLineDisplay'))
+        obj.SingleLineDisplay = ApiClient.convertToType(data['SingleLineDisplay'], 'String');
+      if (data.hasOwnProperty('TwoLinesDisplay'))
+        obj.TwoLinesDisplay = ApiClient.convertToType(data['TwoLinesDisplay'], ['String']);
     }
     return obj;
   }
@@ -122,6 +126,18 @@
    * @member {Object.<String, Object>} AddressFields
    */
   exports.prototype.AddressFields = undefined;
+
+  /**
+   * Single line display i18n, may be empty for not supported countries
+   * @member {String} SingleLineDisplay
+   */
+  exports.prototype.SingleLineDisplay = undefined;
+
+  /**
+   * Two line display i18n, may be empty for not supported countries
+   * @member {Array.<String>} TwoLinesDisplay
+   */
+  exports.prototype.TwoLinesDisplay = undefined;
 
 
   return exports;
