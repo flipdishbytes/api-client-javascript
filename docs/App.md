@@ -337,6 +337,10 @@ Name | Type | Description | Notes
 
 * `DeleteAppStoreAppConfiguration` (value: `"DeleteAppStoreAppConfiguration"`)
 
+* `ViewSalesChannels` (value: `"ViewSalesChannels"`)
+
+* `EditSalesChannels` (value: `"EditSalesChannels"`)
+
 
 
 

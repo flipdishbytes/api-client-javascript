@@ -1131,7 +1131,19 @@
      * value: "DeleteAppStoreAppConfiguration"
      * @const
      */
-    DeleteAppStoreAppConfiguration: "DeleteAppStoreAppConfiguration"
+    DeleteAppStoreAppConfiguration: "DeleteAppStoreAppConfiguration",
+
+    /**
+     * value: "ViewSalesChannels"
+     * @const
+     */
+    ViewSalesChannels: "ViewSalesChannels",
+
+    /**
+     * value: "EditSalesChannels"
+     * @const
+     */
+    EditSalesChannels: "EditSalesChannels"
   };
 
 
