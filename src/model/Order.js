@@ -270,7 +270,7 @@
   exports.prototype.OrderDropOffLocation = undefined;
 
   /**
-   * Fulfillment status for this order
+   * [BETA - this is a new field in development] Fulfillment status for this order
    * @member {module:model/OrderFulfillmentStatusBase} FulfillmentStatus
    */
   exports.prototype.FulfillmentStatus = undefined;
