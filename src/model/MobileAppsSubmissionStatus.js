@@ -76,6 +76,18 @@
    */
   exports.StatusEnum = {
     /**
+     * value: "None"
+     * @const
+     */
+    None: "None",
+
+    /**
+     * value: "InProgress"
+     * @const
+     */
+    InProgress: "InProgress",
+
+    /**
      * value: "Submitted"
      * @const
      */

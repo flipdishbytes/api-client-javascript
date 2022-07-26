@@ -16,40 +16,40 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient'], factory);
+    define(['ApiClient', 'model/RestaurantVoucherAssignedStore'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'));
+    module.exports = factory(require('../ApiClient'), require('./RestaurantVoucherAssignedStore'));
   } else {
     // Browser globals (root is window)
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.CreatePayGreenConfigurationRequest = factory(root.Flipdish.ApiClient);
+    root.Flipdish.RestaurantVoucherPayGreenConfiguration = factory(root.Flipdish.ApiClient, root.Flipdish.RestaurantVoucherAssignedStore);
   }
-}(this, function(ApiClient) {
+}(this, function(ApiClient, RestaurantVoucherAssignedStore) {
   'use strict';
 
   /**
-   * The CreatePayGreenConfigurationRequest model module.
-   * @module model/CreatePayGreenConfigurationRequest
+   * The RestaurantVoucherPayGreenConfiguration model module.
+   * @module model/RestaurantVoucherPayGreenConfiguration
    * @version 1.0.0
    */
 
   /**
-   * Constructs a new <code>CreatePayGreenConfigurationRequest</code>.
-   * @alias module:model/CreatePayGreenConfigurationRequest
+   * Constructs a new <code>RestaurantVoucherPayGreenConfiguration</code>.
+   * @alias module:model/RestaurantVoucherPayGreenConfiguration
    * @class
    */
   var exports = function() {
   };
 
   /**
-   * Constructs a <code>CreatePayGreenConfigurationRequest</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>RestaurantVoucherPayGreenConfiguration</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/CreatePayGreenConfigurationRequest} obj Optional instance to populate.
-   * @return {module:model/CreatePayGreenConfigurationRequest} The populated <code>CreatePayGreenConfigurationRequest</code> instance.
+   * @param {module:model/RestaurantVoucherPayGreenConfiguration} obj Optional instance to populate.
+   * @return {module:model/RestaurantVoucherPayGreenConfiguration} The populated <code>RestaurantVoucherPayGreenConfiguration</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
@@ -58,10 +58,10 @@
         obj.Name = ApiClient.convertToType(data['Name'], 'String');
       if (data.hasOwnProperty('PayGreenId'))
         obj.PayGreenId = ApiClient.convertToType(data['PayGreenId'], 'String');
-      if (data.hasOwnProperty('PayGreenPrivateKey'))
-        obj.PayGreenPrivateKey = ApiClient.convertToType(data['PayGreenPrivateKey'], 'String');
+      if (data.hasOwnProperty('PayGreenConfigurationId'))
+        obj.PayGreenConfigurationId = ApiClient.convertToType(data['PayGreenConfigurationId'], 'Number');
       if (data.hasOwnProperty('AssignedStores'))
-        obj.AssignedStores = ApiClient.convertToType(data['AssignedStores'], ['Number']);
+        obj.AssignedStores = ApiClient.convertToType(data['AssignedStores'], [RestaurantVoucherAssignedStore]);
     }
     return obj;
   }
@@ -77,12 +77,12 @@
   exports.prototype.PayGreenId = undefined;
 
   /**
-   * @member {String} PayGreenPrivateKey
+   * @member {Number} PayGreenConfigurationId
    */
-  exports.prototype.PayGreenPrivateKey = undefined;
+  exports.prototype.PayGreenConfigurationId = undefined;
 
   /**
-   * @member {Array.<Number>} AssignedStores
+   * @member {Array.<module:model/RestaurantVoucherAssignedStore>} AssignedStores
    */
   exports.prototype.AssignedStores = undefined;
 

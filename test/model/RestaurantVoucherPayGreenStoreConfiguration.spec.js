@@ -30,14 +30,14 @@
   var instance;
 
   describe('(package)', function() {
-    describe('CreatePayGreenConfigurationRequest', function() {
+    describe('RestaurantVoucherPayGreenStoreConfiguration', function() {
       beforeEach(function() {
-        instance = new Flipdish.CreatePayGreenConfigurationRequest();
+        instance = new Flipdish.RestaurantVoucherPayGreenStoreConfiguration();
       });
 
-      it('should create an instance of CreatePayGreenConfigurationRequest', function() {
-        // TODO: update the code to test CreatePayGreenConfigurationRequest
-        expect(instance).to.be.a(Flipdish.CreatePayGreenConfigurationRequest);
+      it('should create an instance of RestaurantVoucherPayGreenStoreConfiguration', function() {
+        // TODO: update the code to test RestaurantVoucherPayGreenStoreConfiguration
+        expect(instance).to.be.a(Flipdish.RestaurantVoucherPayGreenStoreConfiguration);
       });
 
       it('should have the property Name (base name: "Name")', function() {
@@ -46,22 +46,22 @@
         // expect(instance.Name).to.be(expectedValueLiteral);
       });
 
+      it('should have the property Active (base name: "Active")', function() {
+        // TODO: update the code to test the property Active
+        expect(instance).to.have.property('Active');
+        // expect(instance.Active).to.be(expectedValueLiteral);
+      });
+
       it('should have the property PayGreenId (base name: "PayGreenId")', function() {
         // TODO: update the code to test the property PayGreenId
         expect(instance).to.have.property('PayGreenId');
         // expect(instance.PayGreenId).to.be(expectedValueLiteral);
       });
 
-      it('should have the property PayGreenPrivateKey (base name: "PayGreenPrivateKey")', function() {
-        // TODO: update the code to test the property PayGreenPrivateKey
-        expect(instance).to.have.property('PayGreenPrivateKey');
-        // expect(instance.PayGreenPrivateKey).to.be(expectedValueLiteral);
-      });
-
-      it('should have the property AssignedStores (base name: "AssignedStores")', function() {
-        // TODO: update the code to test the property AssignedStores
-        expect(instance).to.have.property('AssignedStores');
-        // expect(instance.AssignedStores).to.be(expectedValueLiteral);
+      it('should have the property PayGreenConfigurationId (base name: "PayGreenConfigurationId")', function() {
+        // TODO: update the code to test the property PayGreenConfigurationId
+        expect(instance).to.have.property('PayGreenConfigurationId');
+        // expect(instance.PayGreenConfigurationId).to.be(expectedValueLiteral);
       });
 
     });

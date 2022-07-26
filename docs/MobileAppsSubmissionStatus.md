@@ -10,6 +10,10 @@ Name | Type | Description | Notes
 ## Enum: StatusEnum
 
 
+* `None` (value: `"None"`)
+
+* `InProgress` (value: `"InProgress"`)
+
 * `Submitted` (value: `"Submitted"`)
 
 * `AppStoreReview` (value: `"AppStoreReview"`)

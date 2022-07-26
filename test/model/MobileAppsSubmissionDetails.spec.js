@@ -30,14 +30,14 @@
   var instance;
 
   describe('(package)', function() {
-    describe('MobileAppsSubmission', function() {
+    describe('MobileAppsSubmissionDetails', function() {
       beforeEach(function() {
-        instance = new Flipdish.MobileAppsSubmission();
+        instance = new Flipdish.MobileAppsSubmissionDetails();
       });
 
-      it('should create an instance of MobileAppsSubmission', function() {
-        // TODO: update the code to test MobileAppsSubmission
-        expect(instance).to.be.a(Flipdish.MobileAppsSubmission);
+      it('should create an instance of MobileAppsSubmissionDetails', function() {
+        // TODO: update the code to test MobileAppsSubmissionDetails
+        expect(instance).to.be.a(Flipdish.MobileAppsSubmissionDetails);
       });
 
       it('should have the property AppName (base name: "AppName")', function() {
@@ -62,6 +62,12 @@
         // TODO: update the code to test the property Keywords
         expect(instance).to.have.property('Keywords');
         // expect(instance.Keywords).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property AppLogoUrl (base name: "AppLogoUrl")', function() {
+        // TODO: update the code to test the property AppLogoUrl
+        expect(instance).to.have.property('AppLogoUrl');
+        // expect(instance.AppLogoUrl).to.be(expectedValueLiteral);
       });
 
       it('should have the property AutoPublish (base name: "AutoPublish")', function() {

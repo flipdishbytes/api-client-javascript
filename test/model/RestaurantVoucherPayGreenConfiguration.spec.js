@@ -30,14 +30,14 @@
   var instance;
 
   describe('(package)', function() {
-    describe('CreatePayGreenConfigurationRequest', function() {
+    describe('RestaurantVoucherPayGreenConfiguration', function() {
       beforeEach(function() {
-        instance = new Flipdish.CreatePayGreenConfigurationRequest();
+        instance = new Flipdish.RestaurantVoucherPayGreenConfiguration();
       });
 
-      it('should create an instance of CreatePayGreenConfigurationRequest', function() {
-        // TODO: update the code to test CreatePayGreenConfigurationRequest
-        expect(instance).to.be.a(Flipdish.CreatePayGreenConfigurationRequest);
+      it('should create an instance of RestaurantVoucherPayGreenConfiguration', function() {
+        // TODO: update the code to test RestaurantVoucherPayGreenConfiguration
+        expect(instance).to.be.a(Flipdish.RestaurantVoucherPayGreenConfiguration);
       });
 
       it('should have the property Name (base name: "Name")', function() {
@@ -52,10 +52,10 @@
         // expect(instance.PayGreenId).to.be(expectedValueLiteral);
       });
 
-      it('should have the property PayGreenPrivateKey (base name: "PayGreenPrivateKey")', function() {
-        // TODO: update the code to test the property PayGreenPrivateKey
-        expect(instance).to.have.property('PayGreenPrivateKey');
-        // expect(instance.PayGreenPrivateKey).to.be(expectedValueLiteral);
+      it('should have the property PayGreenConfigurationId (base name: "PayGreenConfigurationId")', function() {
+        // TODO: update the code to test the property PayGreenConfigurationId
+        expect(instance).to.have.property('PayGreenConfigurationId');
+        // expect(instance.PayGreenConfigurationId).to.be(expectedValueLiteral);
       });
 
       it('should have the property AssignedStores (base name: "AssignedStores")', function() {

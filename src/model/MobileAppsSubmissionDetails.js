@@ -25,32 +25,32 @@
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.MobileAppsSubmission = factory(root.Flipdish.ApiClient);
+    root.Flipdish.MobileAppsSubmissionDetails = factory(root.Flipdish.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
 
   /**
-   * The MobileAppsSubmission model module.
-   * @module model/MobileAppsSubmission
+   * The MobileAppsSubmissionDetails model module.
+   * @module model/MobileAppsSubmissionDetails
    * @version 1.0.0
    */
 
   /**
-   * Constructs a new <code>MobileAppsSubmission</code>.
+   * Constructs a new <code>MobileAppsSubmissionDetails</code>.
    * Mobile Apps form submission
-   * @alias module:model/MobileAppsSubmission
+   * @alias module:model/MobileAppsSubmissionDetails
    * @class
    */
   var exports = function() {
   };
 
   /**
-   * Constructs a <code>MobileAppsSubmission</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>MobileAppsSubmissionDetails</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/MobileAppsSubmission} obj Optional instance to populate.
-   * @return {module:model/MobileAppsSubmission} The populated <code>MobileAppsSubmission</code> instance.
+   * @param {module:model/MobileAppsSubmissionDetails} obj Optional instance to populate.
+   * @return {module:model/MobileAppsSubmissionDetails} The populated <code>MobileAppsSubmissionDetails</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
@@ -63,6 +63,8 @@
         obj.AppShortDescription = ApiClient.convertToType(data['AppShortDescription'], 'String');
       if (data.hasOwnProperty('Keywords'))
         obj.Keywords = ApiClient.convertToType(data['Keywords'], ['String']);
+      if (data.hasOwnProperty('AppLogoUrl'))
+        obj.AppLogoUrl = ApiClient.convertToType(data['AppLogoUrl'], 'String');
       if (data.hasOwnProperty('AutoPublish'))
         obj.AutoPublish = ApiClient.convertToType(data['AutoPublish'], 'Boolean');
       if (data.hasOwnProperty('Status'))
@@ -96,6 +98,12 @@
   exports.prototype.Keywords = undefined;
 
   /**
+   * Logo URL
+   * @member {String} AppLogoUrl
+   */
+  exports.prototype.AppLogoUrl = undefined;
+
+  /**
    * Publish automatically
    * @member {Boolean} AutoPublish
    */
@@ -103,7 +111,7 @@
 
   /**
    * Mobile App Status
-   * @member {module:model/MobileAppsSubmission.StatusEnum} Status
+   * @member {module:model/MobileAppsSubmissionDetails.StatusEnum} Status
    */
   exports.prototype.Status = undefined;
 

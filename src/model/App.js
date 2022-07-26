@@ -1143,7 +1143,31 @@
      * value: "EditSalesChannels"
      * @const
      */
-    EditSalesChannels: "EditSalesChannels"
+    EditSalesChannels: "EditSalesChannels",
+
+    /**
+     * value: "ViewPayGreenWhiteLabelConfiguration"
+     * @const
+     */
+    ViewPayGreenWhiteLabelConfiguration: "ViewPayGreenWhiteLabelConfiguration",
+
+    /**
+     * value: "CreatePayGreenWhiteLabelConfiguration"
+     * @const
+     */
+    CreatePayGreenWhiteLabelConfiguration: "CreatePayGreenWhiteLabelConfiguration",
+
+    /**
+     * value: "UpdatePayGreenWhiteLabelConfiguration"
+     * @const
+     */
+    UpdatePayGreenWhiteLabelConfiguration: "UpdatePayGreenWhiteLabelConfiguration",
+
+    /**
+     * value: "UpdatePayGreenStoreConfiguration"
+     * @const
+     */
+    UpdatePayGreenStoreConfiguration: "UpdatePayGreenStoreConfiguration"
   };
 
 

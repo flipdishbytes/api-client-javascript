@@ -1,11 +1,11 @@
-# Flipdish.CreatePayGreenConfigurationRequest
+# Flipdish.RestaurantVoucherPayGreenStoreConfiguration
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Name** | **String** |  | [optional] 
+**Active** | **Boolean** |  | [optional] 
 **PayGreenId** | **String** |  | [optional] 
-**PayGreenPrivateKey** | **String** |  | [optional] 
-**AssignedStores** | **[Number]** |  | [optional] 
+**PayGreenConfigurationId** | **Number** |  | [optional] 
 
 

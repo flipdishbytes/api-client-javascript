@@ -25,43 +25,39 @@
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.CreatePayGreenConfigurationRequest = factory(root.Flipdish.ApiClient);
+    root.Flipdish.RestaurantVoucherPayGreenConfigurationSummary = factory(root.Flipdish.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
 
   /**
-   * The CreatePayGreenConfigurationRequest model module.
-   * @module model/CreatePayGreenConfigurationRequest
+   * The RestaurantVoucherPayGreenConfigurationSummary model module.
+   * @module model/RestaurantVoucherPayGreenConfigurationSummary
    * @version 1.0.0
    */
 
   /**
-   * Constructs a new <code>CreatePayGreenConfigurationRequest</code>.
-   * @alias module:model/CreatePayGreenConfigurationRequest
+   * Constructs a new <code>RestaurantVoucherPayGreenConfigurationSummary</code>.
+   * @alias module:model/RestaurantVoucherPayGreenConfigurationSummary
    * @class
    */
   var exports = function() {
   };
 
   /**
-   * Constructs a <code>CreatePayGreenConfigurationRequest</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>RestaurantVoucherPayGreenConfigurationSummary</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/CreatePayGreenConfigurationRequest} obj Optional instance to populate.
-   * @return {module:model/CreatePayGreenConfigurationRequest} The populated <code>CreatePayGreenConfigurationRequest</code> instance.
+   * @param {module:model/RestaurantVoucherPayGreenConfigurationSummary} obj Optional instance to populate.
+   * @return {module:model/RestaurantVoucherPayGreenConfigurationSummary} The populated <code>RestaurantVoucherPayGreenConfigurationSummary</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
       if (data.hasOwnProperty('Name'))
         obj.Name = ApiClient.convertToType(data['Name'], 'String');
-      if (data.hasOwnProperty('PayGreenId'))
-        obj.PayGreenId = ApiClient.convertToType(data['PayGreenId'], 'String');
-      if (data.hasOwnProperty('PayGreenPrivateKey'))
-        obj.PayGreenPrivateKey = ApiClient.convertToType(data['PayGreenPrivateKey'], 'String');
-      if (data.hasOwnProperty('AssignedStores'))
-        obj.AssignedStores = ApiClient.convertToType(data['AssignedStores'], ['Number']);
+      if (data.hasOwnProperty('PayGreenConfigurationId'))
+        obj.PayGreenConfigurationId = ApiClient.convertToType(data['PayGreenConfigurationId'], 'Number');
     }
     return obj;
   }
@@ -72,19 +68,9 @@
   exports.prototype.Name = undefined;
 
   /**
-   * @member {String} PayGreenId
+   * @member {Number} PayGreenConfigurationId
    */
-  exports.prototype.PayGreenId = undefined;
-
-  /**
-   * @member {String} PayGreenPrivateKey
-   */
-  exports.prototype.PayGreenPrivateKey = undefined;
-
-  /**
-   * @member {Array.<Number>} AssignedStores
-   */
-  exports.prototype.AssignedStores = undefined;
+  exports.prototype.PayGreenConfigurationId = undefined;
 
 
   return exports;

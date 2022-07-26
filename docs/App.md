@@ -341,6 +341,14 @@ Name | Type | Description | Notes
 
 * `EditSalesChannels` (value: `"EditSalesChannels"`)
 
+* `ViewPayGreenWhiteLabelConfiguration` (value: `"ViewPayGreenWhiteLabelConfiguration"`)
+
+* `CreatePayGreenWhiteLabelConfiguration` (value: `"CreatePayGreenWhiteLabelConfiguration"`)
+
+* `UpdatePayGreenWhiteLabelConfiguration` (value: `"UpdatePayGreenWhiteLabelConfiguration"`)
+
+* `UpdatePayGreenStoreConfiguration` (value: `"UpdatePayGreenStoreConfiguration"`)
+
 
 
 
