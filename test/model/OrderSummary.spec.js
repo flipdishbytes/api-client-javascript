@@ -190,6 +190,12 @@
         // expect(instance.ChannelOrderDisplayId).to.be(expectedValueLiteral);
       });
 
+      it('should have the property OrderDropOffLocation (base name: "OrderDropOffLocation")', function() {
+        // TODO: update the code to test the property OrderDropOffLocation
+        expect(instance).to.have.property('OrderDropOffLocation');
+        // expect(instance.OrderDropOffLocation).to.be(expectedValueLiteral);
+      });
+
     });
   });
 
