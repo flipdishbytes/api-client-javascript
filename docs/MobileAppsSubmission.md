@@ -3,9 +3,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**AppName** | **String** | App Name | [optional] 
-**AppDescription** | **String** | App Description | [optional] 
-**AppShortDescription** | **String** | App Description | [optional] 
+**AppName** | **String** | App Name | 
+**AppDescription** | **String** | App Description | 
+**AppShortDescription** | **String** | App Description | 
 **Keywords** | **[String]** | Keywords | [optional] 
 **AutoPublish** | **Boolean** | Publish automatically | [optional] 
 **Status** | **String** | Mobile App Status | [optional] 

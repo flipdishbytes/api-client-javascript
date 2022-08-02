@@ -41,8 +41,14 @@
    * Mobile Apps form submission
    * @alias module:model/MobileAppsSubmission
    * @class
+   * @param AppName {String} App Name
+   * @param AppDescription {String} App Description
+   * @param AppShortDescription {String} App Description
    */
-  var exports = function() {
+  var exports = function(AppName, AppDescription, AppShortDescription) {
+    this.AppName = AppName;
+    this.AppDescription = AppDescription;
+    this.AppShortDescription = AppShortDescription;
   };
 
   /**
