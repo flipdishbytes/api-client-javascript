@@ -63,6 +63,8 @@
         obj.AllowCustomTips = ApiClient.convertToType(data['AllowCustomTips'], 'Boolean');
       if (data.hasOwnProperty('AllowRoundUp'))
         obj.AllowRoundUp = ApiClient.convertToType(data['AllowRoundUp'], 'Boolean');
+      if (data.hasOwnProperty('AllowEmojis'))
+        obj.AllowEmojis = ApiClient.convertToType(data['AllowEmojis'], 'Boolean');
       if (data.hasOwnProperty('Percentages'))
         obj.Percentages = ApiClient.convertToType(data['Percentages'], ['Number']);
       if (data.hasOwnProperty('DefaultPercentage'))
@@ -94,6 +96,12 @@
    * @member {Boolean} AllowRoundUp
    */
   exports.prototype.AllowRoundUp = undefined;
+
+  /**
+   * Are emojis allowed?
+   * @member {Boolean} AllowEmojis
+   */
+  exports.prototype.AllowEmojis = undefined;
 
   /**
    * Ordered list of tip breakpoints (smallest -&gt; largest)

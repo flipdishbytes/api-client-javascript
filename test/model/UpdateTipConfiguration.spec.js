@@ -58,6 +58,12 @@
         // expect(instance.AllowRoundUp).to.be(expectedValueLiteral);
       });
 
+      it('should have the property AllowEmojis (base name: "AllowEmojis")', function() {
+        // TODO: update the code to test the property AllowEmojis
+        expect(instance).to.have.property('AllowEmojis');
+        // expect(instance.AllowEmojis).to.be(expectedValueLiteral);
+      });
+
       it('should have the property Percentages (base name: "Percentages")', function() {
         // TODO: update the code to test the property Percentages
         expect(instance).to.have.property('Percentages');
