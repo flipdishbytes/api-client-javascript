@@ -70,6 +70,12 @@
         // expect(instance.StoreIds).to.be(expectedValueLiteral);
       });
 
+      it('should have the property Name (base name: "Name")', function() {
+        // TODO: update the code to test the property Name
+        expect(instance).to.have.property('Name');
+        // expect(instance.Name).to.be(expectedValueLiteral);
+      });
+
     });
   });
 

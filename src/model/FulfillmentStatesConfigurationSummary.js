@@ -61,6 +61,8 @@
         obj.AppId = ApiClient.convertToType(data['AppId'], 'String');
       if (data.hasOwnProperty('ConfigurationUid'))
         obj.ConfigurationUid = ApiClient.convertToType(data['ConfigurationUid'], 'String');
+      if (data.hasOwnProperty('Name'))
+        obj.Name = ApiClient.convertToType(data['Name'], 'String');
       if (data.hasOwnProperty('StoreSelectorType'))
         obj.StoreSelectorType = ApiClient.convertToType(data['StoreSelectorType'], 'String');
       if (data.hasOwnProperty('Stores'))
@@ -80,6 +82,12 @@
    * @member {String} ConfigurationUid
    */
   exports.prototype.ConfigurationUid = undefined;
+
+  /**
+   * Name
+   * @member {String} Name
+   */
+  exports.prototype.Name = undefined;
 
   /**
    * Store selector type

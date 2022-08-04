@@ -61,6 +61,8 @@
         obj.StoreSelectorType = ApiClient.convertToType(data['StoreSelectorType'], 'String');
       if (data.hasOwnProperty('States'))
         obj.States = ApiClient.convertToType(data['States'], [FulfillmentStatusConfigurationItem]);
+      if (data.hasOwnProperty('Name'))
+        obj.Name = ApiClient.convertToType(data['Name'], 'String');
     }
     return obj;
   }
@@ -82,6 +84,12 @@
    * @member {Array.<module:model/FulfillmentStatusConfigurationItem>} States
    */
   exports.prototype.States = undefined;
+
+  /**
+   * Name
+   * @member {String} Name
+   */
+  exports.prototype.Name = undefined;
 
 
 

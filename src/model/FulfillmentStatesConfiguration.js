@@ -65,6 +65,8 @@
         obj.StoreSelectorType = ApiClient.convertToType(data['StoreSelectorType'], 'String');
       if (data.hasOwnProperty('StoreIds'))
         obj.StoreIds = ApiClient.convertToType(data['StoreIds'], ['Number']);
+      if (data.hasOwnProperty('Name'))
+        obj.Name = ApiClient.convertToType(data['Name'], 'String');
     }
     return obj;
   }
@@ -98,6 +100,12 @@
    * @member {Array.<Number>} StoreIds
    */
   exports.prototype.StoreIds = undefined;
+
+  /**
+   * Name
+   * @member {String} Name
+   */
+  exports.prototype.Name = undefined;
 
 
 

@@ -30,32 +30,14 @@
   var instance;
 
   describe('(package)', function() {
-    describe('UpdateFulfillmentStatesConfiguration', function() {
+    describe('FulfillmentStatesConfigurationCreateBase', function() {
       beforeEach(function() {
-        instance = new Flipdish.UpdateFulfillmentStatesConfiguration();
+        instance = new Flipdish.FulfillmentStatesConfigurationCreateBase();
       });
 
-      it('should create an instance of UpdateFulfillmentStatesConfiguration', function() {
-        // TODO: update the code to test UpdateFulfillmentStatesConfiguration
-        expect(instance).to.be.a(Flipdish.UpdateFulfillmentStatesConfiguration);
-      });
-
-      it('should have the property StoreIds (base name: "StoreIds")', function() {
-        // TODO: update the code to test the property StoreIds
-        expect(instance).to.have.property('StoreIds');
-        // expect(instance.StoreIds).to.be(expectedValueLiteral);
-      });
-
-      it('should have the property StoreSelectorType (base name: "StoreSelectorType")', function() {
-        // TODO: update the code to test the property StoreSelectorType
-        expect(instance).to.have.property('StoreSelectorType');
-        // expect(instance.StoreSelectorType).to.be(expectedValueLiteral);
-      });
-
-      it('should have the property States (base name: "States")', function() {
-        // TODO: update the code to test the property States
-        expect(instance).to.have.property('States');
-        // expect(instance.States).to.be(expectedValueLiteral);
+      it('should create an instance of FulfillmentStatesConfigurationCreateBase', function() {
+        // TODO: update the code to test FulfillmentStatesConfigurationCreateBase
+        expect(instance).to.be.a(Flipdish.FulfillmentStatesConfigurationCreateBase);
       });
 
       it('should have the property Name (base name: "Name")', function() {
