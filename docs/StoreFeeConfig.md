@@ -1,0 +1,42 @@
+# Flipdish.StoreFeeConfig
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**FeeConfigId** | **Number** |  | [optional] 
+**StoreId** | **Number** |  | [optional] 
+**StartTime** | **Date** |  | [optional] 
+**PercentFeeCardOrders** | **Number** |  | [optional] 
+**PercentFeeCashOrders** | **Number** |  | [optional] 
+**PercentFeeCardOrdersWeb** | **Number** |  | [optional] 
+**PercentFeeCashOrdersWeb** | **Number** |  | [optional] 
+**PercentFeeCardOrdersKiosk** | **Number** |  | [optional] 
+**PercentFeeCashOrdersKiosk** | **Number** |  | [optional] 
+**FixedFeeCardOrdersKiosk** | **Number** |  | [optional] 
+**FixedFeeCashOrdersKiosk** | **Number** |  | [optional] 
+**PercentFeeCardOrdersKioskChargedToCustomerIncludingVat** | **Number** |  | [optional] 
+**FixedFeeCardOrdersKioskChargedToCustomerIncludingVat** | **Number** |  | [optional] 
+**PercentFeeCashOrdersKioskChargedToCustomerIncludingVat** | **Number** |  | [optional] 
+**FixedFeeCashOrdersKioskChargedToCustomerIncludingVat** | **Number** |  | [optional] 
+**FixedFeeCardOrders** | **Number** |  | [optional] 
+**FixedFeeCashOrders** | **Number** |  | [optional] 
+**PercentFeeCardOrdersChargedToCustomerIncludingVat** | **Number** |  | [optional] 
+**FixedFeeCardOrdersChargedToCustomerIncludingVat** | **Number** |  | [optional] 
+**PercentFeeCashOrdersChargedToCustomerIncludingVat** | **Number** |  | [optional] 
+**FixedFeeCashOrdersChargedToCustomerIncludingVat** | **Number** |  | [optional] 
+**PercentFeeTips** | **Number** | Gets or sets the percent fee tips. | [optional] 
+**TaxRatePercent** | **Number** | Gets or sets the tax rate percent. | [optional] 
+**PercentFeeCardOrdersLocationService** | **Number** | Gets or sets the percent fee card orders location service. | [optional] 
+**PercentFeeCashOrdersLocationService** | **Number** | Gets or sets the percent fee cash orders location service. | [optional] 
+**FixedFeeCardOrdersLocationService** | **Number** | Gets or sets the fixed fee card orders location service. | [optional] 
+**FixedFeeCashOrdersLocationService** | **Number** | Gets or sets the fixed fee cash orders location service. | [optional] 
+**PercentFeeCardOrdersLocationServiceChargedToCustomerIncludingVat** | **Number** | Gets or sets the percent fee card orders location service charged to customer including vat. | [optional] 
+**PercentFeeCashOrdersLocationServiceChargedToCustomerIncludingVat** | **Number** | Gets or sets the percent fee cash orders location service charged to customer including vat. | [optional] 
+**FixedFeeCardOrdersLocationServiceChargedToCustomerIncludingVat** | **Number** | Gets or sets the fixed fee card orders location service charged to customer including vat. | [optional] 
+**FixedFeeCashOrdersLocationServiceChargedToCustomerIncludingVat** | **Number** | Gets or sets the fixed fee cash orders location service charged to customer including vat. | [optional] 
+**PercentFeeCardOrdersIngest** | **Number** | Gets or sets the percent fee card orders ingest. | [optional] 
+**PercentFeeCashOrdersIngest** | **Number** | Gets or sets the percent fee cash orders ingest. | [optional] 
+**FixedFeeCardOrdersIngest** | **Number** | Gets or sets the fixed fee card orders ingest. | [optional] 
+**FixedFeeCashOrdersIngest** | **Number** | Gets or sets the fixed fee cash orders ingest. | [optional] 
+
+
