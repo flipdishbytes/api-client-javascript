@@ -634,6 +634,12 @@
         // expect(instance.KioskBluetoothTerminalUnpairedEvent).to.be(expectedValueLiteral);
       });
 
+      it('should have the property KioskTerminalActionStateChangedEvent (base name: "KioskTerminalActionStateChangedEvent")', function() {
+        // TODO: update the code to test the property KioskTerminalActionStateChangedEvent
+        expect(instance).to.have.property('KioskTerminalActionStateChangedEvent');
+        // expect(instance.KioskTerminalActionStateChangedEvent).to.be(expectedValueLiteral);
+      });
+
       it('should have the property KioskBluetoothTerminalUpdatedEvent (base name: "KioskBluetoothTerminalUpdatedEvent")', function() {
         // TODO: update the code to test the property KioskBluetoothTerminalUpdatedEvent
         expect(instance).to.have.property('KioskBluetoothTerminalUpdatedEvent');

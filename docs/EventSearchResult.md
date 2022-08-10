@@ -102,6 +102,7 @@ Name | Type | Description | Notes
 **KioskBluetoothPairingModeEvent** | [**[KioskBluetoothPairingModeEvent]**](KioskBluetoothPairingModeEvent.md) | Bluetooth Pairing Mode initiated | [optional] 
 **KioskBluetoothUnpairingModeEvent** | [**[KioskBluetoothUnpairingModeEvent]**](KioskBluetoothUnpairingModeEvent.md) | Bluetooth Unpairing Mode initiated | [optional] 
 **KioskBluetoothTerminalUnpairedEvent** | [**[KioskBluetoothTerminalUnpairedEvent]**](KioskBluetoothTerminalUnpairedEvent.md) | Bluetooth Terminal Unpaired with Kiosk | [optional] 
+**KioskTerminalActionStateChangedEvent** | [**[KioskTerminalActionStateChangedEvent]**](KioskTerminalActionStateChangedEvent.md) | Terminal actionstate change | [optional] 
 **KioskBluetoothTerminalUpdatedEvent** | [**[KioskBluetoothTerminalUpdatedEvent]**](KioskBluetoothTerminalUpdatedEvent.md) | Bluetooth Terminal Updated | [optional] 
 **KioskBluetoothTerminalInitiateUpdateCheckEvent** | [**[KioskBluetoothTerminalInitiateUpdateCheckEvent]**](KioskBluetoothTerminalInitiateUpdateCheckEvent.md) | Trigger bluetooth payment terminal update checker | [optional] 
 **KioskBluetoothInstallUpdateInitiateEvent** | [**[KioskBluetoothInstallUpdateInitiateEvent]**](KioskBluetoothInstallUpdateInitiateEvent.md) | Bluetooth Terminal Initiate Update | [optional] 
