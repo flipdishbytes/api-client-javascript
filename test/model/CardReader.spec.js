@@ -82,6 +82,12 @@
         // expect(instance.Deleted).to.be(expectedValueLiteral);
       });
 
+      it('should have the property Action (base name: "Action")', function() {
+        // TODO: update the code to test the property Action
+        expect(instance).to.have.property('Action');
+        // expect(instance.Action).to.be(expectedValueLiteral);
+      });
+
     });
   });
 

@@ -16,18 +16,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient'], factory);
+    define(['ApiClient', 'model/ReaderActionStateInfo'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'));
+    module.exports = factory(require('../ApiClient'), require('./ReaderActionStateInfo'));
   } else {
     // Browser globals (root is window)
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.CardReader = factory(root.Flipdish.ApiClient);
+    root.Flipdish.CardReader = factory(root.Flipdish.ApiClient, root.Flipdish.ReaderActionStateInfo);
   }
-}(this, function(ApiClient) {
+}(this, function(ApiClient, ReaderActionStateInfo) {
   'use strict';
 
   /**
@@ -69,6 +69,8 @@
         obj.DeviceType = ApiClient.convertToType(data['DeviceType'], 'String');
       if (data.hasOwnProperty('Deleted'))
         obj.Deleted = ApiClient.convertToType(data['Deleted'], 'Boolean');
+      if (data.hasOwnProperty('Action'))
+        obj.Action = ReaderActionStateInfo.constructFromObject(data['Action']);
     }
     return obj;
   }
@@ -114,6 +116,12 @@
    * @member {Boolean} Deleted
    */
   exports.prototype.Deleted = undefined;
+
+  /**
+   * Action status
+   * @member {module:model/ReaderActionStateInfo} Action
+   */
+  exports.prototype.Action = undefined;
 
 
   return exports;
