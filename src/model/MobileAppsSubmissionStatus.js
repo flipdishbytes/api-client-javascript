@@ -55,11 +55,51 @@
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
+      if (data.hasOwnProperty('MobileAppsSubmissionStatusId'))
+        obj.MobileAppsSubmissionStatusId = ApiClient.convertToType(data['MobileAppsSubmissionStatusId'], 'Number');
+      if (data.hasOwnProperty('MobileAppsSubmissionId'))
+        obj.MobileAppsSubmissionId = ApiClient.convertToType(data['MobileAppsSubmissionId'], 'Number');
+      if (data.hasOwnProperty('Type'))
+        obj.Type = ApiClient.convertToType(data['Type'], 'String');
+      if (data.hasOwnProperty('AppStatus'))
+        obj.AppStatus = ApiClient.convertToType(data['AppStatus'], 'String');
       if (data.hasOwnProperty('Status'))
         obj.Status = ApiClient.convertToType(data['Status'], 'String');
+      if (data.hasOwnProperty('LastUpdateStatusTime'))
+        obj.LastUpdateStatusTime = ApiClient.convertToType(data['LastUpdateStatusTime'], 'Date');
+      if (data.hasOwnProperty('CreateTime'))
+        obj.CreateTime = ApiClient.convertToType(data['CreateTime'], 'Date');
+      if (data.hasOwnProperty('UpdateTime'))
+        obj.UpdateTime = ApiClient.convertToType(data['UpdateTime'], 'Date');
+      if (data.hasOwnProperty('Notes'))
+        obj.Notes = ApiClient.convertToType(data['Notes'], 'String');
     }
     return obj;
   }
+
+  /**
+   * Mobile Apps Submission Status Id
+   * @member {Number} MobileAppsSubmissionStatusId
+   */
+  exports.prototype.MobileAppsSubmissionStatusId = undefined;
+
+  /**
+   * Mobile Apps Submission Id
+   * @member {Number} MobileAppsSubmissionId
+   */
+  exports.prototype.MobileAppsSubmissionId = undefined;
+
+  /**
+   * Mobile Type
+   * @member {module:model/MobileAppsSubmissionStatus.TypeEnum} Type
+   */
+  exports.prototype.Type = undefined;
+
+  /**
+   * Mobile App Status
+   * @member {module:model/MobileAppsSubmissionStatus.AppStatusEnum} AppStatus
+   */
+  exports.prototype.AppStatus = undefined;
 
   /**
    * Mobile App Status
@@ -67,6 +107,76 @@
    */
   exports.prototype.Status = undefined;
 
+  /**
+   * Mobile LastUpdateStatusTime
+   * @member {Date} LastUpdateStatusTime
+   */
+  exports.prototype.LastUpdateStatusTime = undefined;
+
+  /**
+   * Mobile CreateTime
+   * @member {Date} CreateTime
+   */
+  exports.prototype.CreateTime = undefined;
+
+  /**
+   * Mobile UpdateTime
+   * @member {Date} UpdateTime
+   */
+  exports.prototype.UpdateTime = undefined;
+
+  /**
+   * Mobile Notes
+   * @member {String} Notes
+   */
+  exports.prototype.Notes = undefined;
+
+
+
+  /**
+   * Allowed values for the <code>Type</code> property.
+   * @enum {String}
+   * @readonly
+   */
+  exports.TypeEnum = {
+    /**
+     * value: "Android"
+     * @const
+     */
+    Android: "Android",
+
+    /**
+     * value: "IOS"
+     * @const
+     */
+    IOS: "IOS"
+  };
+
+
+  /**
+   * Allowed values for the <code>AppStatus</code> property.
+   * @enum {String}
+   * @readonly
+   */
+  exports.AppStatusEnum = {
+    /**
+     * value: "None"
+     * @const
+     */
+    None: "None",
+
+    /**
+     * value: "Published"
+     * @const
+     */
+    Published: "Published",
+
+    /**
+     * value: "Unpublished"
+     * @const
+     */
+    Unpublished: "Unpublished"
+  };
 
 
   /**

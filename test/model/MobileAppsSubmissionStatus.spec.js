@@ -40,10 +40,58 @@
         expect(instance).to.be.a(Flipdish.MobileAppsSubmissionStatus);
       });
 
+      it('should have the property MobileAppsSubmissionStatusId (base name: "MobileAppsSubmissionStatusId")', function() {
+        // TODO: update the code to test the property MobileAppsSubmissionStatusId
+        expect(instance).to.have.property('MobileAppsSubmissionStatusId');
+        // expect(instance.MobileAppsSubmissionStatusId).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property MobileAppsSubmissionId (base name: "MobileAppsSubmissionId")', function() {
+        // TODO: update the code to test the property MobileAppsSubmissionId
+        expect(instance).to.have.property('MobileAppsSubmissionId');
+        // expect(instance.MobileAppsSubmissionId).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property Type (base name: "Type")', function() {
+        // TODO: update the code to test the property Type
+        expect(instance).to.have.property('Type');
+        // expect(instance.Type).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property AppStatus (base name: "AppStatus")', function() {
+        // TODO: update the code to test the property AppStatus
+        expect(instance).to.have.property('AppStatus');
+        // expect(instance.AppStatus).to.be(expectedValueLiteral);
+      });
+
       it('should have the property Status (base name: "Status")', function() {
         // TODO: update the code to test the property Status
         expect(instance).to.have.property('Status');
         // expect(instance.Status).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property LastUpdateStatusTime (base name: "LastUpdateStatusTime")', function() {
+        // TODO: update the code to test the property LastUpdateStatusTime
+        expect(instance).to.have.property('LastUpdateStatusTime');
+        // expect(instance.LastUpdateStatusTime).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property CreateTime (base name: "CreateTime")', function() {
+        // TODO: update the code to test the property CreateTime
+        expect(instance).to.have.property('CreateTime');
+        // expect(instance.CreateTime).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property UpdateTime (base name: "UpdateTime")', function() {
+        // TODO: update the code to test the property UpdateTime
+        expect(instance).to.have.property('UpdateTime');
+        // expect(instance.UpdateTime).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property Notes (base name: "Notes")', function() {
+        // TODO: update the code to test the property Notes
+        expect(instance).to.have.property('Notes');
+        // expect(instance.Notes).to.be(expectedValueLiteral);
       });
 
     });

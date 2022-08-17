@@ -16,18 +16,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient'], factory);
+    define(['ApiClient', 'model/MobileAppsSubmissionStatus'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'));
+    module.exports = factory(require('../ApiClient'), require('./MobileAppsSubmissionStatus'));
   } else {
     // Browser globals (root is window)
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.MobileAppsSubmissionDetails = factory(root.Flipdish.ApiClient);
+    root.Flipdish.MobileAppsSubmissionDetails = factory(root.Flipdish.ApiClient, root.Flipdish.MobileAppsSubmissionStatus);
   }
-}(this, function(ApiClient) {
+}(this, function(ApiClient, MobileAppsSubmissionStatus) {
   'use strict';
 
   /**
@@ -68,7 +68,7 @@
       if (data.hasOwnProperty('AutoPublish'))
         obj.AutoPublish = ApiClient.convertToType(data['AutoPublish'], 'Boolean');
       if (data.hasOwnProperty('Status'))
-        obj.Status = ApiClient.convertToType(data['Status'], 'String');
+        obj.Status = ApiClient.convertToType(data['Status'], [MobileAppsSubmissionStatus]);
     }
     return obj;
   }
@@ -111,54 +111,10 @@
 
   /**
    * Mobile App Status
-   * @member {module:model/MobileAppsSubmissionDetails.StatusEnum} Status
+   * @member {Array.<module:model/MobileAppsSubmissionStatus>} Status
    */
   exports.prototype.Status = undefined;
 
-
-
-  /**
-   * Allowed values for the <code>Status</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.StatusEnum = {
-    /**
-     * value: "None"
-     * @const
-     */
-    None: "None",
-
-    /**
-     * value: "InProgress"
-     * @const
-     */
-    InProgress: "InProgress",
-
-    /**
-     * value: "Submitted"
-     * @const
-     */
-    Submitted: "Submitted",
-
-    /**
-     * value: "AppStoreReview"
-     * @const
-     */
-    AppStoreReview: "AppStoreReview",
-
-    /**
-     * value: "Sucessfull"
-     * @const
-     */
-    Sucessfull: "Sucessfull",
-
-    /**
-     * value: "Unsuccesful"
-     * @const
-     */
-    Unsuccesful: "Unsuccesful"
-  };
 
   return exports;
 

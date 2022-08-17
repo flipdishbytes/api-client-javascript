@@ -9,25 +9,6 @@ Name | Type | Description | Notes
 **Keywords** | **[String]** | Keywords | [optional] 
 **AppLogoUrl** | **String** | Logo URL | [optional] 
 **AutoPublish** | **Boolean** | Publish automatically | [optional] 
-**Status** | **String** | Mobile App Status | [optional] 
-
-
-<a name="StatusEnum"></a>
-## Enum: StatusEnum
-
-
-* `None` (value: `"None"`)
-
-* `InProgress` (value: `"InProgress"`)
-
-* `Submitted` (value: `"Submitted"`)
-
-* `AppStoreReview` (value: `"AppStoreReview"`)
-
-* `Sucessfull` (value: `"Sucessfull"`)
-
-* `Unsuccesful` (value: `"Unsuccesful"`)
-
-
+**Status** | [**[MobileAppsSubmissionStatus]**](MobileAppsSubmissionStatus.md) | Mobile App Status | [optional] 
 
 
