@@ -71,8 +71,6 @@
         obj.Keywords = ApiClient.convertToType(data['Keywords'], ['String']);
       if (data.hasOwnProperty('AutoPublish'))
         obj.AutoPublish = ApiClient.convertToType(data['AutoPublish'], 'Boolean');
-      if (data.hasOwnProperty('Status'))
-        obj.Status = ApiClient.convertToType(data['Status'], 'String');
     }
     return obj;
   }
@@ -107,56 +105,6 @@
    */
   exports.prototype.AutoPublish = undefined;
 
-  /**
-   * Mobile App Status
-   * @member {module:model/MobileAppsSubmission.StatusEnum} Status
-   */
-  exports.prototype.Status = undefined;
-
-
-
-  /**
-   * Allowed values for the <code>Status</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.StatusEnum = {
-    /**
-     * value: "None"
-     * @const
-     */
-    None: "None",
-
-    /**
-     * value: "InProgress"
-     * @const
-     */
-    InProgress: "InProgress",
-
-    /**
-     * value: "Submitted"
-     * @const
-     */
-    Submitted: "Submitted",
-
-    /**
-     * value: "AppStoreReview"
-     * @const
-     */
-    AppStoreReview: "AppStoreReview",
-
-    /**
-     * value: "Sucessfull"
-     * @const
-     */
-    Sucessfull: "Sucessfull",
-
-    /**
-     * value: "Unsuccesful"
-     * @const
-     */
-    Unsuccesful: "Unsuccesful"
-  };
 
   return exports;
 

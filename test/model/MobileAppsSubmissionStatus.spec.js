@@ -64,10 +64,10 @@
         // expect(instance.AppStatus).to.be(expectedValueLiteral);
       });
 
-      it('should have the property Status (base name: "Status")', function() {
-        // TODO: update the code to test the property Status
-        expect(instance).to.have.property('Status');
-        // expect(instance.Status).to.be(expectedValueLiteral);
+      it('should have the property UpdateStatus (base name: "UpdateStatus")', function() {
+        // TODO: update the code to test the property UpdateStatus
+        expect(instance).to.have.property('UpdateStatus');
+        // expect(instance.UpdateStatus).to.be(expectedValueLiteral);
       });
 
       it('should have the property LastUpdateStatusTime (base name: "LastUpdateStatusTime")', function() {

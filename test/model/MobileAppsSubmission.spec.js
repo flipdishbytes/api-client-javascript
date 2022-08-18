@@ -70,12 +70,6 @@
         // expect(instance.AutoPublish).to.be(expectedValueLiteral);
       });
 
-      it('should have the property Status (base name: "Status")', function() {
-        // TODO: update the code to test the property Status
-        expect(instance).to.have.property('Status');
-        // expect(instance.Status).to.be(expectedValueLiteral);
-      });
-
     });
   });
 

@@ -63,8 +63,8 @@
         obj.Type = ApiClient.convertToType(data['Type'], 'String');
       if (data.hasOwnProperty('AppStatus'))
         obj.AppStatus = ApiClient.convertToType(data['AppStatus'], 'String');
-      if (data.hasOwnProperty('Status'))
-        obj.Status = ApiClient.convertToType(data['Status'], 'String');
+      if (data.hasOwnProperty('UpdateStatus'))
+        obj.UpdateStatus = ApiClient.convertToType(data['UpdateStatus'], 'String');
       if (data.hasOwnProperty('LastUpdateStatusTime'))
         obj.LastUpdateStatusTime = ApiClient.convertToType(data['LastUpdateStatusTime'], 'Date');
       if (data.hasOwnProperty('CreateTime'))
@@ -103,9 +103,9 @@
 
   /**
    * Mobile App Status
-   * @member {module:model/MobileAppsSubmissionStatus.StatusEnum} Status
+   * @member {module:model/MobileAppsSubmissionStatus.UpdateStatusEnum} UpdateStatus
    */
-  exports.prototype.Status = undefined;
+  exports.prototype.UpdateStatus = undefined;
 
   /**
    * Mobile LastUpdateStatusTime
@@ -180,22 +180,16 @@
 
 
   /**
-   * Allowed values for the <code>Status</code> property.
+   * Allowed values for the <code>UpdateStatus</code> property.
    * @enum {String}
    * @readonly
    */
-  exports.StatusEnum = {
+  exports.UpdateStatusEnum = {
     /**
      * value: "None"
      * @const
      */
     None: "None",
-
-    /**
-     * value: "InProgress"
-     * @const
-     */
-    InProgress: "InProgress",
 
     /**
      * value: "Submitted"
@@ -204,22 +198,28 @@
     Submitted: "Submitted",
 
     /**
-     * value: "AppStoreReview"
+     * value: "InReview"
      * @const
      */
-    AppStoreReview: "AppStoreReview",
+    InReview: "InReview",
 
     /**
-     * value: "Sucessfull"
+     * value: "Rejected"
      * @const
      */
-    Sucessfull: "Sucessfull",
+    Rejected: "Rejected",
 
     /**
-     * value: "Unsuccesful"
+     * value: "Approved"
      * @const
      */
-    Unsuccesful: "Unsuccesful"
+    Approved: "Approved",
+
+    /**
+     * value: "Published"
+     * @const
+     */
+    Published: "Published"
   };
 
   return exports;

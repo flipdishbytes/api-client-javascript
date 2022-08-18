@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **MobileAppsSubmissionId** | **Number** | Mobile Apps Submission Id | [optional] 
 **Type** | **String** | Mobile Type | [optional] 
 **AppStatus** | **String** | Mobile App Status | [optional] 
-**Status** | **String** | Mobile App Status | [optional] 
+**UpdateStatus** | **String** | Mobile App Status | [optional] 
 **LastUpdateStatusTime** | **Date** | Mobile LastUpdateStatusTime | [optional] 
 **CreateTime** | **Date** | Mobile CreateTime | [optional] 
 **UpdateTime** | **Date** | Mobile UpdateTime | [optional] 
@@ -38,21 +38,21 @@ Name | Type | Description | Notes
 
 
 
-<a name="StatusEnum"></a>
-## Enum: StatusEnum
+<a name="UpdateStatusEnum"></a>
+## Enum: UpdateStatusEnum
 
 
 * `None` (value: `"None"`)
 
-* `InProgress` (value: `"InProgress"`)
-
 * `Submitted` (value: `"Submitted"`)
 
-* `AppStoreReview` (value: `"AppStoreReview"`)
+* `InReview` (value: `"InReview"`)
 
-* `Sucessfull` (value: `"Sucessfull"`)
+* `Rejected` (value: `"Rejected"`)
 
-* `Unsuccesful` (value: `"Unsuccesful"`)
+* `Approved` (value: `"Approved"`)
+
+* `Published` (value: `"Published"`)
 
 
 
