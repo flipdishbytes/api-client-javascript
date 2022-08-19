@@ -58,6 +58,8 @@
         obj.Value = ApiClient.convertToType(data['Value'], Object);
       if (data.hasOwnProperty('Message'))
         obj.Message = ApiClient.convertToType(data['Message'], 'String');
+      if (data.hasOwnProperty('Scopes'))
+        obj.Scopes = ApiClient.convertToType(data['Scopes'], 'String');
     }
     return obj;
   }
@@ -71,6 +73,11 @@
    * @member {String} Message
    */
   exports.prototype.Message = undefined;
+
+  /**
+   * @member {String} Scopes
+   */
+  exports.prototype.Scopes = undefined;
 
 
   return exports;
