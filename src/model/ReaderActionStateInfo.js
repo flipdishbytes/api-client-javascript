@@ -59,6 +59,8 @@
         obj.ActionState = ApiClient.convertToType(data['ActionState'], 'String');
       if (data.hasOwnProperty('FailureCode'))
         obj.FailureCode = ApiClient.convertToType(data['FailureCode'], 'String');
+      if (data.hasOwnProperty('FailureMessage'))
+        obj.FailureMessage = ApiClient.convertToType(data['FailureMessage'], 'String');
       if (data.hasOwnProperty('Type'))
         obj.Type = ApiClient.convertToType(data['Type'], 'String');
     }
@@ -76,6 +78,12 @@
    * @member {String} FailureCode
    */
   exports.prototype.FailureCode = undefined;
+
+  /**
+   * Failure Message
+   * @member {String} FailureMessage
+   */
+  exports.prototype.FailureMessage = undefined;
 
   /**
    * Type

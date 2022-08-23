@@ -70,6 +70,12 @@
         // expect(instance.Created).to.be(expectedValueLiteral);
       });
 
+      it('should have the property LastPaymentError (base name: "LastPaymentError")', function() {
+        // TODO: update the code to test the property LastPaymentError
+        expect(instance).to.have.property('LastPaymentError');
+        // expect(instance.LastPaymentError).to.be(expectedValueLiteral);
+      });
+
     });
   });
 

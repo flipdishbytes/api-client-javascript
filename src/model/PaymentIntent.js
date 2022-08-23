@@ -16,18 +16,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient'], factory);
+    define(['ApiClient', 'model/LastPaymentError'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'));
+    module.exports = factory(require('../ApiClient'), require('./LastPaymentError'));
   } else {
     // Browser globals (root is window)
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.PaymentIntent = factory(root.Flipdish.ApiClient);
+    root.Flipdish.PaymentIntent = factory(root.Flipdish.ApiClient, root.Flipdish.LastPaymentError);
   }
-}(this, function(ApiClient) {
+}(this, function(ApiClient, LastPaymentError) {
   'use strict';
 
   /**
@@ -65,6 +65,8 @@
         obj.Status = ApiClient.convertToType(data['Status'], 'String');
       if (data.hasOwnProperty('Created'))
         obj.Created = ApiClient.convertToType(data['Created'], 'Date');
+      if (data.hasOwnProperty('LastPaymentError'))
+        obj.LastPaymentError = LastPaymentError.constructFromObject(data['LastPaymentError']);
     }
     return obj;
   }
@@ -98,6 +100,12 @@
    * @member {Date} Created
    */
   exports.prototype.Created = undefined;
+
+  /**
+   * Failed payment intent Errors
+   * @member {module:model/LastPaymentError} LastPaymentError
+   */
+  exports.prototype.LastPaymentError = undefined;
 
 
   return exports;

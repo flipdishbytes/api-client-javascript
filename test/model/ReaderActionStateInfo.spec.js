@@ -52,6 +52,12 @@
         // expect(instance.FailureCode).to.be(expectedValueLiteral);
       });
 
+      it('should have the property FailureMessage (base name: "FailureMessage")', function() {
+        // TODO: update the code to test the property FailureMessage
+        expect(instance).to.have.property('FailureMessage');
+        // expect(instance.FailureMessage).to.be(expectedValueLiteral);
+      });
+
       it('should have the property Type (base name: "Type")', function() {
         // TODO: update the code to test the property Type
         expect(instance).to.have.property('Type');
