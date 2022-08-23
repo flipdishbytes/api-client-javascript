@@ -3,6 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**MobileAppsSubmissionId** | **Number** | Mobile Apps Submission Id | [optional] 
 **AppName** | **String** | App Name | [optional] 
 **AppDescription** | **String** | App Description | [optional] 
 **AppShortDescription** | **String** | App Description | [optional] 
