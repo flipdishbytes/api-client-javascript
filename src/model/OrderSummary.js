@@ -521,7 +521,13 @@
      * value: "PayPal"
      * @const
      */
-    PayPal: "PayPal"
+    PayPal: "PayPal",
+
+    /**
+     * value: "PayGreen"
+     * @const
+     */
+    PayGreen: "PayGreen"
   };
 
 

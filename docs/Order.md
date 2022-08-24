@@ -124,6 +124,8 @@ Name | Type | Description | Notes
 
 * `PayPal` (value: `"PayPal"`)
 
+* `PayGreen` (value: `"PayGreen"`)
+
 
 
 
