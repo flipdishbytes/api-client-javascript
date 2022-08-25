@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **PublicDescription** | **String** | A string which could be used in notification templates with a placeholder (SMS, email, push, web page with status) | [optional] 
 **Internal** | **Boolean** | Is internal state (internal states not shown to customers) | [optional] 
 **NextStatuses** | **[String]** | list of statuses that this status can move to (can be back or forth) | [optional] 
-**DefaultNextStatus** | **String** | The default next status (on a dropdown or quick button on terminal or portal) | [optional] 
+**DefaultNextStatus** | [**[NextStatusWithOrderType]**](NextStatusWithOrderType.md) | The default next status (on a dropdown or quick button on terminal or portal) | [optional] 
 **ChangeType** | **String** | How will state change (manually or automated, including timed) | [optional] 
 **IncludeInReports** | **Boolean** | Include in reports | [optional] 
 **IsCustom** | **Boolean** | Is custom state. If not, then it's a system state | [optional] 
@@ -29,6 +29,21 @@ Name | Type | Description | Notes
 * `Automated` (value: `"Automated"`)
 
 * `Integrated` (value: `"Integrated"`)
+
+
+
+
+<a name="[OrderTypesEnum]"></a>
+## Enum: [OrderTypesEnum]
+
+
+* `All` (value: `"All"`)
+
+* `Delivery` (value: `"Delivery"`)
+
+* `Collection` (value: `"Collection"`)
+
+* `DineIn` (value: `"DineIn"`)
 
 
 

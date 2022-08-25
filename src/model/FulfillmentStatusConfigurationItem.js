@@ -16,18 +16,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient'], factory);
+    define(['ApiClient', 'model/NextStatusWithOrderType'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'));
+    module.exports = factory(require('../ApiClient'), require('./NextStatusWithOrderType'));
   } else {
     // Browser globals (root is window)
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.FulfillmentStatusConfigurationItem = factory(root.Flipdish.ApiClient);
+    root.Flipdish.FulfillmentStatusConfigurationItem = factory(root.Flipdish.ApiClient, root.Flipdish.NextStatusWithOrderType);
   }
-}(this, function(ApiClient) {
+}(this, function(ApiClient, NextStatusWithOrderType) {
   'use strict';
 
   /**
@@ -72,7 +72,7 @@
       if (data.hasOwnProperty('NextStatuses'))
         obj.NextStatuses = ApiClient.convertToType(data['NextStatuses'], ['String']);
       if (data.hasOwnProperty('DefaultNextStatus'))
-        obj.DefaultNextStatus = ApiClient.convertToType(data['DefaultNextStatus'], 'String');
+        obj.DefaultNextStatus = ApiClient.convertToType(data['DefaultNextStatus'], [NextStatusWithOrderType]);
       if (data.hasOwnProperty('ChangeType'))
         obj.ChangeType = ApiClient.convertToType(data['ChangeType'], 'String');
       if (data.hasOwnProperty('IncludeInReports'))
@@ -139,7 +139,7 @@
 
   /**
    * The default next status (on a dropdown or quick button on terminal or portal)
-   * @member {String} DefaultNextStatus
+   * @member {Array.<module:model/NextStatusWithOrderType>} DefaultNextStatus
    */
   exports.prototype.DefaultNextStatus = undefined;
 
@@ -163,7 +163,7 @@
 
   /**
    * If empty then applies to all ordertypes, otherwise a list of order types this state applies to
-   * @member {Array.<String>} OrderTypes
+   * @member {Array.<module:model/FulfillmentStatusConfigurationItem.OrderTypesEnum>} OrderTypes
    */
   exports.prototype.OrderTypes = undefined;
 
@@ -204,6 +204,38 @@
      * @const
      */
     Integrated: "Integrated"
+  };
+
+
+  /**
+   * Allowed values for the <code>OrderTypes</code> property.
+   * @enum {String}
+   * @readonly
+   */
+  exports.OrderTypesEnum = {
+    /**
+     * value: "All"
+     * @const
+     */
+    All: "All",
+
+    /**
+     * value: "Delivery"
+     * @const
+     */
+    Delivery: "Delivery",
+
+    /**
+     * value: "Collection"
+     * @const
+     */
+    Collection: "Collection",
+
+    /**
+     * value: "DineIn"
+     * @const
+     */
+    DineIn: "DineIn"
   };
 
   return exports;
