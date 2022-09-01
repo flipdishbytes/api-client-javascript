@@ -23,6 +23,7 @@ Name | Type | Description | Notes
 **ReceiptCode** | **String** | Generated receipt code for an order | [optional] 
 **OrderDropOffLocation** | [**OrderDropOffLocation**](OrderDropOffLocation.md) | DropOffLocation selected for this order | [optional] 
 **FulfillmentStatus** | [**OrderFulfillmentStatusBase**](OrderFulfillmentStatusBase.md) | [BETA - this is a new field in development] Fulfillment status for this order | [optional] 
+**OrderBatchInfo** | [**OrderBatchDetails**](OrderBatchDetails.md) | OrderBatch info. This property is not populated in the API | [optional] 
 **OrderId** | **Number** | Order identifier | [optional] 
 **LocalOrderId** | **String** | Local order Id. This is used for displaying a \"shorter\" order ID for customers (eg. Kiosk orders) | [optional] 
 **DeliveryType** | **String** | Delivery type | [optional] 
