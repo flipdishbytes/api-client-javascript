@@ -40,6 +40,12 @@
         expect(instance).to.be.a(Flipdish.MobileAppsSubmission);
       });
 
+      it('should have the property SubmissionId (base name: "SubmissionId")', function() {
+        // TODO: update the code to test the property SubmissionId
+        expect(instance).to.have.property('SubmissionId');
+        // expect(instance.SubmissionId).to.be(expectedValueLiteral);
+      });
+
       it('should have the property AppName (base name: "AppName")', function() {
         // TODO: update the code to test the property AppName
         expect(instance).to.have.property('AppName');

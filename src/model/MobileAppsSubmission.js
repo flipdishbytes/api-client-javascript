@@ -61,6 +61,8 @@
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
+      if (data.hasOwnProperty('SubmissionId'))
+        obj.SubmissionId = ApiClient.convertToType(data['SubmissionId'], 'Number');
       if (data.hasOwnProperty('AppName'))
         obj.AppName = ApiClient.convertToType(data['AppName'], 'String');
       if (data.hasOwnProperty('AppDescription'))
@@ -74,6 +76,12 @@
     }
     return obj;
   }
+
+  /**
+   * Mobile Apps Submission Id
+   * @member {Number} SubmissionId
+   */
+  exports.prototype.SubmissionId = undefined;
 
   /**
    * App Name
