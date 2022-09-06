@@ -329,6 +329,14 @@ Name | Type | Description | Notes
 
 * `UpdateOnboarding` (value: `"UpdateOnboarding"`)
 
+* `ViewClientDevices` (value: `"ViewClientDevices"`)
+
+* `UpdateClientDevices` (value: `"UpdateClientDevices"`)
+
+* `EnrollClientDevices` (value: `"EnrollClientDevices"`)
+
+* `AssignClientDevices` (value: `"AssignClientDevices"`)
+
 * `CreateAppStoreAppConfiguration` (value: `"CreateAppStoreAppConfiguration"`)
 
 * `ViewAppStoreAppConfiguration` (value: `"ViewAppStoreAppConfiguration"`)

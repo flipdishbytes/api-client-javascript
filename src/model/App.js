@@ -1110,6 +1110,30 @@
     UpdateOnboarding: "UpdateOnboarding",
 
     /**
+     * value: "ViewClientDevices"
+     * @const
+     */
+    ViewClientDevices: "ViewClientDevices",
+
+    /**
+     * value: "UpdateClientDevices"
+     * @const
+     */
+    UpdateClientDevices: "UpdateClientDevices",
+
+    /**
+     * value: "EnrollClientDevices"
+     * @const
+     */
+    EnrollClientDevices: "EnrollClientDevices",
+
+    /**
+     * value: "AssignClientDevices"
+     * @const
+     */
+    AssignClientDevices: "AssignClientDevices",
+
+    /**
      * value: "CreateAppStoreAppConfiguration"
      * @const
      */
