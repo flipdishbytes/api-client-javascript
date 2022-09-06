@@ -289,6 +289,7 @@
           // TODO: uncomment, update parameter values for passwordResetWithToken call
           /*
           var passwordResetModel = new Flipdish.PasswordResetModel();
+          passwordResetModel.TokenId = "";
           passwordResetModel.Email = "";
           passwordResetModel.Password = "";
           passwordResetModel.PasswordConfirmation = "";

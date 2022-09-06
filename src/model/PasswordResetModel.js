@@ -59,6 +59,8 @@
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
+      if (data.hasOwnProperty('TokenId'))
+        obj.TokenId = ApiClient.convertToType(data['TokenId'], 'String');
       if (data.hasOwnProperty('Email'))
         obj.Email = ApiClient.convertToType(data['Email'], 'String');
       if (data.hasOwnProperty('Password'))
@@ -70,6 +72,12 @@
     }
     return obj;
   }
+
+  /**
+   * Token Id
+   * @member {String} TokenId
+   */
+  exports.prototype.TokenId = undefined;
 
   /**
    * Email address

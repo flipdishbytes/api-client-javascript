@@ -40,6 +40,12 @@
         expect(instance).to.be.a(Flipdish.PasswordResetModel);
       });
 
+      it('should have the property TokenId (base name: "TokenId")', function() {
+        // TODO: update the code to test the property TokenId
+        expect(instance).to.have.property('TokenId');
+        // expect(instance.TokenId).to.be(expectedValueLiteral);
+      });
+
       it('should have the property Email (base name: "Email")', function() {
         // TODO: update the code to test the property Email
         expect(instance).to.have.property('Email');
