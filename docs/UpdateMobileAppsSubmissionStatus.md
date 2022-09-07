@@ -15,6 +15,8 @@ Name | Type | Description | Notes
 ## Enum: TypeEnum
 
 
+* `None` (value: `"None"`)
+
 * `Android` (value: `"Android"`)
 
 * `IOS` (value: `"IOS"`)

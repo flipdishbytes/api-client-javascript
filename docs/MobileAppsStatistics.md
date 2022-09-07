@@ -18,6 +18,8 @@ Name | Type | Description | Notes
 ## Enum: PlatformTypeEnum
 
 
+* `None` (value: `"None"`)
+
 * `Android` (value: `"Android"`)
 
 * `IOS` (value: `"IOS"`)

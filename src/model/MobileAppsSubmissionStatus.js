@@ -140,6 +140,12 @@
    */
   exports.TypeEnum = {
     /**
+     * value: "None"
+     * @const
+     */
+    None: "None",
+
+    /**
      * value: "Android"
      * @const
      */
