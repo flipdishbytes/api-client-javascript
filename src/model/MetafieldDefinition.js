@@ -162,6 +162,12 @@
    */
   exports.ValueTypeEnum = {
     /**
+     * value: "Boolean"
+     * @const
+     */
+    _Boolean: "Boolean",
+
+    /**
      * value: "Json"
      * @const
      */

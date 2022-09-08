@@ -30,6 +30,8 @@ Name | Type | Description | Notes
 ## Enum: ValueTypeEnum
 
 
+* `_Boolean` (value: `"Boolean"`)
+
 * `Json` (value: `"Json"`)
 
 * `SingleLineString` (value: `"SingleLineString"`)
