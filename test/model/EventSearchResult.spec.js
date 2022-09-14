@@ -82,6 +82,12 @@
         // expect(instance.OrderDeliveryTrackingStatusUpdatedEvent).to.be(expectedValueLiteral);
       });
 
+      it('should have the property OrderBatchPublishedEvent (base name: "OrderBatchPublishedEvent")', function() {
+        // TODO: update the code to test the property OrderBatchPublishedEvent
+        expect(instance).to.have.property('OrderBatchPublishedEvent');
+        // expect(instance.OrderBatchPublishedEvent).to.be(expectedValueLiteral);
+      });
+
       it('should have the property OrderCreatedEvent (base name: "OrderCreatedEvent")', function() {
         // TODO: update the code to test the property OrderCreatedEvent
         expect(instance).to.have.property('OrderCreatedEvent');
