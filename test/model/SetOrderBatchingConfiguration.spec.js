@@ -46,6 +46,12 @@
         // expect(instance.BatchIntervalInMinutes).to.be(expectedValueLiteral);
       });
 
+      it('should have the property BatchIntervalInSeconds (base name: "BatchIntervalInSeconds")', function() {
+        // TODO: update the code to test the property BatchIntervalInSeconds
+        expect(instance).to.have.property('BatchIntervalInSeconds');
+        // expect(instance.BatchIntervalInSeconds).to.be(expectedValueLiteral);
+      });
+
       it('should have the property Enabled (base name: "Enabled")', function() {
         // TODO: update the code to test the property Enabled
         expect(instance).to.have.property('Enabled');

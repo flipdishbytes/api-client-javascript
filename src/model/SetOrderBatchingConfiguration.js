@@ -57,6 +57,8 @@
       obj = obj || new exports();
       if (data.hasOwnProperty('BatchIntervalInMinutes'))
         obj.BatchIntervalInMinutes = ApiClient.convertToType(data['BatchIntervalInMinutes'], 'Number');
+      if (data.hasOwnProperty('BatchIntervalInSeconds'))
+        obj.BatchIntervalInSeconds = ApiClient.convertToType(data['BatchIntervalInSeconds'], 'Number');
       if (data.hasOwnProperty('Enabled'))
         obj.Enabled = ApiClient.convertToType(data['Enabled'], 'Boolean');
     }
@@ -68,6 +70,12 @@
    * @member {Number} BatchIntervalInMinutes
    */
   exports.prototype.BatchIntervalInMinutes = undefined;
+
+  /**
+   * Batch sending interval in seconds
+   * @member {Number} BatchIntervalInSeconds
+   */
+  exports.prototype.BatchIntervalInSeconds = undefined;
 
   /**
    * OrderBatching is enabled or not
