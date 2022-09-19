@@ -136,5 +136,7 @@ Name | Type | Description | Notes
 **LocationCreatedEvent** | [**[LocationCreatedEvent]**](LocationCreatedEvent.md) | Location created event | [optional] 
 **LocationDeletedEvent** | [**[LocationDeletedEvent]**](LocationDeletedEvent.md) | Location deleted event | [optional] 
 **StoreServiceChargeUpdatedEvent** | [**[StoreServiceChargeUpdatedEvent]**](StoreServiceChargeUpdatedEvent.md) | Service Charge Updated Event | [optional] 
+**MobileAppsSubmissionStatusUpdatedEvent** | [**[MobileAppsSubmissionStatusUpdatedEvent]**](MobileAppsSubmissionStatusUpdatedEvent.md) | Mobile Submission Status Updated Event | [optional] 
+**MobileAppsSubmissionUpdatedEvent** | [**[MobileAppsSubmissionUpdatedEvent]**](MobileAppsSubmissionUpdatedEvent.md) | Mobile Submission Updated Event | [optional] 
 
 

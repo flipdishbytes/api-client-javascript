@@ -1134,6 +1134,12 @@
     AssignClientDevices: "AssignClientDevices",
 
     /**
+     * value: "ViewClientAuditLogs"
+     * @const
+     */
+    ViewClientAuditLogs: "ViewClientAuditLogs",
+
+    /**
      * value: "CreateAppStoreAppConfiguration"
      * @const
      */

@@ -337,6 +337,8 @@ Name | Type | Description | Notes
 
 * `AssignClientDevices` (value: `"AssignClientDevices"`)
 
+* `ViewClientAuditLogs` (value: `"ViewClientAuditLogs"`)
+
 * `CreateAppStoreAppConfiguration` (value: `"CreateAppStoreAppConfiguration"`)
 
 * `ViewAppStoreAppConfiguration` (value: `"ViewAppStoreAppConfiguration"`)

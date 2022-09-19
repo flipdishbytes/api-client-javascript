@@ -838,6 +838,18 @@
         // expect(instance.StoreServiceChargeUpdatedEvent).to.be(expectedValueLiteral);
       });
 
+      it('should have the property MobileAppsSubmissionStatusUpdatedEvent (base name: "MobileAppsSubmissionStatusUpdatedEvent")', function() {
+        // TODO: update the code to test the property MobileAppsSubmissionStatusUpdatedEvent
+        expect(instance).to.have.property('MobileAppsSubmissionStatusUpdatedEvent');
+        // expect(instance.MobileAppsSubmissionStatusUpdatedEvent).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property MobileAppsSubmissionUpdatedEvent (base name: "MobileAppsSubmissionUpdatedEvent")', function() {
+        // TODO: update the code to test the property MobileAppsSubmissionUpdatedEvent
+        expect(instance).to.have.property('MobileAppsSubmissionUpdatedEvent');
+        // expect(instance.MobileAppsSubmissionUpdatedEvent).to.be(expectedValueLiteral);
+      });
+
     });
   });
 
