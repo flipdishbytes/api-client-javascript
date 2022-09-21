@@ -40,12 +40,6 @@
         expect(instance).to.be.a(Flipdish.SetOrderBatchingConfiguration);
       });
 
-      it('should have the property BatchIntervalInMinutes (base name: "BatchIntervalInMinutes")', function() {
-        // TODO: update the code to test the property BatchIntervalInMinutes
-        expect(instance).to.have.property('BatchIntervalInMinutes');
-        // expect(instance.BatchIntervalInMinutes).to.be(expectedValueLiteral);
-      });
-
       it('should have the property BatchIntervalInSeconds (base name: "BatchIntervalInSeconds")', function() {
         // TODO: update the code to test the property BatchIntervalInSeconds
         expect(instance).to.have.property('BatchIntervalInSeconds');

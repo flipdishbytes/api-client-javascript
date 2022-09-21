@@ -55,8 +55,6 @@
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
-      if (data.hasOwnProperty('BatchIntervalInMinutes'))
-        obj.BatchIntervalInMinutes = ApiClient.convertToType(data['BatchIntervalInMinutes'], 'Number');
       if (data.hasOwnProperty('BatchIntervalInSeconds'))
         obj.BatchIntervalInSeconds = ApiClient.convertToType(data['BatchIntervalInSeconds'], 'Number');
       if (data.hasOwnProperty('IsEnabled'))
@@ -64,12 +62,6 @@
     }
     return obj;
   }
-
-  /**
-   * Batch sending interval in minutes
-   * @member {Number} BatchIntervalInMinutes
-   */
-  exports.prototype.BatchIntervalInMinutes = undefined;
 
   /**
    * Batch sending interval in seconds
