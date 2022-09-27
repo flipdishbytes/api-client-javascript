@@ -308,6 +308,25 @@
           done();
         });
       });
+      describe('recaptchaValidate', function() {
+        it('should call recaptchaValidate successfully', function(done) {
+          // TODO: uncomment, update parameter values for recaptchaValidate call
+          /*
+          var token = "token_example";
+
+          instance.recaptchaValidate(token, function(error, data, response) {
+            if (error) {
+              done(error);
+              return;
+            }
+
+            done();
+          });
+          */
+          // TODO: uncomment and complete method invocation above, then delete this line and the next:
+          done();
+        });
+      });
       describe('requestLoginPin', function() {
         it('should call requestLoginPin successfully', function(done) {
           // TODO: uncomment, update parameter values for requestLoginPin call and complete the assertions

@@ -489,6 +489,52 @@
     }
 
     /**
+     * Callback function to receive the result of the recaptchaValidate operation.
+     * @callback module:api/AccountsApi~recaptchaValidateCallback
+     * @param {String} error Error message, if any.
+     * @param data This operation does not return a value.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * Validate recaptcha from flipdish portal
+     * @param {String} token Request token
+     * @param {module:api/AccountsApi~recaptchaValidateCallback} callback The callback function, accepting three arguments: error, data, response
+     */
+    this.recaptchaValidate = function(token, callback) {
+      var postBody = null;
+
+      // verify the required parameter 'token' is set
+      if (token === undefined || token === null) {
+        throw new Error("Missing the required parameter 'token' when calling recaptchaValidate");
+      }
+
+
+      var pathParams = {
+      };
+      var queryParams = {
+        'token': token,
+      };
+      var collectionQueryParams = {
+      };
+      var headerParams = {
+      };
+      var formParams = {
+      };
+
+      var authNames = ['oauth2'];
+      var contentTypes = [];
+      var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
+      var returnType = null;
+
+      return this.apiClient.callApi(
+        '/api/v1.0/accounts/recaptcha', 'POST',
+        pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, callback
+      );
+    }
+
+    /**
      * Callback function to receive the result of the requestLoginPin operation.
      * @callback module:api/AccountsApi~requestLoginPinCallback
      * @param {String} error Error message, if any.
