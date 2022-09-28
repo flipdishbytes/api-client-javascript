@@ -48,6 +48,45 @@
 
 
     /**
+     * Callback function to receive the result of the accountsIsRecaptchaOn operation.
+     * @callback module:api/AccountsApi~accountsIsRecaptchaOnCallback
+     * @param {String} error Error message, if any.
+     * @param data This operation does not return a value.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * [PRIVATE API] Temporary endpoint to return recaptcha FF
+     * @param {module:api/AccountsApi~accountsIsRecaptchaOnCallback} callback The callback function, accepting three arguments: error, data, response
+     */
+    this.accountsIsRecaptchaOn = function(callback) {
+      var postBody = null;
+
+
+      var pathParams = {
+      };
+      var queryParams = {
+      };
+      var collectionQueryParams = {
+      };
+      var headerParams = {
+      };
+      var formParams = {
+      };
+
+      var authNames = ['oauth2'];
+      var contentTypes = [];
+      var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
+      var returnType = null;
+
+      return this.apiClient.callApi(
+        '/api/v1.0/accounts/recaptcha/check', 'GET',
+        pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, callback
+      );
+    }
+
+    /**
      * Callback function to receive the result of the answerSignUpQuestion operation.
      * @callback module:api/AccountsApi~answerSignUpQuestionCallback
      * @param {String} error Error message, if any.

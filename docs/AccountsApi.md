@@ -4,6 +4,7 @@ All URIs are relative to *https://api.flipdish.co*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**accountsIsRecaptchaOn**](AccountsApi.md#accountsIsRecaptchaOn) | **GET** /api/v1.0/accounts/recaptcha/check | [PRIVATE API] Temporary endpoint to return recaptcha FF
 [**answerSignUpQuestion**](AccountsApi.md#answerSignUpQuestion) | **POST** /api/v1.0/accounts/signupstep/{signupStepAction}/answer | Answer a signup question
 [**changePassword**](AccountsApi.md#changePassword) | **PUT** /api/v1.0/accounts/password | Change password
 [**changePasswordWithPin**](AccountsApi.md#changePasswordWithPin) | **PUT** /api/v1.0/accounts/password/pin | Change password
@@ -21,6 +22,49 @@ Method | HTTP request | Description
 [**skipSignupStep**](AccountsApi.md#skipSignupStep) | **POST** /api/v1.0/accounts/signupstep/{signupStepAction}/skip | Skip a signup question
 [**updateAccount**](AccountsApi.md#updateAccount) | **PUT** /api/v1.0/accounts | Update account with name and language
 
+
+<a name="accountsIsRecaptchaOn"></a>
+# **accountsIsRecaptchaOn**
+> accountsIsRecaptchaOn()
+
+[PRIVATE API] Temporary endpoint to return recaptcha FF
+
+### Example
+```javascript
+var Flipdish = require('@flipdish/api-client-javascript');
+var defaultClient = Flipdish.ApiClient.instance;
+
+// Configure OAuth2 access token for authorization: oauth2
+var oauth2 = defaultClient.authentications['oauth2'];
+oauth2.accessToken = 'YOUR ACCESS TOKEN';
+
+var apiInstance = new Flipdish.AccountsApi();
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully.');
+  }
+};
+apiInstance.accountsIsRecaptchaOn(callback);
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+null (empty response body)
+
+### Authorization
+
+[oauth2](../README.md#oauth2)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json, text/json, application/xml, text/xml
 
 <a name="answerSignUpQuestion"></a>
 # **answerSignUpQuestion**
