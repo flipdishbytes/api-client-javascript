@@ -58,6 +58,12 @@
         // expect(instance.StoreId).to.be(expectedValueLiteral);
       });
 
+      it('should have the property OrderIds (base name: "OrderIds")', function() {
+        // TODO: update the code to test the property OrderIds
+        expect(instance).to.have.property('OrderIds');
+        // expect(instance.OrderIds).to.be(expectedValueLiteral);
+      });
+
       it('should have the property FlipdishEventId (base name: "FlipdishEventId")', function() {
         // TODO: update the code to test the property FlipdishEventId
         expect(instance).to.have.property('FlipdishEventId');

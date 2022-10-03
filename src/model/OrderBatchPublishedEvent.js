@@ -61,6 +61,8 @@
         obj.BatchId = ApiClient.convertToType(data['BatchId'], 'Number');
       if (data.hasOwnProperty('StoreId'))
         obj.StoreId = ApiClient.convertToType(data['StoreId'], 'Number');
+      if (data.hasOwnProperty('OrderIds'))
+        obj.OrderIds = ApiClient.convertToType(data['OrderIds'], ['Number']);
       if (data.hasOwnProperty('FlipdishEventId'))
         obj.FlipdishEventId = ApiClient.convertToType(data['FlipdishEventId'], 'String');
       if (data.hasOwnProperty('CreateTime'))
@@ -92,6 +94,12 @@
    * @member {Number} StoreId
    */
   exports.prototype.StoreId = undefined;
+
+  /**
+   * Orders' ids on the batch
+   * @member {Array.<Number>} OrderIds
+   */
+  exports.prototype.OrderIds = undefined;
 
   /**
    * The identitfier of the event
