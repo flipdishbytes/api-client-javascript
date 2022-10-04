@@ -25,40 +25,42 @@
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.OrderBatchItem = factory(root.Flipdish.ApiClient);
+    root.Flipdish.OrderBatchSummary = factory(root.Flipdish.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
 
   /**
-   * The OrderBatchItem model module.
-   * @module model/OrderBatchItem
+   * The OrderBatchSummary model module.
+   * @module model/OrderBatchSummary
    * @version 1.0.0
    */
 
   /**
-   * Constructs a new <code>OrderBatchItem</code>.
-   * Represents order batches
-   * @alias module:model/OrderBatchItem
+   * Constructs a new <code>OrderBatchSummary</code>.
+   * Order batch info
+   * @alias module:model/OrderBatchSummary
    * @class
    */
   var exports = function() {
   };
 
   /**
-   * Constructs a <code>OrderBatchItem</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>OrderBatchSummary</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/OrderBatchItem} obj Optional instance to populate.
-   * @return {module:model/OrderBatchItem} The populated <code>OrderBatchItem</code> instance.
+   * @param {module:model/OrderBatchSummary} obj Optional instance to populate.
+   * @return {module:model/OrderBatchSummary} The populated <code>OrderBatchSummary</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
-      if (data.hasOwnProperty('BatchId'))
-        obj.BatchId = ApiClient.convertToType(data['BatchId'], 'Number');
-      if (data.hasOwnProperty('CreatedAt'))
-        obj.CreatedAt = ApiClient.convertToType(data['CreatedAt'], 'Date');
+      if (data.hasOwnProperty('Id'))
+        obj.Id = ApiClient.convertToType(data['Id'], 'Number');
+      if (data.hasOwnProperty('DisplayCode'))
+        obj.DisplayCode = ApiClient.convertToType(data['DisplayCode'], 'String');
+      if (data.hasOwnProperty('CreateTime'))
+        obj.CreateTime = ApiClient.convertToType(data['CreateTime'], 'Date');
       if (data.hasOwnProperty('IsPublished'))
         obj.IsPublished = ApiClient.convertToType(data['IsPublished'], 'Boolean');
     }
@@ -66,19 +68,25 @@
   }
 
   /**
-   * Unique identifier
-   * @member {Number} BatchId
+   * Order batch id
+   * @member {Number} Id
    */
-  exports.prototype.BatchId = undefined;
+  exports.prototype.Id = undefined;
 
   /**
-   * Creation date
-   * @member {Date} CreatedAt
+   * Order batch 6-sign human readable code
+   * @member {String} DisplayCode
    */
-  exports.prototype.CreatedAt = undefined;
+  exports.prototype.DisplayCode = undefined;
 
   /**
-   * Is dispatched
+   * Batch creation date and time
+   * @member {Date} CreateTime
+   */
+  exports.prototype.CreateTime = undefined;
+
+  /**
+   * If the batch is already published
    * @member {Boolean} IsPublished
    */
   exports.prototype.IsPublished = undefined;

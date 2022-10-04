@@ -30,14 +30,14 @@
   var instance;
 
   describe('(package)', function() {
-    describe('RestApiArrayResultOrderBatchItem', function() {
+    describe('RestApiArrayResultOrderBatchSummary', function() {
       beforeEach(function() {
-        instance = new Flipdish.RestApiArrayResultOrderBatchItem();
+        instance = new Flipdish.RestApiArrayResultOrderBatchSummary();
       });
 
-      it('should create an instance of RestApiArrayResultOrderBatchItem', function() {
-        // TODO: update the code to test RestApiArrayResultOrderBatchItem
-        expect(instance).to.be.a(Flipdish.RestApiArrayResultOrderBatchItem);
+      it('should create an instance of RestApiArrayResultOrderBatchSummary', function() {
+        // TODO: update the code to test RestApiArrayResultOrderBatchSummary
+        expect(instance).to.be.a(Flipdish.RestApiArrayResultOrderBatchSummary);
       });
 
       it('should have the property Data (base name: "Data")', function() {

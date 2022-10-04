@@ -40,6 +40,12 @@
         expect(instance).to.be.a(Flipdish.OrderBatch);
       });
 
+      it('should have the property OrderIds (base name: "OrderIds")', function() {
+        // TODO: update the code to test the property OrderIds
+        expect(instance).to.have.property('OrderIds');
+        // expect(instance.OrderIds).to.be(expectedValueLiteral);
+      });
+
       it('should have the property Id (base name: "Id")', function() {
         // TODO: update the code to test the property Id
         expect(instance).to.have.property('Id');
@@ -62,12 +68,6 @@
         // TODO: update the code to test the property IsPublished
         expect(instance).to.have.property('IsPublished');
         // expect(instance.IsPublished).to.be(expectedValueLiteral);
-      });
-
-      it('should have the property OrderIds (base name: "OrderIds")', function() {
-        // TODO: update the code to test the property OrderIds
-        expect(instance).to.have.property('OrderIds');
-        // expect(instance.OrderIds).to.be(expectedValueLiteral);
       });
 
     });

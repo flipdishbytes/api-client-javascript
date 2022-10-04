@@ -57,8 +57,8 @@
       obj = obj || new exports();
       if (data.hasOwnProperty('EventName'))
         obj.EventName = ApiClient.convertToType(data['EventName'], 'String');
-      if (data.hasOwnProperty('BatchId'))
-        obj.BatchId = ApiClient.convertToType(data['BatchId'], 'Number');
+      if (data.hasOwnProperty('OrderBatchId'))
+        obj.OrderBatchId = ApiClient.convertToType(data['OrderBatchId'], 'Number');
       if (data.hasOwnProperty('StoreId'))
         obj.StoreId = ApiClient.convertToType(data['StoreId'], 'Number');
       if (data.hasOwnProperty('OrderIds'))
@@ -85,9 +85,9 @@
 
   /**
    * Order Batch Id
-   * @member {Number} BatchId
+   * @member {Number} OrderBatchId
    */
-  exports.prototype.BatchId = undefined;
+  exports.prototype.OrderBatchId = undefined;
 
   /**
    * Store id the order batch belogs to

@@ -38,7 +38,7 @@
 
   /**
    * Constructs a new <code>OrderBatch</code>.
-   * Order batch
+   * Order batch detailed information
    * @alias module:model/OrderBatch
    * @class
    */
@@ -55,6 +55,8 @@
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
+      if (data.hasOwnProperty('OrderIds'))
+        obj.OrderIds = ApiClient.convertToType(data['OrderIds'], ['Number']);
       if (data.hasOwnProperty('Id'))
         obj.Id = ApiClient.convertToType(data['Id'], 'Number');
       if (data.hasOwnProperty('DisplayCode'))
@@ -63,11 +65,15 @@
         obj.CreateTime = ApiClient.convertToType(data['CreateTime'], 'Date');
       if (data.hasOwnProperty('IsPublished'))
         obj.IsPublished = ApiClient.convertToType(data['IsPublished'], 'Boolean');
-      if (data.hasOwnProperty('OrderIds'))
-        obj.OrderIds = ApiClient.convertToType(data['OrderIds'], ['Number']);
     }
     return obj;
   }
+
+  /**
+   * Orders' ids on the batch
+   * @member {Array.<Number>} OrderIds
+   */
+  exports.prototype.OrderIds = undefined;
 
   /**
    * Order batch id
@@ -92,12 +98,6 @@
    * @member {Boolean} IsPublished
    */
   exports.prototype.IsPublished = undefined;
-
-  /**
-   * Orders' ids on the batch
-   * @member {Array.<Number>} OrderIds
-   */
-  exports.prototype.OrderIds = undefined;
 
 
   return exports;

@@ -196,6 +196,12 @@
         // expect(instance.OrderDropOffLocation).to.be(expectedValueLiteral);
       });
 
+      it('should have the property OrderBatchInfo (base name: "OrderBatchInfo")', function() {
+        // TODO: update the code to test the property OrderBatchInfo
+        expect(instance).to.have.property('OrderBatchInfo');
+        // expect(instance.OrderBatchInfo).to.be(expectedValueLiteral);
+      });
+
     });
   });
 

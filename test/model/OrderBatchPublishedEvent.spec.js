@@ -46,10 +46,10 @@
         // expect(instance.EventName).to.be(expectedValueLiteral);
       });
 
-      it('should have the property BatchId (base name: "BatchId")', function() {
-        // TODO: update the code to test the property BatchId
-        expect(instance).to.have.property('BatchId');
-        // expect(instance.BatchId).to.be(expectedValueLiteral);
+      it('should have the property OrderBatchId (base name: "OrderBatchId")', function() {
+        // TODO: update the code to test the property OrderBatchId
+        expect(instance).to.have.property('OrderBatchId');
+        // expect(instance.OrderBatchId).to.be(expectedValueLiteral);
       });
 
       it('should have the property StoreId (base name: "StoreId")', function() {

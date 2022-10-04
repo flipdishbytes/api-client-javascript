@@ -30,26 +30,32 @@
   var instance;
 
   describe('(package)', function() {
-    describe('OrderBatchItem', function() {
+    describe('OrderBatchSummary', function() {
       beforeEach(function() {
-        instance = new Flipdish.OrderBatchItem();
+        instance = new Flipdish.OrderBatchSummary();
       });
 
-      it('should create an instance of OrderBatchItem', function() {
-        // TODO: update the code to test OrderBatchItem
-        expect(instance).to.be.a(Flipdish.OrderBatchItem);
+      it('should create an instance of OrderBatchSummary', function() {
+        // TODO: update the code to test OrderBatchSummary
+        expect(instance).to.be.a(Flipdish.OrderBatchSummary);
       });
 
-      it('should have the property BatchId (base name: "BatchId")', function() {
-        // TODO: update the code to test the property BatchId
-        expect(instance).to.have.property('BatchId');
-        // expect(instance.BatchId).to.be(expectedValueLiteral);
+      it('should have the property Id (base name: "Id")', function() {
+        // TODO: update the code to test the property Id
+        expect(instance).to.have.property('Id');
+        // expect(instance.Id).to.be(expectedValueLiteral);
       });
 
-      it('should have the property CreatedAt (base name: "CreatedAt")', function() {
-        // TODO: update the code to test the property CreatedAt
-        expect(instance).to.have.property('CreatedAt');
-        // expect(instance.CreatedAt).to.be(expectedValueLiteral);
+      it('should have the property DisplayCode (base name: "DisplayCode")', function() {
+        // TODO: update the code to test the property DisplayCode
+        expect(instance).to.have.property('DisplayCode');
+        // expect(instance.DisplayCode).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property CreateTime (base name: "CreateTime")', function() {
+        // TODO: update the code to test the property CreateTime
+        expect(instance).to.have.property('CreateTime');
+        // expect(instance.CreateTime).to.be(expectedValueLiteral);
       });
 
       it('should have the property IsPublished (base name: "IsPublished")', function() {
