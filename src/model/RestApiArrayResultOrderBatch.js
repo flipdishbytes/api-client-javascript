@@ -16,56 +16,56 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/OrderBatchSummary'], factory);
+    define(['ApiClient', 'model/OrderBatch'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./OrderBatchSummary'));
+    module.exports = factory(require('../ApiClient'), require('./OrderBatch'));
   } else {
     // Browser globals (root is window)
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.RestApiArrayResultOrderBatchSummary = factory(root.Flipdish.ApiClient, root.Flipdish.OrderBatchSummary);
+    root.Flipdish.RestApiArrayResultOrderBatch = factory(root.Flipdish.ApiClient, root.Flipdish.OrderBatch);
   }
-}(this, function(ApiClient, OrderBatchSummary) {
+}(this, function(ApiClient, OrderBatch) {
   'use strict';
 
   /**
-   * The RestApiArrayResultOrderBatchSummary model module.
-   * @module model/RestApiArrayResultOrderBatchSummary
+   * The RestApiArrayResultOrderBatch model module.
+   * @module model/RestApiArrayResultOrderBatch
    * @version 1.0.0
    */
 
   /**
-   * Constructs a new <code>RestApiArrayResultOrderBatchSummary</code>.
+   * Constructs a new <code>RestApiArrayResultOrderBatch</code>.
    * Rest api array result
-   * @alias module:model/RestApiArrayResultOrderBatchSummary
+   * @alias module:model/RestApiArrayResultOrderBatch
    * @class
-   * @param Data {Array.<module:model/OrderBatchSummary>} Generic data object.
+   * @param Data {Array.<module:model/OrderBatch>} Generic data object.
    */
   var exports = function(Data) {
     this.Data = Data;
   };
 
   /**
-   * Constructs a <code>RestApiArrayResultOrderBatchSummary</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>RestApiArrayResultOrderBatch</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/RestApiArrayResultOrderBatchSummary} obj Optional instance to populate.
-   * @return {module:model/RestApiArrayResultOrderBatchSummary} The populated <code>RestApiArrayResultOrderBatchSummary</code> instance.
+   * @param {module:model/RestApiArrayResultOrderBatch} obj Optional instance to populate.
+   * @return {module:model/RestApiArrayResultOrderBatch} The populated <code>RestApiArrayResultOrderBatch</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
       if (data.hasOwnProperty('Data'))
-        obj.Data = ApiClient.convertToType(data['Data'], [OrderBatchSummary]);
+        obj.Data = ApiClient.convertToType(data['Data'], [OrderBatch]);
     }
     return obj;
   }
 
   /**
    * Generic data object.
-   * @member {Array.<module:model/OrderBatchSummary>} Data
+   * @member {Array.<module:model/OrderBatch>} Data
    */
   exports.prototype.Data = undefined;
 
