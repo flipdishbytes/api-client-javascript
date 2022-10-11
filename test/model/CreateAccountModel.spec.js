@@ -70,6 +70,12 @@
         // expect(instance.Cid).to.be(expectedValueLiteral);
       });
 
+      it('should have the property RecaptchaToken (base name: "RecaptchaToken")', function() {
+        // TODO: update the code to test the property RecaptchaToken
+        expect(instance).to.have.property('RecaptchaToken');
+        // expect(instance.RecaptchaToken).to.be(expectedValueLiteral);
+      });
+
     });
   });
 

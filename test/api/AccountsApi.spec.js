@@ -125,6 +125,7 @@
           createAccountModel.LanguageId = "";
           createAccountModel.Rid = 0;
           createAccountModel.Cid = "";
+          createAccountModel.RecaptchaToken = "";
 
           instance.createAccount(createAccountModel, function(error, data, response) {
             if (error) {

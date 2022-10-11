@@ -41,7 +41,7 @@
    * Create account model
    * @alias module:model/CreateAccountModel
    * @class
-   * @param Email {String} Email addres
+   * @param Email {String} Email address
    * @param StoreName {String} Store name
    */
   var exports = function(Email, StoreName) {
@@ -69,12 +69,14 @@
         obj.Rid = ApiClient.convertToType(data['Rid'], 'Number');
       if (data.hasOwnProperty('Cid'))
         obj.Cid = ApiClient.convertToType(data['Cid'], 'String');
+      if (data.hasOwnProperty('RecaptchaToken'))
+        obj.RecaptchaToken = ApiClient.convertToType(data['RecaptchaToken'], 'String');
     }
     return obj;
   }
 
   /**
-   * Email addres
+   * Email address
    * @member {String} Email
    */
   exports.prototype.Email = undefined;
@@ -102,6 +104,12 @@
    * @member {String} Cid
    */
   exports.prototype.Cid = undefined;
+
+  /**
+   * Google Recaptcha Token
+   * @member {String} RecaptchaToken
+   */
+  exports.prototype.RecaptchaToken = undefined;
 
 
   return exports;
