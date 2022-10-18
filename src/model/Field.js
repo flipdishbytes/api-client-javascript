@@ -201,7 +201,13 @@
      * value: "Boolean"
      * @const
      */
-    _Boolean: "Boolean"
+    _Boolean: "Boolean",
+
+    /**
+     * value: "ActionButton"
+     * @const
+     */
+    ActionButton: "ActionButton"
   };
 
   return exports;

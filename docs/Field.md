@@ -36,6 +36,8 @@ Name | Type | Description | Notes
 
 * `_Boolean` (value: `"Boolean"`)
 
+* `ActionButton` (value: `"ActionButton"`)
+
 
 
 

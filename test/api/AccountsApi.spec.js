@@ -376,6 +376,7 @@
           /*
           var requestPasswordResetModel = new Flipdish.RequestPasswordResetModel();
           requestPasswordResetModel.Email = "";
+          requestPasswordResetModel.RecaptchaToken = "";
 
           instance.requestPasswordReset(requestPasswordResetModel, function(error, data, response) {
             if (error) {
@@ -396,6 +397,7 @@
           /*
           var requestPasswordResetRequest = new Flipdish.RequestPasswordResetModel();
           requestPasswordResetRequest.Email = "";
+          requestPasswordResetRequest.RecaptchaToken = "";
 
           instance.sendPinForPasswordReset(requestPasswordResetRequest, function(error, data, response) {
             if (error) {

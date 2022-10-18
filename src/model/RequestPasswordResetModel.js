@@ -57,6 +57,8 @@
       obj = obj || new exports();
       if (data.hasOwnProperty('Email'))
         obj.Email = ApiClient.convertToType(data['Email'], 'String');
+      if (data.hasOwnProperty('RecaptchaToken'))
+        obj.RecaptchaToken = ApiClient.convertToType(data['RecaptchaToken'], 'String');
     }
     return obj;
   }
@@ -66,6 +68,12 @@
    * @member {String} Email
    */
   exports.prototype.Email = undefined;
+
+  /**
+   * Google Recaptcha Token
+   * @member {String} RecaptchaToken
+   */
+  exports.prototype.RecaptchaToken = undefined;
 
 
   return exports;
