@@ -123,6 +123,8 @@
         obj.OpeningBalance = ApiClient.convertToType(data['OpeningBalance'], 'Number');
       if (data.hasOwnProperty('ClosingBalance'))
         obj.ClosingBalance = ApiClient.convertToType(data['ClosingBalance'], 'Number');
+      if (data.hasOwnProperty('PayGreenSalesAmount'))
+        obj.PayGreenSalesAmount = ApiClient.convertToType(data['PayGreenSalesAmount'], 'Number');
     }
     return obj;
   }
@@ -330,6 +332,12 @@
    * @member {Number} ClosingBalance
    */
   exports.prototype.ClosingBalance = undefined;
+
+  /**
+   * Amount of sales through PayGreen (restaurant vouchers)
+   * @member {Number} PayGreenSalesAmount
+   */
+  exports.prototype.PayGreenSalesAmount = undefined;
 
 
 

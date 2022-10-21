@@ -244,6 +244,12 @@
         // expect(instance.ClosingBalance).to.be(expectedValueLiteral);
       });
 
+      it('should have the property PayGreenSalesAmount (base name: "PayGreenSalesAmount")', function() {
+        // TODO: update the code to test the property PayGreenSalesAmount
+        expect(instance).to.have.property('PayGreenSalesAmount');
+        // expect(instance.PayGreenSalesAmount).to.be(expectedValueLiteral);
+      });
+
     });
   });
 

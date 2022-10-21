@@ -64,6 +64,18 @@
         // expect(instance.RefundsCount).to.be(expectedValueLiteral);
       });
 
+      it('should have the property PayGreenSalesAmount (base name: "PayGreenSalesAmount")', function() {
+        // TODO: update the code to test the property PayGreenSalesAmount
+        expect(instance).to.have.property('PayGreenSalesAmount');
+        // expect(instance.PayGreenSalesAmount).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property PayGreenProcessingFees (base name: "PayGreenProcessingFees")', function() {
+        // TODO: update the code to test the property PayGreenProcessingFees
+        expect(instance).to.have.property('PayGreenProcessingFees');
+        // expect(instance.PayGreenProcessingFees).to.be(expectedValueLiteral);
+      });
+
       it('should have the property TotalOnlineRevenueAdjustments (base name: "TotalOnlineRevenueAdjustments")', function() {
         // TODO: update the code to test the property TotalOnlineRevenueAdjustments
         expect(instance).to.have.property('TotalOnlineRevenueAdjustments');

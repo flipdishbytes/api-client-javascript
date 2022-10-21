@@ -63,6 +63,10 @@
         obj.CustomerCashFees = ApiClient.convertToType(data['CustomerCashFees'], 'Number');
       if (data.hasOwnProperty('RefundsCount'))
         obj.RefundsCount = ApiClient.convertToType(data['RefundsCount'], 'Number');
+      if (data.hasOwnProperty('PayGreenSalesAmount'))
+        obj.PayGreenSalesAmount = ApiClient.convertToType(data['PayGreenSalesAmount'], 'Number');
+      if (data.hasOwnProperty('PayGreenProcessingFees'))
+        obj.PayGreenProcessingFees = ApiClient.convertToType(data['PayGreenProcessingFees'], 'Number');
       if (data.hasOwnProperty('TotalOnlineRevenueAdjustments'))
         obj.TotalOnlineRevenueAdjustments = ApiClient.convertToType(data['TotalOnlineRevenueAdjustments'], 'Number');
     }
@@ -92,6 +96,18 @@
    * @member {Number} RefundsCount
    */
   exports.prototype.RefundsCount = undefined;
+
+  /**
+   * PayGreen sales
+   * @member {Number} PayGreenSalesAmount
+   */
+  exports.prototype.PayGreenSalesAmount = undefined;
+
+  /**
+   * PayGreen processing fees charged to end-user
+   * @member {Number} PayGreenProcessingFees
+   */
+  exports.prototype.PayGreenProcessingFees = undefined;
 
   /**
    * Total revenue adjustments
