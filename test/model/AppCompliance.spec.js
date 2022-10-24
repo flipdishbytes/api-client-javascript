@@ -52,6 +52,12 @@
         // expect(instance.ComplianceType).to.be(expectedValueLiteral);
       });
 
+      it('should have the property AllowDisablingOfGdpr (base name: "AllowDisablingOfGdpr")', function() {
+        // TODO: update the code to test the property AllowDisablingOfGdpr
+        expect(instance).to.have.property('AllowDisablingOfGdpr');
+        // expect(instance.AllowDisablingOfGdpr).to.be(expectedValueLiteral);
+      });
+
     });
   });
 

@@ -59,6 +59,8 @@
         obj.AppId = ApiClient.convertToType(data['AppId'], 'String');
       if (data.hasOwnProperty('ComplianceType'))
         obj.ComplianceType = ApiClient.convertToType(data['ComplianceType'], 'String');
+      if (data.hasOwnProperty('AllowDisablingOfGdpr'))
+        obj.AllowDisablingOfGdpr = ApiClient.convertToType(data['AllowDisablingOfGdpr'], 'Boolean');
     }
     return obj;
   }
@@ -74,6 +76,12 @@
    * @member {module:model/AppCompliance.ComplianceTypeEnum} ComplianceType
    */
   exports.prototype.ComplianceType = undefined;
+
+  /**
+   * For EU countries, we should not allow to change the option to “Default banner”, but all other countries should be able to do so.
+   * @member {Boolean} AllowDisablingOfGdpr
+   */
+  exports.prototype.AllowDisablingOfGdpr = undefined;
 
 
 
