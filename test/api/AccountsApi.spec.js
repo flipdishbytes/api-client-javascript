@@ -35,24 +35,6 @@
 
   describe('(package)', function() {
     describe('AccountsApi', function() {
-      describe('accountsIsRecaptchaOn', function() {
-        it('should call accountsIsRecaptchaOn successfully', function(done) {
-          // TODO: uncomment accountsIsRecaptchaOn call
-          /*
-
-          instance.accountsIsRecaptchaOn(function(error, data, response) {
-            if (error) {
-              done(error);
-              return;
-            }
-
-            done();
-          });
-          */
-          // TODO: uncomment and complete method invocation above, then delete this line and the next:
-          done();
-        });
-      });
       describe('answerSignUpQuestion', function() {
         it('should call answerSignUpQuestion successfully', function(done) {
           // TODO: uncomment, update parameter values for answerSignUpQuestion call

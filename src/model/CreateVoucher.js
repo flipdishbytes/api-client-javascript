@@ -57,8 +57,6 @@
       obj = obj || new exports();
       if (data.hasOwnProperty('VoucherType'))
         obj.VoucherType = ApiClient.convertToType(data['VoucherType'], 'String');
-      if (data.hasOwnProperty('Stores'))
-        obj.Stores = ApiClient.convertToType(data['Stores'], ['Number']);
       if (data.hasOwnProperty('AddItemDetails'))
         obj.AddItemDetails = AddItemDetails.constructFromObject(data['AddItemDetails']);
       if (data.hasOwnProperty('CreditNoteDetails'))
@@ -71,6 +69,8 @@
         obj.Code = ApiClient.convertToType(data['Code'], 'String');
       if (data.hasOwnProperty('Description'))
         obj.Description = ApiClient.convertToType(data['Description'], 'String');
+      if (data.hasOwnProperty('Stores'))
+        obj.Stores = ApiClient.convertToType(data['Stores'], ['Number']);
       if (data.hasOwnProperty('ValidOnOrdersOver'))
         obj.ValidOnOrdersOver = ApiClient.convertToType(data['ValidOnOrdersOver'], 'Number');
       if (data.hasOwnProperty('TakesPriority'))
@@ -110,12 +110,6 @@
   exports.prototype.VoucherType = undefined;
 
   /**
-   * Stores that this voucher applies to
-   * @member {Array.<Number>} Stores
-   */
-  exports.prototype.Stores = undefined;
-
-  /**
    * Add item details
    * @member {module:model/AddItemDetails} AddItemDetails
    */
@@ -150,6 +144,12 @@
    * @member {String} Description
    */
   exports.prototype.Description = undefined;
+
+  /**
+   * Stores that this voucher applies to
+   * @member {Array.<Number>} Stores
+   */
+  exports.prototype.Stores = undefined;
 
   /**
    * Valid on orders on or above

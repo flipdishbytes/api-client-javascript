@@ -52,6 +52,12 @@
         // expect(instance.Description).to.be(expectedValueLiteral);
       });
 
+      it('should have the property Stores (base name: "Stores")', function() {
+        // TODO: update the code to test the property Stores
+        expect(instance).to.have.property('Stores');
+        // expect(instance.Stores).to.be(expectedValueLiteral);
+      });
+
       it('should have the property ValidOnOrdersOver (base name: "ValidOnOrdersOver")', function() {
         // TODO: update the code to test the property ValidOnOrdersOver
         expect(instance).to.have.property('ValidOnOrdersOver');

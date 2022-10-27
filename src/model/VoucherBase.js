@@ -59,6 +59,8 @@
         obj.Code = ApiClient.convertToType(data['Code'], 'String');
       if (data.hasOwnProperty('Description'))
         obj.Description = ApiClient.convertToType(data['Description'], 'String');
+      if (data.hasOwnProperty('Stores'))
+        obj.Stores = ApiClient.convertToType(data['Stores'], ['Number']);
       if (data.hasOwnProperty('ValidOnOrdersOver'))
         obj.ValidOnOrdersOver = ApiClient.convertToType(data['ValidOnOrdersOver'], 'Number');
       if (data.hasOwnProperty('TakesPriority'))
@@ -102,6 +104,12 @@
    * @member {String} Description
    */
   exports.prototype.Description = undefined;
+
+  /**
+   * Stores that this voucher applies to
+   * @member {Array.<Number>} Stores
+   */
+  exports.prototype.Stores = undefined;
 
   /**
    * Valid on orders on or above

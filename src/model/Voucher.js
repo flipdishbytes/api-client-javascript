@@ -65,8 +65,6 @@
         obj.VoucherSubType = ApiClient.convertToType(data['VoucherSubType'], 'String');
       if (data.hasOwnProperty('Currency'))
         obj.Currency = ApiClient.convertToType(data['Currency'], 'String');
-      if (data.hasOwnProperty('Stores'))
-        obj.Stores = ApiClient.convertToType(data['Stores'], ['Number']);
       if (data.hasOwnProperty('StoreNames'))
         obj.StoreNames = ApiClient.convertToType(data['StoreNames'], ['String']);
       if (data.hasOwnProperty('AddItemDetails'))
@@ -81,6 +79,8 @@
         obj.Code = ApiClient.convertToType(data['Code'], 'String');
       if (data.hasOwnProperty('Description'))
         obj.Description = ApiClient.convertToType(data['Description'], 'String');
+      if (data.hasOwnProperty('Stores'))
+        obj.Stores = ApiClient.convertToType(data['Stores'], ['Number']);
       if (data.hasOwnProperty('ValidOnOrdersOver'))
         obj.ValidOnOrdersOver = ApiClient.convertToType(data['ValidOnOrdersOver'], 'Number');
       if (data.hasOwnProperty('TakesPriority'))
@@ -145,12 +145,6 @@
 
   /**
    * Stores that this voucher applies to
-   * @member {Array.<Number>} Stores
-   */
-  exports.prototype.Stores = undefined;
-
-  /**
-   * Stores that this voucher applies to
    * @member {Array.<String>} StoreNames
    */
   exports.prototype.StoreNames = undefined;
@@ -190,6 +184,12 @@
    * @member {String} Description
    */
   exports.prototype.Description = undefined;
+
+  /**
+   * Stores that this voucher applies to
+   * @member {Array.<Number>} Stores
+   */
+  exports.prototype.Stores = undefined;
 
   /**
    * Valid on orders on or above

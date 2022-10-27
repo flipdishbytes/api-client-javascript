@@ -4,13 +4,13 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **VoucherType** | **String** | Voucher Type | [optional] 
-**Stores** | **[Number]** | Stores that this voucher applies to | [optional] 
 **AddItemDetails** | [**AddItemDetails**](AddItemDetails.md) | Add item details | [optional] 
 **CreditNoteDetails** | [**CreditNoteDetails**](CreditNoteDetails.md) | Credit note details | [optional] 
 **LumpDiscountDetails** | [**LumpDiscountDetails**](LumpDiscountDetails.md) | Lump discount details | [optional] 
 **PercentDiscountDetails** | [**PercentDiscountDetails**](PercentDiscountDetails.md) | Percent discount details | [optional] 
 **Code** | **String** | Voucher Code | [optional] 
 **Description** | **String** | Voucher Description (Visible on printout) | [optional] 
+**Stores** | **[Number]** | Stores that this voucher applies to | [optional] 
 **ValidOnOrdersOver** | **Number** | Valid on orders on or above | [optional] 
 **TakesPriority** | **Boolean** | Takes priority | [optional] 
 **IsEnabled** | **Boolean** | Is voucher enabled | [optional] 
