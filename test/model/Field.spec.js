@@ -94,6 +94,12 @@
         // expect(instance.FieldType).to.be(expectedValueLiteral);
       });
 
+      it('should have the property IsFlipdishRestricted (base name: "IsFlipdishRestricted")', function() {
+        // TODO: update the code to test the property IsFlipdishRestricted
+        expect(instance).to.have.property('IsFlipdishRestricted');
+        // expect(instance.IsFlipdishRestricted).to.be(expectedValueLiteral);
+      });
+
     });
   });
 

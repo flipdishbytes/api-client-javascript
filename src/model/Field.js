@@ -83,6 +83,8 @@
         obj.ValidationRegex = ApiClient.convertToType(data['ValidationRegex'], 'String');
       if (data.hasOwnProperty('FieldType'))
         obj.FieldType = ApiClient.convertToType(data['FieldType'], 'String');
+      if (data.hasOwnProperty('IsFlipdishRestricted'))
+        obj.IsFlipdishRestricted = ApiClient.convertToType(data['IsFlipdishRestricted'], 'Boolean');
     }
     return obj;
   }
@@ -140,6 +142,12 @@
    * @member {module:model/Field.FieldTypeEnum} FieldType
    */
   exports.prototype.FieldType = undefined;
+
+  /**
+   * Is this field only editable by Flipdish?
+   * @member {Boolean} IsFlipdishRestricted
+   */
+  exports.prototype.IsFlipdishRestricted = undefined;
 
 
 
