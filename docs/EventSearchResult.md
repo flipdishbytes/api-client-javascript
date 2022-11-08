@@ -92,7 +92,7 @@ Name | Type | Description | Notes
 **BankAccountCreatedEvent** | [**[BankAccountCreatedEvent]**](BankAccountCreatedEvent.md) | Bank account created event | [optional] 
 **BankAccountUpdatedEvent** | [**[BankAccountUpdatedEvent]**](BankAccountUpdatedEvent.md) | Bank account updated event | [optional] 
 **BankAccountDeletedEvent** | [**[BankAccountDeletedEvent]**](BankAccountDeletedEvent.md) | Bank account updated event | [optional] 
-**BankAccountAssignedEvent** | [**[BankAccountDeletedEvent]**](BankAccountDeletedEvent.md) | Bank account assigned event | [optional] 
+**BankAccountAssignedEvent** | [**[BankAccountAssignedEvent]**](BankAccountAssignedEvent.md) | Bank account assigned event | [optional] 
 **HydraAssignedEvent** | [**[HydraAssignedEvent]**](HydraAssignedEvent.md) | Hydra assigned event | [optional] 
 **HydraRequestResetEvent** | [**[HydraRequestResetEvent]**](HydraRequestResetEvent.md) | Hydra reset requested event | [optional] 
 **HydraStoreAssignedEvent** | [**[HydraStoreAssignedEvent]**](HydraStoreAssignedEvent.md) | Hydra store assigned event | [optional] 
