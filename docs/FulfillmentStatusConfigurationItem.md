@@ -17,7 +17,6 @@ Name | Type | Description | Notes
 **IsCustom** | **Boolean** | Is custom state. If not, then it's a system state | [optional] 
 **OrderTypes** | **[String]** | If empty then applies to all ordertypes, otherwise a list of order types this state applies to | [optional] 
 **Communication** | **Boolean** | Whether state should fire off a notification to the customer | [optional] 
-**VisualOrder** | **Number** | Integer for ordering results in choices (eg. dropdowns) | [optional] 
 
 
 <a name="ChangeTypeEnum"></a>

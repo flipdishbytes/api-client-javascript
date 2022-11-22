@@ -83,8 +83,6 @@
         obj.OrderTypes = ApiClient.convertToType(data['OrderTypes'], ['String']);
       if (data.hasOwnProperty('Communication'))
         obj.Communication = ApiClient.convertToType(data['Communication'], 'Boolean');
-      if (data.hasOwnProperty('VisualOrder'))
-        obj.VisualOrder = ApiClient.convertToType(data['VisualOrder'], 'Number');
     }
     return obj;
   }
@@ -172,12 +170,6 @@
    * @member {Boolean} Communication
    */
   exports.prototype.Communication = undefined;
-
-  /**
-   * Integer for ordering results in choices (eg. dropdowns)
-   * @member {Number} VisualOrder
-   */
-  exports.prototype.VisualOrder = undefined;
 
 
 

@@ -124,12 +124,6 @@
         // expect(instance.Communication).to.be(expectedValueLiteral);
       });
 
-      it('should have the property VisualOrder (base name: "VisualOrder")', function() {
-        // TODO: update the code to test the property VisualOrder
-        expect(instance).to.have.property('VisualOrder');
-        // expect(instance.VisualOrder).to.be(expectedValueLiteral);
-      });
-
     });
   });
 
