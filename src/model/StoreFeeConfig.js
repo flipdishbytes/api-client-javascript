@@ -99,6 +99,10 @@
         obj.FixedFeeCashOrdersChargedToCustomerIncludingVat = ApiClient.convertToType(data['FixedFeeCashOrdersChargedToCustomerIncludingVat'], 'Number');
       if (data.hasOwnProperty('PercentFeeTips'))
         obj.PercentFeeTips = ApiClient.convertToType(data['PercentFeeTips'], 'Number');
+      if (data.hasOwnProperty('PercentFeeTipsCollection'))
+        obj.PercentFeeTipsCollection = ApiClient.convertToType(data['PercentFeeTipsCollection'], 'Number');
+      if (data.hasOwnProperty('PercentFeeTipsDelivery'))
+        obj.PercentFeeTipsDelivery = ApiClient.convertToType(data['PercentFeeTipsDelivery'], 'Number');
       if (data.hasOwnProperty('TaxRatePercent'))
         obj.TaxRatePercent = ApiClient.convertToType(data['TaxRatePercent'], 'Number');
       if (data.hasOwnProperty('PercentFeeCardOrdersLocationService'))
@@ -260,6 +264,18 @@
    * @member {Number} PercentFeeTips
    */
   exports.prototype.PercentFeeTips = undefined;
+
+  /**
+   * Gets or sets the percent fee tips for collection.
+   * @member {Number} PercentFeeTipsCollection
+   */
+  exports.prototype.PercentFeeTipsCollection = undefined;
+
+  /**
+   * Gets or sets the percent fee tips for delivery.
+   * @member {Number} PercentFeeTipsDelivery
+   */
+  exports.prototype.PercentFeeTipsDelivery = undefined;
 
   /**
    * Gets or sets the tax rate percent.

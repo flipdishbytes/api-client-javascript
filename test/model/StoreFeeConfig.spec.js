@@ -172,6 +172,18 @@
         // expect(instance.PercentFeeTips).to.be(expectedValueLiteral);
       });
 
+      it('should have the property PercentFeeTipsCollection (base name: "PercentFeeTipsCollection")', function() {
+        // TODO: update the code to test the property PercentFeeTipsCollection
+        expect(instance).to.have.property('PercentFeeTipsCollection');
+        // expect(instance.PercentFeeTipsCollection).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property PercentFeeTipsDelivery (base name: "PercentFeeTipsDelivery")', function() {
+        // TODO: update the code to test the property PercentFeeTipsDelivery
+        expect(instance).to.have.property('PercentFeeTipsDelivery');
+        // expect(instance.PercentFeeTipsDelivery).to.be(expectedValueLiteral);
+      });
+
       it('should have the property TaxRatePercent (base name: "TaxRatePercent")', function() {
         // TODO: update the code to test the property TaxRatePercent
         expect(instance).to.have.property('TaxRatePercent');
