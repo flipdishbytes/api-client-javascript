@@ -129,6 +129,10 @@
         obj.FixedFeeCardOrdersIngest = ApiClient.convertToType(data['FixedFeeCardOrdersIngest'], 'Number');
       if (data.hasOwnProperty('FixedFeeCashOrdersIngest'))
         obj.FixedFeeCashOrdersIngest = ApiClient.convertToType(data['FixedFeeCashOrdersIngest'], 'Number');
+      if (data.hasOwnProperty('PercentFeeDelivery'))
+        obj.PercentFeeDelivery = ApiClient.convertToType(data['PercentFeeDelivery'], 'Number');
+      if (data.hasOwnProperty('FixedFeeDelivery'))
+        obj.FixedFeeDelivery = ApiClient.convertToType(data['FixedFeeDelivery'], 'Number');
     }
     return obj;
   }
@@ -354,6 +358,18 @@
    * @member {Number} FixedFeeCashOrdersIngest
    */
   exports.prototype.FixedFeeCashOrdersIngest = undefined;
+
+  /**
+   * Gets or sets the percent fee for delivery orders.
+   * @member {Number} PercentFeeDelivery
+   */
+  exports.prototype.PercentFeeDelivery = undefined;
+
+  /**
+   * Gets or sets the fixed fee for delivery orders.
+   * @member {Number} FixedFeeDelivery
+   */
+  exports.prototype.FixedFeeDelivery = undefined;
 
 
   return exports;
