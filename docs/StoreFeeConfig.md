@@ -40,7 +40,5 @@ Name | Type | Description | Notes
 **PercentFeeCashOrdersIngest** | **Number** | Gets or sets the percent fee cash orders ingest. | [optional] 
 **FixedFeeCardOrdersIngest** | **Number** | Gets or sets the fixed fee card orders ingest. | [optional] 
 **FixedFeeCashOrdersIngest** | **Number** | Gets or sets the fixed fee cash orders ingest. | [optional] 
-**PercentFeeDelivery** | **Number** | Gets or sets the percent fee for delivery orders. | [optional] 
-**FixedFeeDelivery** | **Number** | Gets or sets the fixed fee for delivery orders. | [optional] 
 
 
