@@ -58,6 +58,12 @@
         // expect(instance.States).to.be(expectedValueLiteral);
       });
 
+      it('should have the property AutomaticTransitionsEnabled (base name: "AutomaticTransitionsEnabled")', function() {
+        // TODO: update the code to test the property AutomaticTransitionsEnabled
+        expect(instance).to.have.property('AutomaticTransitionsEnabled');
+        // expect(instance.AutomaticTransitionsEnabled).to.be(expectedValueLiteral);
+      });
+
       it('should have the property Name (base name: "Name")', function() {
         // TODO: update the code to test the property Name
         expect(instance).to.have.property('Name');

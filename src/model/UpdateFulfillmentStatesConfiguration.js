@@ -61,6 +61,8 @@
         obj.StoreSelectorType = ApiClient.convertToType(data['StoreSelectorType'], 'String');
       if (data.hasOwnProperty('States'))
         obj.States = ApiClient.convertToType(data['States'], [FulfillmentStatusConfigurationItem]);
+      if (data.hasOwnProperty('AutomaticTransitionsEnabled'))
+        obj.AutomaticTransitionsEnabled = ApiClient.convertToType(data['AutomaticTransitionsEnabled'], 'Boolean');
       if (data.hasOwnProperty('Name'))
         obj.Name = ApiClient.convertToType(data['Name'], 'String');
     }
@@ -84,6 +86,12 @@
    * @member {Array.<module:model/FulfillmentStatusConfigurationItem>} States
    */
   exports.prototype.States = undefined;
+
+  /**
+   * Enable automatic transitions
+   * @member {Boolean} AutomaticTransitionsEnabled
+   */
+  exports.prototype.AutomaticTransitionsEnabled = undefined;
 
   /**
    * Name

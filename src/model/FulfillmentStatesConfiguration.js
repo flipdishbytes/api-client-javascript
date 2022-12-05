@@ -57,6 +57,8 @@
       obj = obj || new exports();
       if (data.hasOwnProperty('States'))
         obj.States = ApiClient.convertToType(data['States'], [FulfillmentStatusConfigurationItem]);
+      if (data.hasOwnProperty('AutomaticTransitionsEnabled'))
+        obj.AutomaticTransitionsEnabled = ApiClient.convertToType(data['AutomaticTransitionsEnabled'], 'Boolean');
       if (data.hasOwnProperty('AppId'))
         obj.AppId = ApiClient.convertToType(data['AppId'], 'String');
       if (data.hasOwnProperty('ConfigurationUid'))
@@ -76,6 +78,12 @@
    * @member {Array.<module:model/FulfillmentStatusConfigurationItem>} States
    */
   exports.prototype.States = undefined;
+
+  /**
+   * Enable automatic transitions
+   * @member {Boolean} AutomaticTransitionsEnabled
+   */
+  exports.prototype.AutomaticTransitionsEnabled = undefined;
 
   /**
    * AppId
