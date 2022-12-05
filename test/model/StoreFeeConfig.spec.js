@@ -262,6 +262,18 @@
         // expect(instance.FixedFeeCashOrdersIngest).to.be(expectedValueLiteral);
       });
 
+      it('should have the property PercentFeeDelivery (base name: "PercentFeeDelivery")', function() {
+        // TODO: update the code to test the property PercentFeeDelivery
+        expect(instance).to.have.property('PercentFeeDelivery');
+        // expect(instance.PercentFeeDelivery).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property FixedFeeDelivery (base name: "FixedFeeDelivery")', function() {
+        // TODO: update the code to test the property FixedFeeDelivery
+        expect(instance).to.have.property('FixedFeeDelivery');
+        // expect(instance.FixedFeeDelivery).to.be(expectedValueLiteral);
+      });
+
     });
   });
 
