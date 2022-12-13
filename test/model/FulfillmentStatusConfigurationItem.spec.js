@@ -124,6 +124,12 @@
         // expect(instance.Communication).to.be(expectedValueLiteral);
       });
 
+      it('should have the property Image (base name: "Image")', function() {
+        // TODO: update the code to test the property Image
+        expect(instance).to.have.property('Image');
+        // expect(instance.Image).to.be(expectedValueLiteral);
+      });
+
     });
   });
 

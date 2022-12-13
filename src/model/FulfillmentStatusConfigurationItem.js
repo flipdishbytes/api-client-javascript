@@ -83,6 +83,8 @@
         obj.OrderTypes = ApiClient.convertToType(data['OrderTypes'], ['String']);
       if (data.hasOwnProperty('Communication'))
         obj.Communication = ApiClient.convertToType(data['Communication'], 'Boolean');
+      if (data.hasOwnProperty('Image'))
+        obj.Image = ApiClient.convertToType(data['Image'], 'String');
     }
     return obj;
   }
@@ -170,6 +172,12 @@
    * @member {Boolean} Communication
    */
   exports.prototype.Communication = undefined;
+
+  /**
+   * Image (image filename, relative, not absolute URL)
+   * @member {String} Image
+   */
+  exports.prototype.Image = undefined;
 
 
 
