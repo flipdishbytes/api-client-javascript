@@ -16,18 +16,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/AccountDetailBase', 'model/ChangePasswordModel', 'model/CreateAccountModel', 'model/LoginModel', 'model/LoginWithPinModel', 'model/PasswordResetModel', 'model/RequestLoginPinModel', 'model/RequestLoginPinResposne', 'model/RequestPasswordResetModel', 'model/RequestPasswordResetPinResponse', 'model/RestApiArrayResultLocalisedTimeZone', 'model/RestApiErrorResult', 'model/RestApiForbiddenResult', 'model/RestApiResultAccountDetail', 'model/RestApiUnauthorizedResult', 'model/SetPasswordWithPinModel'], factory);
+    define(['ApiClient', 'model/AccountDetailBase', 'model/ChangePasswordModel', 'model/CreateAccountModel', 'model/LoginModel', 'model/LoginWithPinModel', 'model/PasswordResetModel', 'model/RequestLoginPinModel', 'model/RequestLoginPinResponse', 'model/RequestPasswordResetModel', 'model/RequestPasswordResetPinResponse', 'model/RestApiArrayResultLocalisedTimeZone', 'model/RestApiErrorResult', 'model/RestApiForbiddenResult', 'model/RestApiResultAccountDetail', 'model/RestApiUnauthorizedResult', 'model/SetPasswordWithPinModel'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../model/AccountDetailBase'), require('../model/ChangePasswordModel'), require('../model/CreateAccountModel'), require('../model/LoginModel'), require('../model/LoginWithPinModel'), require('../model/PasswordResetModel'), require('../model/RequestLoginPinModel'), require('../model/RequestLoginPinResposne'), require('../model/RequestPasswordResetModel'), require('../model/RequestPasswordResetPinResponse'), require('../model/RestApiArrayResultLocalisedTimeZone'), require('../model/RestApiErrorResult'), require('../model/RestApiForbiddenResult'), require('../model/RestApiResultAccountDetail'), require('../model/RestApiUnauthorizedResult'), require('../model/SetPasswordWithPinModel'));
+    module.exports = factory(require('../ApiClient'), require('../model/AccountDetailBase'), require('../model/ChangePasswordModel'), require('../model/CreateAccountModel'), require('../model/LoginModel'), require('../model/LoginWithPinModel'), require('../model/PasswordResetModel'), require('../model/RequestLoginPinModel'), require('../model/RequestLoginPinResponse'), require('../model/RequestPasswordResetModel'), require('../model/RequestPasswordResetPinResponse'), require('../model/RestApiArrayResultLocalisedTimeZone'), require('../model/RestApiErrorResult'), require('../model/RestApiForbiddenResult'), require('../model/RestApiResultAccountDetail'), require('../model/RestApiUnauthorizedResult'), require('../model/SetPasswordWithPinModel'));
   } else {
     // Browser globals (root is window)
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.AccountsApi = factory(root.Flipdish.ApiClient, root.Flipdish.AccountDetailBase, root.Flipdish.ChangePasswordModel, root.Flipdish.CreateAccountModel, root.Flipdish.LoginModel, root.Flipdish.LoginWithPinModel, root.Flipdish.PasswordResetModel, root.Flipdish.RequestLoginPinModel, root.Flipdish.RequestLoginPinResposne, root.Flipdish.RequestPasswordResetModel, root.Flipdish.RequestPasswordResetPinResponse, root.Flipdish.RestApiArrayResultLocalisedTimeZone, root.Flipdish.RestApiErrorResult, root.Flipdish.RestApiForbiddenResult, root.Flipdish.RestApiResultAccountDetail, root.Flipdish.RestApiUnauthorizedResult, root.Flipdish.SetPasswordWithPinModel);
+    root.Flipdish.AccountsApi = factory(root.Flipdish.ApiClient, root.Flipdish.AccountDetailBase, root.Flipdish.ChangePasswordModel, root.Flipdish.CreateAccountModel, root.Flipdish.LoginModel, root.Flipdish.LoginWithPinModel, root.Flipdish.PasswordResetModel, root.Flipdish.RequestLoginPinModel, root.Flipdish.RequestLoginPinResponse, root.Flipdish.RequestPasswordResetModel, root.Flipdish.RequestPasswordResetPinResponse, root.Flipdish.RestApiArrayResultLocalisedTimeZone, root.Flipdish.RestApiErrorResult, root.Flipdish.RestApiForbiddenResult, root.Flipdish.RestApiResultAccountDetail, root.Flipdish.RestApiUnauthorizedResult, root.Flipdish.SetPasswordWithPinModel);
   }
-}(this, function(ApiClient, AccountDetailBase, ChangePasswordModel, CreateAccountModel, LoginModel, LoginWithPinModel, PasswordResetModel, RequestLoginPinModel, RequestLoginPinResposne, RequestPasswordResetModel, RequestPasswordResetPinResponse, RestApiArrayResultLocalisedTimeZone, RestApiErrorResult, RestApiForbiddenResult, RestApiResultAccountDetail, RestApiUnauthorizedResult, SetPasswordWithPinModel) {
+}(this, function(ApiClient, AccountDetailBase, ChangePasswordModel, CreateAccountModel, LoginModel, LoginWithPinModel, PasswordResetModel, RequestLoginPinModel, RequestLoginPinResponse, RequestPasswordResetModel, RequestPasswordResetPinResponse, RestApiArrayResultLocalisedTimeZone, RestApiErrorResult, RestApiForbiddenResult, RestApiResultAccountDetail, RestApiUnauthorizedResult, SetPasswordWithPinModel) {
   'use strict';
 
   /**
@@ -360,6 +360,45 @@
     }
 
     /**
+     * Callback function to receive the result of the loginSso operation.
+     * @callback module:api/AccountsApi~loginSsoCallback
+     * @param {String} error Error message, if any.
+     * @param data This operation does not return a value.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * Login with SSO token
+     * @param {module:api/AccountsApi~loginSsoCallback} callback The callback function, accepting three arguments: error, data, response
+     */
+    this.loginSso = function(callback) {
+      var postBody = null;
+
+
+      var pathParams = {
+      };
+      var queryParams = {
+      };
+      var collectionQueryParams = {
+      };
+      var headerParams = {
+      };
+      var formParams = {
+      };
+
+      var authNames = ['oauth2'];
+      var contentTypes = [];
+      var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
+      var returnType = null;
+
+      return this.apiClient.callApi(
+        '/api/v1.0/accounts/login/sso', 'POST',
+        pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, callback
+      );
+    }
+
+    /**
      * Callback function to receive the result of the loginWithPin operation.
      * @callback module:api/AccountsApi~loginWithPinCallback
      * @param {String} error Error message, if any.
@@ -368,8 +407,8 @@
      */
 
     /**
-     * Login with username and password
-     * @param {module:model/LoginWithPinModel} loginModel Login model
+     * Login with email and pin
+     * @param {module:model/LoginWithPinModel} loginModel Login with pin model
      * @param {module:api/AccountsApi~loginWithPinCallback} callback The callback function, accepting three arguments: error, data, response
      */
     this.loginWithPin = function(loginModel, callback) {
@@ -538,7 +577,7 @@
      * Callback function to receive the result of the requestLoginPin operation.
      * @callback module:api/AccountsApi~requestLoginPinCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/RequestLoginPinResposne} data The data returned by the service call.
+     * @param {module:model/RequestLoginPinResponse} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -546,7 +585,7 @@
      * Request login PIN. The server sends the PIN to the email address.
      * @param {module:model/RequestLoginPinModel} requestLoginPinRequest Request login PIN request
      * @param {module:api/AccountsApi~requestLoginPinCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/RequestLoginPinResposne}
+     * data is of type: {@link module:model/RequestLoginPinResponse}
      */
     this.requestLoginPin = function(requestLoginPinRequest, callback) {
       var postBody = requestLoginPinRequest;
@@ -571,7 +610,7 @@
       var authNames = ['oauth2'];
       var contentTypes = ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded'];
       var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
-      var returnType = RequestLoginPinResposne;
+      var returnType = RequestLoginPinResponse;
 
       return this.apiClient.callApi(
         '/api/v1.0/accounts/pin', 'POST',

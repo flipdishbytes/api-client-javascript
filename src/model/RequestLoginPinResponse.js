@@ -25,38 +25,40 @@
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.RequestLoginPinResposne = factory(root.Flipdish.ApiClient);
+    root.Flipdish.RequestLoginPinResponse = factory(root.Flipdish.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
 
   /**
-   * The RequestLoginPinResposne model module.
-   * @module model/RequestLoginPinResposne
+   * The RequestLoginPinResponse model module.
+   * @module model/RequestLoginPinResponse
    * @version 1.0.0
    */
 
   /**
-   * Constructs a new <code>RequestLoginPinResposne</code>.
+   * Constructs a new <code>RequestLoginPinResponse</code>.
    * Request login PIN response
-   * @alias module:model/RequestLoginPinResposne
+   * @alias module:model/RequestLoginPinResponse
    * @class
    */
   var exports = function() {
   };
 
   /**
-   * Constructs a <code>RequestLoginPinResposne</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>RequestLoginPinResponse</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/RequestLoginPinResposne} obj Optional instance to populate.
-   * @return {module:model/RequestLoginPinResposne} The populated <code>RequestLoginPinResposne</code> instance.
+   * @param {module:model/RequestLoginPinResponse} obj Optional instance to populate.
+   * @return {module:model/RequestLoginPinResponse} The populated <code>RequestLoginPinResponse</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
       if (data.hasOwnProperty('LoginPinSentViaEmail'))
         obj.LoginPinSentViaEmail = ApiClient.convertToType(data['LoginPinSentViaEmail'], 'Boolean');
+      if (data.hasOwnProperty('ForceOktaLogin'))
+        obj.ForceOktaLogin = ApiClient.convertToType(data['ForceOktaLogin'], 'Boolean');
     }
     return obj;
   }
@@ -66,6 +68,12 @@
    * @member {Boolean} LoginPinSentViaEmail
    */
   exports.prototype.LoginPinSentViaEmail = undefined;
+
+  /**
+   * All flipdishers must login via Okta
+   * @member {Boolean} ForceOktaLogin
+   */
+  exports.prototype.ForceOktaLogin = undefined;
 
 
   return exports;

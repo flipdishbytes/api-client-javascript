@@ -246,6 +246,24 @@
           done();
         });
       });
+      describe('loginSso', function() {
+        it('should call loginSso successfully', function(done) {
+          // TODO: uncomment loginSso call
+          /*
+
+          instance.loginSso(function(error, data, response) {
+            if (error) {
+              done(error);
+              return;
+            }
+
+            done();
+          });
+          */
+          // TODO: uncomment and complete method invocation above, then delete this line and the next:
+          done();
+        });
+      });
       describe('loginWithPin', function() {
         it('should call loginWithPin successfully', function(done) {
           // TODO: uncomment, update parameter values for loginWithPin call
@@ -341,9 +359,11 @@
               return;
             }
             // TODO: update response assertions
-            expect(data).to.be.a(Flipdish.RequestLoginPinResposne);
+            expect(data).to.be.a(Flipdish.RequestLoginPinResponse);
             expect(data.LoginPinSentViaEmail).to.be.a('boolean');
             expect(data.LoginPinSentViaEmail).to.be(false);
+            expect(data.ForceOktaLogin).to.be.a('boolean');
+            expect(data.ForceOktaLogin).to.be(false);
 
             done();
           });

@@ -11,7 +11,8 @@ Method | HTTP request | Description
 [**getAccountDetails**](AccountsApi.md#getAccountDetails) | **GET** /api/v1.0/accounts | Gets the current account detail
 [**getLocalisedTimeZones**](AccountsApi.md#getLocalisedTimeZones) | **GET** /api/v1.0/accounts/timezones | [PRIVATE API] Get timezones localised to users language
 [**login**](AccountsApi.md#login) | **POST** /api/v1.0/accounts/login | Login with username and password
-[**loginWithPin**](AccountsApi.md#loginWithPin) | **POST** /api/v1.0/accounts/login/pin | Login with username and password
+[**loginSso**](AccountsApi.md#loginSso) | **POST** /api/v1.0/accounts/login/sso | Login with SSO token
+[**loginWithPin**](AccountsApi.md#loginWithPin) | **POST** /api/v1.0/accounts/login/pin | Login with email and pin
 [**logout**](AccountsApi.md#logout) | **POST** /api/v1.0/accounts/logout | Log out. It removes Flipdish authorization Cookie.
 [**passwordResetWithToken**](AccountsApi.md#passwordResetWithToken) | **POST** /api/v1.0/accounts/password | Reset password with token.
 [**recaptchaValidate**](AccountsApi.md#recaptchaValidate) | **POST** /api/v1.0/accounts/recaptcha | Validate recaptcha from flipdish portal
@@ -356,11 +357,11 @@ null (empty response body)
  - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
  - **Accept**: application/json, text/json, application/xml, text/xml
 
-<a name="loginWithPin"></a>
-# **loginWithPin**
-> loginWithPin(loginModel)
+<a name="loginSso"></a>
+# **loginSso**
+> loginSso()
 
-Login with username and password
+Login with SSO token
 
 ### Example
 ```javascript
@@ -373,7 +374,50 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new Flipdish.AccountsApi();
 
-var loginModel = new Flipdish.LoginWithPinModel(); // LoginWithPinModel | Login model
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully.');
+  }
+};
+apiInstance.loginSso(callback);
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+null (empty response body)
+
+### Authorization
+
+[oauth2](../README.md#oauth2)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json, text/json, application/xml, text/xml
+
+<a name="loginWithPin"></a>
+# **loginWithPin**
+> loginWithPin(loginModel)
+
+Login with email and pin
+
+### Example
+```javascript
+var Flipdish = require('@flipdish/api-client-javascript');
+var defaultClient = Flipdish.ApiClient.instance;
+
+// Configure OAuth2 access token for authorization: oauth2
+var oauth2 = defaultClient.authentications['oauth2'];
+oauth2.accessToken = 'YOUR ACCESS TOKEN';
+
+var apiInstance = new Flipdish.AccountsApi();
+
+var loginModel = new Flipdish.LoginWithPinModel(); // LoginWithPinModel | Login with pin model
 
 
 var callback = function(error, data, response) {
@@ -390,7 +434,7 @@ apiInstance.loginWithPin(loginModel, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **loginModel** | [**LoginWithPinModel**](LoginWithPinModel.md)| Login model | 
+ **loginModel** | [**LoginWithPinModel**](LoginWithPinModel.md)| Login with pin model | 
 
 ### Return type
 
@@ -548,7 +592,7 @@ null (empty response body)
 
 <a name="requestLoginPin"></a>
 # **requestLoginPin**
-> RequestLoginPinResposne requestLoginPin(requestLoginPinRequest)
+> RequestLoginPinResponse requestLoginPin(requestLoginPinRequest)
 
 Request login PIN. The server sends the PIN to the email address.
 
@@ -584,7 +628,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**RequestLoginPinResposne**](RequestLoginPinResposne.md)
+[**RequestLoginPinResponse**](RequestLoginPinResponse.md)
 
 ### Authorization
 

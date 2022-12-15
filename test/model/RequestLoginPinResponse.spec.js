@@ -30,20 +30,26 @@
   var instance;
 
   describe('(package)', function() {
-    describe('RequestLoginPinResposne', function() {
+    describe('RequestLoginPinResponse', function() {
       beforeEach(function() {
-        instance = new Flipdish.RequestLoginPinResposne();
+        instance = new Flipdish.RequestLoginPinResponse();
       });
 
-      it('should create an instance of RequestLoginPinResposne', function() {
-        // TODO: update the code to test RequestLoginPinResposne
-        expect(instance).to.be.a(Flipdish.RequestLoginPinResposne);
+      it('should create an instance of RequestLoginPinResponse', function() {
+        // TODO: update the code to test RequestLoginPinResponse
+        expect(instance).to.be.a(Flipdish.RequestLoginPinResponse);
       });
 
       it('should have the property LoginPinSentViaEmail (base name: "LoginPinSentViaEmail")', function() {
         // TODO: update the code to test the property LoginPinSentViaEmail
         expect(instance).to.have.property('LoginPinSentViaEmail');
         // expect(instance.LoginPinSentViaEmail).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property ForceOktaLogin (base name: "ForceOktaLogin")', function() {
+        // TODO: update the code to test the property ForceOktaLogin
+        expect(instance).to.have.property('ForceOktaLogin');
+        // expect(instance.ForceOktaLogin).to.be(expectedValueLiteral);
       });
 
     });
