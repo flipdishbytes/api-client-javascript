@@ -38,7 +38,7 @@
 
   /**
    * Constructs a new <code>GroupReference</code>.
-   * Reference to an existing {Flipdish.PublicModels.V1.Catalog.Groups.Group}
+   * Reference to an existing {Flipdish.Menus.PublicModels.V1.Catalog.Groups.Group}
    * @alias module:model/GroupReference
    * @class
    * @param CatalogItemId {String} Identifier of the ProductId to use as SubProduct
@@ -70,7 +70,7 @@
   }
 
   /**
-   * Details of the referenced {Flipdish.PublicModels.V1.Catalog.Products.GroupReference.Group}
+   * Details of the referenced {Flipdish.Menus.PublicModels.V1.Catalog.Products.GroupReference.Group}
    * @member {module:model/Group} Group
    */
   exports.prototype.Group = undefined;

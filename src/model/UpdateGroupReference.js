@@ -38,7 +38,7 @@
 
   /**
    * Constructs a new <code>UpdateGroupReference</code>.
-   * Data to update a {Flipdish.PublicModels.V1.Catalog.Products.GroupReference}
+   * Data to update a {Flipdish.Menus.PublicModels.V1.Catalog.Products.GroupReference}
    * @alias module:model/UpdateGroupReference
    * @class
    * @param CatalogItemId {String} Identifier of the ProductId to use as SubProduct

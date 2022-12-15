@@ -38,7 +38,7 @@
 
   /**
    * Constructs a new <code>UpdateMetafieldDefinition</code>.
-   * Information to update a {Flipdish.PublicModels.V1.Metafields.MetafieldDefinition}
+   * Information to update a {Flipdish.Metafields.PublicModels.V1.MetafieldDefinition}
    * @alias module:model/UpdateMetafieldDefinition
    * @class
    */

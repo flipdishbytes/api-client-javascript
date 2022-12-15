@@ -38,7 +38,7 @@
 
   /**
    * Constructs a new <code>OwnerEntityConfiguration</code>.
-   * OwnerEntity information to configure its {Flipdish.PublicModels.V1.Metafields.MetafieldDefinition}s
+   * OwnerEntity information to configure its {Flipdish.Metafields.PublicModels.V1.MetafieldDefinition}s
    * @alias module:model/OwnerEntityConfiguration
    * @class
    */

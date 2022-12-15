@@ -86,7 +86,7 @@
   exports.prototype.IsReadOnly = undefined;
 
   /**
-   * The Metafield will extend the specified {Flipdish.PublicModels.V1.Metafields.MetafieldDefinitionBase.OwnerEntity}
+   * The Metafield will extend the specified {Flipdish.Metafields.PublicModels.V1.MetafieldDefinitionBase.OwnerEntity}
    * @member {module:model/MetafieldDefinition.OwnerEntityEnum} OwnerEntity
    */
   exports.prototype.OwnerEntity = undefined;

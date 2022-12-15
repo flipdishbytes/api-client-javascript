@@ -38,7 +38,7 @@
 
   /**
    * Constructs a new <code>CreateMetafieldDefinition</code>.
-   * Information to create a {Flipdish.PublicModels.V1.Metafields.MetafieldDefinition}
+   * Information to create a {Flipdish.Metafields.PublicModels.V1.MetafieldDefinition}
    * @alias module:model/CreateMetafieldDefinition
    * @class
    * @param Key {String} Key of the metafield.  The key must have two parts, separated by a dot. The first part acts as a category, for organizational purposes.  The parts can be composed of lowercase letters, numbers, hyphen and underscore
@@ -86,7 +86,7 @@
   exports.prototype.IsReadOnly = undefined;
 
   /**
-   * The Metafield will extend the specified {Flipdish.PublicModels.V1.Metafields.MetafieldDefinitionBase.OwnerEntity}
+   * The Metafield will extend the specified {Flipdish.Metafields.PublicModels.V1.MetafieldDefinitionBase.OwnerEntity}
    * @member {module:model/CreateMetafieldDefinition.OwnerEntityEnum} OwnerEntity
    */
   exports.prototype.OwnerEntity = undefined;

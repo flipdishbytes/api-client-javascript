@@ -74,13 +74,13 @@
   }
 
   /**
-   * Details of the referenced {Flipdish.PublicModels.V1.Catalog.Groups.ProductReference.Product}
+   * Details of the referenced {Flipdish.Menus.PublicModels.V1.Catalog.Groups.ProductReference.Product}
    * @member {module:model/Product} Item
    */
   exports.prototype.Item = undefined;
 
   /**
-   * Details of the referenced {Flipdish.PublicModels.V1.Catalog.Groups.ProductReference.Product}
+   * Details of the referenced {Flipdish.Menus.PublicModels.V1.Catalog.Groups.ProductReference.Product}
    * @member {module:model/Product} Product
    */
   exports.prototype.Product = undefined;

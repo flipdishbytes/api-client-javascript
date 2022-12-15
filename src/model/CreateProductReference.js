@@ -38,7 +38,7 @@
 
   /**
    * Constructs a new <code>CreateProductReference</code>.
-   * Information to create a reference to a {Flipdish.PublicModels.V1.Catalog.Product}
+   * Information to create a reference to a {Flipdish.Menus.PublicModels.V1.Catalog.Product}
    * @alias module:model/CreateProductReference
    * @class
    * @param CatalogItemId {String} Identifier of the CatalogItemId to use as SubProduct
