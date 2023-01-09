@@ -133,6 +133,10 @@
         obj.PercentFeeDelivery = ApiClient.convertToType(data['PercentFeeDelivery'], 'Number');
       if (data.hasOwnProperty('FixedFeeDelivery'))
         obj.FixedFeeDelivery = ApiClient.convertToType(data['FixedFeeDelivery'], 'Number');
+      if (data.hasOwnProperty('PercentFeeCardPosTransaction'))
+        obj.PercentFeeCardPosTransaction = ApiClient.convertToType(data['PercentFeeCardPosTransaction'], 'Number');
+      if (data.hasOwnProperty('FixedFeeCardPosTransaction'))
+        obj.FixedFeeCardPosTransaction = ApiClient.convertToType(data['FixedFeeCardPosTransaction'], 'Number');
     }
     return obj;
   }
@@ -370,6 +374,18 @@
    * @member {Number} FixedFeeDelivery
    */
   exports.prototype.FixedFeeDelivery = undefined;
+
+  /**
+   * Gets or sets the percent fee for POS transactions.
+   * @member {Number} PercentFeeCardPosTransaction
+   */
+  exports.prototype.PercentFeeCardPosTransaction = undefined;
+
+  /**
+   * Gets or sets the fixed fee for POS transactions.
+   * @member {Number} FixedFeeCardPosTransaction
+   */
+  exports.prototype.FixedFeeCardPosTransaction = undefined;
 
 
   return exports;

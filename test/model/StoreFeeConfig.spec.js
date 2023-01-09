@@ -274,6 +274,18 @@
         // expect(instance.FixedFeeDelivery).to.be(expectedValueLiteral);
       });
 
+      it('should have the property PercentFeeCardPosTransaction (base name: "PercentFeeCardPosTransaction")', function() {
+        // TODO: update the code to test the property PercentFeeCardPosTransaction
+        expect(instance).to.have.property('PercentFeeCardPosTransaction');
+        // expect(instance.PercentFeeCardPosTransaction).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property FixedFeeCardPosTransaction (base name: "FixedFeeCardPosTransaction")', function() {
+        // TODO: update the code to test the property FixedFeeCardPosTransaction
+        expect(instance).to.have.property('FixedFeeCardPosTransaction');
+        // expect(instance.FixedFeeCardPosTransaction).to.be(expectedValueLiteral);
+      });
+
     });
   });
 
