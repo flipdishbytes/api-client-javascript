@@ -25,38 +25,36 @@
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.UpdateFulfillmentStatesConfiguration = factory(root.Flipdish.ApiClient, root.Flipdish.FulfillmentStatusConfigurationItem);
+    root.Flipdish.CreateFulfillmentStatesConfiguration = factory(root.Flipdish.ApiClient, root.Flipdish.FulfillmentStatusConfigurationItem);
   }
 }(this, function(ApiClient, FulfillmentStatusConfigurationItem) {
   'use strict';
 
   /**
-   * The UpdateFulfillmentStatesConfiguration model module.
-   * @module model/UpdateFulfillmentStatesConfiguration
+   * The CreateFulfillmentStatesConfiguration model module.
+   * @module model/CreateFulfillmentStatesConfiguration
    * @version 1.0.0
    */
 
   /**
-   * Constructs a new <code>UpdateFulfillmentStatesConfiguration</code>.
-   * Update fulfillment states configuration
-   * @alias module:model/UpdateFulfillmentStatesConfiguration
+   * Constructs a new <code>CreateFulfillmentStatesConfiguration</code>.
+   * Create fulfillment states configuration
+   * @alias module:model/CreateFulfillmentStatesConfiguration
    * @class
    */
   var exports = function() {
   };
 
   /**
-   * Constructs a <code>UpdateFulfillmentStatesConfiguration</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>CreateFulfillmentStatesConfiguration</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/UpdateFulfillmentStatesConfiguration} obj Optional instance to populate.
-   * @return {module:model/UpdateFulfillmentStatesConfiguration} The populated <code>UpdateFulfillmentStatesConfiguration</code> instance.
+   * @param {module:model/CreateFulfillmentStatesConfiguration} obj Optional instance to populate.
+   * @return {module:model/CreateFulfillmentStatesConfiguration} The populated <code>CreateFulfillmentStatesConfiguration</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
-      if (data.hasOwnProperty('OverwriteSystemTemplate'))
-        obj.OverwriteSystemTemplate = ApiClient.convertToType(data['OverwriteSystemTemplate'], 'Boolean');
       if (data.hasOwnProperty('StoreIds'))
         obj.StoreIds = ApiClient.convertToType(data['StoreIds'], ['Number']);
       if (data.hasOwnProperty('StoreSelectorType'))
@@ -72,12 +70,6 @@
   }
 
   /**
-   * Set to true if a system configuration template is to be updated (permissions also needed)
-   * @member {Boolean} OverwriteSystemTemplate
-   */
-  exports.prototype.OverwriteSystemTemplate = undefined;
-
-  /**
    * Stores id's
    * @member {Array.<Number>} StoreIds
    */
@@ -85,7 +77,7 @@
 
   /**
    * Store Selector Type
-   * @member {module:model/UpdateFulfillmentStatesConfiguration.StoreSelectorTypeEnum} StoreSelectorType
+   * @member {module:model/CreateFulfillmentStatesConfiguration.StoreSelectorTypeEnum} StoreSelectorType
    */
   exports.prototype.StoreSelectorType = undefined;
 

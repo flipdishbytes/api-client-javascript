@@ -30,20 +30,14 @@
   var instance;
 
   describe('(package)', function() {
-    describe('UpdateFulfillmentStatesConfiguration', function() {
+    describe('CreateFulfillmentStatesConfiguration', function() {
       beforeEach(function() {
-        instance = new Flipdish.UpdateFulfillmentStatesConfiguration();
+        instance = new Flipdish.CreateFulfillmentStatesConfiguration();
       });
 
-      it('should create an instance of UpdateFulfillmentStatesConfiguration', function() {
-        // TODO: update the code to test UpdateFulfillmentStatesConfiguration
-        expect(instance).to.be.a(Flipdish.UpdateFulfillmentStatesConfiguration);
-      });
-
-      it('should have the property OverwriteSystemTemplate (base name: "OverwriteSystemTemplate")', function() {
-        // TODO: update the code to test the property OverwriteSystemTemplate
-        expect(instance).to.have.property('OverwriteSystemTemplate');
-        // expect(instance.OverwriteSystemTemplate).to.be(expectedValueLiteral);
+      it('should create an instance of CreateFulfillmentStatesConfiguration', function() {
+        // TODO: update the code to test CreateFulfillmentStatesConfiguration
+        expect(instance).to.be.a(Flipdish.CreateFulfillmentStatesConfiguration);
       });
 
       it('should have the property StoreIds (base name: "StoreIds")', function() {
