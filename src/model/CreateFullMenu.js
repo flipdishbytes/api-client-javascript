@@ -86,7 +86,7 @@
   exports.prototype.ImageUrl = undefined;
 
   /**
-   * Menu sections (startes, main etc)
+   * Menu sections (starters, main etc)
    * @member {Array.<module:model/CreateFullMenuSection>} MenuSections
    */
   exports.prototype.MenuSections = undefined;

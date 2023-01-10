@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 **StoreSelectorType** | **String** | Store Selector Type | [optional] 
 **States** | [**[FulfillmentStatusConfigurationItem]**](FulfillmentStatusConfigurationItem.md) | Settings | [optional] 
 **AutomaticTransitionsEnabled** | **Boolean** | Enable automatic transitions | [optional] 
+**OverwriteSystemTemplate** | **Boolean** | Set to true if a system configuration template is to be updated (permissions also needed) | [optional] 
 **Name** | **String** | Name | [optional] 
 
 

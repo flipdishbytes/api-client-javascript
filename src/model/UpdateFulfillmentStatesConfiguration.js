@@ -63,6 +63,8 @@
         obj.States = ApiClient.convertToType(data['States'], [FulfillmentStatusConfigurationItem]);
       if (data.hasOwnProperty('AutomaticTransitionsEnabled'))
         obj.AutomaticTransitionsEnabled = ApiClient.convertToType(data['AutomaticTransitionsEnabled'], 'Boolean');
+      if (data.hasOwnProperty('OverwriteSystemTemplate'))
+        obj.OverwriteSystemTemplate = ApiClient.convertToType(data['OverwriteSystemTemplate'], 'Boolean');
       if (data.hasOwnProperty('Name'))
         obj.Name = ApiClient.convertToType(data['Name'], 'String');
     }
@@ -92,6 +94,12 @@
    * @member {Boolean} AutomaticTransitionsEnabled
    */
   exports.prototype.AutomaticTransitionsEnabled = undefined;
+
+  /**
+   * Set to true if a system configuration template is to be updated (permissions also needed)
+   * @member {Boolean} OverwriteSystemTemplate
+   */
+  exports.prototype.OverwriteSystemTemplate = undefined;
 
   /**
    * Name
