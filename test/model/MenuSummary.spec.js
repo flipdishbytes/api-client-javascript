@@ -58,6 +58,12 @@
         // expect(instance.VersionNumber).to.be(expectedValueLiteral);
       });
 
+      it('should have the property MenuUrl (base name: "MenuUrl")', function() {
+        // TODO: update the code to test the property MenuUrl
+        expect(instance).to.have.property('MenuUrl');
+        // expect(instance.MenuUrl).to.be(expectedValueLiteral);
+      });
+
       it('should have the property Name (base name: "Name")', function() {
         // TODO: update the code to test the property Name
         expect(instance).to.have.property('Name');

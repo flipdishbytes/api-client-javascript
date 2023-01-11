@@ -61,6 +61,8 @@
         obj.ModifiedTime = ApiClient.convertToType(data['ModifiedTime'], 'Date');
       if (data.hasOwnProperty('VersionNumber'))
         obj.VersionNumber = ApiClient.convertToType(data['VersionNumber'], 'Number');
+      if (data.hasOwnProperty('MenuUrl'))
+        obj.MenuUrl = ApiClient.convertToType(data['MenuUrl'], 'String');
       if (data.hasOwnProperty('Name'))
         obj.Name = ApiClient.convertToType(data['Name'], 'String');
       if (data.hasOwnProperty('Locked'))
@@ -88,6 +90,12 @@
    * @member {Number} VersionNumber
    */
   exports.prototype.VersionNumber = undefined;
+
+  /**
+   * Menu Url
+   * @member {String} MenuUrl
+   */
+  exports.prototype.MenuUrl = undefined;
 
   /**
    * Name of Menu, only shown in portal
