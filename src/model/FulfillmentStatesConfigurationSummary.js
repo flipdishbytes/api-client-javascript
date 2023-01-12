@@ -38,7 +38,7 @@
 
   /**
    * Constructs a new <code>FulfillmentStatesConfigurationSummary</code>.
-   * App store app configuration header information
+   * Fulfillment configuration header information
    * @alias module:model/FulfillmentStatesConfigurationSummary
    * @class
    * @param AppId {String} AppId
