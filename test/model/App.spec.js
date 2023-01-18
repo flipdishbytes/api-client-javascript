@@ -118,6 +118,12 @@
         // expect(instance.MapSouthWest).to.be(expectedValueLiteral);
       });
 
+      it('should have the property GoogleMapsApiKeyWeb (base name: "GoogleMapsApiKeyWeb")', function() {
+        // TODO: update the code to test the property GoogleMapsApiKeyWeb
+        expect(instance).to.have.property('GoogleMapsApiKeyWeb');
+        // expect(instance.GoogleMapsApiKeyWeb).to.be(expectedValueLiteral);
+      });
+
       it('should have the property Name (base name: "Name")', function() {
         // TODO: update the code to test the property Name
         expect(instance).to.have.property('Name');

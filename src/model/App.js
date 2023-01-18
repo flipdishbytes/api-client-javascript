@@ -81,6 +81,8 @@
         obj.MapNorthEast = Coordinates.constructFromObject(data['MapNorthEast']);
       if (data.hasOwnProperty('MapSouthWest'))
         obj.MapSouthWest = Coordinates.constructFromObject(data['MapSouthWest']);
+      if (data.hasOwnProperty('GoogleMapsApiKeyWeb'))
+        obj.GoogleMapsApiKeyWeb = ApiClient.convertToType(data['GoogleMapsApiKeyWeb'], 'String');
       if (data.hasOwnProperty('Name'))
         obj.Name = ApiClient.convertToType(data['Name'], 'String');
       if (data.hasOwnProperty('HostName'))
@@ -174,6 +176,12 @@
    * @member {module:model/Coordinates} MapSouthWest
    */
   exports.prototype.MapSouthWest = undefined;
+
+  /**
+   * Key to be passed with Google Maps requests
+   * @member {String} GoogleMapsApiKeyWeb
+   */
+  exports.prototype.GoogleMapsApiKeyWeb = undefined;
 
   /**
    * App name.   This is used in various places on the Apple App Store, Google Play Store, mobile apps and websites.
