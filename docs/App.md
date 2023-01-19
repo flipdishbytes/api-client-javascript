@@ -360,6 +360,8 @@ Name | Type | Description | Notes
 
 * `UpdatePayGreenStoreConfiguration` (value: `"UpdatePayGreenStoreConfiguration"`)
 
+* `ViewSubscriptions` (value: `"ViewSubscriptions"`)
+
 
 
 

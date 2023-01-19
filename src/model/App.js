@@ -1205,7 +1205,13 @@
      * value: "UpdatePayGreenStoreConfiguration"
      * @const
      */
-    UpdatePayGreenStoreConfiguration: "UpdatePayGreenStoreConfiguration"
+    UpdatePayGreenStoreConfiguration: "UpdatePayGreenStoreConfiguration",
+
+    /**
+     * value: "ViewSubscriptions"
+     * @const
+     */
+    ViewSubscriptions: "ViewSubscriptions"
   };
 
 
