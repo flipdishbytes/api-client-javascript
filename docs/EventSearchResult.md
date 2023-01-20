@@ -138,5 +138,6 @@ Name | Type | Description | Notes
 **StoreServiceChargeUpdatedEvent** | [**[StoreServiceChargeUpdatedEvent]**](StoreServiceChargeUpdatedEvent.md) | Service Charge Updated Event | [optional] 
 **MobileAppsSubmissionStatusUpdatedEvent** | [**[MobileAppsSubmissionStatusUpdatedEvent]**](MobileAppsSubmissionStatusUpdatedEvent.md) | Mobile Submission Status Updated Event | [optional] 
 **MobileAppsSubmissionUpdatedEvent** | [**[MobileAppsSubmissionUpdatedEvent]**](MobileAppsSubmissionUpdatedEvent.md) | Mobile Submission Updated Event | [optional] 
+**StoreFeeConfigUpdatedEvent** | [**[StoreFeeConfigUpdatedEvent]**](StoreFeeConfigUpdatedEvent.md) | Store Fee Config Updated Event | [optional] 
 
 

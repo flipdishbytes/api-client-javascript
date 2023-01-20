@@ -850,6 +850,12 @@
         // expect(instance.MobileAppsSubmissionUpdatedEvent).to.be(expectedValueLiteral);
       });
 
+      it('should have the property StoreFeeConfigUpdatedEvent (base name: "StoreFeeConfigUpdatedEvent")', function() {
+        // TODO: update the code to test the property StoreFeeConfigUpdatedEvent
+        expect(instance).to.have.property('StoreFeeConfigUpdatedEvent');
+        // expect(instance.StoreFeeConfigUpdatedEvent).to.be(expectedValueLiteral);
+      });
+
     });
   });
 
