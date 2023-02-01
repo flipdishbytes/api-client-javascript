@@ -119,6 +119,8 @@
         obj.PermissionsType = ApiClient.convertToType(data['PermissionsType'], 'String');
       if (data.hasOwnProperty('Support'))
         obj.Support = AppStoreAppSupportInfo.constructFromObject(data['Support']);
+      if (data.hasOwnProperty('ExternalFunctionActionUrl'))
+        obj.ExternalFunctionActionUrl = ApiClient.convertToType(data['ExternalFunctionActionUrl'], 'String');
       if (data.hasOwnProperty('Name'))
         obj.Name = ApiClient.convertToType(data['Name'], 'String');
       if (data.hasOwnProperty('Description'))
@@ -240,6 +242,12 @@
    * @member {module:model/AppStoreAppSupportInfo} Support
    */
   exports.prototype.Support = undefined;
+
+  /**
+   * Action URL for external functions, used for handling Portal configuration action buttons
+   * @member {String} ExternalFunctionActionUrl
+   */
+  exports.prototype.ExternalFunctionActionUrl = undefined;
 
   /**
    * Name

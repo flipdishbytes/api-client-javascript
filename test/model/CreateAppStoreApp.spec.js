@@ -94,6 +94,12 @@
         // expect(instance.Support).to.be(expectedValueLiteral);
       });
 
+      it('should have the property ExternalFunctionActionUrl (base name: "ExternalFunctionActionUrl")', function() {
+        // TODO: update the code to test the property ExternalFunctionActionUrl
+        expect(instance).to.have.property('ExternalFunctionActionUrl');
+        // expect(instance.ExternalFunctionActionUrl).to.be(expectedValueLiteral);
+      });
+
       it('should have the property Name (base name: "Name")', function() {
         // TODO: update the code to test the property Name
         expect(instance).to.have.property('Name');
