@@ -6,6 +6,8 @@ Name | Type | Description | Notes
 **SubscriptionId** | **String** | The subscription identifier | 
 **Status** | **String** | Status | 
 **Currency** | **String** | Currency | 
+**NextInvoiceAmount** | **Number** | Next invoice amount | [optional] 
+**NextInvoiceBillingDate** | **Date** | Next invoice billing date | [optional] 
 
 
 <a name="StatusEnum"></a>

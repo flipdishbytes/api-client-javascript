@@ -67,6 +67,10 @@
         obj.Status = ApiClient.convertToType(data['Status'], 'String');
       if (data.hasOwnProperty('Currency'))
         obj.Currency = ApiClient.convertToType(data['Currency'], 'String');
+      if (data.hasOwnProperty('NextInvoiceAmount'))
+        obj.NextInvoiceAmount = ApiClient.convertToType(data['NextInvoiceAmount'], 'Number');
+      if (data.hasOwnProperty('NextInvoiceBillingDate'))
+        obj.NextInvoiceBillingDate = ApiClient.convertToType(data['NextInvoiceBillingDate'], 'Date');
     }
     return obj;
   }
@@ -88,6 +92,18 @@
    * @member {module:model/Subscription.CurrencyEnum} Currency
    */
   exports.prototype.Currency = undefined;
+
+  /**
+   * Next invoice amount
+   * @member {Number} NextInvoiceAmount
+   */
+  exports.prototype.NextInvoiceAmount = undefined;
+
+  /**
+   * Next invoice billing date
+   * @member {Date} NextInvoiceBillingDate
+   */
+  exports.prototype.NextInvoiceBillingDate = undefined;
 
 
 

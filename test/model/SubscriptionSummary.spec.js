@@ -58,6 +58,18 @@
         // expect(instance.Currency).to.be(expectedValueLiteral);
       });
 
+      it('should have the property NextInvoiceAmount (base name: "NextInvoiceAmount")', function() {
+        // TODO: update the code to test the property NextInvoiceAmount
+        expect(instance).to.have.property('NextInvoiceAmount');
+        // expect(instance.NextInvoiceAmount).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property NextInvoiceBillingDate (base name: "NextInvoiceBillingDate")', function() {
+        // TODO: update the code to test the property NextInvoiceBillingDate
+        expect(instance).to.have.property('NextInvoiceBillingDate');
+        // expect(instance.NextInvoiceBillingDate).to.be(expectedValueLiteral);
+      });
+
     });
   });
 
