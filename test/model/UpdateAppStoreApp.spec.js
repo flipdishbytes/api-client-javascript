@@ -100,6 +100,12 @@
         // expect(instance.ExternalFunctionActionUrl).to.be(expectedValueLiteral);
       });
 
+      it('should have the property ExternalFunctionSignatureKey (base name: "ExternalFunctionSignatureKey")', function() {
+        // TODO: update the code to test the property ExternalFunctionSignatureKey
+        expect(instance).to.have.property('ExternalFunctionSignatureKey');
+        // expect(instance.ExternalFunctionSignatureKey).to.be(expectedValueLiteral);
+      });
+
       it('should have the property Name (base name: "Name")', function() {
         // TODO: update the code to test the property Name
         expect(instance).to.have.property('Name');

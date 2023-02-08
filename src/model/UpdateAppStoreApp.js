@@ -91,6 +91,8 @@
         obj.Support = AppStoreAppSupportInfo.constructFromObject(data['Support']);
       if (data.hasOwnProperty('ExternalFunctionActionUrl'))
         obj.ExternalFunctionActionUrl = ApiClient.convertToType(data['ExternalFunctionActionUrl'], 'String');
+      if (data.hasOwnProperty('ExternalFunctionSignatureKey'))
+        obj.ExternalFunctionSignatureKey = ApiClient.convertToType(data['ExternalFunctionSignatureKey'], 'String');
       if (data.hasOwnProperty('Name'))
         obj.Name = ApiClient.convertToType(data['Name'], 'String');
       if (data.hasOwnProperty('Description'))
@@ -166,6 +168,12 @@
    * @member {String} ExternalFunctionActionUrl
    */
   exports.prototype.ExternalFunctionActionUrl = undefined;
+
+  /**
+   * Signing key for external function action calls
+   * @member {String} ExternalFunctionSignatureKey
+   */
+  exports.prototype.ExternalFunctionSignatureKey = undefined;
 
   /**
    * Name
