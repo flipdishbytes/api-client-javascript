@@ -4,6 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **SubscriptionId** | **String** | The subscription identifier | 
+**Name** | **String** |  | 
 **Status** | **String** | Status | 
 **Currency** | **String** | Currency | 
 **NextInvoiceAmount** | **Number** | Next invoice amount | [optional] 

@@ -42,11 +42,13 @@
    * @alias module:model/Subscription
    * @class
    * @param SubscriptionId {String} The subscription identifier
+   * @param Name {String} 
    * @param Status {module:model/Subscription.StatusEnum} Status
    * @param Currency {module:model/Subscription.CurrencyEnum} Currency
    */
-  var exports = function(SubscriptionId, Status, Currency) {
+  var exports = function(SubscriptionId, Name, Status, Currency) {
     this.SubscriptionId = SubscriptionId;
+    this.Name = Name;
     this.Status = Status;
     this.Currency = Currency;
   };
@@ -63,6 +65,8 @@
       obj = obj || new exports();
       if (data.hasOwnProperty('SubscriptionId'))
         obj.SubscriptionId = ApiClient.convertToType(data['SubscriptionId'], 'String');
+      if (data.hasOwnProperty('Name'))
+        obj.Name = ApiClient.convertToType(data['Name'], 'String');
       if (data.hasOwnProperty('Status'))
         obj.Status = ApiClient.convertToType(data['Status'], 'String');
       if (data.hasOwnProperty('Currency'))
@@ -80,6 +84,11 @@
    * @member {String} SubscriptionId
    */
   exports.prototype.SubscriptionId = undefined;
+
+  /**
+   * @member {String} Name
+   */
+  exports.prototype.Name = undefined;
 
   /**
    * Status
