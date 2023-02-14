@@ -75,6 +75,8 @@
         obj.NextInvoiceAmount = ApiClient.convertToType(data['NextInvoiceAmount'], 'Number');
       if (data.hasOwnProperty('NextInvoiceBillingDate'))
         obj.NextInvoiceBillingDate = ApiClient.convertToType(data['NextInvoiceBillingDate'], 'Date');
+      if (data.hasOwnProperty('User'))
+        obj.User = ApiClient.convertToType(data['User'], 'String');
     }
     return obj;
   }
@@ -113,6 +115,12 @@
    * @member {Date} NextInvoiceBillingDate
    */
   exports.prototype.NextInvoiceBillingDate = undefined;
+
+  /**
+   * User
+   * @member {String} User
+   */
+  exports.prototype.User = undefined;
 
 
 

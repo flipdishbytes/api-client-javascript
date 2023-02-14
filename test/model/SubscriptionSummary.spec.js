@@ -76,6 +76,12 @@
         // expect(instance.NextInvoiceBillingDate).to.be(expectedValueLiteral);
       });
 
+      it('should have the property User (base name: "User")', function() {
+        // TODO: update the code to test the property User
+        expect(instance).to.have.property('User');
+        // expect(instance.User).to.be(expectedValueLiteral);
+      });
+
     });
   });
 

@@ -9,6 +9,7 @@ Name | Type | Description | Notes
 **Currency** | **String** | Currency | 
 **NextInvoiceAmount** | **Number** | Next invoice amount | [optional] 
 **NextInvoiceBillingDate** | **Date** | Next invoice billing date | [optional] 
+**User** | **String** | User | [optional] 
 
 
 <a name="StatusEnum"></a>
