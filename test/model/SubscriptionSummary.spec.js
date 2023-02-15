@@ -82,6 +82,12 @@
         // expect(instance.User).to.be(expectedValueLiteral);
       });
 
+      it('should have the property DefaultPaymentDescription (base name: "DefaultPaymentDescription")', function() {
+        // TODO: update the code to test the property DefaultPaymentDescription
+        expect(instance).to.have.property('DefaultPaymentDescription');
+        // expect(instance.DefaultPaymentDescription).to.be(expectedValueLiteral);
+      });
+
     });
   });
 

@@ -45,12 +45,16 @@
    * @param Name {String} 
    * @param Status {module:model/Subscription.StatusEnum} Status
    * @param Currency {module:model/Subscription.CurrencyEnum} Currency
+   * @param User {String} User
+   * @param DefaultPaymentDescription {String} Default payment description
    */
-  var exports = function(SubscriptionId, Name, Status, Currency) {
+  var exports = function(SubscriptionId, Name, Status, Currency, User, DefaultPaymentDescription) {
     this.SubscriptionId = SubscriptionId;
     this.Name = Name;
     this.Status = Status;
     this.Currency = Currency;
+    this.User = User;
+    this.DefaultPaymentDescription = DefaultPaymentDescription;
   };
 
   /**
@@ -77,6 +81,8 @@
         obj.NextInvoiceBillingDate = ApiClient.convertToType(data['NextInvoiceBillingDate'], 'Date');
       if (data.hasOwnProperty('User'))
         obj.User = ApiClient.convertToType(data['User'], 'String');
+      if (data.hasOwnProperty('DefaultPaymentDescription'))
+        obj.DefaultPaymentDescription = ApiClient.convertToType(data['DefaultPaymentDescription'], 'String');
     }
     return obj;
   }
@@ -121,6 +127,12 @@
    * @member {String} User
    */
   exports.prototype.User = undefined;
+
+  /**
+   * Default payment description
+   * @member {String} DefaultPaymentDescription
+   */
+  exports.prototype.DefaultPaymentDescription = undefined;
 
 
 
