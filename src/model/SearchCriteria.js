@@ -71,6 +71,10 @@
         obj.StoreGroupId = ApiClient.convertToType(data['StoreGroupId'], 'Number');
       if (data.hasOwnProperty('UserId'))
         obj.UserId = ApiClient.convertToType(data['UserId'], 'Number');
+      if (data.hasOwnProperty('MenuId'))
+        obj.MenuId = ApiClient.convertToType(data['MenuId'], 'Number');
+      if (data.hasOwnProperty('CampaignId'))
+        obj.CampaignId = ApiClient.convertToType(data['CampaignId'], 'Number');
       if (data.hasOwnProperty('UserEmail'))
         obj.UserEmail = ApiClient.convertToType(data['UserEmail'], 'String');
       if (data.hasOwnProperty('UserName'))
@@ -132,6 +136,18 @@
    * @member {Number} UserId
    */
   exports.prototype.UserId = undefined;
+
+  /**
+   * Events that have Menu Id
+   * @member {Number} MenuId
+   */
+  exports.prototype.MenuId = undefined;
+
+  /**
+   * Events that have Campaign Id
+   * @member {Number} CampaignId
+   */
+  exports.prototype.CampaignId = undefined;
 
   /**
    * Events that have User Email

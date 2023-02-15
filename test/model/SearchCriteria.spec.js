@@ -88,6 +88,18 @@
         // expect(instance.UserId).to.be(expectedValueLiteral);
       });
 
+      it('should have the property MenuId (base name: "MenuId")', function() {
+        // TODO: update the code to test the property MenuId
+        expect(instance).to.have.property('MenuId');
+        // expect(instance.MenuId).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property CampaignId (base name: "CampaignId")', function() {
+        // TODO: update the code to test the property CampaignId
+        expect(instance).to.have.property('CampaignId');
+        // expect(instance.CampaignId).to.be(expectedValueLiteral);
+      });
+
       it('should have the property UserEmail (base name: "UserEmail")', function() {
         // TODO: update the code to test the property UserEmail
         expect(instance).to.have.property('UserEmail');
