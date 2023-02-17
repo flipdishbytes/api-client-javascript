@@ -16,18 +16,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/BankAccount'], factory);
+    define(['ApiClient', 'model/BankAccount', 'model/UserEventInfo'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./BankAccount'));
+    module.exports = factory(require('../ApiClient'), require('./BankAccount'), require('./UserEventInfo'));
   } else {
     // Browser globals (root is window)
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.BankAccountCreatedEvent = factory(root.Flipdish.ApiClient, root.Flipdish.BankAccount);
+    root.Flipdish.BankAccountCreatedEvent = factory(root.Flipdish.ApiClient, root.Flipdish.BankAccount, root.Flipdish.UserEventInfo);
   }
-}(this, function(ApiClient, BankAccount) {
+}(this, function(ApiClient, BankAccount, UserEventInfo) {
   'use strict';
 
   /**
@@ -57,6 +57,8 @@
       obj = obj || new exports();
       if (data.hasOwnProperty('BankAccount'))
         obj.BankAccount = BankAccount.constructFromObject(data['BankAccount']);
+      if (data.hasOwnProperty('User'))
+        obj.User = UserEventInfo.constructFromObject(data['User']);
       if (data.hasOwnProperty('EventName'))
         obj.EventName = ApiClient.convertToType(data['EventName'], 'String');
       if (data.hasOwnProperty('FlipdishEventId'))
@@ -78,6 +80,12 @@
    * @member {module:model/BankAccount} BankAccount
    */
   exports.prototype.BankAccount = undefined;
+
+  /**
+   * Updated by user
+   * @member {module:model/UserEventInfo} User
+   */
+  exports.prototype.User = undefined;
 
   /**
    * The event name

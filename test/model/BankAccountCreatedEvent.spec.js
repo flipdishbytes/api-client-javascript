@@ -46,6 +46,12 @@
         // expect(instance.BankAccount).to.be(expectedValueLiteral);
       });
 
+      it('should have the property User (base name: "User")', function() {
+        // TODO: update the code to test the property User
+        expect(instance).to.have.property('User');
+        // expect(instance.User).to.be(expectedValueLiteral);
+      });
+
       it('should have the property EventName (base name: "EventName")', function() {
         // TODO: update the code to test the property EventName
         expect(instance).to.have.property('EventName');
