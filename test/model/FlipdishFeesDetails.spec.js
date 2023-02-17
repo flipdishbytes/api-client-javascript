@@ -52,6 +52,12 @@
         // expect(instance.CashSalesFees).to.be(expectedValueLiteral);
       });
 
+      it('should have the property PosSalesFees (base name: "PosSalesFees")', function() {
+        // TODO: update the code to test the property PosSalesFees
+        expect(instance).to.have.property('PosSalesFees');
+        // expect(instance.PosSalesFees).to.be(expectedValueLiteral);
+      });
+
       it('should have the property TotalSalesFees (base name: "TotalSalesFees")', function() {
         // TODO: update the code to test the property TotalSalesFees
         expect(instance).to.have.property('TotalSalesFees');
@@ -68,6 +74,12 @@
         // TODO: update the code to test the property CashSalesRefundedFees
         expect(instance).to.have.property('CashSalesRefundedFees');
         // expect(instance.CashSalesRefundedFees).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property PosSalesRefundedFees (base name: "PosSalesRefundedFees")', function() {
+        // TODO: update the code to test the property PosSalesRefundedFees
+        expect(instance).to.have.property('PosSalesRefundedFees');
+        // expect(instance.PosSalesRefundedFees).to.be(expectedValueLiteral);
       });
 
       it('should have the property SalesFeesVat (base name: "SalesFeesVat")', function() {

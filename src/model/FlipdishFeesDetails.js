@@ -59,12 +59,16 @@
         obj.OnlineSalesFees = ApiClient.convertToType(data['OnlineSalesFees'], 'Number');
       if (data.hasOwnProperty('CashSalesFees'))
         obj.CashSalesFees = ApiClient.convertToType(data['CashSalesFees'], 'Number');
+      if (data.hasOwnProperty('PosSalesFees'))
+        obj.PosSalesFees = ApiClient.convertToType(data['PosSalesFees'], 'Number');
       if (data.hasOwnProperty('TotalSalesFees'))
         obj.TotalSalesFees = ApiClient.convertToType(data['TotalSalesFees'], 'Number');
       if (data.hasOwnProperty('OnlineSalesRefundedFees'))
         obj.OnlineSalesRefundedFees = ApiClient.convertToType(data['OnlineSalesRefundedFees'], 'Number');
       if (data.hasOwnProperty('CashSalesRefundedFees'))
         obj.CashSalesRefundedFees = ApiClient.convertToType(data['CashSalesRefundedFees'], 'Number');
+      if (data.hasOwnProperty('PosSalesRefundedFees'))
+        obj.PosSalesRefundedFees = ApiClient.convertToType(data['PosSalesRefundedFees'], 'Number');
       if (data.hasOwnProperty('SalesFeesVat'))
         obj.SalesFeesVat = ApiClient.convertToType(data['SalesFeesVat'], 'Number');
       if (data.hasOwnProperty('TotalFees'))
@@ -86,6 +90,12 @@
   exports.prototype.CashSalesFees = undefined;
 
   /**
+   * Fees of POS sales
+   * @member {Number} PosSalesFees
+   */
+  exports.prototype.PosSalesFees = undefined;
+
+  /**
    * Total online and cash sales
    * @member {Number} TotalSalesFees
    */
@@ -102,6 +112,12 @@
    * @member {Number} CashSalesRefundedFees
    */
   exports.prototype.CashSalesRefundedFees = undefined;
+
+  /**
+   * Fees on refunds for POS sales
+   * @member {Number} PosSalesRefundedFees
+   */
+  exports.prototype.PosSalesRefundedFees = undefined;
 
   /**
    * VAT on sales fees
