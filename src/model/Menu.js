@@ -73,6 +73,8 @@
         obj.MenuSections = ApiClient.convertToType(data['MenuSections'], [MenuSection]);
       if (data.hasOwnProperty('TaxRates'))
         obj.TaxRates = ApiClient.convertToType(data['TaxRates'], [MenuTaxRate]);
+      if (data.hasOwnProperty('AppId'))
+        obj.AppId = ApiClient.convertToType(data['AppId'], 'String');
       if (data.hasOwnProperty('DisplaySectionLinks'))
         obj.DisplaySectionLinks = ApiClient.convertToType(data['DisplaySectionLinks'], 'Boolean');
       if (data.hasOwnProperty('MenuSectionBehaviour'))
@@ -136,6 +138,12 @@
    * @member {Array.<module:model/MenuTaxRate>} TaxRates
    */
   exports.prototype.TaxRates = undefined;
+
+  /**
+   * Identifier of App the menu is attached to
+   * @member {String} AppId
+   */
+  exports.prototype.AppId = undefined;
 
   /**
    * Display menu section link on UI
