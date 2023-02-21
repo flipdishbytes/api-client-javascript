@@ -57,6 +57,8 @@
       obj = obj || new exports();
       if (data.hasOwnProperty('OnlineSalesRefundedAmount'))
         obj.OnlineSalesRefundedAmount = ApiClient.convertToType(data['OnlineSalesRefundedAmount'], 'Number');
+      if (data.hasOwnProperty('PosSalesRefundedAmount'))
+        obj.PosSalesRefundedAmount = ApiClient.convertToType(data['PosSalesRefundedAmount'], 'Number');
       if (data.hasOwnProperty('CashSalesRefundedAmount'))
         obj.CashSalesRefundedAmount = ApiClient.convertToType(data['CashSalesRefundedAmount'], 'Number');
       if (data.hasOwnProperty('CustomerCashFees'))
@@ -78,6 +80,12 @@
    * @member {Number} OnlineSalesRefundedAmount
    */
   exports.prototype.OnlineSalesRefundedAmount = undefined;
+
+  /**
+   * POS Online sales refunds
+   * @member {Number} PosSalesRefundedAmount
+   */
+  exports.prototype.PosSalesRefundedAmount = undefined;
 
   /**
    * Cash sales refunds

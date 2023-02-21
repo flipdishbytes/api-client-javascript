@@ -46,6 +46,12 @@
         // expect(instance.OnlineSalesRefundedAmount).to.be(expectedValueLiteral);
       });
 
+      it('should have the property PosSalesRefundedAmount (base name: "PosSalesRefundedAmount")', function() {
+        // TODO: update the code to test the property PosSalesRefundedAmount
+        expect(instance).to.have.property('PosSalesRefundedAmount');
+        // expect(instance.PosSalesRefundedAmount).to.be(expectedValueLiteral);
+      });
+
       it('should have the property CashSalesRefundedAmount (base name: "CashSalesRefundedAmount")', function() {
         // TODO: update the code to test the property CashSalesRefundedAmount
         expect(instance).to.have.property('CashSalesRefundedAmount');
