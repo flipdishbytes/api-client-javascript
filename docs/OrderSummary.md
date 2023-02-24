@@ -30,6 +30,7 @@ Name | Type | Description | Notes
 **ChannelOrderDisplayId** | **String** | ChannelOrderDisplayId from external channel | [optional] 
 **OrderDropOffLocation** | [**OrderDropOffLocation**](OrderDropOffLocation.md) | DropOffLocation selected for this order | [optional] 
 **OrderBatchInfo** | [**OrderBatchSummary**](OrderBatchSummary.md) | OrderBatch information | [optional] 
+**DeliveryLocation** | [**DeliveryLocation**](DeliveryLocation.md) |  | [optional] 
 
 
 <a name="DeliveryTypeEnum"></a>

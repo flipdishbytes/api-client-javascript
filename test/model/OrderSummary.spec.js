@@ -202,6 +202,12 @@
         // expect(instance.OrderBatchInfo).to.be(expectedValueLiteral);
       });
 
+      it('should have the property DeliveryLocation (base name: "DeliveryLocation")', function() {
+        // TODO: update the code to test the property DeliveryLocation
+        expect(instance).to.have.property('DeliveryLocation');
+        // expect(instance.DeliveryLocation).to.be(expectedValueLiteral);
+      });
+
     });
   });
 

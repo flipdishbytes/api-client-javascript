@@ -16,18 +16,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/Channel', 'model/OrderBatchSummary', 'model/OrderDropOffLocation'], factory);
+    define(['ApiClient', 'model/Channel', 'model/DeliveryLocation', 'model/OrderBatchSummary', 'model/OrderDropOffLocation'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./Channel'), require('./OrderBatchSummary'), require('./OrderDropOffLocation'));
+    module.exports = factory(require('../ApiClient'), require('./Channel'), require('./DeliveryLocation'), require('./OrderBatchSummary'), require('./OrderDropOffLocation'));
   } else {
     // Browser globals (root is window)
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.OrderSummary = factory(root.Flipdish.ApiClient, root.Flipdish.Channel, root.Flipdish.OrderBatchSummary, root.Flipdish.OrderDropOffLocation);
+    root.Flipdish.OrderSummary = factory(root.Flipdish.ApiClient, root.Flipdish.Channel, root.Flipdish.DeliveryLocation, root.Flipdish.OrderBatchSummary, root.Flipdish.OrderDropOffLocation);
   }
-}(this, function(ApiClient, Channel, OrderBatchSummary, OrderDropOffLocation) {
+}(this, function(ApiClient, Channel, DeliveryLocation, OrderBatchSummary, OrderDropOffLocation) {
   'use strict';
 
   /**
@@ -109,6 +109,8 @@
         obj.OrderDropOffLocation = OrderDropOffLocation.constructFromObject(data['OrderDropOffLocation']);
       if (data.hasOwnProperty('OrderBatchInfo'))
         obj.OrderBatchInfo = OrderBatchSummary.constructFromObject(data['OrderBatchInfo']);
+      if (data.hasOwnProperty('DeliveryLocation'))
+        obj.DeliveryLocation = DeliveryLocation.constructFromObject(data['DeliveryLocation']);
     }
     return obj;
   }
@@ -274,6 +276,11 @@
    * @member {module:model/OrderBatchSummary} OrderBatchInfo
    */
   exports.prototype.OrderBatchInfo = undefined;
+
+  /**
+   * @member {module:model/DeliveryLocation} DeliveryLocation
+   */
+  exports.prototype.DeliveryLocation = undefined;
 
 
 
