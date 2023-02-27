@@ -93,8 +93,12 @@
         obj.OnlineSalesRefundedFees = ApiClient.convertToType(data['OnlineSalesRefundedFees'], 'Number');
       if (data.hasOwnProperty('OnlineSalesFees'))
         obj.OnlineSalesFees = ApiClient.convertToType(data['OnlineSalesFees'], 'Number');
+      if (data.hasOwnProperty('PosSalesFees'))
+        obj.PosSalesFees = ApiClient.convertToType(data['PosSalesFees'], 'Number');
       if (data.hasOwnProperty('OnlineSalesRefundedAmount'))
         obj.OnlineSalesRefundedAmount = ApiClient.convertToType(data['OnlineSalesRefundedAmount'], 'Number');
+      if (data.hasOwnProperty('PosSalesRefundedAmount'))
+        obj.PosSalesRefundedAmount = ApiClient.convertToType(data['PosSalesRefundedAmount'], 'Number');
       if (data.hasOwnProperty('OnlineSalesTax'))
         obj.OnlineSalesTax = ApiClient.convertToType(data['OnlineSalesTax'], 'Number');
       if (data.hasOwnProperty('TotalOnlineRevenue'))
@@ -113,6 +117,8 @@
         obj.TotalOnlineRevenueAdjustments = ApiClient.convertToType(data['TotalOnlineRevenueAdjustments'], 'Number');
       if (data.hasOwnProperty('ChargebackAmount'))
         obj.ChargebackAmount = ApiClient.convertToType(data['ChargebackAmount'], 'Number');
+      if (data.hasOwnProperty('PosSalesChargebackAmount'))
+        obj.PosSalesChargebackAmount = ApiClient.convertToType(data['PosSalesChargebackAmount'], 'Number');
       if (data.hasOwnProperty('ChargebackRefundedFees'))
         obj.ChargebackRefundedFees = ApiClient.convertToType(data['ChargebackRefundedFees'], 'Number');
       if (data.hasOwnProperty('TotalChargebackCost'))
@@ -244,10 +250,22 @@
   exports.prototype.OnlineSalesFees = undefined;
 
   /**
+   * Payout online sales fees
+   * @member {Number} PosSalesFees
+   */
+  exports.prototype.PosSalesFees = undefined;
+
+  /**
    * Payout online sales refunded amount
    * @member {Number} OnlineSalesRefundedAmount
    */
   exports.prototype.OnlineSalesRefundedAmount = undefined;
+
+  /**
+   * POS Payout online sales refunded amount
+   * @member {Number} PosSalesRefundedAmount
+   */
+  exports.prototype.PosSalesRefundedAmount = undefined;
 
   /**
    * Payout online sales tax
@@ -302,6 +320,12 @@
    * @member {Number} ChargebackAmount
    */
   exports.prototype.ChargebackAmount = undefined;
+
+  /**
+   * POS Payout chargeback amount
+   * @member {Number} PosSalesChargebackAmount
+   */
+  exports.prototype.PosSalesChargebackAmount = undefined;
 
   /**
    * Payout chargeback refunded fees

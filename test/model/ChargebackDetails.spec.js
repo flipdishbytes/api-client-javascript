@@ -46,6 +46,12 @@
         // expect(instance.ChargebackAmount).to.be(expectedValueLiteral);
       });
 
+      it('should have the property PosSalesChargebackAmount (base name: "PosSalesChargebackAmount")', function() {
+        // TODO: update the code to test the property PosSalesChargebackAmount
+        expect(instance).to.have.property('PosSalesChargebackAmount');
+        // expect(instance.PosSalesChargebackAmount).to.be(expectedValueLiteral);
+      });
+
       it('should have the property ChargebackRefundedFees (base name: "ChargebackRefundedFees")', function() {
         // TODO: update the code to test the property ChargebackRefundedFees
         expect(instance).to.have.property('ChargebackRefundedFees');

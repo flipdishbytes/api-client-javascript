@@ -57,6 +57,8 @@
       obj = obj || new exports();
       if (data.hasOwnProperty('ChargebackAmount'))
         obj.ChargebackAmount = ApiClient.convertToType(data['ChargebackAmount'], 'Number');
+      if (data.hasOwnProperty('PosSalesChargebackAmount'))
+        obj.PosSalesChargebackAmount = ApiClient.convertToType(data['PosSalesChargebackAmount'], 'Number');
       if (data.hasOwnProperty('ChargebackRefundedFees'))
         obj.ChargebackRefundedFees = ApiClient.convertToType(data['ChargebackRefundedFees'], 'Number');
       if (data.hasOwnProperty('ChargebacksCount'))
@@ -72,6 +74,12 @@
    * @member {Number} ChargebackAmount
    */
   exports.prototype.ChargebackAmount = undefined;
+
+  /**
+   * POS Chargeback amount
+   * @member {Number} PosSalesChargebackAmount
+   */
+  exports.prototype.PosSalesChargebackAmount = undefined;
 
   /**
    * Chargeback refunded feeds

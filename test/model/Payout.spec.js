@@ -154,10 +154,22 @@
         // expect(instance.OnlineSalesFees).to.be(expectedValueLiteral);
       });
 
+      it('should have the property PosSalesFees (base name: "PosSalesFees")', function() {
+        // TODO: update the code to test the property PosSalesFees
+        expect(instance).to.have.property('PosSalesFees');
+        // expect(instance.PosSalesFees).to.be(expectedValueLiteral);
+      });
+
       it('should have the property OnlineSalesRefundedAmount (base name: "OnlineSalesRefundedAmount")', function() {
         // TODO: update the code to test the property OnlineSalesRefundedAmount
         expect(instance).to.have.property('OnlineSalesRefundedAmount');
         // expect(instance.OnlineSalesRefundedAmount).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property PosSalesRefundedAmount (base name: "PosSalesRefundedAmount")', function() {
+        // TODO: update the code to test the property PosSalesRefundedAmount
+        expect(instance).to.have.property('PosSalesRefundedAmount');
+        // expect(instance.PosSalesRefundedAmount).to.be(expectedValueLiteral);
       });
 
       it('should have the property OnlineSalesTax (base name: "OnlineSalesTax")', function() {
@@ -212,6 +224,12 @@
         // TODO: update the code to test the property ChargebackAmount
         expect(instance).to.have.property('ChargebackAmount');
         // expect(instance.ChargebackAmount).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property PosSalesChargebackAmount (base name: "PosSalesChargebackAmount")', function() {
+        // TODO: update the code to test the property PosSalesChargebackAmount
+        expect(instance).to.have.property('PosSalesChargebackAmount');
+        // expect(instance.PosSalesChargebackAmount).to.be(expectedValueLiteral);
       });
 
       it('should have the property ChargebackRefundedFees (base name: "ChargebackRefundedFees")', function() {
