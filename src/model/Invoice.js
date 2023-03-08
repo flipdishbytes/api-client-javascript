@@ -75,6 +75,8 @@
         obj.Currency = ApiClient.convertToType(data['Currency'], 'String');
       if (data.hasOwnProperty('Status'))
         obj.Status = ApiClient.convertToType(data['Status'], 'String');
+      if (data.hasOwnProperty('SubscriptionId'))
+        obj.SubscriptionId = ApiClient.convertToType(data['SubscriptionId'], 'String');
       if (data.hasOwnProperty('DueDate'))
         obj.DueDate = ApiClient.convertToType(data['DueDate'], 'Date');
       if (data.hasOwnProperty('PdfLink'))
@@ -112,6 +114,12 @@
    * @member {module:model/Invoice.StatusEnum} Status
    */
   exports.prototype.Status = undefined;
+
+  /**
+   * The subscription identifier
+   * @member {String} SubscriptionId
+   */
+  exports.prototype.SubscriptionId = undefined;
 
   /**
    * Due Date

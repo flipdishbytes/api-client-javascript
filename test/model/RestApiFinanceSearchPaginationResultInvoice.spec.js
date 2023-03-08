@@ -30,20 +30,20 @@
   var instance;
 
   describe('(package)', function() {
-    describe('RestApiPaginationResultInvoice', function() {
+    describe('RestApiFinanceSearchPaginationResultInvoice', function() {
       beforeEach(function() {
-        instance = new Flipdish.RestApiPaginationResultInvoice();
+        instance = new Flipdish.RestApiFinanceSearchPaginationResultInvoice();
       });
 
-      it('should create an instance of RestApiPaginationResultInvoice', function() {
-        // TODO: update the code to test RestApiPaginationResultInvoice
-        expect(instance).to.be.a(Flipdish.RestApiPaginationResultInvoice);
+      it('should create an instance of RestApiFinanceSearchPaginationResultInvoice', function() {
+        // TODO: update the code to test RestApiFinanceSearchPaginationResultInvoice
+        expect(instance).to.be.a(Flipdish.RestApiFinanceSearchPaginationResultInvoice);
       });
 
-      it('should have the property Page (base name: "Page")', function() {
-        // TODO: update the code to test the property Page
-        expect(instance).to.have.property('Page');
-        // expect(instance.Page).to.be(expectedValueLiteral);
+      it('should have the property NextPage (base name: "NextPage")', function() {
+        // TODO: update the code to test the property NextPage
+        expect(instance).to.have.property('NextPage');
+        // expect(instance.NextPage).to.be(expectedValueLiteral);
       });
 
       it('should have the property Limit (base name: "Limit")', function() {

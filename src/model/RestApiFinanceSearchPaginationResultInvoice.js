@@ -25,46 +25,46 @@
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.RestApiPaginationResultInvoice = factory(root.Flipdish.ApiClient, root.Flipdish.Invoice);
+    root.Flipdish.RestApiFinanceSearchPaginationResultInvoice = factory(root.Flipdish.ApiClient, root.Flipdish.Invoice);
   }
 }(this, function(ApiClient, Invoice) {
   'use strict';
 
   /**
-   * The RestApiPaginationResultInvoice model module.
-   * @module model/RestApiPaginationResultInvoice
+   * The RestApiFinanceSearchPaginationResultInvoice model module.
+   * @module model/RestApiFinanceSearchPaginationResultInvoice
    * @version 1.0.0
    */
 
   /**
-   * Constructs a new <code>RestApiPaginationResultInvoice</code>.
-   * Rest api pagination result
-   * @alias module:model/RestApiPaginationResultInvoice
+   * Constructs a new <code>RestApiFinanceSearchPaginationResultInvoice</code>.
+   * Rest api finance search pagination result
+   * @alias module:model/RestApiFinanceSearchPaginationResultInvoice
    * @class
-   * @param Page {Number} Current page index
+   * @param NextPage {String} Next page
    * @param Limit {Number} Current page size
    * @param TotalRecordCount {Number} Total record count
    * @param Data {Array.<module:model/Invoice>} Generic data object.
    */
-  var exports = function(Page, Limit, TotalRecordCount, Data) {
-    this.Page = Page;
+  var exports = function(NextPage, Limit, TotalRecordCount, Data) {
+    this.NextPage = NextPage;
     this.Limit = Limit;
     this.TotalRecordCount = TotalRecordCount;
     this.Data = Data;
   };
 
   /**
-   * Constructs a <code>RestApiPaginationResultInvoice</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>RestApiFinanceSearchPaginationResultInvoice</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/RestApiPaginationResultInvoice} obj Optional instance to populate.
-   * @return {module:model/RestApiPaginationResultInvoice} The populated <code>RestApiPaginationResultInvoice</code> instance.
+   * @param {module:model/RestApiFinanceSearchPaginationResultInvoice} obj Optional instance to populate.
+   * @return {module:model/RestApiFinanceSearchPaginationResultInvoice} The populated <code>RestApiFinanceSearchPaginationResultInvoice</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
-      if (data.hasOwnProperty('Page'))
-        obj.Page = ApiClient.convertToType(data['Page'], 'Number');
+      if (data.hasOwnProperty('NextPage'))
+        obj.NextPage = ApiClient.convertToType(data['NextPage'], 'String');
       if (data.hasOwnProperty('Limit'))
         obj.Limit = ApiClient.convertToType(data['Limit'], 'Number');
       if (data.hasOwnProperty('TotalRecordCount'))
@@ -76,10 +76,10 @@
   }
 
   /**
-   * Current page index
-   * @member {Number} Page
+   * Next page
+   * @member {String} NextPage
    */
-  exports.prototype.Page = undefined;
+  exports.prototype.NextPage = undefined;
 
   /**
    * Current page size

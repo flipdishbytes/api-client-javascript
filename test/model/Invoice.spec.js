@@ -70,6 +70,12 @@
         // expect(instance.Status).to.be(expectedValueLiteral);
       });
 
+      it('should have the property SubscriptionId (base name: "SubscriptionId")', function() {
+        // TODO: update the code to test the property SubscriptionId
+        expect(instance).to.have.property('SubscriptionId');
+        // expect(instance.SubscriptionId).to.be(expectedValueLiteral);
+      });
+
       it('should have the property DueDate (base name: "DueDate")', function() {
         // TODO: update the code to test the property DueDate
         expect(instance).to.have.property('DueDate');
