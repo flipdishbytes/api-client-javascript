@@ -63,6 +63,8 @@
         obj.Pin = ApiClient.convertToType(data['Pin'], 'Number');
       if (data.hasOwnProperty('NewPassword'))
         obj.NewPassword = ApiClient.convertToType(data['NewPassword'], 'String');
+      if (data.hasOwnProperty('RecaptchaToken'))
+        obj.RecaptchaToken = ApiClient.convertToType(data['RecaptchaToken'], 'String');
     }
     return obj;
   }
@@ -78,6 +80,12 @@
    * @member {String} NewPassword
    */
   exports.prototype.NewPassword = undefined;
+
+  /**
+   * Google Recaptcha Token
+   * @member {String} RecaptchaToken
+   */
+  exports.prototype.RecaptchaToken = undefined;
 
 
   return exports;

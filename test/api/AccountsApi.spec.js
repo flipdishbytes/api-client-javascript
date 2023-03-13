@@ -83,6 +83,7 @@
           var changePasswordModel = new Flipdish.SetPasswordWithPinModel();
           changePasswordModel.Pin = 0;
           changePasswordModel.NewPassword = "";
+          changePasswordModel.RecaptchaToken = "";
 
           instance.changePasswordWithPin(changePasswordModel, function(error, data, response) {
             if (error) {
