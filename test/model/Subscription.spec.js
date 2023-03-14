@@ -40,6 +40,12 @@
         expect(instance).to.be.a(Flipdish.Subscription);
       });
 
+      it('should have the property Products (base name: "Products")', function() {
+        // TODO: update the code to test the property Products
+        expect(instance).to.have.property('Products');
+        // expect(instance.Products).to.be(expectedValueLiteral);
+      });
+
       it('should have the property SubscriptionId (base name: "SubscriptionId")', function() {
         // TODO: update the code to test the property SubscriptionId
         expect(instance).to.have.property('SubscriptionId');
