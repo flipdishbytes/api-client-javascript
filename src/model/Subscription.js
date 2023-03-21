@@ -16,18 +16,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/SubscriptionProduct'], factory);
+    define(['ApiClient', 'model/InvoiceItem', 'model/SubscriptionProduct'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./SubscriptionProduct'));
+    module.exports = factory(require('../ApiClient'), require('./InvoiceItem'), require('./SubscriptionProduct'));
   } else {
     // Browser globals (root is window)
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.Subscription = factory(root.Flipdish.ApiClient, root.Flipdish.SubscriptionProduct);
+    root.Flipdish.Subscription = factory(root.Flipdish.ApiClient, root.Flipdish.InvoiceItem, root.Flipdish.SubscriptionProduct);
   }
-}(this, function(ApiClient, SubscriptionProduct) {
+}(this, function(ApiClient, InvoiceItem, SubscriptionProduct) {
   'use strict';
 
   /**
@@ -42,6 +42,7 @@
    * @alias module:model/Subscription
    * @class
    * @param Products {Array.<module:model/SubscriptionProduct>} Products
+   * @param UpcomingInvoiceItems {Array.<module:model/InvoiceItem>} Upcoming invoice items
    * @param SubscriptionId {String} The subscription identifier
    * @param Name {String} 
    * @param Status {module:model/Subscription.StatusEnum} Status
@@ -49,8 +50,9 @@
    * @param User {String} User
    * @param DefaultPaymentDescription {String} Default payment description
    */
-  var exports = function(Products, SubscriptionId, Name, Status, Currency, User, DefaultPaymentDescription) {
+  var exports = function(Products, UpcomingInvoiceItems, SubscriptionId, Name, Status, Currency, User, DefaultPaymentDescription) {
     this.Products = Products;
+    this.UpcomingInvoiceItems = UpcomingInvoiceItems;
     this.SubscriptionId = SubscriptionId;
     this.Name = Name;
     this.Status = Status;
@@ -71,6 +73,8 @@
       obj = obj || new exports();
       if (data.hasOwnProperty('Products'))
         obj.Products = ApiClient.convertToType(data['Products'], [SubscriptionProduct]);
+      if (data.hasOwnProperty('UpcomingInvoiceItems'))
+        obj.UpcomingInvoiceItems = ApiClient.convertToType(data['UpcomingInvoiceItems'], [InvoiceItem]);
       if (data.hasOwnProperty('SubscriptionId'))
         obj.SubscriptionId = ApiClient.convertToType(data['SubscriptionId'], 'String');
       if (data.hasOwnProperty('Name'))
@@ -96,6 +100,12 @@
    * @member {Array.<module:model/SubscriptionProduct>} Products
    */
   exports.prototype.Products = undefined;
+
+  /**
+   * Upcoming invoice items
+   * @member {Array.<module:model/InvoiceItem>} UpcomingInvoiceItems
+   */
+  exports.prototype.UpcomingInvoiceItems = undefined;
 
   /**
    * The subscription identifier

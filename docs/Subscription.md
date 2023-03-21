@@ -4,6 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Products** | [**[SubscriptionProduct]**](SubscriptionProduct.md) | Products | 
+**UpcomingInvoiceItems** | [**[InvoiceItem]**](InvoiceItem.md) | Upcoming invoice items | 
 **SubscriptionId** | **String** | The subscription identifier | 
 **Name** | **String** |  | 
 **Status** | **String** | Status | 
