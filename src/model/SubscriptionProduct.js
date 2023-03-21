@@ -16,18 +16,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient'], factory);
+    define(['ApiClient', 'model/SubscriptionStore'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'));
+    module.exports = factory(require('../ApiClient'), require('./SubscriptionStore'));
   } else {
     // Browser globals (root is window)
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.SubscriptionProduct = factory(root.Flipdish.ApiClient);
+    root.Flipdish.SubscriptionProduct = factory(root.Flipdish.ApiClient, root.Flipdish.SubscriptionStore);
   }
-}(this, function(ApiClient) {
+}(this, function(ApiClient, SubscriptionStore) {
   'use strict';
 
   /**
@@ -75,6 +75,8 @@
         obj.PriceTotal = ApiClient.convertToType(data['PriceTotal'], 'Number');
       if (data.hasOwnProperty('PaymentFrequency'))
         obj.PaymentFrequency = ApiClient.convertToType(data['PaymentFrequency'], 'String');
+      if (data.hasOwnProperty('Stores'))
+        obj.Stores = ApiClient.convertToType(data['Stores'], [SubscriptionStore]);
     }
     return obj;
   }
@@ -114,6 +116,12 @@
    * @member {module:model/SubscriptionProduct.PaymentFrequencyEnum} PaymentFrequency
    */
   exports.prototype.PaymentFrequency = undefined;
+
+  /**
+   * Stores
+   * @member {Array.<module:model/SubscriptionStore>} Stores
+   */
+  exports.prototype.Stores = undefined;
 
 
 

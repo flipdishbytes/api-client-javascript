@@ -76,6 +76,12 @@
         // expect(instance.PaymentFrequency).to.be(expectedValueLiteral);
       });
 
+      it('should have the property Stores (base name: "Stores")', function() {
+        // TODO: update the code to test the property Stores
+        expect(instance).to.have.property('Stores');
+        // expect(instance.Stores).to.be(expectedValueLiteral);
+      });
+
     });
   });
 

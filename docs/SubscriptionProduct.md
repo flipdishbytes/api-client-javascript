@@ -9,6 +9,7 @@ Name | Type | Description | Notes
 **PricePerUnit** | **Number** | Price Per Unit | [optional] 
 **PriceTotal** | **Number** | Price Total | [optional] 
 **PaymentFrequency** | **String** | Payment Frequency | 
+**Stores** | [**[SubscriptionStore]**](SubscriptionStore.md) | Stores | [optional] 
 
 
 <a name="PaymentFrequencyEnum"></a>
