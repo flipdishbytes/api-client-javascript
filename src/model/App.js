@@ -1172,6 +1172,12 @@
     DeleteAppStoreAppConfiguration: "DeleteAppStoreAppConfiguration",
 
     /**
+     * value: "UpdateAppStoreAppConfigurationSettings"
+     * @const
+     */
+    UpdateAppStoreAppConfigurationSettings: "UpdateAppStoreAppConfigurationSettings",
+
+    /**
      * value: "ViewSalesChannels"
      * @const
      */
