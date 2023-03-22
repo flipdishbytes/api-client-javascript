@@ -41,9 +41,11 @@
    * Subscription Store
    * @alias module:model/SubscriptionStore
    * @class
+   * @param Id {Number} Store Id
    * @param Name {String} Name
    */
-  var exports = function(Name) {
+  var exports = function(Id, Name) {
+    this.Id = Id;
     this.Name = Name;
   };
 
