@@ -77,8 +77,10 @@
         obj.Status = ApiClient.convertToType(data['Status'], 'String');
       if (data.hasOwnProperty('SubscriptionId'))
         obj.SubscriptionId = ApiClient.convertToType(data['SubscriptionId'], 'String');
-      if (data.hasOwnProperty('DueDate'))
-        obj.DueDate = ApiClient.convertToType(data['DueDate'], 'Date');
+      if (data.hasOwnProperty('PaidAt'))
+        obj.PaidAt = ApiClient.convertToType(data['PaidAt'], 'Date');
+      if (data.hasOwnProperty('FinalisedAt'))
+        obj.FinalisedAt = ApiClient.convertToType(data['FinalisedAt'], 'Date');
       if (data.hasOwnProperty('PdfLink'))
         obj.PdfLink = ApiClient.convertToType(data['PdfLink'], 'String');
     }
@@ -122,10 +124,16 @@
   exports.prototype.SubscriptionId = undefined;
 
   /**
-   * Due Date
-   * @member {Date} DueDate
+   * Paid At
+   * @member {Date} PaidAt
    */
-  exports.prototype.DueDate = undefined;
+  exports.prototype.PaidAt = undefined;
+
+  /**
+   * Finalised At
+   * @member {Date} FinalisedAt
+   */
+  exports.prototype.FinalisedAt = undefined;
 
   /**
    * Pdf Link

@@ -9,7 +9,8 @@ Name | Type | Description | Notes
 **Currency** | **String** | Currency | 
 **Status** | **String** | Status | 
 **SubscriptionId** | **String** | The subscription identifier | [optional] 
-**DueDate** | **Date** | Due Date | [optional] 
+**PaidAt** | **Date** | Paid At | [optional] 
+**FinalisedAt** | **Date** | Finalised At | [optional] 
 **PdfLink** | **String** | Pdf Link | 
 
 

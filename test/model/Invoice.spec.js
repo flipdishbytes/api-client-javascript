@@ -76,10 +76,16 @@
         // expect(instance.SubscriptionId).to.be(expectedValueLiteral);
       });
 
-      it('should have the property DueDate (base name: "DueDate")', function() {
-        // TODO: update the code to test the property DueDate
-        expect(instance).to.have.property('DueDate');
-        // expect(instance.DueDate).to.be(expectedValueLiteral);
+      it('should have the property PaidAt (base name: "PaidAt")', function() {
+        // TODO: update the code to test the property PaidAt
+        expect(instance).to.have.property('PaidAt');
+        // expect(instance.PaidAt).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property FinalisedAt (base name: "FinalisedAt")', function() {
+        // TODO: update the code to test the property FinalisedAt
+        expect(instance).to.have.property('FinalisedAt');
+        // expect(instance.FinalisedAt).to.be(expectedValueLiteral);
       });
 
       it('should have the property PdfLink (base name: "PdfLink")', function() {
