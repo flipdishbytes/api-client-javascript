@@ -12,6 +12,8 @@ Name | Type | Description | Notes
 **PaidAt** | **Date** | Paid At | [optional] 
 **FinalisedAt** | **Date** | Finalised At | [optional] 
 **PdfLink** | **String** | Pdf Link | 
+**HostedUrl** | **String** | Hosted Url | 
+**Overdue** | **Boolean** | Overdue | 
 
 
 <a name="CurrencyEnum"></a>

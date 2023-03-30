@@ -46,13 +46,17 @@
    * @param Currency {module:model/Invoice.CurrencyEnum} Currency
    * @param Status {module:model/Invoice.StatusEnum} Status
    * @param PdfLink {String} Pdf Link
+   * @param HostedUrl {String} Hosted Url
+   * @param Overdue {Boolean} Overdue
    */
-  var exports = function(InvoiceId, _Number, Currency, Status, PdfLink) {
+  var exports = function(InvoiceId, _Number, Currency, Status, PdfLink, HostedUrl, Overdue) {
     this.InvoiceId = InvoiceId;
     this._Number = _Number;
     this.Currency = Currency;
     this.Status = Status;
     this.PdfLink = PdfLink;
+    this.HostedUrl = HostedUrl;
+    this.Overdue = Overdue;
   };
 
   /**
@@ -83,6 +87,10 @@
         obj.FinalisedAt = ApiClient.convertToType(data['FinalisedAt'], 'Date');
       if (data.hasOwnProperty('PdfLink'))
         obj.PdfLink = ApiClient.convertToType(data['PdfLink'], 'String');
+      if (data.hasOwnProperty('HostedUrl'))
+        obj.HostedUrl = ApiClient.convertToType(data['HostedUrl'], 'String');
+      if (data.hasOwnProperty('Overdue'))
+        obj.Overdue = ApiClient.convertToType(data['Overdue'], 'Boolean');
     }
     return obj;
   }
@@ -140,6 +148,18 @@
    * @member {String} PdfLink
    */
   exports.prototype.PdfLink = undefined;
+
+  /**
+   * Hosted Url
+   * @member {String} HostedUrl
+   */
+  exports.prototype.HostedUrl = undefined;
+
+  /**
+   * Overdue
+   * @member {Boolean} Overdue
+   */
+  exports.prototype.Overdue = undefined;
 
 
 

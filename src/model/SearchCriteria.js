@@ -67,6 +67,8 @@
         obj.OrderId = ApiClient.convertToType(data['OrderId'], 'Number');
       if (data.hasOwnProperty('StoreId'))
         obj.StoreId = ApiClient.convertToType(data['StoreId'], 'Number');
+      if (data.hasOwnProperty('StoreIdList'))
+        obj.StoreIdList = ApiClient.convertToType(data['StoreIdList'], ['Number']);
       if (data.hasOwnProperty('StoreGroupId'))
         obj.StoreGroupId = ApiClient.convertToType(data['StoreGroupId'], 'Number');
       if (data.hasOwnProperty('UserId'))
@@ -124,6 +126,12 @@
    * @member {Number} StoreId
    */
   exports.prototype.StoreId = undefined;
+
+  /**
+   * Events that have Store Id List
+   * @member {Array.<Number>} StoreIdList
+   */
+  exports.prototype.StoreIdList = undefined;
 
   /**
    * Events that have Store Group Id

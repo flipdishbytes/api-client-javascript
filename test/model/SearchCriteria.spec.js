@@ -76,6 +76,12 @@
         // expect(instance.StoreId).to.be(expectedValueLiteral);
       });
 
+      it('should have the property StoreIdList (base name: "StoreIdList")', function() {
+        // TODO: update the code to test the property StoreIdList
+        expect(instance).to.have.property('StoreIdList');
+        // expect(instance.StoreIdList).to.be(expectedValueLiteral);
+      });
+
       it('should have the property StoreGroupId (base name: "StoreGroupId")', function() {
         // TODO: update the code to test the property StoreGroupId
         expect(instance).to.have.property('StoreGroupId');

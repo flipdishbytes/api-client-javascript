@@ -94,6 +94,18 @@
         // expect(instance.PdfLink).to.be(expectedValueLiteral);
       });
 
+      it('should have the property HostedUrl (base name: "HostedUrl")', function() {
+        // TODO: update the code to test the property HostedUrl
+        expect(instance).to.have.property('HostedUrl');
+        // expect(instance.HostedUrl).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property Overdue (base name: "Overdue")', function() {
+        // TODO: update the code to test the property Overdue
+        expect(instance).to.have.property('Overdue');
+        // expect(instance.Overdue).to.be(expectedValueLiteral);
+      });
+
     });
   });
 
