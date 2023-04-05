@@ -46,15 +46,13 @@
    * @param Status {module:model/SubscriptionSummary.StatusEnum} Status
    * @param Currency {module:model/SubscriptionSummary.CurrencyEnum} Currency
    * @param User {String} User
-   * @param DefaultPaymentDescription {String} Default payment description
    */
-  var exports = function(SubscriptionId, Name, Status, Currency, User, DefaultPaymentDescription) {
+  var exports = function(SubscriptionId, Name, Status, Currency, User) {
     this.SubscriptionId = SubscriptionId;
     this.Name = Name;
     this.Status = Status;
     this.Currency = Currency;
     this.User = User;
-    this.DefaultPaymentDescription = DefaultPaymentDescription;
   };
 
   /**

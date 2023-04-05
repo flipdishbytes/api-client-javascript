@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **NextInvoiceAmount** | **Number** | Next invoice amount | [optional] 
 **NextInvoiceBillingDate** | **Date** | Next invoice billing date | [optional] 
 **User** | **String** | User | 
-**DefaultPaymentDescription** | **String** | Default payment description | 
+**DefaultPaymentDescription** | **String** | Default payment description | [optional] 
 
 
 <a name="StatusEnum"></a>
