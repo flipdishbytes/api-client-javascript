@@ -9,6 +9,7 @@ Name | Type | Description | Notes
 **AppName** | **String** | App Name | [optional] 
 **CountryId** | **String** | Country Id | [optional] 
 **User** | [**UserEventInfo**](UserEventInfo.md) | User information | [optional] 
+**App** | [**App**](App.md) | App - Whitelabel config | [optional] 
 **FlipdishEventId** | **String** | The identitfier of the event | [optional] 
 **CreateTime** | **Date** | The time of creation of the event | [optional] 
 **Position** | **Number** | Position | [optional] 

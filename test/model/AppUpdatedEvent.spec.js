@@ -76,6 +76,12 @@
         // expect(instance.User).to.be(expectedValueLiteral);
       });
 
+      it('should have the property App (base name: "App")', function() {
+        // TODO: update the code to test the property App
+        expect(instance).to.have.property('App');
+        // expect(instance.App).to.be(expectedValueLiteral);
+      });
+
       it('should have the property FlipdishEventId (base name: "FlipdishEventId")', function() {
         // TODO: update the code to test the property FlipdishEventId
         expect(instance).to.have.property('FlipdishEventId');

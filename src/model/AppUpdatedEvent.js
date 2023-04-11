@@ -16,18 +16,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/UserEventInfo'], factory);
+    define(['ApiClient', 'model/App', 'model/UserEventInfo'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./UserEventInfo'));
+    module.exports = factory(require('../ApiClient'), require('./App'), require('./UserEventInfo'));
   } else {
     // Browser globals (root is window)
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.AppUpdatedEvent = factory(root.Flipdish.ApiClient, root.Flipdish.UserEventInfo);
+    root.Flipdish.AppUpdatedEvent = factory(root.Flipdish.ApiClient, root.Flipdish.App, root.Flipdish.UserEventInfo);
   }
-}(this, function(ApiClient, UserEventInfo) {
+}(this, function(ApiClient, App, UserEventInfo) {
   'use strict';
 
   /**
@@ -67,6 +67,8 @@
         obj.CountryId = ApiClient.convertToType(data['CountryId'], 'String');
       if (data.hasOwnProperty('User'))
         obj.User = UserEventInfo.constructFromObject(data['User']);
+      if (data.hasOwnProperty('App'))
+        obj.App = App.constructFromObject(data['App']);
       if (data.hasOwnProperty('FlipdishEventId'))
         obj.FlipdishEventId = ApiClient.convertToType(data['FlipdishEventId'], 'String');
       if (data.hasOwnProperty('CreateTime'))
@@ -116,6 +118,12 @@
    * @member {module:model/UserEventInfo} User
    */
   exports.prototype.User = undefined;
+
+  /**
+   * App - Whitelabel config
+   * @member {module:model/App} App
+   */
+  exports.prototype.App = undefined;
 
   /**
    * The identitfier of the event
