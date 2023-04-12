@@ -16,18 +16,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/BalanceDetails', 'model/ChargebackDetails', 'model/FlipdishFeesDetails', 'model/OtherChargesDetails', 'model/RevenueAdjustmentsDetails', 'model/RevenueDetail'], factory);
+    define(['ApiClient', 'model/BalanceDetails', 'model/ChargebackDetails', 'model/FlipdishFeesDetails', 'model/OtherChargesDetails', 'model/PosRevenueDetails', 'model/RevenueAdjustmentsDetails', 'model/RevenueDetail'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./BalanceDetails'), require('./ChargebackDetails'), require('./FlipdishFeesDetails'), require('./OtherChargesDetails'), require('./RevenueAdjustmentsDetails'), require('./RevenueDetail'));
+    module.exports = factory(require('../ApiClient'), require('./BalanceDetails'), require('./ChargebackDetails'), require('./FlipdishFeesDetails'), require('./OtherChargesDetails'), require('./PosRevenueDetails'), require('./RevenueAdjustmentsDetails'), require('./RevenueDetail'));
   } else {
     // Browser globals (root is window)
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.PayoutStore = factory(root.Flipdish.ApiClient, root.Flipdish.BalanceDetails, root.Flipdish.ChargebackDetails, root.Flipdish.FlipdishFeesDetails, root.Flipdish.OtherChargesDetails, root.Flipdish.RevenueAdjustmentsDetails, root.Flipdish.RevenueDetail);
+    root.Flipdish.PayoutStore = factory(root.Flipdish.ApiClient, root.Flipdish.BalanceDetails, root.Flipdish.ChargebackDetails, root.Flipdish.FlipdishFeesDetails, root.Flipdish.OtherChargesDetails, root.Flipdish.PosRevenueDetails, root.Flipdish.RevenueAdjustmentsDetails, root.Flipdish.RevenueDetail);
   }
-}(this, function(ApiClient, BalanceDetails, ChargebackDetails, FlipdishFeesDetails, OtherChargesDetails, RevenueAdjustmentsDetails, RevenueDetail) {
+}(this, function(ApiClient, BalanceDetails, ChargebackDetails, FlipdishFeesDetails, OtherChargesDetails, PosRevenueDetails, RevenueAdjustmentsDetails, RevenueDetail) {
   'use strict';
 
   /**
@@ -75,6 +75,8 @@
         obj.OtherCharges = OtherChargesDetails.constructFromObject(data['OtherCharges']);
       if (data.hasOwnProperty('Balance'))
         obj.Balance = BalanceDetails.constructFromObject(data['Balance']);
+      if (data.hasOwnProperty('PosRevenue'))
+        obj.PosRevenue = PosRevenueDetails.constructFromObject(data['PosRevenue']);
     }
     return obj;
   }
@@ -138,6 +140,12 @@
    * @member {module:model/BalanceDetails} Balance
    */
   exports.prototype.Balance = undefined;
+
+  /**
+   * Breakdown of POS charges
+   * @member {module:model/PosRevenueDetails} PosRevenue
+   */
+  exports.prototype.PosRevenue = undefined;
 
 
   return exports;

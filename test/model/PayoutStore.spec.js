@@ -100,6 +100,12 @@
         // expect(instance.Balance).to.be(expectedValueLiteral);
       });
 
+      it('should have the property PosRevenue (base name: "PosRevenue")', function() {
+        // TODO: update the code to test the property PosRevenue
+        expect(instance).to.have.property('PosRevenue');
+        // expect(instance.PosRevenue).to.be(expectedValueLiteral);
+      });
+
     });
   });
 
