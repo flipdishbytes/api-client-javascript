@@ -17,19 +17,19 @@ Name | Type | Description | Notes
 ## Enum: StatusEnum
 
 
-* `incomplete` (value: `"incomplete"`)
+* `Incomplete` (value: `"Incomplete"`)
 
-* `incomplete_expired` (value: `"incomplete_expired"`)
+* `IncompleteExpired` (value: `"IncompleteExpired"`)
 
-* `trialing` (value: `"trialing"`)
+* `Trialing` (value: `"Trialing"`)
 
-* `active` (value: `"active"`)
+* `Active` (value: `"Active"`)
 
-* `past_due` (value: `"past_due"`)
+* `PastDue` (value: `"PastDue"`)
 
-* `canceled` (value: `"canceled"`)
+* `Canceled` (value: `"Canceled"`)
 
-* `unpaid` (value: `"unpaid"`)
+* `Unpaid` (value: `"Unpaid"`)
 
 
 

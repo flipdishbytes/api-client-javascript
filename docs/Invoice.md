@@ -253,15 +253,15 @@ Name | Type | Description | Notes
 ## Enum: StatusEnum
 
 
-* `draft` (value: `"draft"`)
+* `Draft` (value: `"Draft"`)
 
-* `open` (value: `"open"`)
+* `Open` (value: `"Open"`)
 
-* `paid` (value: `"paid"`)
+* `Paid` (value: `"Paid"`)
 
-* `uncollectible` (value: `"uncollectible"`)
+* `UnCollectible` (value: `"UnCollectible"`)
 
-* `_void` (value: `"void"`)
+* `_Void` (value: `"Void"`)
 
 
 

@@ -856,34 +856,34 @@
    */
   exports.StatusEnum = {
     /**
-     * value: "draft"
+     * value: "Draft"
      * @const
      */
-    draft: "draft",
+    Draft: "Draft",
 
     /**
-     * value: "open"
+     * value: "Open"
      * @const
      */
-    open: "open",
+    Open: "Open",
 
     /**
-     * value: "paid"
+     * value: "Paid"
      * @const
      */
-    paid: "paid",
+    Paid: "Paid",
 
     /**
-     * value: "uncollectible"
+     * value: "UnCollectible"
      * @const
      */
-    uncollectible: "uncollectible",
+    UnCollectible: "UnCollectible",
 
     /**
-     * value: "void"
+     * value: "Void"
      * @const
      */
-    _void: "void"
+    _Void: "Void"
   };
 
   return exports;

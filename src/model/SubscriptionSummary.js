@@ -141,46 +141,46 @@
    */
   exports.StatusEnum = {
     /**
-     * value: "incomplete"
+     * value: "Incomplete"
      * @const
      */
-    incomplete: "incomplete",
+    Incomplete: "Incomplete",
 
     /**
-     * value: "incomplete_expired"
+     * value: "IncompleteExpired"
      * @const
      */
-    incomplete_expired: "incomplete_expired",
+    IncompleteExpired: "IncompleteExpired",
 
     /**
-     * value: "trialing"
+     * value: "Trialing"
      * @const
      */
-    trialing: "trialing",
+    Trialing: "Trialing",
 
     /**
-     * value: "active"
+     * value: "Active"
      * @const
      */
-    active: "active",
+    Active: "Active",
 
     /**
-     * value: "past_due"
+     * value: "PastDue"
      * @const
      */
-    past_due: "past_due",
+    PastDue: "PastDue",
 
     /**
-     * value: "canceled"
+     * value: "Canceled"
      * @const
      */
-    canceled: "canceled",
+    Canceled: "Canceled",
 
     /**
-     * value: "unpaid"
+     * value: "Unpaid"
      * @const
      */
-    unpaid: "unpaid"
+    Unpaid: "Unpaid"
   };
 
 
