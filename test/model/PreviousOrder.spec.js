@@ -166,6 +166,12 @@
         // expect(instance.TaxRates).to.be(expectedValueLiteral);
       });
 
+      it('should have the property WhiteLabelId (base name: "WhiteLabelId")', function() {
+        // TODO: update the code to test the property WhiteLabelId
+        expect(instance).to.have.property('WhiteLabelId');
+        // expect(instance.WhiteLabelId).to.be(expectedValueLiteral);
+      });
+
     });
   });
 

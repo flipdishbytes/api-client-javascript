@@ -57,8 +57,12 @@
       obj = obj || new exports();
       if (data.hasOwnProperty('PosSalesAmount'))
         obj.PosSalesAmount = ApiClient.convertToType(data['PosSalesAmount'], 'Number');
+      if (data.hasOwnProperty('PosSalesTax'))
+        obj.PosSalesTax = ApiClient.convertToType(data['PosSalesTax'], 'Number');
       if (data.hasOwnProperty('PosSalesTips'))
         obj.PosSalesTips = ApiClient.convertToType(data['PosSalesTips'], 'Number');
+      if (data.hasOwnProperty('TotalPosRevenue'))
+        obj.TotalPosRevenue = ApiClient.convertToType(data['TotalPosRevenue'], 'Number');
     }
     return obj;
   }
@@ -70,10 +74,22 @@
   exports.prototype.PosSalesAmount = undefined;
 
   /**
+   * POS sale Tax for the store
+   * @member {Number} PosSalesTax
+   */
+  exports.prototype.PosSalesTax = undefined;
+
+  /**
    * POS sale tips for the store
    * @member {Number} PosSalesTips
    */
   exports.prototype.PosSalesTips = undefined;
+
+  /**
+   * POS Total Revenue for the store
+   * @member {Number} TotalPosRevenue
+   */
+  exports.prototype.TotalPosRevenue = undefined;
 
 
   return exports;

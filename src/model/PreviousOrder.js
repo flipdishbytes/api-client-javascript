@@ -96,6 +96,8 @@
         obj.Items = ApiClient.convertToType(data['Items'], [PreviousOrderItem]);
       if (data.hasOwnProperty('TaxRates'))
         obj.TaxRates = ApiClient.convertToType(data['TaxRates'], [TaxRate]);
+      if (data.hasOwnProperty('WhiteLabelId'))
+        obj.WhiteLabelId = ApiClient.convertToType(data['WhiteLabelId'], 'Number');
     }
     return obj;
   }
@@ -204,6 +206,11 @@
    * @member {Array.<module:model/TaxRate>} TaxRates
    */
   exports.prototype.TaxRates = undefined;
+
+  /**
+   * @member {Number} WhiteLabelId
+   */
+  exports.prototype.WhiteLabelId = undefined;
 
 
 

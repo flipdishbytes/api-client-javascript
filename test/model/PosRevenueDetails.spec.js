@@ -46,10 +46,22 @@
         // expect(instance.PosSalesAmount).to.be(expectedValueLiteral);
       });
 
+      it('should have the property PosSalesTax (base name: "PosSalesTax")', function() {
+        // TODO: update the code to test the property PosSalesTax
+        expect(instance).to.have.property('PosSalesTax');
+        // expect(instance.PosSalesTax).to.be(expectedValueLiteral);
+      });
+
       it('should have the property PosSalesTips (base name: "PosSalesTips")', function() {
         // TODO: update the code to test the property PosSalesTips
         expect(instance).to.have.property('PosSalesTips');
         // expect(instance.PosSalesTips).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property TotalPosRevenue (base name: "TotalPosRevenue")', function() {
+        // TODO: update the code to test the property TotalPosRevenue
+        expect(instance).to.have.property('TotalPosRevenue');
+        // expect(instance.TotalPosRevenue).to.be(expectedValueLiteral);
       });
 
     });
