@@ -11,6 +11,7 @@ Name | Type | Description | Notes
 **NextInvoiceBillingDate** | **Date** | Next invoice billing date | [optional] 
 **User** | **String** | User | 
 **DefaultPaymentDescription** | **String** | Default payment description | [optional] 
+**CancellationDate** | **Date** | Cancellation Date | [optional] 
 
 
 <a name="StatusEnum"></a>

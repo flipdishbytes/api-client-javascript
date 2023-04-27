@@ -42,16 +42,14 @@
    * @alias module:model/Subscription
    * @class
    * @param Products {Array.<module:model/SubscriptionProduct>} Products
-   * @param UpcomingInvoiceItems {Array.<module:model/InvoiceItem>} Upcoming invoice items
    * @param SubscriptionId {String} The subscription identifier
    * @param Name {String} 
    * @param Status {module:model/Subscription.StatusEnum} Status
    * @param Currency {module:model/Subscription.CurrencyEnum} Currency
    * @param User {String} User
    */
-  var exports = function(Products, UpcomingInvoiceItems, SubscriptionId, Name, Status, Currency, User) {
+  var exports = function(Products, SubscriptionId, Name, Status, Currency, User) {
     this.Products = Products;
-    this.UpcomingInvoiceItems = UpcomingInvoiceItems;
     this.SubscriptionId = SubscriptionId;
     this.Name = Name;
     this.Status = Status;
@@ -89,6 +87,8 @@
         obj.User = ApiClient.convertToType(data['User'], 'String');
       if (data.hasOwnProperty('DefaultPaymentDescription'))
         obj.DefaultPaymentDescription = ApiClient.convertToType(data['DefaultPaymentDescription'], 'String');
+      if (data.hasOwnProperty('CancellationDate'))
+        obj.CancellationDate = ApiClient.convertToType(data['CancellationDate'], 'Date');
     }
     return obj;
   }
@@ -151,6 +151,12 @@
    * @member {String} DefaultPaymentDescription
    */
   exports.prototype.DefaultPaymentDescription = undefined;
+
+  /**
+   * Cancellation Date
+   * @member {Date} CancellationDate
+   */
+  exports.prototype.CancellationDate = undefined;
 
 
 

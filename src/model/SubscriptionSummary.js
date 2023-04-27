@@ -81,6 +81,8 @@
         obj.User = ApiClient.convertToType(data['User'], 'String');
       if (data.hasOwnProperty('DefaultPaymentDescription'))
         obj.DefaultPaymentDescription = ApiClient.convertToType(data['DefaultPaymentDescription'], 'String');
+      if (data.hasOwnProperty('CancellationDate'))
+        obj.CancellationDate = ApiClient.convertToType(data['CancellationDate'], 'Date');
     }
     return obj;
   }
@@ -131,6 +133,12 @@
    * @member {String} DefaultPaymentDescription
    */
   exports.prototype.DefaultPaymentDescription = undefined;
+
+  /**
+   * Cancellation Date
+   * @member {Date} CancellationDate
+   */
+  exports.prototype.CancellationDate = undefined;
 
 
 
