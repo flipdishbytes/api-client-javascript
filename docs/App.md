@@ -112,6 +112,8 @@ Name | Type | Description | Notes
 
 * `ViewStores` (value: `"ViewStores"`)
 
+* `CreateStores` (value: `"CreateStores"`)
+
 * `EditStores` (value: `"EditStores"`)
 
 * `ViewStoresOpeningHours` (value: `"ViewStoresOpeningHours"`)

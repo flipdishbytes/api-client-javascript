@@ -464,6 +464,12 @@
     ViewStores: "ViewStores",
 
     /**
+     * value: "CreateStores"
+     * @const
+     */
+    CreateStores: "CreateStores",
+
+    /**
      * value: "EditStores"
      * @const
      */
