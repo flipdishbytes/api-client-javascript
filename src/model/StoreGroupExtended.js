@@ -55,6 +55,10 @@
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
+      if (data.hasOwnProperty('DeliveryMenuMessage'))
+        obj.DeliveryMenuMessage = ApiClient.convertToType(data['DeliveryMenuMessage'], 'String');
+      if (data.hasOwnProperty('PickupMenuMessage'))
+        obj.PickupMenuMessage = ApiClient.convertToType(data['PickupMenuMessage'], 'String');
       if (data.hasOwnProperty('TotalStores'))
         obj.TotalStores = ApiClient.convertToType(data['TotalStores'], 'Number');
       if (data.hasOwnProperty('GroupedCoordinates'))
@@ -74,6 +78,18 @@
     }
     return obj;
   }
+
+  /**
+   * Delivery Menu Message
+   * @member {String} DeliveryMenuMessage
+   */
+  exports.prototype.DeliveryMenuMessage = undefined;
+
+  /**
+   * Pickup Menu Message
+   * @member {String} PickupMenuMessage
+   */
+  exports.prototype.PickupMenuMessage = undefined;
 
   /**
    * Total Amount of Stores

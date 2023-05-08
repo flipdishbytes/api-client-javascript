@@ -40,6 +40,18 @@
         expect(instance).to.be.a(Flipdish.StoreGroupExtended);
       });
 
+      it('should have the property DeliveryMenuMessage (base name: "DeliveryMenuMessage")', function() {
+        // TODO: update the code to test the property DeliveryMenuMessage
+        expect(instance).to.have.property('DeliveryMenuMessage');
+        // expect(instance.DeliveryMenuMessage).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property PickupMenuMessage (base name: "PickupMenuMessage")', function() {
+        // TODO: update the code to test the property PickupMenuMessage
+        expect(instance).to.have.property('PickupMenuMessage');
+        // expect(instance.PickupMenuMessage).to.be(expectedValueLiteral);
+      });
+
       it('should have the property TotalStores (base name: "TotalStores")', function() {
         // TODO: update the code to test the property TotalStores
         expect(instance).to.have.property('TotalStores');

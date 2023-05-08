@@ -3,6 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**DeliveryMenuMessage** | **String** | Delivery Menu Message | [optional] 
+**PickupMenuMessage** | **String** | Pickup Menu Message | [optional] 
 **TotalStores** | **Number** | Total Amount of Stores | [optional] 
 **GroupedCoordinates** | [**[GroupedCoordinates]**](GroupedCoordinates.md) | Grouped store coordinates | [optional] 
 **StoreHeaders** | [**[StoreHeader]**](StoreHeader.md) | Store Headers associated with Store Group | [optional] 
