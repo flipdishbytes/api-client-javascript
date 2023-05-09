@@ -4,30 +4,30 @@ All URIs are relative to *https://api.flipdish.co*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**answerSignUpQuestion**](AccountsApi.md#answerSignUpQuestion) | **POST** /api/v1.0/accounts/signupstep/{signupStepAction}/answer | Answer a signup question
-[**changePassword**](AccountsApi.md#changePassword) | **PUT** /api/v1.0/accounts/password | Change password
-[**changePasswordWithPin**](AccountsApi.md#changePasswordWithPin) | **PUT** /api/v1.0/accounts/password/pin | Change password
-[**createAccount**](AccountsApi.md#createAccount) | **POST** /api/v1.0/accounts | Create account with email address and store name
-[**getAccountDetails**](AccountsApi.md#getAccountDetails) | **GET** /api/v1.0/accounts | Gets the current account detail
-[**getLocalisedTimeZones**](AccountsApi.md#getLocalisedTimeZones) | **GET** /api/v1.0/accounts/timezones | [PRIVATE API] Get timezones localised to users language
-[**login**](AccountsApi.md#login) | **POST** /api/v1.0/accounts/login | Login with username and password
-[**loginSso**](AccountsApi.md#loginSso) | **POST** /api/v1.0/accounts/login/sso | Login with SSO token
-[**loginWithPin**](AccountsApi.md#loginWithPin) | **POST** /api/v1.0/accounts/login/pin | Login with email and pin
-[**logout**](AccountsApi.md#logout) | **POST** /api/v1.0/accounts/logout | Log out. It removes Flipdish authorization Cookie.
-[**passwordResetWithToken**](AccountsApi.md#passwordResetWithToken) | **POST** /api/v1.0/accounts/password | Reset password with token.
-[**recaptchaValidate**](AccountsApi.md#recaptchaValidate) | **POST** /api/v1.0/accounts/recaptcha | Validate recaptcha from flipdish portal
-[**requestLoginPin**](AccountsApi.md#requestLoginPin) | **POST** /api/v1.0/accounts/pin | Request login PIN. The server sends the PIN to the email address.
-[**requestPasswordReset**](AccountsApi.md#requestPasswordReset) | **POST** /api/v1.0/accounts/passwordreset | Request password reset. Flipdish system will send a token via email.
-[**sendPinForPasswordReset**](AccountsApi.md#sendPinForPasswordReset) | **POST** /api/v1.0/accounts/password/resetpin | Request Password Reset PIN. The server sends the PIN to the email address.
-[**skipSignupStep**](AccountsApi.md#skipSignupStep) | **POST** /api/v1.0/accounts/signupstep/{signupStepAction}/skip | Skip a signup question
-[**updateAccount**](AccountsApi.md#updateAccount) | **PUT** /api/v1.0/accounts | Update account with name and language
+[**answerSignUpQuestion**](AccountsApi.md#answerSignUpQuestion) | **POST** /api/v1.0/accounts/signupstep/{signupStepAction}/answer | 
+[**changePassword**](AccountsApi.md#changePassword) | **PUT** /api/v1.0/accounts/password | 
+[**changePasswordWithPin**](AccountsApi.md#changePasswordWithPin) | **PUT** /api/v1.0/accounts/password/pin | 
+[**createAccount**](AccountsApi.md#createAccount) | **POST** /api/v1.0/accounts | 
+[**getAccountDetails**](AccountsApi.md#getAccountDetails) | **GET** /api/v1.0/accounts | 
+[**getLocalisedTimeZones**](AccountsApi.md#getLocalisedTimeZones) | **GET** /api/v1.0/accounts/timezones | 
+[**login**](AccountsApi.md#login) | **POST** /api/v1.0/accounts/login | 
+[**loginSso**](AccountsApi.md#loginSso) | **POST** /api/v1.0/accounts/login/sso | 
+[**loginWithPin**](AccountsApi.md#loginWithPin) | **POST** /api/v1.0/accounts/login/pin | 
+[**logout**](AccountsApi.md#logout) | **POST** /api/v1.0/accounts/logout | 
+[**passwordResetWithToken**](AccountsApi.md#passwordResetWithToken) | **POST** /api/v1.0/accounts/password | 
+[**recaptchaValidate**](AccountsApi.md#recaptchaValidate) | **POST** /api/v1.0/accounts/recaptcha | 
+[**requestLoginPin**](AccountsApi.md#requestLoginPin) | **POST** /api/v1.0/accounts/pin | 
+[**requestPasswordReset**](AccountsApi.md#requestPasswordReset) | **POST** /api/v1.0/accounts/passwordreset | 
+[**sendPinForPasswordReset**](AccountsApi.md#sendPinForPasswordReset) | **POST** /api/v1.0/accounts/password/resetpin | 
+[**skipSignupStep**](AccountsApi.md#skipSignupStep) | **POST** /api/v1.0/accounts/signupstep/{signupStepAction}/skip | 
+[**updateAccount**](AccountsApi.md#updateAccount) | **PUT** /api/v1.0/accounts | 
 
 
 <a name="answerSignUpQuestion"></a>
 # **answerSignUpQuestion**
 > answerSignUpQuestion(signupStepAction, answerId)
 
-Answer a signup question
+
 
 ### Example
 ```javascript
@@ -40,9 +40,9 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new Flipdish.AccountsApi();
 
-var signupStepAction = "signupStepAction_example"; // String | Signup step action
+var signupStepAction = "signupStepAction_example"; // String | 
 
-var answerId = 56; // Number | Identifier of the answer
+var answerId = 56; // Number | 
 
 
 var callback = function(error, data, response) {
@@ -59,8 +59,8 @@ apiInstance.answerSignUpQuestion(signupStepAction, answerId, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **signupStepAction** | **String**| Signup step action | 
- **answerId** | **Number**| Identifier of the answer | 
+ **signupStepAction** | **String**|  | 
+ **answerId** | **Number**|  | 
 
 ### Return type
 
@@ -79,7 +79,7 @@ null (empty response body)
 # **changePassword**
 > changePassword(changePasswordModel)
 
-Change password
+
 
 ### Example
 ```javascript
@@ -92,7 +92,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new Flipdish.AccountsApi();
 
-var changePasswordModel = new Flipdish.ChangePasswordModel(); // ChangePasswordModel | Change password model
+var changePasswordModel = new Flipdish.ChangePasswordModel(); // ChangePasswordModel | 
 
 
 var callback = function(error, data, response) {
@@ -109,7 +109,7 @@ apiInstance.changePassword(changePasswordModel, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **changePasswordModel** | [**ChangePasswordModel**](ChangePasswordModel.md)| Change password model | 
+ **changePasswordModel** | [**ChangePasswordModel**](ChangePasswordModel.md)|  | 
 
 ### Return type
 
@@ -128,7 +128,7 @@ null (empty response body)
 # **changePasswordWithPin**
 > changePasswordWithPin(changePasswordModel)
 
-Change password
+
 
 ### Example
 ```javascript
@@ -141,7 +141,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new Flipdish.AccountsApi();
 
-var changePasswordModel = new Flipdish.SetPasswordWithPinModel(); // SetPasswordWithPinModel | Change password model
+var changePasswordModel = new Flipdish.SetPasswordWithPinModel(); // SetPasswordWithPinModel | 
 
 
 var callback = function(error, data, response) {
@@ -158,7 +158,7 @@ apiInstance.changePasswordWithPin(changePasswordModel, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **changePasswordModel** | [**SetPasswordWithPinModel**](SetPasswordWithPinModel.md)| Change password model | 
+ **changePasswordModel** | [**SetPasswordWithPinModel**](SetPasswordWithPinModel.md)|  | 
 
 ### Return type
 
@@ -177,7 +177,7 @@ null (empty response body)
 # **createAccount**
 > createAccount(createAccountModel)
 
-Create account with email address and store name
+
 
 ### Example
 ```javascript
@@ -190,7 +190,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new Flipdish.AccountsApi();
 
-var createAccountModel = new Flipdish.CreateAccountModel(); // CreateAccountModel | Create account model
+var createAccountModel = new Flipdish.CreateAccountModel(); // CreateAccountModel | 
 
 
 var callback = function(error, data, response) {
@@ -207,7 +207,7 @@ apiInstance.createAccount(createAccountModel, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **createAccountModel** | [**CreateAccountModel**](CreateAccountModel.md)| Create account model | 
+ **createAccountModel** | [**CreateAccountModel**](CreateAccountModel.md)|  | 
 
 ### Return type
 
@@ -226,7 +226,7 @@ null (empty response body)
 # **getAccountDetails**
 > RestApiResultAccountDetail getAccountDetails()
 
-Gets the current account detail
+
 
 ### Example
 ```javascript
@@ -269,7 +269,7 @@ This endpoint does not need any parameter.
 # **getLocalisedTimeZones**
 > RestApiArrayResultLocalisedTimeZone getLocalisedTimeZones()
 
-[PRIVATE API] Get timezones localised to users language
+
 
 ### Example
 ```javascript
@@ -312,7 +312,7 @@ This endpoint does not need any parameter.
 # **login**
 > login(loginModel)
 
-Login with username and password
+
 
 ### Example
 ```javascript
@@ -325,7 +325,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new Flipdish.AccountsApi();
 
-var loginModel = new Flipdish.LoginModel(); // LoginModel | Login model
+var loginModel = new Flipdish.LoginModel(); // LoginModel | 
 
 
 var callback = function(error, data, response) {
@@ -342,7 +342,7 @@ apiInstance.login(loginModel, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **loginModel** | [**LoginModel**](LoginModel.md)| Login model | 
+ **loginModel** | [**LoginModel**](LoginModel.md)|  | 
 
 ### Return type
 
@@ -361,7 +361,7 @@ null (empty response body)
 # **loginSso**
 > loginSso()
 
-Login with SSO token
+
 
 ### Example
 ```javascript
@@ -404,7 +404,7 @@ null (empty response body)
 # **loginWithPin**
 > loginWithPin(loginModel)
 
-Login with email and pin
+
 
 ### Example
 ```javascript
@@ -417,7 +417,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new Flipdish.AccountsApi();
 
-var loginModel = new Flipdish.LoginWithPinModel(); // LoginWithPinModel | Login with pin model
+var loginModel = new Flipdish.LoginWithPinModel(); // LoginWithPinModel | 
 
 
 var callback = function(error, data, response) {
@@ -434,7 +434,7 @@ apiInstance.loginWithPin(loginModel, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **loginModel** | [**LoginWithPinModel**](LoginWithPinModel.md)| Login with pin model | 
+ **loginModel** | [**LoginWithPinModel**](LoginWithPinModel.md)|  | 
 
 ### Return type
 
@@ -453,7 +453,7 @@ null (empty response body)
 # **logout**
 > logout()
 
-Log out. It removes Flipdish authorization Cookie.
+
 
 ### Example
 ```javascript
@@ -496,7 +496,7 @@ null (empty response body)
 # **passwordResetWithToken**
 > passwordResetWithToken(passwordResetModel)
 
-Reset password with token.
+
 
 ### Example
 ```javascript
@@ -509,7 +509,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new Flipdish.AccountsApi();
 
-var passwordResetModel = new Flipdish.PasswordResetModel(); // PasswordResetModel | Password reset model
+var passwordResetModel = new Flipdish.PasswordResetModel(); // PasswordResetModel | 
 
 
 var callback = function(error, data, response) {
@@ -526,7 +526,7 @@ apiInstance.passwordResetWithToken(passwordResetModel, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **passwordResetModel** | [**PasswordResetModel**](PasswordResetModel.md)| Password reset model | 
+ **passwordResetModel** | [**PasswordResetModel**](PasswordResetModel.md)|  | 
 
 ### Return type
 
@@ -545,7 +545,7 @@ null (empty response body)
 # **recaptchaValidate**
 > recaptchaValidate(token)
 
-Validate recaptcha from flipdish portal
+
 
 ### Example
 ```javascript
@@ -558,7 +558,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new Flipdish.AccountsApi();
 
-var token = "token_example"; // String | Request token
+var token = "token_example"; // String | 
 
 
 var callback = function(error, data, response) {
@@ -575,7 +575,7 @@ apiInstance.recaptchaValidate(token, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **token** | **String**| Request token | 
+ **token** | **String**|  | 
 
 ### Return type
 
@@ -594,7 +594,7 @@ null (empty response body)
 # **requestLoginPin**
 > RequestLoginPinResponse requestLoginPin(requestLoginPinRequest)
 
-Request login PIN. The server sends the PIN to the email address.
+
 
 ### Example
 ```javascript
@@ -607,7 +607,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new Flipdish.AccountsApi();
 
-var requestLoginPinRequest = new Flipdish.RequestLoginPinModel(); // RequestLoginPinModel | Request login PIN request
+var requestLoginPinRequest = new Flipdish.RequestLoginPinModel(); // RequestLoginPinModel | 
 
 
 var callback = function(error, data, response) {
@@ -624,7 +624,7 @@ apiInstance.requestLoginPin(requestLoginPinRequest, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **requestLoginPinRequest** | [**RequestLoginPinModel**](RequestLoginPinModel.md)| Request login PIN request | 
+ **requestLoginPinRequest** | [**RequestLoginPinModel**](RequestLoginPinModel.md)|  | 
 
 ### Return type
 
@@ -643,7 +643,7 @@ Name | Type | Description  | Notes
 # **requestPasswordReset**
 > requestPasswordReset(requestPasswordResetModel)
 
-Request password reset. Flipdish system will send a token via email.
+
 
 ### Example
 ```javascript
@@ -656,7 +656,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new Flipdish.AccountsApi();
 
-var requestPasswordResetModel = new Flipdish.RequestPasswordResetModel(); // RequestPasswordResetModel | Request password reset model
+var requestPasswordResetModel = new Flipdish.RequestPasswordResetModel(); // RequestPasswordResetModel | 
 
 
 var callback = function(error, data, response) {
@@ -673,7 +673,7 @@ apiInstance.requestPasswordReset(requestPasswordResetModel, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **requestPasswordResetModel** | [**RequestPasswordResetModel**](RequestPasswordResetModel.md)| Request password reset model | 
+ **requestPasswordResetModel** | [**RequestPasswordResetModel**](RequestPasswordResetModel.md)|  | 
 
 ### Return type
 
@@ -692,7 +692,7 @@ null (empty response body)
 # **sendPinForPasswordReset**
 > RequestPasswordResetPinResponse sendPinForPasswordReset(requestPasswordResetRequest)
 
-Request Password Reset PIN. The server sends the PIN to the email address.
+
 
 ### Example
 ```javascript
@@ -741,7 +741,7 @@ Name | Type | Description  | Notes
 # **skipSignupStep**
 > skipSignupStep(signupStepAction)
 
-Skip a signup question
+
 
 ### Example
 ```javascript
@@ -754,7 +754,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new Flipdish.AccountsApi();
 
-var signupStepAction = "signupStepAction_example"; // String | Signup step action
+var signupStepAction = "signupStepAction_example"; // String | 
 
 
 var callback = function(error, data, response) {
@@ -771,7 +771,7 @@ apiInstance.skipSignupStep(signupStepAction, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **signupStepAction** | **String**| Signup step action | 
+ **signupStepAction** | **String**|  | 
 
 ### Return type
 
@@ -790,7 +790,7 @@ null (empty response body)
 # **updateAccount**
 > updateAccount(updateAccountModel)
 
-Update account with name and language
+
 
 ### Example
 ```javascript
@@ -803,7 +803,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new Flipdish.AccountsApi();
 
-var updateAccountModel = new Flipdish.AccountDetailBase(); // AccountDetailBase | Update account model
+var updateAccountModel = new Flipdish.AccountDetailBase(); // AccountDetailBase | 
 
 
 var callback = function(error, data, response) {
@@ -820,7 +820,7 @@ apiInstance.updateAccount(updateAccountModel, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **updateAccountModel** | [**AccountDetailBase**](AccountDetailBase.md)| Update account model | 
+ **updateAccountModel** | [**AccountDetailBase**](AccountDetailBase.md)|  | 
 
 ### Return type
 

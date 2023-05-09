@@ -56,9 +56,8 @@
      */
 
     /**
-     * Answer a signup question
-     * @param {module:model/String} signupStepAction Signup step action
-     * @param {Number} answerId Identifier of the answer
+     * @param {module:model/String} signupStepAction 
+     * @param {Number} answerId 
      * @param {module:api/AccountsApi~answerSignUpQuestionCallback} callback The callback function, accepting three arguments: error, data, response
      */
     this.answerSignUpQuestion = function(signupStepAction, answerId, callback) {
@@ -108,8 +107,7 @@
      */
 
     /**
-     * Change password
-     * @param {module:model/ChangePasswordModel} changePasswordModel Change password model
+     * @param {module:model/ChangePasswordModel} changePasswordModel 
      * @param {module:api/AccountsApi~changePasswordCallback} callback The callback function, accepting three arguments: error, data, response
      */
     this.changePassword = function(changePasswordModel, callback) {
@@ -153,8 +151,7 @@
      */
 
     /**
-     * Change password
-     * @param {module:model/SetPasswordWithPinModel} changePasswordModel Change password model
+     * @param {module:model/SetPasswordWithPinModel} changePasswordModel 
      * @param {module:api/AccountsApi~changePasswordWithPinCallback} callback The callback function, accepting three arguments: error, data, response
      */
     this.changePasswordWithPin = function(changePasswordModel, callback) {
@@ -198,8 +195,7 @@
      */
 
     /**
-     * Create account with email address and store name
-     * @param {module:model/CreateAccountModel} createAccountModel Create account model
+     * @param {module:model/CreateAccountModel} createAccountModel 
      * @param {module:api/AccountsApi~createAccountCallback} callback The callback function, accepting three arguments: error, data, response
      */
     this.createAccount = function(createAccountModel, callback) {
@@ -243,7 +239,6 @@
      */
 
     /**
-     * Gets the current account detail
      * @param {module:api/AccountsApi~getAccountDetailsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/RestApiResultAccountDetail}
      */
@@ -283,7 +278,6 @@
      */
 
     /**
-     * [PRIVATE API] Get timezones localised to users language
      * @param {module:api/AccountsApi~getLocalisedTimeZonesCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/RestApiArrayResultLocalisedTimeZone}
      */
@@ -323,8 +317,7 @@
      */
 
     /**
-     * Login with username and password
-     * @param {module:model/LoginModel} loginModel Login model
+     * @param {module:model/LoginModel} loginModel 
      * @param {module:api/AccountsApi~loginCallback} callback The callback function, accepting three arguments: error, data, response
      */
     this.login = function(loginModel, callback) {
@@ -368,7 +361,6 @@
      */
 
     /**
-     * Login with SSO token
      * @param {module:api/AccountsApi~loginSsoCallback} callback The callback function, accepting three arguments: error, data, response
      */
     this.loginSso = function(callback) {
@@ -407,8 +399,7 @@
      */
 
     /**
-     * Login with email and pin
-     * @param {module:model/LoginWithPinModel} loginModel Login with pin model
+     * @param {module:model/LoginWithPinModel} loginModel 
      * @param {module:api/AccountsApi~loginWithPinCallback} callback The callback function, accepting three arguments: error, data, response
      */
     this.loginWithPin = function(loginModel, callback) {
@@ -452,7 +443,6 @@
      */
 
     /**
-     * Log out. It removes Flipdish authorization Cookie.
      * @param {module:api/AccountsApi~logoutCallback} callback The callback function, accepting three arguments: error, data, response
      */
     this.logout = function(callback) {
@@ -491,8 +481,7 @@
      */
 
     /**
-     * Reset password with token.
-     * @param {module:model/PasswordResetModel} passwordResetModel Password reset model
+     * @param {module:model/PasswordResetModel} passwordResetModel 
      * @param {module:api/AccountsApi~passwordResetWithTokenCallback} callback The callback function, accepting three arguments: error, data, response
      */
     this.passwordResetWithToken = function(passwordResetModel, callback) {
@@ -536,8 +525,7 @@
      */
 
     /**
-     * Validate recaptcha from flipdish portal
-     * @param {String} token Request token
+     * @param {String} token 
      * @param {module:api/AccountsApi~recaptchaValidateCallback} callback The callback function, accepting three arguments: error, data, response
      */
     this.recaptchaValidate = function(token, callback) {
@@ -582,8 +570,7 @@
      */
 
     /**
-     * Request login PIN. The server sends the PIN to the email address.
-     * @param {module:model/RequestLoginPinModel} requestLoginPinRequest Request login PIN request
+     * @param {module:model/RequestLoginPinModel} requestLoginPinRequest 
      * @param {module:api/AccountsApi~requestLoginPinCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/RequestLoginPinResponse}
      */
@@ -628,8 +615,7 @@
      */
 
     /**
-     * Request password reset. Flipdish system will send a token via email.
-     * @param {module:model/RequestPasswordResetModel} requestPasswordResetModel Request password reset model
+     * @param {module:model/RequestPasswordResetModel} requestPasswordResetModel 
      * @param {module:api/AccountsApi~requestPasswordResetCallback} callback The callback function, accepting three arguments: error, data, response
      */
     this.requestPasswordReset = function(requestPasswordResetModel, callback) {
@@ -673,7 +659,6 @@
      */
 
     /**
-     * Request Password Reset PIN. The server sends the PIN to the email address.
      * @param {module:model/RequestPasswordResetModel} requestPasswordResetRequest 
      * @param {module:api/AccountsApi~sendPinForPasswordResetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/RequestPasswordResetPinResponse}
@@ -719,8 +704,7 @@
      */
 
     /**
-     * Skip a signup question
-     * @param {module:model/String} signupStepAction Signup step action
+     * @param {module:model/String} signupStepAction 
      * @param {module:api/AccountsApi~skipSignupStepCallback} callback The callback function, accepting three arguments: error, data, response
      */
     this.skipSignupStep = function(signupStepAction, callback) {
@@ -765,8 +749,7 @@
      */
 
     /**
-     * Update account with name and language
-     * @param {module:model/AccountDetailBase} updateAccountModel Update account model
+     * @param {module:model/AccountDetailBase} updateAccountModel 
      * @param {module:api/AccountsApi~updateAccountCallback} callback The callback function, accepting three arguments: error, data, response
      */
     this.updateAccount = function(updateAccountModel, callback) {
