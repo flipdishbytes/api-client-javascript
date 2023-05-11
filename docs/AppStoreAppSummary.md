@@ -3,9 +3,10 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **String** | Unique App store app id | [optional] 
+**Id** | **String** | Unique App store app id | 
 **VerificationStatus** | **String** | Application verification status | 
 **Logo** | **String** | Logo | [optional] 
+**Internal** | **Boolean** | Internal | 
 **Name** | **String** | Name | 
 **Description** | **String** | Description | 
 **IsEnabled** | **Boolean** | Is application enabled | [optional] 

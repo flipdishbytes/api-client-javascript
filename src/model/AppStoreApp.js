@@ -42,6 +42,7 @@
    * @alias module:model/AppStoreApp
    * @class
    * @param Id {String} Unique App store app id
+   * @param Internal {Boolean} Internal
    * @param VerificationStatus {module:model/AppStoreApp.VerificationStatusEnum} Application verification status
    * @param OAuthAppId {String} OAuth App identifier
    * @param Details {String} Details
@@ -53,8 +54,9 @@
    * @param Categories {Array.<module:model/AppStoreApp.CategoriesEnum>} Categories
    * @param Countries {Array.<module:model/AppStoreApp.CountriesEnum>} Countries
    */
-  var exports = function(Id, VerificationStatus, OAuthAppId, Details, ConfigurationType, StoreSelectorType, PermissionsType, Name, Description, Categories, Countries) {
+  var exports = function(Id, Internal, VerificationStatus, OAuthAppId, Details, ConfigurationType, StoreSelectorType, PermissionsType, Name, Description, Categories, Countries) {
     this.Id = Id;
+    this.Internal = Internal;
     this.VerificationStatus = VerificationStatus;
     this.OAuthAppId = OAuthAppId;
     this.Details = Details;
@@ -79,6 +81,8 @@
       obj = obj || new exports();
       if (data.hasOwnProperty('Id'))
         obj.Id = ApiClient.convertToType(data['Id'], 'String');
+      if (data.hasOwnProperty('Internal'))
+        obj.Internal = ApiClient.convertToType(data['Internal'], 'Boolean');
       if (data.hasOwnProperty('VerificationStatus'))
         obj.VerificationStatus = ApiClient.convertToType(data['VerificationStatus'], 'String');
       if (data.hasOwnProperty('Logo'))
@@ -128,6 +132,12 @@
    * @member {String} Id
    */
   exports.prototype.Id = undefined;
+
+  /**
+   * Internal
+   * @member {Boolean} Internal
+   */
+  exports.prototype.Internal = undefined;
 
   /**
    * Application verification status

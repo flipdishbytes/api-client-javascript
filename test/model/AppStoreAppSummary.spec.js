@@ -58,6 +58,12 @@
         // expect(instance.Logo).to.be(expectedValueLiteral);
       });
 
+      it('should have the property Internal (base name: "Internal")', function() {
+        // TODO: update the code to test the property Internal
+        expect(instance).to.have.property('Internal');
+        // expect(instance.Internal).to.be(expectedValueLiteral);
+      });
+
       it('should have the property Name (base name: "Name")', function() {
         // TODO: update the code to test the property Name
         expect(instance).to.have.property('Name');

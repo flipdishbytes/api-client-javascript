@@ -41,14 +41,18 @@
    * App store app summary information
    * @alias module:model/AppStoreAppSummary
    * @class
+   * @param Id {String} Unique App store app id
    * @param VerificationStatus {module:model/AppStoreAppSummary.VerificationStatusEnum} Application verification status
+   * @param Internal {Boolean} Internal
    * @param Name {String} Name
    * @param Description {String} Description
    * @param Categories {Array.<module:model/AppStoreAppSummary.CategoriesEnum>} Categories
    * @param Countries {Array.<module:model/AppStoreAppSummary.CountriesEnum>} Countries
    */
-  var exports = function(VerificationStatus, Name, Description, Categories, Countries) {
+  var exports = function(Id, VerificationStatus, Internal, Name, Description, Categories, Countries) {
+    this.Id = Id;
     this.VerificationStatus = VerificationStatus;
+    this.Internal = Internal;
     this.Name = Name;
     this.Description = Description;
     this.Categories = Categories;
@@ -71,6 +75,8 @@
         obj.VerificationStatus = ApiClient.convertToType(data['VerificationStatus'], 'String');
       if (data.hasOwnProperty('Logo'))
         obj.Logo = ApiClient.convertToType(data['Logo'], 'String');
+      if (data.hasOwnProperty('Internal'))
+        obj.Internal = ApiClient.convertToType(data['Internal'], 'Boolean');
       if (data.hasOwnProperty('Name'))
         obj.Name = ApiClient.convertToType(data['Name'], 'String');
       if (data.hasOwnProperty('Description'))
@@ -104,6 +110,12 @@
    * @member {String} Logo
    */
   exports.prototype.Logo = undefined;
+
+  /**
+   * Internal
+   * @member {Boolean} Internal
+   */
+  exports.prototype.Internal = undefined;
 
   /**
    * Name

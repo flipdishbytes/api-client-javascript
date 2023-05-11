@@ -45,15 +45,21 @@
    * @param AppId {String} App Id
    * @param IsEnabled {Boolean} Is enabled
    * @param Stores {Array.<module:model/ConfiguredStore>} List of stores
+   * @param ConfigurationType {module:model/AppStoreAppConfigurationSummary.ConfigurationTypeEnum} Configuration type
+   * @param StoreSelectorType {module:model/AppStoreAppConfigurationSummary.StoreSelectorTypeEnum} Store selector type
+   * @param Internal {Boolean} Internal
    * @param AppStoreAppId {String} Unique App store app id
    * @param Name {String} Name of Appstore app
    * @param Description {String} Description
    */
-  var exports = function(Id, AppId, IsEnabled, Stores, AppStoreAppId, Name, Description) {
+  var exports = function(Id, AppId, IsEnabled, Stores, ConfigurationType, StoreSelectorType, Internal, AppStoreAppId, Name, Description) {
     this.Id = Id;
     this.AppId = AppId;
     this.IsEnabled = IsEnabled;
     this.Stores = Stores;
+    this.ConfigurationType = ConfigurationType;
+    this.StoreSelectorType = StoreSelectorType;
+    this.Internal = Internal;
     this.AppStoreAppId = AppStoreAppId;
     this.Name = Name;
     this.Description = Description;
@@ -81,6 +87,8 @@
         obj.ConfigurationType = ApiClient.convertToType(data['ConfigurationType'], 'String');
       if (data.hasOwnProperty('StoreSelectorType'))
         obj.StoreSelectorType = ApiClient.convertToType(data['StoreSelectorType'], 'String');
+      if (data.hasOwnProperty('Internal'))
+        obj.Internal = ApiClient.convertToType(data['Internal'], 'Boolean');
       if (data.hasOwnProperty('AppStoreAppId'))
         obj.AppStoreAppId = ApiClient.convertToType(data['AppStoreAppId'], 'String');
       if (data.hasOwnProperty('Name'))
@@ -130,6 +138,12 @@
    * @member {module:model/AppStoreAppConfigurationSummary.StoreSelectorTypeEnum} StoreSelectorType
    */
   exports.prototype.StoreSelectorType = undefined;
+
+  /**
+   * Internal
+   * @member {Boolean} Internal
+   */
+  exports.prototype.Internal = undefined;
 
   /**
    * Unique App store app id

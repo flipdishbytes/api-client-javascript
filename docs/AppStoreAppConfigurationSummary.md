@@ -7,8 +7,9 @@ Name | Type | Description | Notes
 **AppId** | **String** | App Id | 
 **IsEnabled** | **Boolean** | Is enabled | 
 **Stores** | [**[ConfiguredStore]**](ConfiguredStore.md) | List of stores | 
-**ConfigurationType** | **String** | Configuration type | [optional] 
-**StoreSelectorType** | **String** | Store selector type | [optional] 
+**ConfigurationType** | **String** | Configuration type | 
+**StoreSelectorType** | **String** | Store selector type | 
+**Internal** | **Boolean** | Internal | 
 **AppStoreAppId** | **String** | Unique App store app id | 
 **Name** | **String** | Name of Appstore app | 
 **Description** | **String** | Description | 
