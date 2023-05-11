@@ -94,6 +94,12 @@
         // expect(instance.OAuthAppId).to.be(expectedValueLiteral);
       });
 
+      it('should have the property Internal (base name: "Internal")', function() {
+        // TODO: update the code to test the property Internal
+        expect(instance).to.have.property('Internal');
+        // expect(instance.Internal).to.be(expectedValueLiteral);
+      });
+
       it('should have the property Details (base name: "Details")', function() {
         // TODO: update the code to test the property Details
         expect(instance).to.have.property('Details');

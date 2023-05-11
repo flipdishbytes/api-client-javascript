@@ -46,12 +46,6 @@
         // expect(instance.Id).to.be(expectedValueLiteral);
       });
 
-      it('should have the property Internal (base name: "Internal")', function() {
-        // TODO: update the code to test the property Internal
-        expect(instance).to.have.property('Internal');
-        // expect(instance.Internal).to.be(expectedValueLiteral);
-      });
-
       it('should have the property VerificationStatus (base name: "VerificationStatus")', function() {
         // TODO: update the code to test the property VerificationStatus
         expect(instance).to.have.property('VerificationStatus');
@@ -68,6 +62,12 @@
         // TODO: update the code to test the property OAuthAppId
         expect(instance).to.have.property('OAuthAppId');
         // expect(instance.OAuthAppId).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property Internal (base name: "Internal")', function() {
+        // TODO: update the code to test the property Internal
+        expect(instance).to.have.property('Internal');
+        // expect(instance.Internal).to.be(expectedValueLiteral);
       });
 
       it('should have the property Details (base name: "Details")', function() {

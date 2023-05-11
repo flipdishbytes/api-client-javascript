@@ -42,9 +42,9 @@
    * @alias module:model/AppStoreApp
    * @class
    * @param Id {String} Unique App store app id
-   * @param Internal {Boolean} Internal
    * @param VerificationStatus {module:model/AppStoreApp.VerificationStatusEnum} Application verification status
    * @param OAuthAppId {String} OAuth App identifier
+   * @param Internal {Boolean} Internal
    * @param Details {String} Details
    * @param ConfigurationType {module:model/AppStoreApp.ConfigurationTypeEnum} Configuration type  <example>External link</example><example>Flipdish hosted</example>
    * @param StoreSelectorType {module:model/AppStoreApp.StoreSelectorTypeEnum} Store selector type
@@ -54,11 +54,11 @@
    * @param Categories {Array.<module:model/AppStoreApp.CategoriesEnum>} Categories
    * @param Countries {Array.<module:model/AppStoreApp.CountriesEnum>} Countries
    */
-  var exports = function(Id, Internal, VerificationStatus, OAuthAppId, Details, ConfigurationType, StoreSelectorType, PermissionsType, Name, Description, Categories, Countries) {
+  var exports = function(Id, VerificationStatus, OAuthAppId, Internal, Details, ConfigurationType, StoreSelectorType, PermissionsType, Name, Description, Categories, Countries) {
     this.Id = Id;
-    this.Internal = Internal;
     this.VerificationStatus = VerificationStatus;
     this.OAuthAppId = OAuthAppId;
+    this.Internal = Internal;
     this.Details = Details;
     this.ConfigurationType = ConfigurationType;
     this.StoreSelectorType = StoreSelectorType;
@@ -81,14 +81,14 @@
       obj = obj || new exports();
       if (data.hasOwnProperty('Id'))
         obj.Id = ApiClient.convertToType(data['Id'], 'String');
-      if (data.hasOwnProperty('Internal'))
-        obj.Internal = ApiClient.convertToType(data['Internal'], 'Boolean');
       if (data.hasOwnProperty('VerificationStatus'))
         obj.VerificationStatus = ApiClient.convertToType(data['VerificationStatus'], 'String');
       if (data.hasOwnProperty('Logo'))
         obj.Logo = ApiClient.convertToType(data['Logo'], 'String');
       if (data.hasOwnProperty('OAuthAppId'))
         obj.OAuthAppId = ApiClient.convertToType(data['OAuthAppId'], 'String');
+      if (data.hasOwnProperty('Internal'))
+        obj.Internal = ApiClient.convertToType(data['Internal'], 'Boolean');
       if (data.hasOwnProperty('Details'))
         obj.Details = ApiClient.convertToType(data['Details'], 'String');
       if (data.hasOwnProperty('ConfigurationType'))
@@ -134,12 +134,6 @@
   exports.prototype.Id = undefined;
 
   /**
-   * Internal
-   * @member {Boolean} Internal
-   */
-  exports.prototype.Internal = undefined;
-
-  /**
    * Application verification status
    * @member {module:model/AppStoreApp.VerificationStatusEnum} VerificationStatus
    */
@@ -156,6 +150,12 @@
    * @member {String} OAuthAppId
    */
   exports.prototype.OAuthAppId = undefined;
+
+  /**
+   * Internal
+   * @member {Boolean} Internal
+   */
+  exports.prototype.Internal = undefined;
 
   /**
    * Details

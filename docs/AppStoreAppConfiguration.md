@@ -12,6 +12,7 @@ Name | Type | Description | Notes
 **VerificationStatus** | **String** | Application verification status | 
 **Logo** | **String** | Logo | [optional] 
 **OAuthAppId** | **String** | OAuth App identifier | 
+**Internal** | **Boolean** | Internal | 
 **Details** | **String** | Details | 
 **ConfigurationType** | **String** | Configuration type  <example>External link</example><example>Flipdish hosted</example> | 
 **StoreSelectorType** | **String** | Store selector type | 
