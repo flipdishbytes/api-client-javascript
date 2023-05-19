@@ -16,18 +16,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/InvoiceItem', 'model/SubscriptionProduct'], factory);
+    define(['ApiClient', 'model/InvoiceDiscount', 'model/InvoiceItem', 'model/SubscriptionProduct'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./InvoiceItem'), require('./SubscriptionProduct'));
+    module.exports = factory(require('../ApiClient'), require('./InvoiceDiscount'), require('./InvoiceItem'), require('./SubscriptionProduct'));
   } else {
     // Browser globals (root is window)
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.Subscription = factory(root.Flipdish.ApiClient, root.Flipdish.InvoiceItem, root.Flipdish.SubscriptionProduct);
+    root.Flipdish.Subscription = factory(root.Flipdish.ApiClient, root.Flipdish.InvoiceDiscount, root.Flipdish.InvoiceItem, root.Flipdish.SubscriptionProduct);
   }
-}(this, function(ApiClient, InvoiceItem, SubscriptionProduct) {
+}(this, function(ApiClient, InvoiceDiscount, InvoiceItem, SubscriptionProduct) {
   'use strict';
 
   /**
@@ -71,6 +71,8 @@
         obj.Products = ApiClient.convertToType(data['Products'], [SubscriptionProduct]);
       if (data.hasOwnProperty('UpcomingInvoiceItems'))
         obj.UpcomingInvoiceItems = ApiClient.convertToType(data['UpcomingInvoiceItems'], [InvoiceItem]);
+      if (data.hasOwnProperty('UpcomingInvoiceDiscounts'))
+        obj.UpcomingInvoiceDiscounts = ApiClient.convertToType(data['UpcomingInvoiceDiscounts'], [InvoiceDiscount]);
       if (data.hasOwnProperty('SubscriptionId'))
         obj.SubscriptionId = ApiClient.convertToType(data['SubscriptionId'], 'String');
       if (data.hasOwnProperty('Name'))
@@ -104,6 +106,12 @@
    * @member {Array.<module:model/InvoiceItem>} UpcomingInvoiceItems
    */
   exports.prototype.UpcomingInvoiceItems = undefined;
+
+  /**
+   * Upcoming invoice discounts
+   * @member {Array.<module:model/InvoiceDiscount>} UpcomingInvoiceDiscounts
+   */
+  exports.prototype.UpcomingInvoiceDiscounts = undefined;
 
   /**
    * The subscription identifier

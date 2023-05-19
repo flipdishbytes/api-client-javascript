@@ -52,6 +52,12 @@
         // expect(instance.UpcomingInvoiceItems).to.be(expectedValueLiteral);
       });
 
+      it('should have the property UpcomingInvoiceDiscounts (base name: "UpcomingInvoiceDiscounts")', function() {
+        // TODO: update the code to test the property UpcomingInvoiceDiscounts
+        expect(instance).to.have.property('UpcomingInvoiceDiscounts');
+        // expect(instance.UpcomingInvoiceDiscounts).to.be(expectedValueLiteral);
+      });
+
       it('should have the property SubscriptionId (base name: "SubscriptionId")', function() {
         // TODO: update the code to test the property SubscriptionId
         expect(instance).to.have.property('SubscriptionId');

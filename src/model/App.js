@@ -650,12 +650,6 @@
     EditVouchers: "EditVouchers",
 
     /**
-     * value: "UpdateVouchersExtendDisable"
-     * @const
-     */
-    UpdateVouchersExtendDisable: "UpdateVouchersExtendDisable",
-
-    /**
      * value: "ViewWebsiteContent"
      * @const
      */

@@ -174,8 +174,6 @@ Name | Type | Description | Notes
 
 * `EditVouchers` (value: `"EditVouchers"`)
 
-* `UpdateVouchersExtendDisable` (value: `"UpdateVouchersExtendDisable"`)
-
 * `ViewWebsiteContent` (value: `"ViewWebsiteContent"`)
 
 * `EditWebsiteContent` (value: `"EditWebsiteContent"`)
