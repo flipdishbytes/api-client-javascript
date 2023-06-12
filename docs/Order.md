@@ -127,6 +127,8 @@ Name | Type | Description | Notes
 
 * `PayGreen` (value: `"PayGreen"`)
 
+* `GoogleWalletToken` (value: `"GoogleWalletToken"`)
+
 
 
 

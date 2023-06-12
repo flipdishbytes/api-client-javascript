@@ -625,7 +625,13 @@
      * value: "PayGreen"
      * @const
      */
-    PayGreen: "PayGreen"
+    PayGreen: "PayGreen",
+
+    /**
+     * value: "GoogleWalletToken"
+     * @const
+     */
+    GoogleWalletToken: "GoogleWalletToken"
   };
 
 
