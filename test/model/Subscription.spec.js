@@ -46,6 +46,18 @@
         // expect(instance.Products).to.be(expectedValueLiteral);
       });
 
+      it('should have the property NextInvoiceAmount (base name: "NextInvoiceAmount")', function() {
+        // TODO: update the code to test the property NextInvoiceAmount
+        expect(instance).to.have.property('NextInvoiceAmount');
+        // expect(instance.NextInvoiceAmount).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property NextInvoiceBillingDate (base name: "NextInvoiceBillingDate")', function() {
+        // TODO: update the code to test the property NextInvoiceBillingDate
+        expect(instance).to.have.property('NextInvoiceBillingDate');
+        // expect(instance.NextInvoiceBillingDate).to.be(expectedValueLiteral);
+      });
+
       it('should have the property UpcomingInvoiceItems (base name: "UpcomingInvoiceItems")', function() {
         // TODO: update the code to test the property UpcomingInvoiceItems
         expect(instance).to.have.property('UpcomingInvoiceItems');
@@ -56,6 +68,12 @@
         // TODO: update the code to test the property UpcomingInvoiceDiscounts
         expect(instance).to.have.property('UpcomingInvoiceDiscounts');
         // expect(instance.UpcomingInvoiceDiscounts).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property UpcomingInvoice (base name: "UpcomingInvoice")', function() {
+        // TODO: update the code to test the property UpcomingInvoice
+        expect(instance).to.have.property('UpcomingInvoice');
+        // expect(instance.UpcomingInvoice).to.be(expectedValueLiteral);
       });
 
       it('should have the property SubscriptionId (base name: "SubscriptionId")', function() {
@@ -80,18 +98,6 @@
         // TODO: update the code to test the property Currency
         expect(instance).to.have.property('Currency');
         // expect(instance.Currency).to.be(expectedValueLiteral);
-      });
-
-      it('should have the property NextInvoiceAmount (base name: "NextInvoiceAmount")', function() {
-        // TODO: update the code to test the property NextInvoiceAmount
-        expect(instance).to.have.property('NextInvoiceAmount');
-        // expect(instance.NextInvoiceAmount).to.be(expectedValueLiteral);
-      });
-
-      it('should have the property NextInvoiceBillingDate (base name: "NextInvoiceBillingDate")', function() {
-        // TODO: update the code to test the property NextInvoiceBillingDate
-        expect(instance).to.have.property('NextInvoiceBillingDate');
-        // expect(instance.NextInvoiceBillingDate).to.be(expectedValueLiteral);
       });
 
       it('should have the property User (base name: "User")', function() {

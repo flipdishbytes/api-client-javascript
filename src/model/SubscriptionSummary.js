@@ -65,6 +65,10 @@
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
+      if (data.hasOwnProperty('NextInvoiceAmount'))
+        obj.NextInvoiceAmount = ApiClient.convertToType(data['NextInvoiceAmount'], 'Number');
+      if (data.hasOwnProperty('NextInvoiceBillingDate'))
+        obj.NextInvoiceBillingDate = ApiClient.convertToType(data['NextInvoiceBillingDate'], 'Date');
       if (data.hasOwnProperty('SubscriptionId'))
         obj.SubscriptionId = ApiClient.convertToType(data['SubscriptionId'], 'String');
       if (data.hasOwnProperty('Name'))
@@ -73,10 +77,6 @@
         obj.Status = ApiClient.convertToType(data['Status'], 'String');
       if (data.hasOwnProperty('Currency'))
         obj.Currency = ApiClient.convertToType(data['Currency'], 'String');
-      if (data.hasOwnProperty('NextInvoiceAmount'))
-        obj.NextInvoiceAmount = ApiClient.convertToType(data['NextInvoiceAmount'], 'Number');
-      if (data.hasOwnProperty('NextInvoiceBillingDate'))
-        obj.NextInvoiceBillingDate = ApiClient.convertToType(data['NextInvoiceBillingDate'], 'Date');
       if (data.hasOwnProperty('User'))
         obj.User = ApiClient.convertToType(data['User'], 'String');
       if (data.hasOwnProperty('DefaultPaymentDescription'))
@@ -86,6 +86,18 @@
     }
     return obj;
   }
+
+  /**
+   * Next invoice amount
+   * @member {Number} NextInvoiceAmount
+   */
+  exports.prototype.NextInvoiceAmount = undefined;
+
+  /**
+   * Next invoice billing date
+   * @member {Date} NextInvoiceBillingDate
+   */
+  exports.prototype.NextInvoiceBillingDate = undefined;
 
   /**
    * The subscription identifier
@@ -109,18 +121,6 @@
    * @member {module:model/SubscriptionSummary.CurrencyEnum} Currency
    */
   exports.prototype.Currency = undefined;
-
-  /**
-   * Next invoice amount
-   * @member {Number} NextInvoiceAmount
-   */
-  exports.prototype.NextInvoiceAmount = undefined;
-
-  /**
-   * Next invoice billing date
-   * @member {Date} NextInvoiceBillingDate
-   */
-  exports.prototype.NextInvoiceBillingDate = undefined;
 
   /**
    * User

@@ -16,18 +16,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/InvoiceDiscount', 'model/InvoiceItem', 'model/SubscriptionProduct'], factory);
+    define(['ApiClient', 'model/InvoiceDiscount', 'model/InvoiceItem', 'model/SubscriptionProduct', 'model/UpcomingInvoice'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./InvoiceDiscount'), require('./InvoiceItem'), require('./SubscriptionProduct'));
+    module.exports = factory(require('../ApiClient'), require('./InvoiceDiscount'), require('./InvoiceItem'), require('./SubscriptionProduct'), require('./UpcomingInvoice'));
   } else {
     // Browser globals (root is window)
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.Subscription = factory(root.Flipdish.ApiClient, root.Flipdish.InvoiceDiscount, root.Flipdish.InvoiceItem, root.Flipdish.SubscriptionProduct);
+    root.Flipdish.Subscription = factory(root.Flipdish.ApiClient, root.Flipdish.InvoiceDiscount, root.Flipdish.InvoiceItem, root.Flipdish.SubscriptionProduct, root.Flipdish.UpcomingInvoice);
   }
-}(this, function(ApiClient, InvoiceDiscount, InvoiceItem, SubscriptionProduct) {
+}(this, function(ApiClient, InvoiceDiscount, InvoiceItem, SubscriptionProduct, UpcomingInvoice) {
   'use strict';
 
   /**
@@ -69,10 +69,16 @@
       obj = obj || new exports();
       if (data.hasOwnProperty('Products'))
         obj.Products = ApiClient.convertToType(data['Products'], [SubscriptionProduct]);
+      if (data.hasOwnProperty('NextInvoiceAmount'))
+        obj.NextInvoiceAmount = ApiClient.convertToType(data['NextInvoiceAmount'], 'Number');
+      if (data.hasOwnProperty('NextInvoiceBillingDate'))
+        obj.NextInvoiceBillingDate = ApiClient.convertToType(data['NextInvoiceBillingDate'], 'Date');
       if (data.hasOwnProperty('UpcomingInvoiceItems'))
         obj.UpcomingInvoiceItems = ApiClient.convertToType(data['UpcomingInvoiceItems'], [InvoiceItem]);
       if (data.hasOwnProperty('UpcomingInvoiceDiscounts'))
         obj.UpcomingInvoiceDiscounts = ApiClient.convertToType(data['UpcomingInvoiceDiscounts'], [InvoiceDiscount]);
+      if (data.hasOwnProperty('UpcomingInvoice'))
+        obj.UpcomingInvoice = UpcomingInvoice.constructFromObject(data['UpcomingInvoice']);
       if (data.hasOwnProperty('SubscriptionId'))
         obj.SubscriptionId = ApiClient.convertToType(data['SubscriptionId'], 'String');
       if (data.hasOwnProperty('Name'))
@@ -81,10 +87,6 @@
         obj.Status = ApiClient.convertToType(data['Status'], 'String');
       if (data.hasOwnProperty('Currency'))
         obj.Currency = ApiClient.convertToType(data['Currency'], 'String');
-      if (data.hasOwnProperty('NextInvoiceAmount'))
-        obj.NextInvoiceAmount = ApiClient.convertToType(data['NextInvoiceAmount'], 'Number');
-      if (data.hasOwnProperty('NextInvoiceBillingDate'))
-        obj.NextInvoiceBillingDate = ApiClient.convertToType(data['NextInvoiceBillingDate'], 'Date');
       if (data.hasOwnProperty('User'))
         obj.User = ApiClient.convertToType(data['User'], 'String');
       if (data.hasOwnProperty('DefaultPaymentDescription'))
@@ -102,6 +104,18 @@
   exports.prototype.Products = undefined;
 
   /**
+   * Next invoice amount
+   * @member {Number} NextInvoiceAmount
+   */
+  exports.prototype.NextInvoiceAmount = undefined;
+
+  /**
+   * Next invoice billing date
+   * @member {Date} NextInvoiceBillingDate
+   */
+  exports.prototype.NextInvoiceBillingDate = undefined;
+
+  /**
    * Upcoming invoice items
    * @member {Array.<module:model/InvoiceItem>} UpcomingInvoiceItems
    */
@@ -112,6 +126,12 @@
    * @member {Array.<module:model/InvoiceDiscount>} UpcomingInvoiceDiscounts
    */
   exports.prototype.UpcomingInvoiceDiscounts = undefined;
+
+  /**
+   * Upcoming invoice
+   * @member {module:model/UpcomingInvoice} UpcomingInvoice
+   */
+  exports.prototype.UpcomingInvoice = undefined;
 
   /**
    * The subscription identifier
@@ -135,18 +155,6 @@
    * @member {module:model/Subscription.CurrencyEnum} Currency
    */
   exports.prototype.Currency = undefined;
-
-  /**
-   * Next invoice amount
-   * @member {Number} NextInvoiceAmount
-   */
-  exports.prototype.NextInvoiceAmount = undefined;
-
-  /**
-   * Next invoice billing date
-   * @member {Date} NextInvoiceBillingDate
-   */
-  exports.prototype.NextInvoiceBillingDate = undefined;
 
   /**
    * User

@@ -4,14 +4,15 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Products** | [**[SubscriptionProduct]**](SubscriptionProduct.md) | Products | 
+**NextInvoiceAmount** | **Number** | Next invoice amount | [optional] 
+**NextInvoiceBillingDate** | **Date** | Next invoice billing date | [optional] 
 **UpcomingInvoiceItems** | [**[InvoiceItem]**](InvoiceItem.md) | Upcoming invoice items | [optional] 
 **UpcomingInvoiceDiscounts** | [**[InvoiceDiscount]**](InvoiceDiscount.md) | Upcoming invoice discounts | [optional] 
+**UpcomingInvoice** | [**UpcomingInvoice**](UpcomingInvoice.md) | Upcoming invoice | [optional] 
 **SubscriptionId** | **String** | The subscription identifier | 
 **Name** | **String** |  | 
 **Status** | **String** | Status | 
 **Currency** | **String** | Currency | 
-**NextInvoiceAmount** | **Number** | Next invoice amount | [optional] 
-**NextInvoiceBillingDate** | **Date** | Next invoice billing date | [optional] 
 **User** | **String** | User | 
 **DefaultPaymentDescription** | **String** | Default payment description | [optional] 
 **CancellationDate** | **Date** | Cancellation Date | [optional] 

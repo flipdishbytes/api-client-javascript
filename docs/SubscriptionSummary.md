@@ -3,12 +3,12 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**NextInvoiceAmount** | **Number** | Next invoice amount | [optional] 
+**NextInvoiceBillingDate** | **Date** | Next invoice billing date | [optional] 
 **SubscriptionId** | **String** | The subscription identifier | 
 **Name** | **String** |  | 
 **Status** | **String** | Status | 
 **Currency** | **String** | Currency | 
-**NextInvoiceAmount** | **Number** | Next invoice amount | [optional] 
-**NextInvoiceBillingDate** | **Date** | Next invoice billing date | [optional] 
 **User** | **String** | User | 
 **DefaultPaymentDescription** | **String** | Default payment description | [optional] 
 **CancellationDate** | **Date** | Cancellation Date | [optional] 
