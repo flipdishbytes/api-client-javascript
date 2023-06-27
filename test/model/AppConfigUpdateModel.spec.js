@@ -58,6 +58,12 @@
         // expect(instance.MainColor).to.be(expectedValueLiteral);
       });
 
+      it('should have the property KioskPrimaryColour (base name: "KioskPrimaryColour")', function() {
+        // TODO: update the code to test the property KioskPrimaryColour
+        expect(instance).to.have.property('KioskPrimaryColour');
+        // expect(instance.KioskPrimaryColour).to.be(expectedValueLiteral);
+      });
+
       it('should have the property ApplicationCategory (base name: "ApplicationCategory")', function() {
         // TODO: update the code to test the property ApplicationCategory
         expect(instance).to.have.property('ApplicationCategory');

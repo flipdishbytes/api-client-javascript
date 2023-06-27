@@ -89,6 +89,8 @@
         obj.HostName = ApiClient.convertToType(data['HostName'], 'String');
       if (data.hasOwnProperty('MainColor'))
         obj.MainColor = ApiClient.convertToType(data['MainColor'], 'String');
+      if (data.hasOwnProperty('KioskPrimaryColour'))
+        obj.KioskPrimaryColour = ApiClient.convertToType(data['KioskPrimaryColour'], 'String');
       if (data.hasOwnProperty('ApplicationCategory'))
         obj.ApplicationCategory = ApiClient.convertToType(data['ApplicationCategory'], 'String');
       if (data.hasOwnProperty('IsPanaceaEnabled'))
@@ -200,6 +202,12 @@
    * @member {String} MainColor
    */
   exports.prototype.MainColor = undefined;
+
+  /**
+   * Primary colour used on the Kiosk
+   * @member {String} KioskPrimaryColour
+   */
+  exports.prototype.KioskPrimaryColour = undefined;
 
   /**
    * Application Category
