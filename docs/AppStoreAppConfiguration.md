@@ -24,6 +24,7 @@ Name | Type | Description | Notes
 **Support** | [**AppStoreAppSupportInfo**](AppStoreAppSupportInfo.md) | Support information | [optional] 
 **ExternalFunctionActionUrl** | **String** | Action URL for external functions, used for handling Portal configuration action buttons | [optional] 
 **ExternalFunctionSignatureKey** | **String** | Signing key for external function action calls | [optional] 
+**IsPaid** | **Boolean** | Is Paid | [optional] 
 **Name** | **String** | Name | 
 **Description** | **String** | Description | 
 **Categories** | **[String]** | Categories | 

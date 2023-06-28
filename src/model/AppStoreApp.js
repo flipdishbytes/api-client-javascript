@@ -111,6 +111,8 @@
         obj.ExternalFunctionActionUrl = ApiClient.convertToType(data['ExternalFunctionActionUrl'], 'String');
       if (data.hasOwnProperty('ExternalFunctionSignatureKey'))
         obj.ExternalFunctionSignatureKey = ApiClient.convertToType(data['ExternalFunctionSignatureKey'], 'String');
+      if (data.hasOwnProperty('IsPaid'))
+        obj.IsPaid = ApiClient.convertToType(data['IsPaid'], 'Boolean');
       if (data.hasOwnProperty('Name'))
         obj.Name = ApiClient.convertToType(data['Name'], 'String');
       if (data.hasOwnProperty('Description'))
@@ -222,6 +224,12 @@
    * @member {String} ExternalFunctionSignatureKey
    */
   exports.prototype.ExternalFunctionSignatureKey = undefined;
+
+  /**
+   * Is Paid
+   * @member {Boolean} IsPaid
+   */
+  exports.prototype.IsPaid = undefined;
 
   /**
    * Name

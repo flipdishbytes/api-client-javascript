@@ -136,6 +136,12 @@
         // expect(instance.ExternalFunctionSignatureKey).to.be(expectedValueLiteral);
       });
 
+      it('should have the property IsPaid (base name: "IsPaid")', function() {
+        // TODO: update the code to test the property IsPaid
+        expect(instance).to.have.property('IsPaid');
+        // expect(instance.IsPaid).to.be(expectedValueLiteral);
+      });
+
       it('should have the property Name (base name: "Name")', function() {
         // TODO: update the code to test the property Name
         expect(instance).to.have.property('Name');
