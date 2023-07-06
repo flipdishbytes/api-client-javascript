@@ -70,6 +70,12 @@
         // expect(instance.User).to.be(expectedValueLiteral);
       });
 
+      it('should have the property OpportunityId (base name: "OpportunityId")', function() {
+        // TODO: update the code to test the property OpportunityId
+        expect(instance).to.have.property('OpportunityId');
+        // expect(instance.OpportunityId).to.be(expectedValueLiteral);
+      });
+
       it('should have the property FlipdishEventId (base name: "FlipdishEventId")', function() {
         // TODO: update the code to test the property FlipdishEventId
         expect(instance).to.have.property('FlipdishEventId');

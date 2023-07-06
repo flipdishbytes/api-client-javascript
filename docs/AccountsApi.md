@@ -8,6 +8,7 @@ Method | HTTP request | Description
 [**changePassword**](AccountsApi.md#changePassword) | **PUT** /api/v1.0/accounts/password | 
 [**changePasswordWithPin**](AccountsApi.md#changePasswordWithPin) | **PUT** /api/v1.0/accounts/password/pin | 
 [**createAccount**](AccountsApi.md#createAccount) | **POST** /api/v1.0/accounts | 
+[**createBasicAccount**](AccountsApi.md#createBasicAccount) | **POST** /api/v1.0/accounts/basic-account | 
 [**getAccountDetails**](AccountsApi.md#getAccountDetails) | **GET** /api/v1.0/accounts | 
 [**getLocalisedTimeZones**](AccountsApi.md#getLocalisedTimeZones) | **GET** /api/v1.0/accounts/timezones | 
 [**login**](AccountsApi.md#login) | **POST** /api/v1.0/accounts/login | 
@@ -212,6 +213,55 @@ Name | Type | Description  | Notes
 ### Return type
 
 null (empty response body)
+
+### Authorization
+
+[oauth2](../README.md#oauth2)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
+ - **Accept**: application/json, text/json, application/xml, text/xml
+
+<a name="createBasicAccount"></a>
+# **createBasicAccount**
+> 'String' createBasicAccount(basicAccountModel)
+
+
+
+### Example
+```javascript
+var Flipdish = require('@flipdish/api-client-javascript');
+var defaultClient = Flipdish.ApiClient.instance;
+
+// Configure OAuth2 access token for authorization: oauth2
+var oauth2 = defaultClient.authentications['oauth2'];
+oauth2.accessToken = 'YOUR ACCESS TOKEN';
+
+var apiInstance = new Flipdish.AccountsApi();
+
+var basicAccountModel = new Flipdish.CreateBasicAccountModel(); // CreateBasicAccountModel | 
+
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.createBasicAccount(basicAccountModel, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **basicAccountModel** | [**CreateBasicAccountModel**](CreateBasicAccountModel.md)|  | 
+
+### Return type
+
+**'String'**
 
 ### Authorization
 

@@ -123,6 +123,31 @@
           done();
         });
       });
+      describe('createBasicAccount', function() {
+        it('should call createBasicAccount successfully', function(done) {
+          // TODO: uncomment, update parameter values for createBasicAccount call and complete the assertions
+          /*
+          var basicAccountModel = new Flipdish.CreateBasicAccountModel();
+          basicAccountModel.StoreName = "";
+          basicAccountModel.LanguageId = "";
+          basicAccountModel.OpportunityId = "";
+
+          instance.createBasicAccount(basicAccountModel, function(error, data, response) {
+            if (error) {
+              done(error);
+              return;
+            }
+            // TODO: update response assertions
+            expect(data).to.be.a('string');
+            // expect(data).to.be(null);
+
+            done();
+          });
+          */
+          // TODO: uncomment and complete method invocation above, then delete this line and the next:
+          done();
+        });
+      });
       describe('getAccountDetails', function() {
         it('should call getAccountDetails successfully', function(done) {
           // TODO: uncomment getAccountDetails call and complete the assertions

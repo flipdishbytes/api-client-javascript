@@ -16,18 +16,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/AccountDetailBase', 'model/ChangePasswordModel', 'model/CreateAccountModel', 'model/LoginModel', 'model/LoginWithPinModel', 'model/PasswordResetModel', 'model/RequestLoginPinModel', 'model/RequestLoginPinResponse', 'model/RequestPasswordResetModel', 'model/RequestPasswordResetPinResponse', 'model/RestApiArrayResultLocalisedTimeZone', 'model/RestApiErrorResult', 'model/RestApiForbiddenResult', 'model/RestApiResultAccountDetail', 'model/RestApiUnauthorizedResult', 'model/SetPasswordWithPinModel'], factory);
+    define(['ApiClient', 'model/AccountDetailBase', 'model/ChangePasswordModel', 'model/CreateAccountModel', 'model/CreateBasicAccountModel', 'model/LoginModel', 'model/LoginWithPinModel', 'model/PasswordResetModel', 'model/RequestLoginPinModel', 'model/RequestLoginPinResponse', 'model/RequestPasswordResetModel', 'model/RequestPasswordResetPinResponse', 'model/RestApiArrayResultLocalisedTimeZone', 'model/RestApiErrorResult', 'model/RestApiForbiddenResult', 'model/RestApiResultAccountDetail', 'model/RestApiUnauthorizedResult', 'model/SetPasswordWithPinModel'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../model/AccountDetailBase'), require('../model/ChangePasswordModel'), require('../model/CreateAccountModel'), require('../model/LoginModel'), require('../model/LoginWithPinModel'), require('../model/PasswordResetModel'), require('../model/RequestLoginPinModel'), require('../model/RequestLoginPinResponse'), require('../model/RequestPasswordResetModel'), require('../model/RequestPasswordResetPinResponse'), require('../model/RestApiArrayResultLocalisedTimeZone'), require('../model/RestApiErrorResult'), require('../model/RestApiForbiddenResult'), require('../model/RestApiResultAccountDetail'), require('../model/RestApiUnauthorizedResult'), require('../model/SetPasswordWithPinModel'));
+    module.exports = factory(require('../ApiClient'), require('../model/AccountDetailBase'), require('../model/ChangePasswordModel'), require('../model/CreateAccountModel'), require('../model/CreateBasicAccountModel'), require('../model/LoginModel'), require('../model/LoginWithPinModel'), require('../model/PasswordResetModel'), require('../model/RequestLoginPinModel'), require('../model/RequestLoginPinResponse'), require('../model/RequestPasswordResetModel'), require('../model/RequestPasswordResetPinResponse'), require('../model/RestApiArrayResultLocalisedTimeZone'), require('../model/RestApiErrorResult'), require('../model/RestApiForbiddenResult'), require('../model/RestApiResultAccountDetail'), require('../model/RestApiUnauthorizedResult'), require('../model/SetPasswordWithPinModel'));
   } else {
     // Browser globals (root is window)
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.AccountsApi = factory(root.Flipdish.ApiClient, root.Flipdish.AccountDetailBase, root.Flipdish.ChangePasswordModel, root.Flipdish.CreateAccountModel, root.Flipdish.LoginModel, root.Flipdish.LoginWithPinModel, root.Flipdish.PasswordResetModel, root.Flipdish.RequestLoginPinModel, root.Flipdish.RequestLoginPinResponse, root.Flipdish.RequestPasswordResetModel, root.Flipdish.RequestPasswordResetPinResponse, root.Flipdish.RestApiArrayResultLocalisedTimeZone, root.Flipdish.RestApiErrorResult, root.Flipdish.RestApiForbiddenResult, root.Flipdish.RestApiResultAccountDetail, root.Flipdish.RestApiUnauthorizedResult, root.Flipdish.SetPasswordWithPinModel);
+    root.Flipdish.AccountsApi = factory(root.Flipdish.ApiClient, root.Flipdish.AccountDetailBase, root.Flipdish.ChangePasswordModel, root.Flipdish.CreateAccountModel, root.Flipdish.CreateBasicAccountModel, root.Flipdish.LoginModel, root.Flipdish.LoginWithPinModel, root.Flipdish.PasswordResetModel, root.Flipdish.RequestLoginPinModel, root.Flipdish.RequestLoginPinResponse, root.Flipdish.RequestPasswordResetModel, root.Flipdish.RequestPasswordResetPinResponse, root.Flipdish.RestApiArrayResultLocalisedTimeZone, root.Flipdish.RestApiErrorResult, root.Flipdish.RestApiForbiddenResult, root.Flipdish.RestApiResultAccountDetail, root.Flipdish.RestApiUnauthorizedResult, root.Flipdish.SetPasswordWithPinModel);
   }
-}(this, function(ApiClient, AccountDetailBase, ChangePasswordModel, CreateAccountModel, LoginModel, LoginWithPinModel, PasswordResetModel, RequestLoginPinModel, RequestLoginPinResponse, RequestPasswordResetModel, RequestPasswordResetPinResponse, RestApiArrayResultLocalisedTimeZone, RestApiErrorResult, RestApiForbiddenResult, RestApiResultAccountDetail, RestApiUnauthorizedResult, SetPasswordWithPinModel) {
+}(this, function(ApiClient, AccountDetailBase, ChangePasswordModel, CreateAccountModel, CreateBasicAccountModel, LoginModel, LoginWithPinModel, PasswordResetModel, RequestLoginPinModel, RequestLoginPinResponse, RequestPasswordResetModel, RequestPasswordResetPinResponse, RestApiArrayResultLocalisedTimeZone, RestApiErrorResult, RestApiForbiddenResult, RestApiResultAccountDetail, RestApiUnauthorizedResult, SetPasswordWithPinModel) {
   'use strict';
 
   /**
@@ -225,6 +225,51 @@
 
       return this.apiClient.callApi(
         '/api/v1.0/accounts', 'POST',
+        pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the createBasicAccount operation.
+     * @callback module:api/AccountsApi~createBasicAccountCallback
+     * @param {String} error Error message, if any.
+     * @param {'String'} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {module:model/CreateBasicAccountModel} basicAccountModel 
+     * @param {module:api/AccountsApi~createBasicAccountCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link 'String'}
+     */
+    this.createBasicAccount = function(basicAccountModel, callback) {
+      var postBody = basicAccountModel;
+
+      // verify the required parameter 'basicAccountModel' is set
+      if (basicAccountModel === undefined || basicAccountModel === null) {
+        throw new Error("Missing the required parameter 'basicAccountModel' when calling createBasicAccount");
+      }
+
+
+      var pathParams = {
+      };
+      var queryParams = {
+      };
+      var collectionQueryParams = {
+      };
+      var headerParams = {
+      };
+      var formParams = {
+      };
+
+      var authNames = ['oauth2'];
+      var contentTypes = ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded'];
+      var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
+      var returnType = 'String';
+
+      return this.apiClient.callApi(
+        '/api/v1.0/accounts/basic-account', 'POST',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
