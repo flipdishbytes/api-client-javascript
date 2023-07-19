@@ -59,6 +59,8 @@
         obj.HydraConfigId = ApiClient.convertToType(data['HydraConfigId'], 'Number');
       if (data.hasOwnProperty('DeviceId'))
         obj.DeviceId = ApiClient.convertToType(data['DeviceId'], 'String');
+      if (data.hasOwnProperty('SerialNumber'))
+        obj.SerialNumber = ApiClient.convertToType(data['SerialNumber'], 'String');
       if (data.hasOwnProperty('DeviceType'))
         obj.DeviceType = ApiClient.convertToType(data['DeviceType'], 'String');
       if (data.hasOwnProperty('Status'))
@@ -88,10 +90,16 @@
   exports.prototype.HydraConfigId = undefined;
 
   /**
-   * Device Id or Serial Number
+   * Device Id
    * @member {String} DeviceId
    */
   exports.prototype.DeviceId = undefined;
+
+  /**
+   * Serial Number
+   * @member {String} SerialNumber
+   */
+  exports.prototype.SerialNumber = undefined;
 
   /**
    * Type of the device

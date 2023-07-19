@@ -52,6 +52,12 @@
         // expect(instance.DeviceId).to.be(expectedValueLiteral);
       });
 
+      it('should have the property SerialNumber (base name: "SerialNumber")', function() {
+        // TODO: update the code to test the property SerialNumber
+        expect(instance).to.have.property('SerialNumber');
+        // expect(instance.SerialNumber).to.be(expectedValueLiteral);
+      });
+
       it('should have the property DeviceType (base name: "DeviceType")', function() {
         // TODO: update the code to test the property DeviceType
         expect(instance).to.have.property('DeviceType');
