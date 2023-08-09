@@ -137,6 +137,10 @@
         obj.PercentFeeCardPosTransaction = ApiClient.convertToType(data['PercentFeeCardPosTransaction'], 'Number');
       if (data.hasOwnProperty('FixedFeeCardPosTransaction'))
         obj.FixedFeeCardPosTransaction = ApiClient.convertToType(data['FixedFeeCardPosTransaction'], 'Number');
+      if (data.hasOwnProperty('PercentFeeOrderWithGoogle'))
+        obj.PercentFeeOrderWithGoogle = ApiClient.convertToType(data['PercentFeeOrderWithGoogle'], 'Number');
+      if (data.hasOwnProperty('FixedFeeOrderWithGoogle'))
+        obj.FixedFeeOrderWithGoogle = ApiClient.convertToType(data['FixedFeeOrderWithGoogle'], 'Number');
     }
     return obj;
   }
@@ -386,6 +390,18 @@
    * @member {Number} FixedFeeCardPosTransaction
    */
   exports.prototype.FixedFeeCardPosTransaction = undefined;
+
+  /**
+   * Additional percentage fee charged on orders submitted through Order With Google
+   * @member {Number} PercentFeeOrderWithGoogle
+   */
+  exports.prototype.PercentFeeOrderWithGoogle = undefined;
+
+  /**
+   * Additional fixed fee charged on orders submitted through Order With Google
+   * @member {Number} FixedFeeOrderWithGoogle
+   */
+  exports.prototype.FixedFeeOrderWithGoogle = undefined;
 
 
   return exports;

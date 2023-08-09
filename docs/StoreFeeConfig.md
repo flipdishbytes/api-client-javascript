@@ -44,5 +44,7 @@ Name | Type | Description | Notes
 **FixedFeeDelivery** | **Number** | Gets or sets the fixed fee for delivery orders. | [optional] 
 **PercentFeeCardPosTransaction** | **Number** | Gets or sets the percent fee for POS transactions. | [optional] 
 **FixedFeeCardPosTransaction** | **Number** | Gets or sets the fixed fee for POS transactions. | [optional] 
+**PercentFeeOrderWithGoogle** | **Number** | Additional percentage fee charged on orders submitted through Order With Google | [optional] 
+**FixedFeeOrderWithGoogle** | **Number** | Additional fixed fee charged on orders submitted through Order With Google | [optional] 
 
 

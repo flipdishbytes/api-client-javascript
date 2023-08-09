@@ -286,6 +286,18 @@
         // expect(instance.FixedFeeCardPosTransaction).to.be(expectedValueLiteral);
       });
 
+      it('should have the property PercentFeeOrderWithGoogle (base name: "PercentFeeOrderWithGoogle")', function() {
+        // TODO: update the code to test the property PercentFeeOrderWithGoogle
+        expect(instance).to.have.property('PercentFeeOrderWithGoogle');
+        // expect(instance.PercentFeeOrderWithGoogle).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property FixedFeeOrderWithGoogle (base name: "FixedFeeOrderWithGoogle")', function() {
+        // TODO: update the code to test the property FixedFeeOrderWithGoogle
+        expect(instance).to.have.property('FixedFeeOrderWithGoogle');
+        // expect(instance.FixedFeeOrderWithGoogle).to.be(expectedValueLiteral);
+      });
+
     });
   });
 
