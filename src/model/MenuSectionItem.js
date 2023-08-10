@@ -55,8 +55,6 @@
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
-      if (data.hasOwnProperty('MenuItemId'))
-        obj.MenuItemId = ApiClient.convertToType(data['MenuItemId'], 'Number');
       if (data.hasOwnProperty('ActualPrice'))
         obj.ActualPrice = ApiClient.convertToType(data['ActualPrice'], 'Number');
       if (data.hasOwnProperty('MenuItemOptionSets'))
@@ -97,15 +95,11 @@
         obj.ImageName = ApiClient.convertToType(data['ImageName'], 'String');
       if (data.hasOwnProperty('ImageUrl'))
         obj.ImageUrl = ApiClient.convertToType(data['ImageUrl'], 'String');
+      if (data.hasOwnProperty('MenuItemId'))
+        obj.MenuItemId = ApiClient.convertToType(data['MenuItemId'], 'Number');
     }
     return obj;
   }
-
-  /**
-   * Menu item identifier. This ID may change at any time. Use `PublicId` if you need a permanent reference to the item.
-   * @member {Number} MenuItemId
-   */
-  exports.prototype.MenuItemId = undefined;
 
   /**
    * Actual price - the minimum price possible when all required option set items prices are included.
@@ -226,6 +220,12 @@
    * @member {String} ImageUrl
    */
   exports.prototype.ImageUrl = undefined;
+
+  /**
+   * Menu Item Id
+   * @member {Number} MenuItemId
+   */
+  exports.prototype.MenuItemId = undefined;
 
 
 

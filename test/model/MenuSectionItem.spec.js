@@ -40,12 +40,6 @@
         expect(instance).to.be.a(Flipdish.MenuSectionItem);
       });
 
-      it('should have the property MenuItemId (base name: "MenuItemId")', function() {
-        // TODO: update the code to test the property MenuItemId
-        expect(instance).to.have.property('MenuItemId');
-        // expect(instance.MenuItemId).to.be(expectedValueLiteral);
-      });
-
       it('should have the property ActualPrice (base name: "ActualPrice")', function() {
         // TODO: update the code to test the property ActualPrice
         expect(instance).to.have.property('ActualPrice');
@@ -164,6 +158,12 @@
         // TODO: update the code to test the property ImageUrl
         expect(instance).to.have.property('ImageUrl');
         // expect(instance.ImageUrl).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property MenuItemId (base name: "MenuItemId")', function() {
+        // TODO: update the code to test the property MenuItemId
+        expect(instance).to.have.property('MenuItemId');
+        // expect(instance.MenuItemId).to.be(expectedValueLiteral);
       });
 
     });

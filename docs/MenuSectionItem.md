@@ -3,7 +3,6 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**MenuItemId** | **Number** | Menu item identifier. This ID may change at any time. Use `PublicId` if you need a permanent reference to the item. | [optional] 
 **ActualPrice** | **Number** | Actual price - the minimum price possible when all required option set items prices are included. | [optional] 
 **MenuItemOptionSets** | [**[MenuItemOptionSet]**](MenuItemOptionSet.md) | Menu item option sets | [optional] 
 **DailySpecialHours** | [**[BusinessHoursPeriod]**](BusinessHoursPeriod.md) | Daily special hours | [optional] 
@@ -24,6 +23,7 @@ Name | Type | Description | Notes
 **DisableVouchers** | **Boolean** | If true, then vouchers won't be applied for this item | [optional] 
 **ImageName** | **String** | Image url | [optional] 
 **ImageUrl** | **String** | Image url | [optional] 
+**MenuItemId** | **Number** | Menu Item Id | [optional] 
 
 
 <a name="SpicinessRatingEnum"></a>
