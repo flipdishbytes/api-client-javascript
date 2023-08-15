@@ -160,6 +160,12 @@
         // expect(instance.IsPanaceaEnabled).to.be(expectedValueLiteral);
       });
 
+      it('should have the property PanaceaVanityUrl (base name: "PanaceaVanityUrl")', function() {
+        // TODO: update the code to test the property PanaceaVanityUrl
+        expect(instance).to.have.property('PanaceaVanityUrl');
+        // expect(instance.PanaceaVanityUrl).to.be(expectedValueLiteral);
+      });
+
       it('should have the property CookieConsentPromptEnabled (base name: "CookieConsentPromptEnabled")', function() {
         // TODO: update the code to test the property CookieConsentPromptEnabled
         expect(instance).to.have.property('CookieConsentPromptEnabled');

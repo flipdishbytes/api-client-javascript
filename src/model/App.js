@@ -95,6 +95,8 @@
         obj.ApplicationCategory = ApiClient.convertToType(data['ApplicationCategory'], 'String');
       if (data.hasOwnProperty('IsPanaceaEnabled'))
         obj.IsPanaceaEnabled = ApiClient.convertToType(data['IsPanaceaEnabled'], 'Boolean');
+      if (data.hasOwnProperty('PanaceaVanityUrl'))
+        obj.PanaceaVanityUrl = ApiClient.convertToType(data['PanaceaVanityUrl'], 'String');
       if (data.hasOwnProperty('CookieConsentPromptEnabled'))
         obj.CookieConsentPromptEnabled = ApiClient.convertToType(data['CookieConsentPromptEnabled'], 'Boolean');
     }
@@ -220,6 +222,12 @@
    * @member {Boolean} IsPanaceaEnabled
    */
   exports.prototype.IsPanaceaEnabled = undefined;
+
+  /**
+   * In case of IsPanaceaEnabled is true, the app can be accessed via https://my.flipdish.com/{PanaceaVanityUrl}
+   * @member {String} PanaceaVanityUrl
+   */
+  exports.prototype.PanaceaVanityUrl = undefined;
 
   /**
    * Cookie Consent Prompt Enabled
