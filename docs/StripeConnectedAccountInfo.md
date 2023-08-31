@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 **StripeId** | **String** | Stripe connected account id | [optional] 
 **CardPaymentStatus** | **String** | Current status of the Card Payment capability of the account | [optional] 
 **PayoutScheduleInterval** | **String** | Payouts Schedule Interval | [optional] 
+**PayoutsPaused** | **Boolean** | Flag indicating if payouts are paused | [optional] 
 
 
 <a name="AccountStatusEnum"></a>

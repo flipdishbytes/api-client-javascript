@@ -64,6 +64,12 @@
         // expect(instance.PayoutScheduleInterval).to.be(expectedValueLiteral);
       });
 
+      it('should have the property PayoutsPaused (base name: "PayoutsPaused")', function() {
+        // TODO: update the code to test the property PayoutsPaused
+        expect(instance).to.have.property('PayoutsPaused');
+        // expect(instance.PayoutsPaused).to.be(expectedValueLiteral);
+      });
+
     });
   });
 
