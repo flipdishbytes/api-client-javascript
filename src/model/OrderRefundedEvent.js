@@ -16,18 +16,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/Order'], factory);
+    define(['ApiClient', 'model/Order', 'model/UserEventInfo'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./Order'));
+    module.exports = factory(require('../ApiClient'), require('./Order'), require('./UserEventInfo'));
   } else {
     // Browser globals (root is window)
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.OrderRefundedEvent = factory(root.Flipdish.ApiClient, root.Flipdish.Order);
+    root.Flipdish.OrderRefundedEvent = factory(root.Flipdish.ApiClient, root.Flipdish.Order, root.Flipdish.UserEventInfo);
   }
-}(this, function(ApiClient, Order) {
+}(this, function(ApiClient, Order, UserEventInfo) {
   'use strict';
 
   /**
@@ -61,6 +61,8 @@
         obj.RefundedAmount = ApiClient.convertToType(data['RefundedAmount'], 'Number');
       if (data.hasOwnProperty('Description'))
         obj.Description = ApiClient.convertToType(data['Description'], 'String');
+      if (data.hasOwnProperty('User'))
+        obj.User = UserEventInfo.constructFromObject(data['User']);
       if (data.hasOwnProperty('Order'))
         obj.Order = Order.constructFromObject(data['Order']);
       if (data.hasOwnProperty('FlipdishEventId'))
@@ -94,6 +96,12 @@
    * @member {String} Description
    */
   exports.prototype.Description = undefined;
+
+  /**
+   * User who has refunded the order
+   * @member {module:model/UserEventInfo} User
+   */
+  exports.prototype.User = undefined;
 
   /**
    * Order
