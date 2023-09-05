@@ -336,6 +336,12 @@
     EditAppAssets: "EditAppAssets",
 
     /**
+     * value: "EditAppFeatures"
+     * @const
+     */
+    EditAppFeatures: "EditAppFeatures",
+
+    /**
      * value: "ViewTeammates"
      * @const
      */

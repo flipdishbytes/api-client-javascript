@@ -66,6 +66,8 @@ Name | Type | Description | Notes
 
 * `EditAppAssets` (value: `"EditAppAssets"`)
 
+* `EditAppFeatures` (value: `"EditAppFeatures"`)
+
 * `ViewTeammates` (value: `"ViewTeammates"`)
 
 * `EditTeammates` (value: `"EditTeammates"`)
