@@ -52,6 +52,12 @@
         // expect(instance.PhoneNumber).to.be(expectedValueLiteral);
       });
 
+      it('should have the property CustomerName (base name: "CustomerName")', function() {
+        // TODO: update the code to test the property CustomerName
+        expect(instance).to.have.property('CustomerName');
+        // expect(instance.CustomerName).to.be(expectedValueLiteral);
+      });
+
       it('should have the property DeliveryLocation (base name: "DeliveryLocation")', function() {
         // TODO: update the code to test the property DeliveryLocation
         expect(instance).to.have.property('DeliveryLocation');

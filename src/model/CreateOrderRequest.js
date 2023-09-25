@@ -58,6 +58,8 @@
         obj.LegacyOrderDm = OrderDm.constructFromObject(data['LegacyOrderDm']);
       if (data.hasOwnProperty('PhoneNumber'))
         obj.PhoneNumber = ApiClient.convertToType(data['PhoneNumber'], 'String');
+      if (data.hasOwnProperty('CustomerName'))
+        obj.CustomerName = ApiClient.convertToType(data['CustomerName'], 'String');
       if (data.hasOwnProperty('DeliveryLocation'))
         obj.DeliveryLocation = DeliveryLocation.constructFromObject(data['DeliveryLocation']);
     }
@@ -73,6 +75,11 @@
    * @member {String} PhoneNumber
    */
   exports.prototype.PhoneNumber = undefined;
+
+  /**
+   * @member {String} CustomerName
+   */
+  exports.prototype.CustomerName = undefined;
 
   /**
    * @member {module:model/DeliveryLocation} DeliveryLocation
