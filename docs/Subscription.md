@@ -15,7 +15,8 @@ Name | Type | Description | Notes
 **Currency** | **String** | Currency | 
 **User** | **String** | User | 
 **DefaultPaymentDescription** | **String** | Default payment description | [optional] 
-**CancellationDate** | **Date** | Cancellation Date | [optional] 
+**CancellationRequestDate** | **Date** | Cancellation Date | [optional] 
+**CancellationDate** | **Date** | Cancel Date | [optional] 
 
 
 <a name="StatusEnum"></a>

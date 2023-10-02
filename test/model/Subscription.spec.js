@@ -112,6 +112,12 @@
         // expect(instance.DefaultPaymentDescription).to.be(expectedValueLiteral);
       });
 
+      it('should have the property CancellationRequestDate (base name: "CancellationRequestDate")', function() {
+        // TODO: update the code to test the property CancellationRequestDate
+        expect(instance).to.have.property('CancellationRequestDate');
+        // expect(instance.CancellationRequestDate).to.be(expectedValueLiteral);
+      });
+
       it('should have the property CancellationDate (base name: "CancellationDate")', function() {
         // TODO: update the code to test the property CancellationDate
         expect(instance).to.have.property('CancellationDate');
