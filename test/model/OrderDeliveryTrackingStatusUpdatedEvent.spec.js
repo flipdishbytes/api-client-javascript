@@ -58,6 +58,18 @@
         // expect(instance.Order).to.be(expectedValueLiteral);
       });
 
+      it('should have the property DeliveryIntegrationName (base name: "DeliveryIntegrationName")', function() {
+        // TODO: update the code to test the property DeliveryIntegrationName
+        expect(instance).to.have.property('DeliveryIntegrationName');
+        // expect(instance.DeliveryIntegrationName).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property DeliveryErrorMessage (base name: "DeliveryErrorMessage")', function() {
+        // TODO: update the code to test the property DeliveryErrorMessage
+        expect(instance).to.have.property('DeliveryErrorMessage');
+        // expect(instance.DeliveryErrorMessage).to.be(expectedValueLiteral);
+      });
+
       it('should have the property FlipdishEventId (base name: "FlipdishEventId")', function() {
         // TODO: update the code to test the property FlipdishEventId
         expect(instance).to.have.property('FlipdishEventId');

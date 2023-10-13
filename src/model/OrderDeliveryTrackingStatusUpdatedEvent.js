@@ -61,6 +61,10 @@
         obj.Description = ApiClient.convertToType(data['Description'], 'String');
       if (data.hasOwnProperty('Order'))
         obj.Order = Order.constructFromObject(data['Order']);
+      if (data.hasOwnProperty('DeliveryIntegrationName'))
+        obj.DeliveryIntegrationName = ApiClient.convertToType(data['DeliveryIntegrationName'], 'String');
+      if (data.hasOwnProperty('DeliveryErrorMessage'))
+        obj.DeliveryErrorMessage = ApiClient.convertToType(data['DeliveryErrorMessage'], 'String');
       if (data.hasOwnProperty('FlipdishEventId'))
         obj.FlipdishEventId = ApiClient.convertToType(data['FlipdishEventId'], 'String');
       if (data.hasOwnProperty('CreateTime'))
@@ -92,6 +96,18 @@
    * @member {module:model/Order} Order
    */
   exports.prototype.Order = undefined;
+
+  /**
+   * Delivery integration name
+   * @member {String} DeliveryIntegrationName
+   */
+  exports.prototype.DeliveryIntegrationName = undefined;
+
+  /**
+   * Delivery error message (optional)
+   * @member {String} DeliveryErrorMessage
+   */
+  exports.prototype.DeliveryErrorMessage = undefined;
 
   /**
    * The identitfier of the event
