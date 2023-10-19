@@ -46,6 +46,12 @@
         // expect(instance.PercentageDiscount).to.be(expectedValueLiteral);
       });
 
+      it('should have the property MaxDiscountAmount (base name: "MaxDiscountAmount")', function() {
+        // TODO: update the code to test the property MaxDiscountAmount
+        expect(instance).to.have.property('MaxDiscountAmount');
+        // expect(instance.MaxDiscountAmount).to.be(expectedValueLiteral);
+      });
+
     });
   });
 
