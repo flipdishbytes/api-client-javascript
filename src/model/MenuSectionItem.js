@@ -69,6 +69,8 @@
         obj.TaxRateId = ApiClient.convertToType(data['TaxRateId'], 'Number');
       if (data.hasOwnProperty('TaxValue'))
         obj.TaxValue = ApiClient.convertToType(data['TaxValue'], 'Number');
+      if (data.hasOwnProperty('ExcludeFromVoucherDiscounting'))
+        obj.ExcludeFromVoucherDiscounting = ApiClient.convertToType(data['ExcludeFromVoucherDiscounting'], 'Boolean');
       if (data.hasOwnProperty('Metadata'))
         obj.Metadata = ApiClient.convertToType(data['Metadata'], [CreateMetadata]);
       if (data.hasOwnProperty('CatalogItemId'))
@@ -142,6 +144,12 @@
    * @member {Number} TaxValue
    */
   exports.prototype.TaxValue = undefined;
+
+  /**
+   * If true, the item is excluded from voucher discount calculations
+   * @member {Boolean} ExcludeFromVoucherDiscounting
+   */
+  exports.prototype.ExcludeFromVoucherDiscounting = undefined;
 
   /**
    * List of metadata

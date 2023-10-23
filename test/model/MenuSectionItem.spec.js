@@ -82,6 +82,12 @@
         // expect(instance.TaxValue).to.be(expectedValueLiteral);
       });
 
+      it('should have the property ExcludeFromVoucherDiscounting (base name: "ExcludeFromVoucherDiscounting")', function() {
+        // TODO: update the code to test the property ExcludeFromVoucherDiscounting
+        expect(instance).to.have.property('ExcludeFromVoucherDiscounting');
+        // expect(instance.ExcludeFromVoucherDiscounting).to.be(expectedValueLiteral);
+      });
+
       it('should have the property Metadata (base name: "Metadata")', function() {
         // TODO: update the code to test the property Metadata
         expect(instance).to.have.property('Metadata');
