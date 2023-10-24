@@ -10,5 +10,6 @@ Name | Type | Description | Notes
 **Mapping** | **{String: String}** |  | [optional] 
 **Modifiers** | **[String]** |  | [optional] 
 **Value** | **Object** |  | [optional] 
+**Scopes** | **String** |  | [optional] 
 
 

@@ -68,6 +68,8 @@
         obj.Modifiers = ApiClient.convertToType(data['Modifiers'], ['String']);
       if (data.hasOwnProperty('Value'))
         obj.Value = ApiClient.convertToType(data['Value'], Object);
+      if (data.hasOwnProperty('Scopes'))
+        obj.Scopes = ApiClient.convertToType(data['Scopes'], 'String');
     }
     return obj;
   }
@@ -106,6 +108,11 @@
    * @member {Object} Value
    */
   exports.prototype.Value = undefined;
+
+  /**
+   * @member {String} Scopes
+   */
+  exports.prototype.Scopes = undefined;
 
 
   return exports;

@@ -82,6 +82,12 @@
         // expect(instance.Value).to.be(expectedValueLiteral);
       });
 
+      it('should have the property Scopes (base name: "Scopes")', function() {
+        // TODO: update the code to test the property Scopes
+        expect(instance).to.have.property('Scopes');
+        // expect(instance.Scopes).to.be(expectedValueLiteral);
+      });
+
     });
   });
 
