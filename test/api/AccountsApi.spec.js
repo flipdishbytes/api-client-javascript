@@ -131,6 +131,7 @@
           basicAccountModel.StoreName = "";
           basicAccountModel.LanguageId = "";
           basicAccountModel.OpportunityId = "";
+          basicAccountModel.AccountId = "";
 
           instance.createBasicAccount(basicAccountModel, function(error, data, response) {
             if (error) {

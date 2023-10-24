@@ -63,6 +63,8 @@
         obj.LanguageId = ApiClient.convertToType(data['LanguageId'], 'String');
       if (data.hasOwnProperty('OpportunityId'))
         obj.OpportunityId = ApiClient.convertToType(data['OpportunityId'], 'String');
+      if (data.hasOwnProperty('AccountId'))
+        obj.AccountId = ApiClient.convertToType(data['AccountId'], 'String');
     }
     return obj;
   }
@@ -84,6 +86,12 @@
    * @member {String} OpportunityId
    */
   exports.prototype.OpportunityId = undefined;
+
+  /**
+   * Salesforce Account Id
+   * @member {String} AccountId
+   */
+  exports.prototype.AccountId = undefined;
 
 
   return exports;

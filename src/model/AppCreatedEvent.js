@@ -65,8 +65,8 @@
         obj.CountryId = ApiClient.convertToType(data['CountryId'], 'String');
       if (data.hasOwnProperty('User'))
         obj.User = UserEventInfo.constructFromObject(data['User']);
-      if (data.hasOwnProperty('OpportunityId'))
-        obj.OpportunityId = ApiClient.convertToType(data['OpportunityId'], 'String');
+      if (data.hasOwnProperty('AccountId'))
+        obj.AccountId = ApiClient.convertToType(data['AccountId'], 'String');
       if (data.hasOwnProperty('FlipdishEventId'))
         obj.FlipdishEventId = ApiClient.convertToType(data['FlipdishEventId'], 'String');
       if (data.hasOwnProperty('CreateTime'))
@@ -112,10 +112,10 @@
   exports.prototype.User = undefined;
 
   /**
-   * SalesForce Opportunity Id
-   * @member {String} OpportunityId
+   * Salesforce Account Id
+   * @member {String} AccountId
    */
-  exports.prototype.OpportunityId = undefined;
+  exports.prototype.AccountId = undefined;
 
   /**
    * The identitfier of the event

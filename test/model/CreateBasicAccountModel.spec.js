@@ -58,6 +58,12 @@
         // expect(instance.OpportunityId).to.be(expectedValueLiteral);
       });
 
+      it('should have the property AccountId (base name: "AccountId")', function() {
+        // TODO: update the code to test the property AccountId
+        expect(instance).to.have.property('AccountId');
+        // expect(instance.AccountId).to.be(expectedValueLiteral);
+      });
+
     });
   });
 
