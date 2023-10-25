@@ -54,8 +54,12 @@
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
+      if (data.hasOwnProperty('AllergenId'))
+        obj.AllergenId = ApiClient.convertToType(data['AllergenId'], 'String');
       if (data.hasOwnProperty('Name'))
         obj.Name = ApiClient.convertToType(data['Name'], 'String');
+      if (data.hasOwnProperty('LocalizedName'))
+        obj.LocalizedName = ApiClient.convertToType(data['LocalizedName'], 'String');
       if (data.hasOwnProperty('IconUrl'))
         obj.IconUrl = ApiClient.convertToType(data['IconUrl'], 'String');
     }
@@ -63,10 +67,22 @@
   }
 
   /**
-   * Name of the allergen
+   * A unique identifier for the allergen
+   * @member {String} AllergenId
+   */
+  exports.prototype.AllergenId = undefined;
+
+  /**
+   * English Name of the allergen
    * @member {String} Name
    */
   exports.prototype.Name = undefined;
+
+  /**
+   * Localized name of the allergen
+   * @member {String} LocalizedName
+   */
+  exports.prototype.LocalizedName = undefined;
 
   /**
    * Url to the icon for the allergen
