@@ -41,8 +41,8 @@
    * 
    * @alias module:model/LeadTime
    * @class
-   * @param DispatchType {String} 
-   * @param LeadTimeMinutes {Number} 
+   * @param DispatchType {String} There are two valid values for this field - `collection` and `delivery`.
+   * @param LeadTimeMinutes {Number} This must be a positive integer.
    */
   var exports = function(DispatchType, LeadTimeMinutes) {
     this.DispatchType = DispatchType;
@@ -68,13 +68,13 @@
   }
 
   /**
-   * 
+   * There are two valid values for this field - `collection` and `delivery`.
    * @member {String} DispatchType
    */
   exports.prototype.DispatchType = undefined;
 
   /**
-   * 
+   * This must be a positive integer.
    * @member {Number} LeadTimeMinutes
    */
   exports.prototype.LeadTimeMinutes = undefined;
