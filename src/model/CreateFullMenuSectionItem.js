@@ -85,6 +85,8 @@
         obj.ImageUrl = ApiClient.convertToType(data['ImageUrl'], 'String');
       if (data.hasOwnProperty('MenuItemId'))
         obj.MenuItemId = ApiClient.convertToType(data['MenuItemId'], 'Number');
+      if (data.hasOwnProperty('ExcludeFromVoucherDiscounting'))
+        obj.ExcludeFromVoucherDiscounting = ApiClient.convertToType(data['ExcludeFromVoucherDiscounting'], 'Boolean');
     }
     return obj;
   }
@@ -178,6 +180,12 @@
    * @member {Number} MenuItemId
    */
   exports.prototype.MenuItemId = undefined;
+
+  /**
+   * If true, the item is excluded from voucher discount calculations
+   * @member {Boolean} ExcludeFromVoucherDiscounting
+   */
+  exports.prototype.ExcludeFromVoucherDiscounting = undefined;
 
 
 

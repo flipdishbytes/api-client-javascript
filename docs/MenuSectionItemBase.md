@@ -15,6 +15,7 @@ Name | Type | Description | Notes
 **ImageName** | **String** | Image url | [optional] 
 **ImageUrl** | **String** | Image url | [optional] 
 **MenuItemId** | **Number** | Menu Item Id | [optional] 
+**ExcludeFromVoucherDiscounting** | **Boolean** | If true, the item is excluded from voucher discount calculations | [optional] 
 
 
 <a name="SpicinessRatingEnum"></a>
