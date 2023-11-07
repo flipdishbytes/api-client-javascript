@@ -153,6 +153,8 @@
         obj.TotalTax = ApiClient.convertToType(data['TotalTax'], 'Number');
       if (data.hasOwnProperty('OrderTrackingCode'))
         obj.OrderTrackingCode = ApiClient.convertToType(data['OrderTrackingCode'], 'String');
+      if (data.hasOwnProperty('DeliveryFeeAreaId'))
+        obj.DeliveryFeeAreaId = ApiClient.convertToType(data['DeliveryFeeAreaId'], 'Number');
     }
     return obj;
   }
@@ -450,6 +452,12 @@
    * @member {String} OrderTrackingCode
    */
   exports.prototype.OrderTrackingCode = undefined;
+
+  /**
+   * Delivery area identifier
+   * @member {Number} DeliveryFeeAreaId
+   */
+  exports.prototype.DeliveryFeeAreaId = undefined;
 
 
 

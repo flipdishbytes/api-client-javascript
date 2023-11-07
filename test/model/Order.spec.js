@@ -334,6 +334,12 @@
         // expect(instance.OrderTrackingCode).to.be(expectedValueLiteral);
       });
 
+      it('should have the property DeliveryFeeAreaId (base name: "DeliveryFeeAreaId")', function() {
+        // TODO: update the code to test the property DeliveryFeeAreaId
+        expect(instance).to.have.property('DeliveryFeeAreaId');
+        // expect(instance.DeliveryFeeAreaId).to.be(expectedValueLiteral);
+      });
+
     });
   });
 
