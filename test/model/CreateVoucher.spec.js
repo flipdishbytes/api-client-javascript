@@ -46,10 +46,10 @@
         // expect(instance.VoucherType).to.be(expectedValueLiteral);
       });
 
-      it('should have the property AddItemDetails (base name: "AddItemDetails")', function() {
-        // TODO: update the code to test the property AddItemDetails
-        expect(instance).to.have.property('AddItemDetails');
-        // expect(instance.AddItemDetails).to.be(expectedValueLiteral);
+      it('should have the property Promotion (base name: "Promotion")', function() {
+        // TODO: update the code to test the property Promotion
+        expect(instance).to.have.property('Promotion');
+        // expect(instance.Promotion).to.be(expectedValueLiteral);
       });
 
       it('should have the property CreditNoteDetails (base name: "CreditNoteDetails")', function() {

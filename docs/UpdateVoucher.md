@@ -1,8 +1,11 @@
-# Flipdish.VoucherBase
+# Flipdish.UpdateVoucher
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**PromotionId** | **Number** | Promotion ID to update | [optional] 
+**PromotionName** | **String** | The updated name of the promotion | [optional] 
+**PromotionAwardMenuItemPublicIds** | **[String]** | The updated menu items that the promotion awards | [optional] 
 **Code** | **String** | Voucher Code | [optional] 
 **Description** | **String** | Voucher Description (Visible on printout) | [optional] 
 **Stores** | **[Number]** | Stores that this voucher applies to | [optional] 

@@ -25,55 +25,55 @@
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.AddItemDetails = factory(root.Flipdish.ApiClient);
+    root.Flipdish.PromotionAward = factory(root.Flipdish.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
 
   /**
-   * The AddItemDetails model module.
-   * @module model/AddItemDetails
+   * The PromotionAward model module.
+   * @module model/PromotionAward
    * @version 1.0.0
    */
 
   /**
-   * Constructs a new <code>AddItemDetails</code>.
-   * Add item details
-   * @alias module:model/AddItemDetails
+   * Constructs a new <code>PromotionAward</code>.
+   * Promotion
+   * @alias module:model/PromotionAward
    * @class
    */
   var exports = function() {
   };
 
   /**
-   * Constructs a <code>AddItemDetails</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>PromotionAward</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/AddItemDetails} obj Optional instance to populate.
-   * @return {module:model/AddItemDetails} The populated <code>AddItemDetails</code> instance.
+   * @param {module:model/PromotionAward} obj Optional instance to populate.
+   * @return {module:model/PromotionAward} The populated <code>PromotionAward</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
-      if (data.hasOwnProperty('PromotionalItemId'))
-        obj.PromotionalItemId = ApiClient.convertToType(data['PromotionalItemId'], 'Number');
-      if (data.hasOwnProperty('PromotionalItemName'))
-        obj.PromotionalItemName = ApiClient.convertToType(data['PromotionalItemName'], 'String');
+      if (data.hasOwnProperty('PromotionAwardId'))
+        obj.PromotionAwardId = ApiClient.convertToType(data['PromotionAwardId'], 'Number');
+      if (data.hasOwnProperty('MenuItemPublicId'))
+        obj.MenuItemPublicId = ApiClient.convertToType(data['MenuItemPublicId'], 'String');
     }
     return obj;
   }
 
   /**
-   * Promotional Item Id
-   * @member {Number} PromotionalItemId
+   * Promotion Award Id
+   * @member {Number} PromotionAwardId
    */
-  exports.prototype.PromotionalItemId = undefined;
+  exports.prototype.PromotionAwardId = undefined;
 
   /**
-   * Promotional Item Name
-   * @member {String} PromotionalItemName
+   * The public id of the menu item that will be awarded
+   * @member {String} MenuItemPublicId
    */
-  exports.prototype.PromotionalItemName = undefined;
+  exports.prototype.MenuItemPublicId = undefined;
 
 
   return exports;

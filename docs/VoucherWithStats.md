@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 **VoucherSubType** | **String** | Voucher Sub Type | [optional] 
 **Currency** | **String** | Currency of the voucher | [optional] 
 **StoreNames** | **[String]** | Stores that this voucher applies to | [optional] 
-**AddItemDetails** | [**AddItemDetails**](AddItemDetails.md) | Add item details | [optional] 
+**PromotionDetails** | [**PromotionDetails**](PromotionDetails.md) | Promotion details | [optional] 
 **CreditNoteDetails** | [**CreditNoteDetails**](CreditNoteDetails.md) | Credit note details | [optional] 
 **LumpDiscountDetails** | [**LumpDiscountDetails**](LumpDiscountDetails.md) | Lump discount details | [optional] 
 **PercentDiscountDetails** | [**PercentDiscountDetails**](PercentDiscountDetails.md) | Percent discount details | [optional] 

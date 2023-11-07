@@ -25,36 +25,42 @@
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.VoucherBase = factory(root.Flipdish.ApiClient);
+    root.Flipdish.UpdateVoucher = factory(root.Flipdish.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
 
   /**
-   * The VoucherBase model module.
-   * @module model/VoucherBase
+   * The UpdateVoucher model module.
+   * @module model/UpdateVoucher
    * @version 1.0.0
    */
 
   /**
-   * Constructs a new <code>VoucherBase</code>.
-   * Voucher Base
-   * @alias module:model/VoucherBase
+   * Constructs a new <code>UpdateVoucher</code>.
+   * Update Voucher
+   * @alias module:model/UpdateVoucher
    * @class
    */
   var exports = function() {
   };
 
   /**
-   * Constructs a <code>VoucherBase</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>UpdateVoucher</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/VoucherBase} obj Optional instance to populate.
-   * @return {module:model/VoucherBase} The populated <code>VoucherBase</code> instance.
+   * @param {module:model/UpdateVoucher} obj Optional instance to populate.
+   * @return {module:model/UpdateVoucher} The populated <code>UpdateVoucher</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
+      if (data.hasOwnProperty('PromotionId'))
+        obj.PromotionId = ApiClient.convertToType(data['PromotionId'], 'Number');
+      if (data.hasOwnProperty('PromotionName'))
+        obj.PromotionName = ApiClient.convertToType(data['PromotionName'], 'String');
+      if (data.hasOwnProperty('PromotionAwardMenuItemPublicIds'))
+        obj.PromotionAwardMenuItemPublicIds = ApiClient.convertToType(data['PromotionAwardMenuItemPublicIds'], ['String']);
       if (data.hasOwnProperty('Code'))
         obj.Code = ApiClient.convertToType(data['Code'], 'String');
       if (data.hasOwnProperty('Description'))
@@ -92,6 +98,24 @@
     }
     return obj;
   }
+
+  /**
+   * Promotion ID to update
+   * @member {Number} PromotionId
+   */
+  exports.prototype.PromotionId = undefined;
+
+  /**
+   * The updated name of the promotion
+   * @member {String} PromotionName
+   */
+  exports.prototype.PromotionName = undefined;
+
+  /**
+   * The updated menu items that the promotion awards
+   * @member {Array.<String>} PromotionAwardMenuItemPublicIds
+   */
+  exports.prototype.PromotionAwardMenuItemPublicIds = undefined;
 
   /**
    * Voucher Code

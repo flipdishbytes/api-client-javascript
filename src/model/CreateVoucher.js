@@ -16,18 +16,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/AddItemDetails', 'model/CreditNoteDetails', 'model/LumpDiscountDetails', 'model/PercentDiscountDetails'], factory);
+    define(['ApiClient', 'model/CreatePromotion', 'model/CreditNoteDetails', 'model/LumpDiscountDetails', 'model/PercentDiscountDetails'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./AddItemDetails'), require('./CreditNoteDetails'), require('./LumpDiscountDetails'), require('./PercentDiscountDetails'));
+    module.exports = factory(require('../ApiClient'), require('./CreatePromotion'), require('./CreditNoteDetails'), require('./LumpDiscountDetails'), require('./PercentDiscountDetails'));
   } else {
     // Browser globals (root is window)
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.CreateVoucher = factory(root.Flipdish.ApiClient, root.Flipdish.AddItemDetails, root.Flipdish.CreditNoteDetails, root.Flipdish.LumpDiscountDetails, root.Flipdish.PercentDiscountDetails);
+    root.Flipdish.CreateVoucher = factory(root.Flipdish.ApiClient, root.Flipdish.CreatePromotion, root.Flipdish.CreditNoteDetails, root.Flipdish.LumpDiscountDetails, root.Flipdish.PercentDiscountDetails);
   }
-}(this, function(ApiClient, AddItemDetails, CreditNoteDetails, LumpDiscountDetails, PercentDiscountDetails) {
+}(this, function(ApiClient, CreatePromotion, CreditNoteDetails, LumpDiscountDetails, PercentDiscountDetails) {
   'use strict';
 
   /**
@@ -38,7 +38,7 @@
 
   /**
    * Constructs a new <code>CreateVoucher</code>.
-   * Voucher
+   * Create Voucher
    * @alias module:model/CreateVoucher
    * @class
    */
@@ -57,8 +57,8 @@
       obj = obj || new exports();
       if (data.hasOwnProperty('VoucherType'))
         obj.VoucherType = ApiClient.convertToType(data['VoucherType'], 'String');
-      if (data.hasOwnProperty('AddItemDetails'))
-        obj.AddItemDetails = AddItemDetails.constructFromObject(data['AddItemDetails']);
+      if (data.hasOwnProperty('Promotion'))
+        obj.Promotion = CreatePromotion.constructFromObject(data['Promotion']);
       if (data.hasOwnProperty('CreditNoteDetails'))
         obj.CreditNoteDetails = CreditNoteDetails.constructFromObject(data['CreditNoteDetails']);
       if (data.hasOwnProperty('LumpDiscountDetails'))
@@ -110,10 +110,10 @@
   exports.prototype.VoucherType = undefined;
 
   /**
-   * Add item details
-   * @member {module:model/AddItemDetails} AddItemDetails
+   * Create Promotion details
+   * @member {module:model/CreatePromotion} Promotion
    */
-  exports.prototype.AddItemDetails = undefined;
+  exports.prototype.Promotion = undefined;
 
   /**
    * Credit note details

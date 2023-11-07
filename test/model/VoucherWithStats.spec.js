@@ -106,10 +106,10 @@
         // expect(instance.StoreNames).to.be(expectedValueLiteral);
       });
 
-      it('should have the property AddItemDetails (base name: "AddItemDetails")', function() {
-        // TODO: update the code to test the property AddItemDetails
-        expect(instance).to.have.property('AddItemDetails');
-        // expect(instance.AddItemDetails).to.be(expectedValueLiteral);
+      it('should have the property PromotionDetails (base name: "PromotionDetails")', function() {
+        // TODO: update the code to test the property PromotionDetails
+        expect(instance).to.have.property('PromotionDetails');
+        // expect(instance.PromotionDetails).to.be(expectedValueLiteral);
       });
 
       it('should have the property CreditNoteDetails (base name: "CreditNoteDetails")', function() {

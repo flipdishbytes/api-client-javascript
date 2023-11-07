@@ -30,26 +30,26 @@
   var instance;
 
   describe('(package)', function() {
-    describe('AddItemDetails', function() {
+    describe('CreatePromotion', function() {
       beforeEach(function() {
-        instance = new Flipdish.AddItemDetails();
+        instance = new Flipdish.CreatePromotion();
       });
 
-      it('should create an instance of AddItemDetails', function() {
-        // TODO: update the code to test AddItemDetails
-        expect(instance).to.be.a(Flipdish.AddItemDetails);
+      it('should create an instance of CreatePromotion', function() {
+        // TODO: update the code to test CreatePromotion
+        expect(instance).to.be.a(Flipdish.CreatePromotion);
       });
 
-      it('should have the property PromotionalItemId (base name: "PromotionalItemId")', function() {
-        // TODO: update the code to test the property PromotionalItemId
-        expect(instance).to.have.property('PromotionalItemId');
-        // expect(instance.PromotionalItemId).to.be(expectedValueLiteral);
+      it('should have the property Name (base name: "Name")', function() {
+        // TODO: update the code to test the property Name
+        expect(instance).to.have.property('Name');
+        // expect(instance.Name).to.be(expectedValueLiteral);
       });
 
-      it('should have the property PromotionalItemName (base name: "PromotionalItemName")', function() {
-        // TODO: update the code to test the property PromotionalItemName
-        expect(instance).to.have.property('PromotionalItemName');
-        // expect(instance.PromotionalItemName).to.be(expectedValueLiteral);
+      it('should have the property MenuItemPublicIds (base name: "MenuItemPublicIds")', function() {
+        // TODO: update the code to test the property MenuItemPublicIds
+        expect(instance).to.have.property('MenuItemPublicIds');
+        // expect(instance.MenuItemPublicIds).to.be(expectedValueLiteral);
       });
 
     });
