@@ -71,6 +71,8 @@
       obj = obj || new exports();
       if (data.hasOwnProperty('Id'))
         obj.Id = ApiClient.convertToType(data['Id'], 'String');
+      if (data.hasOwnProperty('AppStoreAppId'))
+        obj.AppStoreAppId = ApiClient.convertToType(data['AppStoreAppId'], 'String');
       if (data.hasOwnProperty('VerificationStatus'))
         obj.VerificationStatus = ApiClient.convertToType(data['VerificationStatus'], 'String');
       if (data.hasOwnProperty('Logo'))
@@ -98,6 +100,12 @@
    * @member {String} Id
    */
   exports.prototype.Id = undefined;
+
+  /**
+   * Same as Id for compatibility on portal.  Will be removed once portal is updated to read the Id field
+   * @member {String} AppStoreAppId
+   */
+  exports.prototype.AppStoreAppId = undefined;
 
   /**
    * Application verification status

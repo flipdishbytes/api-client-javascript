@@ -4,6 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **String** | Unique App store app id | 
+**AppStoreAppId** | **String** | Same as Id for compatibility on portal.  Will be removed once portal is updated to read the Id field | [optional] 
 **VerificationStatus** | **String** | Application verification status | 
 **Logo** | **String** | Logo | [optional] 
 **Internal** | **Boolean** | Internal | 
