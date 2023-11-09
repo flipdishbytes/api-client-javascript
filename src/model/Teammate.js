@@ -220,6 +220,12 @@
     FinanceManger: "FinanceManger",
 
     /**
+     * value: "Onboarding"
+     * @const
+     */
+    Onboarding: "Onboarding",
+
+    /**
      * value: "Support"
      * @const
      */

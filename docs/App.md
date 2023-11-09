@@ -49,6 +49,8 @@ Name | Type | Description | Notes
 
 * `FinanceManger` (value: `"FinanceManger"`)
 
+* `Onboarding` (value: `"Onboarding"`)
+
 * `Support` (value: `"Support"`)
 
 
@@ -87,6 +89,8 @@ Name | Type | Description | Notes
 * `CreateTeammateFinanceManager` (value: `"CreateTeammateFinanceManager"`)
 
 * `CreateTeammateIntegrator` (value: `"CreateTeammateIntegrator"`)
+
+* `CreateTeammateOnboarding` (value: `"CreateTeammateOnboarding"`)
 
 * `ViewApmConfigurations` (value: `"ViewApmConfigurations"`)
 

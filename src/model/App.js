@@ -298,6 +298,12 @@
     FinanceManger: "FinanceManger",
 
     /**
+     * value: "Onboarding"
+     * @const
+     */
+    Onboarding: "Onboarding",
+
+    /**
      * value: "Support"
      * @const
      */
@@ -400,6 +406,12 @@
      * @const
      */
     CreateTeammateIntegrator: "CreateTeammateIntegrator",
+
+    /**
+     * value: "CreateTeammateOnboarding"
+     * @const
+     */
+    CreateTeammateOnboarding: "CreateTeammateOnboarding",
 
     /**
      * value: "ViewApmConfigurations"

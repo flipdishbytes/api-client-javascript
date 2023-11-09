@@ -16,56 +16,56 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/AppStoreAppConfigurationHeader'], factory);
+    define(['ApiClient', 'model/AppStoreAppSummary'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./AppStoreAppConfigurationHeader'));
+    module.exports = factory(require('../ApiClient'), require('./AppStoreAppSummary'));
   } else {
     // Browser globals (root is window)
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.RestApiArrayResultAppStoreAppConfigurationHeader = factory(root.Flipdish.ApiClient, root.Flipdish.AppStoreAppConfigurationHeader);
+    root.Flipdish.RestApiArrayResultAppStoreAppSummary = factory(root.Flipdish.ApiClient, root.Flipdish.AppStoreAppSummary);
   }
-}(this, function(ApiClient, AppStoreAppConfigurationHeader) {
+}(this, function(ApiClient, AppStoreAppSummary) {
   'use strict';
 
   /**
-   * The RestApiArrayResultAppStoreAppConfigurationHeader model module.
-   * @module model/RestApiArrayResultAppStoreAppConfigurationHeader
+   * The RestApiArrayResultAppStoreAppSummary model module.
+   * @module model/RestApiArrayResultAppStoreAppSummary
    * @version 1.0.0
    */
 
   /**
-   * Constructs a new <code>RestApiArrayResultAppStoreAppConfigurationHeader</code>.
+   * Constructs a new <code>RestApiArrayResultAppStoreAppSummary</code>.
    * Rest api array result
-   * @alias module:model/RestApiArrayResultAppStoreAppConfigurationHeader
+   * @alias module:model/RestApiArrayResultAppStoreAppSummary
    * @class
-   * @param Data {Array.<module:model/AppStoreAppConfigurationHeader>} Generic data object.
+   * @param Data {Array.<module:model/AppStoreAppSummary>} Generic data object.
    */
   var exports = function(Data) {
     this.Data = Data;
   };
 
   /**
-   * Constructs a <code>RestApiArrayResultAppStoreAppConfigurationHeader</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>RestApiArrayResultAppStoreAppSummary</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/RestApiArrayResultAppStoreAppConfigurationHeader} obj Optional instance to populate.
-   * @return {module:model/RestApiArrayResultAppStoreAppConfigurationHeader} The populated <code>RestApiArrayResultAppStoreAppConfigurationHeader</code> instance.
+   * @param {module:model/RestApiArrayResultAppStoreAppSummary} obj Optional instance to populate.
+   * @return {module:model/RestApiArrayResultAppStoreAppSummary} The populated <code>RestApiArrayResultAppStoreAppSummary</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
       if (data.hasOwnProperty('Data'))
-        obj.Data = ApiClient.convertToType(data['Data'], [AppStoreAppConfigurationHeader]);
+        obj.Data = ApiClient.convertToType(data['Data'], [AppStoreAppSummary]);
     }
     return obj;
   }
 
   /**
    * Generic data object.
-   * @member {Array.<module:model/AppStoreAppConfigurationHeader>} Data
+   * @member {Array.<module:model/AppStoreAppSummary>} Data
    */
   exports.prototype.Data = undefined;
 

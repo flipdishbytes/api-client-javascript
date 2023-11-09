@@ -31,6 +31,8 @@ Name | Type | Description | Notes
 
 * `FinanceManger` (value: `"FinanceManger"`)
 
+* `Onboarding` (value: `"Onboarding"`)
+
 * `Support` (value: `"Support"`)
 
 

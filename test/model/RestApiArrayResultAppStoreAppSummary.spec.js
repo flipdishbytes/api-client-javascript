@@ -30,14 +30,14 @@
   var instance;
 
   describe('(package)', function() {
-    describe('RestApiArrayResultAppStoreAppConfigurationHeader', function() {
+    describe('RestApiArrayResultAppStoreAppSummary', function() {
       beforeEach(function() {
-        instance = new Flipdish.RestApiArrayResultAppStoreAppConfigurationHeader();
+        instance = new Flipdish.RestApiArrayResultAppStoreAppSummary();
       });
 
-      it('should create an instance of RestApiArrayResultAppStoreAppConfigurationHeader', function() {
-        // TODO: update the code to test RestApiArrayResultAppStoreAppConfigurationHeader
-        expect(instance).to.be.a(Flipdish.RestApiArrayResultAppStoreAppConfigurationHeader);
+      it('should create an instance of RestApiArrayResultAppStoreAppSummary', function() {
+        // TODO: update the code to test RestApiArrayResultAppStoreAppSummary
+        expect(instance).to.be.a(Flipdish.RestApiArrayResultAppStoreAppSummary);
       });
 
       it('should have the property Data (base name: "Data")', function() {

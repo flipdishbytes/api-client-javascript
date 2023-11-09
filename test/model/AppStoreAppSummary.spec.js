@@ -46,12 +46,6 @@
         // expect(instance.Id).to.be(expectedValueLiteral);
       });
 
-      it('should have the property AppStoreAppId (base name: "AppStoreAppId")', function() {
-        // TODO: update the code to test the property AppStoreAppId
-        expect(instance).to.have.property('AppStoreAppId');
-        // expect(instance.AppStoreAppId).to.be(expectedValueLiteral);
-      });
-
       it('should have the property VerificationStatus (base name: "VerificationStatus")', function() {
         // TODO: update the code to test the property VerificationStatus
         expect(instance).to.have.property('VerificationStatus');
