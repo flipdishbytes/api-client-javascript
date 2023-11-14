@@ -79,6 +79,8 @@
         obj.FlatFeeExcludingVat = ApiClient.convertToType(data['FlatFeeExcludingVat'], 'Number');
       if (data.hasOwnProperty('FlatFeeExcludingVAT'))
         obj.FlatFeeExcludingVAT = ApiClient.convertToType(data['FlatFeeExcludingVAT'], 'Number');
+      if (data.hasOwnProperty('FlatFeeIncludingVat'))
+        obj.FlatFeeIncludingVat = ApiClient.convertToType(data['FlatFeeIncludingVat'], 'Number');
       if (data.hasOwnProperty('PercentageFeeExcludingVat'))
         obj.PercentageFeeExcludingVat = ApiClient.convertToType(data['PercentageFeeExcludingVat'], 'Number');
       if (data.hasOwnProperty('PercentageFeeExcludingVAT'))
@@ -168,9 +170,16 @@
   exports.prototype.FlatFeeExcludingVat = undefined;
 
   /**
+   * Order flat fee amount excluding VAT
    * @member {Number} FlatFeeExcludingVAT
    */
   exports.prototype.FlatFeeExcludingVAT = undefined;
+
+  /**
+   * Order flat fee amount including VAT
+   * @member {Number} FlatFeeIncludingVat
+   */
+  exports.prototype.FlatFeeIncludingVat = undefined;
 
   /**
    * Order percentage fee excluding VAT
@@ -179,6 +188,7 @@
   exports.prototype.PercentageFeeExcludingVat = undefined;
 
   /**
+   * Order percentage fee excluding VAT
    * @member {Number} PercentageFeeExcludingVAT
    */
   exports.prototype.PercentageFeeExcludingVAT = undefined;

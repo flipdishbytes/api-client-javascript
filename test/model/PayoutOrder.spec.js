@@ -112,6 +112,12 @@
         // expect(instance.FlatFeeExcludingVAT).to.be(expectedValueLiteral);
       });
 
+      it('should have the property FlatFeeIncludingVat (base name: "FlatFeeIncludingVat")', function() {
+        // TODO: update the code to test the property FlatFeeIncludingVat
+        expect(instance).to.have.property('FlatFeeIncludingVat');
+        // expect(instance.FlatFeeIncludingVat).to.be(expectedValueLiteral);
+      });
+
       it('should have the property PercentageFeeExcludingVat (base name: "PercentageFeeExcludingVat")', function() {
         // TODO: update the code to test the property PercentageFeeExcludingVat
         expect(instance).to.have.property('PercentageFeeExcludingVat');
