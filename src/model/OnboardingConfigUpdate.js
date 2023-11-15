@@ -70,6 +70,7 @@
   exports.prototype.IsEnabled = undefined;
 
   /**
+   * Gets or sets whether welcome screen is enabled
    * @member {Boolean} IsWelcomeScreenEnabled
    */
   exports.prototype.IsWelcomeScreenEnabled = undefined;
