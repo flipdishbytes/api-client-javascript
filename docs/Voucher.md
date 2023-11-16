@@ -30,6 +30,7 @@ Name | Type | Description | Notes
 **IsValidOnlyOnce** | **Boolean** | Valid only once, by any customer (once used cannot be used again by any other customer) | [optional] 
 **StartDate** | **Date** | Voucher Starts On (Time in UTC) | [optional] 
 **ExpiryDate** | **Date** | Voucher Expires On (Time in UTC) | [optional] 
+**ChannelRestrictions** | **[String]** | Limit the channels this voucher can be used on | [optional] 
 
 
 <a name="StatusEnum"></a>
@@ -314,6 +315,25 @@ Name | Type | Description | Notes
 * `TWD` (value: `"TWD"`)
 
 * `BMD` (value: `"BMD"`)
+
+
+
+
+<a name="[ChannelRestrictionsEnum]"></a>
+## Enum: [ChannelRestrictionsEnum]
+
+
+* `Ios` (value: `"Ios"`)
+
+* `Android` (value: `"Android"`)
+
+* `Web` (value: `"Web"`)
+
+* `Kiosk` (value: `"Kiosk"`)
+
+* `Pos` (value: `"Pos"`)
+
+* `Google` (value: `"Google"`)
 
 
 

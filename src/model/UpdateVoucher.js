@@ -95,6 +95,8 @@
         obj.StartDate = ApiClient.convertToType(data['StartDate'], 'Date');
       if (data.hasOwnProperty('ExpiryDate'))
         obj.ExpiryDate = ApiClient.convertToType(data['ExpiryDate'], 'Date');
+      if (data.hasOwnProperty('ChannelRestrictions'))
+        obj.ChannelRestrictions = ApiClient.convertToType(data['ChannelRestrictions'], ['String']);
     }
     return obj;
   }
@@ -219,6 +221,56 @@
    */
   exports.prototype.ExpiryDate = undefined;
 
+  /**
+   * Limit the channels this voucher can be used on
+   * @member {Array.<module:model/UpdateVoucher.ChannelRestrictionsEnum>} ChannelRestrictions
+   */
+  exports.prototype.ChannelRestrictions = undefined;
+
+
+
+  /**
+   * Allowed values for the <code>ChannelRestrictions</code> property.
+   * @enum {String}
+   * @readonly
+   */
+  exports.ChannelRestrictionsEnum = {
+    /**
+     * value: "Ios"
+     * @const
+     */
+    Ios: "Ios",
+
+    /**
+     * value: "Android"
+     * @const
+     */
+    Android: "Android",
+
+    /**
+     * value: "Web"
+     * @const
+     */
+    Web: "Web",
+
+    /**
+     * value: "Kiosk"
+     * @const
+     */
+    Kiosk: "Kiosk",
+
+    /**
+     * value: "Pos"
+     * @const
+     */
+    Pos: "Pos",
+
+    /**
+     * value: "Google"
+     * @const
+     */
+    Google: "Google"
+  };
 
   return exports;
 

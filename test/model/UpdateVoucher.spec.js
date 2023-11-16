@@ -160,6 +160,12 @@
         // expect(instance.ExpiryDate).to.be(expectedValueLiteral);
       });
 
+      it('should have the property ChannelRestrictions (base name: "ChannelRestrictions")', function() {
+        // TODO: update the code to test the property ChannelRestrictions
+        expect(instance).to.have.property('ChannelRestrictions');
+        // expect(instance.ChannelRestrictions).to.be(expectedValueLiteral);
+      });
+
     });
   });
 
