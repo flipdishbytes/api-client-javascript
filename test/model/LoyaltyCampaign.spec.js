@@ -58,6 +58,12 @@
         // expect(instance.Stores).to.be(expectedValueLiteral);
       });
 
+      it('should have the property PublicId (base name: "PublicId")', function() {
+        // TODO: update the code to test the property PublicId
+        expect(instance).to.have.property('PublicId');
+        // expect(instance.PublicId).to.be(expectedValueLiteral);
+      });
+
       it('should have the property OrdersBeforeReceivingVoucher (base name: "OrdersBeforeReceivingVoucher")', function() {
         // TODO: update the code to test the property OrdersBeforeReceivingVoucher
         expect(instance).to.have.property('OrdersBeforeReceivingVoucher');

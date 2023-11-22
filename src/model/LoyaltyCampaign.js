@@ -61,6 +61,8 @@
         obj.Statistics = CampaignStatistics.constructFromObject(data['Statistics']);
       if (data.hasOwnProperty('Stores'))
         obj.Stores = ApiClient.convertToType(data['Stores'], [StoreCampaignStartTime]);
+      if (data.hasOwnProperty('PublicId'))
+        obj.PublicId = ApiClient.convertToType(data['PublicId'], 'String');
       if (data.hasOwnProperty('OrdersBeforeReceivingVoucher'))
         obj.OrdersBeforeReceivingVoucher = ApiClient.convertToType(data['OrdersBeforeReceivingVoucher'], 'Number');
       if (data.hasOwnProperty('PercentDiscountAmount'))
@@ -102,6 +104,12 @@
    * @member {Array.<module:model/StoreCampaignStartTime>} Stores
    */
   exports.prototype.Stores = undefined;
+
+  /**
+   * Permanent reference to the item.
+   * @member {String} PublicId
+   */
+  exports.prototype.PublicId = undefined;
 
   /**
    * Number of orders customer needs to make, before receiving voucher
