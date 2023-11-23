@@ -104,6 +104,8 @@ Name | Type | Description | Notes
 
 * `DeleteCampaignsConfigurations` (value: `"DeleteCampaignsConfigurations"`)
 
+* `StampLoyaltyCardAgainstCampaignsConfigurations` (value: `"StampLoyaltyCardAgainstCampaignsConfigurations"`)
+
 * `ViewDevelopersSettings` (value: `"ViewDevelopersSettings"`)
 
 * `EditDevelopersSettings` (value: `"EditDevelopersSettings"`)

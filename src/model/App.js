@@ -450,6 +450,12 @@
     DeleteCampaignsConfigurations: "DeleteCampaignsConfigurations",
 
     /**
+     * value: "StampLoyaltyCardAgainstCampaignsConfigurations"
+     * @const
+     */
+    StampLoyaltyCardAgainstCampaignsConfigurations: "StampLoyaltyCardAgainstCampaignsConfigurations",
+
+    /**
      * value: "ViewDevelopersSettings"
      * @const
      */
