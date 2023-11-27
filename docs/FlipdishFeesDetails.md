@@ -12,5 +12,7 @@ Name | Type | Description | Notes
 **PosSalesRefundedFees** | **Number** | Fees on refunds for POS sales | [optional] 
 **SalesFeesVat** | **Number** | VAT on sales fees | [optional] 
 **TotalFees** | **Number** | Total fees | [optional] 
+**DeliveryFees** | **Number** | Delivery fees | [optional] 
+**TipFees** | **Number** | Tip fees | [optional] 
 
 
