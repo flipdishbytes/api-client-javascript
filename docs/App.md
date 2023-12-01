@@ -360,6 +360,12 @@ Name | Type | Description | Notes
 
 * `UpdateAppStoreAppConfigurationSettings` (value: `"UpdateAppStoreAppConfigurationSettings"`)
 
+* `CreateAppStoreSubscription` (value: `"CreateAppStoreSubscription"`)
+
+* `UpdateAppStoreSubscription` (value: `"UpdateAppStoreSubscription"`)
+
+* `DeleteAppStoreSubscription` (value: `"DeleteAppStoreSubscription"`)
+
 * `ViewSalesChannels` (value: `"ViewSalesChannels"`)
 
 * `EditSalesChannels` (value: `"EditSalesChannels"`)

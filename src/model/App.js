@@ -1218,6 +1218,24 @@
     UpdateAppStoreAppConfigurationSettings: "UpdateAppStoreAppConfigurationSettings",
 
     /**
+     * value: "CreateAppStoreSubscription"
+     * @const
+     */
+    CreateAppStoreSubscription: "CreateAppStoreSubscription",
+
+    /**
+     * value: "UpdateAppStoreSubscription"
+     * @const
+     */
+    UpdateAppStoreSubscription: "UpdateAppStoreSubscription",
+
+    /**
+     * value: "DeleteAppStoreSubscription"
+     * @const
+     */
+    DeleteAppStoreSubscription: "DeleteAppStoreSubscription",
+
+    /**
      * value: "ViewSalesChannels"
      * @const
      */
