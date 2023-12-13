@@ -810,6 +810,12 @@
     EditCustomers: "EditCustomers",
 
     /**
+     * value: "CreateCustomers"
+     * @const
+     */
+    CreateCustomers: "CreateCustomers",
+
+    /**
      * value: "CreateCatalogElements"
      * @const
      */

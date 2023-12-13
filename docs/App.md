@@ -224,6 +224,8 @@ Name | Type | Description | Notes
 
 * `EditCustomers` (value: `"EditCustomers"`)
 
+* `CreateCustomers` (value: `"CreateCustomers"`)
+
 * `CreateCatalogElements` (value: `"CreateCatalogElements"`)
 
 * `UpdateCatalogElements` (value: `"UpdateCatalogElements"`)
