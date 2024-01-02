@@ -268,6 +268,24 @@
         // expect(instance.PayGreenSalesAmount).to.be(expectedValueLiteral);
       });
 
+      it('should have the property DeliveryIntegrationFee (base name: "DeliveryIntegrationFee")', function() {
+        // TODO: update the code to test the property DeliveryIntegrationFee
+        expect(instance).to.have.property('DeliveryIntegrationFee');
+        // expect(instance.DeliveryIntegrationFee).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property DeliveryIntegrationTipFee (base name: "DeliveryIntegrationTipFee")', function() {
+        // TODO: update the code to test the property DeliveryIntegrationTipFee
+        expect(instance).to.have.property('DeliveryIntegrationTipFee');
+        // expect(instance.DeliveryIntegrationTipFee).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property TotalThirdPartyFees (base name: "TotalThirdPartyFees")', function() {
+        // TODO: update the code to test the property TotalThirdPartyFees
+        expect(instance).to.have.property('TotalThirdPartyFees');
+        // expect(instance.TotalThirdPartyFees).to.be(expectedValueLiteral);
+      });
+
     });
   });
 

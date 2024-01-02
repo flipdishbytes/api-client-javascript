@@ -131,6 +131,12 @@
         obj.ClosingBalance = ApiClient.convertToType(data['ClosingBalance'], 'Number');
       if (data.hasOwnProperty('PayGreenSalesAmount'))
         obj.PayGreenSalesAmount = ApiClient.convertToType(data['PayGreenSalesAmount'], 'Number');
+      if (data.hasOwnProperty('DeliveryIntegrationFee'))
+        obj.DeliveryIntegrationFee = ApiClient.convertToType(data['DeliveryIntegrationFee'], 'Number');
+      if (data.hasOwnProperty('DeliveryIntegrationTipFee'))
+        obj.DeliveryIntegrationTipFee = ApiClient.convertToType(data['DeliveryIntegrationTipFee'], 'Number');
+      if (data.hasOwnProperty('TotalThirdPartyFees'))
+        obj.TotalThirdPartyFees = ApiClient.convertToType(data['TotalThirdPartyFees'], 'Number');
     }
     return obj;
   }
@@ -362,6 +368,24 @@
    * @member {Number} PayGreenSalesAmount
    */
   exports.prototype.PayGreenSalesAmount = undefined;
+
+  /**
+   * Third party integration delivery fee
+   * @member {Number} DeliveryIntegrationFee
+   */
+  exports.prototype.DeliveryIntegrationFee = undefined;
+
+  /**
+   * Third party integration delivery tip fee
+   * @member {Number} DeliveryIntegrationTipFee
+   */
+  exports.prototype.DeliveryIntegrationTipFee = undefined;
+
+  /**
+   * Total third party integration fees
+   * @member {Number} TotalThirdPartyFees
+   */
+  exports.prototype.TotalThirdPartyFees = undefined;
 
 
 

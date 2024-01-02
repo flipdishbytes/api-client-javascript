@@ -16,18 +16,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/BalanceDetails', 'model/ChargebackDetails', 'model/FlipdishFeesDetails', 'model/OtherChargesDetails', 'model/PosRevenueDetails', 'model/RevenueAdjustmentsDetails', 'model/RevenueDetail'], factory);
+    define(['ApiClient', 'model/BalanceDetails', 'model/ChargebackDetails', 'model/FlipdishFeesDetails', 'model/OtherChargesDetails', 'model/PosRevenueDetails', 'model/RevenueAdjustmentsDetails', 'model/RevenueDetail', 'model/ThirdPartyFeesDetails'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./BalanceDetails'), require('./ChargebackDetails'), require('./FlipdishFeesDetails'), require('./OtherChargesDetails'), require('./PosRevenueDetails'), require('./RevenueAdjustmentsDetails'), require('./RevenueDetail'));
+    module.exports = factory(require('../ApiClient'), require('./BalanceDetails'), require('./ChargebackDetails'), require('./FlipdishFeesDetails'), require('./OtherChargesDetails'), require('./PosRevenueDetails'), require('./RevenueAdjustmentsDetails'), require('./RevenueDetail'), require('./ThirdPartyFeesDetails'));
   } else {
     // Browser globals (root is window)
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.PayoutStore = factory(root.Flipdish.ApiClient, root.Flipdish.BalanceDetails, root.Flipdish.ChargebackDetails, root.Flipdish.FlipdishFeesDetails, root.Flipdish.OtherChargesDetails, root.Flipdish.PosRevenueDetails, root.Flipdish.RevenueAdjustmentsDetails, root.Flipdish.RevenueDetail);
+    root.Flipdish.PayoutStore = factory(root.Flipdish.ApiClient, root.Flipdish.BalanceDetails, root.Flipdish.ChargebackDetails, root.Flipdish.FlipdishFeesDetails, root.Flipdish.OtherChargesDetails, root.Flipdish.PosRevenueDetails, root.Flipdish.RevenueAdjustmentsDetails, root.Flipdish.RevenueDetail, root.Flipdish.ThirdPartyFeesDetails);
   }
-}(this, function(ApiClient, BalanceDetails, ChargebackDetails, FlipdishFeesDetails, OtherChargesDetails, PosRevenueDetails, RevenueAdjustmentsDetails, RevenueDetail) {
+}(this, function(ApiClient, BalanceDetails, ChargebackDetails, FlipdishFeesDetails, OtherChargesDetails, PosRevenueDetails, RevenueAdjustmentsDetails, RevenueDetail, ThirdPartyFeesDetails) {
   'use strict';
 
   /**
@@ -77,6 +77,8 @@
         obj.Balance = BalanceDetails.constructFromObject(data['Balance']);
       if (data.hasOwnProperty('PosRevenue'))
         obj.PosRevenue = PosRevenueDetails.constructFromObject(data['PosRevenue']);
+      if (data.hasOwnProperty('ThirdPartyFees'))
+        obj.ThirdPartyFees = ThirdPartyFeesDetails.constructFromObject(data['ThirdPartyFees']);
     }
     return obj;
   }
@@ -146,6 +148,12 @@
    * @member {module:model/PosRevenueDetails} PosRevenue
    */
   exports.prototype.PosRevenue = undefined;
+
+  /**
+   * Third party integration fees
+   * @member {module:model/ThirdPartyFeesDetails} ThirdPartyFees
+   */
+  exports.prototype.ThirdPartyFees = undefined;
 
 
   return exports;

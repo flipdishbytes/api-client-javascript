@@ -41,6 +41,9 @@ Name | Type | Description | Notes
 **OpeningBalance** | **Number** | Payout opening balance | [optional] 
 **ClosingBalance** | **Number** | Payout closing balance | [optional] 
 **PayGreenSalesAmount** | **Number** | Amount of sales through PayGreen (restaurant vouchers) | [optional] 
+**DeliveryIntegrationFee** | **Number** | Third party integration delivery fee | [optional] 
+**DeliveryIntegrationTipFee** | **Number** | Third party integration delivery tip fee | [optional] 
+**TotalThirdPartyFees** | **Number** | Total third party integration fees | [optional] 
 
 
 <a name="PayoutStatusEnum"></a>

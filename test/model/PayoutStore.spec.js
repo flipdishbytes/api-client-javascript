@@ -106,6 +106,12 @@
         // expect(instance.PosRevenue).to.be(expectedValueLiteral);
       });
 
+      it('should have the property ThirdPartyFees (base name: "ThirdPartyFees")', function() {
+        // TODO: update the code to test the property ThirdPartyFees
+        expect(instance).to.have.property('ThirdPartyFees');
+        // expect(instance.ThirdPartyFees).to.be(expectedValueLiteral);
+      });
+
     });
   });
 
