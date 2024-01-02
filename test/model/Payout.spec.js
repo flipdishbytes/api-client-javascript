@@ -160,18 +160,6 @@
         // expect(instance.PosSalesFees).to.be(expectedValueLiteral);
       });
 
-      it('should have the property DeliveryFees (base name: "DeliveryFees")', function() {
-        // TODO: update the code to test the property DeliveryFees
-        expect(instance).to.have.property('DeliveryFees');
-        // expect(instance.DeliveryFees).to.be(expectedValueLiteral);
-      });
-
-      it('should have the property TipFees (base name: "TipFees")', function() {
-        // TODO: update the code to test the property TipFees
-        expect(instance).to.have.property('TipFees');
-        // expect(instance.TipFees).to.be(expectedValueLiteral);
-      });
-
       it('should have the property OnlineSalesRefundedAmount (base name: "OnlineSalesRefundedAmount")', function() {
         // TODO: update the code to test the property OnlineSalesRefundedAmount
         expect(instance).to.have.property('OnlineSalesRefundedAmount');

@@ -23,8 +23,6 @@ Name | Type | Description | Notes
 **OnlineSalesRefundedFees** | **Number** | Payout online sales refunded fees | [optional] 
 **OnlineSalesFees** | **Number** | Payout online sales fees | [optional] 
 **PosSalesFees** | **Number** | Payout online sales fees | [optional] 
-**DeliveryFees** | **Number** | Delivery fees | [optional] 
-**TipFees** | **Number** | Tip fees | [optional] 
 **OnlineSalesRefundedAmount** | **Number** | Payout online sales refunded amount | [optional] 
 **PosSalesRefundedAmount** | **Number** | POS Payout online sales refunded amount | [optional] 
 **OnlineSalesTax** | **Number** | Payout online sales tax | [optional] 

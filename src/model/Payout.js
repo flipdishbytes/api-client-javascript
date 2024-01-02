@@ -95,10 +95,6 @@
         obj.OnlineSalesFees = ApiClient.convertToType(data['OnlineSalesFees'], 'Number');
       if (data.hasOwnProperty('PosSalesFees'))
         obj.PosSalesFees = ApiClient.convertToType(data['PosSalesFees'], 'Number');
-      if (data.hasOwnProperty('DeliveryFees'))
-        obj.DeliveryFees = ApiClient.convertToType(data['DeliveryFees'], 'Number');
-      if (data.hasOwnProperty('TipFees'))
-        obj.TipFees = ApiClient.convertToType(data['TipFees'], 'Number');
       if (data.hasOwnProperty('OnlineSalesRefundedAmount'))
         obj.OnlineSalesRefundedAmount = ApiClient.convertToType(data['OnlineSalesRefundedAmount'], 'Number');
       if (data.hasOwnProperty('PosSalesRefundedAmount'))
@@ -258,18 +254,6 @@
    * @member {Number} PosSalesFees
    */
   exports.prototype.PosSalesFees = undefined;
-
-  /**
-   * Delivery fees
-   * @member {Number} DeliveryFees
-   */
-  exports.prototype.DeliveryFees = undefined;
-
-  /**
-   * Tip fees
-   * @member {Number} TipFees
-   */
-  exports.prototype.TipFees = undefined;
 
   /**
    * Payout online sales refunded amount
