@@ -40,6 +40,12 @@
         expect(instance).to.be.a(Flipdish.OrderVoucherSummary);
       });
 
+      it('should have the property VoucherId (base name: "VoucherId")', function() {
+        // TODO: update the code to test the property VoucherId
+        expect(instance).to.have.property('VoucherId');
+        // expect(instance.VoucherId).to.be(expectedValueLiteral);
+      });
+
       it('should have the property Name (base name: "Name")', function() {
         // TODO: update the code to test the property Name
         expect(instance).to.have.property('Name');

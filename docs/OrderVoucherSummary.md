@@ -3,6 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**VoucherId** | **Number** | Voucher ID | [optional] 
 **Name** | **String** | Voucher name | [optional] 
 **Description** | **String** | Voucher description | [optional] 
 **Code** | **String** | Voucher code | [optional] 

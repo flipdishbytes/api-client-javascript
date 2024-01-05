@@ -55,6 +55,8 @@
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
+      if (data.hasOwnProperty('VoucherId'))
+        obj.VoucherId = ApiClient.convertToType(data['VoucherId'], 'Number');
       if (data.hasOwnProperty('Name'))
         obj.Name = ApiClient.convertToType(data['Name'], 'String');
       if (data.hasOwnProperty('Description'))
@@ -70,6 +72,12 @@
     }
     return obj;
   }
+
+  /**
+   * Voucher ID
+   * @member {Number} VoucherId
+   */
+  exports.prototype.VoucherId = undefined;
 
   /**
    * Voucher name
