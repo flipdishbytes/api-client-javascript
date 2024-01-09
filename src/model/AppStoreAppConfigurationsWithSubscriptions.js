@@ -16,18 +16,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/AppStoreAppConfigurationSummary', 'model/AppStoreAppSubscriptionSummary'], factory);
+    define(['ApiClient', 'model/AppStoreAppConfigurationSummary', 'model/AppStoreAppSubscriptionSummary', 'model/SubscriptionProductPriceInfo'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./AppStoreAppConfigurationSummary'), require('./AppStoreAppSubscriptionSummary'));
+    module.exports = factory(require('../ApiClient'), require('./AppStoreAppConfigurationSummary'), require('./AppStoreAppSubscriptionSummary'), require('./SubscriptionProductPriceInfo'));
   } else {
     // Browser globals (root is window)
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.AppStoreAppConfigurationsWithSubscriptions = factory(root.Flipdish.ApiClient, root.Flipdish.AppStoreAppConfigurationSummary, root.Flipdish.AppStoreAppSubscriptionSummary);
+    root.Flipdish.AppStoreAppConfigurationsWithSubscriptions = factory(root.Flipdish.ApiClient, root.Flipdish.AppStoreAppConfigurationSummary, root.Flipdish.AppStoreAppSubscriptionSummary, root.Flipdish.SubscriptionProductPriceInfo);
   }
-}(this, function(ApiClient, AppStoreAppConfigurationSummary, AppStoreAppSubscriptionSummary) {
+}(this, function(ApiClient, AppStoreAppConfigurationSummary, AppStoreAppSubscriptionSummary, SubscriptionProductPriceInfo) {
   'use strict';
 
   /**
@@ -59,6 +59,8 @@
         obj.Subscription = AppStoreAppSubscriptionSummary.constructFromObject(data['Subscription']);
       if (data.hasOwnProperty('Configurations'))
         obj.Configurations = ApiClient.convertToType(data['Configurations'], [AppStoreAppConfigurationSummary]);
+      if (data.hasOwnProperty('Prices'))
+        obj.Prices = ApiClient.convertToType(data['Prices'], [SubscriptionProductPriceInfo]);
     }
     return obj;
   }
@@ -74,6 +76,12 @@
    * @member {Array.<module:model/AppStoreAppConfigurationSummary>} Configurations
    */
   exports.prototype.Configurations = undefined;
+
+  /**
+   * Prices
+   * @member {Array.<module:model/SubscriptionProductPriceInfo>} Prices
+   */
+  exports.prototype.Prices = undefined;
 
 
   return exports;

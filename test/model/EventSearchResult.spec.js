@@ -766,6 +766,12 @@
         // expect(instance.AppStoreConfigDeletedEvent).to.be(expectedValueLiteral);
       });
 
+      it('should have the property AppStoreSubscriptionChangeJobUpdatedEvent (base name: "AppStoreSubscriptionChangeJobUpdatedEvent")', function() {
+        // TODO: update the code to test the property AppStoreSubscriptionChangeJobUpdatedEvent
+        expect(instance).to.have.property('AppStoreSubscriptionChangeJobUpdatedEvent');
+        // expect(instance.AppStoreSubscriptionChangeJobUpdatedEvent).to.be(expectedValueLiteral);
+      });
+
       it('should have the property CatalogItemCreatedEvent (base name: "CatalogItemCreatedEvent")', function() {
         // TODO: update the code to test the property CatalogItemCreatedEvent
         expect(instance).to.have.property('CatalogItemCreatedEvent');

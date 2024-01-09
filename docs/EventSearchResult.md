@@ -124,6 +124,7 @@ Name | Type | Description | Notes
 **AppStoreConfigCreatedEvent** | [**[AppStoreConfigCreatedEvent]**](AppStoreConfigCreatedEvent.md) | App Store Config Created | [optional] 
 **AppStoreConfigUpdatedEvent** | [**[AppStoreConfigUpdatedEvent]**](AppStoreConfigUpdatedEvent.md) | App Store Config Updated | [optional] 
 **AppStoreConfigDeletedEvent** | [**[AppStoreConfigDeletedEvent]**](AppStoreConfigDeletedEvent.md) | App Store Config Deleted | [optional] 
+**AppStoreSubscriptionChangeJobUpdatedEvent** | [**[AppStoreSubscriptionChangeJobUpdatedEvent]**](AppStoreSubscriptionChangeJobUpdatedEvent.md) | App Store Subscription Change Job Updated | [optional] 
 **CatalogItemCreatedEvent** | [**[CatalogItemCreatedEvent]**](CatalogItemCreatedEvent.md) | Catalog Item Created | [optional] 
 **CatalogItemUpdatedEvent** | [**[CatalogItemUpdatedEvent]**](CatalogItemUpdatedEvent.md) | Catalog Item Updated | [optional] 
 **CatalogItemArchivedEvent** | [**[CatalogItemArchivedEvent]**](CatalogItemArchivedEvent.md) | Catalog Item Archived | [optional] 

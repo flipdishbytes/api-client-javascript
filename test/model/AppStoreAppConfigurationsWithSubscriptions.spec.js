@@ -52,6 +52,12 @@
         // expect(instance.Configurations).to.be(expectedValueLiteral);
       });
 
+      it('should have the property Prices (base name: "Prices")', function() {
+        // TODO: update the code to test the property Prices
+        expect(instance).to.have.property('Prices');
+        // expect(instance.Prices).to.be(expectedValueLiteral);
+      });
+
     });
   });
 
