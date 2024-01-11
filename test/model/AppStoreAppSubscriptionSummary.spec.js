@@ -52,6 +52,12 @@
         // expect(instance.UsedSubscriptions).to.be(expectedValueLiteral);
       });
 
+      it('should have the property SubscriptionAccountIsSetupForClient (base name: "SubscriptionAccountIsSetupForClient")', function() {
+        // TODO: update the code to test the property SubscriptionAccountIsSetupForClient
+        expect(instance).to.have.property('SubscriptionAccountIsSetupForClient');
+        // expect(instance.SubscriptionAccountIsSetupForClient).to.be(expectedValueLiteral);
+      });
+
     });
   });
 

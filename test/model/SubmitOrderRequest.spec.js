@@ -52,6 +52,12 @@
         // expect(instance.PhoneNumber).to.be(expectedValueLiteral);
       });
 
+      it('should have the property ChefNote (base name: "ChefNote")', function() {
+        // TODO: update the code to test the property ChefNote
+        expect(instance).to.have.property('ChefNote');
+        // expect(instance.ChefNote).to.be(expectedValueLiteral);
+      });
+
     });
   });
 

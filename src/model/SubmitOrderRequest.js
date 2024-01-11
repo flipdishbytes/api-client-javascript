@@ -58,6 +58,8 @@
         obj.PaymentToken = ApiClient.convertToType(data['PaymentToken'], 'String');
       if (data.hasOwnProperty('PhoneNumber'))
         obj.PhoneNumber = ApiClient.convertToType(data['PhoneNumber'], 'String');
+      if (data.hasOwnProperty('ChefNote'))
+        obj.ChefNote = ApiClient.convertToType(data['ChefNote'], 'String');
     }
     return obj;
   }
@@ -71,6 +73,11 @@
    * @member {String} PhoneNumber
    */
   exports.prototype.PhoneNumber = undefined;
+
+  /**
+   * @member {String} ChefNote
+   */
+  exports.prototype.ChefNote = undefined;
 
 
   return exports;

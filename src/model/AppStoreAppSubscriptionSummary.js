@@ -59,6 +59,8 @@
         obj.TotalSubscriptions = ApiClient.convertToType(data['TotalSubscriptions'], 'Number');
       if (data.hasOwnProperty('UsedSubscriptions'))
         obj.UsedSubscriptions = ApiClient.convertToType(data['UsedSubscriptions'], 'Number');
+      if (data.hasOwnProperty('SubscriptionAccountIsSetupForClient'))
+        obj.SubscriptionAccountIsSetupForClient = ApiClient.convertToType(data['SubscriptionAccountIsSetupForClient'], 'Boolean');
     }
     return obj;
   }
@@ -74,6 +76,12 @@
    * @member {Number} UsedSubscriptions
    */
   exports.prototype.UsedSubscriptions = undefined;
+
+  /**
+   * Is client setup for subscriptions
+   * @member {Boolean} SubscriptionAccountIsSetupForClient
+   */
+  exports.prototype.SubscriptionAccountIsSetupForClient = undefined;
 
 
   return exports;
