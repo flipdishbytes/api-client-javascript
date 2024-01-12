@@ -58,6 +58,12 @@
         // expect(instance.SubscriptionAccountIsSetupForClient).to.be(expectedValueLiteral);
       });
 
+      it('should have the property SubscriptionAccounts (base name: "SubscriptionAccounts")', function() {
+        // TODO: update the code to test the property SubscriptionAccounts
+        expect(instance).to.have.property('SubscriptionAccounts');
+        // expect(instance.SubscriptionAccounts).to.be(expectedValueLiteral);
+      });
+
     });
   });
 

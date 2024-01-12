@@ -30,26 +30,20 @@
   var instance;
 
   describe('(package)', function() {
-    describe('AddAppStoreSubscriptionRequest', function() {
+    describe('AppStoreAppSubscriptionAccount', function() {
       beforeEach(function() {
-        instance = new Flipdish.AddAppStoreSubscriptionRequest();
+        instance = new Flipdish.AppStoreAppSubscriptionAccount();
       });
 
-      it('should create an instance of AddAppStoreSubscriptionRequest', function() {
-        // TODO: update the code to test AddAppStoreSubscriptionRequest
-        expect(instance).to.be.a(Flipdish.AddAppStoreSubscriptionRequest);
+      it('should create an instance of AppStoreAppSubscriptionAccount', function() {
+        // TODO: update the code to test AppStoreAppSubscriptionAccount
+        expect(instance).to.be.a(Flipdish.AppStoreAppSubscriptionAccount);
       });
 
-      it('should have the property StoreIds (base name: "StoreIds")', function() {
-        // TODO: update the code to test the property StoreIds
-        expect(instance).to.have.property('StoreIds');
-        // expect(instance.StoreIds).to.be(expectedValueLiteral);
-      });
-
-      it('should have the property SubscriptionAccountEmail (base name: "SubscriptionAccountEmail")', function() {
-        // TODO: update the code to test the property SubscriptionAccountEmail
-        expect(instance).to.have.property('SubscriptionAccountEmail');
-        // expect(instance.SubscriptionAccountEmail).to.be(expectedValueLiteral);
+      it('should have the property Email (base name: "Email")', function() {
+        // TODO: update the code to test the property Email
+        expect(instance).to.have.property('Email');
+        // expect(instance.Email).to.be(expectedValueLiteral);
       });
 
     });

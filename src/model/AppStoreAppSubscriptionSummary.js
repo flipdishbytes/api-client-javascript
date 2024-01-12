@@ -16,18 +16,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient'], factory);
+    define(['ApiClient', 'model/AppStoreAppSubscriptionAccount'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'));
+    module.exports = factory(require('../ApiClient'), require('./AppStoreAppSubscriptionAccount'));
   } else {
     // Browser globals (root is window)
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.AppStoreAppSubscriptionSummary = factory(root.Flipdish.ApiClient);
+    root.Flipdish.AppStoreAppSubscriptionSummary = factory(root.Flipdish.ApiClient, root.Flipdish.AppStoreAppSubscriptionAccount);
   }
-}(this, function(ApiClient) {
+}(this, function(ApiClient, AppStoreAppSubscriptionAccount) {
   'use strict';
 
   /**
@@ -61,6 +61,8 @@
         obj.UsedSubscriptions = ApiClient.convertToType(data['UsedSubscriptions'], 'Number');
       if (data.hasOwnProperty('SubscriptionAccountIsSetupForClient'))
         obj.SubscriptionAccountIsSetupForClient = ApiClient.convertToType(data['SubscriptionAccountIsSetupForClient'], 'Boolean');
+      if (data.hasOwnProperty('SubscriptionAccounts'))
+        obj.SubscriptionAccounts = ApiClient.convertToType(data['SubscriptionAccounts'], [AppStoreAppSubscriptionAccount]);
     }
     return obj;
   }
@@ -82,6 +84,12 @@
    * @member {Boolean} SubscriptionAccountIsSetupForClient
    */
   exports.prototype.SubscriptionAccountIsSetupForClient = undefined;
+
+  /**
+   * Available accounts for subscriptions (only if requesting user has enough permissions to see the list, otherwise empty list or null)
+   * @member {Array.<module:model/AppStoreAppSubscriptionAccount>} SubscriptionAccounts
+   */
+  exports.prototype.SubscriptionAccounts = undefined;
 
 
   return exports;

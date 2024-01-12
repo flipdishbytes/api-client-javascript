@@ -25,55 +25,47 @@
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.AddAppStoreSubscriptionRequest = factory(root.Flipdish.ApiClient);
+    root.Flipdish.AppStoreAppSubscriptionAccount = factory(root.Flipdish.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
 
   /**
-   * The AddAppStoreSubscriptionRequest model module.
-   * @module model/AddAppStoreSubscriptionRequest
+   * The AppStoreAppSubscriptionAccount model module.
+   * @module model/AppStoreAppSubscriptionAccount
    * @version 1.0.0
    */
 
   /**
-   * Constructs a new <code>AddAppStoreSubscriptionRequest</code>.
-   * Add subscription
-   * @alias module:model/AddAppStoreSubscriptionRequest
+   * Constructs a new <code>AppStoreAppSubscriptionAccount</code>.
+   * Subscription account
+   * @alias module:model/AppStoreAppSubscriptionAccount
    * @class
    */
   var exports = function() {
   };
 
   /**
-   * Constructs a <code>AddAppStoreSubscriptionRequest</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>AppStoreAppSubscriptionAccount</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/AddAppStoreSubscriptionRequest} obj Optional instance to populate.
-   * @return {module:model/AddAppStoreSubscriptionRequest} The populated <code>AddAppStoreSubscriptionRequest</code> instance.
+   * @param {module:model/AppStoreAppSubscriptionAccount} obj Optional instance to populate.
+   * @return {module:model/AppStoreAppSubscriptionAccount} The populated <code>AppStoreAppSubscriptionAccount</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
-      if (data.hasOwnProperty('StoreIds'))
-        obj.StoreIds = ApiClient.convertToType(data['StoreIds'], ['Number']);
-      if (data.hasOwnProperty('SubscriptionAccountEmail'))
-        obj.SubscriptionAccountEmail = ApiClient.convertToType(data['SubscriptionAccountEmail'], 'String');
+      if (data.hasOwnProperty('Email'))
+        obj.Email = ApiClient.convertToType(data['Email'], 'String');
     }
     return obj;
   }
 
   /**
-   * Store ids to update
-   * @member {Array.<Number>} StoreIds
+   * Email of the account user
+   * @member {String} Email
    */
-  exports.prototype.StoreIds = undefined;
-
-  /**
-   * Email (for subscription setup) - optional, only required for admin access
-   * @member {String} SubscriptionAccountEmail
-   */
-  exports.prototype.SubscriptionAccountEmail = undefined;
+  exports.prototype.Email = undefined;
 
 
   return exports;
