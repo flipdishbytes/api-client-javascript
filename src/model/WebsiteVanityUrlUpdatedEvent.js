@@ -55,14 +55,14 @@
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
+      if (data.hasOwnProperty('EventName'))
+        obj.EventName = ApiClient.convertToType(data['EventName'], 'String');
       if (data.hasOwnProperty('Description'))
         obj.Description = ApiClient.convertToType(data['Description'], 'String');
       if (data.hasOwnProperty('User'))
         obj.User = UserEventInfo.constructFromObject(data['User']);
       if (data.hasOwnProperty('VanityUrl'))
         obj.VanityUrl = ApiClient.convertToType(data['VanityUrl'], 'String');
-      if (data.hasOwnProperty('EventName'))
-        obj.EventName = ApiClient.convertToType(data['EventName'], 'String');
       if (data.hasOwnProperty('FlipdishEventId'))
         obj.FlipdishEventId = ApiClient.convertToType(data['FlipdishEventId'], 'String');
       if (data.hasOwnProperty('CreateTime'))
@@ -76,6 +76,12 @@
     }
     return obj;
   }
+
+  /**
+   * The event name
+   * @member {String} EventName
+   */
+  exports.prototype.EventName = undefined;
 
   /**
    * Description
@@ -94,12 +100,6 @@
    * @member {String} VanityUrl
    */
   exports.prototype.VanityUrl = undefined;
-
-  /**
-   * The event name
-   * @member {String} EventName
-   */
-  exports.prototype.EventName = undefined;
 
   /**
    * The identitfier of the event

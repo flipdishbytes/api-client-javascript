@@ -40,6 +40,12 @@
         expect(instance).to.be.a(Flipdish.WebsiteVanityUrlUpdatedEvent);
       });
 
+      it('should have the property EventName (base name: "EventName")', function() {
+        // TODO: update the code to test the property EventName
+        expect(instance).to.have.property('EventName');
+        // expect(instance.EventName).to.be(expectedValueLiteral);
+      });
+
       it('should have the property Description (base name: "Description")', function() {
         // TODO: update the code to test the property Description
         expect(instance).to.have.property('Description');
@@ -56,12 +62,6 @@
         // TODO: update the code to test the property VanityUrl
         expect(instance).to.have.property('VanityUrl');
         // expect(instance.VanityUrl).to.be(expectedValueLiteral);
-      });
-
-      it('should have the property EventName (base name: "EventName")', function() {
-        // TODO: update the code to test the property EventName
-        expect(instance).to.have.property('EventName');
-        // expect(instance.EventName).to.be(expectedValueLiteral);
       });
 
       it('should have the property FlipdishEventId (base name: "FlipdishEventId")', function() {
