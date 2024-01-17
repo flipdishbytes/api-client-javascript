@@ -46,12 +46,6 @@
         // expect(instance.AllergenId).to.be(expectedValueLiteral);
       });
 
-      it('should have the property Name (base name: "Name")', function() {
-        // TODO: update the code to test the property Name
-        expect(instance).to.have.property('Name');
-        // expect(instance.Name).to.be(expectedValueLiteral);
-      });
-
       it('should have the property LocalizedName (base name: "LocalizedName")', function() {
         // TODO: update the code to test the property LocalizedName
         expect(instance).to.have.property('LocalizedName');
