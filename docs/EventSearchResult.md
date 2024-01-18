@@ -69,6 +69,7 @@ Name | Type | Description | Notes
 **PrinterUnassignedFromStoreEvent** | [**[PrinterUnassignedFromStoreEvent]**](PrinterUnassignedFromStoreEvent.md) | Printer unassigned from store event | [optional] 
 **PhoneCallStartedEvent** | [**[PhoneCallStartedEvent]**](PhoneCallStartedEvent.md) | Phone call started event | [optional] 
 **PhoneCallEndedEvent** | [**[PhoneCallEndedEvent]**](PhoneCallEndedEvent.md) | Phone call ended event | [optional] 
+**TelephonyConfigUpdatedEvent** | [**[TelephonyConfigUpdatedEvent]**](TelephonyConfigUpdatedEvent.md) | Telephony config updated event | [optional] 
 **LoyaltyCampaignCreatedEvent** | [**[LoyaltyCampaignCreatedEvent]**](LoyaltyCampaignCreatedEvent.md) | Loyalty campaign created event | [optional] 
 **LoyaltyCampaignDeletedEvent** | [**[LoyaltyCampaignDeletedEvent]**](LoyaltyCampaignDeletedEvent.md) | Loyalty campaign deleted event | [optional] 
 **LoyaltyCampaignUpdatedEvent** | [**[LoyaltyCampaignUpdatedEvent]**](LoyaltyCampaignUpdatedEvent.md) | Loyalty campaign updated event | [optional] 

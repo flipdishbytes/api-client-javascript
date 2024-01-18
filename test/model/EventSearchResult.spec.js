@@ -436,6 +436,12 @@
         // expect(instance.PhoneCallEndedEvent).to.be(expectedValueLiteral);
       });
 
+      it('should have the property TelephonyConfigUpdatedEvent (base name: "TelephonyConfigUpdatedEvent")', function() {
+        // TODO: update the code to test the property TelephonyConfigUpdatedEvent
+        expect(instance).to.have.property('TelephonyConfigUpdatedEvent');
+        // expect(instance.TelephonyConfigUpdatedEvent).to.be(expectedValueLiteral);
+      });
+
       it('should have the property LoyaltyCampaignCreatedEvent (base name: "LoyaltyCampaignCreatedEvent")', function() {
         // TODO: update the code to test the property LoyaltyCampaignCreatedEvent
         expect(instance).to.have.property('LoyaltyCampaignCreatedEvent');
