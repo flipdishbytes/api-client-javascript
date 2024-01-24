@@ -250,6 +250,12 @@
         // expect(instance.MenuCreatedEvent).to.be(expectedValueLiteral);
       });
 
+      it('should have the property MenuAsyncCreationCompletedEvent (base name: "MenuAsyncCreationCompletedEvent")', function() {
+        // TODO: update the code to test the property MenuAsyncCreationCompletedEvent
+        expect(instance).to.have.property('MenuAsyncCreationCompletedEvent');
+        // expect(instance.MenuAsyncCreationCompletedEvent).to.be(expectedValueLiteral);
+      });
+
       it('should have the property MenuUpdatedEvent (base name: "MenuUpdatedEvent")', function() {
         // TODO: update the code to test the property MenuUpdatedEvent
         expect(instance).to.have.property('MenuUpdatedEvent');

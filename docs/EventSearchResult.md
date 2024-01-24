@@ -38,6 +38,7 @@ Name | Type | Description | Notes
 **StoreLogoUpdatedEvent** | [**[StoreLogoUpdatedEvent]**](StoreLogoUpdatedEvent.md) | Store logo updated events | [optional] 
 **StoreLogoDeletedEvent** | [**[StoreLogoDeletedEvent]**](StoreLogoDeletedEvent.md) | Store logo deleted events | [optional] 
 **MenuCreatedEvent** | [**[MenuCreatedEvent]**](MenuCreatedEvent.md) | Menu created events | [optional] 
+**MenuAsyncCreationCompletedEvent** | [**[MenuAsyncCreationCompletedEvent]**](MenuAsyncCreationCompletedEvent.md) | Menu async creation completed events | [optional] 
 **MenuUpdatedEvent** | [**[MenuUpdatedEvent]**](MenuUpdatedEvent.md) | Menu updated events | [optional] 
 **MenuUploadedEvent** | [**[MenuUploadedEvent]**](MenuUploadedEvent.md) | Menu uploaded events | [optional] 
 **MenuBulkEditEvent** | [**[MenuBulkEditEvent]**](MenuBulkEditEvent.md) | Menu bulk events | [optional] 
