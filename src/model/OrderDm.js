@@ -62,6 +62,8 @@
         obj.TipAmount = ApiClient.convertToType(data['TipAmount'], 'Number');
       if (data.hasOwnProperty('DeliveryLocationId'))
         obj.DeliveryLocationId = ApiClient.convertToType(data['DeliveryLocationId'], 'Number');
+      if (data.hasOwnProperty('VoucherCode'))
+        obj.VoucherCode = ApiClient.convertToType(data['VoucherCode'], 'String');
       if (data.hasOwnProperty('OrderItemVms'))
         obj.OrderItemVms = ApiClient.convertToType(data['OrderItemVms'], [OrderItemDm]);
       if (data.hasOwnProperty('VirtualRestaurantId'))
@@ -109,6 +111,11 @@
    * @member {Number} DeliveryLocationId
    */
   exports.prototype.DeliveryLocationId = undefined;
+
+  /**
+   * @member {String} VoucherCode
+   */
+  exports.prototype.VoucherCode = undefined;
 
   /**
    * @member {Array.<module:model/OrderItemDm>} OrderItemVms

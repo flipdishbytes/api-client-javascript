@@ -64,6 +64,12 @@
         // expect(instance.DeliveryLocationId).to.be(expectedValueLiteral);
       });
 
+      it('should have the property VoucherCode (base name: "VoucherCode")', function() {
+        // TODO: update the code to test the property VoucherCode
+        expect(instance).to.have.property('VoucherCode');
+        // expect(instance.VoucherCode).to.be(expectedValueLiteral);
+      });
+
       it('should have the property OrderItemVms (base name: "OrderItemVms")', function() {
         // TODO: update the code to test the property OrderItemVms
         expect(instance).to.have.property('OrderItemVms');
