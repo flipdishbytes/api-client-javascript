@@ -83,6 +83,8 @@
         obj.SpicinessRating = ApiClient.convertToType(data['SpicinessRating'], 'String');
       if (data.hasOwnProperty('Price'))
         obj.Price = ApiClient.convertToType(data['Price'], 'Number');
+      if (data.hasOwnProperty('DepositReturnFee'))
+        obj.DepositReturnFee = ApiClient.convertToType(data['DepositReturnFee'], 'Number');
       if (data.hasOwnProperty('DisplayOrder'))
         obj.DisplayOrder = ApiClient.convertToType(data['DisplayOrder'], 'Number');
       if (data.hasOwnProperty('Alcohol'))
@@ -186,6 +188,12 @@
    * @member {Number} Price
    */
   exports.prototype.Price = undefined;
+
+  /**
+   * An optional fee that can be added to the price of the item.
+   * @member {Number} DepositReturnFee
+   */
+  exports.prototype.DepositReturnFee = undefined;
 
   /**
    * Display order

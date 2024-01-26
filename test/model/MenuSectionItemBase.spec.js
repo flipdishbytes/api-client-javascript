@@ -64,6 +64,12 @@
         // expect(instance.Price).to.be(expectedValueLiteral);
       });
 
+      it('should have the property DepositReturnFee (base name: "DepositReturnFee")', function() {
+        // TODO: update the code to test the property DepositReturnFee
+        expect(instance).to.have.property('DepositReturnFee');
+        // expect(instance.DepositReturnFee).to.be(expectedValueLiteral);
+      });
+
       it('should have the property DisplayOrder (base name: "DisplayOrder")', function() {
         // TODO: update the code to test the property DisplayOrder
         expect(instance).to.have.property('DisplayOrder');

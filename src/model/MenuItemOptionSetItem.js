@@ -75,6 +75,8 @@
         obj.Name = ApiClient.convertToType(data['Name'], 'String');
       if (data.hasOwnProperty('Price'))
         obj.Price = ApiClient.convertToType(data['Price'], 'Number');
+      if (data.hasOwnProperty('DepositReturnFee'))
+        obj.DepositReturnFee = ApiClient.convertToType(data['DepositReturnFee'], 'Number');
       if (data.hasOwnProperty('IsAvailable'))
         obj.IsAvailable = ApiClient.convertToType(data['IsAvailable'], 'Boolean');
       if (data.hasOwnProperty('DisplayOrder'))
@@ -144,6 +146,12 @@
    * @member {Number} Price
    */
   exports.prototype.Price = undefined;
+
+  /**
+   * An optional fee that can be added to the price of the item.
+   * @member {Number} DepositReturnFee
+   */
+  exports.prototype.DepositReturnFee = undefined;
 
   /**
    * Is available

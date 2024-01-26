@@ -17,6 +17,7 @@ Name | Type | Description | Notes
 **Description** | **String** | Description (like \"A lovely dish from the east\") | [optional] 
 **SpicinessRating** | **String** | Spiciness rating | [optional] 
 **Price** | **Number** | Price - this is only used when there is no master option set and should be set to 0 if a master option set exists. | [optional] 
+**DepositReturnFee** | **Number** | An optional fee that can be added to the price of the item. | [optional] 
 **DisplayOrder** | **Number** | Display order | [optional] 
 **Alcohol** | **Boolean** | To be set true if the item or an option of the item contains an alcoholic drink. | [optional] 
 **IsAvailable** | **Boolean** | True if we accept orders for this item still | [optional] 
