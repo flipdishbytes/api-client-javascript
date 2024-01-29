@@ -52,6 +52,12 @@
         // expect(instance.RegistrationDate).to.be(expectedValueLiteral);
       });
 
+      it('should have the property PhoneNumber (base name: "PhoneNumber")', function() {
+        // TODO: update the code to test the property PhoneNumber
+        expect(instance).to.have.property('PhoneNumber');
+        // expect(instance.PhoneNumber).to.be(expectedValueLiteral);
+      });
+
       it('should have the property CashOrdersEnabled (base name: "CashOrdersEnabled")', function() {
         // TODO: update the code to test the property CashOrdersEnabled
         expect(instance).to.have.property('CashOrdersEnabled');

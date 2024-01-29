@@ -59,6 +59,8 @@
         obj.CustomerId = ApiClient.convertToType(data['CustomerId'], 'Number');
       if (data.hasOwnProperty('RegistrationDate'))
         obj.RegistrationDate = ApiClient.convertToType(data['RegistrationDate'], 'Date');
+      if (data.hasOwnProperty('PhoneNumber'))
+        obj.PhoneNumber = ApiClient.convertToType(data['PhoneNumber'], 'String');
       if (data.hasOwnProperty('CashOrdersEnabled'))
         obj.CashOrdersEnabled = ApiClient.convertToType(data['CashOrdersEnabled'], 'Boolean');
       if (data.hasOwnProperty('CardOrdersEnabled'))
@@ -80,6 +82,12 @@
    * @member {Date} RegistrationDate
    */
   exports.prototype.RegistrationDate = undefined;
+
+  /**
+   * Phone Number in international format
+   * @member {String} PhoneNumber
+   */
+  exports.prototype.PhoneNumber = undefined;
 
   /**
    * Customer can place cash orders
