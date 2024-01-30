@@ -310,6 +310,8 @@ Name | Type | Description | Notes
 
 * `ViewOrderFulfillmentAuditLogs` (value: `"ViewOrderFulfillmentAuditLogs"`)
 
+* `ViewChannelAuditLogs` (value: `"ViewChannelAuditLogs"`)
+
 * `SendPushNotificationToCustomer` (value: `"SendPushNotificationToCustomer"`)
 
 * `InviteDriverToApp` (value: `"InviteDriverToApp"`)

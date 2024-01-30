@@ -71,6 +71,7 @@ Name | Type | Description | Notes
 **PhoneCallStartedEvent** | [**[PhoneCallStartedEvent]**](PhoneCallStartedEvent.md) | Phone call started event | [optional] 
 **PhoneCallEndedEvent** | [**[PhoneCallEndedEvent]**](PhoneCallEndedEvent.md) | Phone call ended event | [optional] 
 **TelephonyConfigUpdatedEvent** | [**[TelephonyConfigUpdatedEvent]**](TelephonyConfigUpdatedEvent.md) | Telephony config updated event | [optional] 
+**ChannelStoresUpdatedEvent** | [**[ChannelStoresUpdatedEvent]**](ChannelStoresUpdatedEvent.md) | Channel stores updated event | [optional] 
 **LoyaltyCampaignCreatedEvent** | [**[LoyaltyCampaignCreatedEvent]**](LoyaltyCampaignCreatedEvent.md) | Loyalty campaign created event | [optional] 
 **LoyaltyCampaignDeletedEvent** | [**[LoyaltyCampaignDeletedEvent]**](LoyaltyCampaignDeletedEvent.md) | Loyalty campaign deleted event | [optional] 
 **LoyaltyCampaignUpdatedEvent** | [**[LoyaltyCampaignUpdatedEvent]**](LoyaltyCampaignUpdatedEvent.md) | Loyalty campaign updated event | [optional] 

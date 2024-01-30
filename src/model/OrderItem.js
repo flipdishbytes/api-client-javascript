@@ -79,6 +79,8 @@
         obj.MenuItemDisplayOrder = ApiClient.convertToType(data['MenuItemDisplayOrder'], 'Number');
       if (data.hasOwnProperty('IsAvailable'))
         obj.IsAvailable = ApiClient.convertToType(data['IsAvailable'], 'Boolean');
+      if (data.hasOwnProperty('DepositReturnFee'))
+        obj.DepositReturnFee = ApiClient.convertToType(data['DepositReturnFee'], 'Number');
     }
     return obj;
   }
@@ -154,6 +156,12 @@
    * @member {Boolean} IsAvailable
    */
   exports.prototype.IsAvailable = undefined;
+
+  /**
+   * Deposit return fee
+   * @member {Number} DepositReturnFee
+   */
+  exports.prototype.DepositReturnFee = undefined;
 
 
   return exports;

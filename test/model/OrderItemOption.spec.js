@@ -88,6 +88,12 @@
         // expect(instance.MenuItemOptionSetDisplayOrder).to.be(expectedValueLiteral);
       });
 
+      it('should have the property DepositReturnFee (base name: "DepositReturnFee")', function() {
+        // TODO: update the code to test the property DepositReturnFee
+        expect(instance).to.have.property('DepositReturnFee');
+        // expect(instance.DepositReturnFee).to.be(expectedValueLiteral);
+      });
+
     });
   });
 

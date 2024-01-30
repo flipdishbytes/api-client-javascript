@@ -11,5 +11,6 @@ Name | Type | Description | Notes
 **Price** | **Number** | Price | [optional] 
 **MenuItemOptionDisplayOrder** | **Number** | Menu item option display order | [optional] 
 **MenuItemOptionSetDisplayOrder** | **Number** | Menu item option set display order | [optional] 
+**DepositReturnFee** | **Number** | Deposit return fee | [optional] 
 
 

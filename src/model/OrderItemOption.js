@@ -71,6 +71,8 @@
         obj.MenuItemOptionDisplayOrder = ApiClient.convertToType(data['MenuItemOptionDisplayOrder'], 'Number');
       if (data.hasOwnProperty('MenuItemOptionSetDisplayOrder'))
         obj.MenuItemOptionSetDisplayOrder = ApiClient.convertToType(data['MenuItemOptionSetDisplayOrder'], 'Number');
+      if (data.hasOwnProperty('DepositReturnFee'))
+        obj.DepositReturnFee = ApiClient.convertToType(data['DepositReturnFee'], 'Number');
     }
     return obj;
   }
@@ -122,6 +124,12 @@
    * @member {Number} MenuItemOptionSetDisplayOrder
    */
   exports.prototype.MenuItemOptionSetDisplayOrder = undefined;
+
+  /**
+   * Deposit return fee
+   * @member {Number} DepositReturnFee
+   */
+  exports.prototype.DepositReturnFee = undefined;
 
 
   return exports;

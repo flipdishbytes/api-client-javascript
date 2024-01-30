@@ -1068,6 +1068,12 @@
     ViewOrderFulfillmentAuditLogs: "ViewOrderFulfillmentAuditLogs",
 
     /**
+     * value: "ViewChannelAuditLogs"
+     * @const
+     */
+    ViewChannelAuditLogs: "ViewChannelAuditLogs",
+
+    /**
      * value: "SendPushNotificationToCustomer"
      * @const
      */
