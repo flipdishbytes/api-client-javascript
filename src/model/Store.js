@@ -93,6 +93,8 @@
         obj.LogoUrl = ApiClient.convertToType(data['LogoUrl'], 'String');
       if (data.hasOwnProperty('FraudPreventionStrategy'))
         obj.FraudPreventionStrategy = ApiClient.convertToType(data['FraudPreventionStrategy'], 'String');
+      if (data.hasOwnProperty('AppIds'))
+        obj.AppIds = ApiClient.convertToType(data['AppIds'], ['String']);
       if (data.hasOwnProperty('PhoneNumber'))
         obj.PhoneNumber = ApiClient.convertToType(data['PhoneNumber'], 'String');
       if (data.hasOwnProperty('AlwaysAppearOpen'))
@@ -268,6 +270,12 @@
    * @member {String} FraudPreventionStrategy
    */
   exports.prototype.FraudPreventionStrategy = undefined;
+
+  /**
+   * Store's app ids
+   * @member {Array.<String>} AppIds
+   */
+  exports.prototype.AppIds = undefined;
 
   /**
    * Phone number

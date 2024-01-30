@@ -154,6 +154,12 @@
         // expect(instance.FraudPreventionStrategy).to.be(expectedValueLiteral);
       });
 
+      it('should have the property AppIds (base name: "AppIds")', function() {
+        // TODO: update the code to test the property AppIds
+        expect(instance).to.have.property('AppIds');
+        // expect(instance.AppIds).to.be(expectedValueLiteral);
+      });
+
       it('should have the property PhoneNumber (base name: "PhoneNumber")', function() {
         // TODO: update the code to test the property PhoneNumber
         expect(instance).to.have.property('PhoneNumber');
