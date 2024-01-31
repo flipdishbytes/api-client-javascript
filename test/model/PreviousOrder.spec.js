@@ -142,6 +142,12 @@
         // expect(instance.DeliveryAmount).to.be(expectedValueLiteral);
       });
 
+      it('should have the property DepositReturnFeeAmount (base name: "DepositReturnFeeAmount")', function() {
+        // TODO: update the code to test the property DepositReturnFeeAmount
+        expect(instance).to.have.property('DepositReturnFeeAmount');
+        // expect(instance.DepositReturnFeeAmount).to.be(expectedValueLiteral);
+      });
+
       it('should have the property TotalTax (base name: "TotalTax")', function() {
         // TODO: update the code to test the property TotalTax
         expect(instance).to.have.property('TotalTax');

@@ -46,6 +46,12 @@
         // expect(instance.PreviousOrder).to.be(expectedValueLiteral);
       });
 
+      it('should have the property DepositReturnFeesSummary (base name: "DepositReturnFeesSummary")', function() {
+        // TODO: update the code to test the property DepositReturnFeesSummary
+        expect(instance).to.have.property('DepositReturnFeesSummary');
+        // expect(instance.DepositReturnFeesSummary).to.be(expectedValueLiteral);
+      });
+
       it('should have the property TsRequestedForLocal (base name: "TsRequestedForLocal")', function() {
         // TODO: update the code to test the property TsRequestedForLocal
         expect(instance).to.have.property('TsRequestedForLocal');

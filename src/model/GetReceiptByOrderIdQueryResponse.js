@@ -16,18 +16,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/PreviousOrder'], factory);
+    define(['ApiClient', 'model/DepositReturnFeesSummary', 'model/PreviousOrder'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./PreviousOrder'));
+    module.exports = factory(require('../ApiClient'), require('./DepositReturnFeesSummary'), require('./PreviousOrder'));
   } else {
     // Browser globals (root is window)
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.GetReceiptByOrderIdQueryResponse = factory(root.Flipdish.ApiClient, root.Flipdish.PreviousOrder);
+    root.Flipdish.GetReceiptByOrderIdQueryResponse = factory(root.Flipdish.ApiClient, root.Flipdish.DepositReturnFeesSummary, root.Flipdish.PreviousOrder);
   }
-}(this, function(ApiClient, PreviousOrder) {
+}(this, function(ApiClient, DepositReturnFeesSummary, PreviousOrder) {
   'use strict';
 
   /**
@@ -56,6 +56,8 @@
       obj = obj || new exports();
       if (data.hasOwnProperty('PreviousOrder'))
         obj.PreviousOrder = PreviousOrder.constructFromObject(data['PreviousOrder']);
+      if (data.hasOwnProperty('DepositReturnFeesSummary'))
+        obj.DepositReturnFeesSummary = ApiClient.convertToType(data['DepositReturnFeesSummary'], [DepositReturnFeesSummary]);
       if (data.hasOwnProperty('TsRequestedForLocal'))
         obj.TsRequestedForLocal = ApiClient.convertToType(data['TsRequestedForLocal'], 'Date');
       if (data.hasOwnProperty('TsOrderPlacedLocal'))
@@ -76,6 +78,11 @@
    * @member {module:model/PreviousOrder} PreviousOrder
    */
   exports.prototype.PreviousOrder = undefined;
+
+  /**
+   * @member {Array.<module:model/DepositReturnFeesSummary>} DepositReturnFeesSummary
+   */
+  exports.prototype.DepositReturnFeesSummary = undefined;
 
   /**
    * @member {Date} TsRequestedForLocal

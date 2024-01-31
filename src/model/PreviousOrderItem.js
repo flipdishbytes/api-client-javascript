@@ -62,6 +62,8 @@
         obj.Name = ApiClient.convertToType(data['Name'], 'String');
       if (data.hasOwnProperty('PriceIncludingOptionSetItems'))
         obj.PriceIncludingOptionSetItems = ApiClient.convertToType(data['PriceIncludingOptionSetItems'], 'Number');
+      if (data.hasOwnProperty('DepositReturnFee'))
+        obj.DepositReturnFee = ApiClient.convertToType(data['DepositReturnFee'], 'Number');
       if (data.hasOwnProperty('TaxAmount'))
         obj.TaxAmount = ApiClient.convertToType(data['TaxAmount'], 'Number');
       if (data.hasOwnProperty('PreviousOrderItemOptions'))
@@ -89,6 +91,11 @@
    * @member {Number} PriceIncludingOptionSetItems
    */
   exports.prototype.PriceIncludingOptionSetItems = undefined;
+
+  /**
+   * @member {Number} DepositReturnFee
+   */
+  exports.prototype.DepositReturnFee = undefined;
 
   /**
    * @member {Number} TaxAmount

@@ -88,6 +88,8 @@
         obj.TipAmount = ApiClient.convertToType(data['TipAmount'], 'Number');
       if (data.hasOwnProperty('DeliveryAmount'))
         obj.DeliveryAmount = ApiClient.convertToType(data['DeliveryAmount'], 'Number');
+      if (data.hasOwnProperty('DepositReturnFeeAmount'))
+        obj.DepositReturnFeeAmount = ApiClient.convertToType(data['DepositReturnFeeAmount'], 'Number');
       if (data.hasOwnProperty('TotalTax'))
         obj.TotalTax = ApiClient.convertToType(data['TotalTax'], 'Number');
       if (data.hasOwnProperty('TotalAmount'))
@@ -186,6 +188,11 @@
    * @member {Number} DeliveryAmount
    */
   exports.prototype.DeliveryAmount = undefined;
+
+  /**
+   * @member {Number} DepositReturnFeeAmount
+   */
+  exports.prototype.DepositReturnFeeAmount = undefined;
 
   /**
    * @member {Number} TotalTax

@@ -25,52 +25,59 @@
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.PreviousOrderItemOption = factory(root.Flipdish.ApiClient);
+    root.Flipdish.DepositReturnFeesSummary = factory(root.Flipdish.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
 
   /**
-   * The PreviousOrderItemOption model module.
-   * @module model/PreviousOrderItemOption
+   * The DepositReturnFeesSummary model module.
+   * @module model/DepositReturnFeesSummary
    * @version 1.0.0
    */
 
   /**
-   * Constructs a new <code>PreviousOrderItemOption</code>.
-   * @alias module:model/PreviousOrderItemOption
+   * Constructs a new <code>DepositReturnFeesSummary</code>.
+   * @alias module:model/DepositReturnFeesSummary
    * @class
    */
   var exports = function() {
   };
 
   /**
-   * Constructs a <code>PreviousOrderItemOption</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>DepositReturnFeesSummary</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/PreviousOrderItemOption} obj Optional instance to populate.
-   * @return {module:model/PreviousOrderItemOption} The populated <code>PreviousOrderItemOption</code> instance.
+   * @param {module:model/DepositReturnFeesSummary} obj Optional instance to populate.
+   * @return {module:model/DepositReturnFeesSummary} The populated <code>DepositReturnFeesSummary</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
-      if (data.hasOwnProperty('Name'))
-        obj.Name = ApiClient.convertToType(data['Name'], 'String');
-      if (data.hasOwnProperty('DepositReturnFee'))
-        obj.DepositReturnFee = ApiClient.convertToType(data['DepositReturnFee'], 'Number');
+      if (data.hasOwnProperty('Count'))
+        obj.Count = ApiClient.convertToType(data['Count'], 'Number');
+      if (data.hasOwnProperty('Fee'))
+        obj.Fee = ApiClient.convertToType(data['Fee'], 'Number');
+      if (data.hasOwnProperty('Total'))
+        obj.Total = ApiClient.convertToType(data['Total'], 'Number');
     }
     return obj;
   }
 
   /**
-   * @member {String} Name
+   * @member {Number} Count
    */
-  exports.prototype.Name = undefined;
+  exports.prototype.Count = undefined;
 
   /**
-   * @member {Number} DepositReturnFee
+   * @member {Number} Fee
    */
-  exports.prototype.DepositReturnFee = undefined;
+  exports.prototype.Fee = undefined;
+
+  /**
+   * @member {Number} Total
+   */
+  exports.prototype.Total = undefined;
 
 
   return exports;
