@@ -44,6 +44,9 @@ Name | Type | Description | Notes
 **DeliveryIntegrationFee** | **Number** | Third party integration delivery fee | [optional] 
 **DeliveryIntegrationTipFee** | **Number** | Third party integration delivery tip fee | [optional] 
 **TotalThirdPartyFees** | **Number** | Total third party integration fees | [optional] 
+**PosSalesAmount** | **Number** | POS sales amount | [optional] 
+**PosSalesTax** | **Number** | POS sales tax | [optional] 
+**TipsOnPosSales** | **Number** | Tips on POS sales | [optional] 
 
 
 <a name="PayoutStatusEnum"></a>

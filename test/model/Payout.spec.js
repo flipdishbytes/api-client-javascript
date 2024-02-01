@@ -286,6 +286,24 @@
         // expect(instance.TotalThirdPartyFees).to.be(expectedValueLiteral);
       });
 
+      it('should have the property PosSalesAmount (base name: "PosSalesAmount")', function() {
+        // TODO: update the code to test the property PosSalesAmount
+        expect(instance).to.have.property('PosSalesAmount');
+        // expect(instance.PosSalesAmount).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property PosSalesTax (base name: "PosSalesTax")', function() {
+        // TODO: update the code to test the property PosSalesTax
+        expect(instance).to.have.property('PosSalesTax');
+        // expect(instance.PosSalesTax).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property TipsOnPosSales (base name: "TipsOnPosSales")', function() {
+        // TODO: update the code to test the property TipsOnPosSales
+        expect(instance).to.have.property('TipsOnPosSales');
+        // expect(instance.TipsOnPosSales).to.be(expectedValueLiteral);
+      });
+
     });
   });
 

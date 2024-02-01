@@ -137,6 +137,12 @@
         obj.DeliveryIntegrationTipFee = ApiClient.convertToType(data['DeliveryIntegrationTipFee'], 'Number');
       if (data.hasOwnProperty('TotalThirdPartyFees'))
         obj.TotalThirdPartyFees = ApiClient.convertToType(data['TotalThirdPartyFees'], 'Number');
+      if (data.hasOwnProperty('PosSalesAmount'))
+        obj.PosSalesAmount = ApiClient.convertToType(data['PosSalesAmount'], 'Number');
+      if (data.hasOwnProperty('PosSalesTax'))
+        obj.PosSalesTax = ApiClient.convertToType(data['PosSalesTax'], 'Number');
+      if (data.hasOwnProperty('TipsOnPosSales'))
+        obj.TipsOnPosSales = ApiClient.convertToType(data['TipsOnPosSales'], 'Number');
     }
     return obj;
   }
@@ -386,6 +392,24 @@
    * @member {Number} TotalThirdPartyFees
    */
   exports.prototype.TotalThirdPartyFees = undefined;
+
+  /**
+   * POS sales amount
+   * @member {Number} PosSalesAmount
+   */
+  exports.prototype.PosSalesAmount = undefined;
+
+  /**
+   * POS sales tax
+   * @member {Number} PosSalesTax
+   */
+  exports.prototype.PosSalesTax = undefined;
+
+  /**
+   * Tips on POS sales
+   * @member {Number} TipsOnPosSales
+   */
+  exports.prototype.TipsOnPosSales = undefined;
 
 
 
