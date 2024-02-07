@@ -75,6 +75,8 @@
         obj.IsEnabled = ApiClient.convertToType(data['IsEnabled'], 'Boolean');
       if (data.hasOwnProperty('StoreIds'))
         obj.StoreIds = ApiClient.convertToType(data['StoreIds'], ['Number']);
+      if (data.hasOwnProperty('AppId'))
+        obj.AppId = ApiClient.convertToType(data['AppId'], 'String');
     }
     return obj;
   }
@@ -138,6 +140,12 @@
    * @member {Array.<Number>} StoreIds
    */
   exports.prototype.StoreIds = undefined;
+
+  /**
+   * The app that this campaign belongs to.
+   * @member {String} AppId
+   */
+  exports.prototype.AppId = undefined;
 
 
   return exports;

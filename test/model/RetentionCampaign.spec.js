@@ -118,6 +118,12 @@
         // expect(instance.StoreIds).to.be(expectedValueLiteral);
       });
 
+      it('should have the property AppId (base name: "AppId")', function() {
+        // TODO: update the code to test the property AppId
+        expect(instance).to.have.property('AppId');
+        // expect(instance.AppId).to.be(expectedValueLiteral);
+      });
+
     });
   });
 

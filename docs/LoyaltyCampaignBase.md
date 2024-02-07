@@ -13,5 +13,6 @@ Name | Type | Description | Notes
 **IncludeExistingOrders** | **Boolean** | Campaign will apply to existing orders | [optional] 
 **IsEnabled** | **Boolean** | Is campaign enabled | [optional] 
 **StoreIds** | **[Number]** | Ids of stores this campaign applies to | [optional] 
+**AppId** | **String** | The app that this campaign belongs to. | [optional] 
 
 
