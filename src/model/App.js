@@ -768,6 +768,12 @@
     EditServiceChargeConfigurations: "EditServiceChargeConfigurations",
 
     /**
+     * value: "EditStoreDeliveryZoneFees"
+     * @const
+     */
+    EditStoreDeliveryZoneFees: "EditStoreDeliveryZoneFees",
+
+    /**
      * value: "ViewHydraConfig"
      * @const
      */
