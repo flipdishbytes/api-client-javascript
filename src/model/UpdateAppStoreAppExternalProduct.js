@@ -38,7 +38,6 @@
 
   /**
    * Constructs a new <code>UpdateAppStoreAppExternalProduct</code>.
-   * Update App store app external product id
    * @alias module:model/UpdateAppStoreAppExternalProduct
    * @class
    */
@@ -62,7 +61,6 @@
   }
 
   /**
-   * The external product id
    * @member {String} ExternalProductId
    */
   exports.prototype.ExternalProductId = undefined;

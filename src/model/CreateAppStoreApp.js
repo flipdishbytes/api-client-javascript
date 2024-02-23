@@ -38,17 +38,16 @@
 
   /**
    * Constructs a new <code>CreateAppStoreApp</code>.
-   * Create App store app
    * @alias module:model/CreateAppStoreApp
    * @class
-   * @param Details {String} Details
-   * @param ConfigurationType {module:model/CreateAppStoreApp.ConfigurationTypeEnum} Configuration type  <example>External link</example><example>Flipdish hosted</example>
-   * @param StoreSelectorType {module:model/CreateAppStoreApp.StoreSelectorTypeEnum} Store selector type
-   * @param PermissionsType {module:model/CreateAppStoreApp.PermissionsTypeEnum} Permissions type
-   * @param Name {String} Name
-   * @param Description {String} Description
-   * @param Categories {Array.<module:model/CreateAppStoreApp.CategoriesEnum>} Categories
-   * @param Countries {Array.<module:model/CreateAppStoreApp.CountriesEnum>} Countries
+   * @param Details {String} 
+   * @param ConfigurationType {module:model/CreateAppStoreApp.ConfigurationTypeEnum} 
+   * @param StoreSelectorType {module:model/CreateAppStoreApp.StoreSelectorTypeEnum} 
+   * @param PermissionsType {module:model/CreateAppStoreApp.PermissionsTypeEnum} 
+   * @param Name {String} 
+   * @param Description {String} 
+   * @param Categories {Array.<module:model/CreateAppStoreApp.CategoriesEnum>} 
+   * @param Countries {Array.<module:model/CreateAppStoreApp.CountriesEnum>} 
    */
   var exports = function(Details, ConfigurationType, StoreSelectorType, PermissionsType, Name, Description, Categories, Countries) {
     this.Details = Details;
@@ -112,109 +111,91 @@
   }
 
   /**
-   * Details
    * @member {String} Details
    */
   exports.prototype.Details = undefined;
 
   /**
-   * Configuration type  <example>External link</example><example>Flipdish hosted</example>
    * @member {module:model/CreateAppStoreApp.ConfigurationTypeEnum} ConfigurationType
    */
   exports.prototype.ConfigurationType = undefined;
 
   /**
-   * Store selector type
    * @member {module:model/CreateAppStoreApp.StoreSelectorTypeEnum} StoreSelectorType
    */
   exports.prototype.StoreSelectorType = undefined;
 
   /**
-   * Field groups
    * @member {Array.<module:model/FieldGroup>} FieldGroups
    */
   exports.prototype.FieldGroups = undefined;
 
   /**
-   * Setup instructions
    * @member {String} SetupInstructions
    */
   exports.prototype.SetupInstructions = undefined;
 
   /**
-   * External setup link
    * @member {String} ExternalSetupLink
    */
   exports.prototype.ExternalSetupLink = undefined;
 
   /**
-   * Teammate app access level
    * @member {module:model/CreateAppStoreApp.TeammateAppAccessLevelEnum} TeammateAppAccessLevel
    */
   exports.prototype.TeammateAppAccessLevel = undefined;
 
   /**
-   * Permissions type
    * @member {module:model/CreateAppStoreApp.PermissionsTypeEnum} PermissionsType
    */
   exports.prototype.PermissionsType = undefined;
 
   /**
-   * Support information
    * @member {module:model/AppStoreAppSupportInfo} Support
    */
   exports.prototype.Support = undefined;
 
   /**
-   * Action URL for external functions, used for handling Portal configuration action buttons
    * @member {String} ExternalFunctionActionUrl
    */
   exports.prototype.ExternalFunctionActionUrl = undefined;
 
   /**
-   * Signing key for external function action calls
    * @member {String} ExternalFunctionSignatureKey
    */
   exports.prototype.ExternalFunctionSignatureKey = undefined;
 
   /**
-   * Is Paid
    * @member {Boolean} IsPaid
    */
   exports.prototype.IsPaid = undefined;
 
   /**
-   * Name
    * @member {String} Name
    */
   exports.prototype.Name = undefined;
 
   /**
-   * Description
    * @member {String} Description
    */
   exports.prototype.Description = undefined;
 
   /**
-   * Is application enabled
    * @member {Boolean} IsEnabled
    */
   exports.prototype.IsEnabled = undefined;
 
   /**
-   * Categories
    * @member {Array.<module:model/CreateAppStoreApp.CategoriesEnum>} Categories
    */
   exports.prototype.Categories = undefined;
 
   /**
-   * Countries
    * @member {Array.<module:model/CreateAppStoreApp.CountriesEnum>} Countries
    */
   exports.prototype.Countries = undefined;
 
   /**
-   * Developer Name
    * @member {String} DeveloperName
    */
   exports.prototype.DeveloperName = undefined;

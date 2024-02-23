@@ -38,11 +38,10 @@
 
   /**
    * Constructs a new <code>UpdateAppStoreAppConfigurationWebhookDTO</code>.
-   * App store app configuration webhook event
    * @alias module:model/UpdateAppStoreAppConfigurationWebhookDTO
    * @class
-   * @param Id {String} Unique App store app configuration id
-   * @param IsEnabled {Boolean} Is enabled
+   * @param Id {String} 
+   * @param IsEnabled {Boolean} 
    */
   var exports = function(Id, IsEnabled) {
     this.Id = Id;
@@ -72,25 +71,21 @@
   }
 
   /**
-   * Unique App store app configuration id
    * @member {String} Id
    */
   exports.prototype.Id = undefined;
 
   /**
-   * Is enabled
    * @member {Boolean} IsEnabled
    */
   exports.prototype.IsEnabled = undefined;
 
   /**
-   * Store id's
    * @member {Array.<Number>} StoreIds
    */
   exports.prototype.StoreIds = undefined;
 
   /**
-   * Settings
    * @member {Array.<module:model/Setting>} Settings
    */
   exports.prototype.Settings = undefined;

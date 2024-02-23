@@ -3,18 +3,18 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **String** | Unique App store app configuration id | 
-**AppId** | **String** | App Id | 
-**IsEnabled** | **Boolean** | Is enabled | 
-**Stores** | [**[ConfiguredStore]**](ConfiguredStore.md) | List of stores | 
-**ConfigurationType** | **String** | Configuration type | 
-**StoreSelectorType** | **String** | Store selector type | 
-**Internal** | **Boolean** | Internal | 
-**AppStoreAppId** | **String** | Unique App store app id | 
-**Name** | **String** | Name of Appstore app | 
-**Description** | **String** | Description | 
-**Logo** | **String** | Logo | [optional] 
-**DeveloperName** | **String** | Developer name | [optional] 
+**Id** | **String** |  | 
+**AppId** | **String** |  | 
+**IsEnabled** | **Boolean** |  | 
+**Stores** | [**[ConfiguredStore]**](ConfiguredStore.md) |  | 
+**ConfigurationType** | **String** |  | 
+**StoreSelectorType** | **String** |  | 
+**Internal** | **Boolean** |  | 
+**AppStoreAppId** | **String** |  | 
+**Name** | **String** |  | 
+**Description** | **String** |  | 
+**Logo** | **String** |  | [optional] 
+**DeveloperName** | **String** |  | [optional] 
 
 
 <a name="ConfigurationTypeEnum"></a>

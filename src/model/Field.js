@@ -38,14 +38,13 @@
 
   /**
    * Constructs a new <code>Field</code>.
-   * Field
    * @alias module:model/Field
    * @class
-   * @param Name {String} Name
-   * @param Description {String} Description
-   * @param Key {String} Key
-   * @param Position {Number} Position
-   * @param FieldType {module:model/Field.FieldTypeEnum} Field Type
+   * @param Name {String} 
+   * @param Description {String} 
+   * @param Key {String} 
+   * @param Position {Number} 
+   * @param FieldType {module:model/Field.FieldTypeEnum} 
    */
   var exports = function(Name, Description, Key, Position, FieldType) {
     this.Name = Name;
@@ -90,61 +89,51 @@
   }
 
   /**
-   * Name
    * @member {String} Name
    */
   exports.prototype.Name = undefined;
 
   /**
-   * Description
    * @member {String} Description
    */
   exports.prototype.Description = undefined;
 
   /**
-   * Key
    * @member {String} Key
    */
   exports.prototype.Key = undefined;
 
   /**
-   * Tooltip
    * @member {String} Tooltip
    */
   exports.prototype.Tooltip = undefined;
 
   /**
-   * Position
    * @member {Number} Position
    */
   exports.prototype.Position = undefined;
 
   /**
-   * Default Value
    * @member {String} DefaultValue
    */
   exports.prototype.DefaultValue = undefined;
 
   /**
-   * Valid Values  <remarks>Used typically for dropdown/select</remarks>
    * @member {Array.<module:model/ValidValue>} ValidValues
    */
   exports.prototype.ValidValues = undefined;
 
   /**
-   * Validation Regex
    * @member {String} ValidationRegex
    */
   exports.prototype.ValidationRegex = undefined;
 
   /**
-   * Field Type
    * @member {module:model/Field.FieldTypeEnum} FieldType
    */
   exports.prototype.FieldType = undefined;
 
   /**
-   * Is this field only editable by Flipdish?
    * @member {Boolean} IsFlipdishRestricted
    */
   exports.prototype.IsFlipdishRestricted = undefined;

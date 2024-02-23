@@ -3,16 +3,16 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **String** | Unique App store app id | 
-**VerificationStatus** | **String** | Application verification status | 
-**Logo** | **String** | Logo | [optional] 
-**Internal** | **Boolean** | Internal | 
-**Name** | **String** | Name | 
-**Description** | **String** | Description | 
-**IsEnabled** | **Boolean** | Is application enabled | [optional] 
-**Categories** | **[String]** | Categories | 
-**Countries** | **[String]** | Countries | 
-**DeveloperName** | **String** | Developer Name | [optional] 
+**Id** | **String** |  | 
+**VerificationStatus** | **String** |  | 
+**Logo** | **String** |  | [optional] 
+**Internal** | **Boolean** |  | 
+**Name** | **String** |  | 
+**Description** | **String** |  | 
+**IsEnabled** | **Boolean** |  | [optional] 
+**Categories** | **[String]** |  | 
+**Countries** | **[String]** |  | 
+**DeveloperName** | **String** |  | [optional] 
 
 
 <a name="VerificationStatusEnum"></a>

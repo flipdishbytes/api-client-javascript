@@ -38,7 +38,6 @@
 
   /**
    * Constructs a new <code>AddAppStoreSubscriptionRequest</code>.
-   * Add subscription
    * @alias module:model/AddAppStoreSubscriptionRequest
    * @class
    */
@@ -64,13 +63,11 @@
   }
 
   /**
-   * Store ids to update
    * @member {Array.<Number>} StoreIds
    */
   exports.prototype.StoreIds = undefined;
 
   /**
-   * Email (for subscription setup) - optional, only required for admin access
    * @member {String} SubscriptionAccountEmail
    */
   exports.prototype.SubscriptionAccountEmail = undefined;

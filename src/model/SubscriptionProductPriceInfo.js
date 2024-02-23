@@ -38,7 +38,6 @@
 
   /**
    * Constructs a new <code>SubscriptionProductPriceInfo</code>.
-   * Price info
    * @alias module:model/SubscriptionProductPriceInfo
    * @class
    */
@@ -66,19 +65,16 @@
   }
 
   /**
-   * Price amount
    * @member {Number} Amount
    */
   exports.prototype.Amount = undefined;
 
   /**
-   * Currency code
    * @member {String} Currency
    */
   exports.prototype.Currency = undefined;
 
   /**
-   * Scope (eg. per store or per whitelabel)
    * @member {module:model/SubscriptionProductPriceInfo.ScopeEnum} Scope
    */
   exports.prototype.Scope = undefined;

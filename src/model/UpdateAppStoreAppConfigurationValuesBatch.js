@@ -38,7 +38,6 @@
 
   /**
    * Constructs a new <code>UpdateAppStoreAppConfigurationValuesBatch</code>.
-   * Update configuration values for the specified settings only
    * @alias module:model/UpdateAppStoreAppConfigurationValuesBatch
    * @class
    */
@@ -62,7 +61,6 @@
   }
 
   /**
-   * Settings to update
    * @member {Array.<module:model/Setting>} Settings
    */
   exports.prototype.Settings = undefined;

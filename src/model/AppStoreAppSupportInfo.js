@@ -38,7 +38,6 @@
 
   /**
    * Constructs a new <code>AppStoreAppSupportInfo</code>.
-   * App store app support information
    * @alias module:model/AppStoreAppSupportInfo
    * @class
    */
@@ -72,37 +71,31 @@
   }
 
   /**
-   * Privacy policy url
    * @member {String} PrivacyPolicy
    */
   exports.prototype.PrivacyPolicy = undefined;
 
   /**
-   * Terms of use url
    * @member {String} TermsOfUse
    */
   exports.prototype.TermsOfUse = undefined;
 
   /**
-   * Company website url
    * @member {String} CompanyWebsite
    */
   exports.prototype.CompanyWebsite = undefined;
 
   /**
-   * Learn more url
    * @member {String} LearnMore
    */
   exports.prototype.LearnMore = undefined;
 
   /**
-   * Installation message
    * @member {String} InstallationMessage
    */
   exports.prototype.InstallationMessage = undefined;
 
   /**
-   * Support email
    * @member {String} SupportEmail
    */
   exports.prototype.SupportEmail = undefined;

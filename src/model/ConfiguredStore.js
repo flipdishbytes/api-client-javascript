@@ -38,7 +38,6 @@
 
   /**
    * Constructs a new <code>ConfiguredStore</code>.
-   * Configured stores
    * @alias module:model/ConfiguredStore
    * @class
    */
@@ -64,13 +63,11 @@
   }
 
   /**
-   * Store id
    * @member {Number} StoreId
    */
   exports.prototype.StoreId = undefined;
 
   /**
-   * Name of store
    * @member {String} Name
    */
   exports.prototype.Name = undefined;

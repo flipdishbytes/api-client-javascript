@@ -38,7 +38,6 @@
 
   /**
    * Constructs a new <code>Setting</code>.
-   * Setting
    * @alias module:model/Setting
    * @class
    */
@@ -64,13 +63,11 @@
   }
 
   /**
-   * Key
    * @member {String} Key
    */
   exports.prototype.Key = undefined;
 
   /**
-   * Value
    * @member {String} Value
    */
   exports.prototype.Value = undefined;

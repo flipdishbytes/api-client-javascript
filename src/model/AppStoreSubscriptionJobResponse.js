@@ -38,7 +38,6 @@
 
   /**
    * Constructs a new <code>AppStoreSubscriptionJobResponse</code>.
-   * Subscription change job can be longer running, this contains job information
    * @alias module:model/AppStoreSubscriptionJobResponse
    * @class
    */
@@ -62,7 +61,6 @@
   }
 
   /**
-   * Subscription change job id
    * @member {String} SubscriptionChangeJobId
    */
   exports.prototype.SubscriptionChangeJobId = undefined;

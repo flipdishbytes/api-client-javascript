@@ -38,7 +38,6 @@
 
   /**
    * Constructs a new <code>AppStoreSubscriptionItem</code>.
-   * Subscription list item
    * @alias module:model/AppStoreSubscriptionItem
    * @class
    */
@@ -72,37 +71,31 @@
   }
 
   /**
-   * ExternalSubscriptionId
    * @member {String} ExternalSubscriptionId
    */
   exports.prototype.ExternalSubscriptionId = undefined;
 
   /**
-   * StoreIds
    * @member {Array.<Number>} StoreIds
    */
   exports.prototype.StoreIds = undefined;
 
   /**
-   * UserId
    * @member {Number} UserId
    */
   exports.prototype.UserId = undefined;
 
   /**
-   * UserEmail
    * @member {String} UserEmail
    */
   exports.prototype.UserEmail = undefined;
 
   /**
-   * Status
    * @member {String} Status
    */
   exports.prototype.Status = undefined;
 
   /**
-   * SubscriptionChangeJobId
    * @member {String} SubscriptionChangeJobId
    */
   exports.prototype.SubscriptionChangeJobId = undefined;

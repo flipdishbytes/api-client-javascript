@@ -3,6 +3,6 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Settings** | [**[Setting]**](Setting.md) | Settings to update | [optional] 
+**Settings** | [**[Setting]**](Setting.md) |  | [optional] 
 
 

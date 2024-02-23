@@ -38,21 +38,20 @@
 
   /**
    * Constructs a new <code>AppStoreApp</code>.
-   * App store app
    * @alias module:model/AppStoreApp
    * @class
-   * @param Id {String} Unique App store app id
-   * @param VerificationStatus {module:model/AppStoreApp.VerificationStatusEnum} Application verification status
-   * @param OAuthAppId {String} OAuth App identifier
-   * @param Internal {Boolean} Internal
-   * @param Details {String} Details
-   * @param ConfigurationType {module:model/AppStoreApp.ConfigurationTypeEnum} Configuration type  <example>External link</example><example>Flipdish hosted</example>
-   * @param StoreSelectorType {module:model/AppStoreApp.StoreSelectorTypeEnum} Store selector type
-   * @param PermissionsType {module:model/AppStoreApp.PermissionsTypeEnum} Permissions type
-   * @param Name {String} Name
-   * @param Description {String} Description
-   * @param Categories {Array.<module:model/AppStoreApp.CategoriesEnum>} Categories
-   * @param Countries {Array.<module:model/AppStoreApp.CountriesEnum>} Countries
+   * @param Id {String} 
+   * @param VerificationStatus {module:model/AppStoreApp.VerificationStatusEnum} 
+   * @param OAuthAppId {String} 
+   * @param Internal {Boolean} 
+   * @param Details {String} 
+   * @param ConfigurationType {module:model/AppStoreApp.ConfigurationTypeEnum} 
+   * @param StoreSelectorType {module:model/AppStoreApp.StoreSelectorTypeEnum} 
+   * @param PermissionsType {module:model/AppStoreApp.PermissionsTypeEnum} 
+   * @param Name {String} 
+   * @param Description {String} 
+   * @param Categories {Array.<module:model/AppStoreApp.CategoriesEnum>} 
+   * @param Countries {Array.<module:model/AppStoreApp.CountriesEnum>} 
    */
   var exports = function(Id, VerificationStatus, OAuthAppId, Internal, Details, ConfigurationType, StoreSelectorType, PermissionsType, Name, Description, Categories, Countries) {
     this.Id = Id;
@@ -130,139 +129,116 @@
   }
 
   /**
-   * Unique App store app id
    * @member {String} Id
    */
   exports.prototype.Id = undefined;
 
   /**
-   * Application verification status
    * @member {module:model/AppStoreApp.VerificationStatusEnum} VerificationStatus
    */
   exports.prototype.VerificationStatus = undefined;
 
   /**
-   * Logo
    * @member {String} Logo
    */
   exports.prototype.Logo = undefined;
 
   /**
-   * OAuth App identifier
    * @member {String} OAuthAppId
    */
   exports.prototype.OAuthAppId = undefined;
 
   /**
-   * Internal
    * @member {Boolean} Internal
    */
   exports.prototype.Internal = undefined;
 
   /**
-   * Details
    * @member {String} Details
    */
   exports.prototype.Details = undefined;
 
   /**
-   * Configuration type  <example>External link</example><example>Flipdish hosted</example>
    * @member {module:model/AppStoreApp.ConfigurationTypeEnum} ConfigurationType
    */
   exports.prototype.ConfigurationType = undefined;
 
   /**
-   * Store selector type
    * @member {module:model/AppStoreApp.StoreSelectorTypeEnum} StoreSelectorType
    */
   exports.prototype.StoreSelectorType = undefined;
 
   /**
-   * Field groups
    * @member {Array.<module:model/FieldGroup>} FieldGroups
    */
   exports.prototype.FieldGroups = undefined;
 
   /**
-   * Setup instructions
    * @member {String} SetupInstructions
    */
   exports.prototype.SetupInstructions = undefined;
 
   /**
-   * External setup link
    * @member {String} ExternalSetupLink
    */
   exports.prototype.ExternalSetupLink = undefined;
 
   /**
-   * Teammate app access level
    * @member {module:model/AppStoreApp.TeammateAppAccessLevelEnum} TeammateAppAccessLevel
    */
   exports.prototype.TeammateAppAccessLevel = undefined;
 
   /**
-   * Permissions type
    * @member {module:model/AppStoreApp.PermissionsTypeEnum} PermissionsType
    */
   exports.prototype.PermissionsType = undefined;
 
   /**
-   * Support information
    * @member {module:model/AppStoreAppSupportInfo} Support
    */
   exports.prototype.Support = undefined;
 
   /**
-   * Action URL for external functions, used for handling Portal configuration action buttons
    * @member {String} ExternalFunctionActionUrl
    */
   exports.prototype.ExternalFunctionActionUrl = undefined;
 
   /**
-   * Signing key for external function action calls
    * @member {String} ExternalFunctionSignatureKey
    */
   exports.prototype.ExternalFunctionSignatureKey = undefined;
 
   /**
-   * Is Paid
    * @member {Boolean} IsPaid
    */
   exports.prototype.IsPaid = undefined;
 
   /**
-   * Name
    * @member {String} Name
    */
   exports.prototype.Name = undefined;
 
   /**
-   * Description
    * @member {String} Description
    */
   exports.prototype.Description = undefined;
 
   /**
-   * Is application enabled
    * @member {Boolean} IsEnabled
    */
   exports.prototype.IsEnabled = undefined;
 
   /**
-   * Categories
    * @member {Array.<module:model/AppStoreApp.CategoriesEnum>} Categories
    */
   exports.prototype.Categories = undefined;
 
   /**
-   * Countries
    * @member {Array.<module:model/AppStoreApp.CountriesEnum>} Countries
    */
   exports.prototype.Countries = undefined;
 
   /**
-   * Developer Name
    * @member {String} DeveloperName
    */
   exports.prototype.DeveloperName = undefined;

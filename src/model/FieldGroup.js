@@ -38,11 +38,10 @@
 
   /**
    * Constructs a new <code>FieldGroup</code>.
-   * Field group
    * @alias module:model/FieldGroup
    * @class
-   * @param Name {String} Name
-   * @param Position {Number} Position  <remarks>Position order in the field groups to display</remarks>
+   * @param Name {String} 
+   * @param Position {Number} 
    */
   var exports = function(Name, Position) {
     this.Name = Name;
@@ -74,31 +73,26 @@
   }
 
   /**
-   * Name
    * @member {String} Name
    */
   exports.prototype.Name = undefined;
 
   /**
-   * Description
    * @member {String} Description
    */
   exports.prototype.Description = undefined;
 
   /**
-   * Tooltip  <remarks>Displays on text hover</remarks>
    * @member {String} Tooltip
    */
   exports.prototype.Tooltip = undefined;
 
   /**
-   * Position  <remarks>Position order in the field groups to display</remarks>
    * @member {Number} Position
    */
   exports.prototype.Position = undefined;
 
   /**
-   * Fields
    * @member {Array.<module:model/Field>} Fields
    */
   exports.prototype.Fields = undefined;

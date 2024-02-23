@@ -38,16 +38,15 @@
 
   /**
    * Constructs a new <code>AppStoreAppSummary</code>.
-   * App store app summary information
    * @alias module:model/AppStoreAppSummary
    * @class
-   * @param Id {String} Unique App store app id
-   * @param VerificationStatus {module:model/AppStoreAppSummary.VerificationStatusEnum} Application verification status
-   * @param Internal {Boolean} Internal
-   * @param Name {String} Name
-   * @param Description {String} Description
-   * @param Categories {Array.<module:model/AppStoreAppSummary.CategoriesEnum>} Categories
-   * @param Countries {Array.<module:model/AppStoreAppSummary.CountriesEnum>} Countries
+   * @param Id {String} 
+   * @param VerificationStatus {module:model/AppStoreAppSummary.VerificationStatusEnum} 
+   * @param Internal {Boolean} 
+   * @param Name {String} 
+   * @param Description {String} 
+   * @param Categories {Array.<module:model/AppStoreAppSummary.CategoriesEnum>} 
+   * @param Countries {Array.<module:model/AppStoreAppSummary.CountriesEnum>} 
    */
   var exports = function(Id, VerificationStatus, Internal, Name, Description, Categories, Countries) {
     this.Id = Id;
@@ -94,61 +93,51 @@
   }
 
   /**
-   * Unique App store app id
    * @member {String} Id
    */
   exports.prototype.Id = undefined;
 
   /**
-   * Application verification status
    * @member {module:model/AppStoreAppSummary.VerificationStatusEnum} VerificationStatus
    */
   exports.prototype.VerificationStatus = undefined;
 
   /**
-   * Logo
    * @member {String} Logo
    */
   exports.prototype.Logo = undefined;
 
   /**
-   * Internal
    * @member {Boolean} Internal
    */
   exports.prototype.Internal = undefined;
 
   /**
-   * Name
    * @member {String} Name
    */
   exports.prototype.Name = undefined;
 
   /**
-   * Description
    * @member {String} Description
    */
   exports.prototype.Description = undefined;
 
   /**
-   * Is application enabled
    * @member {Boolean} IsEnabled
    */
   exports.prototype.IsEnabled = undefined;
 
   /**
-   * Categories
    * @member {Array.<module:model/AppStoreAppSummary.CategoriesEnum>} Categories
    */
   exports.prototype.Categories = undefined;
 
   /**
-   * Countries
    * @member {Array.<module:model/AppStoreAppSummary.CountriesEnum>} Countries
    */
   exports.prototype.Countries = undefined;
 
   /**
-   * Developer Name
    * @member {String} DeveloperName
    */
   exports.prototype.DeveloperName = undefined;

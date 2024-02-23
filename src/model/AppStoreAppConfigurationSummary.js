@@ -38,19 +38,18 @@
 
   /**
    * Constructs a new <code>AppStoreAppConfigurationSummary</code>.
-   * App store app configuration summary information
    * @alias module:model/AppStoreAppConfigurationSummary
    * @class
-   * @param Id {String} Unique App store app configuration id
-   * @param AppId {String} App Id
-   * @param IsEnabled {Boolean} Is enabled
-   * @param Stores {Array.<module:model/ConfiguredStore>} List of stores
-   * @param ConfigurationType {module:model/AppStoreAppConfigurationSummary.ConfigurationTypeEnum} Configuration type
-   * @param StoreSelectorType {module:model/AppStoreAppConfigurationSummary.StoreSelectorTypeEnum} Store selector type
-   * @param Internal {Boolean} Internal
-   * @param AppStoreAppId {String} Unique App store app id
-   * @param Name {String} Name of Appstore app
-   * @param Description {String} Description
+   * @param Id {String} 
+   * @param AppId {String} 
+   * @param IsEnabled {Boolean} 
+   * @param Stores {Array.<module:model/ConfiguredStore>} 
+   * @param ConfigurationType {module:model/AppStoreAppConfigurationSummary.ConfigurationTypeEnum} 
+   * @param StoreSelectorType {module:model/AppStoreAppConfigurationSummary.StoreSelectorTypeEnum} 
+   * @param Internal {Boolean} 
+   * @param AppStoreAppId {String} 
+   * @param Name {String} 
+   * @param Description {String} 
    */
   var exports = function(Id, AppId, IsEnabled, Stores, ConfigurationType, StoreSelectorType, Internal, AppStoreAppId, Name, Description) {
     this.Id = Id;
@@ -104,73 +103,61 @@
   }
 
   /**
-   * Unique App store app configuration id
    * @member {String} Id
    */
   exports.prototype.Id = undefined;
 
   /**
-   * App Id
    * @member {String} AppId
    */
   exports.prototype.AppId = undefined;
 
   /**
-   * Is enabled
    * @member {Boolean} IsEnabled
    */
   exports.prototype.IsEnabled = undefined;
 
   /**
-   * List of stores
    * @member {Array.<module:model/ConfiguredStore>} Stores
    */
   exports.prototype.Stores = undefined;
 
   /**
-   * Configuration type
    * @member {module:model/AppStoreAppConfigurationSummary.ConfigurationTypeEnum} ConfigurationType
    */
   exports.prototype.ConfigurationType = undefined;
 
   /**
-   * Store selector type
    * @member {module:model/AppStoreAppConfigurationSummary.StoreSelectorTypeEnum} StoreSelectorType
    */
   exports.prototype.StoreSelectorType = undefined;
 
   /**
-   * Internal
    * @member {Boolean} Internal
    */
   exports.prototype.Internal = undefined;
 
   /**
-   * Unique App store app id
    * @member {String} AppStoreAppId
    */
   exports.prototype.AppStoreAppId = undefined;
 
   /**
-   * Name of Appstore app
    * @member {String} Name
    */
   exports.prototype.Name = undefined;
 
   /**
-   * Description
    * @member {String} Description
    */
   exports.prototype.Description = undefined;
 
   /**
-   * Logo
    * @member {String} Logo
    */
   exports.prototype.Logo = undefined;
 
   /**
-   * Developer name
    * @member {String} DeveloperName
    */
   exports.prototype.DeveloperName = undefined;

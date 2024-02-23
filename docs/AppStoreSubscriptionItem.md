@@ -3,11 +3,11 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**ExternalSubscriptionId** | **String** | ExternalSubscriptionId | [optional] 
-**StoreIds** | **[Number]** | StoreIds | [optional] 
-**UserId** | **Number** | UserId | [optional] 
-**UserEmail** | **String** | UserEmail | [optional] 
-**Status** | **String** | Status | [optional] 
-**SubscriptionChangeJobId** | **String** | SubscriptionChangeJobId | [optional] 
+**ExternalSubscriptionId** | **String** |  | [optional] 
+**StoreIds** | **[Number]** |  | [optional] 
+**UserId** | **Number** |  | [optional] 
+**UserEmail** | **String** |  | [optional] 
+**Status** | **String** |  | [optional] 
+**SubscriptionChangeJobId** | **String** |  | [optional] 
 
 

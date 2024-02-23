@@ -38,10 +38,9 @@
 
   /**
    * Constructs a new <code>UpdateAppStoreAppConfiguration</code>.
-   * Update App store app configuration
    * @alias module:model/UpdateAppStoreAppConfiguration
    * @class
-   * @param IsEnabled {Boolean} Is enabled
+   * @param IsEnabled {Boolean} 
    */
   var exports = function(IsEnabled) {
     this.IsEnabled = IsEnabled;
@@ -68,19 +67,16 @@
   }
 
   /**
-   * Is enabled
    * @member {Boolean} IsEnabled
    */
   exports.prototype.IsEnabled = undefined;
 
   /**
-   * Stores id's
    * @member {Array.<Number>} StoreIds
    */
   exports.prototype.StoreIds = undefined;
 
   /**
-   * Settings
    * @member {Array.<module:model/Setting>} Settings
    */
   exports.prototype.Settings = undefined;

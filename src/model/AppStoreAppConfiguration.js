@@ -38,24 +38,23 @@
 
   /**
    * Constructs a new <code>AppStoreAppConfiguration</code>.
-   * App store app configurations
    * @alias module:model/AppStoreAppConfiguration
    * @class
-   * @param Id {String} Unique App store app configuration id
-   * @param AppId {String} App id
-   * @param AppStoreAppId {String} App store app id
-   * @param IsEnabled {Boolean} Is enabled
-   * @param VerificationStatus {module:model/AppStoreAppConfiguration.VerificationStatusEnum} Application verification status
-   * @param OAuthAppId {String} OAuth App identifier
-   * @param Internal {Boolean} Internal
-   * @param Details {String} Details
-   * @param ConfigurationType {module:model/AppStoreAppConfiguration.ConfigurationTypeEnum} Configuration type  <example>External link</example><example>Flipdish hosted</example>
-   * @param StoreSelectorType {module:model/AppStoreAppConfiguration.StoreSelectorTypeEnum} Store selector type
-   * @param PermissionsType {module:model/AppStoreAppConfiguration.PermissionsTypeEnum} Permissions type
-   * @param Name {String} Name
-   * @param Description {String} Description
-   * @param Categories {Array.<module:model/AppStoreAppConfiguration.CategoriesEnum>} Categories
-   * @param Countries {Array.<module:model/AppStoreAppConfiguration.CountriesEnum>} Countries
+   * @param Id {String} 
+   * @param AppId {String} 
+   * @param AppStoreAppId {String} 
+   * @param IsEnabled {Boolean} 
+   * @param VerificationStatus {module:model/AppStoreAppConfiguration.VerificationStatusEnum} 
+   * @param OAuthAppId {String} 
+   * @param Internal {Boolean} 
+   * @param Details {String} 
+   * @param ConfigurationType {module:model/AppStoreAppConfiguration.ConfigurationTypeEnum} 
+   * @param StoreSelectorType {module:model/AppStoreAppConfiguration.StoreSelectorTypeEnum} 
+   * @param PermissionsType {module:model/AppStoreAppConfiguration.PermissionsTypeEnum} 
+   * @param Name {String} 
+   * @param Description {String} 
+   * @param Categories {Array.<module:model/AppStoreAppConfiguration.CategoriesEnum>} 
+   * @param Countries {Array.<module:model/AppStoreAppConfiguration.CountriesEnum>} 
    */
   var exports = function(Id, AppId, AppStoreAppId, IsEnabled, VerificationStatus, OAuthAppId, Internal, Details, ConfigurationType, StoreSelectorType, PermissionsType, Name, Description, Categories, Countries) {
     this.Id = Id;
@@ -144,163 +143,136 @@
   }
 
   /**
-   * Unique App store app configuration id
    * @member {String} Id
    */
   exports.prototype.Id = undefined;
 
   /**
-   * App id
    * @member {String} AppId
    */
   exports.prototype.AppId = undefined;
 
   /**
-   * App store app id
    * @member {String} AppStoreAppId
    */
   exports.prototype.AppStoreAppId = undefined;
 
   /**
-   * Is enabled
    * @member {Boolean} IsEnabled
    */
   exports.prototype.IsEnabled = undefined;
 
   /**
-   * Stores id's
    * @member {Array.<Number>} StoreIds
    */
   exports.prototype.StoreIds = undefined;
 
   /**
-   * Settings
    * @member {Array.<module:model/Setting>} Settings
    */
   exports.prototype.Settings = undefined;
 
   /**
-   * Application verification status
    * @member {module:model/AppStoreAppConfiguration.VerificationStatusEnum} VerificationStatus
    */
   exports.prototype.VerificationStatus = undefined;
 
   /**
-   * Logo
    * @member {String} Logo
    */
   exports.prototype.Logo = undefined;
 
   /**
-   * OAuth App identifier
    * @member {String} OAuthAppId
    */
   exports.prototype.OAuthAppId = undefined;
 
   /**
-   * Internal
    * @member {Boolean} Internal
    */
   exports.prototype.Internal = undefined;
 
   /**
-   * Details
    * @member {String} Details
    */
   exports.prototype.Details = undefined;
 
   /**
-   * Configuration type  <example>External link</example><example>Flipdish hosted</example>
    * @member {module:model/AppStoreAppConfiguration.ConfigurationTypeEnum} ConfigurationType
    */
   exports.prototype.ConfigurationType = undefined;
 
   /**
-   * Store selector type
    * @member {module:model/AppStoreAppConfiguration.StoreSelectorTypeEnum} StoreSelectorType
    */
   exports.prototype.StoreSelectorType = undefined;
 
   /**
-   * Field groups
    * @member {Array.<module:model/FieldGroup>} FieldGroups
    */
   exports.prototype.FieldGroups = undefined;
 
   /**
-   * Setup instructions
    * @member {String} SetupInstructions
    */
   exports.prototype.SetupInstructions = undefined;
 
   /**
-   * External setup link
    * @member {String} ExternalSetupLink
    */
   exports.prototype.ExternalSetupLink = undefined;
 
   /**
-   * Teammate app access level
    * @member {module:model/AppStoreAppConfiguration.TeammateAppAccessLevelEnum} TeammateAppAccessLevel
    */
   exports.prototype.TeammateAppAccessLevel = undefined;
 
   /**
-   * Permissions type
    * @member {module:model/AppStoreAppConfiguration.PermissionsTypeEnum} PermissionsType
    */
   exports.prototype.PermissionsType = undefined;
 
   /**
-   * Support information
    * @member {module:model/AppStoreAppSupportInfo} Support
    */
   exports.prototype.Support = undefined;
 
   /**
-   * Action URL for external functions, used for handling Portal configuration action buttons
    * @member {String} ExternalFunctionActionUrl
    */
   exports.prototype.ExternalFunctionActionUrl = undefined;
 
   /**
-   * Signing key for external function action calls
    * @member {String} ExternalFunctionSignatureKey
    */
   exports.prototype.ExternalFunctionSignatureKey = undefined;
 
   /**
-   * Is Paid
    * @member {Boolean} IsPaid
    */
   exports.prototype.IsPaid = undefined;
 
   /**
-   * Name
    * @member {String} Name
    */
   exports.prototype.Name = undefined;
 
   /**
-   * Description
    * @member {String} Description
    */
   exports.prototype.Description = undefined;
 
   /**
-   * Categories
    * @member {Array.<module:model/AppStoreAppConfiguration.CategoriesEnum>} Categories
    */
   exports.prototype.Categories = undefined;
 
   /**
-   * Countries
    * @member {Array.<module:model/AppStoreAppConfiguration.CountriesEnum>} Countries
    */
   exports.prototype.Countries = undefined;
 
   /**
-   * Developer Name
    * @member {String} DeveloperName
    */
   exports.prototype.DeveloperName = undefined;

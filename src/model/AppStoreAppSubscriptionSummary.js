@@ -38,7 +38,6 @@
 
   /**
    * Constructs a new <code>AppStoreAppSubscriptionSummary</code>.
-   * App store subscription information
    * @alias module:model/AppStoreAppSubscriptionSummary
    * @class
    */
@@ -68,25 +67,21 @@
   }
 
   /**
-   * Total subscriptions (per the AppId subscription setup)
    * @member {Number} TotalSubscriptions
    */
   exports.prototype.TotalSubscriptions = undefined;
 
   /**
-   * Number of subscriptions configured and enabled
    * @member {Number} UsedSubscriptions
    */
   exports.prototype.UsedSubscriptions = undefined;
 
   /**
-   * Is client setup for subscriptions
    * @member {Boolean} SubscriptionAccountIsSetupForClient
    */
   exports.prototype.SubscriptionAccountIsSetupForClient = undefined;
 
   /**
-   * Available accounts for subscriptions (only if requesting user has enough permissions to see the list, otherwise empty list or null)
    * @member {Array.<module:model/AppStoreAppSubscriptionAccount>} SubscriptionAccounts
    */
   exports.prototype.SubscriptionAccounts = undefined;

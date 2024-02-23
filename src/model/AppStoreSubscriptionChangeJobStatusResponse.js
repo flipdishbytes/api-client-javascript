@@ -38,7 +38,6 @@
 
   /**
    * Constructs a new <code>AppStoreSubscriptionChangeJobStatusResponse</code>.
-   * Subscription change job can be longer running, this contains job information
    * @alias module:model/AppStoreSubscriptionChangeJobStatusResponse
    * @class
    */
@@ -66,19 +65,16 @@
   }
 
   /**
-   * Subscription change job id
    * @member {String} SubscriptionChangeJobId
    */
   exports.prototype.SubscriptionChangeJobId = undefined;
 
   /**
-   * Job Status
    * @member {module:model/AppStoreSubscriptionChangeJobStatusResponse.StatusEnum} Status
    */
   exports.prototype.Status = undefined;
 
   /**
-   * Error message (if any)
    * @member {String} ErrorMessage
    */
   exports.prototype.ErrorMessage = undefined;

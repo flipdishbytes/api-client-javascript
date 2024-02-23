@@ -38,7 +38,6 @@
 
   /**
    * Constructs a new <code>ExecuteConfigurationActionRequest</code>.
-   * Execute Configuration
    * @alias module:model/ExecuteConfigurationActionRequest
    * @class
    */
@@ -64,13 +63,11 @@
   }
 
   /**
-   * Key - of field triggering the action
    * @member {String} Key
    */
   exports.prototype.Key = undefined;
 
   /**
-   * Action for element
    * @member {String} Action
    */
   exports.prototype.Action = undefined;

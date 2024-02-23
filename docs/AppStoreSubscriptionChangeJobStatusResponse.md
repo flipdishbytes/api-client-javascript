@@ -3,9 +3,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**SubscriptionChangeJobId** | **String** | Subscription change job id | [optional] 
-**Status** | **String** | Job Status | [optional] 
-**ErrorMessage** | **String** | Error message (if any) | [optional] 
+**SubscriptionChangeJobId** | **String** |  | [optional] 
+**Status** | **String** |  | [optional] 
+**ErrorMessage** | **String** |  | [optional] 
 
 
 <a name="StatusEnum"></a>

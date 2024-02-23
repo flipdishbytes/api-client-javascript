@@ -38,7 +38,6 @@
 
   /**
    * Constructs a new <code>ExecuteConfigurationActionResult</code>.
-   * Result of configuration action execution
    * @alias module:model/ExecuteConfigurationActionResult
    * @class
    */
@@ -68,25 +67,21 @@
   }
 
   /**
-   * Error message to display to the user (if not empty)
    * @member {String} ErrorMessage
    */
   exports.prototype.ErrorMessage = undefined;
 
   /**
-   * Information message to display to the user (if not empty)
    * @member {String} InfoMessage
    */
   exports.prototype.InfoMessage = undefined;
 
   /**
-   * Redirect user to URL (if not empty)
    * @member {String} RedirectUrl
    */
   exports.prototype.RedirectUrl = undefined;
 
   /**
-   * Redirect target
    * @member {module:model/ExecuteConfigurationActionResult.RedirectTargetEnum} RedirectTarget
    */
   exports.prototype.RedirectTarget = undefined;

@@ -38,7 +38,6 @@
 
   /**
    * Constructs a new <code>AppStoreAppSubscriptionAccount</code>.
-   * Subscription account
    * @alias module:model/AppStoreAppSubscriptionAccount
    * @class
    */
@@ -62,7 +61,6 @@
   }
 
   /**
-   * Email of the account user
    * @member {String} Email
    */
   exports.prototype.Email = undefined;

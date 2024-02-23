@@ -38,7 +38,6 @@
 
   /**
    * Constructs a new <code>AppStoreAppConfigurationsWithSubscriptions</code>.
-   * App store configurations for a given AppId
    * @alias module:model/AppStoreAppConfigurationsWithSubscriptions
    * @class
    */
@@ -66,19 +65,16 @@
   }
 
   /**
-   * Subscription information for the AppId for the AppStoreApp
    * @member {module:model/AppStoreAppSubscriptionSummary} Subscription
    */
   exports.prototype.Subscription = undefined;
 
   /**
-   * Configurations for the AppId for the AppStoreApp
    * @member {Array.<module:model/AppStoreAppConfigurationSummary>} Configurations
    */
   exports.prototype.Configurations = undefined;
 
   /**
-   * Prices
    * @member {Array.<module:model/SubscriptionProductPriceInfo>} Prices
    */
   exports.prototype.Prices = undefined;

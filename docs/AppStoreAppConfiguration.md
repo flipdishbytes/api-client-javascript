@@ -3,33 +3,33 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **String** | Unique App store app configuration id | 
-**AppId** | **String** | App id | 
-**AppStoreAppId** | **String** | App store app id | 
-**IsEnabled** | **Boolean** | Is enabled | 
-**StoreIds** | **[Number]** | Stores id's | [optional] 
-**Settings** | [**[Setting]**](Setting.md) | Settings | [optional] 
-**VerificationStatus** | **String** | Application verification status | 
-**Logo** | **String** | Logo | [optional] 
-**OAuthAppId** | **String** | OAuth App identifier | 
-**Internal** | **Boolean** | Internal | 
-**Details** | **String** | Details | 
-**ConfigurationType** | **String** | Configuration type  <example>External link</example><example>Flipdish hosted</example> | 
-**StoreSelectorType** | **String** | Store selector type | 
-**FieldGroups** | [**[FieldGroup]**](FieldGroup.md) | Field groups | [optional] 
-**SetupInstructions** | **String** | Setup instructions | [optional] 
-**ExternalSetupLink** | **String** | External setup link | [optional] 
-**TeammateAppAccessLevel** | **String** | Teammate app access level | [optional] 
-**PermissionsType** | **String** | Permissions type | 
-**Support** | [**AppStoreAppSupportInfo**](AppStoreAppSupportInfo.md) | Support information | [optional] 
-**ExternalFunctionActionUrl** | **String** | Action URL for external functions, used for handling Portal configuration action buttons | [optional] 
-**ExternalFunctionSignatureKey** | **String** | Signing key for external function action calls | [optional] 
-**IsPaid** | **Boolean** | Is Paid | [optional] 
-**Name** | **String** | Name | 
-**Description** | **String** | Description | 
-**Categories** | **[String]** | Categories | 
-**Countries** | **[String]** | Countries | 
-**DeveloperName** | **String** | Developer Name | [optional] 
+**Id** | **String** |  | 
+**AppId** | **String** |  | 
+**AppStoreAppId** | **String** |  | 
+**IsEnabled** | **Boolean** |  | 
+**StoreIds** | **[Number]** |  | [optional] 
+**Settings** | [**[Setting]**](Setting.md) |  | [optional] 
+**VerificationStatus** | **String** |  | 
+**Logo** | **String** |  | [optional] 
+**OAuthAppId** | **String** |  | 
+**Internal** | **Boolean** |  | 
+**Details** | **String** |  | 
+**ConfigurationType** | **String** |  | 
+**StoreSelectorType** | **String** |  | 
+**FieldGroups** | [**[FieldGroup]**](FieldGroup.md) |  | [optional] 
+**SetupInstructions** | **String** |  | [optional] 
+**ExternalSetupLink** | **String** |  | [optional] 
+**TeammateAppAccessLevel** | **String** |  | [optional] 
+**PermissionsType** | **String** |  | 
+**Support** | [**AppStoreAppSupportInfo**](AppStoreAppSupportInfo.md) |  | [optional] 
+**ExternalFunctionActionUrl** | **String** |  | [optional] 
+**ExternalFunctionSignatureKey** | **String** |  | [optional] 
+**IsPaid** | **Boolean** |  | [optional] 
+**Name** | **String** |  | 
+**Description** | **String** |  | 
+**Categories** | **[String]** |  | 
+**Countries** | **[String]** |  | 
+**DeveloperName** | **String** |  | [optional] 
 
 
 <a name="VerificationStatusEnum"></a>

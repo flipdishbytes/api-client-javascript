@@ -38,7 +38,6 @@
 
   /**
    * Constructs a new <code>UpdateAppStoreSubscriptionRequest</code>.
-   * Update subscription
    * @alias module:model/UpdateAppStoreSubscriptionRequest
    * @class
    */
@@ -62,7 +61,6 @@
   }
 
   /**
-   * Store ids to update
    * @member {Array.<Number>} StoreIds
    */
   exports.prototype.StoreIds = undefined;

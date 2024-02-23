@@ -38,11 +38,10 @@
 
   /**
    * Constructs a new <code>ValidValue</code>.
-   * Valid Value
    * @alias module:model/ValidValue
    * @class
-   * @param Code {String} Code
-   * @param Name {String} Name
+   * @param Code {String} 
+   * @param Name {String} 
    */
   var exports = function(Code, Name) {
     this.Code = Code;
@@ -68,13 +67,11 @@
   }
 
   /**
-   * Code
    * @member {String} Code
    */
   exports.prototype.Code = undefined;
 
   /**
-   * Name
    * @member {String} Name
    */
   exports.prototype.Name = undefined;

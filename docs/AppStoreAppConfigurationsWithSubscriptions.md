@@ -3,8 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Subscription** | [**AppStoreAppSubscriptionSummary**](AppStoreAppSubscriptionSummary.md) | Subscription information for the AppId for the AppStoreApp | [optional] 
-**Configurations** | [**[AppStoreAppConfigurationSummary]**](AppStoreAppConfigurationSummary.md) | Configurations for the AppId for the AppStoreApp | [optional] 
-**Prices** | [**[SubscriptionProductPriceInfo]**](SubscriptionProductPriceInfo.md) | Prices | [optional] 
+**Subscription** | [**AppStoreAppSubscriptionSummary**](AppStoreAppSubscriptionSummary.md) |  | [optional] 
+**Configurations** | [**[AppStoreAppConfigurationSummary]**](AppStoreAppConfigurationSummary.md) |  | [optional] 
+**Prices** | [**[SubscriptionProductPriceInfo]**](SubscriptionProductPriceInfo.md) |  | [optional] 
 
 

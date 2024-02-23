@@ -3,24 +3,24 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Details** | **String** | Details | 
-**ConfigurationType** | **String** | Configuration type  <example>External link</example><example>Flipdish hosted</example> | 
-**StoreSelectorType** | **String** | Store selector type | 
-**FieldGroups** | [**[FieldGroup]**](FieldGroup.md) | Field groups | [optional] 
-**SetupInstructions** | **String** | Setup instructions | [optional] 
-**ExternalSetupLink** | **String** | External setup link | [optional] 
-**TeammateAppAccessLevel** | **String** | Teammate app access level | [optional] 
-**PermissionsType** | **String** | Permissions type | 
-**Support** | [**AppStoreAppSupportInfo**](AppStoreAppSupportInfo.md) | Support information | [optional] 
-**ExternalFunctionActionUrl** | **String** | Action URL for external functions, used for handling Portal configuration action buttons | [optional] 
-**ExternalFunctionSignatureKey** | **String** | Signing key for external function action calls | [optional] 
-**IsPaid** | **Boolean** | Is Paid | [optional] 
-**Name** | **String** | Name | 
-**Description** | **String** | Description | 
-**IsEnabled** | **Boolean** | Is application enabled | [optional] 
-**Categories** | **[String]** | Categories | 
-**Countries** | **[String]** | Countries | 
-**DeveloperName** | **String** | Developer Name | [optional] 
+**Details** | **String** |  | 
+**ConfigurationType** | **String** |  | 
+**StoreSelectorType** | **String** |  | 
+**FieldGroups** | [**[FieldGroup]**](FieldGroup.md) |  | [optional] 
+**SetupInstructions** | **String** |  | [optional] 
+**ExternalSetupLink** | **String** |  | [optional] 
+**TeammateAppAccessLevel** | **String** |  | [optional] 
+**PermissionsType** | **String** |  | 
+**Support** | [**AppStoreAppSupportInfo**](AppStoreAppSupportInfo.md) |  | [optional] 
+**ExternalFunctionActionUrl** | **String** |  | [optional] 
+**ExternalFunctionSignatureKey** | **String** |  | [optional] 
+**IsPaid** | **Boolean** |  | [optional] 
+**Name** | **String** |  | 
+**Description** | **String** |  | 
+**IsEnabled** | **Boolean** |  | [optional] 
+**Categories** | **[String]** |  | 
+**Countries** | **[String]** |  | 
+**DeveloperName** | **String** |  | [optional] 
 
 
 <a name="ConfigurationTypeEnum"></a>
