@@ -11,7 +11,6 @@ Name | Type | Description | Notes
 **VoucherId** | **Number** | Voucher Id | [optional] 
 **Status** | **String** | Voucher Status | [optional] 
 **VoucherType** | **String** | Voucher Type | [optional] 
-**VoucherSubType** | **String** | Voucher Sub Type | [optional] 
 **Currency** | **String** | Currency of the voucher | [optional] 
 **StoreNames** | **[String]** | Stores that this voucher applies to | [optional] 
 **PromotionDetails** | [**PromotionDetails**](PromotionDetails.md) | Promotion details | [optional] 
@@ -36,6 +35,8 @@ Name | Type | Description | Notes
 **StartDate** | **Date** | Voucher Starts On (Time in UTC) | [optional] 
 **ExpiryDate** | **Date** | Voucher Expires On (Time in UTC) | [optional] 
 **ChannelRestrictions** | **[String]** | Limit the channels this voucher can be used on | [optional] 
+**VoucherSubType** | **String** | Voucher Subtype | [optional] 
+**CustomerId** | **Number** | Customer UserID | [optional] 
 
 
 <a name="StatusEnum"></a>
@@ -66,27 +67,6 @@ Name | Type | Description | Notes
 * `AddItem` (value: `"AddItem"`)
 
 * `CreditNote` (value: `"CreditNote"`)
-
-
-
-
-<a name="VoucherSubTypeEnum"></a>
-## Enum: VoucherSubTypeEnum
-
-
-* `None` (value: `"None"`)
-
-* `SignUp` (value: `"SignUp"`)
-
-* `Loyalty` (value: `"Loyalty"`)
-
-* `Loyalty25` (value: `"Loyalty25"`)
-
-* `Retention` (value: `"Retention"`)
-
-* `SecondaryRetention` (value: `"SecondaryRetention"`)
-
-* `Custom` (value: `"Custom"`)
 
 
 
@@ -339,6 +319,27 @@ Name | Type | Description | Notes
 * `Pos` (value: `"Pos"`)
 
 * `Google` (value: `"Google"`)
+
+
+
+
+<a name="VoucherSubTypeEnum"></a>
+## Enum: VoucherSubTypeEnum
+
+
+* `None` (value: `"None"`)
+
+* `SignUp` (value: `"SignUp"`)
+
+* `Loyalty` (value: `"Loyalty"`)
+
+* `Loyalty25` (value: `"Loyalty25"`)
+
+* `Retention` (value: `"Retention"`)
+
+* `SecondaryRetention` (value: `"SecondaryRetention"`)
+
+* `Custom` (value: `"Custom"`)
 
 
 

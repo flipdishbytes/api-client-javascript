@@ -58,12 +58,6 @@
         // expect(instance.VoucherType).to.be(expectedValueLiteral);
       });
 
-      it('should have the property VoucherSubType (base name: "VoucherSubType")', function() {
-        // TODO: update the code to test the property VoucherSubType
-        expect(instance).to.have.property('VoucherSubType');
-        // expect(instance.VoucherSubType).to.be(expectedValueLiteral);
-      });
-
       it('should have the property Currency (base name: "Currency")', function() {
         // TODO: update the code to test the property Currency
         expect(instance).to.have.property('Currency');
@@ -206,6 +200,18 @@
         // TODO: update the code to test the property ChannelRestrictions
         expect(instance).to.have.property('ChannelRestrictions');
         // expect(instance.ChannelRestrictions).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property VoucherSubType (base name: "VoucherSubType")', function() {
+        // TODO: update the code to test the property VoucherSubType
+        expect(instance).to.have.property('VoucherSubType');
+        // expect(instance.VoucherSubType).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property CustomerId (base name: "CustomerId")', function() {
+        // TODO: update the code to test the property CustomerId
+        expect(instance).to.have.property('CustomerId');
+        // expect(instance.CustomerId).to.be(expectedValueLiteral);
       });
 
     });

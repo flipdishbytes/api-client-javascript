@@ -24,6 +24,8 @@ Name | Type | Description | Notes
 **StartDate** | **Date** | Voucher Starts On (Time in UTC) | [optional] 
 **ExpiryDate** | **Date** | Voucher Expires On (Time in UTC) | [optional] 
 **ChannelRestrictions** | **[String]** | Limit the channels this voucher can be used on | [optional] 
+**VoucherSubType** | **String** | Voucher Subtype | [optional] 
+**CustomerId** | **Number** | Customer UserID | [optional] 
 
 
 <a name="[ChannelRestrictionsEnum]"></a>
@@ -41,6 +43,27 @@ Name | Type | Description | Notes
 * `Pos` (value: `"Pos"`)
 
 * `Google` (value: `"Google"`)
+
+
+
+
+<a name="VoucherSubTypeEnum"></a>
+## Enum: VoucherSubTypeEnum
+
+
+* `None` (value: `"None"`)
+
+* `SignUp` (value: `"SignUp"`)
+
+* `Loyalty` (value: `"Loyalty"`)
+
+* `Loyalty25` (value: `"Loyalty25"`)
+
+* `Retention` (value: `"Retention"`)
+
+* `SecondaryRetention` (value: `"SecondaryRetention"`)
+
+* `Custom` (value: `"Custom"`)
 
 
 

@@ -61,8 +61,6 @@
         obj.Status = ApiClient.convertToType(data['Status'], 'String');
       if (data.hasOwnProperty('VoucherType'))
         obj.VoucherType = ApiClient.convertToType(data['VoucherType'], 'String');
-      if (data.hasOwnProperty('VoucherSubType'))
-        obj.VoucherSubType = ApiClient.convertToType(data['VoucherSubType'], 'String');
       if (data.hasOwnProperty('Currency'))
         obj.Currency = ApiClient.convertToType(data['Currency'], 'String');
       if (data.hasOwnProperty('StoreNames'))
@@ -111,6 +109,10 @@
         obj.ExpiryDate = ApiClient.convertToType(data['ExpiryDate'], 'Date');
       if (data.hasOwnProperty('ChannelRestrictions'))
         obj.ChannelRestrictions = ApiClient.convertToType(data['ChannelRestrictions'], ['String']);
+      if (data.hasOwnProperty('VoucherSubType'))
+        obj.VoucherSubType = ApiClient.convertToType(data['VoucherSubType'], 'String');
+      if (data.hasOwnProperty('CustomerId'))
+        obj.CustomerId = ApiClient.convertToType(data['CustomerId'], 'Number');
     }
     return obj;
   }
@@ -132,12 +134,6 @@
    * @member {module:model/Voucher.VoucherTypeEnum} VoucherType
    */
   exports.prototype.VoucherType = undefined;
-
-  /**
-   * Voucher Sub Type
-   * @member {module:model/Voucher.VoucherSubTypeEnum} VoucherSubType
-   */
-  exports.prototype.VoucherSubType = undefined;
 
   /**
    * Currency of the voucher
@@ -283,6 +279,18 @@
    */
   exports.prototype.ChannelRestrictions = undefined;
 
+  /**
+   * Voucher Subtype
+   * @member {module:model/Voucher.VoucherSubTypeEnum} VoucherSubType
+   */
+  exports.prototype.VoucherSubType = undefined;
+
+  /**
+   * Customer UserID
+   * @member {Number} CustomerId
+   */
+  exports.prototype.CustomerId = undefined;
+
 
 
   /**
@@ -352,56 +360,6 @@
      * @const
      */
     CreditNote: "CreditNote"
-  };
-
-
-  /**
-   * Allowed values for the <code>VoucherSubType</code> property.
-   * @enum {String}
-   * @readonly
-   */
-  exports.VoucherSubTypeEnum = {
-    /**
-     * value: "None"
-     * @const
-     */
-    None: "None",
-
-    /**
-     * value: "SignUp"
-     * @const
-     */
-    SignUp: "SignUp",
-
-    /**
-     * value: "Loyalty"
-     * @const
-     */
-    Loyalty: "Loyalty",
-
-    /**
-     * value: "Loyalty25"
-     * @const
-     */
-    Loyalty25: "Loyalty25",
-
-    /**
-     * value: "Retention"
-     * @const
-     */
-    Retention: "Retention",
-
-    /**
-     * value: "SecondaryRetention"
-     * @const
-     */
-    SecondaryRetention: "SecondaryRetention",
-
-    /**
-     * value: "Custom"
-     * @const
-     */
-    Custom: "Custom"
   };
 
 
@@ -1132,6 +1090,56 @@
      * @const
      */
     Google: "Google"
+  };
+
+
+  /**
+   * Allowed values for the <code>VoucherSubType</code> property.
+   * @enum {String}
+   * @readonly
+   */
+  exports.VoucherSubTypeEnum = {
+    /**
+     * value: "None"
+     * @const
+     */
+    None: "None",
+
+    /**
+     * value: "SignUp"
+     * @const
+     */
+    SignUp: "SignUp",
+
+    /**
+     * value: "Loyalty"
+     * @const
+     */
+    Loyalty: "Loyalty",
+
+    /**
+     * value: "Loyalty25"
+     * @const
+     */
+    Loyalty25: "Loyalty25",
+
+    /**
+     * value: "Retention"
+     * @const
+     */
+    Retention: "Retention",
+
+    /**
+     * value: "SecondaryRetention"
+     * @const
+     */
+    SecondaryRetention: "SecondaryRetention",
+
+    /**
+     * value: "Custom"
+     * @const
+     */
+    Custom: "Custom"
   };
 
   return exports;
