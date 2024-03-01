@@ -64,6 +64,12 @@
         // expect(instance.PayoutScheduleInterval).to.be(expectedValueLiteral);
       });
 
+      it('should have the property PayoutsEnabled (base name: "PayoutsEnabled")', function() {
+        // TODO: update the code to test the property PayoutsEnabled
+        expect(instance).to.have.property('PayoutsEnabled');
+        // expect(instance.PayoutsEnabled).to.be(expectedValueLiteral);
+      });
+
       it('should have the property PayoutsPaused (base name: "PayoutsPaused")', function() {
         // TODO: update the code to test the property PayoutsPaused
         expect(instance).to.have.property('PayoutsPaused');

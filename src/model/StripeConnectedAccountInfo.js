@@ -63,6 +63,8 @@
         obj.CardPaymentStatus = ApiClient.convertToType(data['CardPaymentStatus'], 'String');
       if (data.hasOwnProperty('PayoutScheduleInterval'))
         obj.PayoutScheduleInterval = ApiClient.convertToType(data['PayoutScheduleInterval'], 'String');
+      if (data.hasOwnProperty('PayoutsEnabled'))
+        obj.PayoutsEnabled = ApiClient.convertToType(data['PayoutsEnabled'], 'Boolean');
       if (data.hasOwnProperty('PayoutsPaused'))
         obj.PayoutsPaused = ApiClient.convertToType(data['PayoutsPaused'], 'Boolean');
     }
@@ -92,6 +94,12 @@
    * @member {module:model/StripeConnectedAccountInfo.PayoutScheduleIntervalEnum} PayoutScheduleInterval
    */
   exports.prototype.PayoutScheduleInterval = undefined;
+
+  /**
+   * Payouts Enabled status
+   * @member {Boolean} PayoutsEnabled
+   */
+  exports.prototype.PayoutsEnabled = undefined;
 
   /**
    * Flag indicating if payouts are paused

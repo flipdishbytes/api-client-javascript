@@ -67,6 +67,8 @@
         obj.TransfersStatus = ApiClient.convertToType(data['TransfersStatus'], 'String');
       if (data.hasOwnProperty('AccountStatus'))
         obj.AccountStatus = ApiClient.convertToType(data['AccountStatus'], 'String');
+      if (data.hasOwnProperty('PayoutsEnabled'))
+        obj.PayoutsEnabled = ApiClient.convertToType(data['PayoutsEnabled'], 'Boolean');
     }
     return obj;
   }
@@ -106,6 +108,12 @@
    * @member {module:model/StripeConnectedAccount.AccountStatusEnum} AccountStatus
    */
   exports.prototype.AccountStatus = undefined;
+
+  /**
+   * Payouts Enabled status
+   * @member {Boolean} PayoutsEnabled
+   */
+  exports.prototype.PayoutsEnabled = undefined;
 
 
 
