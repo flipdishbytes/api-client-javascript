@@ -63,6 +63,8 @@
         obj.User = UserEventInfo.constructFromObject(data['User']);
       if (data.hasOwnProperty('Menu'))
         obj.Menu = Menu.constructFromObject(data['Menu']);
+      if (data.hasOwnProperty('Success'))
+        obj.Success = ApiClient.convertToType(data['Success'], 'Boolean');
       if (data.hasOwnProperty('FlipdishEventId'))
         obj.FlipdishEventId = ApiClient.convertToType(data['FlipdishEventId'], 'String');
       if (data.hasOwnProperty('CreateTime'))
@@ -100,6 +102,12 @@
    * @member {module:model/Menu} Menu
    */
   exports.prototype.Menu = undefined;
+
+  /**
+   * Flag indicating if the menu creation was successful
+   * @member {Boolean} Success
+   */
+  exports.prototype.Success = undefined;
 
   /**
    * The identitfier of the event

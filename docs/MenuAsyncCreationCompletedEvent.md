@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 **Description** | **String** | Description | [optional] 
 **User** | [**UserEventInfo**](UserEventInfo.md) | User who has created the menu | [optional] 
 **Menu** | [**Menu**](Menu.md) | The menu | [optional] 
+**Success** | **Boolean** | Flag indicating if the menu creation was successful | [optional] 
 **FlipdishEventId** | **String** | The identitfier of the event | [optional] 
 **CreateTime** | **Date** | The time of creation of the event | [optional] 
 **Position** | **Number** | Position | [optional] 

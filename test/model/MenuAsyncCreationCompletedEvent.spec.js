@@ -64,6 +64,12 @@
         // expect(instance.Menu).to.be(expectedValueLiteral);
       });
 
+      it('should have the property Success (base name: "Success")', function() {
+        // TODO: update the code to test the property Success
+        expect(instance).to.have.property('Success');
+        // expect(instance.Success).to.be(expectedValueLiteral);
+      });
+
       it('should have the property FlipdishEventId (base name: "FlipdishEventId")', function() {
         // TODO: update the code to test the property FlipdishEventId
         expect(instance).to.have.property('FlipdishEventId');
