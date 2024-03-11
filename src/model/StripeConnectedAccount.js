@@ -69,6 +69,8 @@
         obj.AccountStatus = ApiClient.convertToType(data['AccountStatus'], 'String');
       if (data.hasOwnProperty('PayoutsEnabled'))
         obj.PayoutsEnabled = ApiClient.convertToType(data['PayoutsEnabled'], 'Boolean');
+      if (data.hasOwnProperty('PaymentsEnabled'))
+        obj.PaymentsEnabled = ApiClient.convertToType(data['PaymentsEnabled'], 'Boolean');
     }
     return obj;
   }
@@ -114,6 +116,12 @@
    * @member {Boolean} PayoutsEnabled
    */
   exports.prototype.PayoutsEnabled = undefined;
+
+  /**
+   * Payments Enabled status
+   * @member {Boolean} PaymentsEnabled
+   */
+  exports.prototype.PaymentsEnabled = undefined;
 
 
 

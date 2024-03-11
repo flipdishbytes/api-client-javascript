@@ -82,6 +82,12 @@
         // expect(instance.PayoutsEnabled).to.be(expectedValueLiteral);
       });
 
+      it('should have the property PaymentsEnabled (base name: "PaymentsEnabled")', function() {
+        // TODO: update the code to test the property PaymentsEnabled
+        expect(instance).to.have.property('PaymentsEnabled');
+        // expect(instance.PaymentsEnabled).to.be(expectedValueLiteral);
+      });
+
     });
   });
 

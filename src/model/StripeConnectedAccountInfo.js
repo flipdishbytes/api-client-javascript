@@ -67,6 +67,8 @@
         obj.PayoutsEnabled = ApiClient.convertToType(data['PayoutsEnabled'], 'Boolean');
       if (data.hasOwnProperty('PayoutsPaused'))
         obj.PayoutsPaused = ApiClient.convertToType(data['PayoutsPaused'], 'Boolean');
+      if (data.hasOwnProperty('PaymentsEnabled'))
+        obj.PaymentsEnabled = ApiClient.convertToType(data['PaymentsEnabled'], 'Boolean');
     }
     return obj;
   }
@@ -106,6 +108,12 @@
    * @member {Boolean} PayoutsPaused
    */
   exports.prototype.PayoutsPaused = undefined;
+
+  /**
+   * Flag indicating if payments are enabled
+   * @member {Boolean} PaymentsEnabled
+   */
+  exports.prototype.PaymentsEnabled = undefined;
 
 
 
