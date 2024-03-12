@@ -94,6 +94,12 @@
         // expect(instance.DestinationAccount).to.be(expectedValueLiteral);
       });
 
+      it('should have the property Amount (base name: "Amount")', function() {
+        // TODO: update the code to test the property Amount
+        expect(instance).to.have.property('Amount');
+        // expect(instance.Amount).to.be(expectedValueLiteral);
+      });
+
     });
   });
 

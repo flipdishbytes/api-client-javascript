@@ -12,5 +12,6 @@ Name | Type | Description | Notes
 **PeriodEndTime** | **Date** |  | [optional] 
 **DestinationBank** | **String** |  | [optional] 
 **DestinationAccount** | **String** |  | [optional] 
+**Amount** | **Number** |  | [optional] 
 
 
