@@ -74,6 +74,8 @@
         obj.DestinationAccount = ApiClient.convertToType(data['DestinationAccount'], 'String');
       if (data.hasOwnProperty('Amount'))
         obj.Amount = ApiClient.convertToType(data['Amount'], 'Number');
+      if (data.hasOwnProperty('Currency'))
+        obj.Currency = ApiClient.convertToType(data['Currency'], 'String');
     }
     return obj;
   }
@@ -127,6 +129,11 @@
    * @member {Number} Amount
    */
   exports.prototype.Amount = undefined;
+
+  /**
+   * @member {String} Currency
+   */
+  exports.prototype.Currency = undefined;
 
 
   return exports;

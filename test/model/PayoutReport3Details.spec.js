@@ -46,6 +46,12 @@
         // expect(instance.Amount).to.be(expectedValueLiteral);
       });
 
+      it('should have the property Currency (base name: "Currency")', function() {
+        // TODO: update the code to test the property Currency
+        expect(instance).to.have.property('Currency');
+        // expect(instance.Currency).to.be(expectedValueLiteral);
+      });
+
       it('should have the property Summary (base name: "Summary")', function() {
         // TODO: update the code to test the property Summary
         expect(instance).to.have.property('Summary');

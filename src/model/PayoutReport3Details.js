@@ -56,6 +56,8 @@
       obj = obj || new exports();
       if (data.hasOwnProperty('Amount'))
         obj.Amount = ApiClient.convertToType(data['Amount'], 'Number');
+      if (data.hasOwnProperty('Currency'))
+        obj.Currency = ApiClient.convertToType(data['Currency'], 'String');
       if (data.hasOwnProperty('Summary'))
         obj.Summary = PayoutReport3DetailsSummary.constructFromObject(data['Summary']);
       if (data.hasOwnProperty('Revenue'))
@@ -72,6 +74,11 @@
    * @member {Number} Amount
    */
   exports.prototype.Amount = undefined;
+
+  /**
+   * @member {String} Currency
+   */
+  exports.prototype.Currency = undefined;
 
   /**
    * @member {module:model/PayoutReport3DetailsSummary} Summary

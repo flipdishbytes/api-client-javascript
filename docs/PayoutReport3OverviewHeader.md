@@ -13,5 +13,6 @@ Name | Type | Description | Notes
 **DestinationBank** | **String** |  | [optional] 
 **DestinationAccount** | **String** |  | [optional] 
 **Amount** | **Number** |  | [optional] 
+**Currency** | **String** |  | [optional] 
 
 
