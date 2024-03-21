@@ -20,7 +20,6 @@ Name | Type | Description | Notes
 **ChannelOrderId** | **String** | ChannelOrderId from external channel | [optional] 
 **ChannelOrderDisplayId** | **String** | ChannelOrderDisplayId from external channel | [optional] 
 **Channel** | [**Channel**](Channel.md) | Channel where the Order comes from | [optional] 
-**ReceiptCode** | **String** | Generated receipt code for an order | [optional] 
 **OrderDropOffLocation** | [**OrderDropOffLocation**](OrderDropOffLocation.md) | DropOffLocation selected for this order | [optional] 
 **FulfillmentStatus** | [**OrderFulfillmentStatusBase**](OrderFulfillmentStatusBase.md) | [BETA - this is a new field in development] Fulfillment status for this order | [optional] 
 **OrderBatchInfo** | [**OrderBatchSummary**](OrderBatchSummary.md) | OrderBatch information | [optional] 
@@ -53,6 +52,7 @@ Name | Type | Description | Notes
 **TotalTax** | **Number** | Total tax applied to order | [optional] 
 **OrderTrackingCode** | **String** | Unique, 6 character long alpha numeric code for tracking. | [optional] 
 **DeliveryFeeAreaId** | **Number** | Delivery area identifier | [optional] 
+**ReceiptCode** | **String** | Code used to view the order's receipt | [optional] 
 
 
 <a name="DeliveryTypeEnum"></a>

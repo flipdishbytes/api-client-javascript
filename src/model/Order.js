@@ -89,8 +89,6 @@
         obj.ChannelOrderDisplayId = ApiClient.convertToType(data['ChannelOrderDisplayId'], 'String');
       if (data.hasOwnProperty('Channel'))
         obj.Channel = Channel.constructFromObject(data['Channel']);
-      if (data.hasOwnProperty('ReceiptCode'))
-        obj.ReceiptCode = ApiClient.convertToType(data['ReceiptCode'], 'String');
       if (data.hasOwnProperty('OrderDropOffLocation'))
         obj.OrderDropOffLocation = OrderDropOffLocation.constructFromObject(data['OrderDropOffLocation']);
       if (data.hasOwnProperty('FulfillmentStatus'))
@@ -155,6 +153,8 @@
         obj.OrderTrackingCode = ApiClient.convertToType(data['OrderTrackingCode'], 'String');
       if (data.hasOwnProperty('DeliveryFeeAreaId'))
         obj.DeliveryFeeAreaId = ApiClient.convertToType(data['DeliveryFeeAreaId'], 'Number');
+      if (data.hasOwnProperty('ReceiptCode'))
+        obj.ReceiptCode = ApiClient.convertToType(data['ReceiptCode'], 'String');
     }
     return obj;
   }
@@ -260,12 +260,6 @@
    * @member {module:model/Channel} Channel
    */
   exports.prototype.Channel = undefined;
-
-  /**
-   * Generated receipt code for an order
-   * @member {String} ReceiptCode
-   */
-  exports.prototype.ReceiptCode = undefined;
 
   /**
    * DropOffLocation selected for this order
@@ -458,6 +452,12 @@
    * @member {Number} DeliveryFeeAreaId
    */
   exports.prototype.DeliveryFeeAreaId = undefined;
+
+  /**
+   * Code used to view the order's receipt
+   * @member {String} ReceiptCode
+   */
+  exports.prototype.ReceiptCode = undefined;
 
 
 

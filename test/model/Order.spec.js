@@ -142,12 +142,6 @@
         // expect(instance.Channel).to.be(expectedValueLiteral);
       });
 
-      it('should have the property ReceiptCode (base name: "ReceiptCode")', function() {
-        // TODO: update the code to test the property ReceiptCode
-        expect(instance).to.have.property('ReceiptCode');
-        // expect(instance.ReceiptCode).to.be(expectedValueLiteral);
-      });
-
       it('should have the property OrderDropOffLocation (base name: "OrderDropOffLocation")', function() {
         // TODO: update the code to test the property OrderDropOffLocation
         expect(instance).to.have.property('OrderDropOffLocation');
@@ -338,6 +332,12 @@
         // TODO: update the code to test the property DeliveryFeeAreaId
         expect(instance).to.have.property('DeliveryFeeAreaId');
         // expect(instance.DeliveryFeeAreaId).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property ReceiptCode (base name: "ReceiptCode")', function() {
+        // TODO: update the code to test the property ReceiptCode
+        expect(instance).to.have.property('ReceiptCode');
+        // expect(instance.ReceiptCode).to.be(expectedValueLiteral);
       });
 
     });
