@@ -72,6 +72,8 @@
         obj.PosCardOnFlipdishOrders = ApiClient.convertToType(data['PosCardOnFlipdishOrders'], 'Number');
       if (data.hasOwnProperty('OtherIntegrationFees'))
         obj.OtherIntegrationFees = ApiClient.convertToType(data['OtherIntegrationFees'], 'Number');
+      if (data.hasOwnProperty('OtherIntegrationTips'))
+        obj.OtherIntegrationTips = ApiClient.convertToType(data['OtherIntegrationTips'], 'Number');
       if (data.hasOwnProperty('Vat'))
         obj.Vat = ApiClient.convertToType(data['Vat'], 'Number');
       if (data.hasOwnProperty('Total'))
@@ -124,6 +126,11 @@
    * @member {Number} OtherIntegrationFees
    */
   exports.prototype.OtherIntegrationFees = undefined;
+
+  /**
+   * @member {Number} OtherIntegrationTips
+   */
+  exports.prototype.OtherIntegrationTips = undefined;
 
   /**
    * @member {Number} Vat

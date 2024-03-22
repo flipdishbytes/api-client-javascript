@@ -94,6 +94,12 @@
         // expect(instance.OtherIntegrationFees).to.be(expectedValueLiteral);
       });
 
+      it('should have the property OtherIntegrationTips (base name: "OtherIntegrationTips")', function() {
+        // TODO: update the code to test the property OtherIntegrationTips
+        expect(instance).to.have.property('OtherIntegrationTips');
+        // expect(instance.OtherIntegrationTips).to.be(expectedValueLiteral);
+      });
+
       it('should have the property Vat (base name: "Vat")', function() {
         // TODO: update the code to test the property Vat
         expect(instance).to.have.property('Vat');
