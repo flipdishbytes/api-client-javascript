@@ -399,7 +399,13 @@
      * value: "CreditNote"
      * @const
      */
-    CreditNote: "CreditNote"
+    CreditNote: "CreditNote",
+
+    /**
+     * value: "FreeDelivery"
+     * @const
+     */
+    FreeDelivery: "FreeDelivery"
   };
 
 

@@ -24,6 +24,8 @@ Name | Type | Description | Notes
 
 * `CreditNote` (value: `"CreditNote"`)
 
+* `FreeDelivery` (value: `"FreeDelivery"`)
+
 
 
 
