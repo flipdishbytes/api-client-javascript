@@ -94,6 +94,8 @@
         obj.NetSales = ApiClient.convertToType(data['NetSales'], 'Number');
       if (data.hasOwnProperty('StoreId'))
         obj.StoreId = ApiClient.convertToType(data['StoreId'], 'Number');
+      if (data.hasOwnProperty('StoreName'))
+        obj.StoreName = ApiClient.convertToType(data['StoreName'], 'String');
       if (data.hasOwnProperty('ServiceChargeAmount'))
         obj.ServiceChargeAmount = ApiClient.convertToType(data['ServiceChargeAmount'], 'Number');
       if (data.hasOwnProperty('ServiceChargePercentage'))
@@ -201,6 +203,11 @@
    * @member {Number} StoreId
    */
   exports.prototype.StoreId = undefined;
+
+  /**
+   * @member {String} StoreName
+   */
+  exports.prototype.StoreName = undefined;
 
   /**
    * @member {Number} ServiceChargeAmount

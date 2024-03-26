@@ -160,6 +160,12 @@
         // expect(instance.StoreId).to.be(expectedValueLiteral);
       });
 
+      it('should have the property StoreName (base name: "StoreName")', function() {
+        // TODO: update the code to test the property StoreName
+        expect(instance).to.have.property('StoreName');
+        // expect(instance.StoreName).to.be(expectedValueLiteral);
+      });
+
       it('should have the property ServiceChargeAmount (base name: "ServiceChargeAmount")', function() {
         // TODO: update the code to test the property ServiceChargeAmount
         expect(instance).to.have.property('ServiceChargeAmount');

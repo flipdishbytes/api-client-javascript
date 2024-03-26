@@ -23,6 +23,7 @@ Name | Type | Description | Notes
 **CashFeeChargedToCustomer** | **Number** |  | [optional] 
 **NetSales** | **Number** |  | [optional] 
 **StoreId** | **Number** |  | [optional] 
+**StoreName** | **String** |  | [optional] 
 **ServiceChargeAmount** | **Number** |  | [optional] 
 **ServiceChargePercentage** | **Number** |  | [optional] 
 
