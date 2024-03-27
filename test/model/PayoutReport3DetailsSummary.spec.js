@@ -64,6 +64,12 @@
         // expect(instance.Adjustments).to.be(expectedValueLiteral);
       });
 
+      it('should have the property ThirdPartyIntegrationFeesAndTips (base name: "ThirdPartyIntegrationFeesAndTips")', function() {
+        // TODO: update the code to test the property ThirdPartyIntegrationFeesAndTips
+        expect(instance).to.have.property('ThirdPartyIntegrationFeesAndTips');
+        // expect(instance.ThirdPartyIntegrationFeesAndTips).to.be(expectedValueLiteral);
+      });
+
       it('should have the property Total (base name: "Total")', function() {
         // TODO: update the code to test the property Total
         expect(instance).to.have.property('Total');

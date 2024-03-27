@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 **RevenueForFeeCalculations** | **Number** |  | [optional] 
 **FlipdishFees** | **Number** |  | [optional] 
 **Adjustments** | **Number** |  | [optional] 
+**ThirdPartyIntegrationFeesAndTips** | **Number** |  | [optional] 
 **Total** | **Number** |  | [optional] 
 
 

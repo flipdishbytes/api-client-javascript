@@ -62,6 +62,8 @@
         obj.FlipdishFees = ApiClient.convertToType(data['FlipdishFees'], 'Number');
       if (data.hasOwnProperty('Adjustments'))
         obj.Adjustments = ApiClient.convertToType(data['Adjustments'], 'Number');
+      if (data.hasOwnProperty('ThirdPartyIntegrationFeesAndTips'))
+        obj.ThirdPartyIntegrationFeesAndTips = ApiClient.convertToType(data['ThirdPartyIntegrationFeesAndTips'], 'Number');
       if (data.hasOwnProperty('Total'))
         obj.Total = ApiClient.convertToType(data['Total'], 'Number');
     }
@@ -87,6 +89,11 @@
    * @member {Number} Adjustments
    */
   exports.prototype.Adjustments = undefined;
+
+  /**
+   * @member {Number} ThirdPartyIntegrationFeesAndTips
+   */
+  exports.prototype.ThirdPartyIntegrationFeesAndTips = undefined;
 
   /**
    * @member {Number} Total
