@@ -76,6 +76,7 @@
   exports.prototype.StoreId = undefined;
 
   /**
+   * Name
    * @member {String} Name
    */
   exports.prototype.Name = undefined;
@@ -93,6 +94,7 @@
   exports.prototype.StoreGroupId = undefined;
 
   /**
+   * Store list of validations
    * @member {module:model/StoreConfig} ConfigValidation
    */
   exports.prototype.ConfigValidation = undefined;
