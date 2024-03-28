@@ -54,6 +54,10 @@
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
+      if (data.hasOwnProperty('OpeningBalanceDate'))
+        obj.OpeningBalanceDate = ApiClient.convertToType(data['OpeningBalanceDate'], 'Date');
+      if (data.hasOwnProperty('ClosingBalanceDate'))
+        obj.ClosingBalanceDate = ApiClient.convertToType(data['ClosingBalanceDate'], 'Date');
       if (data.hasOwnProperty('OpeningBalance'))
         obj.OpeningBalance = ApiClient.convertToType(data['OpeningBalance'], 'Number');
       if (data.hasOwnProperty('RefundsOnCardOrders'))
@@ -71,6 +75,16 @@
     }
     return obj;
   }
+
+  /**
+   * @member {Date} OpeningBalanceDate
+   */
+  exports.prototype.OpeningBalanceDate = undefined;
+
+  /**
+   * @member {Date} ClosingBalanceDate
+   */
+  exports.prototype.ClosingBalanceDate = undefined;
 
   /**
    * @member {Number} OpeningBalance

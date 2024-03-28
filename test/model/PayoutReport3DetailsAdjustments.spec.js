@@ -40,6 +40,18 @@
         expect(instance).to.be.a(Flipdish.PayoutReport3DetailsAdjustments);
       });
 
+      it('should have the property OpeningBalanceDate (base name: "OpeningBalanceDate")', function() {
+        // TODO: update the code to test the property OpeningBalanceDate
+        expect(instance).to.have.property('OpeningBalanceDate');
+        // expect(instance.OpeningBalanceDate).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property ClosingBalanceDate (base name: "ClosingBalanceDate")', function() {
+        // TODO: update the code to test the property ClosingBalanceDate
+        expect(instance).to.have.property('ClosingBalanceDate');
+        // expect(instance.ClosingBalanceDate).to.be(expectedValueLiteral);
+      });
+
       it('should have the property OpeningBalance (base name: "OpeningBalance")', function() {
         // TODO: update the code to test the property OpeningBalance
         expect(instance).to.have.property('OpeningBalance');

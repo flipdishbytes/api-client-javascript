@@ -3,6 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**OpeningBalanceDate** | **Date** |  | [optional] 
+**ClosingBalanceDate** | **Date** |  | [optional] 
 **OpeningBalance** | **Number** |  | [optional] 
 **RefundsOnCardOrders** | **Number** |  | [optional] 
 **RefundsOnCashOrders** | **Number** |  | [optional] 
