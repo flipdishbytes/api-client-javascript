@@ -62,12 +62,12 @@
         obj.OtherCharges = PayoutReport3DetailsSalesLine.constructFromObject(data['OtherCharges']);
       if (data.hasOwnProperty('Tips'))
         obj.Tips = PayoutReport3DetailsSalesLine.constructFromObject(data['Tips']);
-      if (data.hasOwnProperty('TotalNetSales'))
-        obj.TotalNetSales = PayoutReport3DetailsSalesLine.constructFromObject(data['TotalNetSales']);
       if (data.hasOwnProperty('TotalRevenue'))
         obj.TotalRevenue = PayoutReport3DetailsSalesLine.constructFromObject(data['TotalRevenue']);
       if (data.hasOwnProperty('RevenueForFeeCalculations'))
         obj.RevenueForFeeCalculations = PayoutReport3DetailsSalesLine.constructFromObject(data['RevenueForFeeCalculations']);
+      if (data.hasOwnProperty('DrsCharges'))
+        obj.DrsCharges = PayoutReport3DetailsSalesLine.constructFromObject(data['DrsCharges']);
     }
     return obj;
   }
@@ -93,11 +93,6 @@
   exports.prototype.Tips = undefined;
 
   /**
-   * @member {module:model/PayoutReport3DetailsSalesLine} TotalNetSales
-   */
-  exports.prototype.TotalNetSales = undefined;
-
-  /**
    * @member {module:model/PayoutReport3DetailsSalesLine} TotalRevenue
    */
   exports.prototype.TotalRevenue = undefined;
@@ -106,6 +101,11 @@
    * @member {module:model/PayoutReport3DetailsSalesLine} RevenueForFeeCalculations
    */
   exports.prototype.RevenueForFeeCalculations = undefined;
+
+  /**
+   * @member {module:model/PayoutReport3DetailsSalesLine} DrsCharges
+   */
+  exports.prototype.DrsCharges = undefined;
 
 
   return exports;

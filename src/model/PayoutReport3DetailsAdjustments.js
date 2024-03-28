@@ -72,6 +72,34 @@
         obj.OtherTransactions = ApiClient.convertToType(data['OtherTransactions'], 'Number');
       if (data.hasOwnProperty('ClosingBalance'))
         obj.ClosingBalance = ApiClient.convertToType(data['ClosingBalance'], 'Number');
+      if (data.hasOwnProperty('OpeningBalanceCredit'))
+        obj.OpeningBalanceCredit = ApiClient.convertToType(data['OpeningBalanceCredit'], 'Number');
+      if (data.hasOwnProperty('OpeningBalanceDebit'))
+        obj.OpeningBalanceDebit = ApiClient.convertToType(data['OpeningBalanceDebit'], 'Number');
+      if (data.hasOwnProperty('RefundsOnCardOrdersCredit'))
+        obj.RefundsOnCardOrdersCredit = ApiClient.convertToType(data['RefundsOnCardOrdersCredit'], 'Number');
+      if (data.hasOwnProperty('RefundsOnCardOrdersDebit'))
+        obj.RefundsOnCardOrdersDebit = ApiClient.convertToType(data['RefundsOnCardOrdersDebit'], 'Number');
+      if (data.hasOwnProperty('RefundsOnCashOrdersCredit'))
+        obj.RefundsOnCashOrdersCredit = ApiClient.convertToType(data['RefundsOnCashOrdersCredit'], 'Number');
+      if (data.hasOwnProperty('RefundsOnCashOrdersDebit'))
+        obj.RefundsOnCashOrdersDebit = ApiClient.convertToType(data['RefundsOnCashOrdersDebit'], 'Number');
+      if (data.hasOwnProperty('CashCustomerFeesCredit'))
+        obj.CashCustomerFeesCredit = ApiClient.convertToType(data['CashCustomerFeesCredit'], 'Number');
+      if (data.hasOwnProperty('CashCustomerFeesDebit'))
+        obj.CashCustomerFeesDebit = ApiClient.convertToType(data['CashCustomerFeesDebit'], 'Number');
+      if (data.hasOwnProperty('ChargebacksCredit'))
+        obj.ChargebacksCredit = ApiClient.convertToType(data['ChargebacksCredit'], 'Number');
+      if (data.hasOwnProperty('ChargebacksDebit'))
+        obj.ChargebacksDebit = ApiClient.convertToType(data['ChargebacksDebit'], 'Number');
+      if (data.hasOwnProperty('OtherTransactionsCredit'))
+        obj.OtherTransactionsCredit = ApiClient.convertToType(data['OtherTransactionsCredit'], 'Number');
+      if (data.hasOwnProperty('OtherTransactionsDebit'))
+        obj.OtherTransactionsDebit = ApiClient.convertToType(data['OtherTransactionsDebit'], 'Number');
+      if (data.hasOwnProperty('ClosingBalanceCredit'))
+        obj.ClosingBalanceCredit = ApiClient.convertToType(data['ClosingBalanceCredit'], 'Number');
+      if (data.hasOwnProperty('ClosingBalanceDebit'))
+        obj.ClosingBalanceDebit = ApiClient.convertToType(data['ClosingBalanceDebit'], 'Number');
     }
     return obj;
   }
@@ -120,6 +148,76 @@
    * @member {Number} ClosingBalance
    */
   exports.prototype.ClosingBalance = undefined;
+
+  /**
+   * @member {Number} OpeningBalanceCredit
+   */
+  exports.prototype.OpeningBalanceCredit = undefined;
+
+  /**
+   * @member {Number} OpeningBalanceDebit
+   */
+  exports.prototype.OpeningBalanceDebit = undefined;
+
+  /**
+   * @member {Number} RefundsOnCardOrdersCredit
+   */
+  exports.prototype.RefundsOnCardOrdersCredit = undefined;
+
+  /**
+   * @member {Number} RefundsOnCardOrdersDebit
+   */
+  exports.prototype.RefundsOnCardOrdersDebit = undefined;
+
+  /**
+   * @member {Number} RefundsOnCashOrdersCredit
+   */
+  exports.prototype.RefundsOnCashOrdersCredit = undefined;
+
+  /**
+   * @member {Number} RefundsOnCashOrdersDebit
+   */
+  exports.prototype.RefundsOnCashOrdersDebit = undefined;
+
+  /**
+   * @member {Number} CashCustomerFeesCredit
+   */
+  exports.prototype.CashCustomerFeesCredit = undefined;
+
+  /**
+   * @member {Number} CashCustomerFeesDebit
+   */
+  exports.prototype.CashCustomerFeesDebit = undefined;
+
+  /**
+   * @member {Number} ChargebacksCredit
+   */
+  exports.prototype.ChargebacksCredit = undefined;
+
+  /**
+   * @member {Number} ChargebacksDebit
+   */
+  exports.prototype.ChargebacksDebit = undefined;
+
+  /**
+   * @member {Number} OtherTransactionsCredit
+   */
+  exports.prototype.OtherTransactionsCredit = undefined;
+
+  /**
+   * @member {Number} OtherTransactionsDebit
+   */
+  exports.prototype.OtherTransactionsDebit = undefined;
+
+  /**
+   * @member {Number} ClosingBalanceCredit
+   */
+  exports.prototype.ClosingBalanceCredit = undefined;
+
+  /**
+   * @member {Number} ClosingBalanceDebit
+   */
+  exports.prototype.ClosingBalanceDebit = undefined;
 
 
   return exports;

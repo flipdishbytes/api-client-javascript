@@ -94,6 +94,90 @@
         // expect(instance.ClosingBalance).to.be(expectedValueLiteral);
       });
 
+      it('should have the property OpeningBalanceCredit (base name: "OpeningBalanceCredit")', function() {
+        // TODO: update the code to test the property OpeningBalanceCredit
+        expect(instance).to.have.property('OpeningBalanceCredit');
+        // expect(instance.OpeningBalanceCredit).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property OpeningBalanceDebit (base name: "OpeningBalanceDebit")', function() {
+        // TODO: update the code to test the property OpeningBalanceDebit
+        expect(instance).to.have.property('OpeningBalanceDebit');
+        // expect(instance.OpeningBalanceDebit).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property RefundsOnCardOrdersCredit (base name: "RefundsOnCardOrdersCredit")', function() {
+        // TODO: update the code to test the property RefundsOnCardOrdersCredit
+        expect(instance).to.have.property('RefundsOnCardOrdersCredit');
+        // expect(instance.RefundsOnCardOrdersCredit).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property RefundsOnCardOrdersDebit (base name: "RefundsOnCardOrdersDebit")', function() {
+        // TODO: update the code to test the property RefundsOnCardOrdersDebit
+        expect(instance).to.have.property('RefundsOnCardOrdersDebit');
+        // expect(instance.RefundsOnCardOrdersDebit).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property RefundsOnCashOrdersCredit (base name: "RefundsOnCashOrdersCredit")', function() {
+        // TODO: update the code to test the property RefundsOnCashOrdersCredit
+        expect(instance).to.have.property('RefundsOnCashOrdersCredit');
+        // expect(instance.RefundsOnCashOrdersCredit).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property RefundsOnCashOrdersDebit (base name: "RefundsOnCashOrdersDebit")', function() {
+        // TODO: update the code to test the property RefundsOnCashOrdersDebit
+        expect(instance).to.have.property('RefundsOnCashOrdersDebit');
+        // expect(instance.RefundsOnCashOrdersDebit).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property CashCustomerFeesCredit (base name: "CashCustomerFeesCredit")', function() {
+        // TODO: update the code to test the property CashCustomerFeesCredit
+        expect(instance).to.have.property('CashCustomerFeesCredit');
+        // expect(instance.CashCustomerFeesCredit).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property CashCustomerFeesDebit (base name: "CashCustomerFeesDebit")', function() {
+        // TODO: update the code to test the property CashCustomerFeesDebit
+        expect(instance).to.have.property('CashCustomerFeesDebit');
+        // expect(instance.CashCustomerFeesDebit).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property ChargebacksCredit (base name: "ChargebacksCredit")', function() {
+        // TODO: update the code to test the property ChargebacksCredit
+        expect(instance).to.have.property('ChargebacksCredit');
+        // expect(instance.ChargebacksCredit).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property ChargebacksDebit (base name: "ChargebacksDebit")', function() {
+        // TODO: update the code to test the property ChargebacksDebit
+        expect(instance).to.have.property('ChargebacksDebit');
+        // expect(instance.ChargebacksDebit).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property OtherTransactionsCredit (base name: "OtherTransactionsCredit")', function() {
+        // TODO: update the code to test the property OtherTransactionsCredit
+        expect(instance).to.have.property('OtherTransactionsCredit');
+        // expect(instance.OtherTransactionsCredit).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property OtherTransactionsDebit (base name: "OtherTransactionsDebit")', function() {
+        // TODO: update the code to test the property OtherTransactionsDebit
+        expect(instance).to.have.property('OtherTransactionsDebit');
+        // expect(instance.OtherTransactionsDebit).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property ClosingBalanceCredit (base name: "ClosingBalanceCredit")', function() {
+        // TODO: update the code to test the property ClosingBalanceCredit
+        expect(instance).to.have.property('ClosingBalanceCredit');
+        // expect(instance.ClosingBalanceCredit).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property ClosingBalanceDebit (base name: "ClosingBalanceDebit")', function() {
+        // TODO: update the code to test the property ClosingBalanceDebit
+        expect(instance).to.have.property('ClosingBalanceDebit');
+        // expect(instance.ClosingBalanceDebit).to.be(expectedValueLiteral);
+      });
+
     });
   });
 

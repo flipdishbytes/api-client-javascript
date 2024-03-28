@@ -64,12 +64,6 @@
         // expect(instance.Tips).to.be(expectedValueLiteral);
       });
 
-      it('should have the property TotalNetSales (base name: "TotalNetSales")', function() {
-        // TODO: update the code to test the property TotalNetSales
-        expect(instance).to.have.property('TotalNetSales');
-        // expect(instance.TotalNetSales).to.be(expectedValueLiteral);
-      });
-
       it('should have the property TotalRevenue (base name: "TotalRevenue")', function() {
         // TODO: update the code to test the property TotalRevenue
         expect(instance).to.have.property('TotalRevenue');
@@ -80,6 +74,12 @@
         // TODO: update the code to test the property RevenueForFeeCalculations
         expect(instance).to.have.property('RevenueForFeeCalculations');
         // expect(instance.RevenueForFeeCalculations).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property DrsCharges (base name: "DrsCharges")', function() {
+        // TODO: update the code to test the property DrsCharges
+        expect(instance).to.have.property('DrsCharges');
+        // expect(instance.DrsCharges).to.be(expectedValueLiteral);
       });
 
     });
