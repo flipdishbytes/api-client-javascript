@@ -100,60 +100,6 @@
         // expect(instance.Voucher).to.be(expectedValueLiteral);
       });
 
-      it('should have the property FlatFeeExcludingVat (base name: "FlatFeeExcludingVat")', function() {
-        // TODO: update the code to test the property FlatFeeExcludingVat
-        expect(instance).to.have.property('FlatFeeExcludingVat');
-        // expect(instance.FlatFeeExcludingVat).to.be(expectedValueLiteral);
-      });
-
-      it('should have the property FlatFeeExcludingVAT (base name: "FlatFeeExcludingVAT")', function() {
-        // TODO: update the code to test the property FlatFeeExcludingVAT
-        expect(instance).to.have.property('FlatFeeExcludingVAT');
-        // expect(instance.FlatFeeExcludingVAT).to.be(expectedValueLiteral);
-      });
-
-      it('should have the property FlatFeeIncludingVat (base name: "FlatFeeIncludingVat")', function() {
-        // TODO: update the code to test the property FlatFeeIncludingVat
-        expect(instance).to.have.property('FlatFeeIncludingVat');
-        // expect(instance.FlatFeeIncludingVat).to.be(expectedValueLiteral);
-      });
-
-      it('should have the property PercentageFeeExcludingVat (base name: "PercentageFeeExcludingVat")', function() {
-        // TODO: update the code to test the property PercentageFeeExcludingVat
-        expect(instance).to.have.property('PercentageFeeExcludingVat');
-        // expect(instance.PercentageFeeExcludingVat).to.be(expectedValueLiteral);
-      });
-
-      it('should have the property PercentageFeeExcludingVAT (base name: "PercentageFeeExcludingVAT")', function() {
-        // TODO: update the code to test the property PercentageFeeExcludingVAT
-        expect(instance).to.have.property('PercentageFeeExcludingVAT');
-        // expect(instance.PercentageFeeExcludingVAT).to.be(expectedValueLiteral);
-      });
-
-      it('should have the property Vat (base name: "Vat")', function() {
-        // TODO: update the code to test the property Vat
-        expect(instance).to.have.property('Vat');
-        // expect(instance.Vat).to.be(expectedValueLiteral);
-      });
-
-      it('should have the property TotalFees (base name: "TotalFees")', function() {
-        // TODO: update the code to test the property TotalFees
-        expect(instance).to.have.property('TotalFees');
-        // expect(instance.TotalFees).to.be(expectedValueLiteral);
-      });
-
-      it('should have the property CashFeeChargedToCustomer (base name: "CashFeeChargedToCustomer")', function() {
-        // TODO: update the code to test the property CashFeeChargedToCustomer
-        expect(instance).to.have.property('CashFeeChargedToCustomer');
-        // expect(instance.CashFeeChargedToCustomer).to.be(expectedValueLiteral);
-      });
-
-      it('should have the property NetSales (base name: "NetSales")', function() {
-        // TODO: update the code to test the property NetSales
-        expect(instance).to.have.property('NetSales');
-        // expect(instance.NetSales).to.be(expectedValueLiteral);
-      });
-
       it('should have the property StoreId (base name: "StoreId")', function() {
         // TODO: update the code to test the property StoreId
         expect(instance).to.have.property('StoreId');
@@ -164,18 +110,6 @@
         // TODO: update the code to test the property StoreName
         expect(instance).to.have.property('StoreName');
         // expect(instance.StoreName).to.be(expectedValueLiteral);
-      });
-
-      it('should have the property ServiceChargeAmount (base name: "ServiceChargeAmount")', function() {
-        // TODO: update the code to test the property ServiceChargeAmount
-        expect(instance).to.have.property('ServiceChargeAmount');
-        // expect(instance.ServiceChargeAmount).to.be(expectedValueLiteral);
-      });
-
-      it('should have the property ServiceChargePercentage (base name: "ServiceChargePercentage")', function() {
-        // TODO: update the code to test the property ServiceChargePercentage
-        expect(instance).to.have.property('ServiceChargePercentage');
-        // expect(instance.ServiceChargePercentage).to.be(expectedValueLiteral);
       });
 
     });

@@ -74,32 +74,10 @@
         obj.Tips = ApiClient.convertToType(data['Tips'], 'Number');
       if (data.hasOwnProperty('Voucher'))
         obj.Voucher = ApiClient.convertToType(data['Voucher'], 'Number');
-      if (data.hasOwnProperty('FlatFeeExcludingVat'))
-        obj.FlatFeeExcludingVat = ApiClient.convertToType(data['FlatFeeExcludingVat'], 'Number');
-      if (data.hasOwnProperty('FlatFeeExcludingVAT'))
-        obj.FlatFeeExcludingVAT = ApiClient.convertToType(data['FlatFeeExcludingVAT'], 'Number');
-      if (data.hasOwnProperty('FlatFeeIncludingVat'))
-        obj.FlatFeeIncludingVat = ApiClient.convertToType(data['FlatFeeIncludingVat'], 'Number');
-      if (data.hasOwnProperty('PercentageFeeExcludingVat'))
-        obj.PercentageFeeExcludingVat = ApiClient.convertToType(data['PercentageFeeExcludingVat'], 'Number');
-      if (data.hasOwnProperty('PercentageFeeExcludingVAT'))
-        obj.PercentageFeeExcludingVAT = ApiClient.convertToType(data['PercentageFeeExcludingVAT'], 'Number');
-      if (data.hasOwnProperty('Vat'))
-        obj.Vat = ApiClient.convertToType(data['Vat'], 'Number');
-      if (data.hasOwnProperty('TotalFees'))
-        obj.TotalFees = ApiClient.convertToType(data['TotalFees'], 'Number');
-      if (data.hasOwnProperty('CashFeeChargedToCustomer'))
-        obj.CashFeeChargedToCustomer = ApiClient.convertToType(data['CashFeeChargedToCustomer'], 'Number');
-      if (data.hasOwnProperty('NetSales'))
-        obj.NetSales = ApiClient.convertToType(data['NetSales'], 'Number');
       if (data.hasOwnProperty('StoreId'))
         obj.StoreId = ApiClient.convertToType(data['StoreId'], 'Number');
       if (data.hasOwnProperty('StoreName'))
         obj.StoreName = ApiClient.convertToType(data['StoreName'], 'String');
-      if (data.hasOwnProperty('ServiceChargeAmount'))
-        obj.ServiceChargeAmount = ApiClient.convertToType(data['ServiceChargeAmount'], 'Number');
-      if (data.hasOwnProperty('ServiceChargePercentage'))
-        obj.ServiceChargePercentage = ApiClient.convertToType(data['ServiceChargePercentage'], 'Number');
     }
     return obj;
   }
@@ -155,51 +133,6 @@
   exports.prototype.Voucher = undefined;
 
   /**
-   * @member {Number} FlatFeeExcludingVat
-   */
-  exports.prototype.FlatFeeExcludingVat = undefined;
-
-  /**
-   * @member {Number} FlatFeeExcludingVAT
-   */
-  exports.prototype.FlatFeeExcludingVAT = undefined;
-
-  /**
-   * @member {Number} FlatFeeIncludingVat
-   */
-  exports.prototype.FlatFeeIncludingVat = undefined;
-
-  /**
-   * @member {Number} PercentageFeeExcludingVat
-   */
-  exports.prototype.PercentageFeeExcludingVat = undefined;
-
-  /**
-   * @member {Number} PercentageFeeExcludingVAT
-   */
-  exports.prototype.PercentageFeeExcludingVAT = undefined;
-
-  /**
-   * @member {Number} Vat
-   */
-  exports.prototype.Vat = undefined;
-
-  /**
-   * @member {Number} TotalFees
-   */
-  exports.prototype.TotalFees = undefined;
-
-  /**
-   * @member {Number} CashFeeChargedToCustomer
-   */
-  exports.prototype.CashFeeChargedToCustomer = undefined;
-
-  /**
-   * @member {Number} NetSales
-   */
-  exports.prototype.NetSales = undefined;
-
-  /**
    * @member {Number} StoreId
    */
   exports.prototype.StoreId = undefined;
@@ -208,16 +141,6 @@
    * @member {String} StoreName
    */
   exports.prototype.StoreName = undefined;
-
-  /**
-   * @member {Number} ServiceChargeAmount
-   */
-  exports.prototype.ServiceChargeAmount = undefined;
-
-  /**
-   * @member {Number} ServiceChargePercentage
-   */
-  exports.prototype.ServiceChargePercentage = undefined;
 
 
 
@@ -234,10 +157,10 @@
     Cash: "Cash",
 
     /**
-     * value: "Online"
+     * value: "Card"
      * @const
      */
-    Online: "Online"
+    Card: "Card"
   };
 
 
