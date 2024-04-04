@@ -78,6 +78,8 @@
         obj.StoreId = ApiClient.convertToType(data['StoreId'], 'Number');
       if (data.hasOwnProperty('StoreName'))
         obj.StoreName = ApiClient.convertToType(data['StoreName'], 'String');
+      if (data.hasOwnProperty('RefundChargebackType'))
+        obj.RefundChargebackType = ApiClient.convertToType(data['RefundChargebackType'], 'String');
     }
     return obj;
   }
@@ -141,6 +143,11 @@
    * @member {String} StoreName
    */
   exports.prototype.StoreName = undefined;
+
+  /**
+   * @member {module:model/PayoutReport3PayoutOrder.RefundChargebackTypeEnum} RefundChargebackType
+   */
+  exports.prototype.RefundChargebackType = undefined;
 
 
 
@@ -847,6 +854,26 @@
      * @const
      */
     BMD: "BMD"
+  };
+
+
+  /**
+   * Allowed values for the <code>RefundChargebackType</code> property.
+   * @enum {String}
+   * @readonly
+   */
+  exports.RefundChargebackTypeEnum = {
+    /**
+     * value: "Refund"
+     * @const
+     */
+    Refund: "Refund",
+
+    /**
+     * value: "Chargeback"
+     * @const
+     */
+    Chargeback: "Chargeback"
   };
 
   return exports;

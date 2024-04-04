@@ -112,6 +112,12 @@
         // expect(instance.StoreName).to.be(expectedValueLiteral);
       });
 
+      it('should have the property RefundChargebackType (base name: "RefundChargebackType")', function() {
+        // TODO: update the code to test the property RefundChargebackType
+        expect(instance).to.have.property('RefundChargebackType');
+        // expect(instance.RefundChargebackType).to.be(expectedValueLiteral);
+      });
+
     });
   });
 

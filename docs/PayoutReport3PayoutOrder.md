@@ -15,6 +15,7 @@ Name | Type | Description | Notes
 **Voucher** | **Number** |  | [optional] 
 **StoreId** | **Number** |  | [optional] 
 **StoreName** | **String** |  | [optional] 
+**RefundChargebackType** | **String** |  | [optional] 
 
 
 <a name="OrderTypeEnum"></a>
@@ -257,6 +258,17 @@ Name | Type | Description | Notes
 * `TWD` (value: `"TWD"`)
 
 * `BMD` (value: `"BMD"`)
+
+
+
+
+<a name="RefundChargebackTypeEnum"></a>
+## Enum: RefundChargebackTypeEnum
+
+
+* `Refund` (value: `"Refund"`)
+
+* `Chargeback` (value: `"Chargeback"`)
 
 
 
