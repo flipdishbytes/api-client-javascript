@@ -28,6 +28,7 @@ Name | Type | Description | Notes
 **ChannelRestrictions** | **[String]** | Limit the channels this voucher can be used on | [optional] 
 **VoucherSubType** | **String** | Voucher Subtype | [optional] 
 **CustomerId** | **Number** | Customer UserID | [optional] 
+**MaxRedemptions** | **Number** | Maximum number of times the voucher can be redeemed (used) | [optional] 
 
 
 <a name="VoucherTypeEnum"></a>

@@ -123,6 +123,8 @@
         obj.VoucherSubType = ApiClient.convertToType(data['VoucherSubType'], 'String');
       if (data.hasOwnProperty('CustomerId'))
         obj.CustomerId = ApiClient.convertToType(data['CustomerId'], 'Number');
+      if (data.hasOwnProperty('MaxRedemptions'))
+        obj.MaxRedemptions = ApiClient.convertToType(data['MaxRedemptions'], 'Number');
     }
     return obj;
   }
@@ -330,6 +332,12 @@
    * @member {Number} CustomerId
    */
   exports.prototype.CustomerId = undefined;
+
+  /**
+   * Maximum number of times the voucher can be redeemed (used)
+   * @member {Number} MaxRedemptions
+   */
+  exports.prototype.MaxRedemptions = undefined;
 
 
 

@@ -244,6 +244,12 @@
         // expect(instance.CustomerId).to.be(expectedValueLiteral);
       });
 
+      it('should have the property MaxRedemptions (base name: "MaxRedemptions")', function() {
+        // TODO: update the code to test the property MaxRedemptions
+        expect(instance).to.have.property('MaxRedemptions');
+        // expect(instance.MaxRedemptions).to.be(expectedValueLiteral);
+      });
+
     });
   });
 
