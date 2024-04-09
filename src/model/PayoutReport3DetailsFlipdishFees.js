@@ -56,8 +56,12 @@
       obj = obj || new exports();
       if (data.hasOwnProperty('WebAndAppCash'))
         obj.WebAndAppCash = ApiClient.convertToType(data['WebAndAppCash'], 'Number');
+      if (data.hasOwnProperty('WebAndAppCashRevenueExcludingTips'))
+        obj.WebAndAppCashRevenueExcludingTips = ApiClient.convertToType(data['WebAndAppCashRevenueExcludingTips'], 'Number');
       if (data.hasOwnProperty('WebAndAppCard'))
         obj.WebAndAppCard = ApiClient.convertToType(data['WebAndAppCard'], 'Number');
+      if (data.hasOwnProperty('WebAndAppCardRevenueExcludingTips'))
+        obj.WebAndAppCardRevenueExcludingTips = ApiClient.convertToType(data['WebAndAppCardRevenueExcludingTips'], 'Number');
       if (data.hasOwnProperty('KioskCash'))
         obj.KioskCash = ApiClient.convertToType(data['KioskCash'], 'Number');
       if (data.hasOwnProperty('KioskCard'))
@@ -68,6 +72,8 @@
         obj.QropCard = ApiClient.convertToType(data['QropCard'], 'Number');
       if (data.hasOwnProperty('PosCard'))
         obj.PosCard = ApiClient.convertToType(data['PosCard'], 'Number');
+      if (data.hasOwnProperty('PosCardRevenue'))
+        obj.PosCardRevenue = ApiClient.convertToType(data['PosCardRevenue'], 'Number');
       if (data.hasOwnProperty('PosCardOnFlipdishOrders'))
         obj.PosCardOnFlipdishOrders = ApiClient.convertToType(data['PosCardOnFlipdishOrders'], 'Number');
       if (data.hasOwnProperty('OtherIntegrationFees'))
@@ -88,9 +94,19 @@
   exports.prototype.WebAndAppCash = undefined;
 
   /**
+   * @member {Number} WebAndAppCashRevenueExcludingTips
+   */
+  exports.prototype.WebAndAppCashRevenueExcludingTips = undefined;
+
+  /**
    * @member {Number} WebAndAppCard
    */
   exports.prototype.WebAndAppCard = undefined;
+
+  /**
+   * @member {Number} WebAndAppCardRevenueExcludingTips
+   */
+  exports.prototype.WebAndAppCardRevenueExcludingTips = undefined;
 
   /**
    * @member {Number} KioskCash
@@ -116,6 +132,11 @@
    * @member {Number} PosCard
    */
   exports.prototype.PosCard = undefined;
+
+  /**
+   * @member {Number} PosCardRevenue
+   */
+  exports.prototype.PosCardRevenue = undefined;
 
   /**
    * @member {Number} PosCardOnFlipdishOrders
