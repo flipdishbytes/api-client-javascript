@@ -61,6 +61,8 @@ Name | Type | Description | Notes
 
 * `UpdateExternalAccount` (value: `"UpdateExternalAccount"`)
 
+* `PlatformPaused` (value: `"PlatformPaused"`)
+
 
 
 

@@ -235,7 +235,13 @@
      * value: "UpdateExternalAccount"
      * @const
      */
-    UpdateExternalAccount: "UpdateExternalAccount"
+    UpdateExternalAccount: "UpdateExternalAccount",
+
+    /**
+     * value: "PlatformPaused"
+     * @const
+     */
+    PlatformPaused: "PlatformPaused"
   };
 
   return exports;
