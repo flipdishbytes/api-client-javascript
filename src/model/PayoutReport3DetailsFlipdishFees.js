@@ -56,12 +56,12 @@
       obj = obj || new exports();
       if (data.hasOwnProperty('WebAndAppCash'))
         obj.WebAndAppCash = ApiClient.convertToType(data['WebAndAppCash'], 'Number');
-      if (data.hasOwnProperty('WebAndAppCashRevenueExcludingTips'))
-        obj.WebAndAppCashRevenueExcludingTips = ApiClient.convertToType(data['WebAndAppCashRevenueExcludingTips'], 'Number');
+      if (data.hasOwnProperty('WebAndAppCashRevenueIncludingTips'))
+        obj.WebAndAppCashRevenueIncludingTips = ApiClient.convertToType(data['WebAndAppCashRevenueIncludingTips'], 'Number');
       if (data.hasOwnProperty('WebAndAppCard'))
         obj.WebAndAppCard = ApiClient.convertToType(data['WebAndAppCard'], 'Number');
-      if (data.hasOwnProperty('WebAndAppCardRevenueExcludingTips'))
-        obj.WebAndAppCardRevenueExcludingTips = ApiClient.convertToType(data['WebAndAppCardRevenueExcludingTips'], 'Number');
+      if (data.hasOwnProperty('WebAndAppCardRevenueIncludingTips'))
+        obj.WebAndAppCardRevenueIncludingTips = ApiClient.convertToType(data['WebAndAppCardRevenueIncludingTips'], 'Number');
       if (data.hasOwnProperty('KioskCash'))
         obj.KioskCash = ApiClient.convertToType(data['KioskCash'], 'Number');
       if (data.hasOwnProperty('KioskCard'))
@@ -94,9 +94,9 @@
   exports.prototype.WebAndAppCash = undefined;
 
   /**
-   * @member {Number} WebAndAppCashRevenueExcludingTips
+   * @member {Number} WebAndAppCashRevenueIncludingTips
    */
-  exports.prototype.WebAndAppCashRevenueExcludingTips = undefined;
+  exports.prototype.WebAndAppCashRevenueIncludingTips = undefined;
 
   /**
    * @member {Number} WebAndAppCard
@@ -104,9 +104,9 @@
   exports.prototype.WebAndAppCard = undefined;
 
   /**
-   * @member {Number} WebAndAppCardRevenueExcludingTips
+   * @member {Number} WebAndAppCardRevenueIncludingTips
    */
-  exports.prototype.WebAndAppCardRevenueExcludingTips = undefined;
+  exports.prototype.WebAndAppCardRevenueIncludingTips = undefined;
 
   /**
    * @member {Number} KioskCash

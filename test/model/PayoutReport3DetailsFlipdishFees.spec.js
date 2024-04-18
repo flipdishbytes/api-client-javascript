@@ -46,10 +46,10 @@
         // expect(instance.WebAndAppCash).to.be(expectedValueLiteral);
       });
 
-      it('should have the property WebAndAppCashRevenueExcludingTips (base name: "WebAndAppCashRevenueExcludingTips")', function() {
-        // TODO: update the code to test the property WebAndAppCashRevenueExcludingTips
-        expect(instance).to.have.property('WebAndAppCashRevenueExcludingTips');
-        // expect(instance.WebAndAppCashRevenueExcludingTips).to.be(expectedValueLiteral);
+      it('should have the property WebAndAppCashRevenueIncludingTips (base name: "WebAndAppCashRevenueIncludingTips")', function() {
+        // TODO: update the code to test the property WebAndAppCashRevenueIncludingTips
+        expect(instance).to.have.property('WebAndAppCashRevenueIncludingTips');
+        // expect(instance.WebAndAppCashRevenueIncludingTips).to.be(expectedValueLiteral);
       });
 
       it('should have the property WebAndAppCard (base name: "WebAndAppCard")', function() {
@@ -58,10 +58,10 @@
         // expect(instance.WebAndAppCard).to.be(expectedValueLiteral);
       });
 
-      it('should have the property WebAndAppCardRevenueExcludingTips (base name: "WebAndAppCardRevenueExcludingTips")', function() {
-        // TODO: update the code to test the property WebAndAppCardRevenueExcludingTips
-        expect(instance).to.have.property('WebAndAppCardRevenueExcludingTips');
-        // expect(instance.WebAndAppCardRevenueExcludingTips).to.be(expectedValueLiteral);
+      it('should have the property WebAndAppCardRevenueIncludingTips (base name: "WebAndAppCardRevenueIncludingTips")', function() {
+        // TODO: update the code to test the property WebAndAppCardRevenueIncludingTips
+        expect(instance).to.have.property('WebAndAppCardRevenueIncludingTips');
+        // expect(instance.WebAndAppCardRevenueIncludingTips).to.be(expectedValueLiteral);
       });
 
       it('should have the property KioskCash (base name: "KioskCash")', function() {
