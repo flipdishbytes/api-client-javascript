@@ -72,6 +72,20 @@
         obj.OtherTransactions = ApiClient.convertToType(data['OtherTransactions'], 'Number');
       if (data.hasOwnProperty('ClosingBalance'))
         obj.ClosingBalance = ApiClient.convertToType(data['ClosingBalance'], 'Number');
+      if (data.hasOwnProperty('BalanceRepaid'))
+        obj.BalanceRepaid = ApiClient.convertToType(data['BalanceRepaid'], 'Number');
+      if (data.hasOwnProperty('RefundsOnCardOrdersBracketsAmount'))
+        obj.RefundsOnCardOrdersBracketsAmount = ApiClient.convertToType(data['RefundsOnCardOrdersBracketsAmount'], 'Number');
+      if (data.hasOwnProperty('RefundsOnCardOrdersBracketsOutOfAmount'))
+        obj.RefundsOnCardOrdersBracketsOutOfAmount = ApiClient.convertToType(data['RefundsOnCardOrdersBracketsOutOfAmount'], 'Number');
+      if (data.hasOwnProperty('RefundsOnCashOrdersBracketsAmount'))
+        obj.RefundsOnCashOrdersBracketsAmount = ApiClient.convertToType(data['RefundsOnCashOrdersBracketsAmount'], 'Number');
+      if (data.hasOwnProperty('RefundsOnCashOrdersBracketsOutOfAmount'))
+        obj.RefundsOnCashOrdersBracketsOutOfAmount = ApiClient.convertToType(data['RefundsOnCashOrdersBracketsOutOfAmount'], 'Number');
+      if (data.hasOwnProperty('CashCustomerFeesBracketsAmount'))
+        obj.CashCustomerFeesBracketsAmount = ApiClient.convertToType(data['CashCustomerFeesBracketsAmount'], 'Number');
+      if (data.hasOwnProperty('CashCustomerFeesBracketsOutOfAmount'))
+        obj.CashCustomerFeesBracketsOutOfAmount = ApiClient.convertToType(data['CashCustomerFeesBracketsOutOfAmount'], 'Number');
     }
     return obj;
   }
@@ -120,6 +134,41 @@
    * @member {Number} ClosingBalance
    */
   exports.prototype.ClosingBalance = undefined;
+
+  /**
+   * @member {Number} BalanceRepaid
+   */
+  exports.prototype.BalanceRepaid = undefined;
+
+  /**
+   * @member {Number} RefundsOnCardOrdersBracketsAmount
+   */
+  exports.prototype.RefundsOnCardOrdersBracketsAmount = undefined;
+
+  /**
+   * @member {Number} RefundsOnCardOrdersBracketsOutOfAmount
+   */
+  exports.prototype.RefundsOnCardOrdersBracketsOutOfAmount = undefined;
+
+  /**
+   * @member {Number} RefundsOnCashOrdersBracketsAmount
+   */
+  exports.prototype.RefundsOnCashOrdersBracketsAmount = undefined;
+
+  /**
+   * @member {Number} RefundsOnCashOrdersBracketsOutOfAmount
+   */
+  exports.prototype.RefundsOnCashOrdersBracketsOutOfAmount = undefined;
+
+  /**
+   * @member {Number} CashCustomerFeesBracketsAmount
+   */
+  exports.prototype.CashCustomerFeesBracketsAmount = undefined;
+
+  /**
+   * @member {Number} CashCustomerFeesBracketsOutOfAmount
+   */
+  exports.prototype.CashCustomerFeesBracketsOutOfAmount = undefined;
 
 
   return exports;

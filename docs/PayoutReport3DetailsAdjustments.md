@@ -12,5 +12,12 @@ Name | Type | Description | Notes
 **Chargebacks** | **Number** |  | [optional] 
 **OtherTransactions** | **Number** |  | [optional] 
 **ClosingBalance** | **Number** |  | [optional] 
+**BalanceRepaid** | **Number** |  | [optional] 
+**RefundsOnCardOrdersBracketsAmount** | **Number** |  | [optional] 
+**RefundsOnCardOrdersBracketsOutOfAmount** | **Number** |  | [optional] 
+**RefundsOnCashOrdersBracketsAmount** | **Number** |  | [optional] 
+**RefundsOnCashOrdersBracketsOutOfAmount** | **Number** |  | [optional] 
+**CashCustomerFeesBracketsAmount** | **Number** |  | [optional] 
+**CashCustomerFeesBracketsOutOfAmount** | **Number** |  | [optional] 
 
 

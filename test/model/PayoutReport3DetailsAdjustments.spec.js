@@ -94,6 +94,48 @@
         // expect(instance.ClosingBalance).to.be(expectedValueLiteral);
       });
 
+      it('should have the property BalanceRepaid (base name: "BalanceRepaid")', function() {
+        // TODO: update the code to test the property BalanceRepaid
+        expect(instance).to.have.property('BalanceRepaid');
+        // expect(instance.BalanceRepaid).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property RefundsOnCardOrdersBracketsAmount (base name: "RefundsOnCardOrdersBracketsAmount")', function() {
+        // TODO: update the code to test the property RefundsOnCardOrdersBracketsAmount
+        expect(instance).to.have.property('RefundsOnCardOrdersBracketsAmount');
+        // expect(instance.RefundsOnCardOrdersBracketsAmount).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property RefundsOnCardOrdersBracketsOutOfAmount (base name: "RefundsOnCardOrdersBracketsOutOfAmount")', function() {
+        // TODO: update the code to test the property RefundsOnCardOrdersBracketsOutOfAmount
+        expect(instance).to.have.property('RefundsOnCardOrdersBracketsOutOfAmount');
+        // expect(instance.RefundsOnCardOrdersBracketsOutOfAmount).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property RefundsOnCashOrdersBracketsAmount (base name: "RefundsOnCashOrdersBracketsAmount")', function() {
+        // TODO: update the code to test the property RefundsOnCashOrdersBracketsAmount
+        expect(instance).to.have.property('RefundsOnCashOrdersBracketsAmount');
+        // expect(instance.RefundsOnCashOrdersBracketsAmount).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property RefundsOnCashOrdersBracketsOutOfAmount (base name: "RefundsOnCashOrdersBracketsOutOfAmount")', function() {
+        // TODO: update the code to test the property RefundsOnCashOrdersBracketsOutOfAmount
+        expect(instance).to.have.property('RefundsOnCashOrdersBracketsOutOfAmount');
+        // expect(instance.RefundsOnCashOrdersBracketsOutOfAmount).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property CashCustomerFeesBracketsAmount (base name: "CashCustomerFeesBracketsAmount")', function() {
+        // TODO: update the code to test the property CashCustomerFeesBracketsAmount
+        expect(instance).to.have.property('CashCustomerFeesBracketsAmount');
+        // expect(instance.CashCustomerFeesBracketsAmount).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property CashCustomerFeesBracketsOutOfAmount (base name: "CashCustomerFeesBracketsOutOfAmount")', function() {
+        // TODO: update the code to test the property CashCustomerFeesBracketsOutOfAmount
+        expect(instance).to.have.property('CashCustomerFeesBracketsOutOfAmount');
+        // expect(instance.CashCustomerFeesBracketsOutOfAmount).to.be(expectedValueLiteral);
+      });
+
     });
   });
 
