@@ -56,6 +56,8 @@
       obj = obj || new exports();
       if (data.hasOwnProperty('Revenue'))
         obj.Revenue = ApiClient.convertToType(data['Revenue'], 'Number');
+      if (data.hasOwnProperty('RevenueOfWhichCash'))
+        obj.RevenueOfWhichCash = ApiClient.convertToType(data['RevenueOfWhichCash'], 'Number');
       if (data.hasOwnProperty('RevenueForFeeCalculations'))
         obj.RevenueForFeeCalculations = ApiClient.convertToType(data['RevenueForFeeCalculations'], 'Number');
       if (data.hasOwnProperty('FlipdishFees'))
@@ -74,6 +76,11 @@
    * @member {Number} Revenue
    */
   exports.prototype.Revenue = undefined;
+
+  /**
+   * @member {Number} RevenueOfWhichCash
+   */
+  exports.prototype.RevenueOfWhichCash = undefined;
 
   /**
    * @member {Number} RevenueForFeeCalculations

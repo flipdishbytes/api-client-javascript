@@ -46,6 +46,12 @@
         // expect(instance.Revenue).to.be(expectedValueLiteral);
       });
 
+      it('should have the property RevenueOfWhichCash (base name: "RevenueOfWhichCash")', function() {
+        // TODO: update the code to test the property RevenueOfWhichCash
+        expect(instance).to.have.property('RevenueOfWhichCash');
+        // expect(instance.RevenueOfWhichCash).to.be(expectedValueLiteral);
+      });
+
       it('should have the property RevenueForFeeCalculations (base name: "RevenueForFeeCalculations")', function() {
         // TODO: update the code to test the property RevenueForFeeCalculations
         expect(instance).to.have.property('RevenueForFeeCalculations');
