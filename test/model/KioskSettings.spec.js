@@ -46,6 +46,12 @@
         // expect(instance.HideLogoFromFrontPage).to.be(expectedValueLiteral);
       });
 
+      it('should have the property TwoColumnMenuLayout (base name: "TwoColumnMenuLayout")', function() {
+        // TODO: update the code to test the property TwoColumnMenuLayout
+        expect(instance).to.have.property('TwoColumnMenuLayout');
+        // expect(instance.TwoColumnMenuLayout).to.be(expectedValueLiteral);
+      });
+
     });
   });
 

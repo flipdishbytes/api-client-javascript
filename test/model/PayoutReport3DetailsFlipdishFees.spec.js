@@ -118,6 +118,12 @@
         // expect(instance.OtherIntegrationTips).to.be(expectedValueLiteral);
       });
 
+      it('should have the property RefundedFeesOnRefundedSales (base name: "RefundedFeesOnRefundedSales")', function() {
+        // TODO: update the code to test the property RefundedFeesOnRefundedSales
+        expect(instance).to.have.property('RefundedFeesOnRefundedSales');
+        // expect(instance.RefundedFeesOnRefundedSales).to.be(expectedValueLiteral);
+      });
+
       it('should have the property Vat (base name: "Vat")', function() {
         // TODO: update the code to test the property Vat
         expect(instance).to.have.property('Vat');

@@ -16,6 +16,7 @@ Name | Type | Description | Notes
 **PosCardOnFlipdishOrders** | **Number** |  | [optional] 
 **OtherIntegrationFees** | **Number** |  | [optional] 
 **OtherIntegrationTips** | **Number** |  | [optional] 
+**RefundedFeesOnRefundedSales** | **Number** |  | [optional] 
 **Vat** | **Number** |  | [optional] 
 **Total** | **Number** |  | [optional] 
 

@@ -57,6 +57,8 @@
       obj = obj || new exports();
       if (data.hasOwnProperty('HideLogoFromFrontPage'))
         obj.HideLogoFromFrontPage = ApiClient.convertToType(data['HideLogoFromFrontPage'], 'Boolean');
+      if (data.hasOwnProperty('TwoColumnMenuLayout'))
+        obj.TwoColumnMenuLayout = ApiClient.convertToType(data['TwoColumnMenuLayout'], 'Boolean');
     }
     return obj;
   }
@@ -66,6 +68,12 @@
    * @member {Boolean} HideLogoFromFrontPage
    */
   exports.prototype.HideLogoFromFrontPage = undefined;
+
+  /**
+   * 2 Column Menu Layout
+   * @member {Boolean} TwoColumnMenuLayout
+   */
+  exports.prototype.TwoColumnMenuLayout = undefined;
 
 
   return exports;

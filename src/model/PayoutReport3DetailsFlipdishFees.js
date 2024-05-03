@@ -80,6 +80,8 @@
         obj.OtherIntegrationFees = ApiClient.convertToType(data['OtherIntegrationFees'], 'Number');
       if (data.hasOwnProperty('OtherIntegrationTips'))
         obj.OtherIntegrationTips = ApiClient.convertToType(data['OtherIntegrationTips'], 'Number');
+      if (data.hasOwnProperty('RefundedFeesOnRefundedSales'))
+        obj.RefundedFeesOnRefundedSales = ApiClient.convertToType(data['RefundedFeesOnRefundedSales'], 'Number');
       if (data.hasOwnProperty('Vat'))
         obj.Vat = ApiClient.convertToType(data['Vat'], 'Number');
       if (data.hasOwnProperty('Total'))
@@ -152,6 +154,11 @@
    * @member {Number} OtherIntegrationTips
    */
   exports.prototype.OtherIntegrationTips = undefined;
+
+  /**
+   * @member {Number} RefundedFeesOnRefundedSales
+   */
+  exports.prototype.RefundedFeesOnRefundedSales = undefined;
 
   /**
    * @member {Number} Vat
