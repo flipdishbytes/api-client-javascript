@@ -46,28 +46,28 @@
         // expect(instance.OrderId).to.be(expectedValueLiteral);
       });
 
-      it('should have the property PayoutId (base name: "PayoutId")', function() {
-        // TODO: update the code to test the property PayoutId
-        expect(instance).to.have.property('PayoutId');
-        // expect(instance.PayoutId).to.be(expectedValueLiteral);
-      });
-
       it('should have the property OrderDate (base name: "OrderDate")', function() {
         // TODO: update the code to test the property OrderDate
         expect(instance).to.have.property('OrderDate');
         // expect(instance.OrderDate).to.be(expectedValueLiteral);
       });
 
+      it('should have the property StoreId (base name: "StoreId")', function() {
+        // TODO: update the code to test the property StoreId
+        expect(instance).to.have.property('StoreId');
+        // expect(instance.StoreId).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property StoreName (base name: "StoreName")', function() {
+        // TODO: update the code to test the property StoreName
+        expect(instance).to.have.property('StoreName');
+        // expect(instance.StoreName).to.be(expectedValueLiteral);
+      });
+
       it('should have the property OrderType (base name: "OrderType")', function() {
         // TODO: update the code to test the property OrderType
         expect(instance).to.have.property('OrderType');
         // expect(instance.OrderType).to.be(expectedValueLiteral);
-      });
-
-      it('should have the property OrderCurrency (base name: "OrderCurrency")', function() {
-        // TODO: update the code to test the property OrderCurrency
-        expect(instance).to.have.property('OrderCurrency');
-        // expect(instance.OrderCurrency).to.be(expectedValueLiteral);
       });
 
       it('should have the property Sales (base name: "Sales")', function() {
@@ -100,16 +100,10 @@
         // expect(instance.Voucher).to.be(expectedValueLiteral);
       });
 
-      it('should have the property StoreId (base name: "StoreId")', function() {
-        // TODO: update the code to test the property StoreId
-        expect(instance).to.have.property('StoreId');
-        // expect(instance.StoreId).to.be(expectedValueLiteral);
-      });
-
-      it('should have the property StoreName (base name: "StoreName")', function() {
-        // TODO: update the code to test the property StoreName
-        expect(instance).to.have.property('StoreName');
-        // expect(instance.StoreName).to.be(expectedValueLiteral);
+      it('should have the property OrderCurrency (base name: "OrderCurrency")', function() {
+        // TODO: update the code to test the property OrderCurrency
+        expect(instance).to.have.property('OrderCurrency');
+        // expect(instance.OrderCurrency).to.be(expectedValueLiteral);
       });
 
       it('should have the property RefundChargebackType (base name: "RefundChargebackType")', function() {

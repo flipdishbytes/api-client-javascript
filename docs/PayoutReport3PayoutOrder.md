@@ -4,17 +4,16 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **OrderId** | **Number** |  | [optional] 
-**PayoutId** | **Number** |  | [optional] 
 **OrderDate** | **Date** |  | [optional] 
+**StoreId** | **Number** |  | [optional] 
+**StoreName** | **String** |  | [optional] 
 **OrderType** | **String** |  | [optional] 
-**OrderCurrency** | **String** |  | [optional] 
 **Sales** | **Number** |  | [optional] 
 **SalesTax** | **Number** |  | [optional] 
 **DeliveryCharges** | **Number** |  | [optional] 
 **Tips** | **Number** |  | [optional] 
 **Voucher** | **Number** |  | [optional] 
-**StoreId** | **Number** |  | [optional] 
-**StoreName** | **String** |  | [optional] 
+**OrderCurrency** | **String** |  | [optional] 
 **RefundChargebackType** | **String** |  | [optional] 
 
 

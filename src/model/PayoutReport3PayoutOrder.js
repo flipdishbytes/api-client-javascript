@@ -56,14 +56,14 @@
       obj = obj || new exports();
       if (data.hasOwnProperty('OrderId'))
         obj.OrderId = ApiClient.convertToType(data['OrderId'], 'Number');
-      if (data.hasOwnProperty('PayoutId'))
-        obj.PayoutId = ApiClient.convertToType(data['PayoutId'], 'Number');
       if (data.hasOwnProperty('OrderDate'))
         obj.OrderDate = ApiClient.convertToType(data['OrderDate'], 'Date');
+      if (data.hasOwnProperty('StoreId'))
+        obj.StoreId = ApiClient.convertToType(data['StoreId'], 'Number');
+      if (data.hasOwnProperty('StoreName'))
+        obj.StoreName = ApiClient.convertToType(data['StoreName'], 'String');
       if (data.hasOwnProperty('OrderType'))
         obj.OrderType = ApiClient.convertToType(data['OrderType'], 'String');
-      if (data.hasOwnProperty('OrderCurrency'))
-        obj.OrderCurrency = ApiClient.convertToType(data['OrderCurrency'], 'String');
       if (data.hasOwnProperty('Sales'))
         obj.Sales = ApiClient.convertToType(data['Sales'], 'Number');
       if (data.hasOwnProperty('SalesTax'))
@@ -74,10 +74,8 @@
         obj.Tips = ApiClient.convertToType(data['Tips'], 'Number');
       if (data.hasOwnProperty('Voucher'))
         obj.Voucher = ApiClient.convertToType(data['Voucher'], 'Number');
-      if (data.hasOwnProperty('StoreId'))
-        obj.StoreId = ApiClient.convertToType(data['StoreId'], 'Number');
-      if (data.hasOwnProperty('StoreName'))
-        obj.StoreName = ApiClient.convertToType(data['StoreName'], 'String');
+      if (data.hasOwnProperty('OrderCurrency'))
+        obj.OrderCurrency = ApiClient.convertToType(data['OrderCurrency'], 'String');
       if (data.hasOwnProperty('RefundChargebackType'))
         obj.RefundChargebackType = ApiClient.convertToType(data['RefundChargebackType'], 'String');
     }
@@ -90,24 +88,24 @@
   exports.prototype.OrderId = undefined;
 
   /**
-   * @member {Number} PayoutId
-   */
-  exports.prototype.PayoutId = undefined;
-
-  /**
    * @member {Date} OrderDate
    */
   exports.prototype.OrderDate = undefined;
 
   /**
+   * @member {Number} StoreId
+   */
+  exports.prototype.StoreId = undefined;
+
+  /**
+   * @member {String} StoreName
+   */
+  exports.prototype.StoreName = undefined;
+
+  /**
    * @member {module:model/PayoutReport3PayoutOrder.OrderTypeEnum} OrderType
    */
   exports.prototype.OrderType = undefined;
-
-  /**
-   * @member {module:model/PayoutReport3PayoutOrder.OrderCurrencyEnum} OrderCurrency
-   */
-  exports.prototype.OrderCurrency = undefined;
 
   /**
    * @member {Number} Sales
@@ -135,14 +133,9 @@
   exports.prototype.Voucher = undefined;
 
   /**
-   * @member {Number} StoreId
+   * @member {module:model/PayoutReport3PayoutOrder.OrderCurrencyEnum} OrderCurrency
    */
-  exports.prototype.StoreId = undefined;
-
-  /**
-   * @member {String} StoreName
-   */
-  exports.prototype.StoreName = undefined;
+  exports.prototype.OrderCurrency = undefined;
 
   /**
    * @member {module:model/PayoutReport3PayoutOrder.RefundChargebackTypeEnum} RefundChargebackType
