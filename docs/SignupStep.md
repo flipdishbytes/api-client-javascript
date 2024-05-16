@@ -18,6 +18,8 @@ Name | Type | Description | Notes
 
 * `PaymentSubscription` (value: `"PaymentSubscription"`)
 
+* `StoreName` (value: `"StoreName"`)
+
 
 
 

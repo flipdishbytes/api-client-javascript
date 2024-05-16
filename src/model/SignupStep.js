@@ -107,7 +107,13 @@
      * value: "PaymentSubscription"
      * @const
      */
-    PaymentSubscription: "PaymentSubscription"
+    PaymentSubscription: "PaymentSubscription",
+
+    /**
+     * value: "StoreName"
+     * @const
+     */
+    StoreName: "StoreName"
   };
 
   return exports;
