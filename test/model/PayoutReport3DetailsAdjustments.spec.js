@@ -136,6 +136,12 @@
         // expect(instance.CashCustomerFeesBracketsOutOfAmount).to.be(expectedValueLiteral);
       });
 
+      it('should have the property BalanceChange (base name: "BalanceChange")', function() {
+        // TODO: update the code to test the property BalanceChange
+        expect(instance).to.have.property('BalanceChange');
+        // expect(instance.BalanceChange).to.be(expectedValueLiteral);
+      });
+
     });
   });
 

@@ -19,5 +19,6 @@ Name | Type | Description | Notes
 **RefundsOnCashOrdersBracketsOutOfAmount** | **Number** |  | [optional] 
 **CashCustomerFeesBracketsAmount** | **Number** |  | [optional] 
 **CashCustomerFeesBracketsOutOfAmount** | **Number** |  | [optional] 
+**BalanceChange** | **Number** |  | [optional] 
 
 
