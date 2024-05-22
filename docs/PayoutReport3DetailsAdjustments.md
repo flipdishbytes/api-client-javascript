@@ -20,5 +20,7 @@ Name | Type | Description | Notes
 **CashCustomerFeesBracketsAmount** | **Number** |  | [optional] 
 **CashCustomerFeesBracketsOutOfAmount** | **Number** |  | [optional] 
 **BalanceChange** | **Number** |  | [optional] 
+**PreviousPayoutId** | **Number** |  | [optional] 
+**NextPayoutId** | **Number** |  | [optional] 
 
 

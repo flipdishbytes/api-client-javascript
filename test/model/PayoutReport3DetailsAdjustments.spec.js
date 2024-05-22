@@ -142,6 +142,18 @@
         // expect(instance.BalanceChange).to.be(expectedValueLiteral);
       });
 
+      it('should have the property PreviousPayoutId (base name: "PreviousPayoutId")', function() {
+        // TODO: update the code to test the property PreviousPayoutId
+        expect(instance).to.have.property('PreviousPayoutId');
+        // expect(instance.PreviousPayoutId).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property NextPayoutId (base name: "NextPayoutId")', function() {
+        // TODO: update the code to test the property NextPayoutId
+        expect(instance).to.have.property('NextPayoutId');
+        // expect(instance.NextPayoutId).to.be(expectedValueLiteral);
+      });
+
     });
   });
 

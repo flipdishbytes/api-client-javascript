@@ -88,6 +88,10 @@
         obj.CashCustomerFeesBracketsOutOfAmount = ApiClient.convertToType(data['CashCustomerFeesBracketsOutOfAmount'], 'Number');
       if (data.hasOwnProperty('BalanceChange'))
         obj.BalanceChange = ApiClient.convertToType(data['BalanceChange'], 'Number');
+      if (data.hasOwnProperty('PreviousPayoutId'))
+        obj.PreviousPayoutId = ApiClient.convertToType(data['PreviousPayoutId'], 'Number');
+      if (data.hasOwnProperty('NextPayoutId'))
+        obj.NextPayoutId = ApiClient.convertToType(data['NextPayoutId'], 'Number');
     }
     return obj;
   }
@@ -176,6 +180,16 @@
    * @member {Number} BalanceChange
    */
   exports.prototype.BalanceChange = undefined;
+
+  /**
+   * @member {Number} PreviousPayoutId
+   */
+  exports.prototype.PreviousPayoutId = undefined;
+
+  /**
+   * @member {Number} NextPayoutId
+   */
+  exports.prototype.NextPayoutId = undefined;
 
 
   return exports;
