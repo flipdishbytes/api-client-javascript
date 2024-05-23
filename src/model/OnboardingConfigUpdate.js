@@ -59,6 +59,8 @@
         obj.IsEnabled = ApiClient.convertToType(data['IsEnabled'], 'Boolean');
       if (data.hasOwnProperty('IsWelcomeScreenEnabled'))
         obj.IsWelcomeScreenEnabled = ApiClient.convertToType(data['IsWelcomeScreenEnabled'], 'Boolean');
+      if (data.hasOwnProperty('ConfigType'))
+        obj.ConfigType = ApiClient.convertToType(data['ConfigType'], 'String');
     }
     return obj;
   }
@@ -75,6 +77,32 @@
    */
   exports.prototype.IsWelcomeScreenEnabled = undefined;
 
+  /**
+   * Onboarding config type
+   * @member {module:model/OnboardingConfigUpdate.ConfigTypeEnum} ConfigType
+   */
+  exports.prototype.ConfigType = undefined;
+
+
+
+  /**
+   * Allowed values for the <code>ConfigType</code> property.
+   * @enum {String}
+   * @readonly
+   */
+  exports.ConfigTypeEnum = {
+    /**
+     * value: "Tutorial"
+     * @const
+     */
+    Tutorial: "Tutorial",
+
+    /**
+     * value: "OnboardingWizard"
+     * @const
+     */
+    OnboardingWizard: "OnboardingWizard"
+  };
 
   return exports;
 

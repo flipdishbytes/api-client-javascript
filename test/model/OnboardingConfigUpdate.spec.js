@@ -52,6 +52,12 @@
         // expect(instance.IsWelcomeScreenEnabled).to.be(expectedValueLiteral);
       });
 
+      it('should have the property ConfigType (base name: "ConfigType")', function() {
+        // TODO: update the code to test the property ConfigType
+        expect(instance).to.have.property('ConfigType');
+        // expect(instance.ConfigType).to.be(expectedValueLiteral);
+      });
+
     });
   });
 
