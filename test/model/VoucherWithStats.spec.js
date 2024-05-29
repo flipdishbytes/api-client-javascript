@@ -232,6 +232,12 @@
         // expect(instance.ChannelRestrictions).to.be(expectedValueLiteral);
       });
 
+      it('should have the property ValidityPeriods (base name: "ValidityPeriods")', function() {
+        // TODO: update the code to test the property ValidityPeriods
+        expect(instance).to.have.property('ValidityPeriods');
+        // expect(instance.ValidityPeriods).to.be(expectedValueLiteral);
+      });
+
       it('should have the property VoucherSubType (base name: "VoucherSubType")', function() {
         // TODO: update the code to test the property VoucherSubType
         expect(instance).to.have.property('VoucherSubType');

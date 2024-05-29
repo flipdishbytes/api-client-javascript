@@ -35,6 +35,7 @@ Name | Type | Description | Notes
 **StartDate** | **Date** | Voucher Starts On (Time in UTC) | [optional] 
 **ExpiryDate** | **Date** | Voucher Expires On (Time in UTC) | [optional] 
 **ChannelRestrictions** | **[String]** | Limit the channels this voucher can be used on | [optional] 
+**ValidityPeriods** | [**[ValidityPeriod]**](ValidityPeriod.md) | Periods in which the voucher is valid.  An empty list means the voucher is valid at all times.  When updating the voucher, if this is set to null, the validity periods won't be updated. | [optional] 
 **VoucherSubType** | **String** | Voucher Subtype | [optional] 
 **CustomerId** | **Number** | Customer UserID | [optional] 
 **MaxRedemptions** | **Number** | Maximum number of times the voucher can be redeemed (used) | [optional] 

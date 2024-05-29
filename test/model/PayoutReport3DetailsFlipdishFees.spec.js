@@ -70,10 +70,22 @@
         // expect(instance.KioskCash).to.be(expectedValueLiteral);
       });
 
+      it('should have the property KioskCashRevenue (base name: "KioskCashRevenue")', function() {
+        // TODO: update the code to test the property KioskCashRevenue
+        expect(instance).to.have.property('KioskCashRevenue');
+        // expect(instance.KioskCashRevenue).to.be(expectedValueLiteral);
+      });
+
       it('should have the property KioskCard (base name: "KioskCard")', function() {
         // TODO: update the code to test the property KioskCard
         expect(instance).to.have.property('KioskCard');
         // expect(instance.KioskCard).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property KioskCardRevenue (base name: "KioskCardRevenue")', function() {
+        // TODO: update the code to test the property KioskCardRevenue
+        expect(instance).to.have.property('KioskCardRevenue');
+        // expect(instance.KioskCardRevenue).to.be(expectedValueLiteral);
       });
 
       it('should have the property QropCash (base name: "QropCash")', function() {

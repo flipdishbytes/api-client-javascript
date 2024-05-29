@@ -16,18 +16,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/CreditNoteDetails', 'model/LumpDiscountDetails', 'model/PercentDiscountDetails', 'model/PromotionDetails'], factory);
+    define(['ApiClient', 'model/CreditNoteDetails', 'model/LumpDiscountDetails', 'model/PercentDiscountDetails', 'model/PromotionDetails', 'model/ValidityPeriod'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./CreditNoteDetails'), require('./LumpDiscountDetails'), require('./PercentDiscountDetails'), require('./PromotionDetails'));
+    module.exports = factory(require('../ApiClient'), require('./CreditNoteDetails'), require('./LumpDiscountDetails'), require('./PercentDiscountDetails'), require('./PromotionDetails'), require('./ValidityPeriod'));
   } else {
     // Browser globals (root is window)
     if (!root.Flipdish) {
       root.Flipdish = {};
     }
-    root.Flipdish.VoucherWithStats = factory(root.Flipdish.ApiClient, root.Flipdish.CreditNoteDetails, root.Flipdish.LumpDiscountDetails, root.Flipdish.PercentDiscountDetails, root.Flipdish.PromotionDetails);
+    root.Flipdish.VoucherWithStats = factory(root.Flipdish.ApiClient, root.Flipdish.CreditNoteDetails, root.Flipdish.LumpDiscountDetails, root.Flipdish.PercentDiscountDetails, root.Flipdish.PromotionDetails, root.Flipdish.ValidityPeriod);
   }
-}(this, function(ApiClient, CreditNoteDetails, LumpDiscountDetails, PercentDiscountDetails, PromotionDetails) {
+}(this, function(ApiClient, CreditNoteDetails, LumpDiscountDetails, PercentDiscountDetails, PromotionDetails, ValidityPeriod) {
   'use strict';
 
   /**
@@ -119,6 +119,8 @@
         obj.ExpiryDate = ApiClient.convertToType(data['ExpiryDate'], 'Date');
       if (data.hasOwnProperty('ChannelRestrictions'))
         obj.ChannelRestrictions = ApiClient.convertToType(data['ChannelRestrictions'], ['String']);
+      if (data.hasOwnProperty('ValidityPeriods'))
+        obj.ValidityPeriods = ApiClient.convertToType(data['ValidityPeriods'], [ValidityPeriod]);
       if (data.hasOwnProperty('VoucherSubType'))
         obj.VoucherSubType = ApiClient.convertToType(data['VoucherSubType'], 'String');
       if (data.hasOwnProperty('CustomerId'))
@@ -320,6 +322,12 @@
    * @member {Array.<module:model/VoucherWithStats.ChannelRestrictionsEnum>} ChannelRestrictions
    */
   exports.prototype.ChannelRestrictions = undefined;
+
+  /**
+   * Periods in which the voucher is valid.  An empty list means the voucher is valid at all times.  When updating the voucher, if this is set to null, the validity periods won't be updated.
+   * @member {Array.<module:model/ValidityPeriod>} ValidityPeriods
+   */
+  exports.prototype.ValidityPeriods = undefined;
 
   /**
    * Voucher Subtype

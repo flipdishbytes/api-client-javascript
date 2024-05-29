@@ -64,8 +64,12 @@
         obj.WebAndAppCardRevenueIncludingTips = ApiClient.convertToType(data['WebAndAppCardRevenueIncludingTips'], 'Number');
       if (data.hasOwnProperty('KioskCash'))
         obj.KioskCash = ApiClient.convertToType(data['KioskCash'], 'Number');
+      if (data.hasOwnProperty('KioskCashRevenue'))
+        obj.KioskCashRevenue = ApiClient.convertToType(data['KioskCashRevenue'], 'Number');
       if (data.hasOwnProperty('KioskCard'))
         obj.KioskCard = ApiClient.convertToType(data['KioskCard'], 'Number');
+      if (data.hasOwnProperty('KioskCardRevenue'))
+        obj.KioskCardRevenue = ApiClient.convertToType(data['KioskCardRevenue'], 'Number');
       if (data.hasOwnProperty('QropCash'))
         obj.QropCash = ApiClient.convertToType(data['QropCash'], 'Number');
       if (data.hasOwnProperty('QropCard'))
@@ -116,9 +120,19 @@
   exports.prototype.KioskCash = undefined;
 
   /**
+   * @member {Number} KioskCashRevenue
+   */
+  exports.prototype.KioskCashRevenue = undefined;
+
+  /**
    * @member {Number} KioskCard
    */
   exports.prototype.KioskCard = undefined;
+
+  /**
+   * @member {Number} KioskCardRevenue
+   */
+  exports.prototype.KioskCardRevenue = undefined;
 
   /**
    * @member {Number} QropCash
