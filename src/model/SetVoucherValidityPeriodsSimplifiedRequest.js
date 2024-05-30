@@ -38,6 +38,7 @@
 
   /**
    * Constructs a new <code>SetVoucherValidityPeriodsSimplifiedRequest</code>.
+   * Set the validity periods of a voucher.
    * @alias module:model/SetVoucherValidityPeriodsSimplifiedRequest
    * @class
    */
