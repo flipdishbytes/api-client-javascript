@@ -52,6 +52,12 @@
         // expect(instance.BankAccountId).to.be(expectedValueLiteral);
       });
 
+      it('should have the property IsManualPayout (base name: "IsManualPayout")', function() {
+        // TODO: update the code to test the property IsManualPayout
+        expect(instance).to.have.property('IsManualPayout');
+        // expect(instance.IsManualPayout).to.be(expectedValueLiteral);
+      });
+
       it('should have the property AccountName (base name: "AccountName")', function() {
         // TODO: update the code to test the property AccountName
         expect(instance).to.have.property('AccountName');

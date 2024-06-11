@@ -58,6 +58,8 @@
         obj.PayoutId = ApiClient.convertToType(data['PayoutId'], 'Number');
       if (data.hasOwnProperty('BankAccountId'))
         obj.BankAccountId = ApiClient.convertToType(data['BankAccountId'], 'Number');
+      if (data.hasOwnProperty('IsManualPayout'))
+        obj.IsManualPayout = ApiClient.convertToType(data['IsManualPayout'], 'Boolean');
       if (data.hasOwnProperty('AccountName'))
         obj.AccountName = ApiClient.convertToType(data['AccountName'], 'String');
       if (data.hasOwnProperty('PayoutStatus'))
@@ -89,6 +91,11 @@
    * @member {Number} BankAccountId
    */
   exports.prototype.BankAccountId = undefined;
+
+  /**
+   * @member {Boolean} IsManualPayout
+   */
+  exports.prototype.IsManualPayout = undefined;
 
   /**
    * @member {String} AccountName
