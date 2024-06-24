@@ -57,10 +57,6 @@
       obj = obj || new exports();
       if (data.hasOwnProperty('AppId'))
         obj.AppId = ApiClient.convertToType(data['AppId'], 'String');
-      if (data.hasOwnProperty('OpportunityId'))
-        obj.OpportunityId = ApiClient.convertToType(data['OpportunityId'], 'String');
-      if (data.hasOwnProperty('AccountId'))
-        obj.AccountId = ApiClient.convertToType(data['AccountId'], 'String');
     }
     return obj;
   }
@@ -70,18 +66,6 @@
    * @member {String} AppId
    */
   exports.prototype.AppId = undefined;
-
-  /**
-   * Salesforce opportunity id
-   * @member {String} OpportunityId
-   */
-  exports.prototype.OpportunityId = undefined;
-
-  /**
-   * Salesforce account id
-   * @member {String} AccountId
-   */
-  exports.prototype.AccountId = undefined;
 
 
   return exports;
