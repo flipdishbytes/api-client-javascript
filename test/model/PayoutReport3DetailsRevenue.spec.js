@@ -46,6 +46,12 @@
         // expect(instance.GrossSales).to.be(expectedValueLiteral);
       });
 
+      it('should have the property SalesTax (base name: "SalesTax")', function() {
+        // TODO: update the code to test the property SalesTax
+        expect(instance).to.have.property('SalesTax');
+        // expect(instance.SalesTax).to.be(expectedValueLiteral);
+      });
+
       it('should have the property DeliveryCharges (base name: "DeliveryCharges")', function() {
         // TODO: update the code to test the property DeliveryCharges
         expect(instance).to.have.property('DeliveryCharges');

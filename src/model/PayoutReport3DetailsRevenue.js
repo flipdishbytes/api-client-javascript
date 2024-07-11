@@ -56,6 +56,8 @@
       obj = obj || new exports();
       if (data.hasOwnProperty('GrossSales'))
         obj.GrossSales = PayoutReport3DetailsSalesLine.constructFromObject(data['GrossSales']);
+      if (data.hasOwnProperty('SalesTax'))
+        obj.SalesTax = PayoutReport3DetailsSalesLine.constructFromObject(data['SalesTax']);
       if (data.hasOwnProperty('DeliveryCharges'))
         obj.DeliveryCharges = PayoutReport3DetailsSalesLine.constructFromObject(data['DeliveryCharges']);
       if (data.hasOwnProperty('OtherCharges'))
@@ -76,6 +78,11 @@
    * @member {module:model/PayoutReport3DetailsSalesLine} GrossSales
    */
   exports.prototype.GrossSales = undefined;
+
+  /**
+   * @member {module:model/PayoutReport3DetailsSalesLine} SalesTax
+   */
+  exports.prototype.SalesTax = undefined;
 
   /**
    * @member {module:model/PayoutReport3DetailsSalesLine} DeliveryCharges
