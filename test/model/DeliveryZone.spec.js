@@ -46,6 +46,12 @@
         // expect(instance.Id).to.be(expectedValueLiteral);
       });
 
+      it('should have the property FeeChargedToStore (base name: "FeeChargedToStore")', function() {
+        // TODO: update the code to test the property FeeChargedToStore
+        expect(instance).to.have.property('FeeChargedToStore');
+        // expect(instance.FeeChargedToStore).to.be(expectedValueLiteral);
+      });
+
       it('should have the property DeliveryFee (base name: "DeliveryFee")', function() {
         // TODO: update the code to test the property DeliveryFee
         expect(instance).to.have.property('DeliveryFee');

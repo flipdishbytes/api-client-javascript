@@ -57,6 +57,8 @@
       obj = obj || new exports();
       if (data.hasOwnProperty('Id'))
         obj.Id = ApiClient.convertToType(data['Id'], 'Number');
+      if (data.hasOwnProperty('FeeChargedToStore'))
+        obj.FeeChargedToStore = ApiClient.convertToType(data['FeeChargedToStore'], 'Number');
       if (data.hasOwnProperty('DeliveryFee'))
         obj.DeliveryFee = ApiClient.convertToType(data['DeliveryFee'], 'Number');
       if (data.hasOwnProperty('MinimumDeliveryOrderAmount'))
@@ -74,6 +76,12 @@
    * @member {Number} Id
    */
   exports.prototype.Id = undefined;
+
+  /**
+   * Delivery Fee charged to store
+   * @member {Number} FeeChargedToStore
+   */
+  exports.prototype.FeeChargedToStore = undefined;
 
   /**
    * Delivery fee (will not be set below 0)
