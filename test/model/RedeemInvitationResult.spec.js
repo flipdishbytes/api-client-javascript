@@ -52,6 +52,12 @@
         // expect(instance.InvitationStatus).to.be(expectedValueLiteral);
       });
 
+      it('should have the property IsNewUser (base name: "IsNewUser")', function() {
+        // TODO: update the code to test the property IsNewUser
+        expect(instance).to.have.property('IsNewUser');
+        // expect(instance.IsNewUser).to.be(expectedValueLiteral);
+      });
+
     });
   });
 

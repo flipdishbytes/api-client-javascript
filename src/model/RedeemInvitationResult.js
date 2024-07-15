@@ -59,6 +59,8 @@
         obj.AppId = ApiClient.convertToType(data['AppId'], 'String');
       if (data.hasOwnProperty('InvitationStatus'))
         obj.InvitationStatus = ApiClient.convertToType(data['InvitationStatus'], 'String');
+      if (data.hasOwnProperty('IsNewUser'))
+        obj.IsNewUser = ApiClient.convertToType(data['IsNewUser'], 'Boolean');
     }
     return obj;
   }
@@ -74,6 +76,12 @@
    * @member {module:model/RedeemInvitationResult.InvitationStatusEnum} InvitationStatus
    */
   exports.prototype.InvitationStatus = undefined;
+
+  /**
+   * Bool indicating if the user that redeemed the invitation is a new user
+   * @member {Boolean} IsNewUser
+   */
+  exports.prototype.IsNewUser = undefined;
 
 
 
