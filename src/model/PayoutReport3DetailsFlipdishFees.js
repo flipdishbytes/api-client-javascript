@@ -90,6 +90,8 @@
         obj.Vat = ApiClient.convertToType(data['Vat'], 'Number');
       if (data.hasOwnProperty('Total'))
         obj.Total = ApiClient.convertToType(data['Total'], 'Number');
+      if (data.hasOwnProperty('ThirdPartyIntegrationFeesAndTips'))
+        obj.ThirdPartyIntegrationFeesAndTips = ApiClient.convertToType(data['ThirdPartyIntegrationFeesAndTips'], 'Number');
     }
     return obj;
   }
@@ -183,6 +185,11 @@
    * @member {Number} Total
    */
   exports.prototype.Total = undefined;
+
+  /**
+   * @member {Number} ThirdPartyIntegrationFeesAndTips
+   */
+  exports.prototype.ThirdPartyIntegrationFeesAndTips = undefined;
 
 
   return exports;

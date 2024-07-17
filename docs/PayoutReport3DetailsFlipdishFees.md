@@ -21,5 +21,6 @@ Name | Type | Description | Notes
 **RefundedFeesOnRefundedSales** | **Number** |  | [optional] 
 **Vat** | **Number** |  | [optional] 
 **Total** | **Number** |  | [optional] 
+**ThirdPartyIntegrationFeesAndTips** | **Number** |  | [optional] 
 
 
