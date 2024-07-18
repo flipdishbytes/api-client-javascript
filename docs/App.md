@@ -314,6 +314,8 @@ Name | Type | Description | Notes
 
 * `ViewChannelAuditLogs` (value: `"ViewChannelAuditLogs"`)
 
+* `ViewAppStoreAuditLogs` (value: `"ViewAppStoreAuditLogs"`)
+
 * `SendPushNotificationToCustomer` (value: `"SendPushNotificationToCustomer"`)
 
 * `InviteDriverToApp` (value: `"InviteDriverToApp"`)

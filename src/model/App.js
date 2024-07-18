@@ -1080,6 +1080,12 @@
     ViewChannelAuditLogs: "ViewChannelAuditLogs",
 
     /**
+     * value: "ViewAppStoreAuditLogs"
+     * @const
+     */
+    ViewAppStoreAuditLogs: "ViewAppStoreAuditLogs",
+
+    /**
      * value: "SendPushNotificationToCustomer"
      * @const
      */
