@@ -774,6 +774,12 @@
     EditStoreDeliveryZoneFees: "EditStoreDeliveryZoneFees",
 
     /**
+     * value: "EditStoreDeliveryFeesLimited"
+     * @const
+     */
+    EditStoreDeliveryFeesLimited: "EditStoreDeliveryFeesLimited",
+
+    /**
      * value: "ViewHydraConfig"
      * @const
      */

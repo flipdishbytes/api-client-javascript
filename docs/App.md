@@ -212,6 +212,8 @@ Name | Type | Description | Notes
 
 * `EditStoreDeliveryZoneFees` (value: `"EditStoreDeliveryZoneFees"`)
 
+* `EditStoreDeliveryFeesLimited` (value: `"EditStoreDeliveryFeesLimited"`)
+
 * `ViewHydraConfig` (value: `"ViewHydraConfig"`)
 
 * `UpdateHydraConfigManage` (value: `"UpdateHydraConfigManage"`)
