@@ -92,6 +92,10 @@
         obj.PreviousPayoutId = ApiClient.convertToType(data['PreviousPayoutId'], 'Number');
       if (data.hasOwnProperty('NextPayoutId'))
         obj.NextPayoutId = ApiClient.convertToType(data['NextPayoutId'], 'Number');
+      if (data.hasOwnProperty('RefundedFeesOnChargebacks'))
+        obj.RefundedFeesOnChargebacks = ApiClient.convertToType(data['RefundedFeesOnChargebacks'], 'Number');
+      if (data.hasOwnProperty('TotalChargebackCost'))
+        obj.TotalChargebackCost = ApiClient.convertToType(data['TotalChargebackCost'], 'Number');
     }
     return obj;
   }
@@ -190,6 +194,16 @@
    * @member {Number} NextPayoutId
    */
   exports.prototype.NextPayoutId = undefined;
+
+  /**
+   * @member {Number} RefundedFeesOnChargebacks
+   */
+  exports.prototype.RefundedFeesOnChargebacks = undefined;
+
+  /**
+   * @member {Number} TotalChargebackCost
+   */
+  exports.prototype.TotalChargebackCost = undefined;
 
 
   return exports;

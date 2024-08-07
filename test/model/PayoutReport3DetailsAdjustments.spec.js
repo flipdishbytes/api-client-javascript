@@ -154,6 +154,18 @@
         // expect(instance.NextPayoutId).to.be(expectedValueLiteral);
       });
 
+      it('should have the property RefundedFeesOnChargebacks (base name: "RefundedFeesOnChargebacks")', function() {
+        // TODO: update the code to test the property RefundedFeesOnChargebacks
+        expect(instance).to.have.property('RefundedFeesOnChargebacks');
+        // expect(instance.RefundedFeesOnChargebacks).to.be(expectedValueLiteral);
+      });
+
+      it('should have the property TotalChargebackCost (base name: "TotalChargebackCost")', function() {
+        // TODO: update the code to test the property TotalChargebackCost
+        expect(instance).to.have.property('TotalChargebackCost');
+        // expect(instance.TotalChargebackCost).to.be(expectedValueLiteral);
+      });
+
     });
   });
 

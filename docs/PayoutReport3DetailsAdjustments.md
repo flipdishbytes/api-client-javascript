@@ -22,5 +22,7 @@ Name | Type | Description | Notes
 **BalanceChange** | **Number** |  | [optional] 
 **PreviousPayoutId** | **Number** |  | [optional] 
 **NextPayoutId** | **Number** |  | [optional] 
+**RefundedFeesOnChargebacks** | **Number** |  | [optional] 
+**TotalChargebackCost** | **Number** |  | [optional] 
 
 
