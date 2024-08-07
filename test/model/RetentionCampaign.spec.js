@@ -124,6 +124,12 @@
         // expect(instance.AppId).to.be(expectedValueLiteral);
       });
 
+      it('should have the property ForceDiscount (base name: "ForceDiscount")', function() {
+        // TODO: update the code to test the property ForceDiscount
+        expect(instance).to.have.property('ForceDiscount');
+        // expect(instance.ForceDiscount).to.be(expectedValueLiteral);
+      });
+
     });
   });
 

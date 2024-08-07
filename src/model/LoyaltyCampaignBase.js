@@ -77,6 +77,8 @@
         obj.StoreIds = ApiClient.convertToType(data['StoreIds'], ['Number']);
       if (data.hasOwnProperty('AppId'))
         obj.AppId = ApiClient.convertToType(data['AppId'], 'String');
+      if (data.hasOwnProperty('ForceDiscount'))
+        obj.ForceDiscount = ApiClient.convertToType(data['ForceDiscount'], 'Boolean');
     }
     return obj;
   }
@@ -146,6 +148,12 @@
    * @member {String} AppId
    */
   exports.prototype.AppId = undefined;
+
+  /**
+   * Controls whether the voucher generated from this campaign will override discount exclusions
+   * @member {Boolean} ForceDiscount
+   */
+  exports.prototype.ForceDiscount = undefined;
 
 
   return exports;
