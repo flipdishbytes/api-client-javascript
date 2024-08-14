@@ -30,26 +30,20 @@
   var instance;
 
   describe('(package)', function() {
-    describe('RedeemInvitationResult', function() {
+    describe('RestApiResultAcceptInvitationResult', function() {
       beforeEach(function() {
-        instance = new Flipdish.RedeemInvitationResult();
+        instance = new Flipdish.RestApiResultAcceptInvitationResult();
       });
 
-      it('should create an instance of RedeemInvitationResult', function() {
-        // TODO: update the code to test RedeemInvitationResult
-        expect(instance).to.be.a(Flipdish.RedeemInvitationResult);
+      it('should create an instance of RestApiResultAcceptInvitationResult', function() {
+        // TODO: update the code to test RestApiResultAcceptInvitationResult
+        expect(instance).to.be.a(Flipdish.RestApiResultAcceptInvitationResult);
       });
 
-      it('should have the property AppId (base name: "AppId")', function() {
-        // TODO: update the code to test the property AppId
-        expect(instance).to.have.property('AppId');
-        // expect(instance.AppId).to.be(expectedValueLiteral);
-      });
-
-      it('should have the property InvitationStatus (base name: "InvitationStatus")', function() {
-        // TODO: update the code to test the property InvitationStatus
-        expect(instance).to.have.property('InvitationStatus');
-        // expect(instance.InvitationStatus).to.be(expectedValueLiteral);
+      it('should have the property Data (base name: "Data")', function() {
+        // TODO: update the code to test the property Data
+        expect(instance).to.have.property('Data');
+        // expect(instance.Data).to.be(expectedValueLiteral);
       });
 
     });

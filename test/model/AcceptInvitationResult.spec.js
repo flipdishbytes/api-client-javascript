@@ -30,26 +30,26 @@
   var instance;
 
   describe('(package)', function() {
-    describe('RedeemInvitationResult', function() {
+    describe('AcceptInvitationResult', function() {
       beforeEach(function() {
-        instance = new Flipdish.RedeemInvitationResult();
+        instance = new Flipdish.AcceptInvitationResult();
       });
 
-      it('should create an instance of RedeemInvitationResult', function() {
-        // TODO: update the code to test RedeemInvitationResult
-        expect(instance).to.be.a(Flipdish.RedeemInvitationResult);
+      it('should create an instance of AcceptInvitationResult', function() {
+        // TODO: update the code to test AcceptInvitationResult
+        expect(instance).to.be.a(Flipdish.AcceptInvitationResult);
       });
 
-      it('should have the property AppId (base name: "AppId")', function() {
-        // TODO: update the code to test the property AppId
-        expect(instance).to.have.property('AppId');
-        // expect(instance.AppId).to.be(expectedValueLiteral);
+      it('should have the property IsNewUser (base name: "IsNewUser")', function() {
+        // TODO: update the code to test the property IsNewUser
+        expect(instance).to.have.property('IsNewUser');
+        // expect(instance.IsNewUser).to.be(expectedValueLiteral);
       });
 
-      it('should have the property InvitationStatus (base name: "InvitationStatus")', function() {
-        // TODO: update the code to test the property InvitationStatus
-        expect(instance).to.have.property('InvitationStatus');
-        // expect(instance.InvitationStatus).to.be(expectedValueLiteral);
+      it('should have the property InvitedEmailAddress (base name: "InvitedEmailAddress")', function() {
+        // TODO: update the code to test the property InvitedEmailAddress
+        expect(instance).to.have.property('InvitedEmailAddress');
+        // expect(instance.InvitedEmailAddress).to.be(expectedValueLiteral);
       });
 
     });
