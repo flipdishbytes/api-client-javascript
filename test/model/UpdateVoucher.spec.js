@@ -148,6 +148,12 @@
         // expect(instance.IsValidOnlyOnce).to.be(expectedValueLiteral);
       });
 
+      it('should have the property IsDiscoverable (base name: "IsDiscoverable")', function() {
+        // TODO: update the code to test the property IsDiscoverable
+        expect(instance).to.have.property('IsDiscoverable');
+        // expect(instance.IsDiscoverable).to.be(expectedValueLiteral);
+      });
+
       it('should have the property StartDate (base name: "StartDate")', function() {
         // TODO: update the code to test the property StartDate
         expect(instance).to.have.property('StartDate');

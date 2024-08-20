@@ -91,6 +91,8 @@
         obj.IsValidOncePerCustomer = ApiClient.convertToType(data['IsValidOncePerCustomer'], 'Boolean');
       if (data.hasOwnProperty('IsValidOnlyOnce'))
         obj.IsValidOnlyOnce = ApiClient.convertToType(data['IsValidOnlyOnce'], 'Boolean');
+      if (data.hasOwnProperty('IsDiscoverable'))
+        obj.IsDiscoverable = ApiClient.convertToType(data['IsDiscoverable'], 'Boolean');
       if (data.hasOwnProperty('StartDate'))
         obj.StartDate = ApiClient.convertToType(data['StartDate'], 'Date');
       if (data.hasOwnProperty('ExpiryDate'))
@@ -216,6 +218,12 @@
    * @member {Boolean} IsValidOnlyOnce
    */
   exports.prototype.IsValidOnlyOnce = undefined;
+
+  /**
+   * Enables the voucher to be offered in the Voucher Discoverability feature
+   * @member {Boolean} IsDiscoverable
+   */
+  exports.prototype.IsDiscoverable = undefined;
 
   /**
    * Voucher Starts On (Time in UTC)
