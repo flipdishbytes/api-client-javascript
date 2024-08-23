@@ -61,6 +61,8 @@
         obj.CountryId = ApiClient.convertToType(data['CountryId'], 'String');
       if (data.hasOwnProperty('MainColor'))
         obj.MainColor = ApiClient.convertToType(data['MainColor'], 'String');
+      if (data.hasOwnProperty('AppId'))
+        obj.AppId = ApiClient.convertToType(data['AppId'], 'String');
     }
     return obj;
   }
@@ -82,6 +84,12 @@
    * @member {String} MainColor
    */
   exports.prototype.MainColor = undefined;
+
+  /**
+   * A predefined AppId
+   * @member {String} AppId
+   */
+  exports.prototype.AppId = undefined;
 
 
   return exports;
