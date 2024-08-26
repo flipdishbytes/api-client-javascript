@@ -1,6 +1,7 @@
 # Flipdish.DepositReturnFeesSummary
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Count** | **Number** |  | [optional] 

@@ -8,39 +8,36 @@ Method | HTTP request | Description
 [**addStoreAuditLogEvent**](AuditLogsApi.md#addStoreAuditLogEvent) | **POST** /api/v1.0/auditlogs/stores/{storeId} | 
 
 
-<a name="addOrderAuditLog"></a>
-# **addOrderAuditLog**
+
+## addOrderAuditLog
+
 > addOrderAuditLog(orderId, externalEventCreate)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.AuditLogsApi();
-
-var orderId = 56; // Number | 
-
-var externalEventCreate = [new Flipdish.ExternalStoreAuditLog()]; // [ExternalStoreAuditLog] | 
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Flipdish.AuditLogsApi();
+let orderId = 56; // Number | 
+let externalEventCreate = [new Flipdish.ExternalStoreAuditLog()]; // [ExternalStoreAuditLog] | 
+apiInstance.addOrderAuditLog(orderId, externalEventCreate, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully.');
   }
-};
-apiInstance.addOrderAuditLog(orderId, externalEventCreate, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -57,42 +54,39 @@ null (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
+- **Accept**: Message, ErrorCode, StackTrace, application/json, text/json, application/xml, text/xml
 
-<a name="addStoreAuditLogEvent"></a>
-# **addStoreAuditLogEvent**
+
+## addStoreAuditLogEvent
+
 > addStoreAuditLogEvent(storeId, externalEventCreate)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.AuditLogsApi();
-
-var storeId = 56; // Number | 
-
-var externalEventCreate = [new Flipdish.ExternalStoreAuditLog()]; // [ExternalStoreAuditLog] | 
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Flipdish.AuditLogsApi();
+let storeId = 56; // Number | 
+let externalEventCreate = [new Flipdish.ExternalStoreAuditLog()]; // [ExternalStoreAuditLog] | 
+apiInstance.addStoreAuditLogEvent(storeId, externalEventCreate, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully.');
   }
-};
-apiInstance.addStoreAuditLogEvent(storeId, externalEventCreate, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -109,6 +103,6 @@ null (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
+- **Accept**: application/json, text/json, application/xml, text/xml
 

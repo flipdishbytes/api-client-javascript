@@ -1,6 +1,7 @@
 # Flipdish.DeviceSettings
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Volume** | **Number** | Gets or sets the device volume | 

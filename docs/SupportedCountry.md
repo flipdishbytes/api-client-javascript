@@ -1,6 +1,7 @@
 # Flipdish.SupportedCountry
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **CountryCode** | **String** | Country code | [optional] 
@@ -9,13 +10,13 @@ Name | Type | Description | Notes
 **LanguageCode** | **String** | Language code | [optional] 
 **LanguageName** | **String** | Language name | [optional] 
 **OtpNumber** | **String** | The phone number provided to Store staff which, in conjunction with a one-time-code, will connect them to the customer. | [optional] 
-**SupportNumber** | **String** | The store's support phone number, displayed to customers. | [optional] 
+**SupportNumber** | **String** | The store&#39;s support phone number, displayed to customers. | [optional] 
 **AddressLayout** | **String** | Address layout format. This changes the layout of address entry forms on the web app, iOS and Android app and should be set based on local custom. | [optional] 
 **PostCodeType** | **String** | Post code type | [optional] 
 **SupportRegion** | **String** | Supported region. This is not used. | [optional] 
 
 
-<a name="AddressLayoutEnum"></a>
+
 ## Enum: AddressLayoutEnum
 
 
@@ -28,7 +29,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="PostCodeTypeEnum"></a>
+
 ## Enum: PostCodeTypeEnum
 
 
@@ -41,11 +42,11 @@ Name | Type | Description | Notes
 
 
 
-<a name="SupportRegionEnum"></a>
+
 ## Enum: SupportRegionEnum
 
 
-* `_Default` (value: `"Default"`)
+* `Default` (value: `"Default"`)
 
 * `Spain` (value: `"Spain"`)
 

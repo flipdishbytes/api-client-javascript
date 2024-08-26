@@ -1,6 +1,7 @@
 # Flipdish.PushNotificationRequest
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **ScheduledTime** | **Date** | UTC Time at which to send the push notification | [optional] 

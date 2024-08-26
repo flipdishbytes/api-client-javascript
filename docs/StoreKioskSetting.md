@@ -1,6 +1,7 @@
 # Flipdish.StoreKioskSetting
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **KioskSettingId** | **Number** | Kiosk setting id | [optional] 

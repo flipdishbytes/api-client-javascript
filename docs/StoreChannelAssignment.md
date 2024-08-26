@@ -1,6 +1,7 @@
 # Flipdish.StoreChannelAssignment
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **ChannelId** | **Number** | Channel ID | [optional] 

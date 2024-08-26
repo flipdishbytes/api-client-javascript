@@ -1,6 +1,7 @@
 # Flipdish.CardReaderRegistrationRequest
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **RegistrationCode** | **String** | The reader registration code | 

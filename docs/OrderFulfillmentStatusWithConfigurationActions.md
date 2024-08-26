@@ -1,6 +1,7 @@
 # Flipdish.OrderFulfillmentStatusWithConfigurationActions
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **DefaultNextStatus** | **String** | Default next status (id) | [optional] 

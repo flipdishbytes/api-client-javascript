@@ -1,6 +1,7 @@
 # Flipdish.OnboardingConfigUpdate
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **IsEnabled** | **Boolean** | Gets or sets whether onboarding is enabled | [optional] 
@@ -8,7 +9,7 @@ Name | Type | Description | Notes
 **ConfigType** | **String** | Onboarding config type | [optional] 
 
 
-<a name="ConfigTypeEnum"></a>
+
 ## Enum: ConfigTypeEnum
 
 

@@ -1,6 +1,7 @@
 # Flipdish.AccountDetail
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Email** | **String** | Email | [optional] 

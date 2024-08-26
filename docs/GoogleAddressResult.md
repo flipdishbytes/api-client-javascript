@@ -1,6 +1,7 @@
 # Flipdish.GoogleAddressResult
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Address_components** | [**[GoogleAddressComponent]**](GoogleAddressComponent.md) |  | [optional] 

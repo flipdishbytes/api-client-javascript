@@ -1,6 +1,7 @@
 # Flipdish.ExternalStoreAuditLog
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **ExternalCreateTime** | **Date** | The time of creation of the event | [optional] 

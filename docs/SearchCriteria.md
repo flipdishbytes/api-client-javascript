@@ -1,6 +1,7 @@
 # Flipdish.SearchCriteria
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Limit** | **Number** | The maximum elements to return | [optional] 

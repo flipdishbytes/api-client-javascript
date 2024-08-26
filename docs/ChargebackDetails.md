@@ -1,6 +1,7 @@
 # Flipdish.ChargebackDetails
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **ChargebackAmount** | **Number** | Chargeback amount | [optional] 

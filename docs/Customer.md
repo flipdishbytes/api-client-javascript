@@ -1,6 +1,7 @@
 # Flipdish.Customer
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **CustomerId** | **Number** | Id of the customer | [optional] 

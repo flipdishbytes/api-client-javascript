@@ -12,37 +12,35 @@ Method | HTTP request | Description
 [**getPaginatedCallList**](ApmApi.md#getPaginatedCallList) | **GET** /api/v1.0/{appId}/apm/calls | 
 
 
-<a name="getApmStatus"></a>
-# **getApmStatus**
+
+## getApmStatus
+
 > RestApiResultApmStatus getApmStatus(appId)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.ApmApi();
-
-var appId = "appId_example"; // String | 
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Flipdish.ApmApi();
+let appId = "appId_example"; // String | 
+apiInstance.getApmStatus(appId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getApmStatus(appId, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -58,43 +56,41 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, Data
 
-<a name="getBasicStatistics"></a>
-# **getBasicStatistics**
+
+## getBasicStatistics
+
 > RestApiResultApmStatistics getBasicStatistics(appId, opts)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.ApmApi();
-
-var appId = "appId_example"; // String | 
-
-var opts = { 
-  'storeId': [3.4] // [Number] | 
+let apiInstance = new Flipdish.ApmApi();
+let appId = "appId_example"; // String | 
+let opts = {
+  'storeId': [null] // [Number] | 
 };
-
-var callback = function(error, data, response) {
+apiInstance.getBasicStatistics(appId, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getBasicStatistics(appId, opts, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -111,43 +107,41 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, Data
 
-<a name="getCalendarWeekStatistics"></a>
-# **getCalendarWeekStatistics**
+
+## getCalendarWeekStatistics
+
 > RestApiArrayResultApmHourlyDataPoint getCalendarWeekStatistics(appId, opts)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.ApmApi();
-
-var appId = "appId_example"; // String | 
-
-var opts = { 
-  'storeId': [3.4] // [Number] | 
+let apiInstance = new Flipdish.ApmApi();
+let appId = "appId_example"; // String | 
+let opts = {
+  'storeId': [null] // [Number] | 
 };
-
-var callback = function(error, data, response) {
+apiInstance.getCalendarWeekStatistics(appId, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getCalendarWeekStatistics(appId, opts, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -164,46 +158,43 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, Data
 
-<a name="getCallsStatistics"></a>
-# **getCallsStatistics**
+
+## getCallsStatistics
+
 > RestApiArrayResultApmDataPoint getCallsStatistics(appId, aggregateDataBy, opts)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.ApmApi();
-
-var appId = "appId_example"; // String | 
-
-var aggregateDataBy = "aggregateDataBy_example"; // String | 
-
-var opts = { 
+let apiInstance = new Flipdish.ApmApi();
+let appId = "appId_example"; // String | 
+let aggregateDataBy = "aggregateDataBy_example"; // String | 
+let opts = {
   'dataPointLimit': 56, // Number | 
-  'storeId': [3.4] // [Number] | 
+  'storeId': [null] // [Number] | 
 };
-
-var callback = function(error, data, response) {
+apiInstance.getCallsStatistics(appId, aggregateDataBy, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getCallsStatistics(appId, aggregateDataBy, opts, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -222,46 +213,43 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, Data
 
-<a name="getOrderStatistics"></a>
-# **getOrderStatistics**
+
+## getOrderStatistics
+
 > RestApiArrayResultApmCurrencyDataPoint getOrderStatistics(appId, aggregateDataBy, opts)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.ApmApi();
-
-var appId = "appId_example"; // String | 
-
-var aggregateDataBy = "aggregateDataBy_example"; // String | 
-
-var opts = { 
+let apiInstance = new Flipdish.ApmApi();
+let appId = "appId_example"; // String | 
+let aggregateDataBy = "aggregateDataBy_example"; // String | 
+let opts = {
   'dataPointLimit': 56, // Number | 
-  'storeId': [3.4] // [Number] | 
+  'storeId': [null] // [Number] | 
 };
-
-var callback = function(error, data, response) {
+apiInstance.getOrderStatistics(appId, aggregateDataBy, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getOrderStatistics(appId, aggregateDataBy, opts, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -280,45 +268,43 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, Data
 
-<a name="getPaginatedCallList"></a>
-# **getPaginatedCallList**
+
+## getPaginatedCallList
+
 > RestApiPaginationResultPhoneCall getPaginatedCallList(appId, opts)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.ApmApi();
-
-var appId = "appId_example"; // String | 
-
-var opts = { 
+let apiInstance = new Flipdish.ApmApi();
+let appId = "appId_example"; // String | 
+let opts = {
   'page': 56, // Number | 
   'limit': 56, // Number | 
-  'storeId': [3.4] // [Number] | 
+  'storeId': [null] // [Number] | 
 };
-
-var callback = function(error, data, response) {
+apiInstance.getPaginatedCallList(appId, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getPaginatedCallList(appId, opts, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -337,6 +323,6 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, Data
 

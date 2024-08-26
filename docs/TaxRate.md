@@ -1,6 +1,7 @@
 # Flipdish.TaxRate
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Name** | **String** |  | [optional] 

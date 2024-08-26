@@ -1,6 +1,7 @@
 # Flipdish.ProcessingFeeConfig
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **StoreId** | **Number** | Store Id | [optional] 
@@ -9,7 +10,7 @@ Name | Type | Description | Notes
 **FixedFee** | **Number** | Fixed fee to customer, including VAT | [optional] 
 
 
-<a name="PaymentAccountTypeEnum"></a>
+
 ## Enum: PaymentAccountTypeEnum
 
 

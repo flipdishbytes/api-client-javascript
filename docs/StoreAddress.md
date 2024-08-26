@@ -1,10 +1,11 @@
 # Flipdish.StoreAddress
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **AddressId** | **Number** | Address identifier | [optional] 
-**Coordinates** | [**Coordinates**](Coordinates.md) | Coordinate | [optional] 
+**Coordinates** | [**Coordinates**](Coordinates.md) |  | [optional] 
 **Line1** | **String** | Address line 1 | [optional] 
 **Postcode** | **String** | Postcode | [optional] 
 **City** | **String** | City | [optional] 

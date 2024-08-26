@@ -1,6 +1,7 @@
 # Flipdish.BusinessHoursOverrideBase
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **DeliveryType** | **String** | Delivery or Pickup | [optional] 
@@ -9,7 +10,7 @@ Name | Type | Description | Notes
 **Type** | **String** | Open, Closed or ClosedAllowPreOrders | [optional] 
 
 
-<a name="DeliveryTypeEnum"></a>
+
 ## Enum: DeliveryTypeEnum
 
 
@@ -20,7 +21,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="TypeEnum"></a>
+
 ## Enum: TypeEnum
 
 

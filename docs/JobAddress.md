@@ -1,6 +1,7 @@
 # Flipdish.JobAddress
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Street** | **String** | Street | [optional] 

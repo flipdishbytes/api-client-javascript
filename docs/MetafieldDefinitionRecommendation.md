@@ -1,6 +1,7 @@
 # Flipdish.MetafieldDefinitionRecommendation
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **OwnerEntity** | **String** | The Metafield will extend the specified {Flipdish.Metafields.PublicModels.V1.MetafieldDefinitionBase.OwnerEntity} | [optional] 
@@ -12,7 +13,7 @@ Name | Type | Description | Notes
 **MetafieldDefinitionRecommendationId** | **Number** | Metafield Recommendation Id | [optional] 
 
 
-<a name="OwnerEntityEnum"></a>
+
 ## Enum: OwnerEntityEnum
 
 
@@ -25,11 +26,11 @@ Name | Type | Description | Notes
 
 
 
-<a name="ValueTypeEnum"></a>
+
 ## Enum: ValueTypeEnum
 
 
-* `_Boolean` (value: `"Boolean"`)
+* `Boolean` (value: `"Boolean"`)
 
 * `Json` (value: `"Json"`)
 
@@ -40,7 +41,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="[BehaviorsEnum]"></a>
+
 ## Enum: [BehaviorsEnum]
 
 

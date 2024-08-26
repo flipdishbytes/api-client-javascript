@@ -1,6 +1,7 @@
 # Flipdish.Group
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **CatalogGroupId** | **String** | Unique catalog group id | [optional] 
@@ -17,7 +18,7 @@ Name | Type | Description | Notes
 **ImageFileName** | **String** | Image File Name | [optional] 
 
 
-<a name="GroupTypeEnum"></a>
+
 ## Enum: GroupTypeEnum
 
 

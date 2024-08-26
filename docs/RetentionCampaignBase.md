@@ -1,6 +1,7 @@
 # Flipdish.RetentionCampaignBase
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **NotifyCustomerAfterMinutes** | **Number** | Time in minutes, after which customer will receive retention voucher if he/she does not order | [optional] 

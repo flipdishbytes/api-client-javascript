@@ -1,6 +1,7 @@
 # Flipdish.PayoutReport3DetailsRevenue
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **GrossSales** | [**PayoutReport3DetailsSalesLine**](PayoutReport3DetailsSalesLine.md) |  | [optional] 

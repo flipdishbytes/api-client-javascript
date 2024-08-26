@@ -1,6 +1,7 @@
 # Flipdish.CreateProduct
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Groups** | [**[CreateGroupReference]**](CreateGroupReference.md) | Collection of groups associated with this item | [optional] 
@@ -14,7 +15,7 @@ Name | Type | Description | Notes
 **Alcohol** | **Boolean** | Product contains alcohol | [optional] 
 
 
-<a name="ProductTypeEnum"></a>
+
 ## Enum: ProductTypeEnum
 
 

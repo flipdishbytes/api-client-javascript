@@ -1,6 +1,7 @@
 # Flipdish.LightspeedSettings
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **CompanyId** | **String** | Company Id | [optional] 
@@ -28,11 +29,11 @@ Name | Type | Description | Notes
 **ServiceChargeId** | **String** | The Lightspeed Service Charge Id to map | [optional] 
 
 
-<a name="PriceTypeEnum"></a>
+
 ## Enum: PriceTypeEnum
 
 
-* `_Default` (value: `"Default"`)
+* `Default` (value: `"Default"`)
 
 * `Takeaway` (value: `"Takeaway"`)
 

@@ -1,6 +1,7 @@
 # Flipdish.KioskTerminalActionStateChangedEvent
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **ReaderId** | **String** | Card reader id | [optional] 
@@ -15,7 +16,7 @@ Name | Type | Description | Notes
 **IpAddress** | **String** | Ip Address | [optional] 
 
 
-<a name="BluetoothTerminalTypeEnum"></a>
+
 ## Enum: BluetoothTerminalTypeEnum
 
 

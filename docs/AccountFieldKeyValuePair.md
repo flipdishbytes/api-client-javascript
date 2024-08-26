@@ -1,13 +1,14 @@
 # Flipdish.AccountFieldKeyValuePair
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Key** | **String** | Depending on the Key, the field's value will be stored in a different field in PayeeBankAccountData | [optional] 
+**Key** | **String** | Depending on the Key, the field&#39;s value will be stored in a different field in PayeeBankAccountData | [optional] 
 **Value** | **String** | The value of the field | [optional] 
 
 
-<a name="KeyEnum"></a>
+
 ## Enum: KeyEnum
 
 

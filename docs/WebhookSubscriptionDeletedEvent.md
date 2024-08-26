@@ -1,10 +1,11 @@
 # Flipdish.WebhookSubscriptionDeletedEvent
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **EventName** | **String** | The event name | [optional] 
-**WebhookSubscriptionEventInfo** | [**WebhookSubscriptionEventInfo**](WebhookSubscriptionEventInfo.md) | Webhook subscription details | [optional] 
+**WebhookSubscriptionEventInfo** | [**WebhookSubscriptionEventInfo**](WebhookSubscriptionEventInfo.md) |  | [optional] 
 **FlipdishEventId** | **String** | The identitfier of the event | [optional] 
 **CreateTime** | **Date** | The time of creation of the event | [optional] 
 **Position** | **Number** | Position | [optional] 

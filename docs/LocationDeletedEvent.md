@@ -1,6 +1,7 @@
 # Flipdish.LocationDeletedEvent
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **LocationId** | **Number** | Location Id | [optional] 

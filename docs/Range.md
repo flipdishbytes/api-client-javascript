@@ -1,6 +1,7 @@
 # Flipdish.Range
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **StartTime** | **String** | Start time | [optional] 
@@ -8,7 +9,7 @@ Name | Type | Description | Notes
 **DayOfWeek** | **String** | Day of week | [optional] 
 
 
-<a name="DayOfWeekEnum"></a>
+
 ## Enum: DayOfWeekEnum
 
 

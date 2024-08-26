@@ -1,6 +1,7 @@
 # Flipdish.BankAccountDetailsUpdateRequest
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **BankAddress** | **String** | Address of the bank account | [optional] 
@@ -17,7 +18,7 @@ Name | Type | Description | Notes
 **BusinessType** | **String** | Business Type | [optional] 
 
 
-<a name="BusinessTypeEnum"></a>
+
 ## Enum: BusinessTypeEnum
 
 

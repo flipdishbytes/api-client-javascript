@@ -1,6 +1,7 @@
 # Flipdish.DeliveryZoneBase
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **DeliveryFee** | **Number** | Delivery fee (will not be set below 0) | [optional] 

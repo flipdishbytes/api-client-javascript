@@ -1,6 +1,7 @@
 # Flipdish.HydraStatus
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **AppId** | **String** |  | 
@@ -11,7 +12,7 @@ Name | Type | Description | Notes
 **UserType** | **String** | Hydra User Type | [optional] 
 
 
-<a name="UserTypeEnum"></a>
+
 ## Enum: UserTypeEnum
 
 

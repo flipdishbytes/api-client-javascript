@@ -1,6 +1,7 @@
 # Flipdish.StoreGroupExtended
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **DeliveryMenuMessage** | **String** | Delivery Menu Message | [optional] 
@@ -15,7 +16,7 @@ Name | Type | Description | Notes
 **Currency** | **String** | Currency used by the stores in this group | [optional] 
 
 
-<a name="CurrencyEnum"></a>
+
 ## Enum: CurrencyEnum
 
 

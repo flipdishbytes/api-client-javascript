@@ -1,22 +1,23 @@
 # Flipdish.OrderIngestSubmitOrderRequest
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **AppType** | **String** | [Required] Indicated the name from where the request is coming from | [optional] 
 **StoreId** | **Number** | [Required] Store Id | [optional] 
 **CurrencyCode** | **String** | [Required] Currency Code  These must match three letter codes ISO 4127 http://en.wikipedia.org/wiki/ISO_4217 | [optional] 
-**Cart** | [**Cart**](Cart.md) | [Required] Cart of the user | [optional] 
-**FulfillmentInfo** | [**FulfillmentInfo**](FulfillmentInfo.md) | [Required] Relevant fulfillment Information | [optional] 
+**Cart** | [**Cart**](Cart.md) |  | [optional] 
+**FulfillmentInfo** | [**FulfillmentInfo**](FulfillmentInfo.md) |  | [optional] 
 **ChannelOrderId** | **String** | [Required] Order ID in the external System | [optional] 
 **ChannelPublicOrderId** | **String** | [Optional] Public Order ID in the external System | [optional] 
 **OrderDateUtc** | **Date** | Date the order was placed at in UTC  [Required] | [optional] 
-**PaymentInfo** | [**PaymentInfo**](PaymentInfo.md) | Payment Information  [Required] | [optional] 
-**Contact** | [**Contact**](Contact.md) | Contact Information  [Required] | [optional] 
+**PaymentInfo** | [**PaymentInfo**](PaymentInfo.md) |  | [optional] 
+**Contact** | [**Contact**](Contact.md) |  | [optional] 
 **TipAmount** | **Number** | Tip amount | [optional] 
 
 
-<a name="AppTypeEnum"></a>
+
 ## Enum: AppTypeEnum
 
 
@@ -45,7 +46,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="CurrencyCodeEnum"></a>
+
 ## Enum: CurrencyCodeEnum
 
 

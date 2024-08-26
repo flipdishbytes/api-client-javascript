@@ -1,6 +1,7 @@
 # Flipdish.EmvTerminal
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **EmvTerminalId** | **Number** | Flipdish Identifier of Terminal | [optional] 

@@ -1,6 +1,7 @@
 # Flipdish.IndexPageBase
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **AboutSectionEnabled** | **Boolean** | About section enabled | [optional] 

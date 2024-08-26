@@ -1,6 +1,7 @@
 # Flipdish.Price
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Amount** | **Number** | Amount (including tax) | [optional] 

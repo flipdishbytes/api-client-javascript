@@ -1,6 +1,7 @@
 # Flipdish.JobContact
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Firstname** | **String** | Firstname | [optional] 

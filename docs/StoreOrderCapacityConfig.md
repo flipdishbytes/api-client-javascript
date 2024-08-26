@@ -1,6 +1,7 @@
 # Flipdish.StoreOrderCapacityConfig
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **StoreId** | **Number** | Store identifier | [optional] 
@@ -9,7 +10,7 @@ Name | Type | Description | Notes
 **OrderCapacityPeriods** | [**[StoreOrderCapacityPeriod]**](StoreOrderCapacityPeriod.md) | Order capacity periods | [optional] 
 
 
-<a name="DeliveryTypeEnum"></a>
+
 ## Enum: DeliveryTypeEnum
 
 

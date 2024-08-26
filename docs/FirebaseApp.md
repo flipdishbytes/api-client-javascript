@@ -1,6 +1,7 @@
 # Flipdish.FirebaseApp
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **WhitelabelId** | **Number** |  | [optional] 

@@ -1,6 +1,7 @@
 # Flipdish.RestApiFinanceSearchPaginationResultInvoice
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **NextPage** | **String** | Next page | 

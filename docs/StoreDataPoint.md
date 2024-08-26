@@ -1,6 +1,7 @@
 # Flipdish.StoreDataPoint
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Day** | **Date** | Day | [optional] 

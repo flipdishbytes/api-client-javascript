@@ -1,6 +1,7 @@
 # Flipdish.CertificateCreatedEvent
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Hostname** | **String** | Description | [optional] 

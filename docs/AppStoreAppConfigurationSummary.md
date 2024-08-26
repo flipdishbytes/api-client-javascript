@@ -1,6 +1,7 @@
 # Flipdish.AppStoreAppConfigurationSummary
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **String** |  | 
@@ -17,7 +18,7 @@ Name | Type | Description | Notes
 **DeveloperName** | **String** |  | [optional] 
 
 
-<a name="ConfigurationTypeEnum"></a>
+
 ## Enum: ConfigurationTypeEnum
 
 
@@ -28,7 +29,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="StoreSelectorTypeEnum"></a>
+
 ## Enum: StoreSelectorTypeEnum
 
 

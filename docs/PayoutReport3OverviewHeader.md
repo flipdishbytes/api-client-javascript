@@ -1,6 +1,7 @@
 # Flipdish.PayoutReport3OverviewHeader
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **PayoutId** | **Number** |  | [optional] 

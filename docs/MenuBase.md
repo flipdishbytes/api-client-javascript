@@ -1,6 +1,7 @@
 # Flipdish.MenuBase
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **DisplaySectionLinks** | **Boolean** | Display menu section link on UI | [optional] 
@@ -8,7 +9,7 @@ Name | Type | Description | Notes
 **TaxType** | **String** | Tax type | [optional] 
 
 
-<a name="MenuSectionBehaviourEnum"></a>
+
 ## Enum: MenuSectionBehaviourEnum
 
 
@@ -19,7 +20,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="TaxTypeEnum"></a>
+
 ## Enum: TaxTypeEnum
 
 

@@ -1,6 +1,7 @@
 # Flipdish.FulfillmentStatusConfigurationItem
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **StatusId** | **String** | Status Id (no whitespaces) | [optional] 
@@ -14,13 +15,13 @@ Name | Type | Description | Notes
 **DefaultNextStatus** | [**[NextStatusWithOrderType]**](NextStatusWithOrderType.md) | The default next status (on a dropdown or quick button on terminal or portal) | [optional] 
 **ChangeType** | **String** | How will state change (manually or automated, including timed) | [optional] 
 **IncludeInReports** | **Boolean** | Include in reports | [optional] 
-**IsCustom** | **Boolean** | Is custom state. If not, then it's a system state | [optional] 
+**IsCustom** | **Boolean** | Is custom state. If not, then it&#39;s a system state | [optional] 
 **OrderTypes** | **[String]** | If empty then applies to all ordertypes, otherwise a list of order types this state applies to | [optional] 
 **Communication** | **Boolean** | Whether state should fire off a notification to the customer | [optional] 
 **Image** | **String** | Image (image filename, relative, not absolute URL) | [optional] 
 
 
-<a name="ChangeTypeEnum"></a>
+
 ## Enum: ChangeTypeEnum
 
 
@@ -33,7 +34,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="[OrderTypesEnum]"></a>
+
 ## Enum: [OrderTypesEnum]
 
 

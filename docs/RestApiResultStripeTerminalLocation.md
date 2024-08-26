@@ -1,8 +1,9 @@
 # Flipdish.RestApiResultStripeTerminalLocation
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Data** | [**StripeTerminalLocation**](StripeTerminalLocation.md) | Generic data object. | 
+**Data** | [**StripeTerminalLocation**](StripeTerminalLocation.md) |  | 
 
 

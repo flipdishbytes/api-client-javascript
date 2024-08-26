@@ -1,6 +1,7 @@
 # Flipdish.LocationAreaWithLocations
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **LocationAreaId** | **Number** | Id of the LocationArea | 

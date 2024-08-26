@@ -1,6 +1,7 @@
 # Flipdish.Coordinates
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Latitude** | **Number** | Latitude | [optional] 

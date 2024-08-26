@@ -1,6 +1,7 @@
 # Flipdish.CreateOrderRequest
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **LegacyOrderDm** | [**OrderDm**](OrderDm.md) |  | [optional] 

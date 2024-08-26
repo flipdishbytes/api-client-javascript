@@ -1,6 +1,7 @@
 # Flipdish.BankAccount
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **Number** | Id of this account | [optional] 
@@ -17,7 +18,7 @@ Name | Type | Description | Notes
 **VatNumber** | **String** | Account Holders Vat Number | [optional] 
 
 
-<a name="AccountStateEnum"></a>
+
 ## Enum: AccountStateEnum
 
 

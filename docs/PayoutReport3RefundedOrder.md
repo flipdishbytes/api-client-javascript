@@ -1,6 +1,7 @@
 # Flipdish.PayoutReport3RefundedOrder
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **OrderId** | **Number** |  | [optional] 
@@ -14,7 +15,7 @@ Name | Type | Description | Notes
 **CashFeeRefundedToCustomer** | **Number** |  | [optional] 
 
 
-<a name="TypeEnum"></a>
+
 ## Enum: TypeEnum
 
 

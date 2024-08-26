@@ -1,6 +1,7 @@
 # Flipdish.CreateTeammate
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Email** | **String** | Email address | [optional] 
@@ -9,7 +10,7 @@ Name | Type | Description | Notes
 **StoreIds** | **[Number]** | Store IDs the user has access to (if HasAccessToAllStores is false) | [optional] 
 
 
-<a name="AppAccessLevelEnum"></a>
+
 ## Enum: AppAccessLevelEnum
 
 

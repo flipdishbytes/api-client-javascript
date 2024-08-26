@@ -1,6 +1,7 @@
 # Flipdish.StoreGroup
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **StoreGroupId** | **Number** | Unique Store Group Identifier | [optional] 
@@ -10,7 +11,7 @@ Name | Type | Description | Notes
 **Currency** | **String** | Currency used by the stores in this group | [optional] 
 
 
-<a name="CurrencyEnum"></a>
+
 ## Enum: CurrencyEnum
 
 

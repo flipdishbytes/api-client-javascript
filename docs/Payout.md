@@ -1,6 +1,7 @@
 # Flipdish.Payout
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **PayoutId** | **Number** | The id of the payout. | [optional] 
@@ -49,7 +50,7 @@ Name | Type | Description | Notes
 **TipsOnPosSales** | **Number** | Tips on POS sales | [optional] 
 
 
-<a name="PayoutStatusEnum"></a>
+
 ## Enum: PayoutStatusEnum
 
 
@@ -66,7 +67,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="PayoutTypeEnum"></a>
+
 ## Enum: PayoutTypeEnum
 
 
@@ -77,7 +78,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="CurrencyEnum"></a>
+
 ## Enum: CurrencyEnum
 
 

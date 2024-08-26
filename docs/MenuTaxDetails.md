@@ -1,6 +1,7 @@
 # Flipdish.MenuTaxDetails
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **TaxRates** | [**[MenuTaxRate]**](MenuTaxRate.md) | Tax Rates | [optional] 
@@ -10,7 +11,7 @@ Name | Type | Description | Notes
 **SetItemTaxes** | **{String: Number}** | SetItemIds and TaxIds | [optional] 
 
 
-<a name="TaxTypeEnum"></a>
+
 ## Enum: TaxTypeEnum
 
 

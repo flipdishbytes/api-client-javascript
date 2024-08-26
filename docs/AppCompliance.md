@@ -1,6 +1,7 @@
 # Flipdish.AppCompliance
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **AppId** | **String** | App ID | [optional] 
@@ -8,11 +9,11 @@ Name | Type | Description | Notes
 **AllowDisablingOfGdpr** | **Boolean** | For EU countries, we should not allow to change the option to “Default banner”, but all other countries should be able to do so. | [optional] 
 
 
-<a name="ComplianceTypeEnum"></a>
+
 ## Enum: ComplianceTypeEnum
 
 
-* `_Default` (value: `"Default"`)
+* `Default` (value: `"Default"`)
 
 * `GdprCompliance` (value: `"GdprCompliance"`)
 

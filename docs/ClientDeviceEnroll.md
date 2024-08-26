@@ -1,6 +1,7 @@
 # Flipdish.ClientDeviceEnroll
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **DeviceModel** | **String** | Device model | [optional] 

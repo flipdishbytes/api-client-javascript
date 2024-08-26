@@ -1,6 +1,7 @@
 # Flipdish.SubscriptionSummary
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **NextInvoiceAmount** | **Number** | Next invoice amount | [optional] 
@@ -15,7 +16,7 @@ Name | Type | Description | Notes
 **CancellationDate** | **Date** | Cancel Date | [optional] 
 
 
-<a name="StatusEnum"></a>
+
 ## Enum: StatusEnum
 
 
@@ -36,7 +37,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="CurrencyEnum"></a>
+
 ## Enum: CurrencyEnum
 
 

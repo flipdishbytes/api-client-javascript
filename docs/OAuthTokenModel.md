@@ -1,6 +1,7 @@
 # Flipdish.OAuthTokenModel
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Key** | **String** | Identitifier key | [optional] 

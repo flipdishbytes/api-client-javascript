@@ -8,40 +8,38 @@ Method | HTTP request | Description
 [**getAppStoreApps**](AppStoreApi.md#getAppStoreApps) | **GET** /api/v1.0/appstore/apps | 
 
 
-<a name="getAppStoreApp"></a>
-# **getAppStoreApp**
+
+## getAppStoreApp
+
 > RestApiResultAppStoreApp getAppStoreApp(appStoreAppId, opts)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.AppStoreApi();
-
-var appStoreAppId = "appStoreAppId_example"; // String | 
-
-var opts = { 
+let apiInstance = new Flipdish.AppStoreApi();
+let appStoreAppId = "appStoreAppId_example"; // String | 
+let opts = {
   'appId': "appId_example" // String | 
 };
-
-var callback = function(error, data, response) {
+apiInstance.getAppStoreApp(appStoreAppId, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getAppStoreApp(appStoreAppId, opts, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -58,46 +56,44 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, Data, Message, ErrorCode, StackTrace
 
-<a name="getAppStoreApps"></a>
-# **getAppStoreApps**
+
+## getAppStoreApps
+
 > RestApiPaginationResultAppStoreAppSummary getAppStoreApps(search, opts)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.AppStoreApi();
-
-var search = "search_example"; // String | 
-
-var opts = { 
+let apiInstance = new Flipdish.AppStoreApi();
+let search = "search_example"; // String | 
+let opts = {
   'page': 56, // Number | 
   'limit': 56, // Number | 
   'excludeNotOwned': true, // Boolean | 
   'showOnlyVerified': true // Boolean | 
 };
-
-var callback = function(error, data, response) {
+apiInstance.getAppStoreApps(search, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getAppStoreApps(search, opts, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -117,6 +113,6 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, Data
 

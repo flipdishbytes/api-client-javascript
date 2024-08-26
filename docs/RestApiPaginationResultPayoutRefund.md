@@ -1,6 +1,7 @@
 # Flipdish.RestApiPaginationResultPayoutRefund
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Page** | **Number** | Current page index | 

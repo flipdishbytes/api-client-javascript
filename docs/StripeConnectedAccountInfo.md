@@ -1,6 +1,7 @@
 # Flipdish.StripeConnectedAccountInfo
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **AccountStatus** | **String** | Stripe connected account status | [optional] 
@@ -12,7 +13,7 @@ Name | Type | Description | Notes
 **PaymentsEnabled** | **Boolean** | Flag indicating if payments are enabled | [optional] 
 
 
-<a name="AccountStatusEnum"></a>
+
 ## Enum: AccountStatusEnum
 
 
@@ -35,7 +36,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="CardPaymentStatusEnum"></a>
+
 ## Enum: CardPaymentStatusEnum
 
 
@@ -50,7 +51,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="PayoutScheduleIntervalEnum"></a>
+
 ## Enum: PayoutScheduleIntervalEnum
 
 

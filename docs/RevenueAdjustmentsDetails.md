@@ -1,6 +1,7 @@
 # Flipdish.RevenueAdjustmentsDetails
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **OnlineSalesRefundedAmount** | **Number** | Online sales refunds | [optional] 

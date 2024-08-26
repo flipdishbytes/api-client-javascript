@@ -1,6 +1,7 @@
 # Flipdish.MenuCheckpoint
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **MenuCheckpointId** | **Number** | Identifier of Menu Checkpoint | [optional] 

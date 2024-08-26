@@ -1,6 +1,7 @@
 # Flipdish.MenuBulkEditEvent
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **EventName** | **String** | The event name | [optional] 
@@ -9,7 +10,7 @@ Name | Type | Description | Notes
 **Item** | **String** | Product | [optional] 
 **InstanceCount** | **Number** | Quantity of product | [optional] 
 **IsAvailable** | **Boolean** | Visibility of the item | [optional] 
-**User** | [**UserEventInfo**](UserEventInfo.md) | User who has uploaded the menu | [optional] 
+**User** | [**UserEventInfo**](UserEventInfo.md) |  | [optional] 
 **MenuId** | **Number** | The menu Id | [optional] 
 **FlipdishEventId** | **String** | The identitfier of the event | [optional] 
 **CreateTime** | **Date** | The time of creation of the event | [optional] 

@@ -1,6 +1,7 @@
 # Flipdish.OrderSummary
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **OrderId** | **Number** | Order identifier | [optional] 
@@ -19,21 +20,21 @@ Name | Type | Description | Notes
 **PaymentStatus** | **String** | Status of the payment | [optional] 
 **Currency** | **String** | Currency of payment | [optional] 
 **AppType** | **String** | Type of app end user is on | [optional] 
-**LocalOrderId** | **String** | Local order Id. This is used for displaying a \"shorter\" order ID for customers (eg. Kiosk orders) | [optional] 
+**LocalOrderId** | **String** | Local order Id. This is used for displaying a \&quot;shorter\&quot; order ID for customers (eg. Kiosk orders) | [optional] 
 **DropOffLocationId** | **Number** | id of the collection/drop off location | [optional] 
 **DropOffLocation** | **String** | Represents table service drop off location | [optional] 
 **AcceptedFor** | **Date** | Time store has accepted the order for | [optional] 
-**Channel** | [**Channel**](Channel.md) | Channel where the Order comes from | [optional] 
+**Channel** | [**Channel**](Channel.md) |  | [optional] 
 **InFraudZone** | **Boolean** | Was order made within a fraud zone | [optional] 
 **UnusualHighValueOrder** | **Boolean** | Is order of unusually high value | [optional] 
 **ChannelOrderId** | **String** | ChannelOrderId from external channel | [optional] 
 **ChannelOrderDisplayId** | **String** | ChannelOrderDisplayId from external channel | [optional] 
-**OrderDropOffLocation** | [**OrderDropOffLocation**](OrderDropOffLocation.md) | DropOffLocation selected for this order | [optional] 
-**OrderBatchInfo** | [**OrderBatchSummary**](OrderBatchSummary.md) | OrderBatch information | [optional] 
+**OrderDropOffLocation** | [**OrderDropOffLocation**](OrderDropOffLocation.md) |  | [optional] 
+**OrderBatchInfo** | [**OrderBatchSummary**](OrderBatchSummary.md) |  | [optional] 
 **DeliveryLocation** | [**DeliveryLocation**](DeliveryLocation.md) |  | [optional] 
 
 
-<a name="DeliveryTypeEnum"></a>
+
 ## Enum: DeliveryTypeEnum
 
 
@@ -44,7 +45,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="PickupLocationTypeEnum"></a>
+
 ## Enum: PickupLocationTypeEnum
 
 
@@ -57,7 +58,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="TableServiceCatagoryEnum"></a>
+
 ## Enum: TableServiceCatagoryEnum
 
 
@@ -84,7 +85,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="OrderStateEnum"></a>
+
 ## Enum: OrderStateEnum
 
 
@@ -117,7 +118,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="PaymentAccountTypeEnum"></a>
+
 ## Enum: PaymentAccountTypeEnum
 
 
@@ -144,7 +145,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="PaymentStatusEnum"></a>
+
 ## Enum: PaymentStatusEnum
 
 
@@ -161,7 +162,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="CurrencyEnum"></a>
+
 ## Enum: CurrencyEnum
 
 
@@ -394,7 +395,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="AppTypeEnum"></a>
+
 ## Enum: AppTypeEnum
 
 

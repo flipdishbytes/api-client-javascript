@@ -1,6 +1,7 @@
 # Flipdish.MenuElementListResponse
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **MenuName** | **String** | Menu Name | [optional] 

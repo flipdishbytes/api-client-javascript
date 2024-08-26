@@ -1,13 +1,14 @@
 # Flipdish.OwnerEntityConfiguration
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **OwnerEntity** | **String** | Owner Entity | [optional] 
 **AllowedBehaviors** | **[String]** |  | [optional] 
 
 
-<a name="OwnerEntityEnum"></a>
+
 ## Enum: OwnerEntityEnum
 
 
@@ -20,7 +21,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="[AllowedBehaviorsEnum]"></a>
+
 ## Enum: [AllowedBehaviorsEnum]
 
 

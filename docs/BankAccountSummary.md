@@ -1,13 +1,14 @@
 # Flipdish.BankAccountSummary
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **Number** | Id of this account | [optional] 
 **StoreNames** | **[String]** | Store Names that are attached to this account | [optional] 
 **AccountState** | **String** | Status of Account | [optional] 
 **CurrencyCode** | **String** | Currency of Account | [optional] 
-**StripeConnectedAccountInfo** | [**StripeConnectedAccountInfo**](StripeConnectedAccountInfo.md) | Information about the Stripe connected account associated with this bank account (if any) | [optional] 
+**StripeConnectedAccountInfo** | [**StripeConnectedAccountInfo**](StripeConnectedAccountInfo.md) |  | [optional] 
 **AccountName** | **String** | Name of this account | [optional] 
 **Iban** | **String** | IBAN of this account | [optional] 
 **Swift** | **String** | SWIFT of this bank account | [optional] 
@@ -17,7 +18,7 @@ Name | Type | Description | Notes
 **BusinessType** | **String** | Business Type | [optional] 
 
 
-<a name="AccountStateEnum"></a>
+
 ## Enum: AccountStateEnum
 
 
@@ -32,7 +33,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="BusinessTypeEnum"></a>
+
 ## Enum: BusinessTypeEnum
 
 

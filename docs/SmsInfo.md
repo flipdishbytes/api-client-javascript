@@ -1,6 +1,7 @@
 # Flipdish.SmsInfo
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **From** | **String** | Origin phone number | [optional] 

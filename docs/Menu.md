@@ -1,6 +1,7 @@
 # Flipdish.Menu
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **MenuId** | **Number** | Menu identifier | [optional] 
@@ -18,7 +19,7 @@ Name | Type | Description | Notes
 **TaxType** | **String** | Tax type | [optional] 
 
 
-<a name="MenuSectionBehaviourEnum"></a>
+
 ## Enum: MenuSectionBehaviourEnum
 
 
@@ -29,7 +30,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="TaxTypeEnum"></a>
+
 ## Enum: TaxTypeEnum
 
 

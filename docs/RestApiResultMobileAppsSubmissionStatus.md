@@ -1,8 +1,9 @@
 # Flipdish.RestApiResultMobileAppsSubmissionStatus
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Data** | [**MobileAppsSubmissionStatus**](MobileAppsSubmissionStatus.md) | Generic data object. | 
+**Data** | [**MobileAppsSubmissionStatus**](MobileAppsSubmissionStatus.md) |  | 
 
 

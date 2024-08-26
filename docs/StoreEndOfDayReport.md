@@ -1,6 +1,7 @@
 # Flipdish.StoreEndOfDayReport
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **StoreId** | **Number** | Store Id | [optional] 
@@ -31,7 +32,7 @@ Name | Type | Description | Notes
 **EndTime** | **Date** | End Time | [optional] 
 
 
-<a name="CurrencyEnum"></a>
+
 ## Enum: CurrencyEnum
 
 

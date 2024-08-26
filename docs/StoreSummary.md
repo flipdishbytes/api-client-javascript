@@ -1,6 +1,7 @@
 # Flipdish.StoreSummary
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **Number** | Store identifier | [optional] 
@@ -8,12 +9,12 @@ Name | Type | Description | Notes
 **MenuId** | **Number** | Stores menu identifier | [optional] 
 **Metadata** | **{String: String}** | Store metadata | [optional] 
 **Currency** | **String** | Currency which used by the Store | [optional] 
-**Coordinates** | [**Coordinates**](Coordinates.md) | Latitude and longitude of the store | [optional] 
+**Coordinates** | [**Coordinates**](Coordinates.md) |  | [optional] 
 **StoreTimezone** | **String** | Timezone of store | [optional] 
 **StoreGroupId** | **Number** | Store group id of store | [optional] 
 
 
-<a name="CurrencyEnum"></a>
+
 ## Enum: CurrencyEnum
 
 

@@ -1,9 +1,10 @@
 # Flipdish.DeliveryLocation
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Coordinates** | [**Coordinates**](Coordinates.md) | Geo cordinate | [optional] 
+**Coordinates** | [**Coordinates**](Coordinates.md) |  | [optional] 
 **Building** | **String** | Building | [optional] 
 **Street** | **String** | Street | [optional] 
 **Town** | **String** | Town | [optional] 

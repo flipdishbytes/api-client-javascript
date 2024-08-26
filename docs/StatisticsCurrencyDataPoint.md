@@ -1,6 +1,7 @@
 # Flipdish.StatisticsCurrencyDataPoint
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Currency** | **String** | Currency | [optional] 
@@ -9,7 +10,7 @@ Name | Type | Description | Notes
 **OrderValue** | **Number** | Value of orders for this currency | [optional] 
 
 
-<a name="CurrencyEnum"></a>
+
 ## Enum: CurrencyEnum
 
 

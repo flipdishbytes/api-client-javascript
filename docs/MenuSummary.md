@@ -1,6 +1,7 @@
 # Flipdish.MenuSummary
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **MenuId** | **Number** | Menu identifier | [optional] 

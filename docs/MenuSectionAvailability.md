@@ -1,13 +1,14 @@
 # Flipdish.MenuSectionAvailability
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **AvailableTimes** | [**[BusinessHoursPeriod]**](BusinessHoursPeriod.md) | Available times | [optional] 
 **AvailabilityMode** | **String** | Availability mode | [optional] 
 
 
-<a name="AvailabilityModeEnum"></a>
+
 ## Enum: AvailabilityModeEnum
 
 

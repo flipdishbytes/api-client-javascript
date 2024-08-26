@@ -1,6 +1,7 @@
 # Flipdish.ReaderActionStateInfo
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **ActionState** | **String** | Action state | [optional] 

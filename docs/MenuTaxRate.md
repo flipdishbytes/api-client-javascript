@@ -1,6 +1,7 @@
 # Flipdish.MenuTaxRate
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **TaxRateId** | **Number** | Id of Tax Rate | [optional] 

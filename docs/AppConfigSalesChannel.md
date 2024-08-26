@@ -1,6 +1,7 @@
 # Flipdish.AppConfigSalesChannel
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **EmailRequestMode** | **String** | Display a popup to users requesting their email address | [optional] 
@@ -9,7 +10,7 @@ Name | Type | Description | Notes
 **DisplayDeliveryRestaurantListScreen** | **Boolean** | Display Pickup Restaurant List Screen | [optional] 
 
 
-<a name="EmailRequestModeEnum"></a>
+
 ## Enum: EmailRequestModeEnum
 
 
@@ -22,7 +23,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="WebToAppRedirectEnum"></a>
+
 ## Enum: WebToAppRedirectEnum
 
 
@@ -39,7 +40,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="AddressEntryTypeEnum"></a>
+
 ## Enum: AddressEntryTypeEnum
 
 

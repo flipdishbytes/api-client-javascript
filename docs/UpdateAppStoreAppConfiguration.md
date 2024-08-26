@@ -1,6 +1,7 @@
 # Flipdish.UpdateAppStoreAppConfiguration
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **IsEnabled** | **Boolean** |  | 

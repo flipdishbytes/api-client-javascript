@@ -1,10 +1,11 @@
 # Flipdish.CancellationToken
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**IsCancellationRequested** | **Boolean** |  | [optional] 
-**CanBeCanceled** | **Boolean** |  | [optional] 
+**IsCancellationRequested** | **Boolean** |  | [optional] [readonly] 
+**CanBeCanceled** | **Boolean** |  | [optional] [readonly] 
 **WaitHandle** | [**WaitHandle**](WaitHandle.md) |  | [optional] 
 
 

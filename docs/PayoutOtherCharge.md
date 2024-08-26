@@ -1,6 +1,7 @@
 # Flipdish.PayoutOtherCharge
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **ChargeId** | **Number** | The id of the charge | [optional] 
@@ -13,7 +14,7 @@ Name | Type | Description | Notes
 **StoreId** | **Number** | Store id | [optional] 
 
 
-<a name="CurrencyEnum"></a>
+
 ## Enum: CurrencyEnum
 
 
@@ -246,7 +247,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="ChargeTypeEnum"></a>
+
 ## Enum: ChargeTypeEnum
 
 

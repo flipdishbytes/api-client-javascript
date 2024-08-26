@@ -1,6 +1,7 @@
 # Flipdish.PromotionAward
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **PromotionAwardId** | **Number** | Promotion Award Id | [optional] 

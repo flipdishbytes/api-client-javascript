@@ -1,6 +1,7 @@
 # Flipdish.NutritionInfoLabel
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Name** | **String** | Name of the allergen / ingredient | [optional] 

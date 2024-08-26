@@ -1,6 +1,7 @@
 # Flipdish.RevenueDetail
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **OnlineSalesAmount** | **Number** | Online sales amount | [optional] 

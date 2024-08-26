@@ -1,6 +1,7 @@
 # Flipdish.OrderDropOffLocation
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **OrderId** | **Number** |  | [optional] 

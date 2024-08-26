@@ -1,6 +1,7 @@
 # Flipdish.Teammate
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **TeammateId** | **String** | Unique indentifier | [optional] 
@@ -14,7 +15,7 @@ Name | Type | Description | Notes
 **StoreIds** | **[Number]** | Store IDs the user has access to (if HasAccessToAllStores is false) | [optional] 
 
 
-<a name="InvitationStatusEnum"></a>
+
 ## Enum: InvitationStatusEnum
 
 
@@ -27,7 +28,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="AppAccessLevelEnum"></a>
+
 ## Enum: AppAccessLevelEnum
 
 

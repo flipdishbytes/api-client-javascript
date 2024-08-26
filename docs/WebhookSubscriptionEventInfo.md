@@ -1,6 +1,7 @@
 # Flipdish.WebhookSubscriptionEventInfo
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **OwnerUserId** | **Number** | Webhook subscription owner user identifier | [optional] 

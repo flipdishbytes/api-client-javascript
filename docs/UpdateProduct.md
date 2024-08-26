@@ -1,6 +1,7 @@
 # Flipdish.UpdateProduct
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Sku** | **String** | Stock Keeping Unit (SKU) | [optional] 

@@ -1,6 +1,7 @@
 # Flipdish.MenuNutritionInfoHeader
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **MenuId** | **Number** | Menu Id | [optional] 

@@ -1,6 +1,7 @@
 # Flipdish.LocationCreatedEvent
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **LocationId** | **Number** | Location Location Id | [optional] 

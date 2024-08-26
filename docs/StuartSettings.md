@@ -1,6 +1,7 @@
 # Flipdish.StuartSettings
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **ClientId** | **String** | Client Id | [optional] 
@@ -15,7 +16,7 @@ Name | Type | Description | Notes
 **TransportPrices** | [**StuartSettingsTransportPrices**](StuartSettingsTransportPrices.md) |  | [optional] 
 
 
-<a name="PackageTypeEnum"></a>
+
 ## Enum: PackageTypeEnum
 
 
@@ -32,7 +33,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="TransportTypeEnum"></a>
+
 ## Enum: TransportTypeEnum
 
 

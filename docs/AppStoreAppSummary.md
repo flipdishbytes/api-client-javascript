@@ -1,6 +1,7 @@
 # Flipdish.AppStoreAppSummary
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **String** |  | 
@@ -15,7 +16,7 @@ Name | Type | Description | Notes
 **DeveloperName** | **String** |  | [optional] 
 
 
-<a name="VerificationStatusEnum"></a>
+
 ## Enum: VerificationStatusEnum
 
 
@@ -28,7 +29,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="[CategoriesEnum]"></a>
+
 ## Enum: [CategoriesEnum]
 
 
@@ -49,7 +50,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="[CountriesEnum]"></a>
+
 ## Enum: [CountriesEnum]
 
 

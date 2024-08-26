@@ -1,9 +1,10 @@
 # Flipdish.AccountFieldDefinition
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Key** | **String** | Depending on the Key, the field's value will be stored in a different field in PayeeBankAccountData | [optional] 
+**Key** | **String** | Depending on the Key, the field&#39;s value will be stored in a different field in PayeeBankAccountData | [optional] 
 **DisplayName** | **String** | Display name of the field | [optional] 
 **Type** | **String** | There are some fields that are of type known to the frontend (IBAN, Swift) -- for those frontend should use its own validation library, e.g. ibantools | [optional] 
 **MinLength** | **Number** | Minimum length of the field | [optional] 
@@ -12,7 +13,7 @@ Name | Type | Description | Notes
 **Regex** | **String** | Regex for validating the field (if specified) | [optional] 
 
 
-<a name="KeyEnum"></a>
+
 ## Enum: KeyEnum
 
 
@@ -45,7 +46,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="TypeEnum"></a>
+
 ## Enum: TypeEnum
 
 

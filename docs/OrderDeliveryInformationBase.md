@@ -1,6 +1,7 @@
 # Flipdish.OrderDeliveryInformationBase
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **ExternalReferenceId** | **String** | External Reference Id | [optional] 
@@ -12,7 +13,7 @@ Name | Type | Description | Notes
 **IntegrationName** | **String** | Integration Name | [optional] 
 
 
-<a name="StatusEnum"></a>
+
 ## Enum: StatusEnum
 
 

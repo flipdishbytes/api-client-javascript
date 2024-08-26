@@ -1,6 +1,7 @@
 # Flipdish.MenuZone
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **MenuZoneId** | **Number** |  | [optional] 

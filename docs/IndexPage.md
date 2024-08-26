@@ -1,6 +1,7 @@
 # Flipdish.IndexPage
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Testimonials** | [**[WebsiteTestimonial]**](WebsiteTestimonial.md) | Testimonials | [optional] 

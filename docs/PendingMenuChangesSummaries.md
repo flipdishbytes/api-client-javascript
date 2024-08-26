@@ -1,6 +1,7 @@
 # Flipdish.PendingMenuChangesSummaries
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **MenuId** | **Number** | Menu id | [optional] 

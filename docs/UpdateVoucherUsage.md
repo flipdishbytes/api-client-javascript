@@ -1,6 +1,7 @@
 # Flipdish.UpdateVoucherUsage
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **IsUsed** | **Boolean** | Flag indicating whether the voucher is used | [optional] 

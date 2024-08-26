@@ -1,6 +1,7 @@
 # Flipdish.PasswordResetModel
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **TokenId** | **String** | Token Id | [optional] 

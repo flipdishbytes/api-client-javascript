@@ -1,6 +1,7 @@
 # Flipdish.UserEventInfo
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **UserId** | **Number** | User Id | [optional] 

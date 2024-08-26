@@ -24,37 +24,35 @@ Method | HTTP request | Description
 [**uploadAppLogo**](AppsApi.md#uploadAppLogo) | **POST** /api/v1.0/apps/{appId}/logo | 
 
 
-<a name="createApp"></a>
-# **createApp**
+
+## createApp
+
 > RestApiStringResult createApp(parameters)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.AppsApi();
-
-var parameters = new Flipdish.CreateAppParameters(); // CreateAppParameters | 
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Flipdish.AppsApi();
+let parameters = new Flipdish.CreateAppParameters(); // CreateAppParameters | 
+apiInstance.createApp(parameters, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.createApp(parameters, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -70,42 +68,39 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
+- **Accept**: application/json, text/json, application/xml, text/xml, Message, ErrorCode, StackTrace
 
-<a name="createAppInOrg"></a>
-# **createAppInOrg**
+
+## createAppInOrg
+
 > RestApiResultApp createAppInOrg(orgId, createAppInOrgRequest)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.AppsApi();
-
-var orgId = "orgId_example"; // String | 
-
-var createAppInOrgRequest = new Flipdish.CreateAppInOrg(); // CreateAppInOrg | 
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Flipdish.AppsApi();
+let orgId = "orgId_example"; // String | 
+let createAppInOrgRequest = new Flipdish.CreateAppInOrg(); // CreateAppInOrg | 
+apiInstance.createAppInOrg(orgId, createAppInOrgRequest, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.createAppInOrg(orgId, createAppInOrgRequest, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -122,40 +117,38 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
+- **Accept**: application/json, text/json, application/xml, text/xml, Data
 
-<a name="getApp"></a>
-# **getApp**
+
+## getApp
+
 > RestApiResultApp getApp(appId)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.AppsApi();
-
-var appId = "appId_example"; // String | 
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Flipdish.AppsApi();
+let appId = "appId_example"; // String | 
+apiInstance.getApp(appId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getApp(appId, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -171,40 +164,38 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, Data
 
-<a name="getAppHostnameStatus"></a>
-# **getAppHostnameStatus**
+
+## getAppHostnameStatus
+
 > RestApiResultDnsRecordInformation getAppHostnameStatus(appId)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.AppsApi();
-
-var appId = "appId_example"; // String | 
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Flipdish.AppsApi();
+let appId = "appId_example"; // String | 
+apiInstance.getAppHostnameStatus(appId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getAppHostnameStatus(appId, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -220,43 +211,42 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, Data
 
-<a name="getApps"></a>
-# **getApps**
+
+## getApps
+
 > RestApiPaginationResultApp getApps(opts)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.AppsApi();
-
-var opts = { 
+let apiInstance = new Flipdish.AppsApi();
+let opts = {
   'nameFilter': "nameFilter_example", // String | 
   'page': 56, // Number | 
   'limit': 56 // Number | 
 };
-
-var callback = function(error, data, response) {
+apiInstance.getApps(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getApps(opts, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -274,40 +264,38 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, Data
 
-<a name="getCompliance"></a>
-# **getCompliance**
+
+## getCompliance
+
 > RestApiResultAppCompliance getCompliance(appId)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.AppsApi();
-
-var appId = "appId_example"; // String | 
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Flipdish.AppsApi();
+let appId = "appId_example"; // String | 
+apiInstance.getCompliance(appId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getCompliance(appId, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -323,40 +311,38 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, Data
 
-<a name="getPanaceaVanityUrl"></a>
-# **getPanaceaVanityUrl**
+
+## getPanaceaVanityUrl
+
 > RestApiStringResult getPanaceaVanityUrl(appId)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.AppsApi();
-
-var appId = "appId_example"; // String | 
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Flipdish.AppsApi();
+let appId = "appId_example"; // String | 
+apiInstance.getPanaceaVanityUrl(appId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getPanaceaVanityUrl(appId, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -372,37 +358,37 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, Data
 
-<a name="getSupportedCountries"></a>
-# **getSupportedCountries**
+
+## getSupportedCountries
+
 > RestApiArrayResultSupportedCountry getSupportedCountries()
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.AppsApi();
-
-var callback = function(error, data, response) {
+let apiInstance = new Flipdish.AppsApi();
+apiInstance.getSupportedCountries((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getSupportedCountries(callback);
+});
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -415,42 +401,39 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, Data
 
-<a name="isPanaceaVanityUrlAvailable"></a>
-# **isPanaceaVanityUrlAvailable**
+
+## isPanaceaVanityUrlAvailable
+
 > RestApiStringResult isPanaceaVanityUrlAvailable(vanityUrl, appId)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.AppsApi();
-
-var vanityUrl = "vanityUrl_example"; // String | 
-
-var appId = "appId_example"; // String | 
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Flipdish.AppsApi();
+let vanityUrl = "vanityUrl_example"; // String | 
+let appId = "appId_example"; // String | 
+apiInstance.isPanaceaVanityUrlAvailable(vanityUrl, appId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.isPanaceaVanityUrlAvailable(vanityUrl, appId, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -467,40 +450,38 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, Data
 
-<a name="lookupByWhitelabelId"></a>
-# **lookupByWhitelabelId**
+
+## lookupByWhitelabelId
+
 > AppLookup lookupByWhitelabelId(whitelabelId)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.AppsApi();
-
-var whitelabelId = 56; // Number | 
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Flipdish.AppsApi();
+let whitelabelId = 56; // Number | 
+apiInstance.lookupByWhitelabelId(whitelabelId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.lookupByWhitelabelId(whitelabelId, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -516,42 +497,39 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml
 
-<a name="setAppConfig"></a>
-# **setAppConfig**
+
+## setAppConfig
+
 > RestApiResultApp setAppConfig(appId, appConfigUpdate)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.AppsApi();
-
-var appId = "appId_example"; // String | 
-
-var appConfigUpdate = new Flipdish.AppConfigUpdateModel(); // AppConfigUpdateModel | 
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Flipdish.AppsApi();
+let appId = "appId_example"; // String | 
+let appConfigUpdate = new Flipdish.AppConfigUpdateModel(); // AppConfigUpdateModel | 
+apiInstance.setAppConfig(appId, appConfigUpdate, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.setAppConfig(appId, appConfigUpdate, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -568,45 +546,42 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
+- **Accept**: application/json, text/json, application/xml, text/xml, Data
 
-<a name="setAppHostname"></a>
-# **setAppHostname**
+
+## setAppHostname
+
 > RestApiStringResult setAppHostname(appId, hostname, opts)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.AppsApi();
-
-var appId = "appId_example"; // String | 
-
-var hostname = "hostname_example"; // String | 
-
-var opts = { 
+let apiInstance = new Flipdish.AppsApi();
+let appId = "appId_example"; // String | 
+let hostname = "hostname_example"; // String | 
+let opts = {
   'isEmbed': true // Boolean | 
 };
-
-var callback = function(error, data, response) {
+apiInstance.setAppHostname(appId, hostname, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.setAppHostname(appId, hostname, opts, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -624,42 +599,39 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, Data
 
-<a name="setAppLanguages"></a>
-# **setAppLanguages**
+
+## setAppLanguages
+
 > RestApiResultApp setAppLanguages(appId, languages)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.AppsApi();
-
-var appId = "appId_example"; // String | 
-
-var languages = [new Flipdish.Language()]; // [Language] | 
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Flipdish.AppsApi();
+let appId = "appId_example"; // String | 
+let languages = [new Flipdish.Language()]; // [Language] | 
+apiInstance.setAppLanguages(appId, languages, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.setAppLanguages(appId, languages, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -676,42 +648,39 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
+- **Accept**: application/json, text/json, application/xml, text/xml, Data
 
-<a name="setAppStoreName"></a>
-# **setAppStoreName**
+
+## setAppStoreName
+
 > setAppStoreName(appId, appStoreName)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.AppsApi();
-
-var appId = "appId_example"; // String | 
-
-var appStoreName = "appStoreName_example"; // String | 
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Flipdish.AppsApi();
+let appId = "appId_example"; // String | 
+let appStoreName = "appStoreName_example"; // String | 
+apiInstance.setAppStoreName(appId, appStoreName, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully.');
   }
-};
-apiInstance.setAppStoreName(appId, appStoreName, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -728,42 +697,39 @@ null (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
+- **Accept**: application/json, text/json, application/xml, text/xml
 
-<a name="setCompliance"></a>
-# **setCompliance**
+
+## setCompliance
+
 > RestApiResultAppCompliance setCompliance(appId, complianceType)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.AppsApi();
-
-var appId = "appId_example"; // String | 
-
-var complianceType = "complianceType_example"; // String | 
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Flipdish.AppsApi();
+let appId = "appId_example"; // String | 
+let complianceType = "complianceType_example"; // String | 
+apiInstance.setCompliance(appId, complianceType, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.setCompliance(appId, complianceType, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -780,42 +746,39 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, Data
 
-<a name="setPanaceaVanityUrl"></a>
-# **setPanaceaVanityUrl**
+
+## setPanaceaVanityUrl
+
 > RestApiStringResult setPanaceaVanityUrl(appId, vanityUrl)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.AppsApi();
-
-var appId = "appId_example"; // String | 
-
-var vanityUrl = "vanityUrl_example"; // String | 
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Flipdish.AppsApi();
+let appId = "appId_example"; // String | 
+let vanityUrl = "vanityUrl_example"; // String | 
+apiInstance.setPanaceaVanityUrl(appId, vanityUrl, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.setPanaceaVanityUrl(appId, vanityUrl, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -832,46 +795,41 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, Data
 
-<a name="toggleNextGenWeb"></a>
-# **toggleNextGenWeb**
+
+## toggleNextGenWeb
+
 > RestApiStringResult toggleNextGenWeb(appId, hostname, vanityUrl, isNextGenWeb)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.AppsApi();
-
-var appId = "appId_example"; // String | 
-
-var hostname = "hostname_example"; // String | 
-
-var vanityUrl = "vanityUrl_example"; // String | 
-
-var isNextGenWeb = true; // Boolean | 
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Flipdish.AppsApi();
+let appId = "appId_example"; // String | 
+let hostname = "hostname_example"; // String | 
+let vanityUrl = "vanityUrl_example"; // String | 
+let isNextGenWeb = true; // Boolean | 
+apiInstance.toggleNextGenWeb(appId, hostname, vanityUrl, isNextGenWeb, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.toggleNextGenWeb(appId, hostname, vanityUrl, isNextGenWeb, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -890,42 +848,39 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, Data
 
-<a name="uploadAppLogo"></a>
-# **uploadAppLogo**
+
+## uploadAppLogo
+
 > uploadAppLogo(appId, Image)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.AppsApi();
-
-var appId = "appId_example"; // String | 
-
-var Image = "/path/to/file.txt"; // File | App Logo
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Flipdish.AppsApi();
+let appId = "appId_example"; // String | 
+let Image = "/path/to/file"; // File | App Logo
+apiInstance.uploadAppLogo(appId, Image, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully.');
   }
-};
-apiInstance.uploadAppLogo(appId, Image, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -942,6 +897,6 @@ null (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: multipart/form-data
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: multipart/form-data
+- **Accept**: application/json, text/json, application/xml, text/xml
 

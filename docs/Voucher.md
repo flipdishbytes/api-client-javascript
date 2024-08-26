@@ -1,6 +1,7 @@
 # Flipdish.Voucher
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **VoucherId** | **Number** | Voucher Id | [optional] 
@@ -8,10 +9,10 @@ Name | Type | Description | Notes
 **VoucherType** | **String** | Voucher Type | [optional] 
 **Currency** | **String** | Currency of the voucher | [optional] 
 **StoreNames** | **[String]** | Stores that this voucher applies to | [optional] 
-**PromotionDetails** | [**PromotionDetails**](PromotionDetails.md) | Promotion details | [optional] 
-**CreditNoteDetails** | [**CreditNoteDetails**](CreditNoteDetails.md) | Credit note details | [optional] 
-**LumpDiscountDetails** | [**LumpDiscountDetails**](LumpDiscountDetails.md) | Lump discount details | [optional] 
-**PercentDiscountDetails** | [**PercentDiscountDetails**](PercentDiscountDetails.md) | Percent discount details | [optional] 
+**PromotionDetails** | [**PromotionDetails**](PromotionDetails.md) |  | [optional] 
+**CreditNoteDetails** | [**CreditNoteDetails**](CreditNoteDetails.md) |  | [optional] 
+**LumpDiscountDetails** | [**LumpDiscountDetails**](LumpDiscountDetails.md) |  | [optional] 
+**PercentDiscountDetails** | [**PercentDiscountDetails**](PercentDiscountDetails.md) |  | [optional] 
 **Code** | **String** | Voucher Code | [optional] 
 **Description** | **String** | Voucher Description (Visible on printout) | [optional] 
 **Stores** | **[Number]** | Stores that this voucher applies to | [optional] 
@@ -31,13 +32,13 @@ Name | Type | Description | Notes
 **StartDate** | **Date** | Voucher Starts On (Time in UTC) | [optional] 
 **ExpiryDate** | **Date** | Voucher Expires On (Time in UTC) | [optional] 
 **ChannelRestrictions** | **[String]** | Limit the channels this voucher can be used on | [optional] 
-**ValidityPeriods** | [**[ValidityPeriod]**](ValidityPeriod.md) | Periods in which the voucher is valid.  An empty list means the voucher is valid at all times.  When updating the voucher, if this is set to null, the validity periods won't be updated. | [optional] 
+**ValidityPeriods** | [**[ValidityPeriod]**](ValidityPeriod.md) | Periods in which the voucher is valid.  An empty list means the voucher is valid at all times.  When updating the voucher, if this is set to null, the validity periods won&#39;t be updated. | [optional] 
 **VoucherSubType** | **String** | Voucher Subtype | [optional] 
 **CustomerId** | **Number** | Customer UserID | [optional] 
 **MaxRedemptions** | **Number** | Maximum number of times the voucher can be redeemed (used) | [optional] 
 
 
-<a name="StatusEnum"></a>
+
 ## Enum: StatusEnum
 
 
@@ -54,7 +55,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="VoucherTypeEnum"></a>
+
 ## Enum: VoucherTypeEnum
 
 
@@ -71,7 +72,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="CurrencyEnum"></a>
+
 ## Enum: CurrencyEnum
 
 
@@ -304,7 +305,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="[ChannelRestrictionsEnum]"></a>
+
 ## Enum: [ChannelRestrictionsEnum]
 
 
@@ -323,7 +324,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="VoucherSubTypeEnum"></a>
+
 ## Enum: VoucherSubTypeEnum
 
 

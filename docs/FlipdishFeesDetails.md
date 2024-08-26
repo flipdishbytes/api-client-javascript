@@ -1,6 +1,7 @@
 # Flipdish.FlipdishFeesDetails
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **OnlineSalesFees** | **Number** | Fees on online sales | [optional] 

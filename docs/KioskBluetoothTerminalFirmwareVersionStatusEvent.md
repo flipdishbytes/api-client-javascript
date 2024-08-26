@@ -1,6 +1,7 @@
 # Flipdish.KioskBluetoothTerminalFirmwareVersionStatusEvent
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **DeviceId** | **String** | Device Id of the Kiosk | [optional] 
@@ -9,7 +10,7 @@ Name | Type | Description | Notes
 **HasConfigUpdate** | **Boolean** | Indicates if Payment Terminal has Config Update | [optional] 
 **HasKeyUpdate** | **Boolean** | Indicates if Payment Terminal has Key Update | [optional] 
 **UpdateTimeEstimate** | **String** | ETA to install the update | [optional] 
-**UserEventInfo** | [**UserEventInfo**](UserEventInfo.md) | User who made the changes | [optional] 
+**UserEventInfo** | [**UserEventInfo**](UserEventInfo.md) |  | [optional] 
 **EventName** | **String** | The event name | [optional] 
 **FlipdishEventId** | **String** | The identitfier of the event | [optional] 
 **CreateTime** | **Date** | The time of creation of the event | [optional] 
@@ -18,7 +19,7 @@ Name | Type | Description | Notes
 **IpAddress** | **String** | Ip Address | [optional] 
 
 
-<a name="UpdateTimeEstimateEnum"></a>
+
 ## Enum: UpdateTimeEstimateEnum
 
 

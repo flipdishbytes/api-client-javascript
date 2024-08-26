@@ -1,6 +1,7 @@
 # Flipdish.ApmHourlyDataPoint
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Day** | **String** | Day of the week | [optional] 
@@ -8,7 +9,7 @@ Name | Type | Description | Notes
 **TotalValue** | **Number** | Total Value | [optional] 
 
 
-<a name="DayEnum"></a>
+
 ## Enum: DayEnum
 
 

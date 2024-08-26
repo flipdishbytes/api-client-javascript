@@ -1,8 +1,9 @@
 # Flipdish.RestApiResultLoyaltyCampaign
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Data** | [**LoyaltyCampaign**](LoyaltyCampaign.md) | Generic data object. | 
+**Data** | [**LoyaltyCampaign**](LoyaltyCampaign.md) |  | 
 
 

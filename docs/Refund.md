@@ -1,6 +1,7 @@
 # Flipdish.Refund
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **RefundReason** | **String** | Refund reason | [optional] 

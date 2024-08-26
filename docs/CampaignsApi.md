@@ -16,39 +16,36 @@ Method | HTTP request | Description
 [**updateRetentionCampaign**](CampaignsApi.md#updateRetentionCampaign) | **POST** /api/v1.0/{appId}/campaigns/retention/{campaignId} | 
 
 
-<a name="createLoyaltyCampaign"></a>
-# **createLoyaltyCampaign**
+
+## createLoyaltyCampaign
+
 > RestApiResultLoyaltyCampaign createLoyaltyCampaign(appId, campaign)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.CampaignsApi();
-
-var appId = "appId_example"; // String | 
-
-var campaign = new Flipdish.LoyaltyCampaignBase(); // LoyaltyCampaignBase | 
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Flipdish.CampaignsApi();
+let appId = "appId_example"; // String | 
+let campaign = new Flipdish.LoyaltyCampaignBase(); // LoyaltyCampaignBase | 
+apiInstance.createLoyaltyCampaign(appId, campaign, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.createLoyaltyCampaign(appId, campaign, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -65,42 +62,39 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
+- **Accept**: application/json, text/json, application/xml, text/xml, Data, Message, ErrorCode, StackTrace
 
-<a name="createRetentionCampaign"></a>
-# **createRetentionCampaign**
+
+## createRetentionCampaign
+
 > RestApiResultRetentionCampaign createRetentionCampaign(appId, campaign)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.CampaignsApi();
-
-var appId = "appId_example"; // String | 
-
-var campaign = new Flipdish.RetentionCampaignBase(); // RetentionCampaignBase | 
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Flipdish.CampaignsApi();
+let appId = "appId_example"; // String | 
+let campaign = new Flipdish.RetentionCampaignBase(); // RetentionCampaignBase | 
+apiInstance.createRetentionCampaign(appId, campaign, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.createRetentionCampaign(appId, campaign, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -117,40 +111,38 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
+- **Accept**: application/json, text/json, application/xml, text/xml, Data, Message, ErrorCode, StackTrace
 
-<a name="getLoyaltyCampaignsForApp"></a>
-# **getLoyaltyCampaignsForApp**
+
+## getLoyaltyCampaignsForApp
+
 > RestApiArrayResultLoyaltyCampaign getLoyaltyCampaignsForApp(appId)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.CampaignsApi();
-
-var appId = "appId_example"; // String | 
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Flipdish.CampaignsApi();
+let appId = "appId_example"; // String | 
+apiInstance.getLoyaltyCampaignsForApp(appId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getLoyaltyCampaignsForApp(appId, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -166,42 +158,39 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, Data, Message, ErrorCode, StackTrace
 
-<a name="getLoyaltyCampaignsForStore"></a>
-# **getLoyaltyCampaignsForStore**
+
+## getLoyaltyCampaignsForStore
+
 > RestApiArrayResultLoyaltyCampaign getLoyaltyCampaignsForStore(appId, storeId)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.CampaignsApi();
-
-var appId = "appId_example"; // String | 
-
-var storeId = 56; // Number | 
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Flipdish.CampaignsApi();
+let appId = "appId_example"; // String | 
+let storeId = 56; // Number | 
+apiInstance.getLoyaltyCampaignsForStore(appId, storeId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getLoyaltyCampaignsForStore(appId, storeId, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -218,40 +207,38 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, Data, Message, ErrorCode, StackTrace
 
-<a name="getRetentionCampaignsForApp"></a>
-# **getRetentionCampaignsForApp**
+
+## getRetentionCampaignsForApp
+
 > RestApiArrayResultRetentionCampaign getRetentionCampaignsForApp(appId)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.CampaignsApi();
-
-var appId = "appId_example"; // String | 
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Flipdish.CampaignsApi();
+let appId = "appId_example"; // String | 
+apiInstance.getRetentionCampaignsForApp(appId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getRetentionCampaignsForApp(appId, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -267,42 +254,39 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, Data, Message, ErrorCode, StackTrace
 
-<a name="getRetentionCampaignsForStore"></a>
-# **getRetentionCampaignsForStore**
+
+## getRetentionCampaignsForStore
+
 > RestApiArrayResultRetentionCampaign getRetentionCampaignsForStore(appId, storeId)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.CampaignsApi();
-
-var appId = "appId_example"; // String | 
-
-var storeId = 56; // Number | 
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Flipdish.CampaignsApi();
+let appId = "appId_example"; // String | 
+let storeId = 56; // Number | 
+apiInstance.getRetentionCampaignsForStore(appId, storeId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getRetentionCampaignsForStore(appId, storeId, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -319,43 +303,41 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, Data, Message, ErrorCode, StackTrace
 
-<a name="getStoreList"></a>
-# **getStoreList**
+
+## getStoreList
+
 > RestApiArrayResultStoreListItem getStoreList(appId, opts)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.CampaignsApi();
-
-var appId = "appId_example"; // String | 
-
-var opts = { 
+let apiInstance = new Flipdish.CampaignsApi();
+let appId = "appId_example"; // String | 
+let opts = {
   'onlyPublished': true // Boolean | 
 };
-
-var callback = function(error, data, response) {
+apiInstance.getStoreList(appId, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getStoreList(appId, opts, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -372,42 +354,39 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, Data, Message, ErrorCode, StackTrace
 
-<a name="removeCampaign"></a>
-# **removeCampaign**
+
+## removeCampaign
+
 > removeCampaign(appId, campaignId)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.CampaignsApi();
-
-var appId = "appId_example"; // String | 
-
-var campaignId = 56; // Number | 
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Flipdish.CampaignsApi();
+let appId = "appId_example"; // String | 
+let campaignId = 56; // Number | 
+apiInstance.removeCampaign(appId, campaignId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully.');
   }
-};
-apiInstance.removeCampaign(appId, campaignId, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -424,44 +403,40 @@ null (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, Message, ErrorCode, StackTrace
 
-<a name="updateLoyaltyCampaign"></a>
-# **updateLoyaltyCampaign**
+
+## updateLoyaltyCampaign
+
 > RestApiResultLoyaltyCampaign updateLoyaltyCampaign(appId, campaignId, campaign)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.CampaignsApi();
-
-var appId = "appId_example"; // String | 
-
-var campaignId = 56; // Number | 
-
-var campaign = new Flipdish.LoyaltyCampaignBase(); // LoyaltyCampaignBase | 
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Flipdish.CampaignsApi();
+let appId = "appId_example"; // String | 
+let campaignId = 56; // Number | 
+let campaign = new Flipdish.LoyaltyCampaignBase(); // LoyaltyCampaignBase | 
+apiInstance.updateLoyaltyCampaign(appId, campaignId, campaign, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.updateLoyaltyCampaign(appId, campaignId, campaign, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -479,44 +454,40 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
+- **Accept**: application/json, text/json, application/xml, text/xml, Data, Message, ErrorCode, StackTrace
 
-<a name="updateRetentionCampaign"></a>
-# **updateRetentionCampaign**
+
+## updateRetentionCampaign
+
 > RestApiResultRetentionCampaign updateRetentionCampaign(appId, campaignId, campaign)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.CampaignsApi();
-
-var appId = "appId_example"; // String | 
-
-var campaignId = 56; // Number | 
-
-var campaign = new Flipdish.RetentionCampaignBase(); // RetentionCampaignBase | 
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Flipdish.CampaignsApi();
+let appId = "appId_example"; // String | 
+let campaignId = 56; // Number | 
+let campaign = new Flipdish.RetentionCampaignBase(); // RetentionCampaignBase | 
+apiInstance.updateRetentionCampaign(appId, campaignId, campaign, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.updateRetentionCampaign(appId, campaignId, campaign, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -534,6 +505,6 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
+- **Accept**: application/json, text/json, application/xml, text/xml, Data, Message, ErrorCode, StackTrace
 

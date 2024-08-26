@@ -1,6 +1,7 @@
 # Flipdish.Subscription
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Products** | [**[SubscriptionProduct]**](SubscriptionProduct.md) | Products | 
@@ -8,7 +9,7 @@ Name | Type | Description | Notes
 **NextInvoiceBillingDate** | **Date** | Next invoice billing date | [optional] 
 **UpcomingInvoiceItems** | [**[InvoiceItem]**](InvoiceItem.md) | Upcoming invoice items | [optional] 
 **UpcomingInvoiceDiscounts** | [**[InvoiceDiscount]**](InvoiceDiscount.md) | Upcoming invoice discounts | [optional] 
-**UpcomingInvoice** | [**UpcomingInvoice**](UpcomingInvoice.md) | Upcoming invoice | [optional] 
+**UpcomingInvoice** | [**UpcomingInvoice**](UpcomingInvoice.md) |  | [optional] 
 **SubscriptionId** | **String** | The subscription identifier | 
 **Name** | **String** |  | 
 **Status** | **String** | Status | 
@@ -19,7 +20,7 @@ Name | Type | Description | Notes
 **CancellationDate** | **Date** | Cancel Date | [optional] 
 
 
-<a name="StatusEnum"></a>
+
 ## Enum: StatusEnum
 
 
@@ -40,7 +41,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="CurrencyEnum"></a>
+
 ## Enum: CurrencyEnum
 
 

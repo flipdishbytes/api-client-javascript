@@ -1,6 +1,7 @@
 # Flipdish.CustomerCreateModel
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **PhoneNumber** | **String** | Customer Phone Number | [optional] 
@@ -8,7 +9,7 @@ Name | Type | Description | Notes
 **Name** | **String** | Customer Name | [optional] 
 
 
-<a name="AppTypeEnum"></a>
+
 ## Enum: AppTypeEnum
 
 

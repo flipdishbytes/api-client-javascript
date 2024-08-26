@@ -1,6 +1,7 @@
 # Flipdish.JobResponse
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **Number** | Id | [optional] 
@@ -15,7 +16,7 @@ Name | Type | Description | Notes
 **Distance** | **Number** | Distance | [optional] 
 **Duration** | **Number** | Duration | [optional] 
 **Deliveries** | [**[JobDelivery]**](JobDelivery.md) | Deliveries | [optional] 
-**Pricing** | [**JobPricing**](JobPricing.md) | Pricing | [optional] 
-**Driver** | [**JobDriver**](JobDriver.md) | Driver | [optional] 
+**Pricing** | [**JobPricing**](JobPricing.md) |  | [optional] 
+**Driver** | [**JobDriver**](JobDriver.md) |  | [optional] 
 
 

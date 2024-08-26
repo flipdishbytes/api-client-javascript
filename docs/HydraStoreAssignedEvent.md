@@ -1,9 +1,10 @@
 # Flipdish.HydraStoreAssignedEvent
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**User** | [**UserEventInfo**](UserEventInfo.md) | User who made the change | [optional] 
+**User** | [**UserEventInfo**](UserEventInfo.md) |  | [optional] 
 **StoreIds** | **[Number]** | Store\\s to assign hydra to | [optional] 
 **EventName** | **String** | The event name | [optional] 
 **FlipdishEventId** | **String** | The identitfier of the event | [optional] 

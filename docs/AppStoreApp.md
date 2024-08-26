@@ -1,6 +1,7 @@
 # Flipdish.AppStoreApp
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **String** |  | 
@@ -28,7 +29,7 @@ Name | Type | Description | Notes
 **DeveloperName** | **String** |  | [optional] 
 
 
-<a name="VerificationStatusEnum"></a>
+
 ## Enum: VerificationStatusEnum
 
 
@@ -41,7 +42,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="ConfigurationTypeEnum"></a>
+
 ## Enum: ConfigurationTypeEnum
 
 
@@ -52,7 +53,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="StoreSelectorTypeEnum"></a>
+
 ## Enum: StoreSelectorTypeEnum
 
 
@@ -65,7 +66,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="TeammateAppAccessLevelEnum"></a>
+
 ## Enum: TeammateAppAccessLevelEnum
 
 
@@ -88,7 +89,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="PermissionsTypeEnum"></a>
+
 ## Enum: PermissionsTypeEnum
 
 
@@ -97,7 +98,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="[CategoriesEnum]"></a>
+
 ## Enum: [CategoriesEnum]
 
 
@@ -118,7 +119,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="[CountriesEnum]"></a>
+
 ## Enum: [CountriesEnum]
 
 

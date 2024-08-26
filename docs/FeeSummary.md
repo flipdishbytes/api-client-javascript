@@ -1,6 +1,7 @@
 # Flipdish.FeeSummary
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **FeeAmount** | **Number** | Fee amount | [optional] 

@@ -1,8 +1,9 @@
 # Flipdish.RestApiResultIndexPage
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Data** | [**IndexPage**](IndexPage.md) | Generic data object. | 
+**Data** | [**IndexPage**](IndexPage.md) |  | 
 
 

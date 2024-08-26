@@ -1,13 +1,14 @@
 # Flipdish.RedeemInvitationResult
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **AppId** | **String** | Access level is for this App | [optional] 
 **InvitationStatus** | **String** | Invitation status | [optional] 
 
 
-<a name="InvitationStatusEnum"></a>
+
 ## Enum: InvitationStatusEnum
 
 

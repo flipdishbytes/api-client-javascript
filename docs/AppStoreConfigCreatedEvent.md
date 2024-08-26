@@ -1,6 +1,7 @@
 # Flipdish.AppStoreConfigCreatedEvent
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **EventName** | **String** | The event name | [optional] 

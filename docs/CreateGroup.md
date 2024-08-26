@@ -1,6 +1,7 @@
 # Flipdish.CreateGroup
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **MinSelectCount** | **Number** | Minimum number of items that the user has to select | [optional] 
@@ -14,7 +15,7 @@ Name | Type | Description | Notes
 **ImageFileName** | **String** | Image File Name | [optional] 
 
 
-<a name="GroupTypeEnum"></a>
+
 ## Enum: GroupTypeEnum
 
 

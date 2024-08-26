@@ -1,6 +1,7 @@
 # Flipdish.DnsVerifiedEvent
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Hostname** | **String** | Description | [optional] 

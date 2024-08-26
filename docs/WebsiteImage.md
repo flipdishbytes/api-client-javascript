@@ -1,6 +1,7 @@
 # Flipdish.WebsiteImage
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **ImageId** | **Number** | Represents the id of the image | [optional] 
@@ -8,7 +9,7 @@ Name | Type | Description | Notes
 **ImageUrl** | **String** | Represents the image url | [optional] 
 
 
-<a name="ImageLocationEnum"></a>
+
 ## Enum: ImageLocationEnum
 
 

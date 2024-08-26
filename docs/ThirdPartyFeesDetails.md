@@ -1,6 +1,7 @@
 # Flipdish.ThirdPartyFeesDetails
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **DeliveryIntegrationFee** | **Number** | Third party integration delivery fee | [optional] 

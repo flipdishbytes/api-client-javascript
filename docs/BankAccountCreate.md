@@ -1,6 +1,7 @@
 # Flipdish.BankAccountCreate
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **BankAddress** | **String** | Address lf the bank | [optional] 
@@ -20,7 +21,7 @@ Name | Type | Description | Notes
 **BusinessType** | **String** | Business Type | [optional] 
 
 
-<a name="CurrencyCodeEnum"></a>
+
 ## Enum: CurrencyCodeEnum
 
 
@@ -253,7 +254,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="BusinessTypeEnum"></a>
+
 ## Enum: BusinessTypeEnum
 
 

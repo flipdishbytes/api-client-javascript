@@ -1,6 +1,7 @@
 # Flipdish.UpdateLocationArea
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **LocationAreaId** | **Number** | Location Area Id | 

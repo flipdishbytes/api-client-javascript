@@ -1,6 +1,7 @@
 # Flipdish.CreateFullMenu
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Name** | **String** | Name of Menu, only shown in portal | [optional] 
@@ -12,7 +13,7 @@ Name | Type | Description | Notes
 **TaxType** | **String** | Tax type | [optional] 
 
 
-<a name="MenuSectionBehaviourEnum"></a>
+
 ## Enum: MenuSectionBehaviourEnum
 
 
@@ -23,7 +24,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="TaxTypeEnum"></a>
+
 ## Enum: TaxTypeEnum
 
 

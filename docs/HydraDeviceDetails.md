@@ -1,6 +1,7 @@
 # Flipdish.HydraDeviceDetails
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **HydraConfigId** | **Number** | Flipdish internal device identifier | [optional] 
@@ -17,7 +18,7 @@ Name | Type | Description | Notes
 **GitBranch** | **String** | Build branch | [optional] 
 
 
-<a name="DeviceTypeEnum"></a>
+
 ## Enum: DeviceTypeEnum
 
 
@@ -30,7 +31,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="StatusEnum"></a>
+
 ## Enum: StatusEnum
 
 

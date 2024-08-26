@@ -1,6 +1,7 @@
 # Flipdish.WebhookSubscription
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **Number** | Webhook subscription identifier | [optional] 

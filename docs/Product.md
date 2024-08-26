@@ -1,6 +1,7 @@
 # Flipdish.Product
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **CatalogItemId** | **String** | Unique catalog Item id | [optional] 
@@ -16,7 +17,7 @@ Name | Type | Description | Notes
 **Alcohol** | **Boolean** | Product contains alcohol | [optional] 
 
 
-<a name="ProductTypeEnum"></a>
+
 ## Enum: ProductTypeEnum
 
 

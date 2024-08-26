@@ -1,6 +1,7 @@
 # Flipdish.GroupedCoordinates
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Latitude** | **Number** | Latitude of this coordinate | [optional] 

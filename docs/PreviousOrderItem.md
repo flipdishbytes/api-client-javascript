@@ -1,6 +1,7 @@
 # Flipdish.PreviousOrderItem
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **MenuSectionDisplayOrder** | **Number** |  | [optional] 

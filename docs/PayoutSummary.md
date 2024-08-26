@@ -1,6 +1,7 @@
 # Flipdish.PayoutSummary
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **PayoutStatus** | **String** | Status of the payout | [optional] 
@@ -9,7 +10,7 @@ Name | Type | Description | Notes
 **TotalCount** | **Number** | Total payouts count | [optional] 
 
 
-<a name="PayoutStatusEnum"></a>
+
 ## Enum: PayoutStatusEnum
 
 
@@ -26,7 +27,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="CurrencyEnum"></a>
+
 ## Enum: CurrencyEnum
 
 

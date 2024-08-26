@@ -1,6 +1,7 @@
 # Flipdish.NutritionInfoV2Item
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **PublicId** | **String** | Menu item or menu item option set item public id | [optional] 

@@ -1,6 +1,7 @@
 # Flipdish.MenuElementEditResponse
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **SectionName** | **String** | Section name | [optional] 
@@ -12,7 +13,7 @@ Name | Type | Description | Notes
 **ValidationCode** | **String** | Validation message for menu element issue | [optional] 
 
 
-<a name="MenuElementTypeEnum"></a>
+
 ## Enum: MenuElementTypeEnum
 
 
@@ -23,7 +24,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="ValidationCodeEnum"></a>
+
 ## Enum: ValidationCodeEnum
 
 

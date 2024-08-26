@@ -1,6 +1,7 @@
 # Flipdish.EmvTerminalWithAssignments
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **EmvTerminalId** | **String** | Flipdish Internal identifier of the Terminal | [optional] 

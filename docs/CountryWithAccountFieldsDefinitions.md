@@ -1,6 +1,7 @@
 # Flipdish.CountryWithAccountFieldsDefinitions
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **CountryCode** | **String** | Country 2-letter ISO code | [optional] 

@@ -1,6 +1,7 @@
 # Flipdish.ValidityPeriod
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **DayOfWeek** | **String** |  | [optional] 
@@ -8,7 +9,7 @@ Name | Type | Description | Notes
 **EndTime** | **String** |  | [optional] 
 
 
-<a name="DayOfWeekEnum"></a>
+
 ## Enum: DayOfWeekEnum
 
 

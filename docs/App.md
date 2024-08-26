@@ -1,6 +1,7 @@
 # Flipdish.App
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **AppId** | **String** | App Identifier | [optional] 
@@ -13,21 +14,21 @@ Name | Type | Description | Notes
 **AppAccessLevel** | **String** | App access level for the logged in user | [optional] 
 **AppResourceSet** | **[String]** | Constitutes a list of available resources | [optional] 
 **Features** | **[String]** | Feature flags. These cannot be set by 3rd parties. | [optional] 
-**MapCenter** | [**Coordinates**](Coordinates.md) | Center of the map coordinates. This is used to center the map when the iOS and Android app first open.  This value is automatically set based on the locations of the Stores in the App. | [optional] 
-**MapNorthEast** | [**Coordinates**](Coordinates.md) | North East(Top Right) Corner of the map coordinates. This is used to frame the map when the iOS and Android app first open.  This value is automatically set based on the locations of the Stores in the App. | [optional] 
-**MapSouthWest** | [**Coordinates**](Coordinates.md) | South West (Bottom Left) Corner of the map coordinates. This is used to frame the map when the iOS and Android app first open.  This value is automatically set based on the locations of the Stores in the App. | [optional] 
+**MapCenter** | [**Coordinates**](Coordinates.md) |  | [optional] 
+**MapNorthEast** | [**Coordinates**](Coordinates.md) |  | [optional] 
+**MapSouthWest** | [**Coordinates**](Coordinates.md) |  | [optional] 
 **GoogleMapsApiKeyWeb** | **String** | Key to be passed with Google Maps requests | [optional] 
 **Name** | **String** | App name.   This is used in various places on the Apple App Store, Google Play Store, mobile apps and websites. | [optional] 
 **HostName** | **String** | HostName on which the web-ordering system is allowed to be hosted or that a Flipdish website is hosted on. | [optional] 
 **MainColor** | **String** | Main color of the web / Android / iOS applications | [optional] 
 **KioskPrimaryColour** | **String** | Primary colour used on the Kiosk | [optional] 
 **ApplicationCategory** | **String** | Application Category | [optional] 
-**IsPanaceaEnabled** | **Boolean** | Panacea is the term used for websites that are hosted on the my.flipdish.com domain. This value is true when the App's website is hosted on this domain.  The aternative to using Panacea websites is to use a custom domain. | [optional] 
+**IsPanaceaEnabled** | **Boolean** | Panacea is the term used for websites that are hosted on the my.flipdish.com domain. This value is true when the App&#39;s website is hosted on this domain.  The aternative to using Panacea websites is to use a custom domain. | [optional] 
 **PanaceaVanityUrl** | **String** | In case of IsPanaceaEnabled is true, the app can be accessed via https://my.flipdish.com/{PanaceaVanityUrl} | [optional] 
 **CookieConsentPromptEnabled** | **Boolean** | Cookie Consent Prompt Enabled | [optional] 
 
 
-<a name="AppAccessLevelEnum"></a>
+
 ## Enum: AppAccessLevelEnum
 
 
@@ -56,7 +57,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="[AppResourceSetEnum]"></a>
+
 ## Enum: [AppResourceSetEnum]
 
 
@@ -393,7 +394,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="ApplicationCategoryEnum"></a>
+
 ## Enum: ApplicationCategoryEnum
 
 

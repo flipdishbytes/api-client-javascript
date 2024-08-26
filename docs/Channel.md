@@ -1,6 +1,7 @@
 # Flipdish.Channel
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **ChannelId** | **Number** | Channel Id | [optional] 
@@ -11,7 +12,7 @@ Name | Type | Description | Notes
 **MaintainedExternally** | **Boolean** | Channel is Maintained Externally or not | [optional] 
 
 
-<a name="SourceEnum"></a>
+
 ## Enum: SourceEnum
 
 

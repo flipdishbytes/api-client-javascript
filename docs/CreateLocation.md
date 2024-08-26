@@ -1,6 +1,7 @@
 # Flipdish.CreateLocation
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **LocationId** | **Number** | Location Id | [optional] 

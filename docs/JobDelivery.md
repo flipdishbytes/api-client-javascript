@@ -1,6 +1,7 @@
 # Flipdish.JobDelivery
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **Number** | Id | [optional] 
@@ -11,10 +12,10 @@ Name | Type | Description | Notes
 **ClientReference** | **String** | Client Reference | [optional] 
 **PackageDescription** | **String** | Package Description | [optional] 
 **PackageType** | **String** | Package Type | [optional] 
-**Pickup** | [**JobDeliveryDetail**](JobDeliveryDetail.md) | Pickup | [optional] 
-**Dropoff** | [**JobDeliveryDetail**](JobDeliveryDetail.md) | Dropoff | [optional] 
-**Eta** | [**JobEta**](JobEta.md) | Eta | [optional] 
-**Cancellation** | [**JobCancellation**](JobCancellation.md) | Cancellation | [optional] 
-**Proof** | [**JobProof**](JobProof.md) | Proof | [optional] 
+**Pickup** | [**JobDeliveryDetail**](JobDeliveryDetail.md) |  | [optional] 
+**Dropoff** | [**JobDeliveryDetail**](JobDeliveryDetail.md) |  | [optional] 
+**Eta** | [**JobEta**](JobEta.md) |  | [optional] 
+**Cancellation** | [**JobCancellation**](JobCancellation.md) |  | [optional] 
+**Proof** | [**JobProof**](JobProof.md) |  | [optional] 
 
 

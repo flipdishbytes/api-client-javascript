@@ -1,6 +1,7 @@
 # Flipdish.StoreFeeConfig
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **FeeConfigId** | **Number** |  | [optional] 

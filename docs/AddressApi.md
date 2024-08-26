@@ -10,40 +10,38 @@ Method | HTTP request | Description
 [**getCountries**](AddressApi.md#getCountries) | **GET** /api/v1.0/address/countries | 
 
 
-<a name="formByApp"></a>
-# **formByApp**
+
+## formByApp
+
 > RestApiResultAddressFormResponse formByApp(appId, opts)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.AddressApi();
-
-var appId = "appId_example"; // String | 
-
-var opts = { 
+let apiInstance = new Flipdish.AddressApi();
+let appId = "appId_example"; // String | 
+let opts = {
   'language': "language_example" // String | 
 };
-
-var callback = function(error, data, response) {
+apiInstance.formByApp(appId, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.formByApp(appId, opts, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -60,43 +58,41 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, Data, Message, ErrorCode, StackTrace
 
-<a name="formByCountry"></a>
-# **formByCountry**
+
+## formByCountry
+
 > RestApiResultAddressFormResponse formByCountry(countryCode, opts)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.AddressApi();
-
-var countryCode = "countryCode_example"; // String | 
-
-var opts = { 
+let apiInstance = new Flipdish.AddressApi();
+let countryCode = "countryCode_example"; // String | 
+let opts = {
   'language': "language_example" // String | 
 };
-
-var callback = function(error, data, response) {
+apiInstance.formByCountry(countryCode, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.formByCountry(countryCode, opts, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -113,43 +109,41 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, Data, Message, ErrorCode, StackTrace
 
-<a name="formatGoogleAddress"></a>
-# **formatGoogleAddress**
+
+## formatGoogleAddress
+
 > RestApiResultAddressFormResponse formatGoogleAddress(googleAddress, opts)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.AddressApi();
-
-var googleAddress = new Flipdish.GoogleAddress(); // GoogleAddress | 
-
-var opts = { 
+let apiInstance = new Flipdish.AddressApi();
+let googleAddress = new Flipdish.GoogleAddress(); // GoogleAddress | 
+let opts = {
   'language': "language_example" // String | 
 };
-
-var callback = function(error, data, response) {
+apiInstance.formatGoogleAddress(googleAddress, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.formatGoogleAddress(googleAddress, opts, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -166,41 +160,40 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
+- **Accept**: application/json, text/json, application/xml, text/xml, Data, Message, ErrorCode, StackTrace
 
-<a name="getCountries"></a>
-# **getCountries**
+
+## getCountries
+
 > RestApiResultCountryFormResponse getCountries(opts)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.AddressApi();
-
-var opts = { 
+let apiInstance = new Flipdish.AddressApi();
+let opts = {
   'language': "language_example" // String | 
 };
-
-var callback = function(error, data, response) {
+apiInstance.getCountries(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getCountries(opts, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -216,6 +209,6 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, Data
 

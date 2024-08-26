@@ -1,6 +1,7 @@
 # Flipdish.OrderItem
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **OrderItemOptions** | [**[OrderItemOption]**](OrderItemOption.md) | Option list | [optional] 

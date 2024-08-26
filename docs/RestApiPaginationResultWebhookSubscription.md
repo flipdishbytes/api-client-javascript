@@ -1,6 +1,7 @@
 # Flipdish.RestApiPaginationResultWebhookSubscription
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Page** | **Number** | Current page index | 

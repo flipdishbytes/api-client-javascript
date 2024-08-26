@@ -1,15 +1,16 @@
 # Flipdish.LoyaltyCampaign
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **CampaignId** | **Number** | Id of campaign | [optional] 
-**Statistics** | [**CampaignStatistics**](CampaignStatistics.md) | Statistics of campaign | [optional] 
+**Statistics** | [**CampaignStatistics**](CampaignStatistics.md) |  | [optional] 
 **Stores** | [**[StoreCampaignStartTime]**](StoreCampaignStartTime.md) | Stores this campaign applies to with campaign start time in Utc | [optional] 
 **PublicId** | **String** | Permanent reference to the item. | [optional] 
 **OrdersBeforeReceivingVoucher** | **Number** | Number of orders customer needs to make, before receiving voucher | [optional] 
 **PercentDiscountAmount** | **Number** | Discount amount in percents | [optional] 
-**RoundingStrategy** | **Number** | Controls how the loyalty voucher's amount is rounded | [optional] 
+**RoundingStrategy** | **Number** | Controls how the loyalty voucher&#39;s amount is rounded | [optional] 
 **ShouldIncludeOrdersWithLoyaltyVoucher** | **Boolean** | Controls whether we should include orders with loyalty vouchers in the campaign calculation | [optional] 
 **VoucherValidPeriodDays** | **Number** | Number of days for which the voucher will be valid. | [optional] 
 **IncludeDeliveryFee** | **Boolean** | Discount will include delivery fee | [optional] 

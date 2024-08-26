@@ -1,8 +1,9 @@
 # Flipdish.RestApiResultHomeStatistics
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Data** | [**HomeStatistics**](HomeStatistics.md) | Generic data object. | 
+**Data** | [**HomeStatistics**](HomeStatistics.md) |  | 
 
 

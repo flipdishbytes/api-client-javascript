@@ -1,6 +1,7 @@
 # Flipdish.InvoiceItem
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Description** | **String** | Description | 
@@ -8,6 +9,6 @@ Name | Type | Description | Notes
 **UnitAmountExcludingTax** | **Number** | Unit Amount Excluding Tax | 
 **Tax** | **Number** | Tax | 
 **Amount** | **Number** | Amount | 
-**Period** | [**InvoicePeriod**](InvoicePeriod.md) | Period | 
+**Period** | [**InvoicePeriod**](InvoicePeriod.md) |  | 
 
 

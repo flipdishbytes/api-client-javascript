@@ -1,6 +1,7 @@
 # Flipdish.OrderVoucherSummary
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **VoucherId** | **Number** | Voucher ID | [optional] 
@@ -12,7 +13,7 @@ Name | Type | Description | Notes
 **SubType** | **String** | Voucher sub type | [optional] 
 
 
-<a name="TypeEnum"></a>
+
 ## Enum: TypeEnum
 
 
@@ -29,7 +30,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="SubTypeEnum"></a>
+
 ## Enum: SubTypeEnum
 
 

@@ -1,6 +1,7 @@
 # Flipdish.TelephonyConfig
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **TelephonyConfigId** | **Number** | ID of the phone call | [optional] 

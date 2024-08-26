@@ -1,6 +1,7 @@
 # Flipdish.NutritionInfoV2Allergen
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **AllergenId** | **String** | AllergenId (unique string identifier) | [optional] 

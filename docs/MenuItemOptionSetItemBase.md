@@ -1,6 +1,7 @@
 # Flipdish.MenuItemOptionSetItemBase
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Name** | **String** | Name | [optional] 
@@ -12,7 +13,7 @@ Name | Type | Description | Notes
 **ImageUrl** | **String** | Image url | [optional] 
 
 
-<a name="CellLayoutTypeEnum"></a>
+
 ## Enum: CellLayoutTypeEnum
 
 

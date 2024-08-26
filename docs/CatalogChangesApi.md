@@ -9,8 +9,9 @@ Method | HTTP request | Description
 [**publishPendingMenuChanges**](CatalogChangesApi.md#publishPendingMenuChanges) | **POST** /api/v1.0/{appId}/menus/catalog-changes/publish | Update menus with the pending changes from Catalog groups and items
 
 
-<a name="getPendingMenuChanges"></a>
-# **getPendingMenuChanges**
+
+## getPendingMenuChanges
+
 > RestApiPaginationResultPendingMenuChanges getPendingMenuChanges(appId, opts)
 
 Get menu pending changes from Catalog groups and items
@@ -18,36 +19,33 @@ Get menu pending changes from Catalog groups and items
 [BETA - this endpoint is under development, do not use it in your production system]
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.CatalogChangesApi();
-
-var appId = "appId_example"; // String | 
-
-var opts = { 
+let apiInstance = new Flipdish.CatalogChangesApi();
+let appId = "appId_example"; // String | 
+let opts = {
   'menuId': 56, // Number | 
   'catalogItemId': "catalogItemId_example", // String | 
   'page': 56, // Number | 
   'limit': 56 // Number | 
 };
-
-var callback = function(error, data, response) {
+apiInstance.getPendingMenuChanges(appId, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getPendingMenuChanges(appId, opts, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -67,40 +65,38 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, Data
 
-<a name="getPendingMenuChangesSummaries"></a>
-# **getPendingMenuChangesSummaries**
+
+## getPendingMenuChangesSummaries
+
 > RestApiArrayResultPendingMenuChangesSummaries getPendingMenuChangesSummaries(appId)
 
 Get menu pending changes summaries by appId
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.CatalogChangesApi();
-
-var appId = "appId_example"; // String | 
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Flipdish.CatalogChangesApi();
+let appId = "appId_example"; // String | 
+apiInstance.getPendingMenuChangesSummaries(appId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getPendingMenuChangesSummaries(appId, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -116,11 +112,12 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, Data
 
-<a name="publishPendingMenuChanges"></a>
-# **publishPendingMenuChanges**
+
+## publishPendingMenuChanges
+
 > publishPendingMenuChanges(appId, publishMenuChanges)
 
 Update menus with the pending changes from Catalog groups and items
@@ -128,32 +125,28 @@ Update menus with the pending changes from Catalog groups and items
 [BETA - this endpoint is under development, do not use it in your production system]
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.CatalogChangesApi();
-
-var appId = "appId_example"; // String | 
-
-var publishMenuChanges = new Flipdish.PublishMenuChanges(); // PublishMenuChanges | 
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Flipdish.CatalogChangesApi();
+let appId = "appId_example"; // String | 
+let publishMenuChanges = new Flipdish.PublishMenuChanges(); // PublishMenuChanges | 
+apiInstance.publishPendingMenuChanges(appId, publishMenuChanges, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully.');
   }
-};
-apiInstance.publishPendingMenuChanges(appId, publishMenuChanges, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -170,6 +163,6 @@ null (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
+- **Accept**: application/json, text/json, application/xml, text/xml
 

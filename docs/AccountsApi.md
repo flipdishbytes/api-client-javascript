@@ -24,39 +24,36 @@ Method | HTTP request | Description
 [**updateAccount**](AccountsApi.md#updateAccount) | **PUT** /api/v1.0/accounts | 
 
 
-<a name="answerSignUpQuestion"></a>
-# **answerSignUpQuestion**
+
+## answerSignUpQuestion
+
 > answerSignUpQuestion(signupStepAction, answerId)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.AccountsApi();
-
-var signupStepAction = "signupStepAction_example"; // String | 
-
-var answerId = 56; // Number | 
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Flipdish.AccountsApi();
+let signupStepAction = "signupStepAction_example"; // String | 
+let answerId = 56; // Number | 
+apiInstance.answerSignUpQuestion(signupStepAction, answerId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully.');
   }
-};
-apiInstance.answerSignUpQuestion(signupStepAction, answerId, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -73,40 +70,38 @@ null (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
+- **Accept**: application/json, text/json, application/xml, text/xml
 
-<a name="changePassword"></a>
-# **changePassword**
+
+## changePassword
+
 > changePassword(changePasswordModel)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.AccountsApi();
-
-var changePasswordModel = new Flipdish.ChangePasswordModel(); // ChangePasswordModel | 
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Flipdish.AccountsApi();
+let changePasswordModel = new Flipdish.ChangePasswordModel(); // ChangePasswordModel | 
+apiInstance.changePassword(changePasswordModel, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully.');
   }
-};
-apiInstance.changePassword(changePasswordModel, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -122,40 +117,38 @@ null (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
+- **Accept**: application/json, text/json, application/xml, text/xml, Message, ErrorCode, StackTrace
 
-<a name="changePasswordWithPin"></a>
-# **changePasswordWithPin**
+
+## changePasswordWithPin
+
 > changePasswordWithPin(changePasswordModel)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.AccountsApi();
-
-var changePasswordModel = new Flipdish.SetPasswordWithPinModel(); // SetPasswordWithPinModel | 
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Flipdish.AccountsApi();
+let changePasswordModel = new Flipdish.SetPasswordWithPinModel(); // SetPasswordWithPinModel | 
+apiInstance.changePasswordWithPin(changePasswordModel, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully.');
   }
-};
-apiInstance.changePasswordWithPin(changePasswordModel, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -171,40 +164,38 @@ null (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
+- **Accept**: application/json, text/json, application/xml, text/xml, Message, ErrorCode, StackTrace
 
-<a name="createAccount"></a>
-# **createAccount**
+
+## createAccount
+
 > createAccount(createAccountModel)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.AccountsApi();
-
-var createAccountModel = new Flipdish.CreateAccountModel(); // CreateAccountModel | 
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Flipdish.AccountsApi();
+let createAccountModel = new Flipdish.CreateAccountModel(); // CreateAccountModel | 
+apiInstance.createAccount(createAccountModel, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully.');
   }
-};
-apiInstance.createAccount(createAccountModel, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -220,40 +211,38 @@ null (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
+- **Accept**: Message, ErrorCode, StackTrace, application/json, text/json, application/xml, text/xml
 
-<a name="createBasicAccount"></a>
-# **createBasicAccount**
-> 'String' createBasicAccount(basicAccountModel)
+
+## createBasicAccount
+
+> String createBasicAccount(basicAccountModel)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.AccountsApi();
-
-var basicAccountModel = new Flipdish.CreateBasicAccountModel(); // CreateBasicAccountModel | 
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Flipdish.AccountsApi();
+let basicAccountModel = new Flipdish.CreateBasicAccountModel(); // CreateBasicAccountModel | 
+apiInstance.createBasicAccount(basicAccountModel, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.createBasicAccount(basicAccountModel, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -261,7 +250,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**'String'**
+**String**
 
 ### Authorization
 
@@ -269,37 +258,37 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
+- **Accept**: application/json, text/json, application/xml, text/xml, Message, ErrorCode, StackTrace
 
-<a name="getAccountDetails"></a>
-# **getAccountDetails**
+
+## getAccountDetails
+
 > RestApiResultAccountDetail getAccountDetails()
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.AccountsApi();
-
-var callback = function(error, data, response) {
+let apiInstance = new Flipdish.AccountsApi();
+apiInstance.getAccountDetails((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getAccountDetails(callback);
+});
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -312,37 +301,37 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, Data, Message, ErrorCode, StackTrace
 
-<a name="getLocalisedTimeZones"></a>
-# **getLocalisedTimeZones**
+
+## getLocalisedTimeZones
+
 > RestApiArrayResultLocalisedTimeZone getLocalisedTimeZones()
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.AccountsApi();
-
-var callback = function(error, data, response) {
+let apiInstance = new Flipdish.AccountsApi();
+apiInstance.getLocalisedTimeZones((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getLocalisedTimeZones(callback);
+});
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -355,40 +344,38 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml
 
-<a name="login"></a>
-# **login**
+
+## login
+
 > login(loginModel)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.AccountsApi();
-
-var loginModel = new Flipdish.LoginModel(); // LoginModel | 
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Flipdish.AccountsApi();
+let loginModel = new Flipdish.LoginModel(); // LoginModel | 
+apiInstance.login(loginModel, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully.');
   }
-};
-apiInstance.login(loginModel, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -404,37 +391,37 @@ null (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
+- **Accept**: application/json, text/json, application/xml, text/xml, Message, ErrorCode, StackTrace
 
-<a name="loginSso"></a>
-# **loginSso**
+
+## loginSso
+
 > loginSso()
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.AccountsApi();
-
-var callback = function(error, data, response) {
+let apiInstance = new Flipdish.AccountsApi();
+apiInstance.loginSso((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully.');
   }
-};
-apiInstance.loginSso(callback);
+});
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -447,40 +434,38 @@ null (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, Message, ErrorCode, StackTrace
 
-<a name="loginWithPin"></a>
-# **loginWithPin**
+
+## loginWithPin
+
 > loginWithPin(loginModel)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.AccountsApi();
-
-var loginModel = new Flipdish.LoginWithPinModel(); // LoginWithPinModel | 
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Flipdish.AccountsApi();
+let loginModel = new Flipdish.LoginWithPinModel(); // LoginWithPinModel | 
+apiInstance.loginWithPin(loginModel, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully.');
   }
-};
-apiInstance.loginWithPin(loginModel, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -496,37 +481,37 @@ null (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
+- **Accept**: application/json, text/json, application/xml, text/xml, Message, ErrorCode, StackTrace
 
-<a name="logout"></a>
-# **logout**
+
+## logout
+
 > logout()
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.AccountsApi();
-
-var callback = function(error, data, response) {
+let apiInstance = new Flipdish.AccountsApi();
+apiInstance.logout((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully.');
   }
-};
-apiInstance.logout(callback);
+});
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -539,40 +524,38 @@ null (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, Message, ErrorCode, StackTrace
 
-<a name="passwordResetWithToken"></a>
-# **passwordResetWithToken**
+
+## passwordResetWithToken
+
 > passwordResetWithToken(passwordResetModel)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.AccountsApi();
-
-var passwordResetModel = new Flipdish.PasswordResetModel(); // PasswordResetModel | 
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Flipdish.AccountsApi();
+let passwordResetModel = new Flipdish.PasswordResetModel(); // PasswordResetModel | 
+apiInstance.passwordResetWithToken(passwordResetModel, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully.');
   }
-};
-apiInstance.passwordResetWithToken(passwordResetModel, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -588,40 +571,38 @@ null (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
+- **Accept**: Message, ErrorCode, StackTrace, application/json, text/json, application/xml, text/xml
 
-<a name="recaptchaValidate"></a>
-# **recaptchaValidate**
+
+## recaptchaValidate
+
 > recaptchaValidate(token)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.AccountsApi();
-
-var token = "token_example"; // String | 
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Flipdish.AccountsApi();
+let token = "token_example"; // String | 
+apiInstance.recaptchaValidate(token, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully.');
   }
-};
-apiInstance.recaptchaValidate(token, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -637,40 +618,38 @@ null (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: Not defined
+- **Accept**: Message, ErrorCode, StackTrace, application/json, text/json, application/xml, text/xml
 
-<a name="requestLoginPin"></a>
-# **requestLoginPin**
+
+## requestLoginPin
+
 > RequestLoginPinResponse requestLoginPin(requestLoginPinRequest)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.AccountsApi();
-
-var requestLoginPinRequest = new Flipdish.RequestLoginPinModel(); // RequestLoginPinModel | 
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Flipdish.AccountsApi();
+let requestLoginPinRequest = new Flipdish.RequestLoginPinModel(); // RequestLoginPinModel | 
+apiInstance.requestLoginPin(requestLoginPinRequest, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.requestLoginPin(requestLoginPinRequest, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -686,40 +665,38 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
+- **Accept**: application/json, text/json, application/xml, text/xml, Data, Message, ErrorCode, StackTrace
 
-<a name="requestPasswordReset"></a>
-# **requestPasswordReset**
+
+## requestPasswordReset
+
 > requestPasswordReset(requestPasswordResetModel)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.AccountsApi();
-
-var requestPasswordResetModel = new Flipdish.RequestPasswordResetModel(); // RequestPasswordResetModel | 
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Flipdish.AccountsApi();
+let requestPasswordResetModel = new Flipdish.RequestPasswordResetModel(); // RequestPasswordResetModel | 
+apiInstance.requestPasswordReset(requestPasswordResetModel, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully.');
   }
-};
-apiInstance.requestPasswordReset(requestPasswordResetModel, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -735,40 +712,38 @@ null (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
+- **Accept**: Message, ErrorCode, StackTrace, application/json, text/json, application/xml, text/xml
 
-<a name="sendPinForPasswordReset"></a>
-# **sendPinForPasswordReset**
+
+## sendPinForPasswordReset
+
 > RequestPasswordResetPinResponse sendPinForPasswordReset(requestPasswordResetRequest)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.AccountsApi();
-
-var requestPasswordResetRequest = new Flipdish.RequestPasswordResetModel(); // RequestPasswordResetModel | 
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Flipdish.AccountsApi();
+let requestPasswordResetRequest = new Flipdish.RequestPasswordResetModel(); // RequestPasswordResetModel | 
+apiInstance.sendPinForPasswordReset(requestPasswordResetRequest, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.sendPinForPasswordReset(requestPasswordResetRequest, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -784,40 +759,38 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
+- **Accept**: application/json, text/json, application/xml, text/xml, Data, Message, ErrorCode, StackTrace
 
-<a name="skipSignupStep"></a>
-# **skipSignupStep**
+
+## skipSignupStep
+
 > skipSignupStep(signupStepAction)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.AccountsApi();
-
-var signupStepAction = "signupStepAction_example"; // String | 
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Flipdish.AccountsApi();
+let signupStepAction = "signupStepAction_example"; // String | 
+apiInstance.skipSignupStep(signupStepAction, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully.');
   }
-};
-apiInstance.skipSignupStep(signupStepAction, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -833,40 +806,38 @@ null (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml
 
-<a name="updateAccount"></a>
-# **updateAccount**
+
+## updateAccount
+
 > updateAccount(updateAccountModel)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.AccountsApi();
-
-var updateAccountModel = new Flipdish.AccountDetailBase(); // AccountDetailBase | 
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Flipdish.AccountsApi();
+let updateAccountModel = new Flipdish.AccountDetailBase(); // AccountDetailBase | 
+apiInstance.updateAccount(updateAccountModel, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully.');
   }
-};
-apiInstance.updateAccount(updateAccountModel, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -882,6 +853,6 @@ null (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
+- **Accept**: Message, ErrorCode, StackTrace, application/json, text/json, application/xml, text/xml
 

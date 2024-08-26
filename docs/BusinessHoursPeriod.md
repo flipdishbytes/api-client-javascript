@@ -1,10 +1,11 @@
 # Flipdish.BusinessHoursPeriod
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Early** | [**Range**](Range.md) | Early | [optional] 
-**Late** | [**Range**](Range.md) | Late | [optional] 
+**Early** | [**Range**](Range.md) |  | [optional] 
+**Late** | [**Range**](Range.md) |  | [optional] 
 **Ranges** | [**[Range]**](Range.md) | Ranges | [optional] 
 **DayOfWeek** | **String** | Day of week | [optional] 
 **StartTime** | **String** | Start time | [optional] 
@@ -13,7 +14,7 @@ Name | Type | Description | Notes
 **PeriodEarly** | **String** | Period early | [optional] 
 
 
-<a name="DayOfWeekEnum"></a>
+
 ## Enum: DayOfWeekEnum
 
 

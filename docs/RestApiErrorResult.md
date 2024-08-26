@@ -1,6 +1,7 @@
 # Flipdish.RestApiErrorResult
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Message** | **String** | Error message | 

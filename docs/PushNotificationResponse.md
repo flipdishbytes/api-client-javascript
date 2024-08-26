@@ -1,6 +1,7 @@
 # Flipdish.PushNotificationResponse
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Sent** | **Boolean** | Sent | [optional] 

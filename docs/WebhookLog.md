@@ -1,6 +1,7 @@
 # Flipdish.WebhookLog
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **WebhookSubscriptionOwnerUserId** | **Number** | Webhook subscription owner user identifier | [optional] 

@@ -8,43 +8,40 @@ Method | HTTP request | Description
 [**revokeToken**](AuthorizationTokensApi.md#revokeToken) | **DELETE** /api/v1.0/{appId}/authorizationtokens/{key} | 
 
 
-<a name="getAuthorizationTokens"></a>
-# **getAuthorizationTokens**
+
+## getAuthorizationTokens
+
 > RestApiPaginationResultOAuthTokenModel getAuthorizationTokens(oauthAppId, appId, opts)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.AuthorizationTokensApi();
-
-var oauthAppId = "oauthAppId_example"; // String | 
-
-var appId = "appId_example"; // String | 
-
-var opts = { 
+let apiInstance = new Flipdish.AuthorizationTokensApi();
+let oauthAppId = "oauthAppId_example"; // String | 
+let appId = "appId_example"; // String | 
+let opts = {
   'page': 56, // Number | 
   'limit': 56 // Number | 
 };
-
-var callback = function(error, data, response) {
+apiInstance.getAuthorizationTokens(oauthAppId, appId, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getAuthorizationTokens(oauthAppId, appId, opts, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -63,42 +60,39 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, Data, Message, ErrorCode, StackTrace
 
-<a name="revokeToken"></a>
-# **revokeToken**
+
+## revokeToken
+
 > revokeToken(key, appId)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.AuthorizationTokensApi();
-
-var key = "key_example"; // String | 
-
-var appId = "appId_example"; // String | 
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Flipdish.AuthorizationTokensApi();
+let key = "key_example"; // String | 
+let appId = "appId_example"; // String | 
+apiInstance.revokeToken(key, appId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully.');
   }
-};
-apiInstance.revokeToken(key, appId, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -115,6 +109,6 @@ null (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, Message, ErrorCode, StackTrace
 

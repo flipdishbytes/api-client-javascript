@@ -1,6 +1,7 @@
 # Flipdish.VoucherSummary
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **VoucherId** | **Number** | Voucher Id | [optional] 
@@ -12,7 +13,7 @@ Name | Type | Description | Notes
 **IsEnabled** | **Boolean** | Is voucher enabled | [optional] 
 
 
-<a name="StatusEnum"></a>
+
 ## Enum: StatusEnum
 
 
@@ -29,7 +30,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="VoucherTypeEnum"></a>
+
 ## Enum: VoucherTypeEnum
 
 
@@ -46,7 +47,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="VoucherSubTypeEnum"></a>
+
 ## Enum: VoucherSubTypeEnum
 
 

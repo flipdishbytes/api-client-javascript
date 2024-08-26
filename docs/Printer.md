@@ -1,6 +1,7 @@
 # Flipdish.Printer
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **SerialNumber** | **String** | Unique serial number of the printer | [optional] 

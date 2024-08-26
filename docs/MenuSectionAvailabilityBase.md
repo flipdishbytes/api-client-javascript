@@ -1,12 +1,13 @@
 # Flipdish.MenuSectionAvailabilityBase
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **AvailabilityMode** | **String** | Availability mode | [optional] 
 
 
-<a name="AvailabilityModeEnum"></a>
+
 ## Enum: AvailabilityModeEnum
 
 

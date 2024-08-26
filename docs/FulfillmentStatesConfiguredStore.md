@@ -1,6 +1,7 @@
 # Flipdish.FulfillmentStatesConfiguredStore
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **StoreId** | **Number** | Store id | [optional] 

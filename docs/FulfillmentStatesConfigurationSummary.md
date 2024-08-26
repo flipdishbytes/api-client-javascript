@@ -1,6 +1,7 @@
 # Flipdish.FulfillmentStatesConfigurationSummary
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **AppId** | **String** | AppId | 
@@ -10,7 +11,7 @@ Name | Type | Description | Notes
 **Stores** | [**[FulfillmentStatesConfiguredStore]**](FulfillmentStatesConfiguredStore.md) | Stores | [optional] 
 
 
-<a name="StoreSelectorTypeEnum"></a>
+
 ## Enum: StoreSelectorTypeEnum
 
 

@@ -1,6 +1,7 @@
 # Flipdish.ApmDataPoint
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **PeriodStart** | **Date** | Date from which the data point starts | [optional] 

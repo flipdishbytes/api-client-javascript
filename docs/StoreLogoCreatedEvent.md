@@ -1,12 +1,13 @@
 # Flipdish.StoreLogoCreatedEvent
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **EventName** | **String** | The event name | [optional] 
 **StoreId** | **Number** | ID of store that the logo has been added to | [optional] 
 **Description** | **String** | Description | [optional] 
-**User** | [**UserEventInfo**](UserEventInfo.md) | User who added the logo | [optional] 
+**User** | [**UserEventInfo**](UserEventInfo.md) |  | [optional] 
 **FlipdishEventId** | **String** | The identitfier of the event | [optional] 
 **CreateTime** | **Date** | The time of creation of the event | [optional] 
 **Position** | **Number** | Position | [optional] 

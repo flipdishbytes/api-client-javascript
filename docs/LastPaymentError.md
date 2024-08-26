@@ -1,6 +1,7 @@
 # Flipdish.LastPaymentError
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Code** | **String** | For some errors that could be handled programmatically, a short string indicating the error code reported. | [optional] 

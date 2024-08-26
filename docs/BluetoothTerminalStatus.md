@@ -1,6 +1,7 @@
 # Flipdish.BluetoothTerminalStatus
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **SerialNumber** | **String** | Serial Number | [optional] 
@@ -12,7 +13,7 @@ Name | Type | Description | Notes
 **ReaderId** | **String** | ReaderId for Stripe Terminal | [optional] 
 
 
-<a name="DeviceTypeEnum"></a>
+
 ## Enum: DeviceTypeEnum
 
 
@@ -29,7 +30,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="StatusEnum"></a>
+
 ## Enum: StatusEnum
 
 

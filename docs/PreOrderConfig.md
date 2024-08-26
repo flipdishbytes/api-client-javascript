@@ -1,13 +1,14 @@
 # Flipdish.PreOrderConfig
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **LeadTimeMinutes** | **Number** | Lead Time in Minutes | [optional] 
 **IntervalMinutes** | **Number** | Interval in minutes | [optional] 
 **MaxOrderAheadDays** | **Number** | Max Days to order ahead | [optional] 
 **IncludeAsap** | **Boolean** | Show ASAP as option | [optional] 
-**IncludeMoreGranularInitialTime** | **Boolean** | Granual Init' Time | [optional] 
+**IncludeMoreGranularInitialTime** | **Boolean** | Granual Init&#39; Time | [optional] 
 **CutOffTimePreviousDayBasic** | **String** | Cut off time previous day | [optional] 
 **CutOffTimeCurrentDayBasic** | **String** | Cut off time current day | [optional] 
 **PreOrderTimeDisplayType** | **String** | Type of time displayed. | [optional] 
@@ -15,7 +16,7 @@ Name | Type | Description | Notes
 **RequireExplicitSelectAlways** | **Boolean** | Force customer to select collection time. | [optional] 
 
 
-<a name="PreOrderTimeDisplayTypeEnum"></a>
+
 ## Enum: PreOrderTimeDisplayTypeEnum
 
 

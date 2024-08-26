@@ -1,6 +1,7 @@
 # Flipdish.PayoutOrder
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **OrderId** | **Number** | The id of the order | [optional] 
@@ -27,7 +28,7 @@ Name | Type | Description | Notes
 **ServiceChargePercentage** | **Number** | Order ServiceChargePercentage amount | [optional] 
 
 
-<a name="OrderTypeEnum"></a>
+
 ## Enum: OrderTypeEnum
 
 
@@ -38,7 +39,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="OrderCurrencyEnum"></a>
+
 ## Enum: OrderCurrencyEnum
 
 

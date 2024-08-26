@@ -1,16 +1,17 @@
 # Flipdish.StripeCustomConnectedAccount
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **StoreId** | **Number** | Physical Restaurant Id | [optional] 
-**StripeId** | **String** | Stripe's own connected account identifier | [optional] 
+**StripeId** | **String** | Stripe&#39;s own connected account identifier | [optional] 
 **CardPaymentsStatus** | **String** | Card payments capability status (Inactive, Pending, Active, Unrequested) | [optional] 
 **TransfersStatus** | **String** | Transfers capability status (Inactive, Pending, Active, Unrequested) | [optional] 
 **AccountStatus** | **String** | Current status of the account | [optional] 
 
 
-<a name="CardPaymentsStatusEnum"></a>
+
 ## Enum: CardPaymentsStatusEnum
 
 
@@ -25,7 +26,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="TransfersStatusEnum"></a>
+
 ## Enum: TransfersStatusEnum
 
 
@@ -40,7 +41,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="AccountStatusEnum"></a>
+
 ## Enum: AccountStatusEnum
 
 

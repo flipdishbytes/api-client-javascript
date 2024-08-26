@@ -1,6 +1,7 @@
 # Flipdish.JobPricing
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Currency** | **String** | Currency | [optional] 

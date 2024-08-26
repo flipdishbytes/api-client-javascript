@@ -1,6 +1,7 @@
 # Flipdish.EventSearchResult
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **AppCreatedEvent** | [**[AppCreatedEvent]**](AppCreatedEvent.md) | App Created Event | [optional] 

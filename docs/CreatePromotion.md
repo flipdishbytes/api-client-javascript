@@ -1,6 +1,7 @@
 # Flipdish.CreatePromotion
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Name** | **String** | Promotion Name | [optional] 

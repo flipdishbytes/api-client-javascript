@@ -1,11 +1,12 @@
 # Flipdish.OrderDeliveryTrackingStatusUpdatedEvent
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **EventName** | **String** | The event name | [optional] 
 **Description** | **String** | Description | [optional] 
-**Order** | [**Order**](Order.md) | Order | [optional] 
+**Order** | [**Order**](Order.md) |  | [optional] 
 **DeliveryIntegrationName** | **String** | Delivery integration name | [optional] 
 **DeliveryErrorMessage** | **String** | Delivery error message (optional) | [optional] 
 **FlipdishEventId** | **String** | The identitfier of the event | [optional] 

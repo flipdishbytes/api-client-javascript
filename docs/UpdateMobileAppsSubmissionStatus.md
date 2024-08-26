@@ -1,6 +1,7 @@
 # Flipdish.UpdateMobileAppsSubmissionStatus
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **MobileAppsSubmissionStatusId** | **Number** | Mobile Apps Submission Status Id | [optional] 
@@ -11,7 +12,7 @@ Name | Type | Description | Notes
 **Notes** | **String** | Mobile Notes | [optional] 
 
 
-<a name="TypeEnum"></a>
+
 ## Enum: TypeEnum
 
 
@@ -24,7 +25,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="AppStatusEnum"></a>
+
 ## Enum: AppStatusEnum
 
 
@@ -37,7 +38,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="UpdateStatusEnum"></a>
+
 ## Enum: UpdateStatusEnum
 
 

@@ -1,6 +1,7 @@
 # Flipdish.NutritionInfo
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Version** | **String** | Version of the nutrition information model | [optional] 

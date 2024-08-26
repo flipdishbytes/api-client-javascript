@@ -1,6 +1,7 @@
 # Flipdish.OrderItemOption
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Metadata** | **{String: String}** | Metadata | [optional] 

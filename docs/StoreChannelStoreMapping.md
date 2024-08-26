@@ -1,6 +1,7 @@
 # Flipdish.StoreChannelStoreMapping
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **ChannelId** | **Number** | Channel Id | [optional] 

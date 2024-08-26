@@ -1,6 +1,7 @@
 # Flipdish.MobileAppsSubmission
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **SubmissionId** | **Number** | Mobile Apps Submission Id | [optional] 

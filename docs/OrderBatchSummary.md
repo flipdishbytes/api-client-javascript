@@ -1,6 +1,7 @@
 # Flipdish.OrderBatchSummary
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **Number** | Order batch id | [optional] 

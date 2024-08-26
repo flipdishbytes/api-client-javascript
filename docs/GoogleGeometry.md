@@ -1,6 +1,7 @@
 # Flipdish.GoogleGeometry
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Location** | [**GoogleLocation**](GoogleLocation.md) |  | [optional] 

@@ -1,6 +1,7 @@
 # Flipdish.AppStoreAppSupportInfo
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **PrivacyPolicy** | **String** |  | [optional] 

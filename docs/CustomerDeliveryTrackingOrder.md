@@ -1,6 +1,7 @@
 # Flipdish.CustomerDeliveryTrackingOrder
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **OrderId** | **Number** | Order Id | [optional] 
@@ -24,7 +25,7 @@ Name | Type | Description | Notes
 **EstimatedMinutesForDelivery** | **Number** |  | [optional] 
 
 
-<a name="CurrencyEnum"></a>
+
 ## Enum: CurrencyEnum
 
 

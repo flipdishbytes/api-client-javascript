@@ -1,6 +1,7 @@
 # Flipdish.Allergen
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **AllergenId** | **String** | A unique identifier for the allergen | [optional] 

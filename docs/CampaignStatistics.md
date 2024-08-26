@@ -1,6 +1,7 @@
 # Flipdish.CampaignStatistics
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **VouchersIssued** | **Number** | Deprecated. Number of issued vouchers.  This field is always zero. | [optional] 

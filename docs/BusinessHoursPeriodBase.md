@@ -1,6 +1,7 @@
 # Flipdish.BusinessHoursPeriodBase
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **DayOfWeek** | **String** | Day of week | [optional] 
@@ -10,7 +11,7 @@ Name | Type | Description | Notes
 **PeriodEarly** | **String** | Period early | [optional] 
 
 
-<a name="DayOfWeekEnum"></a>
+
 ## Enum: DayOfWeekEnum
 
 

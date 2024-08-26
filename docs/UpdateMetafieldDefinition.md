@@ -1,6 +1,7 @@
 # Flipdish.UpdateMetafieldDefinition
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Name** | **String** | Field Name | [optional] 
@@ -8,7 +9,7 @@ Name | Type | Description | Notes
 **Behaviors** | **[String]** | Enable Metafield Behaviors | [optional] 
 
 
-<a name="[BehaviorsEnum]"></a>
+
 ## Enum: [BehaviorsEnum]
 
 

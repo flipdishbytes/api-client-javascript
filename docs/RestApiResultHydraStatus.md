@@ -1,8 +1,9 @@
 # Flipdish.RestApiResultHydraStatus
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Data** | [**HydraStatus**](HydraStatus.md) | Generic data object. | 
+**Data** | [**HydraStatus**](HydraStatus.md) |  | 
 
 

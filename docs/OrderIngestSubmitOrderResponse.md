@@ -1,6 +1,7 @@
 # Flipdish.OrderIngestSubmitOrderResponse
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **OrderId** | **Number** |  | [optional] 
@@ -12,7 +13,7 @@ Name | Type | Description | Notes
 **ChannelOrderId** | **String** |  | [optional] 
 
 
-<a name="CurrencyCodeEnum"></a>
+
 ## Enum: CurrencyCodeEnum
 
 

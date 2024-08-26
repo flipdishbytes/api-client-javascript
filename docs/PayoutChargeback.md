@@ -1,6 +1,7 @@
 # Flipdish.PayoutChargeback
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **OrderId** | **Number** | The id of the order the chargeback was for | [optional] 
@@ -14,7 +15,7 @@ Name | Type | Description | Notes
 **RefundedFees** | **Number** | Amount of refunded fees | [optional] 
 
 
-<a name="OrderCurrencyEnum"></a>
+
 ## Enum: OrderCurrencyEnum
 
 
@@ -247,7 +248,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="OrderTypeEnum"></a>
+
 ## Enum: OrderTypeEnum
 
 

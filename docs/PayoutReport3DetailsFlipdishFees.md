@@ -1,6 +1,7 @@
 # Flipdish.PayoutReport3DetailsFlipdishFees
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **WebAndAppCash** | **Number** |  | [optional] 

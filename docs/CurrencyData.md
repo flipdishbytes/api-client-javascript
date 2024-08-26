@@ -1,13 +1,14 @@
 # Flipdish.CurrencyData
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Currency** | **String** | Currency | [optional] 
 **Value** | **Number** | Value | [optional] 
 
 
-<a name="CurrencyEnum"></a>
+
 ## Enum: CurrencyEnum
 
 

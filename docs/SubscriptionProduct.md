@@ -1,6 +1,7 @@
 # Flipdish.SubscriptionProduct
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **ProductId** | **String** | Product Identifier | 
@@ -12,7 +13,7 @@ Name | Type | Description | Notes
 **Stores** | [**[SubscriptionStore]**](SubscriptionStore.md) | Stores | [optional] 
 
 
-<a name="PaymentFrequencyEnum"></a>
+
 ## Enum: PaymentFrequencyEnum
 
 

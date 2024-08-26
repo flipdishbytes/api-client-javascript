@@ -1,6 +1,7 @@
 # Flipdish.Field
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Name** | **String** |  | 
@@ -15,7 +16,7 @@ Name | Type | Description | Notes
 **IsFlipdishRestricted** | **Boolean** |  | [optional] 
 
 
-<a name="FieldTypeEnum"></a>
+
 ## Enum: FieldTypeEnum
 
 
@@ -27,7 +28,7 @@ Name | Type | Description | Notes
 
 * `Decimal` (value: `"Decimal"`)
 
-* `_Date` (value: `"Date"`)
+* `Date` (value: `"Date"`)
 
 * `DateTime` (value: `"DateTime"`)
 
@@ -35,7 +36,7 @@ Name | Type | Description | Notes
 
 * `Select` (value: `"Select"`)
 
-* `_Boolean` (value: `"Boolean"`)
+* `Boolean` (value: `"Boolean"`)
 
 * `ActionButton` (value: `"ActionButton"`)
 

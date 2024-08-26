@@ -1,6 +1,7 @@
 # Flipdish.OAuthApp
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **OauthAppId** | **String** | OAuth App Identifier | [optional] 
@@ -13,7 +14,7 @@ Name | Type | Description | Notes
 **AbsoluteRefreshTokenLifetime** | **Number** | Maximum lifetime of a refresh token in seconds | [optional] 
 
 
-<a name="FlowEnum"></a>
+
 ## Enum: FlowEnum
 
 
@@ -28,7 +29,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="RefreshTokenUsageEnum"></a>
+
 ## Enum: RefreshTokenUsageEnum
 
 

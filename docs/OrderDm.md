@@ -1,6 +1,7 @@
 # Flipdish.OrderDm
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **UserLocation** | [**CoordinatesDm**](CoordinatesDm.md) |  | [optional] 
@@ -16,13 +17,13 @@ Name | Type | Description | Notes
 **PickupLocationId** | **Number** |  | [optional] 
 **TableServiceCatagory** | **String** |  | [optional] 
 **PaymentAccountId** | **Number** |  | [optional] 
-**IsPreOrder** | **Boolean** |  | [optional] 
+**IsPreOrder** | **Boolean** |  | [optional] [readonly] 
 **IsAsapOrder** | **Boolean** |  | [optional] 
 **MenuId** | **Number** |  | [optional] 
 **MenuVersion** | **Number** |  | [optional] 
 
 
-<a name="DeliveryTypeEnum"></a>
+
 ## Enum: DeliveryTypeEnum
 
 
@@ -33,7 +34,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="PickupLocationTypeEnum"></a>
+
 ## Enum: PickupLocationTypeEnum
 
 
@@ -46,7 +47,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="TableServiceCatagoryEnum"></a>
+
 ## Enum: TableServiceCatagoryEnum
 
 

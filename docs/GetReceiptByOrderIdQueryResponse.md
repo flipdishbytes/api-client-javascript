@@ -1,6 +1,7 @@
 # Flipdish.GetReceiptByOrderIdQueryResponse
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **PreviousOrder** | [**PreviousOrder**](PreviousOrder.md) |  | [optional] 

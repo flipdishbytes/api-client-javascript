@@ -1,6 +1,7 @@
 # Flipdish.HomeAction
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **HomeActionId** | **Number** |  | [optional] 
@@ -13,7 +14,7 @@ Name | Type | Description | Notes
 **Dismissible** | **Boolean** |  | [optional] 
 
 
-<a name="HomeActionTypeEnum"></a>
+
 ## Enum: HomeActionTypeEnum
 
 

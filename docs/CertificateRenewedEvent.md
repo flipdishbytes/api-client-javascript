@@ -1,6 +1,7 @@
 # Flipdish.CertificateRenewedEvent
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Hostname** | **String** | Description | [optional] 

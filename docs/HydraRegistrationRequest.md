@@ -1,6 +1,7 @@
 # Flipdish.HydraRegistrationRequest
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **StoreIds** | **[Number]** | Stores to assign the hydra | 

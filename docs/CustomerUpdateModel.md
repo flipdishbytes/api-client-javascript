@@ -1,6 +1,7 @@
 # Flipdish.CustomerUpdateModel
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **CashOrdersEnabled** | **Boolean** | Customer can place cash orders | [optional] 

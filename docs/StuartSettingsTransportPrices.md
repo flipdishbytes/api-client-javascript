@@ -1,6 +1,7 @@
 # Flipdish.StuartSettingsTransportPrices
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Bike** | **Number** |  | [optional] 

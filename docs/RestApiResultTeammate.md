@@ -1,8 +1,9 @@
 # Flipdish.RestApiResultTeammate
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Data** | [**Teammate**](Teammate.md) | Generic data object. | 
+**Data** | [**Teammate**](Teammate.md) |  | 
 
 

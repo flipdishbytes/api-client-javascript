@@ -1,6 +1,7 @@
 # Flipdish.TipConfiguration
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **StoreId** | **Number** | Configuration is for this StoreId | [optional] 
@@ -8,7 +9,7 @@ Name | Type | Description | Notes
 **AllowCustomTips** | **Boolean** | Are custom tips allowed? | [optional] 
 **AllowRoundUp** | **Boolean** | Is round up allowed? | [optional] 
 **AllowEmojis** | **Boolean** | Are emojis allowed? | [optional] 
-**Percentages** | **[Number]** | Ordered list of tip breakpoints (smallest -&gt; largest) | [optional] 
+**Percentages** | **[Number]** | Ordered list of tip breakpoints (smallest -&amp;gt; largest) | [optional] 
 **DefaultPercentage** | **Number** | Defines a default percentage, it must be in the list of Percentages | [optional] 
 
 

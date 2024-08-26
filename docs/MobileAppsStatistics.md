@@ -1,6 +1,7 @@
 # Flipdish.MobileAppsStatistics
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **NumberDownload** | **Number** | Number Download | [optional] 
@@ -14,7 +15,7 @@ Name | Type | Description | Notes
 **PlatformType** | **String** | Platform Type | [optional] 
 
 
-<a name="PlatformTypeEnum"></a>
+
 ## Enum: PlatformTypeEnum
 
 

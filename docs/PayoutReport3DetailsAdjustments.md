@@ -1,6 +1,7 @@
 # Flipdish.PayoutReport3DetailsAdjustments
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **OpeningBalanceDate** | **Date** |  | [optional] 

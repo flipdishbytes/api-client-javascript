@@ -1,6 +1,7 @@
 # Flipdish.StoreAddressBase
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Line1** | **String** | Address line 1 | [optional] 

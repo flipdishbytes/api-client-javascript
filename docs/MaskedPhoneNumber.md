@@ -1,6 +1,7 @@
 # Flipdish.MaskedPhoneNumber
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **IsEnabled** | **Boolean** | Defines if the feature is enabled | [optional] 

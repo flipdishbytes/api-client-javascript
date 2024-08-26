@@ -1,6 +1,7 @@
 # Flipdish.HydraStoreData
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **StoreId** | **Number** | Id of the store | [optional] 

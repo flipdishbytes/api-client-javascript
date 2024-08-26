@@ -1,6 +1,7 @@
 # Flipdish.MenuSectionItem
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **ActualPrice** | **Number** | Actual price - the minimum price possible when all required option set items prices are included. | [optional] 
@@ -13,8 +14,8 @@ Name | Type | Description | Notes
 **ExcludeFromVoucherDiscounting** | **Boolean** | If true, the item is excluded from voucher discount calculations | [optional] 
 **Metadata** | [**[CreateMetadata]**](CreateMetadata.md) | List of metadata | [optional] 
 **CatalogItemId** | **String** | Catalog item Id when the Item is associated to a Product | [optional] 
-**Name** | **String** | Menu item name (like \"Korma\") | [optional] 
-**Description** | **String** | Description (like \"A lovely dish from the east\") | [optional] 
+**Name** | **String** | Menu item name (like \&quot;Korma\&quot;) | [optional] 
+**Description** | **String** | Description (like \&quot;A lovely dish from the east\&quot;) | [optional] 
 **SpicinessRating** | **String** | Spiciness rating | [optional] 
 **Price** | **Number** | Price - this is only used when there is no master option set and should be set to 0 if a master option set exists. | [optional] 
 **DepositReturnFee** | **Number** | An optional fee that can be added to the price of the item. | [optional] 
@@ -22,13 +23,13 @@ Name | Type | Description | Notes
 **Alcohol** | **Boolean** | To be set true if the item or an option of the item contains an alcoholic drink. | [optional] 
 **IsAvailable** | **Boolean** | True if we accept orders for this item still | [optional] 
 **CellLayoutType** | **String** | Small | Medium | Large  Affects the layout of the menu. | [optional] 
-**DisableVouchers** | **Boolean** | If true, then vouchers won't be applied for this item | [optional] 
+**DisableVouchers** | **Boolean** | If true, then vouchers won&#39;t be applied for this item | [optional] 
 **ImageName** | **String** | Image url | [optional] 
 **ImageUrl** | **String** | Image url | [optional] 
 **MenuItemId** | **Number** | Menu Item Id | [optional] 
 
 
-<a name="SpicinessRatingEnum"></a>
+
 ## Enum: SpicinessRatingEnum
 
 
@@ -43,7 +44,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="CellLayoutTypeEnum"></a>
+
 ## Enum: CellLayoutTypeEnum
 
 

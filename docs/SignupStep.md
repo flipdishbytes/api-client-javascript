@@ -1,14 +1,15 @@
 # Flipdish.SignupStep
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Action** | **String** | Action needs to take | [optional] 
-**Question** | **String** | Question in case Action == Question | [optional] 
-**PredefinedAnswers** | [**[PredefinedAnswer]**](PredefinedAnswer.md) | Predefined answer in case Action == Question | [optional] 
+**Question** | **String** | Question in case Action &#x3D;&#x3D; Question | [optional] 
+**PredefinedAnswers** | [**[PredefinedAnswer]**](PredefinedAnswer.md) | Predefined answer in case Action &#x3D;&#x3D; Question | [optional] 
 
 
-<a name="ActionEnum"></a>
+
 ## Enum: ActionEnum
 
 

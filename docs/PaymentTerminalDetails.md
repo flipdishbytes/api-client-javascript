@@ -1,6 +1,7 @@
 # Flipdish.PaymentTerminalDetails
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **TerminalId** | **String** | Terminal Id (tid) | [optional] 

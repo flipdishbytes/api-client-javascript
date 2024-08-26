@@ -1,6 +1,7 @@
 # Flipdish.PromotionDetails
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **PromotionId** | **Number** | Promotion Id | [optional] 

@@ -1,6 +1,7 @@
 # Flipdish.Metadata
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **MenuEntityId** | **Number** | Menu entity identifier (eg: MenuItemId, MenuItemOptionSetItemId) | [optional] 

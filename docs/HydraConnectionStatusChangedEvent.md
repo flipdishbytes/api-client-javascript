@@ -1,6 +1,7 @@
 # Flipdish.HydraConnectionStatusChangedEvent
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **DeviceId** | **String** | Hydra Device Id | [optional] 
@@ -14,7 +15,7 @@ Name | Type | Description | Notes
 **IpAddress** | **String** | Ip Address | [optional] 
 
 
-<a name="HydraDeviceStatusEnum"></a>
+
 ## Enum: HydraDeviceStatusEnum
 
 

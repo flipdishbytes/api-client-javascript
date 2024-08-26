@@ -1,6 +1,7 @@
 # Flipdish.GoogleViewport
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Northeast** | [**GoogleCoordinates**](GoogleCoordinates.md) |  | [optional] 

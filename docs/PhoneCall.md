@@ -1,6 +1,7 @@
 # Flipdish.PhoneCall
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **PhoneCallId** | **Number** | Phone call id | [optional] 
@@ -15,7 +16,7 @@ Name | Type | Description | Notes
 **CallStatus** | **String** | The status of the call | [optional] 
 
 
-<a name="CallStatusEnum"></a>
+
 ## Enum: CallStatusEnum
 
 

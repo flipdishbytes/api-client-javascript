@@ -1,6 +1,7 @@
 # Flipdish.LocalisedTimeZone
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **TimeZoneId** | **String** | Microsoft Time Zone Id | [optional] 

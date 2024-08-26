@@ -1,6 +1,7 @@
 # Flipdish.Invoice
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **InvoiceId** | **String** | The invoice identifier | 
@@ -16,7 +17,7 @@ Name | Type | Description | Notes
 **Overdue** | **Boolean** | Overdue | 
 
 
-<a name="CurrencyEnum"></a>
+
 ## Enum: CurrencyEnum
 
 
@@ -249,7 +250,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="StatusEnum"></a>
+
 ## Enum: StatusEnum
 
 
@@ -261,7 +262,7 @@ Name | Type | Description | Notes
 
 * `UnCollectible` (value: `"UnCollectible"`)
 
-* `_Void` (value: `"Void"`)
+* `Void` (value: `"Void"`)
 
 
 

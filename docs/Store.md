@@ -1,11 +1,12 @@
 # Flipdish.Store
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **StoreId** | **Number** | Store identifier | [optional] 
 **StoreGroupId** | **Number** | Store group id to which this store belongs | [optional] 
-**Address** | [**StoreAddress**](StoreAddress.md) | Store address | [optional] 
+**Address** | [**StoreAddress**](StoreAddress.md) |  | [optional] 
 **DeliveryZones** | [**[DeliveryZone]**](DeliveryZone.md) | Delivery zones | [optional] 
 **ApmPhoneNumber** | **String** | Automated Phone Marketing number | [optional] 
 **PickupHours** | [**[BusinessHoursPeriod]**](BusinessHoursPeriod.md) | Pickup hours | [optional] 
@@ -22,7 +23,7 @@ Name | Type | Description | Notes
 **PreOrderPickupEnabled** | **Boolean** | Is PerOrder Enabled for Pickup | [optional] 
 **LogoUrl** | **String** | Url for logo image | [optional] 
 **FraudPreventionStrategy** | **String** | Fraud Prevention Strategy | [optional] 
-**AppIds** | **[String]** | Store's app ids | [optional] 
+**AppIds** | **[String]** | Store&#39;s app ids | [optional] 
 **PhoneNumber** | **String** | Phone number | [optional] 
 **AlwaysAppearOpen** | **Boolean** | True if the store always appears open | [optional] 
 **PreOrderEnabled** | **Boolean** | True if the store accepts pre-orders | [optional] 
@@ -54,11 +55,11 @@ Name | Type | Description | Notes
 **StaffLanguage** | **String** | Staff Language (used for communication with the staff)  Emails, Printouts etc | [optional] 
 
 
-<a name="PrintoutLayoutTypeEnum"></a>
+
 ## Enum: PrintoutLayoutTypeEnum
 
 
-* `_Default` (value: `"Default"`)
+* `Default` (value: `"Default"`)
 
 * `Centra` (value: `"Centra"`)
 
@@ -69,7 +70,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="CurrencyEnum"></a>
+
 ## Enum: CurrencyEnum
 
 

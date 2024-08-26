@@ -1,8 +1,9 @@
 # Flipdish.RestApiResultStoreEndOfDayReport
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Data** | [**StoreEndOfDayReport**](StoreEndOfDayReport.md) | Generic data object. | 
+**Data** | [**StoreEndOfDayReport**](StoreEndOfDayReport.md) |  | 
 
 

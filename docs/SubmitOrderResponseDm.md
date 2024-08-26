@@ -1,6 +1,7 @@
 # Flipdish.SubmitOrderResponseDm
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **OrderId** | **Number** |  | [optional] 
@@ -21,7 +22,7 @@ Name | Type | Description | Notes
 **PaymentIntentClientSecret** | **String** |  | [optional] 
 
 
-<a name="DeliveryTypeEnum"></a>
+
 ## Enum: DeliveryTypeEnum
 
 

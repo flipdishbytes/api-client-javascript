@@ -1,6 +1,7 @@
 # Flipdish.KioskEntitlementsResult
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **EntitledQuantity** | **Number** | Number of kiosk devices entitled | [optional] 

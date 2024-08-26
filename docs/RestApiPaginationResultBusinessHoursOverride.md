@@ -1,6 +1,7 @@
 # Flipdish.RestApiPaginationResultBusinessHoursOverride
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Page** | **Number** | Current page index | 

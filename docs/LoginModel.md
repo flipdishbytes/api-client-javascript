@@ -1,6 +1,7 @@
 # Flipdish.LoginModel
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Email** | **String** | Email address | 

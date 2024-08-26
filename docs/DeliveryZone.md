@@ -1,6 +1,7 @@
 # Flipdish.DeliveryZone
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **Number** | Delivery Fee Area Id | [optional] 

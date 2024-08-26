@@ -1,6 +1,7 @@
 # Flipdish.PayoutRefund
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **OrderId** | **Number** | The id of the order the refund was for | [optional] 
@@ -16,7 +17,7 @@ Name | Type | Description | Notes
 **CashFeeRefundedToCustomer** | **Number** | Cash fee refunded to customer | [optional] 
 
 
-<a name="OrderCurrencyEnum"></a>
+
 ## Enum: OrderCurrencyEnum
 
 
@@ -249,7 +250,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="OrderTypeEnum"></a>
+
 ## Enum: OrderTypeEnum
 
 

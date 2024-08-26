@@ -1,9 +1,10 @@
 # Flipdish.CreateFullMenuSection
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**MenuSectionAvailability** | [**MenuSectionAvailability**](MenuSectionAvailability.md) | Menu section availability | [optional] 
+**MenuSectionAvailability** | [**MenuSectionAvailability**](MenuSectionAvailability.md) |  | [optional] 
 **MenuItems** | [**[CreateFullMenuSectionItem]**](CreateFullMenuSectionItem.md) | Menu items | [optional] 
 **Name** | **String** | Name | [optional] 
 **Description** | **String** | Description | [optional] 

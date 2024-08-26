@@ -1,6 +1,7 @@
 # Flipdish.UpdateAppStoreAppConfigurationWebhookDTO
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **String** |  | 

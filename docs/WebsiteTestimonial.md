@@ -1,6 +1,7 @@
 # Flipdish.WebsiteTestimonial
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **TestimonialId** | **Number** | Id of the testimonial | [optional] 

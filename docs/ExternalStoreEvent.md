@@ -1,11 +1,12 @@
 # Flipdish.ExternalStoreEvent
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **EventName** | **String** | The event name | [optional] 
 **StoreId** | **Number** | Store Id | [optional] 
-**User** | [**UserEventInfo**](UserEventInfo.md) | User which did the action | [optional] 
+**User** | [**UserEventInfo**](UserEventInfo.md) |  | [optional] 
 **Description** | **String** | Description | [optional] 
 **DescriptionFormat** | **String** | Description with format placeholders | [optional] 
 **DescriptionFields** | **String** | Description with format placeholders | [optional] 

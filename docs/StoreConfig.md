@@ -1,6 +1,7 @@
 # Flipdish.StoreConfig
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **PickupEnabled** | **Boolean** | True if the store accepts pickup orders | [optional] 

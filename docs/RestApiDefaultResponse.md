@@ -1,8 +1,9 @@
 # Flipdish.RestApiDefaultResponse
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Data** | **String** | Data string | [optional] 
+**Data** | **String** | Data string | [optional] [readonly] 
 
 

@@ -1,6 +1,7 @@
 # Flipdish.DnsRecordInformation
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **IsCNameReady** | **Boolean** | indicates whether the CNAME record is ready or not. | [optional] 

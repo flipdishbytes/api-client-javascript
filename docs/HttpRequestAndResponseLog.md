@@ -1,6 +1,7 @@
 # Flipdish.HttpRequestAndResponseLog
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Guid** | **String** | Id of the log | [optional] 

@@ -1,6 +1,7 @@
 # Flipdish.OrderItemDm
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **MenuItemId** | **Number** |  | [optional] 

@@ -1,6 +1,7 @@
 # Flipdish.TeammateBase
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **AppAccessLevel** | **String** | App access level | [optional] 
@@ -8,7 +9,7 @@ Name | Type | Description | Notes
 **StoreIds** | **[Number]** | Store IDs the user has access to (if HasAccessToAllStores is false) | [optional] 
 
 
-<a name="AppAccessLevelEnum"></a>
+
 ## Enum: AppAccessLevelEnum
 
 

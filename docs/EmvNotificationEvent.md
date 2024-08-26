@@ -1,11 +1,12 @@
 # Flipdish.EmvNotificationEvent
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **EventName** | **String** | The event name | [optional] 
 **Notification** | **String** | Notification Sent | [optional] 
-**Order** | [**Order**](Order.md) | Order | [optional] 
+**Order** | [**Order**](Order.md) |  | [optional] 
 **TerminalId** | **String** | TerminalId | [optional] 
 **Description** | **String** | Description | [optional] 
 **ExpDate** | **String** | Expirey Date | [optional] 

@@ -1,6 +1,7 @@
 # Flipdish.PreviousOrder
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **DeliveryType** | **String** |  | [optional] 
@@ -28,7 +29,7 @@ Name | Type | Description | Notes
 **WhiteLabelId** | **Number** |  | [optional] 
 
 
-<a name="CurrencyEnum"></a>
+
 ## Enum: CurrencyEnum
 
 

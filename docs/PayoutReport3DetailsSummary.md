@@ -1,6 +1,7 @@
 # Flipdish.PayoutReport3DetailsSummary
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Revenue** | **Number** |  | [optional] 

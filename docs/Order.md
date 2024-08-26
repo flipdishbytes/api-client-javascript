@@ -1,16 +1,17 @@
 # Flipdish.Order
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Store** | [**StoreSummary**](StoreSummary.md) | Store summary | [optional] 
-**Customer** | [**CustomerSummary**](CustomerSummary.md) | Customer summary | [optional] 
-**Voucher** | [**OrderVoucherSummary**](OrderVoucherSummary.md) | Voucher summary | [optional] 
-**Fees** | [**FeeSummary**](FeeSummary.md) | Fee summary | [optional] 
+**Store** | [**StoreSummary**](StoreSummary.md) |  | [optional] 
+**Customer** | [**CustomerSummary**](CustomerSummary.md) |  | [optional] 
+**Voucher** | [**OrderVoucherSummary**](OrderVoucherSummary.md) |  | [optional] 
+**Fees** | [**FeeSummary**](FeeSummary.md) |  | [optional] 
 **OrderItems** | [**[OrderItem]**](OrderItem.md) | Ordered items | [optional] 
-**DeliveryLocation** | [**DeliveryLocation**](DeliveryLocation.md) | Delivery location for delivery orders | [optional] 
-**CustomerLocation** | [**Coordinates**](Coordinates.md) | Customer location | [optional] 
-**MaskedPhoneNumber** | [**MaskedPhoneNumber**](MaskedPhoneNumber.md) | Represents customers masked phone number | [optional] 
+**DeliveryLocation** | [**DeliveryLocation**](DeliveryLocation.md) |  | [optional] 
+**CustomerLocation** | [**Coordinates**](Coordinates.md) |  | [optional] 
+**MaskedPhoneNumber** | [**MaskedPhoneNumber**](MaskedPhoneNumber.md) |  | [optional] 
 **DropOffLocationId** | **Number** | Represents table service drop off location | [optional] 
 **DropOffLocation** | **String** | Represents table service drop off location | [optional] 
 **AcceptedFor** | **Date** | Time store has accepted the order for | [optional] 
@@ -19,12 +20,12 @@ Name | Type | Description | Notes
 **RejectedByUserId** | **Number** | Id of user who rejected order, if available | [optional] 
 **ChannelOrderId** | **String** | ChannelOrderId from external channel | [optional] 
 **ChannelOrderDisplayId** | **String** | ChannelOrderDisplayId from external channel | [optional] 
-**Channel** | [**Channel**](Channel.md) | Channel where the Order comes from | [optional] 
-**OrderDropOffLocation** | [**OrderDropOffLocation**](OrderDropOffLocation.md) | DropOffLocation selected for this order | [optional] 
-**FulfillmentStatus** | [**OrderFulfillmentStatusBase**](OrderFulfillmentStatusBase.md) | [BETA - this is a new field in development] Fulfillment status for this order | [optional] 
-**OrderBatchInfo** | [**OrderBatchSummary**](OrderBatchSummary.md) | OrderBatch information | [optional] 
+**Channel** | [**Channel**](Channel.md) |  | [optional] 
+**OrderDropOffLocation** | [**OrderDropOffLocation**](OrderDropOffLocation.md) |  | [optional] 
+**FulfillmentStatus** | [**OrderFulfillmentStatusBase**](OrderFulfillmentStatusBase.md) |  | [optional] 
+**OrderBatchInfo** | [**OrderBatchSummary**](OrderBatchSummary.md) |  | [optional] 
 **OrderId** | **Number** | Order identifier | [optional] 
-**LocalOrderId** | **String** | Local order Id. This is used for displaying a \"shorter\" order ID for customers (eg. Kiosk orders) | [optional] 
+**LocalOrderId** | **String** | Local order Id. This is used for displaying a \&quot;shorter\&quot; order ID for customers (eg. Kiosk orders) | [optional] 
 **DeliveryType** | **String** | Delivery type | [optional] 
 **PickupLocationType** | **String** | Pickup location type | [optional] 
 **TableServiceCatagory** | **String** | Pickup location type | [optional] 
@@ -52,10 +53,10 @@ Name | Type | Description | Notes
 **TotalTax** | **Number** | Total tax applied to order | [optional] 
 **OrderTrackingCode** | **String** | Unique, 6 character long alpha numeric code for tracking. | [optional] 
 **DeliveryFeeAreaId** | **Number** | Delivery area identifier | [optional] 
-**ReceiptCode** | **String** | Code used to view the order's receipt | [optional] 
+**ReceiptCode** | **String** | Code used to view the order&#39;s receipt | [optional] 
 
 
-<a name="DeliveryTypeEnum"></a>
+
 ## Enum: DeliveryTypeEnum
 
 
@@ -66,7 +67,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="PickupLocationTypeEnum"></a>
+
 ## Enum: PickupLocationTypeEnum
 
 
@@ -79,7 +80,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="TableServiceCatagoryEnum"></a>
+
 ## Enum: TableServiceCatagoryEnum
 
 
@@ -106,7 +107,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="PaymentAccountTypeEnum"></a>
+
 ## Enum: PaymentAccountTypeEnum
 
 
@@ -133,7 +134,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="OrderStateEnum"></a>
+
 ## Enum: OrderStateEnum
 
 
@@ -166,7 +167,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="AppTypeEnum"></a>
+
 ## Enum: AppTypeEnum
 
 
@@ -195,7 +196,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="PaymentStatusEnum"></a>
+
 ## Enum: PaymentStatusEnum
 
 
@@ -212,7 +213,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="RejectionReasonEnum"></a>
+
 ## Enum: RejectionReasonEnum
 
 
@@ -237,7 +238,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="DeliveryTrackingStatusEnum"></a>
+
 ## Enum: DeliveryTrackingStatusEnum
 
 

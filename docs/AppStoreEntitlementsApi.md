@@ -7,39 +7,36 @@ Method | HTTP request | Description
 [**getAppStoreAppEntitlements**](AppStoreEntitlementsApi.md#getAppStoreAppEntitlements) | **GET** /api/v1.0/{appId}/appstore/apps/{appStoreAppId}/entitlements | 
 
 
-<a name="getAppStoreAppEntitlements"></a>
-# **getAppStoreAppEntitlements**
+
+## getAppStoreAppEntitlements
+
 > RestApiResultAppStoreAppEntitlements getAppStoreAppEntitlements(appId, appStoreAppId)
 
 
 
 ### Example
-```javascript
-var Flipdish = require('@flipdish/api-client-javascript');
-var defaultClient = Flipdish.ApiClient.instance;
 
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
-var oauth2 = defaultClient.authentications['oauth2'];
+let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new Flipdish.AppStoreEntitlementsApi();
-
-var appId = "appId_example"; // String | 
-
-var appStoreAppId = "appStoreAppId_example"; // String | 
-
-
-var callback = function(error, data, response) {
+let apiInstance = new Flipdish.AppStoreEntitlementsApi();
+let appId = "appId_example"; // String | 
+let appStoreAppId = "appStoreAppId_example"; // String | 
+apiInstance.getAppStoreAppEntitlements(appId, appStoreAppId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getAppStoreAppEntitlements(appId, appStoreAppId, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -56,6 +53,6 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, Data, Message, ErrorCode, StackTrace
 
