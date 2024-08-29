@@ -168,6 +168,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property ForceDiscount (base name: "ForceDiscount")', function() {
+      // uncomment below and update the code to test the property ForceDiscount
+      //var instance = new Flipdish.UpdateVoucher();
+      //expect(instance).to.be();
+    });
+
     it('should have the property StartDate (base name: "StartDate")', function() {
       // uncomment below and update the code to test the property StartDate
       //var instance = new Flipdish.UpdateVoucher();

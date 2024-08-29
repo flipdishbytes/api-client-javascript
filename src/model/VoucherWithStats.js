@@ -143,6 +143,9 @@ class VoucherWithStats {
             if (data.hasOwnProperty('IsDiscoverable')) {
                 obj['IsDiscoverable'] = ApiClient.convertToType(data['IsDiscoverable'], 'Boolean');
             }
+            if (data.hasOwnProperty('ForceDiscount')) {
+                obj['ForceDiscount'] = ApiClient.convertToType(data['ForceDiscount'], 'Boolean');
+            }
             if (data.hasOwnProperty('StartDate')) {
                 obj['StartDate'] = ApiClient.convertToType(data['StartDate'], 'Date');
             }
@@ -346,6 +349,12 @@ VoucherWithStats.prototype['IsValidOnlyOnce'] = undefined;
  * @member {Boolean} IsDiscoverable
  */
 VoucherWithStats.prototype['IsDiscoverable'] = undefined;
+
+/**
+ * Force the discount to be applied which bypasses some menu restrictions
+ * @member {Boolean} ForceDiscount
+ */
+VoucherWithStats.prototype['ForceDiscount'] = undefined;
 
 /**
  * Voucher Starts On (Time in UTC)
