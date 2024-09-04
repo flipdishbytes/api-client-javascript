@@ -18,7 +18,9 @@ import RestApiErrorResult from '../model/RestApiErrorResult';
 import RestApiForbiddenResult from '../model/RestApiForbiddenResult';
 import RestApiResultAddressFormResponse from '../model/RestApiResultAddressFormResponse';
 import RestApiResultCountryFormResponse from '../model/RestApiResultCountryFormResponse';
+import RestApiStringResult from '../model/RestApiStringResult';
 import RestApiUnauthorizedResult from '../model/RestApiUnauthorizedResult';
+import StoreAddressForm from '../model/StoreAddressForm';
 
 /**
 * Address service.
@@ -207,6 +209,46 @@ export default class AddressApi {
       let returnType = RestApiResultCountryFormResponse;
       return this.apiClient.callApi(
         '/api/v1.0/address/countries', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the validateAddressForm operation.
+     * @callback module:api/AddressApi~validateAddressFormCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/RestApiStringResult} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {module:model/StoreAddressForm} address 
+     * @param {module:api/AddressApi~validateAddressFormCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/RestApiStringResult}
+     */
+    validateAddressForm(address, callback) {
+      let postBody = address;
+      // verify the required parameter 'address' is set
+      if (address === undefined || address === null) {
+        throw new Error("Missing the required parameter 'address' when calling validateAddressForm");
+      }
+
+      let pathParams = {
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded'];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'Data'];
+      let returnType = RestApiStringResult;
+      return this.apiClient.callApi(
+        '/api/v1.0/address/validate', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );
