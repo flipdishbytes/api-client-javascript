@@ -85,6 +85,9 @@ class BankAccount {
             if (data.hasOwnProperty('VatNumber')) {
                 obj['VatNumber'] = ApiClient.convertToType(data['VatNumber'], 'String');
             }
+            if (data.hasOwnProperty('StripeAccountId')) {
+                obj['StripeAccountId'] = ApiClient.convertToType(data['StripeAccountId'], 'String');
+            }
         }
         return obj;
     }
@@ -163,6 +166,12 @@ BankAccount.prototype['AccountHolderCountryCode'] = undefined;
  * @member {String} VatNumber
  */
 BankAccount.prototype['VatNumber'] = undefined;
+
+/**
+ * Stripe Id of the connected account
+ * @member {String} StripeAccountId
+ */
+BankAccount.prototype['StripeAccountId'] = undefined;
 
 
 

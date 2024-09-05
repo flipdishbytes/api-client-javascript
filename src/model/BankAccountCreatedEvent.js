@@ -50,6 +50,9 @@ class BankAccountCreatedEvent {
         if (data) {
             obj = obj || new BankAccountCreatedEvent();
 
+            if (data.hasOwnProperty('OrgId')) {
+                obj['OrgId'] = ApiClient.convertToType(data['OrgId'], 'String');
+            }
             if (data.hasOwnProperty('BankAccount')) {
                 obj['BankAccount'] = BankAccount.constructFromObject(data['BankAccount']);
             }
@@ -80,6 +83,12 @@ class BankAccountCreatedEvent {
 
 
 }
+
+/**
+ * Organisation Id
+ * @member {String} OrgId
+ */
+BankAccountCreatedEvent.prototype['OrgId'] = undefined;
 
 /**
  * @member {module:model/BankAccount} BankAccount

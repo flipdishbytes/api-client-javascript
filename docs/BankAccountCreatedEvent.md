@@ -4,6 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**OrgId** | **String** | Organisation Id | [optional] 
 **BankAccount** | [**BankAccount**](BankAccount.md) |  | [optional] 
 **User** | [**UserEventInfo**](UserEventInfo.md) |  | [optional] 
 **EventName** | **String** | The event name | [optional] 

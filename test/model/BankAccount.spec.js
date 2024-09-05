@@ -126,6 +126,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property StripeAccountId (base name: "StripeAccountId")', function() {
+      // uncomment below and update the code to test the property StripeAccountId
+      //var instance = new Flipdish.BankAccount();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));

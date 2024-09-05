@@ -54,6 +54,12 @@
       //expect(instance).to.be.a(Flipdish.BankAccountAssignedEvent);
     });
 
+    it('should have the property OrgId (base name: "OrgId")', function() {
+      // uncomment below and update the code to test the property OrgId
+      //var instance = new Flipdish.BankAccountAssignedEvent();
+      //expect(instance).to.be();
+    });
+
     it('should have the property BankAccount (base name: "BankAccount")', function() {
       // uncomment below and update the code to test the property BankAccount
       //var instance = new Flipdish.BankAccountAssignedEvent();

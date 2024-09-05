@@ -16,6 +16,7 @@ Name | Type | Description | Notes
 **AccountHolderAddress** | **String** | Account Holders Address | [optional] 
 **AccountHolderCountryCode** | **String** | Account Holders Country Code | [optional] 
 **VatNumber** | **String** | Account Holders Vat Number | [optional] 
+**StripeAccountId** | **String** | Stripe Id of the connected account | [optional] 
 
 
 
