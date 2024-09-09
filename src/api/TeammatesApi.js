@@ -223,6 +223,52 @@ export default class TeammatesApi {
     }
 
     /**
+     * Callback function to receive the result of the grantAccess operation.
+     * @callback module:api/TeammatesApi~grantAccessCallback
+     * @param {String} error Error message, if any.
+     * @param {Object} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {String} appId 
+     * @param {module:model/CreateTeammate} teammate 
+     * @param {module:api/TeammatesApi~grantAccessCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link Object}
+     */
+    grantAccess(appId, teammate, callback) {
+      let postBody = teammate;
+      // verify the required parameter 'appId' is set
+      if (appId === undefined || appId === null) {
+        throw new Error("Missing the required parameter 'appId' when calling grantAccess");
+      }
+      // verify the required parameter 'teammate' is set
+      if (teammate === undefined || teammate === null) {
+        throw new Error("Missing the required parameter 'teammate' when calling grantAccess");
+      }
+
+      let pathParams = {
+        'appId': appId
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded'];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'Data'];
+      let returnType = Object;
+      return this.apiClient.callApi(
+        '/api/v1.0/{appId}/teammates/GrantAccess', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
      * Callback function to receive the result of the redeemInvitation operation.
      * @callback module:api/TeammatesApi~redeemInvitationCallback
      * @param {String} error Error message, if any.
