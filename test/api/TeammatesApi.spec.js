@@ -88,10 +88,10 @@
         done();
       });
     });
-    describe('grantAccess', function() {
-      it('should call grantAccess successfully', function(done) {
-        //uncomment below and update the code to test grantAccess
-        //instance.grantAccess(function(error) {
+    describe('grantaccess', function() {
+      it('should call grantaccess successfully', function(done) {
+        //uncomment below and update the code to test grantaccess
+        //instance.grantaccess(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

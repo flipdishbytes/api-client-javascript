@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**deleteTeammate**](TeammatesApi.md#deleteTeammate) | **DELETE** /api/v1.0/{appId}/teammates/{id} | 
 [**getTeammateByAppIdAndTeammateId**](TeammatesApi.md#getTeammateByAppIdAndTeammateId) | **GET** /api/v1.0/{appId}/teammates/{id} | 
 [**getTeammatesByAppId**](TeammatesApi.md#getTeammatesByAppId) | **GET** /api/v1.0/{appId}/teammates | 
-[**grantAccess**](TeammatesApi.md#grantAccess) | **POST** /api/v1.0/{appId}/teammates/GrantAccess | 
+[**grantaccess**](TeammatesApi.md#grantaccess) | **POST** /api/v1.0/{appId}/teammates/grantaccess | 
 [**redeemInvitation**](TeammatesApi.md#redeemInvitation) | **GET** /api/v1.0/{appId}/teammates/redeem/{otc} | 
 [**teammatesAcceptInvitation**](TeammatesApi.md#teammatesAcceptInvitation) | **GET** /api/v1.0/{appId}/teammates/accept/{otc} | 
 [**updateTeammate**](TeammatesApi.md#updateTeammate) | **POST** /api/v1.0/{appId}/teammates/{id} | 
@@ -209,9 +209,9 @@ Name | Type | Description  | Notes
 - **Accept**: application/json, text/json, application/xml, text/xml, Data
 
 
-## grantAccess
+## grantaccess
 
-> Object grantAccess(appId, teammate)
+> Object grantaccess(appId, teammate)
 
 
 
@@ -227,7 +227,7 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 let apiInstance = new Flipdish.TeammatesApi();
 let appId = "appId_example"; // String | 
 let teammate = new Flipdish.CreateTeammate(); // CreateTeammate | 
-apiInstance.grantAccess(appId, teammate, (error, data, response) => {
+apiInstance.grantaccess(appId, teammate, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {

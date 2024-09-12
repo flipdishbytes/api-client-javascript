@@ -617,7 +617,7 @@ Class | Method | HTTP request | Description
 *Flipdish.TeammatesApi* | [**deleteTeammate**](docs/TeammatesApi.md#deleteTeammate) | **DELETE** /api/v1.0/{appId}/teammates/{id} | 
 *Flipdish.TeammatesApi* | [**getTeammateByAppIdAndTeammateId**](docs/TeammatesApi.md#getTeammateByAppIdAndTeammateId) | **GET** /api/v1.0/{appId}/teammates/{id} | 
 *Flipdish.TeammatesApi* | [**getTeammatesByAppId**](docs/TeammatesApi.md#getTeammatesByAppId) | **GET** /api/v1.0/{appId}/teammates | 
-*Flipdish.TeammatesApi* | [**grantAccess**](docs/TeammatesApi.md#grantAccess) | **POST** /api/v1.0/{appId}/teammates/GrantAccess | 
+*Flipdish.TeammatesApi* | [**grantaccess**](docs/TeammatesApi.md#grantaccess) | **POST** /api/v1.0/{appId}/teammates/grantaccess | 
 *Flipdish.TeammatesApi* | [**redeemInvitation**](docs/TeammatesApi.md#redeemInvitation) | **GET** /api/v1.0/{appId}/teammates/redeem/{otc} | 
 *Flipdish.TeammatesApi* | [**teammatesAcceptInvitation**](docs/TeammatesApi.md#teammatesAcceptInvitation) | **GET** /api/v1.0/{appId}/teammates/accept/{otc} | 
 *Flipdish.TeammatesApi* | [**updateTeammate**](docs/TeammatesApi.md#updateTeammate) | **POST** /api/v1.0/{appId}/teammates/{id} | 

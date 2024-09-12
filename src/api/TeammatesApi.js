@@ -223,8 +223,8 @@ export default class TeammatesApi {
     }
 
     /**
-     * Callback function to receive the result of the grantAccess operation.
-     * @callback module:api/TeammatesApi~grantAccessCallback
+     * Callback function to receive the result of the grantaccess operation.
+     * @callback module:api/TeammatesApi~grantaccessCallback
      * @param {String} error Error message, if any.
      * @param {Object} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -233,18 +233,18 @@ export default class TeammatesApi {
     /**
      * @param {String} appId 
      * @param {module:model/CreateTeammate} teammate 
-     * @param {module:api/TeammatesApi~grantAccessCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/TeammatesApi~grantaccessCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link Object}
      */
-    grantAccess(appId, teammate, callback) {
+    grantaccess(appId, teammate, callback) {
       let postBody = teammate;
       // verify the required parameter 'appId' is set
       if (appId === undefined || appId === null) {
-        throw new Error("Missing the required parameter 'appId' when calling grantAccess");
+        throw new Error("Missing the required parameter 'appId' when calling grantaccess");
       }
       // verify the required parameter 'teammate' is set
       if (teammate === undefined || teammate === null) {
-        throw new Error("Missing the required parameter 'teammate' when calling grantAccess");
+        throw new Error("Missing the required parameter 'teammate' when calling grantaccess");
       }
 
       let pathParams = {
@@ -262,7 +262,7 @@ export default class TeammatesApi {
       let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'Data'];
       let returnType = Object;
       return this.apiClient.callApi(
-        '/api/v1.0/{appId}/teammates/GrantAccess', 'POST',
+        '/api/v1.0/{appId}/teammates/grantaccess', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );
