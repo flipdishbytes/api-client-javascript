@@ -12,6 +12,7 @@ Name | Type | Description | Notes
 **IsPanaceaEnabled** | **Boolean** | Panacea is the term used for websites that are hosted on the my.flipdish.com domain. This value is true when the App&#39;s website is hosted on this domain.  The aternative to using Panacea websites is to use a custom domain. | [optional] 
 **PanaceaVanityUrl** | **String** | In case of IsPanaceaEnabled is true, the app can be accessed via https://my.flipdish.com/{PanaceaVanityUrl} | [optional] 
 **CookieConsentPromptEnabled** | **Boolean** | Cookie Consent Prompt Enabled | [optional] 
+**LogoImageUrl** | **String** | Logo image URL | [optional] 
 
 
 

@@ -60,6 +60,9 @@ class CreateAppInOrg {
             if (data.hasOwnProperty('AppId')) {
                 obj['AppId'] = ApiClient.convertToType(data['AppId'], 'String');
             }
+            if (data.hasOwnProperty('LogoImageUrl')) {
+                obj['LogoImageUrl'] = ApiClient.convertToType(data['LogoImageUrl'], 'String');
+            }
         }
         return obj;
     }
@@ -90,6 +93,12 @@ CreateAppInOrg.prototype['MainColor'] = undefined;
  * @member {String} AppId
  */
 CreateAppInOrg.prototype['AppId'] = undefined;
+
+/**
+ * Logo image URL
+ * @member {String} LogoImageUrl
+ */
+CreateAppInOrg.prototype['LogoImageUrl'] = undefined;
 
 
 

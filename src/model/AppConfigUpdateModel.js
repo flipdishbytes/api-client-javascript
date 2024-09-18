@@ -72,6 +72,9 @@ class AppConfigUpdateModel {
             if (data.hasOwnProperty('CookieConsentPromptEnabled')) {
                 obj['CookieConsentPromptEnabled'] = ApiClient.convertToType(data['CookieConsentPromptEnabled'], 'Boolean');
             }
+            if (data.hasOwnProperty('LogoImageUrl')) {
+                obj['LogoImageUrl'] = ApiClient.convertToType(data['LogoImageUrl'], 'String');
+            }
         }
         return obj;
     }
@@ -126,6 +129,12 @@ AppConfigUpdateModel.prototype['PanaceaVanityUrl'] = undefined;
  * @member {Boolean} CookieConsentPromptEnabled
  */
 AppConfigUpdateModel.prototype['CookieConsentPromptEnabled'] = undefined;
+
+/**
+ * Logo image URL
+ * @member {String} LogoImageUrl
+ */
+AppConfigUpdateModel.prototype['LogoImageUrl'] = undefined;
 
 
 

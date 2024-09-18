@@ -78,6 +78,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property LogoImageUrl (base name: "LogoImageUrl")', function() {
+      // uncomment below and update the code to test the property LogoImageUrl
+      //var instance = new Flipdish.CreateAppInOrg();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));
