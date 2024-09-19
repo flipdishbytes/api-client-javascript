@@ -351,6 +351,7 @@ Class | Method | HTTP request | Description
 *Flipdish.IntercomApi* | [**userHash**](docs/IntercomApi.md#userHash) | **GET** /api/v1.0/intercom/userHash | 
 *Flipdish.InvoicesApi* | [**getInvoices**](docs/InvoicesApi.md#getInvoices) | **GET** /api/v1.0/{appId}/invoices | 
 *Flipdish.KioskEntitlementsApi* | [**queryKioskEntitlements**](docs/KioskEntitlementsApi.md#queryKioskEntitlements) | **GET** /api/v1.0/{appId}/kiosk/entitlements | 
+*Flipdish.KioskEntitlementsApi* | [**queryKioskEntitlementsByOrgId**](docs/KioskEntitlementsApi.md#queryKioskEntitlementsByOrgId) | **GET** /api/v1.0/orgs/{orgId}/kiosk/entitlements | 
 *Flipdish.KioskIotApi* | [**getKioskIotConnection**](docs/KioskIotApi.md#getKioskIotConnection) | **POST** /api/v1.0/kioskiot/connect | 
 *Flipdish.KioskIotApi* | [**queryTelemetrySeries**](docs/KioskIotApi.md#queryTelemetrySeries) | **POST** /api/v1.0/{appId}/kioskiot/timeseries/query | 
 *Flipdish.LightspeedApi* | [**lightspeedGenerateMenu**](docs/LightspeedApi.md#lightspeedGenerateMenu) | **POST** /api/v1.0/lightspeed/{storeId}/menu/generate | 

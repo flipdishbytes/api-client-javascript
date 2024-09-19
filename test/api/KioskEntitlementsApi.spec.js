@@ -58,6 +58,16 @@
         done();
       });
     });
+    describe('queryKioskEntitlementsByOrgId', function() {
+      it('should call queryKioskEntitlementsByOrgId successfully', function(done) {
+        //uncomment below and update the code to test queryKioskEntitlementsByOrgId
+        //instance.queryKioskEntitlementsByOrgId(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
   });
 
 }));
