@@ -63,6 +63,9 @@ class AccountDetailBase {
             if (data.hasOwnProperty('ShowHiddenFeatures')) {
                 obj['ShowHiddenFeatures'] = ApiClient.convertToType(data['ShowHiddenFeatures'], 'Boolean');
             }
+            if (data.hasOwnProperty('CreatedAt')) {
+                obj['CreatedAt'] = ApiClient.convertToType(data['CreatedAt'], 'Date');
+            }
         }
         return obj;
     }
@@ -99,6 +102,12 @@ AccountDetailBase.prototype['DisplayTimesInUserLocalTimeZone'] = undefined;
  * @member {Boolean} ShowHiddenFeatures
  */
 AccountDetailBase.prototype['ShowHiddenFeatures'] = undefined;
+
+/**
+ * User created at
+ * @member {Date} CreatedAt
+ */
+AccountDetailBase.prototype['CreatedAt'] = undefined;
 
 
 

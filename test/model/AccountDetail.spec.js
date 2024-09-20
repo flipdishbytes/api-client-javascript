@@ -114,6 +114,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property CreatedAt (base name: "CreatedAt")', function() {
+      // uncomment below and update the code to test the property CreatedAt
+      //var instance = new Flipdish.AccountDetail();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));
