@@ -175,7 +175,6 @@ Class | Method | HTTP request | Description
 *Flipdish.AppStoreDeveloperApi* | [**uploadAppStoreAppLogo**](docs/AppStoreDeveloperApi.md#uploadAppStoreAppLogo) | **POST** /api/v1.0/oauthclients/{oauthAppId}/appstore/apps/{appStoreAppId}/logo | 
 *Flipdish.AppStoreEntitlementsApi* | [**getAppStoreAppEntitlements**](docs/AppStoreEntitlementsApi.md#getAppStoreAppEntitlements) | **GET** /api/v1.0/{appId}/appstore/apps/{appStoreAppId}/entitlements | 
 *Flipdish.AppsApi* | [**createApp**](docs/AppsApi.md#createApp) | **POST** /api/v1.0/apps | 
-*Flipdish.AppsApi* | [**createAppInOrg**](docs/AppsApi.md#createAppInOrg) | **POST** /api/v1.0/orgs/{orgId}/apps | 
 *Flipdish.AppsApi* | [**getApp**](docs/AppsApi.md#getApp) | **GET** /api/v1.0/apps/{appId} | 
 *Flipdish.AppsApi* | [**getAppHostnameStatus**](docs/AppsApi.md#getAppHostnameStatus) | **GET** /api/v1.0/apps/{appId}/hostnamestatus | 
 *Flipdish.AppsApi* | [**getApps**](docs/AppsApi.md#getApps) | **GET** /api/v1.0/apps | 
@@ -742,7 +741,6 @@ Class | Method | HTTP request | Description
  - [Flipdish.CountryFormResponse](docs/CountryFormResponse.md)
  - [Flipdish.CountryWithAccountFieldsDefinitions](docs/CountryWithAccountFieldsDefinitions.md)
  - [Flipdish.CreateAccountModel](docs/CreateAccountModel.md)
- - [Flipdish.CreateAppInOrg](docs/CreateAppInOrg.md)
  - [Flipdish.CreateAppParameters](docs/CreateAppParameters.md)
  - [Flipdish.CreateAppStoreApp](docs/CreateAppStoreApp.md)
  - [Flipdish.CreateBasicAccountModel](docs/CreateBasicAccountModel.md)

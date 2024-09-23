@@ -98,7 +98,6 @@ import CoordinatesDm from './model/CoordinatesDm';
 import CountryFormResponse from './model/CountryFormResponse';
 import CountryWithAccountFieldsDefinitions from './model/CountryWithAccountFieldsDefinitions';
 import CreateAccountModel from './model/CreateAccountModel';
-import CreateAppInOrg from './model/CreateAppInOrg';
 import CreateAppParameters from './model/CreateAppParameters';
 import CreateAppStoreApp from './model/CreateAppStoreApp';
 import CreateBasicAccountModel from './model/CreateBasicAccountModel';
@@ -1449,12 +1448,6 @@ export {
      * @property {module:model/CreateAccountModel}
      */
     CreateAccountModel,
-
-    /**
-     * The CreateAppInOrg model constructor.
-     * @property {module:model/CreateAppInOrg}
-     */
-    CreateAppInOrg,
 
     /**
      * The CreateAppParameters model constructor.

@@ -5,7 +5,6 @@ All URIs are relative to *https://api.flipdish.co*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**createApp**](AppsApi.md#createApp) | **POST** /api/v1.0/apps | 
-[**createAppInOrg**](AppsApi.md#createAppInOrg) | **POST** /api/v1.0/orgs/{orgId}/apps | 
 [**getApp**](AppsApi.md#getApp) | **GET** /api/v1.0/apps/{appId} | 
 [**getAppHostnameStatus**](AppsApi.md#getAppHostnameStatus) | **GET** /api/v1.0/apps/{appId}/hostnamestatus | 
 [**getApps**](AppsApi.md#getApps) | **GET** /api/v1.0/apps | 
@@ -70,55 +69,6 @@ Name | Type | Description  | Notes
 
 - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
 - **Accept**: application/json, text/json, application/xml, text/xml, Message, ErrorCode, StackTrace
-
-
-## createAppInOrg
-
-> RestApiResultApp createAppInOrg(orgId, createAppInOrgRequest)
-
-
-
-### Example
-
-```javascript
-import Flipdish from '@flipdish/api-client-javascript';
-let defaultClient = Flipdish.ApiClient.instance;
-// Configure OAuth2 access token for authorization: oauth2
-let oauth2 = defaultClient.authentications['oauth2'];
-oauth2.accessToken = 'YOUR ACCESS TOKEN';
-
-let apiInstance = new Flipdish.AppsApi();
-let orgId = "orgId_example"; // String | 
-let createAppInOrgRequest = new Flipdish.CreateAppInOrg(); // CreateAppInOrg | 
-apiInstance.createAppInOrg(orgId, createAppInOrgRequest, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **orgId** | **String**|  | 
- **createAppInOrgRequest** | [**CreateAppInOrg**](CreateAppInOrg.md)|  | 
-
-### Return type
-
-[**RestApiResultApp**](RestApiResultApp.md)
-
-### Authorization
-
-[oauth2](../README.md#oauth2)
-
-### HTTP request headers
-
-- **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
-- **Accept**: application/json, text/json, application/xml, text/xml, Data
 
 
 ## getApp

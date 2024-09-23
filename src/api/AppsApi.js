@@ -15,7 +15,6 @@
 import ApiClient from "../ApiClient";
 import AppConfigUpdateModel from '../model/AppConfigUpdateModel';
 import AppLookup from '../model/AppLookup';
-import CreateAppInOrg from '../model/CreateAppInOrg';
 import CreateAppParameters from '../model/CreateAppParameters';
 import Language from '../model/Language';
 import RestApiArrayResultSupportedCountry from '../model/RestApiArrayResultSupportedCountry';
@@ -82,52 +81,6 @@ export default class AppsApi {
       let returnType = RestApiStringResult;
       return this.apiClient.callApi(
         '/api/v1.0/apps', 'POST',
-        pathParams, queryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType, null, callback
-      );
-    }
-
-    /**
-     * Callback function to receive the result of the createAppInOrg operation.
-     * @callback module:api/AppsApi~createAppInOrgCallback
-     * @param {String} error Error message, if any.
-     * @param {module:model/RestApiResultApp} data The data returned by the service call.
-     * @param {String} response The complete HTTP response.
-     */
-
-    /**
-     * @param {String} orgId 
-     * @param {module:model/CreateAppInOrg} createAppInOrgRequest 
-     * @param {module:api/AppsApi~createAppInOrgCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/RestApiResultApp}
-     */
-    createAppInOrg(orgId, createAppInOrgRequest, callback) {
-      let postBody = createAppInOrgRequest;
-      // verify the required parameter 'orgId' is set
-      if (orgId === undefined || orgId === null) {
-        throw new Error("Missing the required parameter 'orgId' when calling createAppInOrg");
-      }
-      // verify the required parameter 'createAppInOrgRequest' is set
-      if (createAppInOrgRequest === undefined || createAppInOrgRequest === null) {
-        throw new Error("Missing the required parameter 'createAppInOrgRequest' when calling createAppInOrg");
-      }
-
-      let pathParams = {
-        'orgId': orgId
-      };
-      let queryParams = {
-      };
-      let headerParams = {
-      };
-      let formParams = {
-      };
-
-      let authNames = ['oauth2'];
-      let contentTypes = ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded'];
-      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'Data'];
-      let returnType = RestApiResultApp;
-      return this.apiClient.callApi(
-        '/api/v1.0/orgs/{orgId}/apps', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );
