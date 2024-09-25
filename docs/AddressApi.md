@@ -4,12 +4,60 @@ All URIs are relative to *https://api.flipdish.co*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**addressTemplates**](AddressApi.md#addressTemplates) | **POST** /api/v1.0/address/templates | 
 [**formByApp**](AddressApi.md#formByApp) | **GET** /api/v1.0/app/{appId}/address/form | 
 [**formByCountry**](AddressApi.md#formByCountry) | **GET** /api/v1.0/address/country/{countryCode}/form | 
 [**formatGoogleAddress**](AddressApi.md#formatGoogleAddress) | **POST** /api/v1.0/address/google | 
 [**getCountries**](AddressApi.md#getCountries) | **GET** /api/v1.0/address/countries | 
 [**validateAddressForm**](AddressApi.md#validateAddressForm) | **POST** /api/v1.0/address/validate | 
 
+
+
+## addressTemplates
+
+> RestApiStringResult addressTemplates(address)
+
+
+
+### Example
+
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
+// Configure OAuth2 access token for authorization: oauth2
+let oauth2 = defaultClient.authentications['oauth2'];
+oauth2.accessToken = 'YOUR ACCESS TOKEN';
+
+let apiInstance = new Flipdish.AddressApi();
+let address = new Flipdish.StoreAddressForm(); // StoreAddressForm | 
+apiInstance.addressTemplates(address, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **address** | [**StoreAddressForm**](StoreAddressForm.md)|  | 
+
+### Return type
+
+[**RestApiStringResult**](RestApiStringResult.md)
+
+### Authorization
+
+[oauth2](../README.md#oauth2)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
+- **Accept**: application/json, text/json, application/xml, text/xml, Data
 
 
 ## formByApp

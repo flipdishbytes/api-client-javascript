@@ -143,6 +143,7 @@ Class | Method | HTTP request | Description
 *Flipdish.AccountsApi* | [**sendPinForPasswordReset**](docs/AccountsApi.md#sendPinForPasswordReset) | **POST** /api/v1.0/accounts/password/resetpin | 
 *Flipdish.AccountsApi* | [**skipSignupStep**](docs/AccountsApi.md#skipSignupStep) | **POST** /api/v1.0/accounts/signupstep/{signupStepAction}/skip | 
 *Flipdish.AccountsApi* | [**updateAccount**](docs/AccountsApi.md#updateAccount) | **PUT** /api/v1.0/accounts | 
+*Flipdish.AddressApi* | [**addressTemplates**](docs/AddressApi.md#addressTemplates) | **POST** /api/v1.0/address/templates | 
 *Flipdish.AddressApi* | [**formByApp**](docs/AddressApi.md#formByApp) | **GET** /api/v1.0/app/{appId}/address/form | 
 *Flipdish.AddressApi* | [**formByCountry**](docs/AddressApi.md#formByCountry) | **GET** /api/v1.0/address/country/{countryCode}/form | 
 *Flipdish.AddressApi* | [**formatGoogleAddress**](docs/AddressApi.md#formatGoogleAddress) | **POST** /api/v1.0/address/google | 

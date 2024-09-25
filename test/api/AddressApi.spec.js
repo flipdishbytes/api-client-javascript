@@ -48,6 +48,16 @@
   }
 
   describe('AddressApi', function() {
+    describe('addressTemplates', function() {
+      it('should call addressTemplates successfully', function(done) {
+        //uncomment below and update the code to test addressTemplates
+        //instance.addressTemplates(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('formByApp', function() {
       it('should call formByApp successfully', function(done) {
         //uncomment below and update the code to test formByApp
