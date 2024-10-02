@@ -13,6 +13,7 @@ Name | Type | Description | Notes
 **PanaceaVanityUrl** | **String** | In case of IsPanaceaEnabled is true, the app can be accessed via https://my.flipdish.com/{PanaceaVanityUrl} | [optional] 
 **CookieConsentPromptEnabled** | **Boolean** | Cookie Consent Prompt Enabled | [optional] 
 **LogoImageUrl** | **String** | Logo image URL | [optional] 
+**CountryId** | **String** | Country identifier in ISO 3166-1 alpha-2 format. | [optional] 
 
 
 

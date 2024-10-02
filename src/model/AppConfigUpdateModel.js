@@ -75,6 +75,9 @@ class AppConfigUpdateModel {
             if (data.hasOwnProperty('LogoImageUrl')) {
                 obj['LogoImageUrl'] = ApiClient.convertToType(data['LogoImageUrl'], 'String');
             }
+            if (data.hasOwnProperty('CountryId')) {
+                obj['CountryId'] = ApiClient.convertToType(data['CountryId'], 'String');
+            }
         }
         return obj;
     }
@@ -135,6 +138,12 @@ AppConfigUpdateModel.prototype['CookieConsentPromptEnabled'] = undefined;
  * @member {String} LogoImageUrl
  */
 AppConfigUpdateModel.prototype['LogoImageUrl'] = undefined;
+
+/**
+ * Country identifier in ISO 3166-1 alpha-2 format.
+ * @member {String} CountryId
+ */
+AppConfigUpdateModel.prototype['CountryId'] = undefined;
 
 
 

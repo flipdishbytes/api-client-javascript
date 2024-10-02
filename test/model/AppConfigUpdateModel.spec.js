@@ -108,6 +108,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property CountryId (base name: "CountryId")', function() {
+      // uncomment below and update the code to test the property CountryId
+      //var instance = new Flipdish.AppConfigUpdateModel();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));
