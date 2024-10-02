@@ -196,7 +196,6 @@ import HasPaymentMethodResponse from './model/HasPaymentMethodResponse';
 import HomeAction from './model/HomeAction';
 import HomeStatistics from './model/HomeStatistics';
 import HttpPostedFileBase from './model/HttpPostedFileBase';
-import HttpRequestAndResponseLog from './model/HttpRequestAndResponseLog';
 import HydraAssignedEvent from './model/HydraAssignedEvent';
 import HydraConfig from './model/HydraConfig';
 import HydraConnectionStatusChangedEvent from './model/HydraConnectionStatusChangedEvent';
@@ -508,7 +507,6 @@ import RestApiPaginationResultAppStoreAppSummary from './model/RestApiPagination
 import RestApiPaginationResultBusinessHoursOverride from './model/RestApiPaginationResultBusinessHoursOverride';
 import RestApiPaginationResultCatalogItem from './model/RestApiPaginationResultCatalogItem';
 import RestApiPaginationResultGroup from './model/RestApiPaginationResultGroup';
-import RestApiPaginationResultHttpRequestAndResponseLog from './model/RestApiPaginationResultHttpRequestAndResponseLog';
 import RestApiPaginationResultHydraDeviceDetails from './model/RestApiPaginationResultHydraDeviceDetails';
 import RestApiPaginationResultMetafieldDefinition from './model/RestApiPaginationResultMetafieldDefinition';
 import RestApiPaginationResultMetafieldDefinitionRecommendation from './model/RestApiPaginationResultMetafieldDefinitionRecommendation';
@@ -849,7 +847,6 @@ import FulfillmentStateConfigurationApi from './api/FulfillmentStateConfiguratio
 import GoogleFoodOrderPrototypeApi from './api/GoogleFoodOrderPrototypeApi';
 import HeartbeatApi from './api/HeartbeatApi';
 import HomeApi from './api/HomeApi';
-import HttpRequestResponseLogsApi from './api/HttpRequestResponseLogsApi';
 import HydraApi from './api/HydraApi';
 import IntercomApi from './api/IntercomApi';
 import InvoicesApi from './api/InvoicesApi';
@@ -2036,12 +2033,6 @@ export {
      * @property {module:model/HttpPostedFileBase}
      */
     HttpPostedFileBase,
-
-    /**
-     * The HttpRequestAndResponseLog model constructor.
-     * @property {module:model/HttpRequestAndResponseLog}
-     */
-    HttpRequestAndResponseLog,
 
     /**
      * The HydraAssignedEvent model constructor.
@@ -3908,12 +3899,6 @@ export {
      * @property {module:model/RestApiPaginationResultGroup}
      */
     RestApiPaginationResultGroup,
-
-    /**
-     * The RestApiPaginationResultHttpRequestAndResponseLog model constructor.
-     * @property {module:model/RestApiPaginationResultHttpRequestAndResponseLog}
-     */
-    RestApiPaginationResultHttpRequestAndResponseLog,
 
     /**
      * The RestApiPaginationResultHydraDeviceDetails model constructor.
@@ -5954,12 +5939,6 @@ export {
     * @property {module:api/HomeApi}
     */
     HomeApi,
-
-    /**
-    * The HttpRequestResponseLogsApi service constructor.
-    * @property {module:api/HttpRequestResponseLogsApi}
-    */
-    HttpRequestResponseLogsApi,
 
     /**
     * The HydraApi service constructor.

@@ -323,7 +323,6 @@ Class | Method | HTTP request | Description
 *Flipdish.HomeApi* | [**getHomeActions**](docs/HomeApi.md#getHomeActions) | **GET** /api/v1.0/{appId}/home | 
 *Flipdish.HomeApi* | [**getHomeStatistics**](docs/HomeApi.md#getHomeStatistics) | **GET** /api/v1.0/{appId}/home/stats | 
 *Flipdish.HomeApi* | [**getOktaPortalFeatureFlag**](docs/HomeApi.md#getOktaPortalFeatureFlag) | **GET** /api/v1.0/home/okta-portal | 
-*Flipdish.HttpRequestResponseLogsApi* | [**getLogs**](docs/HttpRequestResponseLogsApi.md#getLogs) | **GET** /api/v1.0/{appId}/interactions/logs | 
 *Flipdish.HydraApi* | [**assignEmv**](docs/HydraApi.md#assignEmv) | **POST** /api/v1.0/{appId}/hydra/emvterminal/assign/{hydraConfigId}/{emvTerminalId} | 
 *Flipdish.HydraApi* | [**attachStoreToKiosk**](docs/HydraApi.md#attachStoreToKiosk) | **POST** /api/v1.0/{appId}/AttachStoreToKiosk/{deviceId}/store/{storeId} | 
 *Flipdish.HydraApi* | [**attachStoreToTerminal**](docs/HydraApi.md#attachStoreToTerminal) | **POST** /api/v1.0/{appId}/hydra/{deviceId}/attach/{storeId} | 
@@ -840,7 +839,6 @@ Class | Method | HTTP request | Description
  - [Flipdish.HomeAction](docs/HomeAction.md)
  - [Flipdish.HomeStatistics](docs/HomeStatistics.md)
  - [Flipdish.HttpPostedFileBase](docs/HttpPostedFileBase.md)
- - [Flipdish.HttpRequestAndResponseLog](docs/HttpRequestAndResponseLog.md)
  - [Flipdish.HydraAssignedEvent](docs/HydraAssignedEvent.md)
  - [Flipdish.HydraConfig](docs/HydraConfig.md)
  - [Flipdish.HydraConnectionStatusChangedEvent](docs/HydraConnectionStatusChangedEvent.md)
@@ -1152,7 +1150,6 @@ Class | Method | HTTP request | Description
  - [Flipdish.RestApiPaginationResultBusinessHoursOverride](docs/RestApiPaginationResultBusinessHoursOverride.md)
  - [Flipdish.RestApiPaginationResultCatalogItem](docs/RestApiPaginationResultCatalogItem.md)
  - [Flipdish.RestApiPaginationResultGroup](docs/RestApiPaginationResultGroup.md)
- - [Flipdish.RestApiPaginationResultHttpRequestAndResponseLog](docs/RestApiPaginationResultHttpRequestAndResponseLog.md)
  - [Flipdish.RestApiPaginationResultHydraDeviceDetails](docs/RestApiPaginationResultHydraDeviceDetails.md)
  - [Flipdish.RestApiPaginationResultMetafieldDefinition](docs/RestApiPaginationResultMetafieldDefinition.md)
  - [Flipdish.RestApiPaginationResultMetafieldDefinitionRecommendation](docs/RestApiPaginationResultMetafieldDefinitionRecommendation.md)
