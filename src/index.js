@@ -398,6 +398,7 @@ import PayoutReport3Store from './model/PayoutReport3Store';
 import PayoutRequestIds from './model/PayoutRequestIds';
 import PayoutStore from './model/PayoutStore';
 import PayoutSummary from './model/PayoutSummary';
+import PendingInvitation from './model/PendingInvitation';
 import PendingMenuChanges from './model/PendingMenuChanges';
 import PendingMenuChangesSummaries from './model/PendingMenuChangesSummaries';
 import PercentDiscountDetails from './model/PercentDiscountDetails';
@@ -478,6 +479,7 @@ import RestApiArrayResultOauthClientRedirectUri from './model/RestApiArrayResult
 import RestApiArrayResultOrderBatch from './model/RestApiArrayResultOrderBatch';
 import RestApiArrayResultOrderFulfillmentStatus from './model/RestApiArrayResultOrderFulfillmentStatus';
 import RestApiArrayResultPayoutSummary from './model/RestApiArrayResultPayoutSummary';
+import RestApiArrayResultPendingInvitation from './model/RestApiArrayResultPendingInvitation';
 import RestApiArrayResultPendingMenuChangesSummaries from './model/RestApiArrayResultPendingMenuChangesSummaries';
 import RestApiArrayResultPreOrderTime from './model/RestApiArrayResultPreOrderTime';
 import RestApiArrayResultProcessingFeeConfig from './model/RestApiArrayResultProcessingFeeConfig';
@@ -3247,6 +3249,12 @@ export {
     PayoutSummary,
 
     /**
+     * The PendingInvitation model constructor.
+     * @property {module:model/PendingInvitation}
+     */
+    PendingInvitation,
+
+    /**
      * The PendingMenuChanges model constructor.
      * @property {module:model/PendingMenuChanges}
      */
@@ -3725,6 +3733,12 @@ export {
      * @property {module:model/RestApiArrayResultPayoutSummary}
      */
     RestApiArrayResultPayoutSummary,
+
+    /**
+     * The RestApiArrayResultPendingInvitation model constructor.
+     * @property {module:model/RestApiArrayResultPendingInvitation}
+     */
+    RestApiArrayResultPendingInvitation,
 
     /**
      * The RestApiArrayResultPendingMenuChangesSummaries model constructor.

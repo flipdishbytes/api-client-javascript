@@ -620,6 +620,7 @@ Class | Method | HTTP request | Description
 *Flipdish.TeammatesApi* | [**grantaccess**](docs/TeammatesApi.md#grantaccess) | **POST** /api/v1.0/{appId}/teammates/grantaccess | 
 *Flipdish.TeammatesApi* | [**redeemInvitation**](docs/TeammatesApi.md#redeemInvitation) | **GET** /api/v1.0/{appId}/teammates/redeem/{otc} | 
 *Flipdish.TeammatesApi* | [**teammatesAcceptInvitation**](docs/TeammatesApi.md#teammatesAcceptInvitation) | **GET** /api/v1.0/{appId}/teammates/accept/{otc} | 
+*Flipdish.TeammatesApi* | [**teammatesPendingInvitations**](docs/TeammatesApi.md#teammatesPendingInvitations) | **GET** /api/v1.0/teammates/pending-invitations | 
 *Flipdish.TeammatesApi* | [**updateTeammate**](docs/TeammatesApi.md#updateTeammate) | **POST** /api/v1.0/{appId}/teammates/{id} | 
 *Flipdish.TerminalIotApi* | [**getTerminalIotConnection**](docs/TerminalIotApi.md#getTerminalIotConnection) | **POST** /api/v1.0/terminaliot/connect | 
 *Flipdish.TipsApi* | [**tipConfigGet**](docs/TipsApi.md#tipConfigGet) | **GET** /api/v1.0/stores/{storeId}/tipconfig | 
@@ -1041,6 +1042,7 @@ Class | Method | HTTP request | Description
  - [Flipdish.PayoutRequestIds](docs/PayoutRequestIds.md)
  - [Flipdish.PayoutStore](docs/PayoutStore.md)
  - [Flipdish.PayoutSummary](docs/PayoutSummary.md)
+ - [Flipdish.PendingInvitation](docs/PendingInvitation.md)
  - [Flipdish.PendingMenuChanges](docs/PendingMenuChanges.md)
  - [Flipdish.PendingMenuChangesSummaries](docs/PendingMenuChangesSummaries.md)
  - [Flipdish.PercentDiscountDetails](docs/PercentDiscountDetails.md)
@@ -1121,6 +1123,7 @@ Class | Method | HTTP request | Description
  - [Flipdish.RestApiArrayResultOrderBatch](docs/RestApiArrayResultOrderBatch.md)
  - [Flipdish.RestApiArrayResultOrderFulfillmentStatus](docs/RestApiArrayResultOrderFulfillmentStatus.md)
  - [Flipdish.RestApiArrayResultPayoutSummary](docs/RestApiArrayResultPayoutSummary.md)
+ - [Flipdish.RestApiArrayResultPendingInvitation](docs/RestApiArrayResultPendingInvitation.md)
  - [Flipdish.RestApiArrayResultPendingMenuChangesSummaries](docs/RestApiArrayResultPendingMenuChangesSummaries.md)
  - [Flipdish.RestApiArrayResultPreOrderTime](docs/RestApiArrayResultPreOrderTime.md)
  - [Flipdish.RestApiArrayResultProcessingFeeConfig](docs/RestApiArrayResultProcessingFeeConfig.md)

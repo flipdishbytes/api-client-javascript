@@ -14,6 +14,7 @@
 
 import ApiClient from "../ApiClient";
 import CreateTeammate from '../model/CreateTeammate';
+import RestApiArrayResultPendingInvitation from '../model/RestApiArrayResultPendingInvitation';
 import RestApiArrayResultTeammate from '../model/RestApiArrayResultTeammate';
 import RestApiErrorResult from '../model/RestApiErrorResult';
 import RestApiForbiddenResult from '../model/RestApiForbiddenResult';
@@ -357,6 +358,41 @@ export default class TeammatesApi {
       let returnType = RestApiResultAcceptInvitationResult;
       return this.apiClient.callApi(
         '/api/v1.0/{appId}/teammates/accept/{otc}', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the teammatesPendingInvitations operation.
+     * @callback module:api/TeammatesApi~teammatesPendingInvitationsCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/RestApiArrayResultPendingInvitation} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {module:api/TeammatesApi~teammatesPendingInvitationsCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/RestApiArrayResultPendingInvitation}
+     */
+    teammatesPendingInvitations(callback) {
+      let postBody = null;
+
+      let pathParams = {
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = [];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'Data'];
+      let returnType = RestApiArrayResultPendingInvitation;
+      return this.apiClient.callApi(
+        '/api/v1.0/teammates/pending-invitations', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );

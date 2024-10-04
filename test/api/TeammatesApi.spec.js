@@ -118,6 +118,16 @@
         done();
       });
     });
+    describe('teammatesPendingInvitations', function() {
+      it('should call teammatesPendingInvitations successfully', function(done) {
+        //uncomment below and update the code to test teammatesPendingInvitations
+        //instance.teammatesPendingInvitations(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('updateTeammate', function() {
       it('should call updateTeammate successfully', function(done) {
         //uncomment below and update the code to test updateTeammate
