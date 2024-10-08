@@ -550,6 +550,7 @@ Class | Method | HTTP request | Description
 *Flipdish.RestaurantVouchersPayGreenApi* | [**listPayGreenConfigurations**](docs/RestaurantVouchersPayGreenApi.md#listPayGreenConfigurations) | **GET** /api/v1.0/{appId}/restaurant-vouchers/paygreen/{paygreenConfigurationId} | 
 *Flipdish.RestaurantVouchersPayGreenApi* | [**updatePayGreenConfiguration**](docs/RestaurantVouchersPayGreenApi.md#updatePayGreenConfiguration) | **POST** /api/v1.0/{appId}/restaurant-vouchers/paygreen/{paygreenConfigurationId} | 
 *Flipdish.RestaurantVouchersPayGreenApi* | [**updateStorePayGreenConfiguration**](docs/RestaurantVouchersPayGreenApi.md#updateStorePayGreenConfiguration) | **POST** /api/v1.0/{appId}/restaurant-vouchers/paygreen/stores/{storeId} | 
+*Flipdish.StoreGroupsApi* | [**assignStoresToStoreGroup**](docs/StoreGroupsApi.md#assignStoresToStoreGroup) | **POST** /api/v1.0/{appId}/storegroups/{storeGroupId}/assignStores | 
 *Flipdish.StoreGroupsApi* | [**createStoreGroup**](docs/StoreGroupsApi.md#createStoreGroup) | **POST** /api/v1.0/{appNameId}/storegroups | 
 *Flipdish.StoreGroupsApi* | [**getStoreGroup**](docs/StoreGroupsApi.md#getStoreGroup) | **GET** /api/v1.0/storegroups/{storeGroupId} | 
 *Flipdish.StoreGroupsApi* | [**getStoreGroups**](docs/StoreGroupsApi.md#getStoreGroups) | **GET** /api/v1.0/{appNameId}/storegroups | 

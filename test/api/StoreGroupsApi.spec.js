@@ -48,6 +48,16 @@
   }
 
   describe('StoreGroupsApi', function() {
+    describe('assignStoresToStoreGroup', function() {
+      it('should call assignStoresToStoreGroup successfully', function(done) {
+        //uncomment below and update the code to test assignStoresToStoreGroup
+        //instance.assignStoresToStoreGroup(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('createStoreGroup', function() {
       it('should call createStoreGroup successfully', function(done) {
         //uncomment below and update the code to test createStoreGroup

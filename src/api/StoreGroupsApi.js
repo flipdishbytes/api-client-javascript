@@ -42,6 +42,57 @@ export default class StoreGroupsApi {
 
 
     /**
+     * Callback function to receive the result of the assignStoresToStoreGroup operation.
+     * @callback module:api/StoreGroupsApi~assignStoresToStoreGroupCallback
+     * @param {String} error Error message, if any.
+     * @param data This operation does not return a value.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {String} appId 
+     * @param {Number} storeGroupId 
+     * @param {Array.<Number>} storeIds 
+     * @param {module:api/StoreGroupsApi~assignStoresToStoreGroupCallback} callback The callback function, accepting three arguments: error, data, response
+     */
+    assignStoresToStoreGroup(appId, storeGroupId, storeIds, callback) {
+      let postBody = storeIds;
+      // verify the required parameter 'appId' is set
+      if (appId === undefined || appId === null) {
+        throw new Error("Missing the required parameter 'appId' when calling assignStoresToStoreGroup");
+      }
+      // verify the required parameter 'storeGroupId' is set
+      if (storeGroupId === undefined || storeGroupId === null) {
+        throw new Error("Missing the required parameter 'storeGroupId' when calling assignStoresToStoreGroup");
+      }
+      // verify the required parameter 'storeIds' is set
+      if (storeIds === undefined || storeIds === null) {
+        throw new Error("Missing the required parameter 'storeIds' when calling assignStoresToStoreGroup");
+      }
+
+      let pathParams = {
+        'appId': appId,
+        'storeGroupId': storeGroupId
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded'];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
+      let returnType = null;
+      return this.apiClient.callApi(
+        '/api/v1.0/{appId}/storegroups/{storeGroupId}/assignStores', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
      * Callback function to receive the result of the createStoreGroup operation.
      * @callback module:api/StoreGroupsApi~createStoreGroupCallback
      * @param {String} error Error message, if any.
