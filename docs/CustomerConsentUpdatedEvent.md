@@ -5,6 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **EventName** | **String** | The event name | [optional] 
+**OrgId** | **String** | Organisation Id | [optional] 
 **Enabled** | **Boolean** | Enabled | [optional] 
 **Description** | **String** | Description | [optional] 
 **User** | [**UserEventInfo**](UserEventInfo.md) |  | [optional] 

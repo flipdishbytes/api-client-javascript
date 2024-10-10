@@ -52,6 +52,9 @@ class CustomerConsentUpdatedEvent {
             if (data.hasOwnProperty('EventName')) {
                 obj['EventName'] = ApiClient.convertToType(data['EventName'], 'String');
             }
+            if (data.hasOwnProperty('OrgId')) {
+                obj['OrgId'] = ApiClient.convertToType(data['OrgId'], 'String');
+            }
             if (data.hasOwnProperty('Enabled')) {
                 obj['Enabled'] = ApiClient.convertToType(data['Enabled'], 'Boolean');
             }
@@ -88,6 +91,12 @@ class CustomerConsentUpdatedEvent {
  * @member {String} EventName
  */
 CustomerConsentUpdatedEvent.prototype['EventName'] = undefined;
+
+/**
+ * Organisation Id
+ * @member {String} OrgId
+ */
+CustomerConsentUpdatedEvent.prototype['OrgId'] = undefined;
 
 /**
  * Enabled
