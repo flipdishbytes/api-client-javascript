@@ -60,6 +60,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property OrgId (base name: "OrgId")', function() {
+      // uncomment below and update the code to test the property OrgId
+      //var instance = new Flipdish.OrderAcceptedEvent();
+      //expect(instance).to.be();
+    });
+
     it('should have the property Description (base name: "Description")', function() {
       // uncomment below and update the code to test the property Description
       //var instance = new Flipdish.OrderAcceptedEvent();

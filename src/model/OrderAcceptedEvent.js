@@ -53,6 +53,9 @@ class OrderAcceptedEvent {
             if (data.hasOwnProperty('EventName')) {
                 obj['EventName'] = ApiClient.convertToType(data['EventName'], 'String');
             }
+            if (data.hasOwnProperty('OrgId')) {
+                obj['OrgId'] = ApiClient.convertToType(data['OrgId'], 'String');
+            }
             if (data.hasOwnProperty('Description')) {
                 obj['Description'] = ApiClient.convertToType(data['Description'], 'String');
             }
@@ -92,6 +95,12 @@ class OrderAcceptedEvent {
  * @member {String} EventName
  */
 OrderAcceptedEvent.prototype['EventName'] = undefined;
+
+/**
+ * Organisation Id
+ * @member {String} OrgId
+ */
+OrderAcceptedEvent.prototype['OrgId'] = undefined;
 
 /**
  * Description
