@@ -72,12 +72,6 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property CountryId (base name: "CountryId")', function() {
-      // uncomment below and update the code to test the property CountryId
-      //var instance = new Flipdish.App();
-      //expect(instance).to.be();
-    });
-
     it('should have the property LogoImageUrl (base name: "LogoImageUrl")', function() {
       // uncomment below and update the code to test the property LogoImageUrl
       //var instance = new Flipdish.App();
@@ -182,6 +176,12 @@
 
     it('should have the property CookieConsentPromptEnabled (base name: "CookieConsentPromptEnabled")', function() {
       // uncomment below and update the code to test the property CookieConsentPromptEnabled
+      //var instance = new Flipdish.App();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property CountryId (base name: "CountryId")', function() {
+      // uncomment below and update the code to test the property CountryId
       //var instance = new Flipdish.App();
       //expect(instance).to.be();
     });

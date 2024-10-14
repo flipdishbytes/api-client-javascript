@@ -59,9 +59,6 @@ class App {
             if (data.hasOwnProperty('HasAndroidApp')) {
                 obj['HasAndroidApp'] = ApiClient.convertToType(data['HasAndroidApp'], 'Boolean');
             }
-            if (data.hasOwnProperty('CountryId')) {
-                obj['CountryId'] = ApiClient.convertToType(data['CountryId'], 'String');
-            }
             if (data.hasOwnProperty('LogoImageUrl')) {
                 obj['LogoImageUrl'] = ApiClient.convertToType(data['LogoImageUrl'], 'String');
             }
@@ -116,6 +113,9 @@ class App {
             if (data.hasOwnProperty('CookieConsentPromptEnabled')) {
                 obj['CookieConsentPromptEnabled'] = ApiClient.convertToType(data['CookieConsentPromptEnabled'], 'Boolean');
             }
+            if (data.hasOwnProperty('CountryId')) {
+                obj['CountryId'] = ApiClient.convertToType(data['CountryId'], 'String');
+            }
         }
         return obj;
     }
@@ -140,12 +140,6 @@ App.prototype['HasIosApp'] = undefined;
  * @member {Boolean} HasAndroidApp
  */
 App.prototype['HasAndroidApp'] = undefined;
-
-/**
- * Country identifier in ISO 3166-1 alpha-2 format.   This code is set automatically based on the locations of the Stores in the App.     The App Country is used    - to determine how to parse mobile phone numbers that are entered in their local numbering format   - to determine if country specific payment methods should be offered   - in various fraud checks
- * @member {String} CountryId
- */
-App.prototype['CountryId'] = undefined;
 
 /**
  * Application Logo.
@@ -235,7 +229,7 @@ App.prototype['KioskPrimaryColour'] = undefined;
 App.prototype['ApplicationCategory'] = undefined;
 
 /**
- * Panacea is the term used for websites that are hosted on the my.flipdish.com domain. This value is true when the App's website is hosted on this domain.  The aternative to using Panacea websites is to use a custom domain.
+ * Panacea is the term used for websites that are hosted on the my.flipdish.com domain. This value is true when the App's website is hosted on this domain.  The alternative to using Panacea websites is to use a custom domain.
  * @member {Boolean} IsPanaceaEnabled
  */
 App.prototype['IsPanaceaEnabled'] = undefined;
@@ -251,6 +245,12 @@ App.prototype['PanaceaVanityUrl'] = undefined;
  * @member {Boolean} CookieConsentPromptEnabled
  */
 App.prototype['CookieConsentPromptEnabled'] = undefined;
+
+/**
+ * Country identifier in ISO 3166-1 alpha-2 format.   This code is set automatically based on the locations of the Stores in the App.     The App Country is used    - to determine how to parse mobile phone numbers that are entered in their local numbering format   - to determine if country specific payment methods should be offered   - in various fraud checks
+ * @member {String} CountryId
+ */
+App.prototype['CountryId'] = undefined;
 
 
 
