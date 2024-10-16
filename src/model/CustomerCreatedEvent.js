@@ -52,6 +52,9 @@ class CustomerCreatedEvent {
             if (data.hasOwnProperty('EventName')) {
                 obj['EventName'] = ApiClient.convertToType(data['EventName'], 'String');
             }
+            if (data.hasOwnProperty('OrgId')) {
+                obj['OrgId'] = ApiClient.convertToType(data['OrgId'], 'String');
+            }
             if (data.hasOwnProperty('User')) {
                 obj['User'] = UserEventInfo.constructFromObject(data['User']);
             }
@@ -85,6 +88,12 @@ class CustomerCreatedEvent {
  * @member {String} EventName
  */
 CustomerCreatedEvent.prototype['EventName'] = undefined;
+
+/**
+ * Organisation Id
+ * @member {String} OrgId
+ */
+CustomerCreatedEvent.prototype['OrgId'] = undefined;
 
 /**
  * @member {module:model/UserEventInfo} User
