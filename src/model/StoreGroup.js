@@ -57,6 +57,12 @@ class StoreGroup {
             if (data.hasOwnProperty('GeneralRatingCount')) {
                 obj['GeneralRatingCount'] = ApiClient.convertToType(data['GeneralRatingCount'], 'Number');
             }
+            if (data.hasOwnProperty('DeliveryMenuMessage')) {
+                obj['DeliveryMenuMessage'] = ApiClient.convertToType(data['DeliveryMenuMessage'], 'String');
+            }
+            if (data.hasOwnProperty('PickupMenuMessage')) {
+                obj['PickupMenuMessage'] = ApiClient.convertToType(data['PickupMenuMessage'], 'String');
+            }
             if (data.hasOwnProperty('Name')) {
                 obj['Name'] = ApiClient.convertToType(data['Name'], 'String');
             }
@@ -87,6 +93,18 @@ StoreGroup.prototype['GeneralRating'] = undefined;
  * @member {Number} GeneralRatingCount
  */
 StoreGroup.prototype['GeneralRatingCount'] = undefined;
+
+/**
+ * Delivery menu message
+ * @member {String} DeliveryMenuMessage
+ */
+StoreGroup.prototype['DeliveryMenuMessage'] = undefined;
+
+/**
+ * Pickup menu message
+ * @member {String} PickupMenuMessage
+ */
+StoreGroup.prototype['PickupMenuMessage'] = undefined;
 
 /**
  * Store Group Name

@@ -10,7 +10,7 @@ Method | HTTP request | Description
 [**getStoreGroups**](StoreGroupsApi.md#getStoreGroups) | **GET** /api/v1.0/{appNameId}/storegroups | 
 [**getStoreGroupsExtended**](StoreGroupsApi.md#getStoreGroupsExtended) | **GET** /api/v1.0/{appNameId}/storegroups/extended | 
 [**removeStoreGroup**](StoreGroupsApi.md#removeStoreGroup) | **DELETE** /api/v1.0/storegroups/{storeGroupId} | 
-[**setMenuMessagePerDeliveryType**](StoreGroupsApi.md#setMenuMessagePerDeliveryType) | **POST** /api/v1.0/storegroups/{storeGroupId}/{deliveryType}/MenuMessagePerDeliveryType | 
+[**setCustomerMessages**](StoreGroupsApi.md#setCustomerMessages) | **POST** /api/v1.0/storegroups/{storeGroupId}/CustomerMessages | 
 [**updateStoreGroup**](StoreGroupsApi.md#updateStoreGroup) | **POST** /api/v1.0/storegroups/{storeGroupId} | 
 
 
@@ -321,9 +321,9 @@ null (empty response body)
 - **Accept**: application/json, text/json, application/xml, text/xml
 
 
-## setMenuMessagePerDeliveryType
+## setCustomerMessages
 
-> setMenuMessagePerDeliveryType(storeGroupId, deliveryType, menuMessage)
+> setCustomerMessages(storeGroupId, customerMessages)
 
 
 
@@ -338,9 +338,8 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 let apiInstance = new Flipdish.StoreGroupsApi();
 let storeGroupId = 56; // Number | 
-let deliveryType = "deliveryType_example"; // String | 
-let menuMessage = "menuMessage_example"; // String | 
-apiInstance.setMenuMessagePerDeliveryType(storeGroupId, deliveryType, menuMessage, (error, data, response) => {
+let customerMessages = new Flipdish.CustomerMessages(); // CustomerMessages | 
+apiInstance.setCustomerMessages(storeGroupId, customerMessages, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -355,8 +354,7 @@ apiInstance.setMenuMessagePerDeliveryType(storeGroupId, deliveryType, menuMessag
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **storeGroupId** | **Number**|  | 
- **deliveryType** | **String**|  | 
- **menuMessage** | **String**|  | 
+ **customerMessages** | [**CustomerMessages**](CustomerMessages.md)|  | 
 
 ### Return type
 

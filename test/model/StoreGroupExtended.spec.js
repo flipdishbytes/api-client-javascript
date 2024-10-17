@@ -54,18 +54,6 @@
       //expect(instance).to.be.a(Flipdish.StoreGroupExtended);
     });
 
-    it('should have the property DeliveryMenuMessage (base name: "DeliveryMenuMessage")', function() {
-      // uncomment below and update the code to test the property DeliveryMenuMessage
-      //var instance = new Flipdish.StoreGroupExtended();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property PickupMenuMessage (base name: "PickupMenuMessage")', function() {
-      // uncomment below and update the code to test the property PickupMenuMessage
-      //var instance = new Flipdish.StoreGroupExtended();
-      //expect(instance).to.be();
-    });
-
     it('should have the property TotalStores (base name: "TotalStores")', function() {
       // uncomment below and update the code to test the property TotalStores
       //var instance = new Flipdish.StoreGroupExtended();
@@ -98,6 +86,18 @@
 
     it('should have the property GeneralRatingCount (base name: "GeneralRatingCount")', function() {
       // uncomment below and update the code to test the property GeneralRatingCount
+      //var instance = new Flipdish.StoreGroupExtended();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property DeliveryMenuMessage (base name: "DeliveryMenuMessage")', function() {
+      // uncomment below and update the code to test the property DeliveryMenuMessage
+      //var instance = new Flipdish.StoreGroupExtended();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property PickupMenuMessage (base name: "PickupMenuMessage")', function() {
+      // uncomment below and update the code to test the property PickupMenuMessage
       //var instance = new Flipdish.StoreGroupExtended();
       //expect(instance).to.be();
     });

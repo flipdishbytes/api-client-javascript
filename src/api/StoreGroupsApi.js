@@ -13,6 +13,7 @@
 
 
 import ApiClient from "../ApiClient";
+import CustomerMessages from '../model/CustomerMessages';
 import RestApiErrorResult from '../model/RestApiErrorResult';
 import RestApiForbiddenResult from '../model/RestApiForbiddenResult';
 import RestApiPaginationResultStoreGroup from '../model/RestApiPaginationResultStoreGroup';
@@ -320,8 +321,8 @@ export default class StoreGroupsApi {
     }
 
     /**
-     * Callback function to receive the result of the setMenuMessagePerDeliveryType operation.
-     * @callback module:api/StoreGroupsApi~setMenuMessagePerDeliveryTypeCallback
+     * Callback function to receive the result of the setCustomerMessages operation.
+     * @callback module:api/StoreGroupsApi~setCustomerMessagesCallback
      * @param {String} error Error message, if any.
      * @param data This operation does not return a value.
      * @param {String} response The complete HTTP response.
@@ -329,28 +330,22 @@ export default class StoreGroupsApi {
 
     /**
      * @param {Number} storeGroupId 
-     * @param {module:model/String} deliveryType 
-     * @param {String} menuMessage 
-     * @param {module:api/StoreGroupsApi~setMenuMessagePerDeliveryTypeCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:model/CustomerMessages} customerMessages 
+     * @param {module:api/StoreGroupsApi~setCustomerMessagesCallback} callback The callback function, accepting three arguments: error, data, response
      */
-    setMenuMessagePerDeliveryType(storeGroupId, deliveryType, menuMessage, callback) {
-      let postBody = menuMessage;
+    setCustomerMessages(storeGroupId, customerMessages, callback) {
+      let postBody = customerMessages;
       // verify the required parameter 'storeGroupId' is set
       if (storeGroupId === undefined || storeGroupId === null) {
-        throw new Error("Missing the required parameter 'storeGroupId' when calling setMenuMessagePerDeliveryType");
+        throw new Error("Missing the required parameter 'storeGroupId' when calling setCustomerMessages");
       }
-      // verify the required parameter 'deliveryType' is set
-      if (deliveryType === undefined || deliveryType === null) {
-        throw new Error("Missing the required parameter 'deliveryType' when calling setMenuMessagePerDeliveryType");
-      }
-      // verify the required parameter 'menuMessage' is set
-      if (menuMessage === undefined || menuMessage === null) {
-        throw new Error("Missing the required parameter 'menuMessage' when calling setMenuMessagePerDeliveryType");
+      // verify the required parameter 'customerMessages' is set
+      if (customerMessages === undefined || customerMessages === null) {
+        throw new Error("Missing the required parameter 'customerMessages' when calling setCustomerMessages");
       }
 
       let pathParams = {
-        'storeGroupId': storeGroupId,
-        'deliveryType': deliveryType
+        'storeGroupId': storeGroupId
       };
       let queryParams = {
       };
@@ -364,7 +359,7 @@ export default class StoreGroupsApi {
       let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
       let returnType = null;
       return this.apiClient.callApi(
-        '/api/v1.0/storegroups/{storeGroupId}/{deliveryType}/MenuMessagePerDeliveryType', 'POST',
+        '/api/v1.0/storegroups/{storeGroupId}/CustomerMessages', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );

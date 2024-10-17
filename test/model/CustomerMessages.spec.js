@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new Flipdish.StoreGroup();
+    instance = new Flipdish.CustomerMessages();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,52 +47,22 @@
       object[property] = value;
   }
 
-  describe('StoreGroup', function() {
-    it('should create an instance of StoreGroup', function() {
-      // uncomment below and update the code to test StoreGroup
-      //var instane = new Flipdish.StoreGroup();
-      //expect(instance).to.be.a(Flipdish.StoreGroup);
-    });
-
-    it('should have the property StoreGroupId (base name: "StoreGroupId")', function() {
-      // uncomment below and update the code to test the property StoreGroupId
-      //var instance = new Flipdish.StoreGroup();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property GeneralRating (base name: "GeneralRating")', function() {
-      // uncomment below and update the code to test the property GeneralRating
-      //var instance = new Flipdish.StoreGroup();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property GeneralRatingCount (base name: "GeneralRatingCount")', function() {
-      // uncomment below and update the code to test the property GeneralRatingCount
-      //var instance = new Flipdish.StoreGroup();
-      //expect(instance).to.be();
+  describe('CustomerMessages', function() {
+    it('should create an instance of CustomerMessages', function() {
+      // uncomment below and update the code to test CustomerMessages
+      //var instane = new Flipdish.CustomerMessages();
+      //expect(instance).to.be.a(Flipdish.CustomerMessages);
     });
 
     it('should have the property DeliveryMenuMessage (base name: "DeliveryMenuMessage")', function() {
       // uncomment below and update the code to test the property DeliveryMenuMessage
-      //var instance = new Flipdish.StoreGroup();
+      //var instance = new Flipdish.CustomerMessages();
       //expect(instance).to.be();
     });
 
     it('should have the property PickupMenuMessage (base name: "PickupMenuMessage")', function() {
       // uncomment below and update the code to test the property PickupMenuMessage
-      //var instance = new Flipdish.StoreGroup();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property Name (base name: "Name")', function() {
-      // uncomment below and update the code to test the property Name
-      //var instance = new Flipdish.StoreGroup();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property Currency (base name: "Currency")', function() {
-      // uncomment below and update the code to test the property Currency
-      //var instance = new Flipdish.StoreGroup();
+      //var instance = new Flipdish.CustomerMessages();
       //expect(instance).to.be();
     });
 

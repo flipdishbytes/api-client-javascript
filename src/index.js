@@ -136,6 +136,7 @@ import CustomerCreateModel from './model/CustomerCreateModel';
 import CustomerCreatedEvent from './model/CustomerCreatedEvent';
 import CustomerDeliveryTrackingOrder from './model/CustomerDeliveryTrackingOrder';
 import CustomerDeliveryTrackingOrderLine from './model/CustomerDeliveryTrackingOrderLine';
+import CustomerMessages from './model/CustomerMessages';
 import CustomerSummary from './model/CustomerSummary';
 import CustomerUpdateModel from './model/CustomerUpdateModel';
 import CustomerUpdatedEvent from './model/CustomerUpdatedEvent';
@@ -1675,6 +1676,12 @@ export {
      * @property {module:model/CustomerDeliveryTrackingOrderLine}
      */
     CustomerDeliveryTrackingOrderLine,
+
+    /**
+     * The CustomerMessages model constructor.
+     * @property {module:model/CustomerMessages}
+     */
+    CustomerMessages,
 
     /**
      * The CustomerSummary model constructor.

@@ -556,7 +556,7 @@ Class | Method | HTTP request | Description
 *Flipdish.StoreGroupsApi* | [**getStoreGroups**](docs/StoreGroupsApi.md#getStoreGroups) | **GET** /api/v1.0/{appNameId}/storegroups | 
 *Flipdish.StoreGroupsApi* | [**getStoreGroupsExtended**](docs/StoreGroupsApi.md#getStoreGroupsExtended) | **GET** /api/v1.0/{appNameId}/storegroups/extended | 
 *Flipdish.StoreGroupsApi* | [**removeStoreGroup**](docs/StoreGroupsApi.md#removeStoreGroup) | **DELETE** /api/v1.0/storegroups/{storeGroupId} | 
-*Flipdish.StoreGroupsApi* | [**setMenuMessagePerDeliveryType**](docs/StoreGroupsApi.md#setMenuMessagePerDeliveryType) | **POST** /api/v1.0/storegroups/{storeGroupId}/{deliveryType}/MenuMessagePerDeliveryType | 
+*Flipdish.StoreGroupsApi* | [**setCustomerMessages**](docs/StoreGroupsApi.md#setCustomerMessages) | **POST** /api/v1.0/storegroups/{storeGroupId}/CustomerMessages | 
 *Flipdish.StoreGroupsApi* | [**updateStoreGroup**](docs/StoreGroupsApi.md#updateStoreGroup) | **POST** /api/v1.0/storegroups/{storeGroupId} | 
 *Flipdish.StoreOrderCapacityApi* | [**getStoreOrderCapacity**](docs/StoreOrderCapacityApi.md#getStoreOrderCapacity) | **GET** /api/v1.0/{appId}/storeordercapacity/{storeId}/{deliveryType} | 
 *Flipdish.StoreOrderCapacityApi* | [**updateStoreOrderCapacityConfig**](docs/StoreOrderCapacityApi.md#updateStoreOrderCapacityConfig) | **POST** /api/v1.0/{appId}/storeordercapacity/{storeId} | 
@@ -781,6 +781,7 @@ Class | Method | HTTP request | Description
  - [Flipdish.CustomerCreatedEvent](docs/CustomerCreatedEvent.md)
  - [Flipdish.CustomerDeliveryTrackingOrder](docs/CustomerDeliveryTrackingOrder.md)
  - [Flipdish.CustomerDeliveryTrackingOrderLine](docs/CustomerDeliveryTrackingOrderLine.md)
+ - [Flipdish.CustomerMessages](docs/CustomerMessages.md)
  - [Flipdish.CustomerSummary](docs/CustomerSummary.md)
  - [Flipdish.CustomerUpdateModel](docs/CustomerUpdateModel.md)
  - [Flipdish.CustomerUpdatedEvent](docs/CustomerUpdatedEvent.md)

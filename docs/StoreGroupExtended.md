@@ -4,14 +4,14 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**DeliveryMenuMessage** | **String** | Delivery Menu Message | [optional] 
-**PickupMenuMessage** | **String** | Pickup Menu Message | [optional] 
 **TotalStores** | **Number** | Total Amount of Stores | [optional] 
 **GroupedCoordinates** | [**[GroupedCoordinates]**](GroupedCoordinates.md) | Grouped store coordinates | [optional] 
 **StoreHeaders** | [**[StoreHeader]**](StoreHeader.md) | Store Headers associated with Store Group | [optional] 
 **StoreGroupId** | **Number** | Unique Store Group Identifier | [optional] 
 **GeneralRating** | **Number** | Store Group rating | [optional] 
 **GeneralRatingCount** | **Number** | Store Group rating count | [optional] 
+**DeliveryMenuMessage** | **String** | Delivery menu message | [optional] 
+**PickupMenuMessage** | **String** | Pickup menu message | [optional] 
 **Name** | **String** | Store Group Name | [optional] 
 **Currency** | **String** | Currency used by the stores in this group | [optional] 
 

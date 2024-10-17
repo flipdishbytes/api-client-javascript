@@ -50,12 +50,6 @@ class StoreGroupExtended {
         if (data) {
             obj = obj || new StoreGroupExtended();
 
-            if (data.hasOwnProperty('DeliveryMenuMessage')) {
-                obj['DeliveryMenuMessage'] = ApiClient.convertToType(data['DeliveryMenuMessage'], 'String');
-            }
-            if (data.hasOwnProperty('PickupMenuMessage')) {
-                obj['PickupMenuMessage'] = ApiClient.convertToType(data['PickupMenuMessage'], 'String');
-            }
             if (data.hasOwnProperty('TotalStores')) {
                 obj['TotalStores'] = ApiClient.convertToType(data['TotalStores'], 'Number');
             }
@@ -74,6 +68,12 @@ class StoreGroupExtended {
             if (data.hasOwnProperty('GeneralRatingCount')) {
                 obj['GeneralRatingCount'] = ApiClient.convertToType(data['GeneralRatingCount'], 'Number');
             }
+            if (data.hasOwnProperty('DeliveryMenuMessage')) {
+                obj['DeliveryMenuMessage'] = ApiClient.convertToType(data['DeliveryMenuMessage'], 'String');
+            }
+            if (data.hasOwnProperty('PickupMenuMessage')) {
+                obj['PickupMenuMessage'] = ApiClient.convertToType(data['PickupMenuMessage'], 'String');
+            }
             if (data.hasOwnProperty('Name')) {
                 obj['Name'] = ApiClient.convertToType(data['Name'], 'String');
             }
@@ -86,18 +86,6 @@ class StoreGroupExtended {
 
 
 }
-
-/**
- * Delivery Menu Message
- * @member {String} DeliveryMenuMessage
- */
-StoreGroupExtended.prototype['DeliveryMenuMessage'] = undefined;
-
-/**
- * Pickup Menu Message
- * @member {String} PickupMenuMessage
- */
-StoreGroupExtended.prototype['PickupMenuMessage'] = undefined;
 
 /**
  * Total Amount of Stores
@@ -134,6 +122,18 @@ StoreGroupExtended.prototype['GeneralRating'] = undefined;
  * @member {Number} GeneralRatingCount
  */
 StoreGroupExtended.prototype['GeneralRatingCount'] = undefined;
+
+/**
+ * Delivery menu message
+ * @member {String} DeliveryMenuMessage
+ */
+StoreGroupExtended.prototype['DeliveryMenuMessage'] = undefined;
+
+/**
+ * Pickup menu message
+ * @member {String} PickupMenuMessage
+ */
+StoreGroupExtended.prototype['PickupMenuMessage'] = undefined;
 
 /**
  * Store Group Name

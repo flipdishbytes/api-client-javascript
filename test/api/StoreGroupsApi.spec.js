@@ -108,10 +108,10 @@
         done();
       });
     });
-    describe('setMenuMessagePerDeliveryType', function() {
-      it('should call setMenuMessagePerDeliveryType successfully', function(done) {
-        //uncomment below and update the code to test setMenuMessagePerDeliveryType
-        //instance.setMenuMessagePerDeliveryType(function(error) {
+    describe('setCustomerMessages', function() {
+      it('should call setCustomerMessages successfully', function(done) {
+        //uncomment below and update the code to test setCustomerMessages
+        //instance.setCustomerMessages(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
