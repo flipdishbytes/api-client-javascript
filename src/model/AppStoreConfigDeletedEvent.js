@@ -12,6 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
+import UserEventInfo from './UserEventInfo';
 
 /**
  * The AppStoreConfigDeletedEvent model module.
@@ -57,6 +58,9 @@ class AppStoreConfigDeletedEvent {
             if (data.hasOwnProperty('AppStoreAppConfigurationId')) {
                 obj['AppStoreAppConfigurationId'] = ApiClient.convertToType(data['AppStoreAppConfigurationId'], 'String');
             }
+            if (data.hasOwnProperty('User')) {
+                obj['User'] = UserEventInfo.constructFromObject(data['User']);
+            }
             if (data.hasOwnProperty('FlipdishEventId')) {
                 obj['FlipdishEventId'] = ApiClient.convertToType(data['FlipdishEventId'], 'String');
             }
@@ -96,6 +100,11 @@ AppStoreConfigDeletedEvent.prototype['AppStoreAppId'] = undefined;
  * @member {String} AppStoreAppConfigurationId
  */
 AppStoreConfigDeletedEvent.prototype['AppStoreAppConfigurationId'] = undefined;
+
+/**
+ * @member {module:model/UserEventInfo} User
+ */
+AppStoreConfigDeletedEvent.prototype['User'] = undefined;
 
 /**
  * The identitfier of the event

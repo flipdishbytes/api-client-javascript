@@ -13,6 +13,7 @@
 
 import ApiClient from '../ApiClient';
 import UpdateAppStoreAppConfigurationWebhookDTO from './UpdateAppStoreAppConfigurationWebhookDTO';
+import UserEventInfo from './UserEventInfo';
 
 /**
  * The AppStoreConfigUpdatedEvent model module.
@@ -58,6 +59,9 @@ class AppStoreConfigUpdatedEvent {
             if (data.hasOwnProperty('AppStoreAppConfiguration')) {
                 obj['AppStoreAppConfiguration'] = UpdateAppStoreAppConfigurationWebhookDTO.constructFromObject(data['AppStoreAppConfiguration']);
             }
+            if (data.hasOwnProperty('User')) {
+                obj['User'] = UserEventInfo.constructFromObject(data['User']);
+            }
             if (data.hasOwnProperty('FlipdishEventId')) {
                 obj['FlipdishEventId'] = ApiClient.convertToType(data['FlipdishEventId'], 'String');
             }
@@ -96,6 +100,11 @@ AppStoreConfigUpdatedEvent.prototype['AppStoreAppId'] = undefined;
  * @member {module:model/UpdateAppStoreAppConfigurationWebhookDTO} AppStoreAppConfiguration
  */
 AppStoreConfigUpdatedEvent.prototype['AppStoreAppConfiguration'] = undefined;
+
+/**
+ * @member {module:model/UserEventInfo} User
+ */
+AppStoreConfigUpdatedEvent.prototype['User'] = undefined;
 
 /**
  * The identitfier of the event

@@ -72,6 +72,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property User (base name: "User")', function() {
+      // uncomment below and update the code to test the property User
+      //var instance = new Flipdish.AppStoreConfigDeletedEvent();
+      //expect(instance).to.be();
+    });
+
     it('should have the property FlipdishEventId (base name: "FlipdishEventId")', function() {
       // uncomment below and update the code to test the property FlipdishEventId
       //var instance = new Flipdish.AppStoreConfigDeletedEvent();
