@@ -391,6 +391,8 @@ Name | Type | Description | Notes
 
 * `ViewSubscriptions` (value: `"ViewSubscriptions"`)
 
+* `ViewInvoices` (value: `"ViewInvoices"`)
+
 
 
 

@@ -58,6 +58,36 @@
         done();
       });
     });
+    describe('invoicePdf', function() {
+      it('should call invoicePdf successfully', function(done) {
+        //uncomment below and update the code to test invoicePdf
+        //instance.invoicePdf(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('listInvoices', function() {
+      it('should call listInvoices successfully', function(done) {
+        //uncomment below and update the code to test listInvoices
+        //instance.listInvoices(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('listSubscriptionInvoices', function() {
+      it('should call listSubscriptionInvoices successfully', function(done) {
+        //uncomment below and update the code to test listSubscriptionInvoices
+        //instance.listSubscriptionInvoices(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
   });
 
 }));

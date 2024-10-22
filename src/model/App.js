@@ -1326,7 +1326,13 @@ App['AppResourceSetEnum'] = {
      * value: "ViewSubscriptions"
      * @const
      */
-    "ViewSubscriptions": "ViewSubscriptions"
+    "ViewSubscriptions": "ViewSubscriptions",
+
+    /**
+     * value: "ViewInvoices"
+     * @const
+     */
+    "ViewInvoices": "ViewInvoices"
 };
 
 

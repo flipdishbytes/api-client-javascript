@@ -96,5 +96,157 @@ export default class InvoicesApi {
       );
     }
 
+    /**
+     * Callback function to receive the result of the invoicePdf operation.
+     * @callback module:api/InvoicesApi~invoicePdfCallback
+     * @param {String} error Error message, if any.
+     * @param data This operation does not return a value.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {String} invoiceNumber 
+     * @param {String} appId 
+     * @param {module:api/InvoicesApi~invoicePdfCallback} callback The callback function, accepting three arguments: error, data, response
+     */
+    invoicePdf(invoiceNumber, appId, callback) {
+      let postBody = null;
+      // verify the required parameter 'invoiceNumber' is set
+      if (invoiceNumber === undefined || invoiceNumber === null) {
+        throw new Error("Missing the required parameter 'invoiceNumber' when calling invoicePdf");
+      }
+      // verify the required parameter 'appId' is set
+      if (appId === undefined || appId === null) {
+        throw new Error("Missing the required parameter 'appId' when calling invoicePdf");
+      }
+
+      let pathParams = {
+        'appId': appId
+      };
+      let queryParams = {
+        'invoiceNumber': invoiceNumber
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = [];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
+      let returnType = null;
+      return this.apiClient.callApi(
+        '/api/v1.0/{appId}/invoices/InvoicePdf', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the listInvoices operation.
+     * @callback module:api/InvoicesApi~listInvoicesCallback
+     * @param {String} error Error message, if any.
+     * @param {Object} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {String} appId 
+     * @param {Number} storeId 
+     * @param {module:api/InvoicesApi~listInvoicesCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link Object}
+     */
+    listInvoices(appId, storeId, callback) {
+      let postBody = null;
+      // verify the required parameter 'appId' is set
+      if (appId === undefined || appId === null) {
+        throw new Error("Missing the required parameter 'appId' when calling listInvoices");
+      }
+      // verify the required parameter 'storeId' is set
+      if (storeId === undefined || storeId === null) {
+        throw new Error("Missing the required parameter 'storeId' when calling listInvoices");
+      }
+
+      let pathParams = {
+        'appId': appId
+      };
+      let queryParams = {
+        'storeId': storeId
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = [];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'Data'];
+      let returnType = Object;
+      return this.apiClient.callApi(
+        '/api/v1.0/{appId}/invoices/ListInvoices', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the listSubscriptionInvoices operation.
+     * @callback module:api/InvoicesApi~listSubscriptionInvoicesCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/RestApiFinanceSearchPaginationResultInvoice} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {String} appId 
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.subscriptionId 
+     * @param {Number} opts.limit 
+     * @param {String} opts.pageId 
+     * @param {Boolean} opts.excludeNotOwnedInvoices 
+     * @param {Date} opts.dateFrom 
+     * @param {Date} opts.dateTo 
+     * @param {String} opts.invoiceNumber 
+     * @param {Array.<Number>} opts.storeId 
+     * @param {module:api/InvoicesApi~listSubscriptionInvoicesCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/RestApiFinanceSearchPaginationResultInvoice}
+     */
+    listSubscriptionInvoices(appId, opts, callback) {
+      opts = opts || {};
+      let postBody = null;
+      // verify the required parameter 'appId' is set
+      if (appId === undefined || appId === null) {
+        throw new Error("Missing the required parameter 'appId' when calling listSubscriptionInvoices");
+      }
+
+      let pathParams = {
+        'appId': appId
+      };
+      let queryParams = {
+        'subscriptionId': opts['subscriptionId'],
+        'limit': opts['limit'],
+        'pageId': opts['pageId'],
+        'excludeNotOwnedInvoices': opts['excludeNotOwnedInvoices'],
+        'dateFrom': opts['dateFrom'],
+        'dateTo': opts['dateTo'],
+        'invoiceNumber': opts['invoiceNumber'],
+        'storeId': this.apiClient.buildCollectionParam(opts['storeId'], 'multi')
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = [];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'Data', 'Message', 'ErrorCode', 'StackTrace'];
+      let returnType = RestApiFinanceSearchPaginationResultInvoice;
+      return this.apiClient.callApi(
+        '/api/v1.0/{appId}/invoices/ListSubscriptionInvoices', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
 
 }

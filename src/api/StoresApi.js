@@ -353,10 +353,13 @@ export default class StoresApi {
      * @param {Number} storeGroupId 
      * @param {String} propertyId 
      * @param {module:model/StoreCreateBase} store 
+     * @param {Object} opts Optional parameters
+     * @param {Boolean} opts.autoAssignMenu 
      * @param {module:api/StoresApi~createStoreInPropertyCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/RestApiResultStore}
      */
-    createStoreInProperty(storeGroupId, propertyId, store, callback) {
+    createStoreInProperty(storeGroupId, propertyId, store, opts, callback) {
+      opts = opts || {};
       let postBody = store;
       // verify the required parameter 'storeGroupId' is set
       if (storeGroupId === undefined || storeGroupId === null) {
@@ -375,7 +378,8 @@ export default class StoresApi {
         'propertyId': propertyId
       };
       let queryParams = {
-        'storeGroupId': storeGroupId
+        'storeGroupId': storeGroupId,
+        'autoAssignMenu': opts['autoAssignMenu']
       };
       let headerParams = {
       };

@@ -349,6 +349,9 @@ Class | Method | HTTP request | Description
 *Flipdish.HydraApi* | [**updateKioskSettings**](docs/HydraApi.md#updateKioskSettings) | **POST** /api/v1.0/{appId}/kiosksettings/{deviceId} | 
 *Flipdish.IntercomApi* | [**userHash**](docs/IntercomApi.md#userHash) | **GET** /api/v1.0/intercom/userHash | 
 *Flipdish.InvoicesApi* | [**getInvoices**](docs/InvoicesApi.md#getInvoices) | **GET** /api/v1.0/{appId}/invoices | 
+*Flipdish.InvoicesApi* | [**invoicePdf**](docs/InvoicesApi.md#invoicePdf) | **GET** /api/v1.0/{appId}/invoices/InvoicePdf | 
+*Flipdish.InvoicesApi* | [**listInvoices**](docs/InvoicesApi.md#listInvoices) | **GET** /api/v1.0/{appId}/invoices/ListInvoices | 
+*Flipdish.InvoicesApi* | [**listSubscriptionInvoices**](docs/InvoicesApi.md#listSubscriptionInvoices) | **GET** /api/v1.0/{appId}/invoices/ListSubscriptionInvoices | 
 *Flipdish.KioskEntitlementsApi* | [**queryKioskEntitlements**](docs/KioskEntitlementsApi.md#queryKioskEntitlements) | **GET** /api/v1.0/{appId}/kiosk/entitlements | 
 *Flipdish.KioskEntitlementsApi* | [**queryKioskEntitlementsByOrgId**](docs/KioskEntitlementsApi.md#queryKioskEntitlementsByOrgId) | **GET** /api/v1.0/orgs/{orgId}/kiosk/entitlements | 
 *Flipdish.KioskIotApi* | [**getKioskIotConnection**](docs/KioskIotApi.md#getKioskIotConnection) | **POST** /api/v1.0/kioskiot/connect | 

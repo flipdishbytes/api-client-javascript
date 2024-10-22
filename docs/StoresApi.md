@@ -338,7 +338,7 @@ Name | Type | Description  | Notes
 
 ## createStoreInProperty
 
-> RestApiResultStore createStoreInProperty(storeGroupId, propertyId, store)
+> RestApiResultStore createStoreInProperty(storeGroupId, propertyId, store, opts)
 
 
 
@@ -355,7 +355,10 @@ let apiInstance = new Flipdish.StoresApi();
 let storeGroupId = 56; // Number | 
 let propertyId = "propertyId_example"; // String | 
 let store = new Flipdish.StoreCreateBase(); // StoreCreateBase | 
-apiInstance.createStoreInProperty(storeGroupId, propertyId, store, (error, data, response) => {
+let opts = {
+  'autoAssignMenu': true // Boolean | 
+};
+apiInstance.createStoreInProperty(storeGroupId, propertyId, store, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -372,6 +375,7 @@ Name | Type | Description  | Notes
  **storeGroupId** | **Number**|  | 
  **propertyId** | **String**|  | 
  **store** | [**StoreCreateBase**](StoreCreateBase.md)|  | 
+ **autoAssignMenu** | **Boolean**|  | [optional] 
 
 ### Return type
 
