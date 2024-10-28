@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new Flipdish.StoreCreatedEvent();
+    instance = new Flipdish.VoucherAppliedEvent();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,76 +47,58 @@
       object[property] = value;
   }
 
-  describe('StoreCreatedEvent', function() {
-    it('should create an instance of StoreCreatedEvent', function() {
-      // uncomment below and update the code to test StoreCreatedEvent
-      //var instane = new Flipdish.StoreCreatedEvent();
-      //expect(instance).to.be.a(Flipdish.StoreCreatedEvent);
+  describe('VoucherAppliedEvent', function() {
+    it('should create an instance of VoucherAppliedEvent', function() {
+      // uncomment below and update the code to test VoucherAppliedEvent
+      //var instane = new Flipdish.VoucherAppliedEvent();
+      //expect(instance).to.be.a(Flipdish.VoucherAppliedEvent);
+    });
+
+    it('should have the property VoucherId (base name: "VoucherId")', function() {
+      // uncomment below and update the code to test the property VoucherId
+      //var instance = new Flipdish.VoucherAppliedEvent();
+      //expect(instance).to.be();
     });
 
     it('should have the property EventName (base name: "EventName")', function() {
       // uncomment below and update the code to test the property EventName
-      //var instance = new Flipdish.StoreCreatedEvent();
+      //var instance = new Flipdish.VoucherAppliedEvent();
       //expect(instance).to.be();
     });
 
-    it('should have the property OrgId (base name: "OrgId")', function() {
-      // uncomment below and update the code to test the property OrgId
-      //var instance = new Flipdish.StoreCreatedEvent();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property StoreId (base name: "StoreId")', function() {
-      // uncomment below and update the code to test the property StoreId
-      //var instance = new Flipdish.StoreCreatedEvent();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property User (base name: "User")', function() {
-      // uncomment below and update the code to test the property User
-      //var instance = new Flipdish.StoreCreatedEvent();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property Description (base name: "Description")', function() {
-      // uncomment below and update the code to test the property Description
-      //var instance = new Flipdish.StoreCreatedEvent();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property Store (base name: "Store")', function() {
-      // uncomment below and update the code to test the property Store
-      //var instance = new Flipdish.StoreCreatedEvent();
+    it('should have the property OrderId (base name: "OrderId")', function() {
+      // uncomment below and update the code to test the property OrderId
+      //var instance = new Flipdish.VoucherAppliedEvent();
       //expect(instance).to.be();
     });
 
     it('should have the property FlipdishEventId (base name: "FlipdishEventId")', function() {
       // uncomment below and update the code to test the property FlipdishEventId
-      //var instance = new Flipdish.StoreCreatedEvent();
+      //var instance = new Flipdish.VoucherAppliedEvent();
       //expect(instance).to.be();
     });
 
     it('should have the property CreateTime (base name: "CreateTime")', function() {
       // uncomment below and update the code to test the property CreateTime
-      //var instance = new Flipdish.StoreCreatedEvent();
+      //var instance = new Flipdish.VoucherAppliedEvent();
       //expect(instance).to.be();
     });
 
     it('should have the property Position (base name: "Position")', function() {
       // uncomment below and update the code to test the property Position
-      //var instance = new Flipdish.StoreCreatedEvent();
+      //var instance = new Flipdish.VoucherAppliedEvent();
       //expect(instance).to.be();
     });
 
     it('should have the property AppId (base name: "AppId")', function() {
       // uncomment below and update the code to test the property AppId
-      //var instance = new Flipdish.StoreCreatedEvent();
+      //var instance = new Flipdish.VoucherAppliedEvent();
       //expect(instance).to.be();
     });
 
     it('should have the property IpAddress (base name: "IpAddress")', function() {
       // uncomment below and update the code to test the property IpAddress
-      //var instance = new Flipdish.StoreCreatedEvent();
+      //var instance = new Flipdish.VoucherAppliedEvent();
       //expect(instance).to.be();
     });
 

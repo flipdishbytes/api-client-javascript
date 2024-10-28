@@ -795,6 +795,7 @@ import ValidValue from './model/ValidValue';
 import ValidationErrorResult from './model/ValidationErrorResult';
 import ValidityPeriod from './model/ValidityPeriod';
 import Voucher from './model/Voucher';
+import VoucherAppliedEvent from './model/VoucherAppliedEvent';
 import VoucherCreatedEvent from './model/VoucherCreatedEvent';
 import VoucherDataPoint from './model/VoucherDataPoint';
 import VoucherDeletedEvent from './model/VoucherDeletedEvent';
@@ -5630,6 +5631,12 @@ export {
      * @property {module:model/Voucher}
      */
     Voucher,
+
+    /**
+     * The VoucherAppliedEvent model constructor.
+     * @property {module:model/VoucherAppliedEvent}
+     */
+    VoucherAppliedEvent,
 
     /**
      * The VoucherCreatedEvent model constructor.

@@ -1443,6 +1443,7 @@ Class | Method | HTTP request | Description
  - [Flipdish.ValidationErrorResult](docs/ValidationErrorResult.md)
  - [Flipdish.ValidityPeriod](docs/ValidityPeriod.md)
  - [Flipdish.Voucher](docs/Voucher.md)
+ - [Flipdish.VoucherAppliedEvent](docs/VoucherAppliedEvent.md)
  - [Flipdish.VoucherCreatedEvent](docs/VoucherCreatedEvent.md)
  - [Flipdish.VoucherDataPoint](docs/VoucherDataPoint.md)
  - [Flipdish.VoucherDeletedEvent](docs/VoucherDeletedEvent.md)

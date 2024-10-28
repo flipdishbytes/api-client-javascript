@@ -144,6 +144,7 @@ import UserDeletedEvent from './UserDeletedEvent';
 import UserLoginEvent from './UserLoginEvent';
 import UserPasswordCreatedEvent from './UserPasswordCreatedEvent';
 import UserUpdatedEvent from './UserUpdatedEvent';
+import VoucherAppliedEvent from './VoucherAppliedEvent';
 import VoucherCreatedEvent from './VoucherCreatedEvent';
 import VoucherDeletedEvent from './VoucherDeletedEvent';
 import VoucherUpdatedEvent from './VoucherUpdatedEvent';
@@ -442,6 +443,9 @@ class EventSearchResult {
             }
             if (data.hasOwnProperty('VoucherDeletedEvent')) {
                 obj['VoucherDeletedEvent'] = ApiClient.convertToType(data['VoucherDeletedEvent'], [VoucherDeletedEvent]);
+            }
+            if (data.hasOwnProperty('VoucherAppliedEvent')) {
+                obj['VoucherAppliedEvent'] = ApiClient.convertToType(data['VoucherAppliedEvent'], [VoucherAppliedEvent]);
             }
             if (data.hasOwnProperty('TeammateInviteSentEvent')) {
                 obj['TeammateInviteSentEvent'] = ApiClient.convertToType(data['TeammateInviteSentEvent'], [TeammateInviteSentEvent]);
@@ -1124,6 +1128,12 @@ EventSearchResult.prototype['VoucherUpdatedEvent'] = undefined;
  * @member {Array.<module:model/VoucherDeletedEvent>} VoucherDeletedEvent
  */
 EventSearchResult.prototype['VoucherDeletedEvent'] = undefined;
+
+/**
+ * Voucher applied event
+ * @member {Array.<module:model/VoucherAppliedEvent>} VoucherAppliedEvent
+ */
+EventSearchResult.prototype['VoucherAppliedEvent'] = undefined;
 
 /**
  * Teammate invite sent event

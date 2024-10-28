@@ -564,6 +564,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property VoucherAppliedEvent (base name: "VoucherAppliedEvent")', function() {
+      // uncomment below and update the code to test the property VoucherAppliedEvent
+      //var instance = new Flipdish.EventSearchResult();
+      //expect(instance).to.be();
+    });
+
     it('should have the property TeammateInviteSentEvent (base name: "TeammateInviteSentEvent")', function() {
       // uncomment below and update the code to test the property TeammateInviteSentEvent
       //var instance = new Flipdish.EventSearchResult();

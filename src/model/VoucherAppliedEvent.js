@@ -12,23 +12,21 @@
  */
 
 import ApiClient from '../ApiClient';
-import Store from './Store';
-import UserEventInfo from './UserEventInfo';
 
 /**
- * The StoreCreatedEvent model module.
- * @module model/StoreCreatedEvent
+ * The VoucherAppliedEvent model module.
+ * @module model/VoucherAppliedEvent
  * @version 1.0.0
  */
-class StoreCreatedEvent {
+class VoucherAppliedEvent {
     /**
-     * Constructs a new <code>StoreCreatedEvent</code>.
-     * Store Created Event
-     * @alias module:model/StoreCreatedEvent
+     * Constructs a new <code>VoucherAppliedEvent</code>.
+     * Voucher Applied Event
+     * @alias module:model/VoucherAppliedEvent
      */
     constructor() { 
         
-        StoreCreatedEvent.initialize(this);
+        VoucherAppliedEvent.initialize(this);
     }
 
     /**
@@ -40,33 +38,24 @@ class StoreCreatedEvent {
     }
 
     /**
-     * Constructs a <code>StoreCreatedEvent</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>VoucherAppliedEvent</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/StoreCreatedEvent} obj Optional instance to populate.
-     * @return {module:model/StoreCreatedEvent} The populated <code>StoreCreatedEvent</code> instance.
+     * @param {module:model/VoucherAppliedEvent} obj Optional instance to populate.
+     * @return {module:model/VoucherAppliedEvent} The populated <code>VoucherAppliedEvent</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new StoreCreatedEvent();
+            obj = obj || new VoucherAppliedEvent();
 
+            if (data.hasOwnProperty('VoucherId')) {
+                obj['VoucherId'] = ApiClient.convertToType(data['VoucherId'], 'Number');
+            }
             if (data.hasOwnProperty('EventName')) {
                 obj['EventName'] = ApiClient.convertToType(data['EventName'], 'String');
             }
-            if (data.hasOwnProperty('OrgId')) {
-                obj['OrgId'] = ApiClient.convertToType(data['OrgId'], 'String');
-            }
-            if (data.hasOwnProperty('StoreId')) {
-                obj['StoreId'] = ApiClient.convertToType(data['StoreId'], 'Number');
-            }
-            if (data.hasOwnProperty('User')) {
-                obj['User'] = UserEventInfo.constructFromObject(data['User']);
-            }
-            if (data.hasOwnProperty('Description')) {
-                obj['Description'] = ApiClient.convertToType(data['Description'], 'String');
-            }
-            if (data.hasOwnProperty('Store')) {
-                obj['Store'] = Store.constructFromObject(data['Store']);
+            if (data.hasOwnProperty('OrderId')) {
+                obj['OrderId'] = ApiClient.convertToType(data['OrderId'], 'Number');
             }
             if (data.hasOwnProperty('FlipdishEventId')) {
                 obj['FlipdishEventId'] = ApiClient.convertToType(data['FlipdishEventId'], 'String');
@@ -91,73 +80,57 @@ class StoreCreatedEvent {
 }
 
 /**
+ * Voucher Id
+ * @member {Number} VoucherId
+ */
+VoucherAppliedEvent.prototype['VoucherId'] = undefined;
+
+/**
  * The event name
  * @member {String} EventName
  */
-StoreCreatedEvent.prototype['EventName'] = undefined;
+VoucherAppliedEvent.prototype['EventName'] = undefined;
 
 /**
- * Organisation Id
- * @member {String} OrgId
+ * Order id
+ * @member {Number} OrderId
  */
-StoreCreatedEvent.prototype['OrgId'] = undefined;
-
-/**
- * Store Id
- * @member {Number} StoreId
- */
-StoreCreatedEvent.prototype['StoreId'] = undefined;
-
-/**
- * @member {module:model/UserEventInfo} User
- */
-StoreCreatedEvent.prototype['User'] = undefined;
-
-/**
- * Description
- * @member {String} Description
- */
-StoreCreatedEvent.prototype['Description'] = undefined;
-
-/**
- * @member {module:model/Store} Store
- */
-StoreCreatedEvent.prototype['Store'] = undefined;
+VoucherAppliedEvent.prototype['OrderId'] = undefined;
 
 /**
  * The identitfier of the event
  * @member {String} FlipdishEventId
  */
-StoreCreatedEvent.prototype['FlipdishEventId'] = undefined;
+VoucherAppliedEvent.prototype['FlipdishEventId'] = undefined;
 
 /**
  * The time of creation of the event
  * @member {Date} CreateTime
  */
-StoreCreatedEvent.prototype['CreateTime'] = undefined;
+VoucherAppliedEvent.prototype['CreateTime'] = undefined;
 
 /**
  * Position
  * @member {Number} Position
  */
-StoreCreatedEvent.prototype['Position'] = undefined;
+VoucherAppliedEvent.prototype['Position'] = undefined;
 
 /**
  * App id
  * @member {String} AppId
  */
-StoreCreatedEvent.prototype['AppId'] = undefined;
+VoucherAppliedEvent.prototype['AppId'] = undefined;
 
 /**
  * Ip Address
  * @member {String} IpAddress
  */
-StoreCreatedEvent.prototype['IpAddress'] = undefined;
+VoucherAppliedEvent.prototype['IpAddress'] = undefined;
 
 
 
 
 
 
-export default StoreCreatedEvent;
+export default VoucherAppliedEvent;
 
