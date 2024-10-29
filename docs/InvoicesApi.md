@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 ## getInvoices
 
-> RestApiFinanceSearchPaginationResultInvoice getInvoices(appId, opts)
+> RestApiFinanceSearchPaginationResultSubscriptionInvoice getInvoices(appId, opts)
 
 
 
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**RestApiFinanceSearchPaginationResultInvoice**](RestApiFinanceSearchPaginationResultInvoice.md)
+[**RestApiFinanceSearchPaginationResultSubscriptionInvoice**](RestApiFinanceSearchPaginationResultSubscriptionInvoice.md)
 
 ### Authorization
 
@@ -127,7 +127,7 @@ null (empty response body)
 
 ## listInvoices
 
-> Object listInvoices(appId, storeId)
+> Object listInvoices(storeId, appId, opts)
 
 
 
@@ -141,9 +141,13 @@ let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 let apiInstance = new Flipdish.InvoicesApi();
-let appId = "appId_example"; // String | 
 let storeId = 56; // Number | 
-apiInstance.listInvoices(appId, storeId, (error, data, response) => {
+let appId = "appId_example"; // String | 
+let opts = {
+  'limit': 56, // Number | 
+  'page': 56 // Number | 
+};
+apiInstance.listInvoices(storeId, appId, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -157,8 +161,10 @@ apiInstance.listInvoices(appId, storeId, (error, data, response) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **appId** | **String**|  | 
  **storeId** | **Number**|  | 
+ **appId** | **String**|  | 
+ **limit** | **Number**|  | [optional] 
+ **page** | **Number**|  | [optional] 
 
 ### Return type
 
@@ -176,7 +182,7 @@ Name | Type | Description  | Notes
 
 ## listSubscriptionInvoices
 
-> RestApiFinanceSearchPaginationResultInvoice listSubscriptionInvoices(appId, opts)
+> RestApiFinanceSearchPaginationResultSubscriptionInvoice listSubscriptionInvoices(appId, opts)
 
 
 
@@ -227,7 +233,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**RestApiFinanceSearchPaginationResultInvoice**](RestApiFinanceSearchPaginationResultInvoice.md)
+[**RestApiFinanceSearchPaginationResultSubscriptionInvoice**](RestApiFinanceSearchPaginationResultSubscriptionInvoice.md)
 
 ### Authorization
 

@@ -15,6 +15,7 @@
 import ApiClient from "../ApiClient";
 import RestApiErrorResult from '../model/RestApiErrorResult';
 import RestApiFinanceSearchPaginationResultInvoice from '../model/RestApiFinanceSearchPaginationResultInvoice';
+import RestApiFinanceSearchPaginationResultSubscriptionInvoice from '../model/RestApiFinanceSearchPaginationResultSubscriptionInvoice';
 import RestApiForbiddenResult from '../model/RestApiForbiddenResult';
 import RestApiUnauthorizedResult from '../model/RestApiUnauthorizedResult';
 
@@ -41,7 +42,7 @@ export default class InvoicesApi {
      * Callback function to receive the result of the getInvoices operation.
      * @callback module:api/InvoicesApi~getInvoicesCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/RestApiFinanceSearchPaginationResultInvoice} data The data returned by the service call.
+     * @param {module:model/RestApiFinanceSearchPaginationResultSubscriptionInvoice} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -57,7 +58,7 @@ export default class InvoicesApi {
      * @param {String} opts.invoiceNumber 
      * @param {Array.<Number>} opts.storeId 
      * @param {module:api/InvoicesApi~getInvoicesCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/RestApiFinanceSearchPaginationResultInvoice}
+     * data is of type: {@link module:model/RestApiFinanceSearchPaginationResultSubscriptionInvoice}
      */
     getInvoices(appId, opts, callback) {
       opts = opts || {};
@@ -88,7 +89,7 @@ export default class InvoicesApi {
       let authNames = ['oauth2'];
       let contentTypes = [];
       let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'Data', 'Message', 'ErrorCode', 'StackTrace'];
-      let returnType = RestApiFinanceSearchPaginationResultInvoice;
+      let returnType = RestApiFinanceSearchPaginationResultSubscriptionInvoice;
       return this.apiClient.callApi(
         '/api/v1.0/{appId}/invoices', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -151,27 +152,33 @@ export default class InvoicesApi {
      */
 
     /**
-     * @param {String} appId 
      * @param {Number} storeId 
+     * @param {String} appId 
+     * @param {Object} opts Optional parameters
+     * @param {Number} opts.limit 
+     * @param {Number} opts.page 
      * @param {module:api/InvoicesApi~listInvoicesCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link Object}
      */
-    listInvoices(appId, storeId, callback) {
+    listInvoices(storeId, appId, opts, callback) {
+      opts = opts || {};
       let postBody = null;
-      // verify the required parameter 'appId' is set
-      if (appId === undefined || appId === null) {
-        throw new Error("Missing the required parameter 'appId' when calling listInvoices");
-      }
       // verify the required parameter 'storeId' is set
       if (storeId === undefined || storeId === null) {
         throw new Error("Missing the required parameter 'storeId' when calling listInvoices");
+      }
+      // verify the required parameter 'appId' is set
+      if (appId === undefined || appId === null) {
+        throw new Error("Missing the required parameter 'appId' when calling listInvoices");
       }
 
       let pathParams = {
         'appId': appId
       };
       let queryParams = {
-        'storeId': storeId
+        'storeId': storeId,
+        'limit': opts['limit'],
+        'page': opts['page']
       };
       let headerParams = {
       };
@@ -193,7 +200,7 @@ export default class InvoicesApi {
      * Callback function to receive the result of the listSubscriptionInvoices operation.
      * @callback module:api/InvoicesApi~listSubscriptionInvoicesCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/RestApiFinanceSearchPaginationResultInvoice} data The data returned by the service call.
+     * @param {module:model/RestApiFinanceSearchPaginationResultSubscriptionInvoice} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -209,7 +216,7 @@ export default class InvoicesApi {
      * @param {String} opts.invoiceNumber 
      * @param {Array.<Number>} opts.storeId 
      * @param {module:api/InvoicesApi~listSubscriptionInvoicesCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/RestApiFinanceSearchPaginationResultInvoice}
+     * data is of type: {@link module:model/RestApiFinanceSearchPaginationResultSubscriptionInvoice}
      */
     listSubscriptionInvoices(appId, opts, callback) {
       opts = opts || {};
@@ -240,7 +247,7 @@ export default class InvoicesApi {
       let authNames = ['oauth2'];
       let contentTypes = [];
       let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'Data', 'Message', 'ErrorCode', 'StackTrace'];
-      let returnType = RestApiFinanceSearchPaginationResultInvoice;
+      let returnType = RestApiFinanceSearchPaginationResultSubscriptionInvoice;
       return this.apiClient.callApi(
         '/api/v1.0/{appId}/invoices/ListSubscriptionInvoices', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,

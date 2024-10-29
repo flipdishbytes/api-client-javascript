@@ -54,68 +54,20 @@
       //expect(instance).to.be.a(Flipdish.Invoice);
     });
 
-    it('should have the property InvoiceId (base name: "InvoiceId")', function() {
-      // uncomment below and update the code to test the property InvoiceId
+    it('should have the property InvoiceNumber (base name: "InvoiceNumber")', function() {
+      // uncomment below and update the code to test the property InvoiceNumber
       //var instance = new Flipdish.Invoice();
       //expect(instance).to.be();
     });
 
-    it('should have the property _Number (base name: "Number")', function() {
-      // uncomment below and update the code to test the property _Number
+    it('should have the property StartDay (base name: "StartDay")', function() {
+      // uncomment below and update the code to test the property StartDay
       //var instance = new Flipdish.Invoice();
       //expect(instance).to.be();
     });
 
-    it('should have the property Total (base name: "Total")', function() {
-      // uncomment below and update the code to test the property Total
-      //var instance = new Flipdish.Invoice();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property Currency (base name: "Currency")', function() {
-      // uncomment below and update the code to test the property Currency
-      //var instance = new Flipdish.Invoice();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property Status (base name: "Status")', function() {
-      // uncomment below and update the code to test the property Status
-      //var instance = new Flipdish.Invoice();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property SubscriptionId (base name: "SubscriptionId")', function() {
-      // uncomment below and update the code to test the property SubscriptionId
-      //var instance = new Flipdish.Invoice();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property PaidAt (base name: "PaidAt")', function() {
-      // uncomment below and update the code to test the property PaidAt
-      //var instance = new Flipdish.Invoice();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property FinalisedAt (base name: "FinalisedAt")', function() {
-      // uncomment below and update the code to test the property FinalisedAt
-      //var instance = new Flipdish.Invoice();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property PdfLink (base name: "PdfLink")', function() {
-      // uncomment below and update the code to test the property PdfLink
-      //var instance = new Flipdish.Invoice();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property HostedUrl (base name: "HostedUrl")', function() {
-      // uncomment below and update the code to test the property HostedUrl
-      //var instance = new Flipdish.Invoice();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property Overdue (base name: "Overdue")', function() {
-      // uncomment below and update the code to test the property Overdue
+    it('should have the property EndDay (base name: "EndDay")', function() {
+      // uncomment below and update the code to test the property EndDay
       //var instance = new Flipdish.Invoice();
       //expect(instance).to.be();
     });

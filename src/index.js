@@ -503,6 +503,7 @@ import RestApiDefaultResponse from './model/RestApiDefaultResponse';
 import RestApiErrorResult from './model/RestApiErrorResult';
 import RestApiEventSearchPaginationResult from './model/RestApiEventSearchPaginationResult';
 import RestApiFinanceSearchPaginationResultInvoice from './model/RestApiFinanceSearchPaginationResultInvoice';
+import RestApiFinanceSearchPaginationResultSubscriptionInvoice from './model/RestApiFinanceSearchPaginationResultSubscriptionInvoice';
 import RestApiForbiddenResult from './model/RestApiForbiddenResult';
 import RestApiIntegerResult from './model/RestApiIntegerResult';
 import RestApiPaginationResultApp from './model/RestApiPaginationResultApp';
@@ -742,6 +743,7 @@ import StuartSettingsTransportPrices from './model/StuartSettingsTransportPrices
 import SubmitOrderRequest from './model/SubmitOrderRequest';
 import SubmitOrderResponseDm from './model/SubmitOrderResponseDm';
 import Subscription from './model/Subscription';
+import SubscriptionInvoice from './model/SubscriptionInvoice';
 import SubscriptionProduct from './model/SubscriptionProduct';
 import SubscriptionStore from './model/SubscriptionStore';
 import SubscriptionSummary from './model/SubscriptionSummary';
@@ -3881,6 +3883,12 @@ export {
     RestApiFinanceSearchPaginationResultInvoice,
 
     /**
+     * The RestApiFinanceSearchPaginationResultSubscriptionInvoice model constructor.
+     * @property {module:model/RestApiFinanceSearchPaginationResultSubscriptionInvoice}
+     */
+    RestApiFinanceSearchPaginationResultSubscriptionInvoice,
+
+    /**
      * The RestApiForbiddenResult model constructor.
      * @property {module:model/RestApiForbiddenResult}
      */
@@ -5313,6 +5321,12 @@ export {
      * @property {module:model/Subscription}
      */
     Subscription,
+
+    /**
+     * The SubscriptionInvoice model constructor.
+     * @property {module:model/SubscriptionInvoice}
+     */
+    SubscriptionInvoice,
 
     /**
      * The SubscriptionProduct model constructor.
