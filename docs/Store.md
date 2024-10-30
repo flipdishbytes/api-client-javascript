@@ -53,6 +53,7 @@ Name | Type | Description | Notes
 **Name** | **String** | Name | [optional] 
 **EmailAddress** | **String** | Email address (visible to customers) | [optional] 
 **StaffLanguage** | **String** | Staff Language (used for communication with the staff)  Emails, Printouts etc | [optional] 
+**SalesChannelTypes** | **[String]** | Sales Channel Types | [optional] 
 
 
 
@@ -299,6 +300,21 @@ Name | Type | Description | Notes
 * `TWD` (value: `"TWD"`)
 
 * `BMD` (value: `"BMD"`)
+
+
+
+
+
+## Enum: [SalesChannelTypesEnum]
+
+
+* `Web` (value: `"Web"`)
+
+* `App` (value: `"App"`)
+
+* `Kiosk` (value: `"Kiosk"`)
+
+* `Pos` (value: `"Pos"`)
 
 
 

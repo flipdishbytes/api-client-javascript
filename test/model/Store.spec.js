@@ -348,6 +348,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property SalesChannelTypes (base name: "SalesChannelTypes")', function() {
+      // uncomment below and update the code to test the property SalesChannelTypes
+      //var instance = new Flipdish.Store();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));

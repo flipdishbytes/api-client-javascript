@@ -199,6 +199,9 @@ class Store {
             if (data.hasOwnProperty('StaffLanguage')) {
                 obj['StaffLanguage'] = ApiClient.convertToType(data['StaffLanguage'], 'String');
             }
+            if (data.hasOwnProperty('SalesChannelTypes')) {
+                obj['SalesChannelTypes'] = ApiClient.convertToType(data['SalesChannelTypes'], ['String']);
+            }
         }
         return obj;
     }
@@ -498,6 +501,12 @@ Store.prototype['EmailAddress'] = undefined;
  * @member {String} StaffLanguage
  */
 Store.prototype['StaffLanguage'] = undefined;
+
+/**
+ * Sales Channel Types
+ * @member {Array.<module:model/Store.SalesChannelTypesEnum>} SalesChannelTypes
+ */
+Store.prototype['SalesChannelTypes'] = undefined;
 
 
 
@@ -1220,6 +1229,39 @@ Store['CurrencyEnum'] = {
      * @const
      */
     "BMD": "BMD"
+};
+
+
+/**
+ * Allowed values for the <code>SalesChannelTypes</code> property.
+ * @enum {String}
+ * @readonly
+ */
+Store['SalesChannelTypesEnum'] = {
+
+    /**
+     * value: "Web"
+     * @const
+     */
+    "Web": "Web",
+
+    /**
+     * value: "App"
+     * @const
+     */
+    "App": "App",
+
+    /**
+     * value: "Kiosk"
+     * @const
+     */
+    "Kiosk": "Kiosk",
+
+    /**
+     * value: "Pos"
+     * @const
+     */
+    "Pos": "Pos"
 };
 
 

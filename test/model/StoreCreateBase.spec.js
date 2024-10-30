@@ -72,6 +72,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property SalesChannelType (base name: "SalesChannelType")', function() {
+      // uncomment below and update the code to test the property SalesChannelType
+      //var instance = new Flipdish.StoreCreateBase();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));

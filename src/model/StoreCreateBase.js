@@ -57,6 +57,9 @@ class StoreCreateBase {
             if (data.hasOwnProperty('StaffLanguage')) {
                 obj['StaffLanguage'] = ApiClient.convertToType(data['StaffLanguage'], 'String');
             }
+            if (data.hasOwnProperty('SalesChannelType')) {
+                obj['SalesChannelType'] = ApiClient.convertToType(data['SalesChannelType'], 'String');
+            }
         }
         return obj;
     }
@@ -82,8 +85,47 @@ StoreCreateBase.prototype['EmailAddress'] = undefined;
  */
 StoreCreateBase.prototype['StaffLanguage'] = undefined;
 
+/**
+ * Sales Channel Type
+ * @member {module:model/StoreCreateBase.SalesChannelTypeEnum} SalesChannelType
+ */
+StoreCreateBase.prototype['SalesChannelType'] = undefined;
 
 
+
+
+
+/**
+ * Allowed values for the <code>SalesChannelType</code> property.
+ * @enum {String}
+ * @readonly
+ */
+StoreCreateBase['SalesChannelTypeEnum'] = {
+
+    /**
+     * value: "Web"
+     * @const
+     */
+    "Web": "Web",
+
+    /**
+     * value: "App"
+     * @const
+     */
+    "App": "App",
+
+    /**
+     * value: "Kiosk"
+     * @const
+     */
+    "Kiosk": "Kiosk",
+
+    /**
+     * value: "Pos"
+     * @const
+     */
+    "Pos": "Pos"
+};
 
 
 
