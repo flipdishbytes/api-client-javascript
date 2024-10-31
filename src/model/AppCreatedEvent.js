@@ -67,6 +67,9 @@ class AppCreatedEvent {
             if (data.hasOwnProperty('AccountId')) {
                 obj['AccountId'] = ApiClient.convertToType(data['AccountId'], 'String');
             }
+            if (data.hasOwnProperty('OrgId')) {
+                obj['OrgId'] = ApiClient.convertToType(data['OrgId'], 'String');
+            }
             if (data.hasOwnProperty('FlipdishEventId')) {
                 obj['FlipdishEventId'] = ApiClient.convertToType(data['FlipdishEventId'], 'String');
             }
@@ -123,6 +126,12 @@ AppCreatedEvent.prototype['User'] = undefined;
  * @member {String} AccountId
  */
 AppCreatedEvent.prototype['AccountId'] = undefined;
+
+/**
+ * Organisation Id
+ * @member {String} OrgId
+ */
+AppCreatedEvent.prototype['OrgId'] = undefined;
 
 /**
  * The identitfier of the event

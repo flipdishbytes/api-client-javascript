@@ -71,6 +71,9 @@ class AppUpdatedEvent {
             if (data.hasOwnProperty('App')) {
                 obj['App'] = App.constructFromObject(data['App']);
             }
+            if (data.hasOwnProperty('OrgId')) {
+                obj['OrgId'] = ApiClient.convertToType(data['OrgId'], 'String');
+            }
             if (data.hasOwnProperty('FlipdishEventId')) {
                 obj['FlipdishEventId'] = ApiClient.convertToType(data['FlipdishEventId'], 'String');
             }
@@ -132,6 +135,12 @@ AppUpdatedEvent.prototype['User'] = undefined;
  * @member {module:model/App} App
  */
 AppUpdatedEvent.prototype['App'] = undefined;
+
+/**
+ * Organisation Id
+ * @member {String} OrgId
+ */
+AppUpdatedEvent.prototype['OrgId'] = undefined;
 
 /**
  * The identitfier of the event

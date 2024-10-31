@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 **CountryId** | **String** | Country Id | [optional] 
 **User** | [**UserEventInfo**](UserEventInfo.md) |  | [optional] 
 **AccountId** | **String** | Salesforce Account Id | [optional] 
+**OrgId** | **String** | Organisation Id | [optional] 
 **FlipdishEventId** | **String** | The identitfier of the event | [optional] 
 **CreateTime** | **Date** | The time of creation of the event | [optional] 
 **Position** | **Number** | Position | [optional] 
