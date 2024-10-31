@@ -973,6 +973,7 @@ export default class StoresApi {
      * @param {String} appId 
      * @param {Object} opts Optional parameters
      * @param {String} opts.storeNameQuery 
+     * @param {module:model/String} opts.salesChannelType 
      * @param {Number} opts.page 
      * @param {Number} opts.limit 
      * @param {module:api/StoresApi~getStoreHeadersByAppIdCallback} callback The callback function, accepting three arguments: error, data, response
@@ -991,6 +992,7 @@ export default class StoresApi {
       };
       let queryParams = {
         'storeNameQuery': opts['storeNameQuery'],
+        'salesChannelType': opts['salesChannelType'],
         'page': opts['page'],
         'limit': opts['limit']
       };

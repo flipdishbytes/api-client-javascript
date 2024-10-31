@@ -1026,6 +1026,7 @@ let apiInstance = new Flipdish.StoresApi();
 let appId = "appId_example"; // String | 
 let opts = {
   'storeNameQuery': "storeNameQuery_example", // String | 
+  'salesChannelType': "salesChannelType_example", // String | 
   'page': 56, // Number | 
   'limit': 56 // Number | 
 };
@@ -1045,6 +1046,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **appId** | **String**|  | 
  **storeNameQuery** | **String**|  | [optional] 
+ **salesChannelType** | **String**|  | [optional] 
  **page** | **Number**|  | [optional] 
  **limit** | **Number**|  | [optional] 
 
