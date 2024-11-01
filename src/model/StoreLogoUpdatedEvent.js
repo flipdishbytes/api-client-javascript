@@ -52,6 +52,9 @@ class StoreLogoUpdatedEvent {
             if (data.hasOwnProperty('EventName')) {
                 obj['EventName'] = ApiClient.convertToType(data['EventName'], 'String');
             }
+            if (data.hasOwnProperty('OrgId')) {
+                obj['OrgId'] = ApiClient.convertToType(data['OrgId'], 'String');
+            }
             if (data.hasOwnProperty('StoreId')) {
                 obj['StoreId'] = ApiClient.convertToType(data['StoreId'], 'Number');
             }
@@ -88,6 +91,12 @@ class StoreLogoUpdatedEvent {
  * @member {String} EventName
  */
 StoreLogoUpdatedEvent.prototype['EventName'] = undefined;
+
+/**
+ * Organisation Id
+ * @member {String} OrgId
+ */
+StoreLogoUpdatedEvent.prototype['OrgId'] = undefined;
 
 /**
  * ID of store that the logo has been added to
