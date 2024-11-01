@@ -72,6 +72,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property LogoUrl (base name: "LogoUrl")', function() {
+      // uncomment below and update the code to test the property LogoUrl
+      //var instance = new Flipdish.StoreLogoCreatedEvent();
+      //expect(instance).to.be();
+    });
+
     it('should have the property Description (base name: "Description")', function() {
       // uncomment below and update the code to test the property Description
       //var instance = new Flipdish.StoreLogoCreatedEvent();

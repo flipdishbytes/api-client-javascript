@@ -58,6 +58,9 @@ class StoreLogoUpdatedEvent {
             if (data.hasOwnProperty('StoreId')) {
                 obj['StoreId'] = ApiClient.convertToType(data['StoreId'], 'Number');
             }
+            if (data.hasOwnProperty('LogoUrl')) {
+                obj['LogoUrl'] = ApiClient.convertToType(data['LogoUrl'], 'String');
+            }
             if (data.hasOwnProperty('Description')) {
                 obj['Description'] = ApiClient.convertToType(data['Description'], 'String');
             }
@@ -103,6 +106,12 @@ StoreLogoUpdatedEvent.prototype['OrgId'] = undefined;
  * @member {Number} StoreId
  */
 StoreLogoUpdatedEvent.prototype['StoreId'] = undefined;
+
+/**
+ * Url of logo
+ * @member {String} LogoUrl
+ */
+StoreLogoUpdatedEvent.prototype['LogoUrl'] = undefined;
 
 /**
  * Description
