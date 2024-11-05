@@ -594,6 +594,7 @@ Class | Method | HTTP request | Description
 *Flipdish.StoresApi* | [**setBusinessHours**](docs/StoresApi.md#setBusinessHours) | **POST** /api/v1.0/stores/{storeId}/availability/{deliveryType} | 
 *Flipdish.StoresApi* | [**setPreOrdeEnabled**](docs/StoresApi.md#setPreOrdeEnabled) | **POST** /api/v1.0/stores/{storeId}/preorderconfig/{deliveryType}/enabled | 
 *Flipdish.StoresApi* | [**setStoreLeadTimes**](docs/StoresApi.md#setStoreLeadTimes) | **POST** /api/v1.0/stores/{storeId}/leadTimes | 
+*Flipdish.StoresApi* | [**supportedSalesChannelsTypes**](docs/StoresApi.md#supportedSalesChannelsTypes) | **POST** /api/v1.0/properties/{propertyId}/stores/{storeId}/supportedSalesChannels | 
 *Flipdish.StoresApi* | [**unpublishStore**](docs/StoresApi.md#unpublishStore) | **POST** /api/v1.0/stores/{storeId}/unpublish | 
 *Flipdish.StoresApi* | [**updatePreOrderConfig**](docs/StoresApi.md#updatePreOrderConfig) | **POST** /api/v1.0/stores/{storeId}/preorderconfig/{deliveryType} | 
 *Flipdish.StoresApi* | [**updateStore**](docs/StoresApi.md#updateStore) | **POST** /api/v1.0/stores/{storeId} | 

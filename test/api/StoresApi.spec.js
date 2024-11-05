@@ -358,6 +358,16 @@
         done();
       });
     });
+    describe('supportedSalesChannelsTypes', function() {
+      it('should call supportedSalesChannelsTypes successfully', function(done) {
+        //uncomment below and update the code to test supportedSalesChannelsTypes
+        //instance.supportedSalesChannelsTypes(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('unpublishStore', function() {
       it('should call unpublishStore successfully', function(done) {
         //uncomment below and update the code to test unpublishStore
