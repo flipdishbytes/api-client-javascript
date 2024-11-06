@@ -6,5 +6,6 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **EntitlementQuantity** | **Number** |  | [optional] 
 **CurrentUsage** | **Number** |  | [optional] 
+**CurrentUsageInBrand** | **Number** |  | [optional] 
 
 

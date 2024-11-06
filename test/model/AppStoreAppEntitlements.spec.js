@@ -66,6 +66,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property CurrentUsageInBrand (base name: "CurrentUsageInBrand")', function() {
+      // uncomment below and update the code to test the property CurrentUsageInBrand
+      //var instance = new Flipdish.AppStoreAppEntitlements();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));

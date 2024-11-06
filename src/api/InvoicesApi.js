@@ -147,7 +147,7 @@ export default class InvoicesApi {
      * Callback function to receive the result of the listInvoices operation.
      * @callback module:api/InvoicesApi~listInvoicesCallback
      * @param {String} error Error message, if any.
-     * @param {Object} data The data returned by the service call.
+     * @param {module:model/RestApiFinanceSearchPaginationResultInvoice} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -158,7 +158,7 @@ export default class InvoicesApi {
      * @param {Number} opts.limit 
      * @param {Number} opts.page 
      * @param {module:api/InvoicesApi~listInvoicesCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link Object}
+     * data is of type: {@link module:model/RestApiFinanceSearchPaginationResultInvoice}
      */
     listInvoices(storeId, appId, opts, callback) {
       opts = opts || {};
@@ -188,7 +188,7 @@ export default class InvoicesApi {
       let authNames = ['oauth2'];
       let contentTypes = [];
       let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'Data'];
-      let returnType = Object;
+      let returnType = RestApiFinanceSearchPaginationResultInvoice;
       return this.apiClient.callApi(
         '/api/v1.0/{appId}/invoices/ListInvoices', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,

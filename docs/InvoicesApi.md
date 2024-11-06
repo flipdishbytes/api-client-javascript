@@ -127,7 +127,7 @@ null (empty response body)
 
 ## listInvoices
 
-> Object listInvoices(storeId, appId, opts)
+> RestApiFinanceSearchPaginationResultInvoice listInvoices(storeId, appId, opts)
 
 
 
@@ -168,7 +168,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Object**
+[**RestApiFinanceSearchPaginationResultInvoice**](RestApiFinanceSearchPaginationResultInvoice.md)
 
 ### Authorization
 
