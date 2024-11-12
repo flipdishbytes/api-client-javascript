@@ -68,6 +68,9 @@ class LoyaltyCampaign {
             if (data.hasOwnProperty('PercentDiscountAmount')) {
                 obj['PercentDiscountAmount'] = ApiClient.convertToType(data['PercentDiscountAmount'], 'Number');
             }
+            if (data.hasOwnProperty('MaxDiscount')) {
+                obj['MaxDiscount'] = ApiClient.convertToType(data['MaxDiscount'], 'Number');
+            }
             if (data.hasOwnProperty('RoundingStrategy')) {
                 obj['RoundingStrategy'] = ApiClient.convertToType(data['RoundingStrategy'], 'Number');
             }
@@ -139,6 +142,12 @@ LoyaltyCampaign.prototype['OrdersBeforeReceivingVoucher'] = undefined;
  * @member {Number} PercentDiscountAmount
  */
 LoyaltyCampaign.prototype['PercentDiscountAmount'] = undefined;
+
+/**
+ * Maximum discount for percentage discounts
+ * @member {Number} MaxDiscount
+ */
+LoyaltyCampaign.prototype['MaxDiscount'] = undefined;
 
 /**
  * Controls how the loyalty voucher's amount is rounded

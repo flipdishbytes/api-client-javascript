@@ -90,6 +90,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property MaxDiscount (base name: "MaxDiscount")', function() {
+      // uncomment below and update the code to test the property MaxDiscount
+      //var instance = new Flipdish.LoyaltyCampaign();
+      //expect(instance).to.be();
+    });
+
     it('should have the property RoundingStrategy (base name: "RoundingStrategy")', function() {
       // uncomment below and update the code to test the property RoundingStrategy
       //var instance = new Flipdish.LoyaltyCampaign();

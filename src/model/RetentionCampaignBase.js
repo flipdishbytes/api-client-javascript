@@ -54,6 +54,9 @@ class RetentionCampaignBase {
             if (data.hasOwnProperty('PercentDiscountAmount')) {
                 obj['PercentDiscountAmount'] = ApiClient.convertToType(data['PercentDiscountAmount'], 'Number');
             }
+            if (data.hasOwnProperty('MaxDiscount')) {
+                obj['MaxDiscount'] = ApiClient.convertToType(data['MaxDiscount'], 'Number');
+            }
             if (data.hasOwnProperty('LumpDiscountAmount')) {
                 obj['LumpDiscountAmount'] = ApiClient.convertToType(data['LumpDiscountAmount'], 'Number');
             }
@@ -99,6 +102,12 @@ RetentionCampaignBase.prototype['NotifyCustomerAfterMinutes'] = undefined;
  * @member {Number} PercentDiscountAmount
  */
 RetentionCampaignBase.prototype['PercentDiscountAmount'] = undefined;
+
+/**
+ * Maximum discount for percentage discounts
+ * @member {Number} MaxDiscount
+ */
+RetentionCampaignBase.prototype['MaxDiscount'] = undefined;
 
 /**
  * Discount amount in sum of money
