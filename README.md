@@ -148,7 +148,6 @@ Class | Method | HTTP request | Description
 *Flipdish.AddressApi* | [**formByCountry**](docs/AddressApi.md#formByCountry) | **GET** /api/v1.0/address/country/{countryCode}/form | 
 *Flipdish.AddressApi* | [**formatGoogleAddress**](docs/AddressApi.md#formatGoogleAddress) | **POST** /api/v1.0/address/google | 
 *Flipdish.AddressApi* | [**getCountries**](docs/AddressApi.md#getCountries) | **GET** /api/v1.0/address/countries | 
-*Flipdish.AddressApi* | [**validateAddressForm**](docs/AddressApi.md#validateAddressForm) | **POST** /api/v1.0/address/validate | 
 *Flipdish.ApmApi* | [**getApmStatus**](docs/ApmApi.md#getApmStatus) | **GET** /api/v1.0/{appId}/apm/status | 
 *Flipdish.ApmApi* | [**getBasicStatistics**](docs/ApmApi.md#getBasicStatistics) | **GET** /api/v1.0/{appId}/apm/statistics | 
 *Flipdish.ApmApi* | [**getCalendarWeekStatistics**](docs/ApmApi.md#getCalendarWeekStatistics) | **GET** /api/v1.0/{appId}/apm/statistics/calendar | 

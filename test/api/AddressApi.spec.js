@@ -98,16 +98,6 @@
         done();
       });
     });
-    describe('validateAddressForm', function() {
-      it('should call validateAddressForm successfully', function(done) {
-        //uncomment below and update the code to test validateAddressForm
-        //instance.validateAddressForm(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
   });
 
 }));
