@@ -47,6 +47,53 @@ export default class AppsApi {
 
 
     /**
+     * Callback function to receive the result of the appsSetPropertyId operation.
+     * @callback module:api/AppsApi~appsSetPropertyIdCallback
+     * @param {String} error Error message, if any.
+     * @param {Object} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {String} appId 
+     * @param {String} orgId 
+     * @param {module:api/AppsApi~appsSetPropertyIdCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link Object}
+     */
+    appsSetPropertyId(appId, orgId, callback) {
+      let postBody = null;
+      // verify the required parameter 'appId' is set
+      if (appId === undefined || appId === null) {
+        throw new Error("Missing the required parameter 'appId' when calling appsSetPropertyId");
+      }
+      // verify the required parameter 'orgId' is set
+      if (orgId === undefined || orgId === null) {
+        throw new Error("Missing the required parameter 'orgId' when calling appsSetPropertyId");
+      }
+
+      let pathParams = {
+        'appId': appId,
+        'orgId': orgId
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = [];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
+      let returnType = Object;
+      return this.apiClient.callApi(
+        '/api/v1.0/apps/{appId}/orgId/{orgId}', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
      * Callback function to receive the result of the createApp operation.
      * @callback module:api/AppsApi~createAppCallback
      * @param {String} error Error message, if any.

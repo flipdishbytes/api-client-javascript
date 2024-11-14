@@ -1527,6 +1527,53 @@ export default class StoresApi {
     }
 
     /**
+     * Callback function to receive the result of the storesSetPropertyId operation.
+     * @callback module:api/StoresApi~storesSetPropertyIdCallback
+     * @param {String} error Error message, if any.
+     * @param {Object} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {Number} storeId 
+     * @param {String} propertyId 
+     * @param {module:api/StoresApi~storesSetPropertyIdCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link Object}
+     */
+    storesSetPropertyId(storeId, propertyId, callback) {
+      let postBody = null;
+      // verify the required parameter 'storeId' is set
+      if (storeId === undefined || storeId === null) {
+        throw new Error("Missing the required parameter 'storeId' when calling storesSetPropertyId");
+      }
+      // verify the required parameter 'propertyId' is set
+      if (propertyId === undefined || propertyId === null) {
+        throw new Error("Missing the required parameter 'propertyId' when calling storesSetPropertyId");
+      }
+
+      let pathParams = {
+        'storeId': storeId,
+        'propertyId': propertyId
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = [];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
+      let returnType = Object;
+      return this.apiClient.callApi(
+        '/api/v1.0/stores/{storeId}/propertyId/{propertyId}', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
      * Callback function to receive the result of the supportedSalesChannelsTypes operation.
      * @callback module:api/StoresApi~supportedSalesChannelsTypesCallback
      * @param {String} error Error message, if any.

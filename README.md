@@ -174,6 +174,7 @@ Class | Method | HTTP request | Description
 *Flipdish.AppStoreDeveloperApi* | [**updateExternalProduct**](docs/AppStoreDeveloperApi.md#updateExternalProduct) | **PUT** /api/v1.0/oauthclients/{oauthAppId}/appstore/apps/{appStoreAppId}/external_product | 
 *Flipdish.AppStoreDeveloperApi* | [**uploadAppStoreAppLogo**](docs/AppStoreDeveloperApi.md#uploadAppStoreAppLogo) | **POST** /api/v1.0/oauthclients/{oauthAppId}/appstore/apps/{appStoreAppId}/logo | 
 *Flipdish.AppStoreEntitlementsApi* | [**getAppStoreAppEntitlements**](docs/AppStoreEntitlementsApi.md#getAppStoreAppEntitlements) | **GET** /api/v1.0/{appId}/appstore/apps/{appStoreAppId}/entitlements | 
+*Flipdish.AppsApi* | [**appsSetPropertyId**](docs/AppsApi.md#appsSetPropertyId) | **POST** /api/v1.0/apps/{appId}/orgId/{orgId} | 
 *Flipdish.AppsApi* | [**createApp**](docs/AppsApi.md#createApp) | **POST** /api/v1.0/apps | 
 *Flipdish.AppsApi* | [**getApp**](docs/AppsApi.md#getApp) | **GET** /api/v1.0/apps/{appId} | 
 *Flipdish.AppsApi* | [**getAppHostnameStatus**](docs/AppsApi.md#getAppHostnameStatus) | **GET** /api/v1.0/apps/{appId}/hostnamestatus | 
@@ -593,6 +594,7 @@ Class | Method | HTTP request | Description
 *Flipdish.StoresApi* | [**setBusinessHours**](docs/StoresApi.md#setBusinessHours) | **POST** /api/v1.0/stores/{storeId}/availability/{deliveryType} | 
 *Flipdish.StoresApi* | [**setPreOrdeEnabled**](docs/StoresApi.md#setPreOrdeEnabled) | **POST** /api/v1.0/stores/{storeId}/preorderconfig/{deliveryType}/enabled | 
 *Flipdish.StoresApi* | [**setStoreLeadTimes**](docs/StoresApi.md#setStoreLeadTimes) | **POST** /api/v1.0/stores/{storeId}/leadTimes | 
+*Flipdish.StoresApi* | [**storesSetPropertyId**](docs/StoresApi.md#storesSetPropertyId) | **POST** /api/v1.0/stores/{storeId}/propertyId/{propertyId} | 
 *Flipdish.StoresApi* | [**supportedSalesChannelsTypes**](docs/StoresApi.md#supportedSalesChannelsTypes) | **POST** /api/v1.0/properties/{propertyId}/stores/{storeId}/supportedSalesChannels | 
 *Flipdish.StoresApi* | [**unpublishStore**](docs/StoresApi.md#unpublishStore) | **POST** /api/v1.0/stores/{storeId}/unpublish | 
 *Flipdish.StoresApi* | [**updatePreOrderConfig**](docs/StoresApi.md#updatePreOrderConfig) | **POST** /api/v1.0/stores/{storeId}/preorderconfig/{deliveryType} | 

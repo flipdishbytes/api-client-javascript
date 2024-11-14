@@ -112,6 +112,9 @@ class Store {
             if (data.hasOwnProperty('AppIds')) {
                 obj['AppIds'] = ApiClient.convertToType(data['AppIds'], ['String']);
             }
+            if (data.hasOwnProperty('PropertyId')) {
+                obj['PropertyId'] = ApiClient.convertToType(data['PropertyId'], 'String');
+            }
             if (data.hasOwnProperty('PhoneNumber')) {
                 obj['PhoneNumber'] = ApiClient.convertToType(data['PhoneNumber'], 'String');
             }
@@ -327,6 +330,12 @@ Store.prototype['FraudPreventionStrategy'] = undefined;
  * @member {Array.<String>} AppIds
  */
 Store.prototype['AppIds'] = undefined;
+
+/**
+ * Property Id
+ * @member {String} PropertyId
+ */
+Store.prototype['PropertyId'] = undefined;
 
 /**
  * Phone number

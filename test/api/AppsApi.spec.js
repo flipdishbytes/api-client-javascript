@@ -48,6 +48,16 @@
   }
 
   describe('AppsApi', function() {
+    describe('appsSetPropertyId', function() {
+      it('should call appsSetPropertyId successfully', function(done) {
+        //uncomment below and update the code to test appsSetPropertyId
+        //instance.appsSetPropertyId(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('createApp', function() {
       it('should call createApp successfully', function(done) {
         //uncomment below and update the code to test createApp

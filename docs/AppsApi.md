@@ -4,6 +4,7 @@ All URIs are relative to *https://api.flipdish.co*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**appsSetPropertyId**](AppsApi.md#appsSetPropertyId) | **POST** /api/v1.0/apps/{appId}/orgId/{orgId} | 
 [**createApp**](AppsApi.md#createApp) | **POST** /api/v1.0/apps | 
 [**getApp**](AppsApi.md#getApp) | **GET** /api/v1.0/apps/{appId} | 
 [**getAppHostnameStatus**](AppsApi.md#getAppHostnameStatus) | **GET** /api/v1.0/apps/{appId}/hostnamestatus | 
@@ -22,6 +23,55 @@ Method | HTTP request | Description
 [**toggleNextGenWeb**](AppsApi.md#toggleNextGenWeb) | **POST** /api/v1.0/apps/{appId}/nextgenweb | 
 [**uploadAppLogo**](AppsApi.md#uploadAppLogo) | **POST** /api/v1.0/apps/{appId}/logo | 
 
+
+
+## appsSetPropertyId
+
+> Object appsSetPropertyId(appId, orgId)
+
+
+
+### Example
+
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
+// Configure OAuth2 access token for authorization: oauth2
+let oauth2 = defaultClient.authentications['oauth2'];
+oauth2.accessToken = 'YOUR ACCESS TOKEN';
+
+let apiInstance = new Flipdish.AppsApi();
+let appId = "appId_example"; // String | 
+let orgId = "orgId_example"; // String | 
+apiInstance.appsSetPropertyId(appId, orgId, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **appId** | **String**|  | 
+ **orgId** | **String**|  | 
+
+### Return type
+
+**Object**
+
+### Authorization
+
+[oauth2](../README.md#oauth2)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml
 
 
 ## createApp

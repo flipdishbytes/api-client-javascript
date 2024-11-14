@@ -358,6 +358,16 @@
         done();
       });
     });
+    describe('storesSetPropertyId', function() {
+      it('should call storesSetPropertyId successfully', function(done) {
+        //uncomment below and update the code to test storesSetPropertyId
+        //instance.storesSetPropertyId(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('supportedSalesChannelsTypes', function() {
       it('should call supportedSalesChannelsTypes successfully', function(done) {
         //uncomment below and update the code to test supportedSalesChannelsTypes
