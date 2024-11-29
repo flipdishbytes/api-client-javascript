@@ -58,6 +58,16 @@
         done();
       });
     });
+    describe('firebaseAppsDeleteFirebaseApp', function() {
+      it('should call firebaseAppsDeleteFirebaseApp successfully', function(done) {
+        //uncomment below and update the code to test firebaseAppsDeleteFirebaseApp
+        //instance.firebaseAppsDeleteFirebaseApp(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('firebaseAppsGetFirebaseApp', function() {
       it('should call firebaseAppsGetFirebaseApp successfully', function(done) {
         //uncomment below and update the code to test firebaseAppsGetFirebaseApp

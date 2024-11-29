@@ -304,6 +304,7 @@ Class | Method | HTTP request | Description
 *Flipdish.FeaturesApi* | [**enableFeatures**](docs/FeaturesApi.md#enableFeatures) | **POST** /api/v1.0/{appId}/features/enable | 
 *Flipdish.FilesApi* | [**downloadFile**](docs/FilesApi.md#downloadFile) | **GET** /api/v1.0/{appId}/files/download/{fileId} | 
 *Flipdish.FirebaseAppsApi* | [**firebaseAppsAddFirebaseApp**](docs/FirebaseAppsApi.md#firebaseAppsAddFirebaseApp) | **POST** /api/v1.0/FirebaseApp | 
+*Flipdish.FirebaseAppsApi* | [**firebaseAppsDeleteFirebaseApp**](docs/FirebaseAppsApi.md#firebaseAppsDeleteFirebaseApp) | **DELETE** /api/v1.0/FirebaseApp/{whiteLabelId} | 
 *Flipdish.FirebaseAppsApi* | [**firebaseAppsGetFirebaseApp**](docs/FirebaseAppsApi.md#firebaseAppsGetFirebaseApp) | **GET** /api/v1.0/FirebaseApp/{whitelabelId} | 
 *Flipdish.FpmApi* | [**createFpmForStore**](docs/FpmApi.md#createFpmForStore) | **POST** /api/v1.0/{storeId}/fpm | 
 *Flipdish.FpmApi* | [**editFpmForStore**](docs/FpmApi.md#editFpmForStore) | **POST** /api/v1.0/{storeId}/fpm/edit | 

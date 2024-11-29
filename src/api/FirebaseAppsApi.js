@@ -78,6 +78,47 @@ export default class FirebaseAppsApi {
     }
 
     /**
+     * Callback function to receive the result of the firebaseAppsDeleteFirebaseApp operation.
+     * @callback module:api/FirebaseAppsApi~firebaseAppsDeleteFirebaseAppCallback
+     * @param {String} error Error message, if any.
+     * @param {Object} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {Number} whiteLabelId 
+     * @param {module:api/FirebaseAppsApi~firebaseAppsDeleteFirebaseAppCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link Object}
+     */
+    firebaseAppsDeleteFirebaseApp(whiteLabelId, callback) {
+      let postBody = null;
+      // verify the required parameter 'whiteLabelId' is set
+      if (whiteLabelId === undefined || whiteLabelId === null) {
+        throw new Error("Missing the required parameter 'whiteLabelId' when calling firebaseAppsDeleteFirebaseApp");
+      }
+
+      let pathParams = {
+        'whiteLabelId': whiteLabelId
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = [];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
+      let returnType = Object;
+      return this.apiClient.callApi(
+        '/api/v1.0/FirebaseApp/{whiteLabelId}', 'DELETE',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
      * Callback function to receive the result of the firebaseAppsGetFirebaseApp operation.
      * @callback module:api/FirebaseAppsApi~firebaseAppsGetFirebaseAppCallback
      * @param {String} error Error message, if any.
