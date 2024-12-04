@@ -96,6 +96,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property StoreIds (base name: "StoreIds")', function() {
+      // uncomment below and update the code to test the property StoreIds
+      //var instance = new Flipdish.BankAccount();
+      //expect(instance).to.be();
+    });
+
     it('should have the property BankAddress (base name: "BankAddress")', function() {
       // uncomment below and update the code to test the property BankAddress
       //var instance = new Flipdish.BankAccount();
