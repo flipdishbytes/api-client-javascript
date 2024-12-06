@@ -38,47 +38,6 @@ export default class KioskEntitlementsApi {
 
 
     /**
-     * Callback function to receive the result of the queryKioskEntitlements operation.
-     * @callback module:api/KioskEntitlementsApi~queryKioskEntitlementsCallback
-     * @param {String} error Error message, if any.
-     * @param {module:model/RestApiResultKioskEntitlementsResult} data The data returned by the service call.
-     * @param {String} response The complete HTTP response.
-     */
-
-    /**
-     * @param {String} appId 
-     * @param {module:api/KioskEntitlementsApi~queryKioskEntitlementsCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/RestApiResultKioskEntitlementsResult}
-     */
-    queryKioskEntitlements(appId, callback) {
-      let postBody = null;
-      // verify the required parameter 'appId' is set
-      if (appId === undefined || appId === null) {
-        throw new Error("Missing the required parameter 'appId' when calling queryKioskEntitlements");
-      }
-
-      let pathParams = {
-        'appId': appId
-      };
-      let queryParams = {
-      };
-      let headerParams = {
-      };
-      let formParams = {
-      };
-
-      let authNames = ['oauth2'];
-      let contentTypes = [];
-      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'Data', 'Message', 'ErrorCode', 'StackTrace'];
-      let returnType = RestApiResultKioskEntitlementsResult;
-      return this.apiClient.callApi(
-        '/api/v1.0/{appId}/kiosk/entitlements', 'GET',
-        pathParams, queryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType, null, callback
-      );
-    }
-
-    /**
      * Callback function to receive the result of the queryKioskEntitlementsByOrgId operation.
      * @callback module:api/KioskEntitlementsApi~queryKioskEntitlementsByOrgIdCallback
      * @param {String} error Error message, if any.

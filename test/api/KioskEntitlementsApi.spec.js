@@ -48,16 +48,6 @@
   }
 
   describe('KioskEntitlementsApi', function() {
-    describe('queryKioskEntitlements', function() {
-      it('should call queryKioskEntitlements successfully', function(done) {
-        //uncomment below and update the code to test queryKioskEntitlements
-        //instance.queryKioskEntitlements(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
     describe('queryKioskEntitlementsByOrgId', function() {
       it('should call queryKioskEntitlementsByOrgId successfully', function(done) {
         //uncomment below and update the code to test queryKioskEntitlementsByOrgId

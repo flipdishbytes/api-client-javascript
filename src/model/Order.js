@@ -120,6 +120,9 @@ class Order {
             if (data.hasOwnProperty('OrderBatchInfo')) {
                 obj['OrderBatchInfo'] = OrderBatchSummary.constructFromObject(data['OrderBatchInfo']);
             }
+            if (data.hasOwnProperty('CreatedCampaignVoucherId')) {
+                obj['CreatedCampaignVoucherId'] = ApiClient.convertToType(data['CreatedCampaignVoucherId'], 'Number');
+            }
             if (data.hasOwnProperty('OrderId')) {
                 obj['OrderId'] = ApiClient.convertToType(data['OrderId'], 'Number');
             }
@@ -325,6 +328,12 @@ Order.prototype['FulfillmentStatus'] = undefined;
  * @member {module:model/OrderBatchSummary} OrderBatchInfo
  */
 Order.prototype['OrderBatchInfo'] = undefined;
+
+/**
+ * The id of the campaign voucher that was created from this order
+ * @member {Number} CreatedCampaignVoucherId
+ */
+Order.prototype['CreatedCampaignVoucherId'] = undefined;
 
 /**
  * Order identifier

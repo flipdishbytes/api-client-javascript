@@ -174,6 +174,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property CreatedCampaignVoucherId (base name: "CreatedCampaignVoucherId")', function() {
+      // uncomment below and update the code to test the property CreatedCampaignVoucherId
+      //var instance = new Flipdish.Order();
+      //expect(instance).to.be();
+    });
+
     it('should have the property OrderId (base name: "OrderId")', function() {
       // uncomment below and update the code to test the property OrderId
       //var instance = new Flipdish.Order();
