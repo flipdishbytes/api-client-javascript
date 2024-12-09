@@ -72,6 +72,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property IsIntegrated (base name: "IsIntegrated")', function() {
+      // uncomment below and update the code to test the property IsIntegrated
+      //var instance = new Flipdish.MenuBase();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));

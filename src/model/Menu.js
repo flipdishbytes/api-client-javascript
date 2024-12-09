@@ -89,6 +89,9 @@ class Menu {
             if (data.hasOwnProperty('TaxType')) {
                 obj['TaxType'] = ApiClient.convertToType(data['TaxType'], 'String');
             }
+            if (data.hasOwnProperty('IsIntegrated')) {
+                obj['IsIntegrated'] = ApiClient.convertToType(data['IsIntegrated'], 'Boolean');
+            }
         }
         return obj;
     }
@@ -173,6 +176,12 @@ Menu.prototype['MenuSectionBehaviour'] = undefined;
  * @member {module:model/Menu.TaxTypeEnum} TaxType
  */
 Menu.prototype['TaxType'] = undefined;
+
+/**
+ * Flag to indicate if the menu is integrated (contains metadata)
+ * @member {Boolean} IsIntegrated
+ */
+Menu.prototype['IsIntegrated'] = undefined;
 
 
 

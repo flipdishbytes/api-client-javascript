@@ -69,6 +69,9 @@ class MenuSummary {
             if (data.hasOwnProperty('StoreNames')) {
                 obj['StoreNames'] = ApiClient.convertToType(data['StoreNames'], ['String']);
             }
+            if (data.hasOwnProperty('IsIntegrated')) {
+                obj['IsIntegrated'] = ApiClient.convertToType(data['IsIntegrated'], 'Boolean');
+            }
         }
         return obj;
     }
@@ -117,6 +120,12 @@ MenuSummary.prototype['Locked'] = undefined;
  * @member {Array.<String>} StoreNames
  */
 MenuSummary.prototype['StoreNames'] = undefined;
+
+/**
+ * Flag to indicate if the menu is integrated (contains metadata)
+ * @member {Boolean} IsIntegrated
+ */
+MenuSummary.prototype['IsIntegrated'] = undefined;
 
 
 
