@@ -626,6 +626,7 @@ Class | Method | HTTP request | Description
 *Flipdish.TeammatesApi* | [**grantaccess**](docs/TeammatesApi.md#grantaccess) | **POST** /api/v1.0/{appId}/teammates/grantaccess | 
 *Flipdish.TeammatesApi* | [**redeemInvitation**](docs/TeammatesApi.md#redeemInvitation) | **GET** /api/v1.0/{appId}/teammates/redeem/{otc} | 
 *Flipdish.TeammatesApi* | [**teammatesAcceptInvitation**](docs/TeammatesApi.md#teammatesAcceptInvitation) | **GET** /api/v1.0/{appId}/teammates/accept/{otc} | 
+*Flipdish.TeammatesApi* | [**teammatesAcceptInvitations**](docs/TeammatesApi.md#teammatesAcceptInvitations) | **POST** /api/v1.0/teammates/acceptInvitations | 
 *Flipdish.TeammatesApi* | [**teammatesPendingInvitations**](docs/TeammatesApi.md#teammatesPendingInvitations) | **GET** /api/v1.0/teammates/pending-invitations | 
 *Flipdish.TeammatesApi* | [**updateTeammate**](docs/TeammatesApi.md#updateTeammate) | **POST** /api/v1.0/{appId}/teammates/{id} | 
 *Flipdish.TerminalIotApi* | [**getTerminalIotConnection**](docs/TerminalIotApi.md#getTerminalIotConnection) | **POST** /api/v1.0/terminaliot/connect | 

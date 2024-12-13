@@ -364,6 +364,40 @@ export default class TeammatesApi {
     }
 
     /**
+     * Callback function to receive the result of the teammatesAcceptInvitations operation.
+     * @callback module:api/TeammatesApi~teammatesAcceptInvitationsCallback
+     * @param {String} error Error message, if any.
+     * @param data This operation does not return a value.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {module:api/TeammatesApi~teammatesAcceptInvitationsCallback} callback The callback function, accepting three arguments: error, data, response
+     */
+    teammatesAcceptInvitations(callback) {
+      let postBody = null;
+
+      let pathParams = {
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = [];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
+      let returnType = null;
+      return this.apiClient.callApi(
+        '/api/v1.0/teammates/acceptInvitations', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
      * Callback function to receive the result of the teammatesPendingInvitations operation.
      * @callback module:api/TeammatesApi~teammatesPendingInvitationsCallback
      * @param {String} error Error message, if any.
