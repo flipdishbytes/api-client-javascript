@@ -18,6 +18,7 @@ Name | Type | Description | Notes
 **MapSouthWest** | [**Coordinates**](Coordinates.md) |  | [optional] 
 **GoogleMapsApiKeyWeb** | **String** | Key to be passed with Google Maps requests | [optional] 
 **OrgId** | **String** | Org Id | [optional] 
+**SmsRestaurantName** | **String** | SMS Restaurant Name | [optional] 
 **Name** | **String** | App name.   This is used in various places on the Apple App Store, Google Play Store, mobile apps and websites. | [optional] 
 **HostName** | **String** | HostName on which the web-ordering system is allowed to be hosted or that a Flipdish website is hosted on. | [optional] 
 **MainColor** | **String** | Main color of the web / Android / iOS applications | [optional] 

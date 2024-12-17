@@ -92,6 +92,9 @@ class App {
             if (data.hasOwnProperty('OrgId')) {
                 obj['OrgId'] = ApiClient.convertToType(data['OrgId'], 'String');
             }
+            if (data.hasOwnProperty('SmsRestaurantName')) {
+                obj['SmsRestaurantName'] = ApiClient.convertToType(data['SmsRestaurantName'], 'String');
+            }
             if (data.hasOwnProperty('Name')) {
                 obj['Name'] = ApiClient.convertToType(data['Name'], 'String');
             }
@@ -206,6 +209,12 @@ App.prototype['GoogleMapsApiKeyWeb'] = undefined;
  * @member {String} OrgId
  */
 App.prototype['OrgId'] = undefined;
+
+/**
+ * SMS Restaurant Name
+ * @member {String} SmsRestaurantName
+ */
+App.prototype['SmsRestaurantName'] = undefined;
 
 /**
  * App name.   This is used in various places on the Apple App Store, Google Play Store, mobile apps and websites.

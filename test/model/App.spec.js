@@ -138,6 +138,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property SmsRestaurantName (base name: "SmsRestaurantName")', function() {
+      // uncomment below and update the code to test the property SmsRestaurantName
+      //var instance = new Flipdish.App();
+      //expect(instance).to.be();
+    });
+
     it('should have the property Name (base name: "Name")', function() {
       // uncomment below and update the code to test the property Name
       //var instance = new Flipdish.App();
