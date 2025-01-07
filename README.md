@@ -592,7 +592,7 @@ Class | Method | HTTP request | Description
 *Flipdish.StoresApi* | [**publishStore**](docs/StoresApi.md#publishStore) | **POST** /api/v1.0/stores/{storeId}/publish | 
 *Flipdish.StoresApi* | [**putStoreDeliveryFeeConfig**](docs/StoresApi.md#putStoreDeliveryFeeConfig) | **PUT** /api/v1.0/stores/{storeId}/feeConfig/deliveryZones | 
 *Flipdish.StoresApi* | [**setBusinessHours**](docs/StoresApi.md#setBusinessHours) | **POST** /api/v1.0/stores/{storeId}/availability/{deliveryType} | 
-*Flipdish.StoresApi* | [**setPreOrderEnabled**](docs/StoresApi.md#setPreOrderEnabled) | **POST** /api/v1.0/stores/{storeId}/preorderconfig/{deliveryType}/enabled | 
+*Flipdish.StoresApi* | [**setPreOrdeEnabled**](docs/StoresApi.md#setPreOrdeEnabled) | **POST** /api/v1.0/stores/{storeId}/preorderconfig/{deliveryType}/enabled | 
 *Flipdish.StoresApi* | [**setStoreLeadTimes**](docs/StoresApi.md#setStoreLeadTimes) | **POST** /api/v1.0/stores/{storeId}/leadTimes | 
 *Flipdish.StoresApi* | [**storesSetPropertyId**](docs/StoresApi.md#storesSetPropertyId) | **POST** /api/v1.0/stores/{storeId}/propertyId/{propertyId} | 
 *Flipdish.StoresApi* | [**supportedSalesChannelsTypes**](docs/StoresApi.md#supportedSalesChannelsTypes) | **POST** /api/v1.0/properties/{propertyId}/stores/{storeId}/supportedSalesChannels | 

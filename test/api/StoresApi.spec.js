@@ -338,10 +338,10 @@
         done();
       });
     });
-    describe('setPreOrderEnabled', function() {
-      it('should call setPreOrderEnabled successfully', function(done) {
-        //uncomment below and update the code to test setPreOrderEnabled
-        //instance.setPreOrderEnabled(function(error) {
+    describe('setPreOrdeEnabled', function() {
+      it('should call setPreOrdeEnabled successfully', function(done) {
+        //uncomment below and update the code to test setPreOrdeEnabled
+        //instance.setPreOrdeEnabled(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
