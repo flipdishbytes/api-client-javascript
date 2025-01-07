@@ -15,6 +15,7 @@
 import ApiClient from "../ApiClient";
 import CreateTeammate from '../model/CreateTeammate';
 import RestApiArrayResultPendingInvitation from '../model/RestApiArrayResultPendingInvitation';
+import RestApiArrayResultRedeemInvitationResult from '../model/RestApiArrayResultRedeemInvitationResult';
 import RestApiArrayResultTeammate from '../model/RestApiArrayResultTeammate';
 import RestApiErrorResult from '../model/RestApiErrorResult';
 import RestApiForbiddenResult from '../model/RestApiForbiddenResult';
@@ -367,12 +368,13 @@ export default class TeammatesApi {
      * Callback function to receive the result of the teammatesAcceptInvitations operation.
      * @callback module:api/TeammatesApi~teammatesAcceptInvitationsCallback
      * @param {String} error Error message, if any.
-     * @param data This operation does not return a value.
+     * @param {module:model/RestApiArrayResultRedeemInvitationResult} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * @param {module:api/TeammatesApi~teammatesAcceptInvitationsCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/RestApiArrayResultRedeemInvitationResult}
      */
     teammatesAcceptInvitations(callback) {
       let postBody = null;
@@ -388,8 +390,8 @@ export default class TeammatesApi {
 
       let authNames = ['oauth2'];
       let contentTypes = [];
-      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
-      let returnType = null;
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'Data'];
+      let returnType = RestApiArrayResultRedeemInvitationResult;
       return this.apiClient.callApi(
         '/api/v1.0/teammates/acceptInvitations', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,

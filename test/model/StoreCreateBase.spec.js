@@ -78,6 +78,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property PhoneNumber (base name: "PhoneNumber")', function() {
+      // uncomment below and update the code to test the property PhoneNumber
+      //var instance = new Flipdish.StoreCreateBase();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));

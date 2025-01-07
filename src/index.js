@@ -484,6 +484,7 @@ import RestApiArrayResultPendingInvitation from './model/RestApiArrayResultPendi
 import RestApiArrayResultPendingMenuChangesSummaries from './model/RestApiArrayResultPendingMenuChangesSummaries';
 import RestApiArrayResultPreOrderTime from './model/RestApiArrayResultPreOrderTime';
 import RestApiArrayResultProcessingFeeConfig from './model/RestApiArrayResultProcessingFeeConfig';
+import RestApiArrayResultRedeemInvitationResult from './model/RestApiArrayResultRedeemInvitationResult';
 import RestApiArrayResultRestApiDefaultResponse from './model/RestApiArrayResultRestApiDefaultResponse';
 import RestApiArrayResultRestaurantVoucherEligibleStore from './model/RestApiArrayResultRestaurantVoucherEligibleStore';
 import RestApiArrayResultRestaurantVoucherPayGreenConfiguration from './model/RestApiArrayResultRestaurantVoucherPayGreenConfiguration';
@@ -3767,6 +3768,12 @@ export {
      * @property {module:model/RestApiArrayResultProcessingFeeConfig}
      */
     RestApiArrayResultProcessingFeeConfig,
+
+    /**
+     * The RestApiArrayResultRedeemInvitationResult model constructor.
+     * @property {module:model/RestApiArrayResultRedeemInvitationResult}
+     */
+    RestApiArrayResultRedeemInvitationResult,
 
     /**
      * The RestApiArrayResultRestApiDefaultResponse model constructor.

@@ -33,7 +33,7 @@ Method | HTTP request | Description
 [**publishStore**](StoresApi.md#publishStore) | **POST** /api/v1.0/stores/{storeId}/publish | 
 [**putStoreDeliveryFeeConfig**](StoresApi.md#putStoreDeliveryFeeConfig) | **PUT** /api/v1.0/stores/{storeId}/feeConfig/deliveryZones | 
 [**setBusinessHours**](StoresApi.md#setBusinessHours) | **POST** /api/v1.0/stores/{storeId}/availability/{deliveryType} | 
-[**setPreOrdeEnabled**](StoresApi.md#setPreOrdeEnabled) | **POST** /api/v1.0/stores/{storeId}/preorderconfig/{deliveryType}/enabled | 
+[**setPreOrderEnabled**](StoresApi.md#setPreOrderEnabled) | **POST** /api/v1.0/stores/{storeId}/preorderconfig/{deliveryType}/enabled | 
 [**setStoreLeadTimes**](StoresApi.md#setStoreLeadTimes) | **POST** /api/v1.0/stores/{storeId}/leadTimes | 
 [**storesSetPropertyId**](StoresApi.md#storesSetPropertyId) | **POST** /api/v1.0/stores/{storeId}/propertyId/{propertyId} | 
 [**supportedSalesChannelsTypes**](StoresApi.md#supportedSalesChannelsTypes) | **POST** /api/v1.0/properties/{propertyId}/stores/{storeId}/supportedSalesChannels | 
@@ -1523,9 +1523,9 @@ Name | Type | Description  | Notes
 - **Accept**: application/json, text/json, application/xml, text/xml, Data
 
 
-## setPreOrdeEnabled
+## setPreOrderEnabled
 
-> RestApiArrayResultRestApiDefaultResponse setPreOrdeEnabled(storeId, deliveryType, enabled)
+> RestApiArrayResultRestApiDefaultResponse setPreOrderEnabled(storeId, deliveryType, enabled)
 
 
 
@@ -1542,7 +1542,7 @@ let apiInstance = new Flipdish.StoresApi();
 let storeId = 56; // Number | 
 let deliveryType = "deliveryType_example"; // String | 
 let enabled = true; // Boolean | 
-apiInstance.setPreOrdeEnabled(storeId, deliveryType, enabled, (error, data, response) => {
+apiInstance.setPreOrderEnabled(storeId, deliveryType, enabled, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {

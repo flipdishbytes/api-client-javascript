@@ -360,7 +360,7 @@ Name | Type | Description  | Notes
 
 ## teammatesAcceptInvitations
 
-> teammatesAcceptInvitations()
+> RestApiArrayResultRedeemInvitationResult teammatesAcceptInvitations()
 
 
 
@@ -378,7 +378,7 @@ apiInstance.teammatesAcceptInvitations((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
-    console.log('API called successfully.');
+    console.log('API called successfully. Returned data: ' + data);
   }
 });
 ```
@@ -389,7 +389,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-null (empty response body)
+[**RestApiArrayResultRedeemInvitationResult**](RestApiArrayResultRedeemInvitationResult.md)
 
 ### Authorization
 
@@ -398,7 +398,7 @@ null (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json, text/json, application/xml, text/xml
+- **Accept**: application/json, text/json, application/xml, text/xml, Data
 
 
 ## teammatesPendingInvitations

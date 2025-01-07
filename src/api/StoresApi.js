@@ -1428,8 +1428,8 @@ export default class StoresApi {
     }
 
     /**
-     * Callback function to receive the result of the setPreOrdeEnabled operation.
-     * @callback module:api/StoresApi~setPreOrdeEnabledCallback
+     * Callback function to receive the result of the setPreOrderEnabled operation.
+     * @callback module:api/StoresApi~setPreOrderEnabledCallback
      * @param {String} error Error message, if any.
      * @param {module:model/RestApiArrayResultRestApiDefaultResponse} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -1439,22 +1439,22 @@ export default class StoresApi {
      * @param {Number} storeId 
      * @param {module:model/String} deliveryType 
      * @param {Boolean} enabled 
-     * @param {module:api/StoresApi~setPreOrdeEnabledCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/StoresApi~setPreOrderEnabledCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/RestApiArrayResultRestApiDefaultResponse}
      */
-    setPreOrdeEnabled(storeId, deliveryType, enabled, callback) {
+    setPreOrderEnabled(storeId, deliveryType, enabled, callback) {
       let postBody = null;
       // verify the required parameter 'storeId' is set
       if (storeId === undefined || storeId === null) {
-        throw new Error("Missing the required parameter 'storeId' when calling setPreOrdeEnabled");
+        throw new Error("Missing the required parameter 'storeId' when calling setPreOrderEnabled");
       }
       // verify the required parameter 'deliveryType' is set
       if (deliveryType === undefined || deliveryType === null) {
-        throw new Error("Missing the required parameter 'deliveryType' when calling setPreOrdeEnabled");
+        throw new Error("Missing the required parameter 'deliveryType' when calling setPreOrderEnabled");
       }
       // verify the required parameter 'enabled' is set
       if (enabled === undefined || enabled === null) {
-        throw new Error("Missing the required parameter 'enabled' when calling setPreOrdeEnabled");
+        throw new Error("Missing the required parameter 'enabled' when calling setPreOrderEnabled");
       }
 
       let pathParams = {

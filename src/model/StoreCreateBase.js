@@ -60,6 +60,9 @@ class StoreCreateBase {
             if (data.hasOwnProperty('SalesChannelType')) {
                 obj['SalesChannelType'] = ApiClient.convertToType(data['SalesChannelType'], 'String');
             }
+            if (data.hasOwnProperty('PhoneNumber')) {
+                obj['PhoneNumber'] = ApiClient.convertToType(data['PhoneNumber'], 'String');
+            }
         }
         return obj;
     }
@@ -90,6 +93,12 @@ StoreCreateBase.prototype['StaffLanguage'] = undefined;
  * @member {module:model/StoreCreateBase.SalesChannelTypeEnum} SalesChannelType
  */
 StoreCreateBase.prototype['SalesChannelType'] = undefined;
+
+/**
+ * Phone Number
+ * @member {String} PhoneNumber
+ */
+StoreCreateBase.prototype['PhoneNumber'] = undefined;
 
 
 
