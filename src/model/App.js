@@ -56,8 +56,14 @@ class App {
             if (data.hasOwnProperty('HasIosApp')) {
                 obj['HasIosApp'] = ApiClient.convertToType(data['HasIosApp'], 'Boolean');
             }
+            if (data.hasOwnProperty('IosAppStoreUrl')) {
+                obj['IosAppStoreUrl'] = ApiClient.convertToType(data['IosAppStoreUrl'], 'String');
+            }
             if (data.hasOwnProperty('HasAndroidApp')) {
                 obj['HasAndroidApp'] = ApiClient.convertToType(data['HasAndroidApp'], 'Boolean');
+            }
+            if (data.hasOwnProperty('AndroidPlayStoreUrl')) {
+                obj['AndroidPlayStoreUrl'] = ApiClient.convertToType(data['AndroidPlayStoreUrl'], 'String');
             }
             if (data.hasOwnProperty('LogoImageUrl')) {
                 obj['LogoImageUrl'] = ApiClient.convertToType(data['LogoImageUrl'], 'String');
@@ -142,10 +148,22 @@ App.prototype['AppId'] = undefined;
 App.prototype['HasIosApp'] = undefined;
 
 /**
+ * IOS App Store URL
+ * @member {String} IosAppStoreUrl
+ */
+App.prototype['IosAppStoreUrl'] = undefined;
+
+/**
  * Has Android app in Google Play Store. This is readonly.
  * @member {Boolean} HasAndroidApp
  */
 App.prototype['HasAndroidApp'] = undefined;
+
+/**
+ * Android Play Store URL
+ * @member {String} AndroidPlayStoreUrl
+ */
+App.prototype['AndroidPlayStoreUrl'] = undefined;
 
 /**
  * Application Logo.

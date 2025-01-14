@@ -66,8 +66,20 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property IosAppStoreUrl (base name: "IosAppStoreUrl")', function() {
+      // uncomment below and update the code to test the property IosAppStoreUrl
+      //var instance = new Flipdish.App();
+      //expect(instance).to.be();
+    });
+
     it('should have the property HasAndroidApp (base name: "HasAndroidApp")', function() {
       // uncomment below and update the code to test the property HasAndroidApp
+      //var instance = new Flipdish.App();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property AndroidPlayStoreUrl (base name: "AndroidPlayStoreUrl")', function() {
+      // uncomment below and update the code to test the property AndroidPlayStoreUrl
       //var instance = new Flipdish.App();
       //expect(instance).to.be();
     });

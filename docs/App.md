@@ -6,7 +6,9 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **AppId** | **String** | App Identifier | [optional] 
 **HasIosApp** | **Boolean** | Has iOS app in Apple App Store. This is readonly. | [optional] 
+**IosAppStoreUrl** | **String** | IOS App Store URL | [optional] 
 **HasAndroidApp** | **Boolean** | Has Android app in Google Play Store. This is readonly. | [optional] 
+**AndroidPlayStoreUrl** | **String** | Android Play Store URL | [optional] 
 **LogoImageUrl** | **String** | Application Logo. | [optional] 
 **Languages** | [**[Language]**](Language.md) | Languages that have been selected to be available to customers. | [optional] 
 **AvailableAppLanguages** | [**[Language]**](Language.md) | Lists all languages that are supported by Flipdish. | [optional] 
