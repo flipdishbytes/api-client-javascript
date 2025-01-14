@@ -65,6 +65,9 @@ class App {
             if (data.hasOwnProperty('AndroidPlayStoreUrl')) {
                 obj['AndroidPlayStoreUrl'] = ApiClient.convertToType(data['AndroidPlayStoreUrl'], 'String');
             }
+            if (data.hasOwnProperty('DisplayDeliveryRestaurantScreen')) {
+                obj['DisplayDeliveryRestaurantScreen'] = ApiClient.convertToType(data['DisplayDeliveryRestaurantScreen'], 'Boolean');
+            }
             if (data.hasOwnProperty('LogoImageUrl')) {
                 obj['LogoImageUrl'] = ApiClient.convertToType(data['LogoImageUrl'], 'String');
             }
@@ -164,6 +167,12 @@ App.prototype['HasAndroidApp'] = undefined;
  * @member {String} AndroidPlayStoreUrl
  */
 App.prototype['AndroidPlayStoreUrl'] = undefined;
+
+/**
+ * Display delivery restaurant screen
+ * @member {Boolean} DisplayDeliveryRestaurantScreen
+ */
+App.prototype['DisplayDeliveryRestaurantScreen'] = undefined;
 
 /**
  * Application Logo.

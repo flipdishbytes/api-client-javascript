@@ -84,6 +84,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property DisplayDeliveryRestaurantScreen (base name: "DisplayDeliveryRestaurantScreen")', function() {
+      // uncomment below and update the code to test the property DisplayDeliveryRestaurantScreen
+      //var instance = new Flipdish.App();
+      //expect(instance).to.be();
+    });
+
     it('should have the property LogoImageUrl (base name: "LogoImageUrl")', function() {
       // uncomment below and update the code to test the property LogoImageUrl
       //var instance = new Flipdish.App();
