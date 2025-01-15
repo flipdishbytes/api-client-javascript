@@ -528,6 +528,7 @@ import RestApiPaginationResultPendingMenuChanges from './model/RestApiPagination
 import RestApiPaginationResultPhoneCall from './model/RestApiPaginationResultPhoneCall';
 import RestApiPaginationResultProduct from './model/RestApiPaginationResultProduct';
 import RestApiPaginationResultPushNotificationResponse from './model/RestApiPaginationResultPushNotificationResponse';
+import RestApiPaginationResultRestaurant from './model/RestApiPaginationResultRestaurant';
 import RestApiPaginationResultStore from './model/RestApiPaginationResultStore';
 import RestApiPaginationResultStoreGroup from './model/RestApiPaginationResultStoreGroup';
 import RestApiPaginationResultStoreGroupExtended from './model/RestApiPaginationResultStoreGroupExtended';
@@ -656,6 +657,7 @@ import RestApiResultWebsiteTestimonial from './model/RestApiResultWebsiteTestimo
 import RestApiStringArrayResult from './model/RestApiStringArrayResult';
 import RestApiStringResult from './model/RestApiStringResult';
 import RestApiUnauthorizedResult from './model/RestApiUnauthorizedResult';
+import Restaurant from './model/Restaurant';
 import RestaurantVoucherAssignedStore from './model/RestaurantVoucherAssignedStore';
 import RestaurantVoucherEligibleStore from './model/RestaurantVoucherEligibleStore';
 import RestaurantVoucherPayGreenConfiguration from './model/RestaurantVoucherPayGreenConfiguration';
@@ -818,6 +820,7 @@ import WebsiteTestimonial from './model/WebsiteTestimonial';
 import WebsiteTestimonialBase from './model/WebsiteTestimonialBase';
 import WebsiteUpdatedEvent from './model/WebsiteUpdatedEvent';
 import WebsiteVanityUrlUpdatedEvent from './model/WebsiteVanityUrlUpdatedEvent';
+import WhiteLabelConfig from './model/WhiteLabelConfig';
 import AccountsApi from './api/AccountsApi';
 import AddressApi from './api/AddressApi';
 import ApmApi from './api/ApmApi';
@@ -889,6 +892,7 @@ import ProcessingFeeConfigsApi from './api/ProcessingFeeConfigsApi';
 import PushNotificationsApi from './api/PushNotificationsApi';
 import ReceiptsApi from './api/ReceiptsApi';
 import RestaurantVouchersPayGreenApi from './api/RestaurantVouchersPayGreenApi';
+import SearchApi from './api/SearchApi';
 import StoreGroupsApi from './api/StoreGroupsApi';
 import StoreOrderCapacityApi from './api/StoreOrderCapacityApi';
 import StoresApi from './api/StoresApi';
@@ -4034,6 +4038,12 @@ export {
     RestApiPaginationResultPushNotificationResponse,
 
     /**
+     * The RestApiPaginationResultRestaurant model constructor.
+     * @property {module:model/RestApiPaginationResultRestaurant}
+     */
+    RestApiPaginationResultRestaurant,
+
+    /**
      * The RestApiPaginationResultStore model constructor.
      * @property {module:model/RestApiPaginationResultStore}
      */
@@ -4800,6 +4810,12 @@ export {
      * @property {module:model/RestApiUnauthorizedResult}
      */
     RestApiUnauthorizedResult,
+
+    /**
+     * The Restaurant model constructor.
+     * @property {module:model/Restaurant}
+     */
+    Restaurant,
 
     /**
      * The RestaurantVoucherAssignedStore model constructor.
@@ -5774,6 +5790,12 @@ export {
     WebsiteVanityUrlUpdatedEvent,
 
     /**
+     * The WhiteLabelConfig model constructor.
+     * @property {module:model/WhiteLabelConfig}
+     */
+    WhiteLabelConfig,
+
+    /**
     * The AccountsApi service constructor.
     * @property {module:api/AccountsApi}
     */
@@ -6198,6 +6220,12 @@ export {
     * @property {module:api/RestaurantVouchersPayGreenApi}
     */
     RestaurantVouchersPayGreenApi,
+
+    /**
+    * The SearchApi service constructor.
+    * @property {module:api/SearchApi}
+    */
+    SearchApi,
 
     /**
     * The StoreGroupsApi service constructor.

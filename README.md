@@ -553,6 +553,7 @@ Class | Method | HTTP request | Description
 *Flipdish.RestaurantVouchersPayGreenApi* | [**listPayGreenConfigurations**](docs/RestaurantVouchersPayGreenApi.md#listPayGreenConfigurations) | **GET** /api/v1.0/{appId}/restaurant-vouchers/paygreen/{paygreenConfigurationId} | 
 *Flipdish.RestaurantVouchersPayGreenApi* | [**updatePayGreenConfiguration**](docs/RestaurantVouchersPayGreenApi.md#updatePayGreenConfiguration) | **POST** /api/v1.0/{appId}/restaurant-vouchers/paygreen/{paygreenConfigurationId} | 
 *Flipdish.RestaurantVouchersPayGreenApi* | [**updateStorePayGreenConfiguration**](docs/RestaurantVouchersPayGreenApi.md#updateStorePayGreenConfiguration) | **POST** /api/v1.0/{appId}/restaurant-vouchers/paygreen/stores/{storeId} | 
+*Flipdish.SearchApi* | [**searchRestaurants**](docs/SearchApi.md#searchRestaurants) | **GET** /api/v1.0/search/restaurants | 
 *Flipdish.StoreGroupsApi* | [**assignStoresToStoreGroup**](docs/StoreGroupsApi.md#assignStoresToStoreGroup) | **POST** /api/v1.0/{appId}/storegroups/{storeGroupId}/assignStores | 
 *Flipdish.StoreGroupsApi* | [**createStoreGroup**](docs/StoreGroupsApi.md#createStoreGroup) | **POST** /api/v1.0/{appNameId}/storegroups | 
 *Flipdish.StoreGroupsApi* | [**getStoreGroup**](docs/StoreGroupsApi.md#getStoreGroup) | **GET** /api/v1.0/storegroups/{storeGroupId} | 
@@ -1179,6 +1180,7 @@ Class | Method | HTTP request | Description
  - [Flipdish.RestApiPaginationResultPhoneCall](docs/RestApiPaginationResultPhoneCall.md)
  - [Flipdish.RestApiPaginationResultProduct](docs/RestApiPaginationResultProduct.md)
  - [Flipdish.RestApiPaginationResultPushNotificationResponse](docs/RestApiPaginationResultPushNotificationResponse.md)
+ - [Flipdish.RestApiPaginationResultRestaurant](docs/RestApiPaginationResultRestaurant.md)
  - [Flipdish.RestApiPaginationResultStore](docs/RestApiPaginationResultStore.md)
  - [Flipdish.RestApiPaginationResultStoreGroup](docs/RestApiPaginationResultStoreGroup.md)
  - [Flipdish.RestApiPaginationResultStoreGroupExtended](docs/RestApiPaginationResultStoreGroupExtended.md)
@@ -1307,6 +1309,7 @@ Class | Method | HTTP request | Description
  - [Flipdish.RestApiStringArrayResult](docs/RestApiStringArrayResult.md)
  - [Flipdish.RestApiStringResult](docs/RestApiStringResult.md)
  - [Flipdish.RestApiUnauthorizedResult](docs/RestApiUnauthorizedResult.md)
+ - [Flipdish.Restaurant](docs/Restaurant.md)
  - [Flipdish.RestaurantVoucherAssignedStore](docs/RestaurantVoucherAssignedStore.md)
  - [Flipdish.RestaurantVoucherEligibleStore](docs/RestaurantVoucherEligibleStore.md)
  - [Flipdish.RestaurantVoucherPayGreenConfiguration](docs/RestaurantVoucherPayGreenConfiguration.md)
@@ -1469,6 +1472,7 @@ Class | Method | HTTP request | Description
  - [Flipdish.WebsiteTestimonialBase](docs/WebsiteTestimonialBase.md)
  - [Flipdish.WebsiteUpdatedEvent](docs/WebsiteUpdatedEvent.md)
  - [Flipdish.WebsiteVanityUrlUpdatedEvent](docs/WebsiteVanityUrlUpdatedEvent.md)
+ - [Flipdish.WhiteLabelConfig](docs/WhiteLabelConfig.md)
 
 
 ## Documentation for Authorization
