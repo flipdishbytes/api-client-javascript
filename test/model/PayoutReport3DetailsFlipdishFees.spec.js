@@ -168,6 +168,48 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property WebAndAppCardOnXOrders (base name: "WebAndAppCardOnXOrders")', function() {
+      // uncomment below and update the code to test the property WebAndAppCardOnXOrders
+      //var instance = new Flipdish.PayoutReport3DetailsFlipdishFees();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property WebAndAppCashOnXOrders (base name: "WebAndAppCashOnXOrders")', function() {
+      // uncomment below and update the code to test the property WebAndAppCashOnXOrders
+      //var instance = new Flipdish.PayoutReport3DetailsFlipdishFees();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property KioskCardOnXOrders (base name: "KioskCardOnXOrders")', function() {
+      // uncomment below and update the code to test the property KioskCardOnXOrders
+      //var instance = new Flipdish.PayoutReport3DetailsFlipdishFees();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property KioskCashOnXOrders (base name: "KioskCashOnXOrders")', function() {
+      // uncomment below and update the code to test the property KioskCashOnXOrders
+      //var instance = new Flipdish.PayoutReport3DetailsFlipdishFees();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property QropCardOnXOrders (base name: "QropCardOnXOrders")', function() {
+      // uncomment below and update the code to test the property QropCardOnXOrders
+      //var instance = new Flipdish.PayoutReport3DetailsFlipdishFees();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property QropCashOnXOrders (base name: "QropCashOnXOrders")', function() {
+      // uncomment below and update the code to test the property QropCashOnXOrders
+      //var instance = new Flipdish.PayoutReport3DetailsFlipdishFees();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property PosCardOnXOrders (base name: "PosCardOnXOrders")', function() {
+      // uncomment below and update the code to test the property PosCardOnXOrders
+      //var instance = new Flipdish.PayoutReport3DetailsFlipdishFees();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));

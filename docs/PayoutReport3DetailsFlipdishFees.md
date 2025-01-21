@@ -23,5 +23,12 @@ Name | Type | Description | Notes
 **Vat** | **Number** |  | [optional] 
 **Total** | **Number** |  | [optional] 
 **ThirdPartyIntegrationFeesAndTips** | **Number** |  | [optional] 
+**WebAndAppCardOnXOrders** | **Number** |  | [optional] 
+**WebAndAppCashOnXOrders** | **Number** |  | [optional] 
+**KioskCardOnXOrders** | **Number** |  | [optional] 
+**KioskCashOnXOrders** | **Number** |  | [optional] 
+**QropCardOnXOrders** | **Number** |  | [optional] 
+**QropCashOnXOrders** | **Number** |  | [optional] 
+**PosCardOnXOrders** | **Number** |  | [optional] 
 
 

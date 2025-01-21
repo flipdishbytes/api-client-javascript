@@ -104,6 +104,27 @@ class PayoutReport3DetailsFlipdishFees {
             if (data.hasOwnProperty('ThirdPartyIntegrationFeesAndTips')) {
                 obj['ThirdPartyIntegrationFeesAndTips'] = ApiClient.convertToType(data['ThirdPartyIntegrationFeesAndTips'], 'Number');
             }
+            if (data.hasOwnProperty('WebAndAppCardOnXOrders')) {
+                obj['WebAndAppCardOnXOrders'] = ApiClient.convertToType(data['WebAndAppCardOnXOrders'], 'Number');
+            }
+            if (data.hasOwnProperty('WebAndAppCashOnXOrders')) {
+                obj['WebAndAppCashOnXOrders'] = ApiClient.convertToType(data['WebAndAppCashOnXOrders'], 'Number');
+            }
+            if (data.hasOwnProperty('KioskCardOnXOrders')) {
+                obj['KioskCardOnXOrders'] = ApiClient.convertToType(data['KioskCardOnXOrders'], 'Number');
+            }
+            if (data.hasOwnProperty('KioskCashOnXOrders')) {
+                obj['KioskCashOnXOrders'] = ApiClient.convertToType(data['KioskCashOnXOrders'], 'Number');
+            }
+            if (data.hasOwnProperty('QropCardOnXOrders')) {
+                obj['QropCardOnXOrders'] = ApiClient.convertToType(data['QropCardOnXOrders'], 'Number');
+            }
+            if (data.hasOwnProperty('QropCashOnXOrders')) {
+                obj['QropCashOnXOrders'] = ApiClient.convertToType(data['QropCashOnXOrders'], 'Number');
+            }
+            if (data.hasOwnProperty('PosCardOnXOrders')) {
+                obj['PosCardOnXOrders'] = ApiClient.convertToType(data['PosCardOnXOrders'], 'Number');
+            }
         }
         return obj;
     }
@@ -205,6 +226,41 @@ PayoutReport3DetailsFlipdishFees.prototype['Total'] = undefined;
  * @member {Number} ThirdPartyIntegrationFeesAndTips
  */
 PayoutReport3DetailsFlipdishFees.prototype['ThirdPartyIntegrationFeesAndTips'] = undefined;
+
+/**
+ * @member {Number} WebAndAppCardOnXOrders
+ */
+PayoutReport3DetailsFlipdishFees.prototype['WebAndAppCardOnXOrders'] = undefined;
+
+/**
+ * @member {Number} WebAndAppCashOnXOrders
+ */
+PayoutReport3DetailsFlipdishFees.prototype['WebAndAppCashOnXOrders'] = undefined;
+
+/**
+ * @member {Number} KioskCardOnXOrders
+ */
+PayoutReport3DetailsFlipdishFees.prototype['KioskCardOnXOrders'] = undefined;
+
+/**
+ * @member {Number} KioskCashOnXOrders
+ */
+PayoutReport3DetailsFlipdishFees.prototype['KioskCashOnXOrders'] = undefined;
+
+/**
+ * @member {Number} QropCardOnXOrders
+ */
+PayoutReport3DetailsFlipdishFees.prototype['QropCardOnXOrders'] = undefined;
+
+/**
+ * @member {Number} QropCashOnXOrders
+ */
+PayoutReport3DetailsFlipdishFees.prototype['QropCashOnXOrders'] = undefined;
+
+/**
+ * @member {Number} PosCardOnXOrders
+ */
+PayoutReport3DetailsFlipdishFees.prototype['PosCardOnXOrders'] = undefined;
 
 
 
