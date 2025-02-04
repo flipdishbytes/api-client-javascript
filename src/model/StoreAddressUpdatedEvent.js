@@ -53,6 +53,9 @@ class StoreAddressUpdatedEvent {
             if (data.hasOwnProperty('EventName')) {
                 obj['EventName'] = ApiClient.convertToType(data['EventName'], 'String');
             }
+            if (data.hasOwnProperty('OrgId')) {
+                obj['OrgId'] = ApiClient.convertToType(data['OrgId'], 'String');
+            }
             if (data.hasOwnProperty('StoreId')) {
                 obj['StoreId'] = ApiClient.convertToType(data['StoreId'], 'Number');
             }
@@ -95,6 +98,12 @@ class StoreAddressUpdatedEvent {
  * @member {String} EventName
  */
 StoreAddressUpdatedEvent.prototype['EventName'] = undefined;
+
+/**
+ * Organisation Id
+ * @member {String} OrgId
+ */
+StoreAddressUpdatedEvent.prototype['OrgId'] = undefined;
 
 /**
  * Store Id
