@@ -71,6 +71,9 @@ class TeammateInviteSentEvent {
             if (data.hasOwnProperty('AppId')) {
                 obj['AppId'] = ApiClient.convertToType(data['AppId'], 'String');
             }
+            if (data.hasOwnProperty('OrgId')) {
+                obj['OrgId'] = ApiClient.convertToType(data['OrgId'], 'String');
+            }
             if (data.hasOwnProperty('IpAddress')) {
                 obj['IpAddress'] = ApiClient.convertToType(data['IpAddress'], 'String');
             }
@@ -120,6 +123,12 @@ TeammateInviteSentEvent.prototype['Position'] = undefined;
  * @member {String} AppId
  */
 TeammateInviteSentEvent.prototype['AppId'] = undefined;
+
+/**
+ * Org id
+ * @member {String} OrgId
+ */
+TeammateInviteSentEvent.prototype['OrgId'] = undefined;
 
 /**
  * Ip Address

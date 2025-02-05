@@ -126,6 +126,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property OrgId (base name: "OrgId")', function() {
+      // uncomment below and update the code to test the property OrgId
+      //var instance = new Flipdish.KioskBluetoothTerminalFirmwareVersionStatusEvent();
+      //expect(instance).to.be();
+    });
+
     it('should have the property IpAddress (base name: "IpAddress")', function() {
       // uncomment below and update the code to test the property IpAddress
       //var instance = new Flipdish.KioskBluetoothTerminalFirmwareVersionStatusEvent();

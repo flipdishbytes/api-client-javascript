@@ -70,6 +70,9 @@ class CustomerUpdatedEvent {
             if (data.hasOwnProperty('AppId')) {
                 obj['AppId'] = ApiClient.convertToType(data['AppId'], 'String');
             }
+            if (data.hasOwnProperty('OrgId')) {
+                obj['OrgId'] = ApiClient.convertToType(data['OrgId'], 'String');
+            }
             if (data.hasOwnProperty('IpAddress')) {
                 obj['IpAddress'] = ApiClient.convertToType(data['IpAddress'], 'String');
             }
@@ -120,6 +123,12 @@ CustomerUpdatedEvent.prototype['Position'] = undefined;
  * @member {String} AppId
  */
 CustomerUpdatedEvent.prototype['AppId'] = undefined;
+
+/**
+ * Org id
+ * @member {String} OrgId
+ */
+CustomerUpdatedEvent.prototype['OrgId'] = undefined;
 
 /**
  * Ip Address
