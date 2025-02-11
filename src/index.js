@@ -94,7 +94,6 @@ import ClientDeviceSummary from './model/ClientDeviceSummary';
 import ConfiguredStore from './model/ConfiguredStore';
 import Contact from './model/Contact';
 import Coordinates from './model/Coordinates';
-import CoordinatesDm from './model/CoordinatesDm';
 import CountryFormResponse from './model/CountryFormResponse';
 import CountryWithAccountFieldsDefinitions from './model/CountryWithAccountFieldsDefinitions';
 import CreateAccountModel from './model/CreateAccountModel';
@@ -117,7 +116,6 @@ import CreateMenuSectionItemFromCatalogItems from './model/CreateMenuSectionItem
 import CreateMenuTaxRate from './model/CreateMenuTaxRate';
 import CreateMetadata from './model/CreateMetadata';
 import CreateMetafieldDefinition from './model/CreateMetafieldDefinition';
-import CreateOrderRequest from './model/CreateOrderRequest';
 import CreatePayGreenConfigurationRequest from './model/CreatePayGreenConfigurationRequest';
 import CreateProduct from './model/CreateProduct';
 import CreateProductReference from './model/CreateProductReference';
@@ -153,7 +151,6 @@ import DnsRecordInformation from './model/DnsRecordInformation';
 import DnsVerifiedEvent from './model/DnsVerifiedEvent';
 import DriverLoginModel from './model/DriverLoginModel';
 import DriverRequestLoginPinModel from './model/DriverRequestLoginPinModel';
-import DuringOrderPromotionOptionsDm from './model/DuringOrderPromotionOptionsDm';
 import DynamicFormField from './model/DynamicFormField';
 import DynamicFormFieldOption from './model/DynamicFormFieldOption';
 import DynamicFormRule from './model/DynamicFormRule';
@@ -350,7 +347,6 @@ import OrderDeliveryInformation from './model/OrderDeliveryInformation';
 import OrderDeliveryInformationBase from './model/OrderDeliveryInformationBase';
 import OrderDeliveryTrackingStatusUpdatedEvent from './model/OrderDeliveryTrackingStatusUpdatedEvent';
 import OrderDispatchedEvent from './model/OrderDispatchedEvent';
-import OrderDm from './model/OrderDm';
 import OrderDropOffLocation from './model/OrderDropOffLocation';
 import OrderFulfillmentStatus from './model/OrderFulfillmentStatus';
 import OrderFulfillmentStatusBase from './model/OrderFulfillmentStatusBase';
@@ -360,7 +356,6 @@ import OrderFulfillmentStatusWithConfigurationActions from './model/OrderFulfill
 import OrderIngestSubmitOrderRequest from './model/OrderIngestSubmitOrderRequest';
 import OrderIngestSubmitOrderResponse from './model/OrderIngestSubmitOrderResponse';
 import OrderItem from './model/OrderItem';
-import OrderItemDm from './model/OrderItemDm';
 import OrderItemOption from './model/OrderItemOption';
 import OrderLeadTimes from './model/OrderLeadTimes';
 import OrderList from './model/OrderList';
@@ -645,7 +640,6 @@ import RestApiResultStripeConnectedAccount from './model/RestApiResultStripeConn
 import RestApiResultStripeTerminalConnectionToken from './model/RestApiResultStripeTerminalConnectionToken';
 import RestApiResultStripeTerminalLocation from './model/RestApiResultStripeTerminalLocation';
 import RestApiResultStuartSettings from './model/RestApiResultStuartSettings';
-import RestApiResultSubmitOrderResponseDm from './model/RestApiResultSubmitOrderResponseDm';
 import RestApiResultSubscription from './model/RestApiResultSubscription';
 import RestApiResultTeammate from './model/RestApiResultTeammate';
 import RestApiResultTelemetrySeriesResult from './model/RestApiResultTelemetrySeriesResult';
@@ -743,8 +737,6 @@ import StripeTerminalConnectionToken from './model/StripeTerminalConnectionToken
 import StripeTerminalLocation from './model/StripeTerminalLocation';
 import StuartSettings from './model/StuartSettings';
 import StuartSettingsTransportPrices from './model/StuartSettingsTransportPrices';
-import SubmitOrderRequest from './model/SubmitOrderRequest';
-import SubmitOrderResponseDm from './model/SubmitOrderResponseDm';
 import Subscription from './model/Subscription';
 import SubscriptionInvoice from './model/SubscriptionInvoice';
 import SubscriptionProduct from './model/SubscriptionProduct';
@@ -854,7 +846,6 @@ import FilesApi from './api/FilesApi';
 import FirebaseAppsApi from './api/FirebaseAppsApi';
 import FpmApi from './api/FpmApi';
 import FulfillmentStateConfigurationApi from './api/FulfillmentStateConfigurationApi';
-import GoogleFoodOrderPrototypeApi from './api/GoogleFoodOrderPrototypeApi';
 import HeartbeatApi from './api/HeartbeatApi';
 import HomeApi from './api/HomeApi';
 import HydraApi from './api/HydraApi';
@@ -1434,12 +1425,6 @@ export {
     Coordinates,
 
     /**
-     * The CoordinatesDm model constructor.
-     * @property {module:model/CoordinatesDm}
-     */
-    CoordinatesDm,
-
-    /**
      * The CountryFormResponse model constructor.
      * @property {module:model/CountryFormResponse}
      */
@@ -1570,12 +1555,6 @@ export {
      * @property {module:model/CreateMetafieldDefinition}
      */
     CreateMetafieldDefinition,
-
-    /**
-     * The CreateOrderRequest model constructor.
-     * @property {module:model/CreateOrderRequest}
-     */
-    CreateOrderRequest,
 
     /**
      * The CreatePayGreenConfigurationRequest model constructor.
@@ -1786,12 +1765,6 @@ export {
      * @property {module:model/DriverRequestLoginPinModel}
      */
     DriverRequestLoginPinModel,
-
-    /**
-     * The DuringOrderPromotionOptionsDm model constructor.
-     * @property {module:model/DuringOrderPromotionOptionsDm}
-     */
-    DuringOrderPromotionOptionsDm,
 
     /**
      * The DynamicFormField model constructor.
@@ -2970,12 +2943,6 @@ export {
     OrderDispatchedEvent,
 
     /**
-     * The OrderDm model constructor.
-     * @property {module:model/OrderDm}
-     */
-    OrderDm,
-
-    /**
      * The OrderDropOffLocation model constructor.
      * @property {module:model/OrderDropOffLocation}
      */
@@ -3028,12 +2995,6 @@ export {
      * @property {module:model/OrderItem}
      */
     OrderItem,
-
-    /**
-     * The OrderItemDm model constructor.
-     * @property {module:model/OrderItemDm}
-     */
-    OrderItemDm,
 
     /**
      * The OrderItemOption model constructor.
@@ -4740,12 +4701,6 @@ export {
     RestApiResultStuartSettings,
 
     /**
-     * The RestApiResultSubmitOrderResponseDm model constructor.
-     * @property {module:model/RestApiResultSubmitOrderResponseDm}
-     */
-    RestApiResultSubmitOrderResponseDm,
-
-    /**
      * The RestApiResultSubscription model constructor.
      * @property {module:model/RestApiResultSubscription}
      */
@@ -5326,18 +5281,6 @@ export {
      * @property {module:model/StuartSettingsTransportPrices}
      */
     StuartSettingsTransportPrices,
-
-    /**
-     * The SubmitOrderRequest model constructor.
-     * @property {module:model/SubmitOrderRequest}
-     */
-    SubmitOrderRequest,
-
-    /**
-     * The SubmitOrderResponseDm model constructor.
-     * @property {module:model/SubmitOrderResponseDm}
-     */
-    SubmitOrderResponseDm,
 
     /**
      * The Subscription model constructor.
@@ -5992,12 +5935,6 @@ export {
     * @property {module:api/FulfillmentStateConfigurationApi}
     */
     FulfillmentStateConfigurationApi,
-
-    /**
-    * The GoogleFoodOrderPrototypeApi service constructor.
-    * @property {module:api/GoogleFoodOrderPrototypeApi}
-    */
-    GoogleFoodOrderPrototypeApi,
 
     /**
     * The HeartbeatApi service constructor.

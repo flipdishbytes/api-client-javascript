@@ -314,8 +314,6 @@ Class | Method | HTTP request | Description
 *Flipdish.FulfillmentStateConfigurationApi* | [**getFulfillmentStatesConfigurationTemplate**](docs/FulfillmentStateConfigurationApi.md#getFulfillmentStatesConfigurationTemplate) | **GET** /api/v1.0/{appId}/fulfillment/configuration/states_template | 
 *Flipdish.FulfillmentStateConfigurationApi* | [**searchFulfillmentStatesConfigurations**](docs/FulfillmentStateConfigurationApi.md#searchFulfillmentStatesConfigurations) | **GET** /api/v1.0/{appId}/fulfillment/configuration/states | 
 *Flipdish.FulfillmentStateConfigurationApi* | [**updateFulfillmentStatesConfig**](docs/FulfillmentStateConfigurationApi.md#updateFulfillmentStatesConfig) | **POST** /api/v1.0/{appId}/fulfillment/configuration/states/{configId} | 
-*Flipdish.GoogleFoodOrderPrototypeApi* | [**createOrder**](docs/GoogleFoodOrderPrototypeApi.md#createOrder) | **POST** /api/v1.0/{appId}/googleorder | 
-*Flipdish.GoogleFoodOrderPrototypeApi* | [**submitOrder**](docs/GoogleFoodOrderPrototypeApi.md#submitOrder) | **POST** /api/v1.0/{appId}/googleorder/{orderId}/submit | 
 *Flipdish.HeartbeatApi* | [**headHostname**](docs/HeartbeatApi.md#headHostname) | **HEAD** /api/v1.0/heartbeat/Hostname | 
 *Flipdish.HeartbeatApi* | [**headPing**](docs/HeartbeatApi.md#headPing) | **HEAD** /api/v1.0/heartbeat | 
 *Flipdish.HeartbeatApi* | [**hostname**](docs/HeartbeatApi.md#hostname) | **GET** /api/v1.0/heartbeat/Hostname | 
@@ -746,7 +744,6 @@ Class | Method | HTTP request | Description
  - [Flipdish.ConfiguredStore](docs/ConfiguredStore.md)
  - [Flipdish.Contact](docs/Contact.md)
  - [Flipdish.Coordinates](docs/Coordinates.md)
- - [Flipdish.CoordinatesDm](docs/CoordinatesDm.md)
  - [Flipdish.CountryFormResponse](docs/CountryFormResponse.md)
  - [Flipdish.CountryWithAccountFieldsDefinitions](docs/CountryWithAccountFieldsDefinitions.md)
  - [Flipdish.CreateAccountModel](docs/CreateAccountModel.md)
@@ -769,7 +766,6 @@ Class | Method | HTTP request | Description
  - [Flipdish.CreateMenuTaxRate](docs/CreateMenuTaxRate.md)
  - [Flipdish.CreateMetadata](docs/CreateMetadata.md)
  - [Flipdish.CreateMetafieldDefinition](docs/CreateMetafieldDefinition.md)
- - [Flipdish.CreateOrderRequest](docs/CreateOrderRequest.md)
  - [Flipdish.CreatePayGreenConfigurationRequest](docs/CreatePayGreenConfigurationRequest.md)
  - [Flipdish.CreateProduct](docs/CreateProduct.md)
  - [Flipdish.CreateProductReference](docs/CreateProductReference.md)
@@ -805,7 +801,6 @@ Class | Method | HTTP request | Description
  - [Flipdish.DnsVerifiedEvent](docs/DnsVerifiedEvent.md)
  - [Flipdish.DriverLoginModel](docs/DriverLoginModel.md)
  - [Flipdish.DriverRequestLoginPinModel](docs/DriverRequestLoginPinModel.md)
- - [Flipdish.DuringOrderPromotionOptionsDm](docs/DuringOrderPromotionOptionsDm.md)
  - [Flipdish.DynamicFormField](docs/DynamicFormField.md)
  - [Flipdish.DynamicFormFieldOption](docs/DynamicFormFieldOption.md)
  - [Flipdish.DynamicFormRule](docs/DynamicFormRule.md)
@@ -1002,7 +997,6 @@ Class | Method | HTTP request | Description
  - [Flipdish.OrderDeliveryInformationBase](docs/OrderDeliveryInformationBase.md)
  - [Flipdish.OrderDeliveryTrackingStatusUpdatedEvent](docs/OrderDeliveryTrackingStatusUpdatedEvent.md)
  - [Flipdish.OrderDispatchedEvent](docs/OrderDispatchedEvent.md)
- - [Flipdish.OrderDm](docs/OrderDm.md)
  - [Flipdish.OrderDropOffLocation](docs/OrderDropOffLocation.md)
  - [Flipdish.OrderFulfillmentStatus](docs/OrderFulfillmentStatus.md)
  - [Flipdish.OrderFulfillmentStatusBase](docs/OrderFulfillmentStatusBase.md)
@@ -1012,7 +1006,6 @@ Class | Method | HTTP request | Description
  - [Flipdish.OrderIngestSubmitOrderRequest](docs/OrderIngestSubmitOrderRequest.md)
  - [Flipdish.OrderIngestSubmitOrderResponse](docs/OrderIngestSubmitOrderResponse.md)
  - [Flipdish.OrderItem](docs/OrderItem.md)
- - [Flipdish.OrderItemDm](docs/OrderItemDm.md)
  - [Flipdish.OrderItemOption](docs/OrderItemOption.md)
  - [Flipdish.OrderLeadTimes](docs/OrderLeadTimes.md)
  - [Flipdish.OrderList](docs/OrderList.md)
@@ -1297,7 +1290,6 @@ Class | Method | HTTP request | Description
  - [Flipdish.RestApiResultStripeTerminalConnectionToken](docs/RestApiResultStripeTerminalConnectionToken.md)
  - [Flipdish.RestApiResultStripeTerminalLocation](docs/RestApiResultStripeTerminalLocation.md)
  - [Flipdish.RestApiResultStuartSettings](docs/RestApiResultStuartSettings.md)
- - [Flipdish.RestApiResultSubmitOrderResponseDm](docs/RestApiResultSubmitOrderResponseDm.md)
  - [Flipdish.RestApiResultSubscription](docs/RestApiResultSubscription.md)
  - [Flipdish.RestApiResultTeammate](docs/RestApiResultTeammate.md)
  - [Flipdish.RestApiResultTelemetrySeriesResult](docs/RestApiResultTelemetrySeriesResult.md)
@@ -1395,8 +1387,6 @@ Class | Method | HTTP request | Description
  - [Flipdish.StripeTerminalLocation](docs/StripeTerminalLocation.md)
  - [Flipdish.StuartSettings](docs/StuartSettings.md)
  - [Flipdish.StuartSettingsTransportPrices](docs/StuartSettingsTransportPrices.md)
- - [Flipdish.SubmitOrderRequest](docs/SubmitOrderRequest.md)
- - [Flipdish.SubmitOrderResponseDm](docs/SubmitOrderResponseDm.md)
  - [Flipdish.Subscription](docs/Subscription.md)
  - [Flipdish.SubscriptionInvoice](docs/SubscriptionInvoice.md)
  - [Flipdish.SubscriptionProduct](docs/SubscriptionProduct.md)
