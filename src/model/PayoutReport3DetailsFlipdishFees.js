@@ -74,8 +74,14 @@ class PayoutReport3DetailsFlipdishFees {
             if (data.hasOwnProperty('QropCash')) {
                 obj['QropCash'] = ApiClient.convertToType(data['QropCash'], 'Number');
             }
+            if (data.hasOwnProperty('QropCashRevenue')) {
+                obj['QropCashRevenue'] = ApiClient.convertToType(data['QropCashRevenue'], 'Number');
+            }
             if (data.hasOwnProperty('QropCard')) {
                 obj['QropCard'] = ApiClient.convertToType(data['QropCard'], 'Number');
+            }
+            if (data.hasOwnProperty('QropCardRevenue')) {
+                obj['QropCardRevenue'] = ApiClient.convertToType(data['QropCardRevenue'], 'Number');
             }
             if (data.hasOwnProperty('PosCard')) {
                 obj['PosCard'] = ApiClient.convertToType(data['PosCard'], 'Number');
@@ -178,9 +184,19 @@ PayoutReport3DetailsFlipdishFees.prototype['KioskCardRevenue'] = undefined;
 PayoutReport3DetailsFlipdishFees.prototype['QropCash'] = undefined;
 
 /**
+ * @member {Number} QropCashRevenue
+ */
+PayoutReport3DetailsFlipdishFees.prototype['QropCashRevenue'] = undefined;
+
+/**
  * @member {Number} QropCard
  */
 PayoutReport3DetailsFlipdishFees.prototype['QropCard'] = undefined;
+
+/**
+ * @member {Number} QropCardRevenue
+ */
+PayoutReport3DetailsFlipdishFees.prototype['QropCardRevenue'] = undefined;
 
 /**
  * @member {Number} PosCard

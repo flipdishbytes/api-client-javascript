@@ -108,8 +108,20 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property QropCashRevenue (base name: "QropCashRevenue")', function() {
+      // uncomment below and update the code to test the property QropCashRevenue
+      //var instance = new Flipdish.PayoutReport3DetailsFlipdishFees();
+      //expect(instance).to.be();
+    });
+
     it('should have the property QropCard (base name: "QropCard")', function() {
       // uncomment below and update the code to test the property QropCard
+      //var instance = new Flipdish.PayoutReport3DetailsFlipdishFees();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property QropCardRevenue (base name: "QropCardRevenue")', function() {
+      // uncomment below and update the code to test the property QropCardRevenue
       //var instance = new Flipdish.PayoutReport3DetailsFlipdishFees();
       //expect(instance).to.be();
     });
