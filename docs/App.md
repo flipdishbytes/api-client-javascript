@@ -72,6 +72,8 @@ Name | Type | Description | Notes
 
 * `UpdateApp` (value: `"UpdateApp"`)
 
+* `ViewAppName` (value: `"ViewAppName"`)
+
 * `EditAppAssets` (value: `"EditAppAssets"`)
 
 * `EditAppFeatures` (value: `"EditAppFeatures"`)

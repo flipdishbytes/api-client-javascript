@@ -402,6 +402,12 @@ App['AppResourceSetEnum'] = {
     "UpdateApp": "UpdateApp",
 
     /**
+     * value: "ViewAppName"
+     * @const
+     */
+    "ViewAppName": "ViewAppName",
+
+    /**
      * value: "EditAppAssets"
      * @const
      */

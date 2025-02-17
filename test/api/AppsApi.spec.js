@@ -88,6 +88,16 @@
         done();
       });
     });
+    describe('getAppName', function() {
+      it('should call getAppName successfully', function(done) {
+        //uncomment below and update the code to test getAppName
+        //instance.getAppName(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('getApps', function() {
       it('should call getApps successfully', function(done) {
         //uncomment below and update the code to test getApps

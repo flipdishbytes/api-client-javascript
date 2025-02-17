@@ -178,6 +178,7 @@ Class | Method | HTTP request | Description
 *Flipdish.AppsApi* | [**createApp**](docs/AppsApi.md#createApp) | **POST** /api/v1.0/apps | 
 *Flipdish.AppsApi* | [**getApp**](docs/AppsApi.md#getApp) | **GET** /api/v1.0/apps/{appId} | 
 *Flipdish.AppsApi* | [**getAppHostnameStatus**](docs/AppsApi.md#getAppHostnameStatus) | **GET** /api/v1.0/apps/{appId}/hostnamestatus | 
+*Flipdish.AppsApi* | [**getAppName**](docs/AppsApi.md#getAppName) | **GET** /api/v1.0/apps/{appId}/name | 
 *Flipdish.AppsApi* | [**getApps**](docs/AppsApi.md#getApps) | **GET** /api/v1.0/apps | 
 *Flipdish.AppsApi* | [**getCompliance**](docs/AppsApi.md#getCompliance) | **GET** /api/v1.0/apps/{appId}/compliance | 
 *Flipdish.AppsApi* | [**getPanaceaVanityUrl**](docs/AppsApi.md#getPanaceaVanityUrl) | **GET** /api/v1.0/apps/{appId}/panacea/url | 
