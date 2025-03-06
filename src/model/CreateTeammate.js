@@ -60,6 +60,9 @@ class CreateTeammate {
             if (data.hasOwnProperty('StoreIds')) {
                 obj['StoreIds'] = ApiClient.convertToType(data['StoreIds'], ['Number']);
             }
+            if (data.hasOwnProperty('PropertyIds')) {
+                obj['PropertyIds'] = ApiClient.convertToType(data['PropertyIds'], ['String']);
+            }
         }
         return obj;
     }
@@ -90,6 +93,12 @@ CreateTeammate.prototype['HasAccessToAllStores'] = undefined;
  * @member {Array.<Number>} StoreIds
  */
 CreateTeammate.prototype['StoreIds'] = undefined;
+
+/**
+ * Property Ids the user has access to (if HasAccessToAllStores is false)
+ * @member {Array.<String>} PropertyIds
+ */
+CreateTeammate.prototype['PropertyIds'] = undefined;
 
 
 
@@ -131,6 +140,12 @@ CreateTeammate['AppAccessLevelEnum'] = {
      * @const
      */
     "Integrator": "Integrator",
+
+    /**
+     * value: "PropertyManager"
+     * @const
+     */
+    "PropertyManager": "PropertyManager",
 
     /**
      * value: "StoreManager"

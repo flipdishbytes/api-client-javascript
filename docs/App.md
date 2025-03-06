@@ -47,6 +47,8 @@ Name | Type | Description | Notes
 
 * `Integrator` (value: `"Integrator"`)
 
+* `PropertyManager` (value: `"PropertyManager"`)
+
 * `StoreManager` (value: `"StoreManager"`)
 
 * `StoreStaff` (value: `"StoreStaff"`)
@@ -99,6 +101,8 @@ Name | Type | Description | Notes
 * `CreateTeammateIntegrator` (value: `"CreateTeammateIntegrator"`)
 
 * `CreateTeammateOnboarding` (value: `"CreateTeammateOnboarding"`)
+
+* `CreateTeammatePropertyManager` (value: `"CreateTeammatePropertyManager"`)
 
 * `ViewApmConfigurations` (value: `"ViewApmConfigurations"`)
 

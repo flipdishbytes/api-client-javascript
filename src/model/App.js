@@ -339,6 +339,12 @@ App['AppAccessLevelEnum'] = {
     "Integrator": "Integrator",
 
     /**
+     * value: "PropertyManager"
+     * @const
+     */
+    "PropertyManager": "PropertyManager",
+
+    /**
      * value: "StoreManager"
      * @const
      */
@@ -484,6 +490,12 @@ App['AppResourceSetEnum'] = {
      * @const
      */
     "CreateTeammateOnboarding": "CreateTeammateOnboarding",
+
+    /**
+     * value: "CreateTeammatePropertyManager"
+     * @const
+     */
+    "CreateTeammatePropertyManager": "CreateTeammatePropertyManager",
 
     /**
      * value: "ViewApmConfigurations"

@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 **AppAccessLevel** | **String** | App access level | [optional] 
 **HasAccessToAllStores** | **Boolean** | The user has access to all stores for the app (including new stores that added later) | [optional] 
 **StoreIds** | **[Number]** | Store IDs the user has access to (if HasAccessToAllStores is false) | [optional] 
+**PropertyIds** | **[String]** | Property Ids the user has access to (if HasAccessToAllStores is false) | [optional] 
 
 
 
@@ -23,6 +24,8 @@ Name | Type | Description | Notes
 * `ManagedOwner` (value: `"ManagedOwner"`)
 
 * `Integrator` (value: `"Integrator"`)
+
+* `PropertyManager` (value: `"PropertyManager"`)
 
 * `StoreManager` (value: `"StoreManager"`)
 

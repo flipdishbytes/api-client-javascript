@@ -78,6 +78,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property PropertyIds (base name: "PropertyIds")', function() {
+      // uncomment below and update the code to test the property PropertyIds
+      //var instance = new Flipdish.CreateTeammate();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));
