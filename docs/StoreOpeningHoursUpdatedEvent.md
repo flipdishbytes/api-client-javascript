@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 **StoreGroupId** | **Number** | Store group Id | [optional] 
 **User** | [**UserEventInfo**](UserEventInfo.md) |  | [optional] 
 **DeliveryType** | **String** | Type of opening hours Delivery / Pickup | [optional] 
+**DeliveryTypeString** | **String** | Type of opening hours Delivery / Pickup as a string | [optional] 
 **BusinessHoursPeriodOld** | [**BusinessHoursPeriod**](BusinessHoursPeriod.md) |  | [optional] 
 **BusinessHoursPeriod** | [**BusinessHoursPeriod**](BusinessHoursPeriod.md) |  | [optional] 
 **Description** | **String** | Description | [optional] 
@@ -22,6 +23,17 @@ Name | Type | Description | Notes
 
 
 ## Enum: DeliveryTypeEnum
+
+
+* `Delivery` (value: `"Delivery"`)
+
+* `Pickup` (value: `"Pickup"`)
+
+
+
+
+
+## Enum: DeliveryTypeStringEnum
 
 
 * `Delivery` (value: `"Delivery"`)

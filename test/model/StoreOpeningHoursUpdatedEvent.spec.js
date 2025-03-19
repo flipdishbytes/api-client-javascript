@@ -90,6 +90,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property DeliveryTypeString (base name: "DeliveryTypeString")', function() {
+      // uncomment below and update the code to test the property DeliveryTypeString
+      //var instance = new Flipdish.StoreOpeningHoursUpdatedEvent();
+      //expect(instance).to.be();
+    });
+
     it('should have the property BusinessHoursPeriodOld (base name: "BusinessHoursPeriodOld")', function() {
       // uncomment below and update the code to test the property BusinessHoursPeriodOld
       //var instance = new Flipdish.StoreOpeningHoursUpdatedEvent();

@@ -68,6 +68,9 @@ class StoreOpeningHoursUpdatedEvent {
             if (data.hasOwnProperty('DeliveryType')) {
                 obj['DeliveryType'] = ApiClient.convertToType(data['DeliveryType'], 'String');
             }
+            if (data.hasOwnProperty('DeliveryTypeString')) {
+                obj['DeliveryTypeString'] = ApiClient.convertToType(data['DeliveryTypeString'], 'String');
+            }
             if (data.hasOwnProperty('BusinessHoursPeriodOld')) {
                 obj['BusinessHoursPeriodOld'] = BusinessHoursPeriod.constructFromObject(data['BusinessHoursPeriodOld']);
             }
@@ -135,6 +138,12 @@ StoreOpeningHoursUpdatedEvent.prototype['User'] = undefined;
 StoreOpeningHoursUpdatedEvent.prototype['DeliveryType'] = undefined;
 
 /**
+ * Type of opening hours Delivery / Pickup as a string
+ * @member {module:model/StoreOpeningHoursUpdatedEvent.DeliveryTypeStringEnum} DeliveryTypeString
+ */
+StoreOpeningHoursUpdatedEvent.prototype['DeliveryTypeString'] = undefined;
+
+/**
  * @member {module:model/BusinessHoursPeriod} BusinessHoursPeriodOld
  */
 StoreOpeningHoursUpdatedEvent.prototype['BusinessHoursPeriodOld'] = undefined;
@@ -190,6 +199,27 @@ StoreOpeningHoursUpdatedEvent.prototype['IpAddress'] = undefined;
  * @readonly
  */
 StoreOpeningHoursUpdatedEvent['DeliveryTypeEnum'] = {
+
+    /**
+     * value: "Delivery"
+     * @const
+     */
+    "Delivery": "Delivery",
+
+    /**
+     * value: "Pickup"
+     * @const
+     */
+    "Pickup": "Pickup"
+};
+
+
+/**
+ * Allowed values for the <code>DeliveryTypeString</code> property.
+ * @enum {String}
+ * @readonly
+ */
+StoreOpeningHoursUpdatedEvent['DeliveryTypeStringEnum'] = {
 
     /**
      * value: "Delivery"
