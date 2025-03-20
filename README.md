@@ -611,7 +611,6 @@ Class | Method | HTTP request | Description
 *Flipdish.StripeCustomConnectApi* | [**stripeCustomConnectRefresh**](docs/StripeCustomConnectApi.md#stripeCustomConnectRefresh) | **GET** /api/v1.0/{appId}/customconnect/refresh-link | 
 *Flipdish.StripeCustomConnectApi* | [**updateBankAccountDetails**](docs/StripeCustomConnectApi.md#updateBankAccountDetails) | **POST** /api/v1.0/{appId}/customconnect/{bankAccountId}/update-bank-account-details | 
 *Flipdish.StripeCustomConnectApi* | [**updatePayoutSchedule**](docs/StripeCustomConnectApi.md#updatePayoutSchedule) | **POST** /api/v1.0/{appId}/customconnect/update-payout-schedule/{stripeConnectedAccountId}/{interval} | 
-*Flipdish.StripeCustomConnectAdminApi* | [**initializeBankAccountConnectedAccount**](docs/StripeCustomConnectAdminApi.md#initializeBankAccountConnectedAccount) | **POST** /api/v1.0/customconnect/initialize-bank-account | 
 *Flipdish.StuartApi* | [**stuartCancelJob**](docs/StuartApi.md#stuartCancelJob) | **DELETE** /api/v1.0/stuart/jobs/{jobId} | 
 *Flipdish.StuartApi* | [**stuartGetJob**](docs/StuartApi.md#stuartGetJob) | **GET** /api/v1.0/stuart/jobs/{jobId} | 
 *Flipdish.StuartApi* | [**stuartGetStuartSettings**](docs/StuartApi.md#stuartGetStuartSettings) | **GET** /api/v1.0/stuart/settings/{storeId} | 

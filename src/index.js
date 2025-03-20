@@ -888,7 +888,6 @@ import StoreGroupsApi from './api/StoreGroupsApi';
 import StoreOrderCapacityApi from './api/StoreOrderCapacityApi';
 import StoresApi from './api/StoresApi';
 import StripeCustomConnectApi from './api/StripeCustomConnectApi';
-import StripeCustomConnectAdminApi from './api/StripeCustomConnectAdminApi';
 import StuartApi from './api/StuartApi';
 import SubscriptionsApi from './api/SubscriptionsApi';
 import TeammatesApi from './api/TeammatesApi';
@@ -6187,12 +6186,6 @@ export {
     * @property {module:api/StripeCustomConnectApi}
     */
     StripeCustomConnectApi,
-
-    /**
-    * The StripeCustomConnectAdminApi service constructor.
-    * @property {module:api/StripeCustomConnectAdminApi}
-    */
-    StripeCustomConnectAdminApi,
 
     /**
     * The StuartApi service constructor.
