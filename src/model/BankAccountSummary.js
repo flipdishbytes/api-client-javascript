@@ -56,6 +56,9 @@ class BankAccountSummary {
             if (data.hasOwnProperty('StoreNames')) {
                 obj['StoreNames'] = ApiClient.convertToType(data['StoreNames'], ['String']);
             }
+            if (data.hasOwnProperty('StoreIds')) {
+                obj['StoreIds'] = ApiClient.convertToType(data['StoreIds'], ['Number']);
+            }
             if (data.hasOwnProperty('AccountState')) {
                 obj['AccountState'] = ApiClient.convertToType(data['AccountState'], 'String');
             }
@@ -104,6 +107,12 @@ BankAccountSummary.prototype['Id'] = undefined;
  * @member {Array.<String>} StoreNames
  */
 BankAccountSummary.prototype['StoreNames'] = undefined;
+
+/**
+ * Store Ids that are attached to this account
+ * @member {Array.<Number>} StoreIds
+ */
+BankAccountSummary.prototype['StoreIds'] = undefined;
 
 /**
  * Status of Account

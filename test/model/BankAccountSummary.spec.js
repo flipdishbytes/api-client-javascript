@@ -66,6 +66,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property StoreIds (base name: "StoreIds")', function() {
+      // uncomment below and update the code to test the property StoreIds
+      //var instance = new Flipdish.BankAccountSummary();
+      //expect(instance).to.be();
+    });
+
     it('should have the property AccountState (base name: "AccountState")', function() {
       // uncomment below and update the code to test the property AccountState
       //var instance = new Flipdish.BankAccountSummary();

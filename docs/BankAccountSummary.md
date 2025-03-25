@@ -6,6 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **Number** | Id of this account | [optional] 
 **StoreNames** | **[String]** | Store Names that are attached to this account | [optional] 
+**StoreIds** | **[Number]** | Store Ids that are attached to this account | [optional] 
 **AccountState** | **String** | Status of Account | [optional] 
 **CurrencyCode** | **String** | Currency of Account | [optional] 
 **StripeConnectedAccountInfo** | [**StripeConnectedAccountInfo**](StripeConnectedAccountInfo.md) |  | [optional] 
