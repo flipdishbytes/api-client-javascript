@@ -1270,7 +1270,13 @@ Store['SalesChannelTypesEnum'] = {
      * value: "Pos"
      * @const
      */
-    "Pos": "Pos"
+    "Pos": "Pos",
+
+    /**
+     * value: "None"
+     * @const
+     */
+    "None": "None"
 };
 
 

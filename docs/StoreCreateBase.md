@@ -23,6 +23,8 @@ Name | Type | Description | Notes
 
 * `Pos` (value: `"Pos"`)
 
+* `None` (value: `"None"`)
+
 
 
 
