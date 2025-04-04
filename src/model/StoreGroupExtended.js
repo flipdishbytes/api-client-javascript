@@ -74,6 +74,9 @@ class StoreGroupExtended {
             if (data.hasOwnProperty('PickupMenuMessage')) {
                 obj['PickupMenuMessage'] = ApiClient.convertToType(data['PickupMenuMessage'], 'String');
             }
+            if (data.hasOwnProperty('BrandIds')) {
+                obj['BrandIds'] = ApiClient.convertToType(data['BrandIds'], ['String']);
+            }
             if (data.hasOwnProperty('Name')) {
                 obj['Name'] = ApiClient.convertToType(data['Name'], 'String');
             }
@@ -134,6 +137,12 @@ StoreGroupExtended.prototype['DeliveryMenuMessage'] = undefined;
  * @member {String} PickupMenuMessage
  */
 StoreGroupExtended.prototype['PickupMenuMessage'] = undefined;
+
+/**
+ * List of brand ids (AppIds) that are associated with this store group
+ * @member {Array.<String>} BrandIds
+ */
+StoreGroupExtended.prototype['BrandIds'] = undefined;
 
 /**
  * Store Group Name

@@ -9,6 +9,7 @@ Name | Type | Description | Notes
 **GeneralRatingCount** | **Number** | Store Group rating count | [optional] 
 **DeliveryMenuMessage** | **String** | Delivery menu message | [optional] 
 **PickupMenuMessage** | **String** | Pickup menu message | [optional] 
+**BrandIds** | **[String]** | List of brand ids (AppIds) that are associated with this store group | [optional] 
 **Name** | **String** | Store Group Name | [optional] 
 **Currency** | **String** | Currency used by the stores in this group | [optional] 
 
