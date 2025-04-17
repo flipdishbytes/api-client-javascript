@@ -1199,6 +1199,7 @@ export default class StoresApi {
      * @param {Object} opts Optional parameters
      * @param {String} opts.searchQuery 
      * @param {module:model/String} opts.salesChannelType 
+     * @param {Boolean} opts.excludeUnpublished 
      * @param {Number} opts.page 
      * @param {Number} opts.limit 
      * @param {module:api/StoresApi~getStoresByAppIdCallback} callback The callback function, accepting three arguments: error, data, response
@@ -1218,6 +1219,7 @@ export default class StoresApi {
       let queryParams = {
         'searchQuery': opts['searchQuery'],
         'salesChannelType': opts['salesChannelType'],
+        'excludeUnpublished': opts['excludeUnpublished'],
         'page': opts['page'],
         'limit': opts['limit']
       };

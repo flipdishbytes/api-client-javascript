@@ -1284,6 +1284,7 @@ let appId = "appId_example"; // String |
 let opts = {
   'searchQuery': "searchQuery_example", // String | 
   'salesChannelType': "salesChannelType_example", // String | 
+  'excludeUnpublished': true, // Boolean | 
   'page': 56, // Number | 
   'limit': 56 // Number | 
 };
@@ -1304,6 +1305,7 @@ Name | Type | Description  | Notes
  **appId** | **String**|  | 
  **searchQuery** | **String**|  | [optional] 
  **salesChannelType** | **String**|  | [optional] 
+ **excludeUnpublished** | **Boolean**|  | [optional] 
  **page** | **Number**|  | [optional] 
  **limit** | **Number**|  | [optional] 
 
