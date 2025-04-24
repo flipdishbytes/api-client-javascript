@@ -268,63 +268,6 @@ export default class PayoutReportsApi {
     }
 
     /**
-     * Callback function to receive the result of the payoutReport3ExportPayoutLedgerEntries operation.
-     * @callback module:api/PayoutReportsApi~payoutReport3ExportPayoutLedgerEntriesCallback
-     * @param {String} error Error message, if any.
-     * @param {module:model/RestApiResultFileCreationResult} data The data returned by the service call.
-     * @param {String} response The complete HTTP response.
-     */
-
-    /**
-     * @param {String} appId 
-     * @param {Number} bankAccountId 
-     * @param {Number} payoutId 
-     * @param {Object} opts Optional parameters
-     * @param {Array.<Number>} opts.stores 
-     * @param {module:api/PayoutReportsApi~payoutReport3ExportPayoutLedgerEntriesCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/RestApiResultFileCreationResult}
-     */
-    payoutReport3ExportPayoutLedgerEntries(appId, bankAccountId, payoutId, opts, callback) {
-      opts = opts || {};
-      let postBody = null;
-      // verify the required parameter 'appId' is set
-      if (appId === undefined || appId === null) {
-        throw new Error("Missing the required parameter 'appId' when calling payoutReport3ExportPayoutLedgerEntries");
-      }
-      // verify the required parameter 'bankAccountId' is set
-      if (bankAccountId === undefined || bankAccountId === null) {
-        throw new Error("Missing the required parameter 'bankAccountId' when calling payoutReport3ExportPayoutLedgerEntries");
-      }
-      // verify the required parameter 'payoutId' is set
-      if (payoutId === undefined || payoutId === null) {
-        throw new Error("Missing the required parameter 'payoutId' when calling payoutReport3ExportPayoutLedgerEntries");
-      }
-
-      let pathParams = {
-        'appId': appId,
-        'bankAccountId': bankAccountId,
-        'payoutId': payoutId
-      };
-      let queryParams = {
-        'stores': this.apiClient.buildCollectionParam(opts['stores'], 'multi')
-      };
-      let headerParams = {
-      };
-      let formParams = {
-      };
-
-      let authNames = ['oauth2'];
-      let contentTypes = [];
-      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'Data', 'Message', 'ErrorCode', 'StackTrace'];
-      let returnType = RestApiResultFileCreationResult;
-      return this.apiClient.callApi(
-        '/api/v1.0/{appId}/reporting/reports/payouts3/{bankAccountId}/{payoutId}/export/ledgerentries', 'GET',
-        pathParams, queryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType, null, callback
-      );
-    }
-
-    /**
      * Callback function to receive the result of the payoutReport3ExportPayoutOrders operation.
      * @callback module:api/PayoutReportsApi~payoutReport3ExportPayoutOrdersCallback
      * @param {String} error Error message, if any.

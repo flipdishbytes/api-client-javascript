@@ -88,16 +88,6 @@
         done();
       });
     });
-    describe('payoutReport3ExportPayoutLedgerEntries', function() {
-      it('should call payoutReport3ExportPayoutLedgerEntries successfully', function(done) {
-        //uncomment below and update the code to test payoutReport3ExportPayoutLedgerEntries
-        //instance.payoutReport3ExportPayoutLedgerEntries(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
     describe('payoutReport3ExportPayoutOrders', function() {
       it('should call payoutReport3ExportPayoutOrders successfully', function(done) {
         //uncomment below and update the code to test payoutReport3ExportPayoutOrders
