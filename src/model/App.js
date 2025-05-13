@@ -654,6 +654,18 @@ App['AppResourceSetEnum'] = {
     "EditStoreOrderCapacity": "EditStoreOrderCapacity",
 
     /**
+     * value: "ArchiveStores"
+     * @const
+     */
+    "ArchiveStores": "ArchiveStores",
+
+    /**
+     * value: "PublishStores"
+     * @const
+     */
+    "PublishStores": "PublishStores",
+
+    /**
      * value: "UpdatePrinterTerminalsAssign"
      * @const
      */

@@ -156,6 +156,10 @@ Name | Type | Description | Notes
 
 * `EditStoreOrderCapacity` (value: `"EditStoreOrderCapacity"`)
 
+* `ArchiveStores` (value: `"ArchiveStores"`)
+
+* `PublishStores` (value: `"PublishStores"`)
+
 * `UpdatePrinterTerminalsAssign` (value: `"UpdatePrinterTerminalsAssign"`)
 
 * `UpdatePrinterTerminalsToggle` (value: `"UpdatePrinterTerminalsToggle"`)
