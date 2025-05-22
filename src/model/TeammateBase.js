@@ -121,6 +121,12 @@ TeammateBase['AppAccessLevelEnum'] = {
     "StoreOwner": "StoreOwner",
 
     /**
+     * value: "PropertyOwner"
+     * @const
+     */
+    "PropertyOwner": "PropertyOwner",
+
+    /**
      * value: "ManagedOwner"
      * @const
      */
