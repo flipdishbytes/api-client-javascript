@@ -39,6 +39,8 @@ Name | Type | Description | Notes
 
 * `StoreOwner` (value: `"StoreOwner"`)
 
+* `PropertyOwner` (value: `"PropertyOwner"`)
+
 * `ManagedOwner` (value: `"ManagedOwner"`)
 
 * `Integrator` (value: `"Integrator"`)

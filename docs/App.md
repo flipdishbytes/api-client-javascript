@@ -43,6 +43,8 @@ Name | Type | Description | Notes
 
 * `StoreOwner` (value: `"StoreOwner"`)
 
+* `PropertyOwner` (value: `"PropertyOwner"`)
+
 * `ManagedOwner` (value: `"ManagedOwner"`)
 
 * `Integrator` (value: `"Integrator"`)
@@ -103,6 +105,8 @@ Name | Type | Description | Notes
 * `CreateTeammateOnboarding` (value: `"CreateTeammateOnboarding"`)
 
 * `CreateTeammatePropertyManager` (value: `"CreateTeammatePropertyManager"`)
+
+* `CreateTeammatePropertyOwner` (value: `"CreateTeammatePropertyOwner"`)
 
 * `ViewApmConfigurations` (value: `"ViewApmConfigurations"`)
 
