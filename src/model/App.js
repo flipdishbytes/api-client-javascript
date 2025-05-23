@@ -1407,7 +1407,205 @@ App['AppResourceSetEnum'] = {
      * value: "ViewInvoices"
      * @const
      */
-    "ViewInvoices": "ViewInvoices"
+    "ViewInvoices": "ViewInvoices",
+
+    /**
+     * value: "EditAccountsBills"
+     * @const
+     */
+    "EditAccountsBills": "EditAccountsBills",
+
+    /**
+     * value: "ViewAccountsBills"
+     * @const
+     */
+    "ViewAccountsBills": "ViewAccountsBills",
+
+    /**
+     * value: "EditAccountsCategories"
+     * @const
+     */
+    "EditAccountsCategories": "EditAccountsCategories",
+
+    /**
+     * value: "ViewAccountsCategories"
+     * @const
+     */
+    "ViewAccountsCategories": "ViewAccountsCategories",
+
+    /**
+     * value: "EditAccountsCreditAccounts"
+     * @const
+     */
+    "EditAccountsCreditAccounts": "EditAccountsCreditAccounts",
+
+    /**
+     * value: "ViewAccountsCreditAccounts"
+     * @const
+     */
+    "ViewAccountsCreditAccounts": "ViewAccountsCreditAccounts",
+
+    /**
+     * value: "EditAccountsCreditBooks"
+     * @const
+     */
+    "EditAccountsCreditBooks": "EditAccountsCreditBooks",
+
+    /**
+     * value: "ViewAccountsCreditBooks"
+     * @const
+     */
+    "ViewAccountsCreditBooks": "ViewAccountsCreditBooks",
+
+    /**
+     * value: "EditAccountsExpenses"
+     * @const
+     */
+    "EditAccountsExpenses": "EditAccountsExpenses",
+
+    /**
+     * value: "ViewAccountsExpenses"
+     * @const
+     */
+    "ViewAccountsExpenses": "ViewAccountsExpenses",
+
+    /**
+     * value: "EditAccountsTransactionAccounts"
+     * @const
+     */
+    "EditAccountsTransactionAccounts": "EditAccountsTransactionAccounts",
+
+    /**
+     * value: "ViewAccountsTransactionAccounts"
+     * @const
+     */
+    "ViewAccountsTransactionAccounts": "ViewAccountsTransactionAccounts",
+
+    /**
+     * value: "EditDocumentExplorer"
+     * @const
+     */
+    "EditDocumentExplorer": "EditDocumentExplorer",
+
+    /**
+     * value: "ViewDocumentExplorer"
+     * @const
+     */
+    "ViewDocumentExplorer": "ViewDocumentExplorer",
+
+    /**
+     * value: "ViewInventoryReports"
+     * @const
+     */
+    "ViewInventoryReports": "ViewInventoryReports",
+
+    /**
+     * value: "EditInventoryPurchaseOrders"
+     * @const
+     */
+    "EditInventoryPurchaseOrders": "EditInventoryPurchaseOrders",
+
+    /**
+     * value: "ViewInventoryPurchaseOrders"
+     * @const
+     */
+    "ViewInventoryPurchaseOrders": "ViewInventoryPurchaseOrders",
+
+    /**
+     * value: "EditInventoryStockItems"
+     * @const
+     */
+    "EditInventoryStockItems": "EditInventoryStockItems",
+
+    /**
+     * value: "ViewInventoryStockItems"
+     * @const
+     */
+    "ViewInventoryStockItems": "ViewInventoryStockItems",
+
+    /**
+     * value: "EditInventorySupplier"
+     * @const
+     */
+    "EditInventorySupplier": "EditInventorySupplier",
+
+    /**
+     * value: "ViewInventorySupplier"
+     * @const
+     */
+    "ViewInventorySupplier": "ViewInventorySupplier",
+
+    /**
+     * value: "EditInventoryTrackingProfiles"
+     * @const
+     */
+    "EditInventoryTrackingProfiles": "EditInventoryTrackingProfiles",
+
+    /**
+     * value: "ViewInventoryTrackingProfiles"
+     * @const
+     */
+    "ViewInventoryTrackingProfiles": "ViewInventoryTrackingProfiles",
+
+    /**
+     * value: "ViewPayrollReports"
+     * @const
+     */
+    "ViewPayrollReports": "ViewPayrollReports",
+
+    /**
+     * value: "EditPayrollHoliday"
+     * @const
+     */
+    "EditPayrollHoliday": "EditPayrollHoliday",
+
+    /**
+     * value: "ViewPayrollHoliday"
+     * @const
+     */
+    "ViewPayrollHoliday": "ViewPayrollHoliday",
+
+    /**
+     * value: "EditPayrollRota"
+     * @const
+     */
+    "EditPayrollRota": "EditPayrollRota",
+
+    /**
+     * value: "ViewPayrollRota"
+     * @const
+     */
+    "ViewPayrollRota": "ViewPayrollRota",
+
+    /**
+     * value: "EditPayrollStaff"
+     * @const
+     */
+    "EditPayrollStaff": "EditPayrollStaff",
+
+    /**
+     * value: "ViewPayrollStaff"
+     * @const
+     */
+    "ViewPayrollStaff": "ViewPayrollStaff",
+
+    /**
+     * value: "ViewSalesReports"
+     * @const
+     */
+    "ViewSalesReports": "ViewSalesReports",
+
+    /**
+     * value: "ViewCostReports"
+     * @const
+     */
+    "ViewCostReports": "ViewCostReports",
+
+    /**
+     * value: "ViewMenuReports"
+     * @const
+     */
+    "ViewMenuReports": "ViewMenuReports"
 };
 
 

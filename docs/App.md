@@ -408,6 +408,72 @@ Name | Type | Description | Notes
 
 * `ViewInvoices` (value: `"ViewInvoices"`)
 
+* `EditAccountsBills` (value: `"EditAccountsBills"`)
+
+* `ViewAccountsBills` (value: `"ViewAccountsBills"`)
+
+* `EditAccountsCategories` (value: `"EditAccountsCategories"`)
+
+* `ViewAccountsCategories` (value: `"ViewAccountsCategories"`)
+
+* `EditAccountsCreditAccounts` (value: `"EditAccountsCreditAccounts"`)
+
+* `ViewAccountsCreditAccounts` (value: `"ViewAccountsCreditAccounts"`)
+
+* `EditAccountsCreditBooks` (value: `"EditAccountsCreditBooks"`)
+
+* `ViewAccountsCreditBooks` (value: `"ViewAccountsCreditBooks"`)
+
+* `EditAccountsExpenses` (value: `"EditAccountsExpenses"`)
+
+* `ViewAccountsExpenses` (value: `"ViewAccountsExpenses"`)
+
+* `EditAccountsTransactionAccounts` (value: `"EditAccountsTransactionAccounts"`)
+
+* `ViewAccountsTransactionAccounts` (value: `"ViewAccountsTransactionAccounts"`)
+
+* `EditDocumentExplorer` (value: `"EditDocumentExplorer"`)
+
+* `ViewDocumentExplorer` (value: `"ViewDocumentExplorer"`)
+
+* `ViewInventoryReports` (value: `"ViewInventoryReports"`)
+
+* `EditInventoryPurchaseOrders` (value: `"EditInventoryPurchaseOrders"`)
+
+* `ViewInventoryPurchaseOrders` (value: `"ViewInventoryPurchaseOrders"`)
+
+* `EditInventoryStockItems` (value: `"EditInventoryStockItems"`)
+
+* `ViewInventoryStockItems` (value: `"ViewInventoryStockItems"`)
+
+* `EditInventorySupplier` (value: `"EditInventorySupplier"`)
+
+* `ViewInventorySupplier` (value: `"ViewInventorySupplier"`)
+
+* `EditInventoryTrackingProfiles` (value: `"EditInventoryTrackingProfiles"`)
+
+* `ViewInventoryTrackingProfiles` (value: `"ViewInventoryTrackingProfiles"`)
+
+* `ViewPayrollReports` (value: `"ViewPayrollReports"`)
+
+* `EditPayrollHoliday` (value: `"EditPayrollHoliday"`)
+
+* `ViewPayrollHoliday` (value: `"ViewPayrollHoliday"`)
+
+* `EditPayrollRota` (value: `"EditPayrollRota"`)
+
+* `ViewPayrollRota` (value: `"ViewPayrollRota"`)
+
+* `EditPayrollStaff` (value: `"EditPayrollStaff"`)
+
+* `ViewPayrollStaff` (value: `"ViewPayrollStaff"`)
+
+* `ViewSalesReports` (value: `"ViewSalesReports"`)
+
+* `ViewCostReports` (value: `"ViewCostReports"`)
+
+* `ViewMenuReports` (value: `"ViewMenuReports"`)
+
 
 
 
