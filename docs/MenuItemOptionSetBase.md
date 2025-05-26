@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 **MinSelectCount** | **Number** | Minimum items must be selected | [optional] 
 **MaxSelectCount** | **Number** | Maximum number of items can be selected | [optional] 
 **CellLayoutType** | **String** | Small | Medium | Large  Affects the layout of the menu. | [optional] 
+**PublicId** | **String** | Permanent reference to the item. | [optional] 
 
 
 

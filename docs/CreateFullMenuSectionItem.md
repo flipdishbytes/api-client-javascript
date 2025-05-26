@@ -21,6 +21,7 @@ Name | Type | Description | Notes
 **ImageUrl** | **String** | Image url | [optional] 
 **MenuItemId** | **Number** | Menu Item Id | [optional] 
 **ExcludeFromVoucherDiscounting** | **Boolean** | If true, the item is excluded from voucher discount calculations | [optional] 
+**PublicId** | **String** | Permanent reference to the item. | [optional] 
 
 
 

@@ -101,6 +101,9 @@ class CreateFullMenuSectionItem {
             if (data.hasOwnProperty('ExcludeFromVoucherDiscounting')) {
                 obj['ExcludeFromVoucherDiscounting'] = ApiClient.convertToType(data['ExcludeFromVoucherDiscounting'], 'Boolean');
             }
+            if (data.hasOwnProperty('PublicId')) {
+                obj['PublicId'] = ApiClient.convertToType(data['PublicId'], 'String');
+            }
         }
         return obj;
     }
@@ -209,6 +212,12 @@ CreateFullMenuSectionItem.prototype['MenuItemId'] = undefined;
  * @member {Boolean} ExcludeFromVoucherDiscounting
  */
 CreateFullMenuSectionItem.prototype['ExcludeFromVoucherDiscounting'] = undefined;
+
+/**
+ * Permanent reference to the item.
+ * @member {String} PublicId
+ */
+CreateFullMenuSectionItem.prototype['PublicId'] = undefined;
 
 
 

@@ -13,5 +13,6 @@ Name | Type | Description | Notes
 **IsHiddenFromCustomers** | **Boolean** | Is hidden from customer. Perhaps when the item is out of stock. | [optional] 
 **ImageUrl** | **String** | Image url | [optional] 
 **MenuSectionId** | **Number** | Menu Section Id | [optional] 
+**PublicId** | **String** | Permanent reference to the item. | [optional] 
 
 

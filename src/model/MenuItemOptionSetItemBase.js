@@ -69,6 +69,9 @@ class MenuItemOptionSetItemBase {
             if (data.hasOwnProperty('ImageUrl')) {
                 obj['ImageUrl'] = ApiClient.convertToType(data['ImageUrl'], 'String');
             }
+            if (data.hasOwnProperty('PublicId')) {
+                obj['PublicId'] = ApiClient.convertToType(data['PublicId'], 'String');
+            }
         }
         return obj;
     }
@@ -117,6 +120,12 @@ MenuItemOptionSetItemBase.prototype['CellLayoutType'] = undefined;
  * @member {String} ImageUrl
  */
 MenuItemOptionSetItemBase.prototype['ImageUrl'] = undefined;
+
+/**
+ * Permanent reference to the item.
+ * @member {String} PublicId
+ */
+MenuItemOptionSetItemBase.prototype['PublicId'] = undefined;
 
 
 

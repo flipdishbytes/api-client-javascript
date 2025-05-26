@@ -66,6 +66,9 @@ class MenuItemOptionSetBase {
             if (data.hasOwnProperty('CellLayoutType')) {
                 obj['CellLayoutType'] = ApiClient.convertToType(data['CellLayoutType'], 'String');
             }
+            if (data.hasOwnProperty('PublicId')) {
+                obj['PublicId'] = ApiClient.convertToType(data['PublicId'], 'String');
+            }
         }
         return obj;
     }
@@ -108,6 +111,12 @@ MenuItemOptionSetBase.prototype['MaxSelectCount'] = undefined;
  * @member {module:model/MenuItemOptionSetBase.CellLayoutTypeEnum} CellLayoutType
  */
 MenuItemOptionSetBase.prototype['CellLayoutType'] = undefined;
+
+/**
+ * Permanent reference to the item.
+ * @member {String} PublicId
+ */
+MenuItemOptionSetBase.prototype['PublicId'] = undefined;
 
 
 

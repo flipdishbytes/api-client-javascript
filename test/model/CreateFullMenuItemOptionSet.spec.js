@@ -102,6 +102,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property PublicId (base name: "PublicId")', function() {
+      // uncomment below and update the code to test the property PublicId
+      //var instance = new Flipdish.CreateFullMenuItemOptionSet();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));

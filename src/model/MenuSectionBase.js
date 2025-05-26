@@ -69,6 +69,9 @@ class MenuSectionBase {
             if (data.hasOwnProperty('MenuSectionId')) {
                 obj['MenuSectionId'] = ApiClient.convertToType(data['MenuSectionId'], 'Number');
             }
+            if (data.hasOwnProperty('PublicId')) {
+                obj['PublicId'] = ApiClient.convertToType(data['PublicId'], 'String');
+            }
         }
         return obj;
     }
@@ -117,6 +120,12 @@ MenuSectionBase.prototype['ImageUrl'] = undefined;
  * @member {Number} MenuSectionId
  */
 MenuSectionBase.prototype['MenuSectionId'] = undefined;
+
+/**
+ * Permanent reference to the item.
+ * @member {String} PublicId
+ */
+MenuSectionBase.prototype['PublicId'] = undefined;
 
 
 

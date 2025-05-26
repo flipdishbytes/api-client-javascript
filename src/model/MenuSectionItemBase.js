@@ -90,6 +90,9 @@ class MenuSectionItemBase {
             if (data.hasOwnProperty('ExcludeFromVoucherDiscounting')) {
                 obj['ExcludeFromVoucherDiscounting'] = ApiClient.convertToType(data['ExcludeFromVoucherDiscounting'], 'Boolean');
             }
+            if (data.hasOwnProperty('PublicId')) {
+                obj['PublicId'] = ApiClient.convertToType(data['PublicId'], 'String');
+            }
         }
         return obj;
     }
@@ -180,6 +183,12 @@ MenuSectionItemBase.prototype['MenuItemId'] = undefined;
  * @member {Boolean} ExcludeFromVoucherDiscounting
  */
 MenuSectionItemBase.prototype['ExcludeFromVoucherDiscounting'] = undefined;
+
+/**
+ * Permanent reference to the item.
+ * @member {String} PublicId
+ */
+MenuSectionItemBase.prototype['PublicId'] = undefined;
 
 
 

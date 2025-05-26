@@ -11,6 +11,7 @@ Name | Type | Description | Notes
 **DisplayOrder** | **Number** | Display order. Displayed in ascending order. | [optional] 
 **CellLayoutType** | **String** | Small | Medium | Large  Affects the layout of the menu. | [optional] 
 **ImageUrl** | **String** | Image url | [optional] 
+**PublicId** | **String** | Permanent reference to the item. | [optional] 
 
 
 
