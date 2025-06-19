@@ -363,6 +363,12 @@ AppStoreApp['TeammateAppAccessLevelEnum'] = {
     "StoreOwner": "StoreOwner",
 
     /**
+     * value: "PropertyOwner"
+     * @const
+     */
+    "PropertyOwner": "PropertyOwner",
+
+    /**
      * value: "ManagedOwner"
      * @const
      */
@@ -373,6 +379,12 @@ AppStoreApp['TeammateAppAccessLevelEnum'] = {
      * @const
      */
     "Integrator": "Integrator",
+
+    /**
+     * value: "PropertyManager"
+     * @const
+     */
+    "PropertyManager": "PropertyManager",
 
     /**
      * value: "StoreManager"

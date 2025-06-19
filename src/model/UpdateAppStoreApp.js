@@ -288,6 +288,12 @@ UpdateAppStoreApp['TeammateAppAccessLevelEnum'] = {
     "StoreOwner": "StoreOwner",
 
     /**
+     * value: "PropertyOwner"
+     * @const
+     */
+    "PropertyOwner": "PropertyOwner",
+
+    /**
      * value: "ManagedOwner"
      * @const
      */
@@ -298,6 +304,12 @@ UpdateAppStoreApp['TeammateAppAccessLevelEnum'] = {
      * @const
      */
     "Integrator": "Integrator",
+
+    /**
+     * value: "PropertyManager"
+     * @const
+     */
+    "PropertyManager": "PropertyManager",
 
     /**
      * value: "StoreManager"
