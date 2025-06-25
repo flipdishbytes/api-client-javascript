@@ -104,6 +104,9 @@ class PayoutReport3DetailsFlipdishFees {
             if (data.hasOwnProperty('Vat')) {
                 obj['Vat'] = ApiClient.convertToType(data['Vat'], 'Number');
             }
+            if (data.hasOwnProperty('RefundedFeesOnPosSales')) {
+                obj['RefundedFeesOnPosSales'] = ApiClient.convertToType(data['RefundedFeesOnPosSales'], 'Number');
+            }
             if (data.hasOwnProperty('Total')) {
                 obj['Total'] = ApiClient.convertToType(data['Total'], 'Number');
             }
@@ -232,6 +235,11 @@ PayoutReport3DetailsFlipdishFees.prototype['RefundedFeesOnRefundedSales'] = unde
  * @member {Number} Vat
  */
 PayoutReport3DetailsFlipdishFees.prototype['Vat'] = undefined;
+
+/**
+ * @member {Number} RefundedFeesOnPosSales
+ */
+PayoutReport3DetailsFlipdishFees.prototype['RefundedFeesOnPosSales'] = undefined;
 
 /**
  * @member {Number} Total

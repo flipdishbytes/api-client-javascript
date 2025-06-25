@@ -168,6 +168,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property RefundedFeesOnPosSales (base name: "RefundedFeesOnPosSales")', function() {
+      // uncomment below and update the code to test the property RefundedFeesOnPosSales
+      //var instance = new Flipdish.PayoutReport3DetailsFlipdishFees();
+      //expect(instance).to.be();
+    });
+
     it('should have the property Total (base name: "Total")', function() {
       // uncomment below and update the code to test the property Total
       //var instance = new Flipdish.PayoutReport3DetailsFlipdishFees();

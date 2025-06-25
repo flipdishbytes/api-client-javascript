@@ -23,6 +23,7 @@ Name | Type | Description | Notes
 **OtherIntegrationTips** | **Number** |  | [optional] 
 **RefundedFeesOnRefundedSales** | **Number** |  | [optional] 
 **Vat** | **Number** |  | [optional] 
+**RefundedFeesOnPosSales** | **Number** |  | [optional] 
 **Total** | **Number** |  | [optional] 
 **ThirdPartyIntegrationFeesAndTips** | **Number** |  | [optional] 
 **WebAndAppCardOnXOrders** | **Number** |  | [optional] 
