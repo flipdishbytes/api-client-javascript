@@ -58,6 +58,16 @@
         done();
       });
     });
+    describe('getVoucherByCode', function() {
+      it('should call getVoucherByCode successfully', function(done) {
+        //uncomment below and update the code to test getVoucherByCode
+        //instance.getVoucherByCode(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('getVoucherById', function() {
       it('should call getVoucherById successfully', function(done) {
         //uncomment below and update the code to test getVoucherById

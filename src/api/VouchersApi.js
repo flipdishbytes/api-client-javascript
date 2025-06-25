@@ -18,6 +18,7 @@ import RestApiArrayResultVoucherDataPoint from '../model/RestApiArrayResultVouch
 import RestApiErrorResult from '../model/RestApiErrorResult';
 import RestApiForbiddenResult from '../model/RestApiForbiddenResult';
 import RestApiPaginationResultVoucherSummary from '../model/RestApiPaginationResultVoucherSummary';
+import RestApiResultVoucher from '../model/RestApiResultVoucher';
 import RestApiResultVoucherWithStats from '../model/RestApiResultVoucherWithStats';
 import RestApiUnauthorizedResult from '../model/RestApiUnauthorizedResult';
 import SetVoucherValidityPeriodsSimplifiedRequest from '../model/SetVoucherValidityPeriodsSimplifiedRequest';
@@ -84,6 +85,53 @@ export default class VouchersApi {
       let returnType = RestApiResultVoucherWithStats;
       return this.apiClient.callApi(
         '/api/v1.0/vouchers/{appId}', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the getVoucherByCode operation.
+     * @callback module:api/VouchersApi~getVoucherByCodeCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/RestApiResultVoucher} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {String} appId 
+     * @param {String} code 
+     * @param {module:api/VouchersApi~getVoucherByCodeCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/RestApiResultVoucher}
+     */
+    getVoucherByCode(appId, code, callback) {
+      let postBody = null;
+      // verify the required parameter 'appId' is set
+      if (appId === undefined || appId === null) {
+        throw new Error("Missing the required parameter 'appId' when calling getVoucherByCode");
+      }
+      // verify the required parameter 'code' is set
+      if (code === undefined || code === null) {
+        throw new Error("Missing the required parameter 'code' when calling getVoucherByCode");
+      }
+
+      let pathParams = {
+        'appId': appId,
+        'code': code
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = [];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'Data', 'Message', 'ErrorCode', 'StackTrace'];
+      let returnType = RestApiResultVoucher;
+      return this.apiClient.callApi(
+        '/api/v1.0/{appId}/vouchers/code/{code}', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );

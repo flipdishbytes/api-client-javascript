@@ -633,6 +633,7 @@ Class | Method | HTTP request | Description
 *Flipdish.UsersApi* | [**getPreviousOrderCountForStore**](docs/UsersApi.md#getPreviousOrderCountForStore) | **GET** /api/v1.0/users/{userId}/previousordercount/{storeId} | 
 *Flipdish.UsersApi* | [**getRoles**](docs/UsersApi.md#getRoles) | **GET** /api/v1.0/users/roles | 
 *Flipdish.VouchersApi* | [**createVoucher**](docs/VouchersApi.md#createVoucher) | **POST** /api/v1.0/vouchers/{appId} | 
+*Flipdish.VouchersApi* | [**getVoucherByCode**](docs/VouchersApi.md#getVoucherByCode) | **GET** /api/v1.0/{appId}/vouchers/code/{code} | 
 *Flipdish.VouchersApi* | [**getVoucherById**](docs/VouchersApi.md#getVoucherById) | **GET** /api/v1.0/vouchers/{voucherId} | 
 *Flipdish.VouchersApi* | [**getVoucherStatsById**](docs/VouchersApi.md#getVoucherStatsById) | **GET** /api/v1.0/vouchers/stats/{voucherId} | 
 *Flipdish.VouchersApi* | [**getVoucherValidityPeriods**](docs/VouchersApi.md#getVoucherValidityPeriods) | **GET** /api/v1.0/{appId}/vouchers/{voucherId}/validity-periods | 
@@ -1294,6 +1295,7 @@ Class | Method | HTTP request | Description
  - [Flipdish.RestApiResultTelemetrySeriesResult](docs/RestApiResultTelemetrySeriesResult.md)
  - [Flipdish.RestApiResultTipConfiguration](docs/RestApiResultTipConfiguration.md)
  - [Flipdish.RestApiResultUpdateMobileAppsSubmissionStatus](docs/RestApiResultUpdateMobileAppsSubmissionStatus.md)
+ - [Flipdish.RestApiResultVoucher](docs/RestApiResultVoucher.md)
  - [Flipdish.RestApiResultVoucherWithStats](docs/RestApiResultVoucherWithStats.md)
  - [Flipdish.RestApiResultWebsiteImage](docs/RestApiResultWebsiteImage.md)
  - [Flipdish.RestApiResultWebsiteTestimonial](docs/RestApiResultWebsiteTestimonial.md)

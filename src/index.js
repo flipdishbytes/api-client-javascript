@@ -645,6 +645,7 @@ import RestApiResultTeammate from './model/RestApiResultTeammate';
 import RestApiResultTelemetrySeriesResult from './model/RestApiResultTelemetrySeriesResult';
 import RestApiResultTipConfiguration from './model/RestApiResultTipConfiguration';
 import RestApiResultUpdateMobileAppsSubmissionStatus from './model/RestApiResultUpdateMobileAppsSubmissionStatus';
+import RestApiResultVoucher from './model/RestApiResultVoucher';
 import RestApiResultVoucherWithStats from './model/RestApiResultVoucherWithStats';
 import RestApiResultWebsiteImage from './model/RestApiResultWebsiteImage';
 import RestApiResultWebsiteTestimonial from './model/RestApiResultWebsiteTestimonial';
@@ -4728,6 +4729,12 @@ export {
      * @property {module:model/RestApiResultUpdateMobileAppsSubmissionStatus}
      */
     RestApiResultUpdateMobileAppsSubmissionStatus,
+
+    /**
+     * The RestApiResultVoucher model constructor.
+     * @property {module:model/RestApiResultVoucher}
+     */
+    RestApiResultVoucher,
 
     /**
      * The RestApiResultVoucherWithStats model constructor.
