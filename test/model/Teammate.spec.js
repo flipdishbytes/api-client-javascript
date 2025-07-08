@@ -60,6 +60,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property UserId (base name: "UserId")', function() {
+      // uncomment below and update the code to test the property UserId
+      //var instance = new Flipdish.Teammate();
+      //expect(instance).to.be();
+    });
+
     it('should have the property Name (base name: "Name")', function() {
       // uncomment below and update the code to test the property Name
       //var instance = new Flipdish.Teammate();

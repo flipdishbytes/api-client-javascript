@@ -51,6 +51,9 @@ class Teammate {
             if (data.hasOwnProperty('TeammateId')) {
                 obj['TeammateId'] = ApiClient.convertToType(data['TeammateId'], 'String');
             }
+            if (data.hasOwnProperty('UserId')) {
+                obj['UserId'] = ApiClient.convertToType(data['UserId'], 'Number');
+            }
             if (data.hasOwnProperty('Name')) {
                 obj['Name'] = ApiClient.convertToType(data['Name'], 'String');
             }
@@ -90,6 +93,12 @@ class Teammate {
  * @member {String} TeammateId
  */
 Teammate.prototype['TeammateId'] = undefined;
+
+/**
+ * User ID of the teammate
+ * @member {Number} UserId
+ */
+Teammate.prototype['UserId'] = undefined;
 
 /**
  * Name
