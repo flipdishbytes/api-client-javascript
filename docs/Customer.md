@@ -5,6 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **CustomerId** | **Number** | Id of the customer | [optional] 
+**Name** | **String** | Customer name | [optional] 
 **RegistrationDate** | **Date** | Customer registration date | [optional] 
 **PhoneNumber** | **String** | Phone Number in international format | [optional] 
 **CashOrdersEnabled** | **Boolean** | Customer can place cash orders | [optional] 

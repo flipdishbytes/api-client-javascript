@@ -51,6 +51,9 @@ class Customer {
             if (data.hasOwnProperty('CustomerId')) {
                 obj['CustomerId'] = ApiClient.convertToType(data['CustomerId'], 'Number');
             }
+            if (data.hasOwnProperty('Name')) {
+                obj['Name'] = ApiClient.convertToType(data['Name'], 'String');
+            }
             if (data.hasOwnProperty('RegistrationDate')) {
                 obj['RegistrationDate'] = ApiClient.convertToType(data['RegistrationDate'], 'Date');
             }
@@ -78,6 +81,12 @@ class Customer {
  * @member {Number} CustomerId
  */
 Customer.prototype['CustomerId'] = undefined;
+
+/**
+ * Customer name
+ * @member {String} Name
+ */
+Customer.prototype['Name'] = undefined;
 
 /**
  * Customer registration date
