@@ -90,6 +90,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property TaxAmount (base name: "TaxAmount")', function() {
+      // uncomment below and update the code to test the property TaxAmount
+      //var instance = new Flipdish.OrderItemOption();
+      //expect(instance).to.be();
+    });
+
     it('should have the property MenuItemOptionDisplayOrder (base name: "MenuItemOptionDisplayOrder")', function() {
       // uncomment below and update the code to test the property MenuItemOptionDisplayOrder
       //var instance = new Flipdish.OrderItemOption();

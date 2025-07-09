@@ -63,6 +63,9 @@ class CustomerSummary {
             if (data.hasOwnProperty('PhoneNumber')) {
                 obj['PhoneNumber'] = ApiClient.convertToType(data['PhoneNumber'], 'String');
             }
+            if (data.hasOwnProperty('LanguagePreference')) {
+                obj['LanguagePreference'] = ApiClient.convertToType(data['LanguagePreference'], 'String');
+            }
         }
         return obj;
     }
@@ -99,6 +102,12 @@ CustomerSummary.prototype['PhoneNumberLocalFormat'] = undefined;
  * @member {String} PhoneNumber
  */
 CustomerSummary.prototype['PhoneNumber'] = undefined;
+
+/**
+ * Preferred language of the consumer
+ * @member {String} LanguagePreference
+ */
+CustomerSummary.prototype['LanguagePreference'] = undefined;
 
 
 

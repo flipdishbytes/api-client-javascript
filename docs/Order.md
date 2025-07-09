@@ -24,6 +24,7 @@ Name | Type | Description | Notes
 **OrderDropOffLocation** | [**OrderDropOffLocation**](OrderDropOffLocation.md) |  | [optional] 
 **FulfillmentStatus** | [**OrderFulfillmentStatusBase**](OrderFulfillmentStatusBase.md) |  | [optional] 
 **OrderBatchInfo** | [**OrderBatchSummary**](OrderBatchSummary.md) |  | [optional] 
+**TaxItems** | [**[TaxItem]**](TaxItem.md) | A collection of tax items on the order. | [optional] 
 **CreatedCampaignVoucherId** | **Number** | The id of the campaign voucher that was created from this order | [optional] 
 **OrderId** | **Number** | Order identifier | [optional] 
 **LocalOrderId** | **String** | Local order Id. This is used for displaying a \&quot;shorter\&quot; order ID for customers (eg. Kiosk orders) | [optional] 
@@ -55,6 +56,7 @@ Name | Type | Description | Notes
 **OrderTrackingCode** | **String** | Unique, 6 character long alpha numeric code for tracking. | [optional] 
 **DeliveryFeeAreaId** | **Number** | Delivery area identifier | [optional] 
 **ReceiptCode** | **String** | Code used to view the order&#39;s receipt | [optional] 
+**TotalDepositReturnFeeAmount** | **Number** | This contains the total deposit return fee amount for the order. | [optional] 
 
 
 

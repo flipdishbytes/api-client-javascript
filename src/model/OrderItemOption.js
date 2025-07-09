@@ -66,6 +66,9 @@ class OrderItemOption {
             if (data.hasOwnProperty('Price')) {
                 obj['Price'] = ApiClient.convertToType(data['Price'], 'Number');
             }
+            if (data.hasOwnProperty('TaxAmount')) {
+                obj['TaxAmount'] = ApiClient.convertToType(data['TaxAmount'], 'Number');
+            }
             if (data.hasOwnProperty('MenuItemOptionDisplayOrder')) {
                 obj['MenuItemOptionDisplayOrder'] = ApiClient.convertToType(data['MenuItemOptionDisplayOrder'], 'Number');
             }
@@ -117,6 +120,12 @@ OrderItemOption.prototype['Name'] = undefined;
  * @member {Number} Price
  */
 OrderItemOption.prototype['Price'] = undefined;
+
+/**
+ * Tax currency amount
+ * @member {Number} TaxAmount
+ */
+OrderItemOption.prototype['TaxAmount'] = undefined;
 
 /**
  * Menu item option display order

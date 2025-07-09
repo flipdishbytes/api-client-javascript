@@ -12,6 +12,8 @@ Name | Type | Description | Notes
 **Coordinates** | [**Coordinates**](Coordinates.md) |  | [optional] 
 **StoreTimezone** | **String** | Timezone of store | [optional] 
 **StoreGroupId** | **Number** | Store group id of store | [optional] 
+**TaxId** | **String** | VAT number or generic Tax ID of the store | [optional] 
+**PrettyAddress** | **String** | Address of the store | [optional] 
 
 
 

@@ -102,6 +102,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property TaxAmount (base name: "TaxAmount")', function() {
+      // uncomment below and update the code to test the property TaxAmount
+      //var instance = new Flipdish.OrderItem();
+      //expect(instance).to.be();
+    });
+
     it('should have the property PriceIncludingOptionSetItems (base name: "PriceIncludingOptionSetItems")', function() {
       // uncomment below and update the code to test the property PriceIncludingOptionSetItems
       //var instance = new Flipdish.OrderItem();

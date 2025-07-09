@@ -73,6 +73,12 @@ class StoreSummary {
             if (data.hasOwnProperty('StoreGroupId')) {
                 obj['StoreGroupId'] = ApiClient.convertToType(data['StoreGroupId'], 'Number');
             }
+            if (data.hasOwnProperty('TaxId')) {
+                obj['TaxId'] = ApiClient.convertToType(data['TaxId'], 'String');
+            }
+            if (data.hasOwnProperty('PrettyAddress')) {
+                obj['PrettyAddress'] = ApiClient.convertToType(data['PrettyAddress'], 'String');
+            }
         }
         return obj;
     }
@@ -126,6 +132,18 @@ StoreSummary.prototype['StoreTimezone'] = undefined;
  * @member {Number} StoreGroupId
  */
 StoreSummary.prototype['StoreGroupId'] = undefined;
+
+/**
+ * VAT number or generic Tax ID of the store
+ * @member {String} TaxId
+ */
+StoreSummary.prototype['TaxId'] = undefined;
+
+/**
+ * Address of the store
+ * @member {String} PrettyAddress
+ */
+StoreSummary.prototype['PrettyAddress'] = undefined;
 
 
 

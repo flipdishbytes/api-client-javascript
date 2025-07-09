@@ -73,6 +73,9 @@ class OrderItem {
             if (data.hasOwnProperty('Price')) {
                 obj['Price'] = ApiClient.convertToType(data['Price'], 'Number');
             }
+            if (data.hasOwnProperty('TaxAmount')) {
+                obj['TaxAmount'] = ApiClient.convertToType(data['TaxAmount'], 'Number');
+            }
             if (data.hasOwnProperty('PriceIncludingOptionSetItems')) {
                 obj['PriceIncludingOptionSetItems'] = ApiClient.convertToType(data['PriceIncludingOptionSetItems'], 'Number');
             }
@@ -142,6 +145,12 @@ OrderItem.prototype['Description'] = undefined;
  * @member {Number} Price
  */
 OrderItem.prototype['Price'] = undefined;
+
+/**
+ * Tax currency amount
+ * @member {Number} TaxAmount
+ */
+OrderItem.prototype['TaxAmount'] = undefined;
 
 /**
  * Price including option set items

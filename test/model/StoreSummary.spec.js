@@ -102,6 +102,18 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property TaxId (base name: "TaxId")', function() {
+      // uncomment below and update the code to test the property TaxId
+      //var instance = new Flipdish.StoreSummary();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property PrettyAddress (base name: "PrettyAddress")', function() {
+      // uncomment below and update the code to test the property PrettyAddress
+      //var instance = new Flipdish.StoreSummary();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));

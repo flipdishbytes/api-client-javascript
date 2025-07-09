@@ -24,6 +24,7 @@ import OrderFulfillmentStatusBase from './OrderFulfillmentStatusBase';
 import OrderItem from './OrderItem';
 import OrderVoucherSummary from './OrderVoucherSummary';
 import StoreSummary from './StoreSummary';
+import TaxItem from './TaxItem';
 
 /**
  * The Order model module.
@@ -120,6 +121,9 @@ class Order {
             if (data.hasOwnProperty('OrderBatchInfo')) {
                 obj['OrderBatchInfo'] = OrderBatchSummary.constructFromObject(data['OrderBatchInfo']);
             }
+            if (data.hasOwnProperty('TaxItems')) {
+                obj['TaxItems'] = ApiClient.convertToType(data['TaxItems'], [TaxItem]);
+            }
             if (data.hasOwnProperty('CreatedCampaignVoucherId')) {
                 obj['CreatedCampaignVoucherId'] = ApiClient.convertToType(data['CreatedCampaignVoucherId'], 'Number');
             }
@@ -212,6 +216,9 @@ class Order {
             }
             if (data.hasOwnProperty('ReceiptCode')) {
                 obj['ReceiptCode'] = ApiClient.convertToType(data['ReceiptCode'], 'String');
+            }
+            if (data.hasOwnProperty('TotalDepositReturnFeeAmount')) {
+                obj['TotalDepositReturnFeeAmount'] = ApiClient.convertToType(data['TotalDepositReturnFeeAmount'], 'Number');
             }
         }
         return obj;
@@ -328,6 +335,12 @@ Order.prototype['FulfillmentStatus'] = undefined;
  * @member {module:model/OrderBatchSummary} OrderBatchInfo
  */
 Order.prototype['OrderBatchInfo'] = undefined;
+
+/**
+ * A collection of tax items on the order.
+ * @member {Array.<module:model/TaxItem>} TaxItems
+ */
+Order.prototype['TaxItems'] = undefined;
 
 /**
  * The id of the campaign voucher that was created from this order
@@ -514,6 +527,12 @@ Order.prototype['DeliveryFeeAreaId'] = undefined;
  * @member {String} ReceiptCode
  */
 Order.prototype['ReceiptCode'] = undefined;
+
+/**
+ * This contains the total deposit return fee amount for the order.
+ * @member {Number} TotalDepositReturnFeeAmount
+ */
+Order.prototype['TotalDepositReturnFeeAmount'] = undefined;
 
 
 

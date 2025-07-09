@@ -174,6 +174,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property TaxItems (base name: "TaxItems")', function() {
+      // uncomment below and update the code to test the property TaxItems
+      //var instance = new Flipdish.Order();
+      //expect(instance).to.be();
+    });
+
     it('should have the property CreatedCampaignVoucherId (base name: "CreatedCampaignVoucherId")', function() {
       // uncomment below and update the code to test the property CreatedCampaignVoucherId
       //var instance = new Flipdish.Order();
@@ -356,6 +362,12 @@
 
     it('should have the property ReceiptCode (base name: "ReceiptCode")', function() {
       // uncomment below and update the code to test the property ReceiptCode
+      //var instance = new Flipdish.Order();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property TotalDepositReturnFeeAmount (base name: "TotalDepositReturnFeeAmount")', function() {
+      // uncomment below and update the code to test the property TotalDepositReturnFeeAmount
       //var instance = new Flipdish.Order();
       //expect(instance).to.be();
     });

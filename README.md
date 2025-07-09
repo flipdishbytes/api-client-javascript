@@ -1394,6 +1394,7 @@ Class | Method | HTTP request | Description
  - [Flipdish.SubscriptionStore](docs/SubscriptionStore.md)
  - [Flipdish.SubscriptionSummary](docs/SubscriptionSummary.md)
  - [Flipdish.SupportedCountry](docs/SupportedCountry.md)
+ - [Flipdish.TaxItem](docs/TaxItem.md)
  - [Flipdish.TaxRate](docs/TaxRate.md)
  - [Flipdish.Teammate](docs/Teammate.md)
  - [Flipdish.TeammateBase](docs/TeammateBase.md)

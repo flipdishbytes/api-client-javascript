@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new Flipdish.CustomerSummary();
+    instance = new Flipdish.TaxItem();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,46 +47,28 @@
       object[property] = value;
   }
 
-  describe('CustomerSummary', function() {
-    it('should create an instance of CustomerSummary', function() {
-      // uncomment below and update the code to test CustomerSummary
-      //var instane = new Flipdish.CustomerSummary();
-      //expect(instance).to.be.a(Flipdish.CustomerSummary);
-    });
-
-    it('should have the property Id (base name: "Id")', function() {
-      // uncomment below and update the code to test the property Id
-      //var instance = new Flipdish.CustomerSummary();
-      //expect(instance).to.be();
+  describe('TaxItem', function() {
+    it('should create an instance of TaxItem', function() {
+      // uncomment below and update the code to test TaxItem
+      //var instane = new Flipdish.TaxItem();
+      //expect(instance).to.be.a(Flipdish.TaxItem);
     });
 
     it('should have the property Name (base name: "Name")', function() {
       // uncomment below and update the code to test the property Name
-      //var instance = new Flipdish.CustomerSummary();
+      //var instance = new Flipdish.TaxItem();
       //expect(instance).to.be();
     });
 
-    it('should have the property EmailAddress (base name: "EmailAddress")', function() {
-      // uncomment below and update the code to test the property EmailAddress
-      //var instance = new Flipdish.CustomerSummary();
+    it('should have the property Rate (base name: "Rate")', function() {
+      // uncomment below and update the code to test the property Rate
+      //var instance = new Flipdish.TaxItem();
       //expect(instance).to.be();
     });
 
-    it('should have the property PhoneNumberLocalFormat (base name: "PhoneNumberLocalFormat")', function() {
-      // uncomment below and update the code to test the property PhoneNumberLocalFormat
-      //var instance = new Flipdish.CustomerSummary();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property PhoneNumber (base name: "PhoneNumber")', function() {
-      // uncomment below and update the code to test the property PhoneNumber
-      //var instance = new Flipdish.CustomerSummary();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property LanguagePreference (base name: "LanguagePreference")', function() {
-      // uncomment below and update the code to test the property LanguagePreference
-      //var instance = new Flipdish.CustomerSummary();
+    it('should have the property Amount (base name: "Amount")', function() {
+      // uncomment below and update the code to test the property Amount
+      //var instance = new Flipdish.TaxItem();
       //expect(instance).to.be();
     });
 

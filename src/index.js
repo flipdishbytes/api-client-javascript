@@ -744,6 +744,7 @@ import SubscriptionProduct from './model/SubscriptionProduct';
 import SubscriptionStore from './model/SubscriptionStore';
 import SubscriptionSummary from './model/SubscriptionSummary';
 import SupportedCountry from './model/SupportedCountry';
+import TaxItem from './model/TaxItem';
 import TaxRate from './model/TaxRate';
 import Teammate from './model/Teammate';
 import TeammateBase from './model/TeammateBase';
@@ -5323,6 +5324,12 @@ export {
      * @property {module:model/SupportedCountry}
      */
     SupportedCountry,
+
+    /**
+     * The TaxItem model constructor.
+     * @property {module:model/TaxItem}
+     */
+    TaxItem,
 
     /**
      * The TaxRate model constructor.
