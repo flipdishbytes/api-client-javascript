@@ -485,6 +485,7 @@ import RestApiArrayResultRestaurantVoucherEligibleStore from './model/RestApiArr
 import RestApiArrayResultRestaurantVoucherPayGreenConfiguration from './model/RestApiArrayResultRestaurantVoucherPayGreenConfiguration';
 import RestApiArrayResultRestaurantVoucherPayGreenConfigurationSummary from './model/RestApiArrayResultRestaurantVoucherPayGreenConfigurationSummary';
 import RestApiArrayResultRetentionCampaign from './model/RestApiArrayResultRetentionCampaign';
+import RestApiArrayResultSmsProviderCredential from './model/RestApiArrayResultSmsProviderCredential';
 import RestApiArrayResultStoreChannelAssignment from './model/RestApiArrayResultStoreChannelAssignment';
 import RestApiArrayResultStoreChannelStoreMapping from './model/RestApiArrayResultStoreChannelStoreMapping';
 import RestApiArrayResultStoreDeliveryZoneFeeConfig from './model/RestApiArrayResultStoreDeliveryZoneFeeConfig';
@@ -629,6 +630,7 @@ import RestApiResultRestaurantVoucherPayGreenConfiguration from './model/RestApi
 import RestApiResultRestaurantVoucherPayGreenStoreConfiguration from './model/RestApiResultRestaurantVoucherPayGreenStoreConfiguration';
 import RestApiResultRetentionCampaign from './model/RestApiResultRetentionCampaign';
 import RestApiResultServiceCharge from './model/RestApiResultServiceCharge';
+import RestApiResultSmsProviderCredential from './model/RestApiResultSmsProviderCredential';
 import RestApiResultStore from './model/RestApiResultStore';
 import RestApiResultStoreAddress from './model/RestApiResultStoreAddress';
 import RestApiResultStoreChannelAssignment from './model/RestApiResultStoreChannelAssignment';
@@ -674,6 +676,8 @@ import SetVoucherValidityPeriodsSimplifiedRequest from './model/SetVoucherValidi
 import Setting from './model/Setting';
 import SignupStep from './model/SignupStep';
 import SmsInfo from './model/SmsInfo';
+import SmsProviderCredential from './model/SmsProviderCredential';
+import SmsProviderCredentialUpdateRequest from './model/SmsProviderCredentialUpdateRequest';
 import SmsReceivedEvent from './model/SmsReceivedEvent';
 import StatisticsCurrencyDataPoint from './model/StatisticsCurrencyDataPoint';
 import Store from './model/Store';
@@ -886,6 +890,7 @@ import PushNotificationsApi from './api/PushNotificationsApi';
 import ReceiptsApi from './api/ReceiptsApi';
 import RestaurantVouchersPayGreenApi from './api/RestaurantVouchersPayGreenApi';
 import SearchApi from './api/SearchApi';
+import SmsProviderCredentialsApi from './api/SmsProviderCredentialsApi';
 import StoreGroupsApi from './api/StoreGroupsApi';
 import StoreOrderCapacityApi from './api/StoreOrderCapacityApi';
 import StoresApi from './api/StoresApi';
@@ -3772,6 +3777,12 @@ export {
     RestApiArrayResultRetentionCampaign,
 
     /**
+     * The RestApiArrayResultSmsProviderCredential model constructor.
+     * @property {module:model/RestApiArrayResultSmsProviderCredential}
+     */
+    RestApiArrayResultSmsProviderCredential,
+
+    /**
      * The RestApiArrayResultStoreChannelAssignment model constructor.
      * @property {module:model/RestApiArrayResultStoreChannelAssignment}
      */
@@ -4636,6 +4647,12 @@ export {
     RestApiResultServiceCharge,
 
     /**
+     * The RestApiResultSmsProviderCredential model constructor.
+     * @property {module:model/RestApiResultSmsProviderCredential}
+     */
+    RestApiResultSmsProviderCredential,
+
+    /**
      * The RestApiResultStore model constructor.
      * @property {module:model/RestApiResultStore}
      */
@@ -4904,6 +4921,18 @@ export {
      * @property {module:model/SmsInfo}
      */
     SmsInfo,
+
+    /**
+     * The SmsProviderCredential model constructor.
+     * @property {module:model/SmsProviderCredential}
+     */
+    SmsProviderCredential,
+
+    /**
+     * The SmsProviderCredentialUpdateRequest model constructor.
+     * @property {module:model/SmsProviderCredentialUpdateRequest}
+     */
+    SmsProviderCredentialUpdateRequest,
 
     /**
      * The SmsReceivedEvent model constructor.
@@ -6176,6 +6205,12 @@ export {
     * @property {module:api/SearchApi}
     */
     SearchApi,
+
+    /**
+    * The SmsProviderCredentialsApi service constructor.
+    * @property {module:api/SmsProviderCredentialsApi}
+    */
+    SmsProviderCredentialsApi,
 
     /**
     * The StoreGroupsApi service constructor.

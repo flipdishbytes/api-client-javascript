@@ -552,6 +552,11 @@ Class | Method | HTTP request | Description
 *Flipdish.RestaurantVouchersPayGreenApi* | [**updatePayGreenConfiguration**](docs/RestaurantVouchersPayGreenApi.md#updatePayGreenConfiguration) | **POST** /api/v1.0/{appId}/restaurant-vouchers/paygreen/{paygreenConfigurationId} | 
 *Flipdish.RestaurantVouchersPayGreenApi* | [**updateStorePayGreenConfiguration**](docs/RestaurantVouchersPayGreenApi.md#updateStorePayGreenConfiguration) | **POST** /api/v1.0/{appId}/restaurant-vouchers/paygreen/stores/{storeId} | 
 *Flipdish.SearchApi* | [**searchRestaurants**](docs/SearchApi.md#searchRestaurants) | **GET** /api/v1.0/search/restaurants | 
+*Flipdish.SmsProviderCredentialsApi* | [**getBrandSmsProviderCredentialByServiceType**](docs/SmsProviderCredentialsApi.md#getBrandSmsProviderCredentialByServiceType) | **GET** /api/v1.0/sms-providers/orgs/{orgId}/brands/{brandId}/provider-credentials/{serviceType} | 
+*Flipdish.SmsProviderCredentialsApi* | [**getBrandSmsProviderCredentials**](docs/SmsProviderCredentialsApi.md#getBrandSmsProviderCredentials) | **GET** /api/v1.0/sms-providers/orgs/{orgId}/brands/{brandId}/provider-credentials | 
+*Flipdish.SmsProviderCredentialsApi* | [**smsProviderCredentialDelete**](docs/SmsProviderCredentialsApi.md#smsProviderCredentialDelete) | **DELETE** /api/v1.0/sms-providers/orgs/{orgId}/brands/{brandId}/provider-credentials/{serviceType} | 
+*Flipdish.SmsProviderCredentialsApi* | [**smsProviderCredentialUpdate**](docs/SmsProviderCredentialsApi.md#smsProviderCredentialUpdate) | **POST** /api/v1.0/sms-providers/orgs/{orgId}/brands/{brandId}/provider-credentials/{serviceType} | 
+*Flipdish.SmsProviderCredentialsApi* | [**smsProviderCredentialsBulkUpsert**](docs/SmsProviderCredentialsApi.md#smsProviderCredentialsBulkUpsert) | **POST** /api/v1.0/sms-providers/bulk-upsert | 
 *Flipdish.StoreGroupsApi* | [**assignStoresToStoreGroup**](docs/StoreGroupsApi.md#assignStoresToStoreGroup) | **POST** /api/v1.0/{appId}/storegroups/{storeGroupId}/assignStores | 
 *Flipdish.StoreGroupsApi* | [**createStoreGroup**](docs/StoreGroupsApi.md#createStoreGroup) | **POST** /api/v1.0/{appNameId}/storegroups | 
 *Flipdish.StoreGroupsApi* | [**getStoreGroup**](docs/StoreGroupsApi.md#getStoreGroup) | **GET** /api/v1.0/storegroups/{storeGroupId} | 
@@ -1135,6 +1140,7 @@ Class | Method | HTTP request | Description
  - [Flipdish.RestApiArrayResultRestaurantVoucherPayGreenConfiguration](docs/RestApiArrayResultRestaurantVoucherPayGreenConfiguration.md)
  - [Flipdish.RestApiArrayResultRestaurantVoucherPayGreenConfigurationSummary](docs/RestApiArrayResultRestaurantVoucherPayGreenConfigurationSummary.md)
  - [Flipdish.RestApiArrayResultRetentionCampaign](docs/RestApiArrayResultRetentionCampaign.md)
+ - [Flipdish.RestApiArrayResultSmsProviderCredential](docs/RestApiArrayResultSmsProviderCredential.md)
  - [Flipdish.RestApiArrayResultStoreChannelAssignment](docs/RestApiArrayResultStoreChannelAssignment.md)
  - [Flipdish.RestApiArrayResultStoreChannelStoreMapping](docs/RestApiArrayResultStoreChannelStoreMapping.md)
  - [Flipdish.RestApiArrayResultStoreDeliveryZoneFeeConfig](docs/RestApiArrayResultStoreDeliveryZoneFeeConfig.md)
@@ -1279,6 +1285,7 @@ Class | Method | HTTP request | Description
  - [Flipdish.RestApiResultRestaurantVoucherPayGreenStoreConfiguration](docs/RestApiResultRestaurantVoucherPayGreenStoreConfiguration.md)
  - [Flipdish.RestApiResultRetentionCampaign](docs/RestApiResultRetentionCampaign.md)
  - [Flipdish.RestApiResultServiceCharge](docs/RestApiResultServiceCharge.md)
+ - [Flipdish.RestApiResultSmsProviderCredential](docs/RestApiResultSmsProviderCredential.md)
  - [Flipdish.RestApiResultStore](docs/RestApiResultStore.md)
  - [Flipdish.RestApiResultStoreAddress](docs/RestApiResultStoreAddress.md)
  - [Flipdish.RestApiResultStoreChannelAssignment](docs/RestApiResultStoreChannelAssignment.md)
@@ -1324,6 +1331,8 @@ Class | Method | HTTP request | Description
  - [Flipdish.Setting](docs/Setting.md)
  - [Flipdish.SignupStep](docs/SignupStep.md)
  - [Flipdish.SmsInfo](docs/SmsInfo.md)
+ - [Flipdish.SmsProviderCredential](docs/SmsProviderCredential.md)
+ - [Flipdish.SmsProviderCredentialUpdateRequest](docs/SmsProviderCredentialUpdateRequest.md)
  - [Flipdish.SmsReceivedEvent](docs/SmsReceivedEvent.md)
  - [Flipdish.StatisticsCurrencyDataPoint](docs/StatisticsCurrencyDataPoint.md)
  - [Flipdish.Store](docs/Store.md)
