@@ -309,6 +309,7 @@ Class | Method | HTTP request | Description
 *Flipdish.FirebaseAppsApi* | [**firebaseAppsGetFirebaseApp**](docs/FirebaseAppsApi.md#firebaseAppsGetFirebaseApp) | **GET** /api/v1.0/FirebaseApp/{whitelabelId} | 
 *Flipdish.FpmApi* | [**createFpmForStore**](docs/FpmApi.md#createFpmForStore) | **POST** /api/v1.0/{storeId}/fpm | 
 *Flipdish.FpmApi* | [**editFpmForStore**](docs/FpmApi.md#editFpmForStore) | **POST** /api/v1.0/{storeId}/fpm/edit | 
+*Flipdish.FpmApi* | [**getFpmForStore**](docs/FpmApi.md#getFpmForStore) | **GET** /api/v1.0/{storeId}/fpm | 
 *Flipdish.FulfillmentStateConfigurationApi* | [**createFulfillmentStatesConfig**](docs/FulfillmentStateConfigurationApi.md#createFulfillmentStatesConfig) | **POST** /api/v1.0/{appId}/fulfillment/configuration/states | 
 *Flipdish.FulfillmentStateConfigurationApi* | [**deleteFulfillmentStatesConfig**](docs/FulfillmentStateConfigurationApi.md#deleteFulfillmentStatesConfig) | **DELETE** /api/v1.0/{appId}/fulfillment/configuration/states/{configId} | 
 *Flipdish.FulfillmentStateConfigurationApi* | [**getFulfillmentStatesConfiguration**](docs/FulfillmentStateConfigurationApi.md#getFulfillmentStatesConfiguration) | **GET** /api/v1.0/{appId}/fulfillment/configuration/states/{configId} | 

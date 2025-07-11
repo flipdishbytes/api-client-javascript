@@ -6,6 +6,7 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**createFpmForStore**](FpmApi.md#createFpmForStore) | **POST** /api/v1.0/{storeId}/fpm | 
 [**editFpmForStore**](FpmApi.md#editFpmForStore) | **POST** /api/v1.0/{storeId}/fpm/edit | 
+[**getFpmForStore**](FpmApi.md#getFpmForStore) | **GET** /api/v1.0/{storeId}/fpm | 
 
 
 
@@ -55,7 +56,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json, text/json, application/xml, text/xml
+- **Accept**: application/json, text/json, application/xml, text/xml, TelephonyConfigId, ApmEnabled, Type, ConsentEnabled, SendAppLinkSms, UseCustomAppLinkSmsMessage, UseCustomVoiceMessage, ResendApmMessageAfterDays
 
 
 ## editFpmForStore
@@ -105,4 +106,51 @@ null (empty response body)
 
 - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
 - **Accept**: application/json, text/json, application/xml, text/xml
+
+
+## getFpmForStore
+
+> TelephonyConfig getFpmForStore(storeId)
+
+
+
+### Example
+
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
+// Configure OAuth2 access token for authorization: oauth2
+let oauth2 = defaultClient.authentications['oauth2'];
+oauth2.accessToken = 'YOUR ACCESS TOKEN';
+
+let apiInstance = new Flipdish.FpmApi();
+let storeId = 56; // Number | 
+apiInstance.getFpmForStore(storeId, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **storeId** | **Number**|  | 
+
+### Return type
+
+[**TelephonyConfig**](TelephonyConfig.md)
+
+### Authorization
+
+[oauth2](../README.md#oauth2)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, TelephonyConfigId, ApmEnabled, Type, ConsentEnabled, SendAppLinkSms, UseCustomAppLinkSmsMessage, UseCustomVoiceMessage, ResendApmMessageAfterDays
 

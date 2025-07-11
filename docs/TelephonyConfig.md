@@ -6,6 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **TelephonyConfigId** | **Number** | ID of the phone call | [optional] 
 **ApmEnabled** | **Boolean** | APM enabled flag | [optional] 
+**Type** | **String** | Type of telephony service | [optional] 
 **ConsentEnabled** | **Boolean** | Consent enabled flag | [optional] 
 **PhoneNumber** | **String** | APM phone number of the store | [optional] 
 **SendAppLinkSms** | **Boolean** | Send app link SMS flag | [optional] 
@@ -13,5 +14,16 @@ Name | Type | Description | Notes
 **UseCustomVoiceMessage** | **Boolean** | Use custom voice message flag | [optional] 
 **AppLinkSmsMessage** | **String** | App link SMS message | [optional] 
 **ResendApmMessageAfterDays** | **Number** | Amount of days to resend APM message | [optional] 
+
+
+
+## Enum: TypeEnum
+
+
+* `PreRecorded` (value: `"PreRecorded"`)
+
+* `VoiceAI` (value: `"VoiceAI"`)
+
+
 
 

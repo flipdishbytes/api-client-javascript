@@ -68,6 +68,16 @@
         done();
       });
     });
+    describe('getFpmForStore', function() {
+      it('should call getFpmForStore successfully', function(done) {
+        //uncomment below and update the code to test getFpmForStore
+        //instance.getFpmForStore(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
   });
 
 }));

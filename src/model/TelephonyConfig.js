@@ -54,6 +54,9 @@ class TelephonyConfig {
             if (data.hasOwnProperty('ApmEnabled')) {
                 obj['ApmEnabled'] = ApiClient.convertToType(data['ApmEnabled'], 'Boolean');
             }
+            if (data.hasOwnProperty('Type')) {
+                obj['Type'] = ApiClient.convertToType(data['Type'], 'String');
+            }
             if (data.hasOwnProperty('ConsentEnabled')) {
                 obj['ConsentEnabled'] = ApiClient.convertToType(data['ConsentEnabled'], 'Boolean');
             }
@@ -93,6 +96,12 @@ TelephonyConfig.prototype['TelephonyConfigId'] = undefined;
  * @member {Boolean} ApmEnabled
  */
 TelephonyConfig.prototype['ApmEnabled'] = undefined;
+
+/**
+ * Type of telephony service
+ * @member {module:model/TelephonyConfig.TypeEnum} Type
+ */
+TelephonyConfig.prototype['Type'] = undefined;
 
 /**
  * Consent enabled flag
@@ -138,6 +147,27 @@ TelephonyConfig.prototype['ResendApmMessageAfterDays'] = undefined;
 
 
 
+
+
+/**
+ * Allowed values for the <code>Type</code> property.
+ * @enum {String}
+ * @readonly
+ */
+TelephonyConfig['TypeEnum'] = {
+
+    /**
+     * value: "PreRecorded"
+     * @const
+     */
+    "PreRecorded": "PreRecorded",
+
+    /**
+     * value: "VoiceAI"
+     * @const
+     */
+    "VoiceAI": "VoiceAI"
+};
 
 
 

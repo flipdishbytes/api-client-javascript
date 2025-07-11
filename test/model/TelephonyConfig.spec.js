@@ -66,6 +66,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property Type (base name: "Type")', function() {
+      // uncomment below and update the code to test the property Type
+      //var instance = new Flipdish.TelephonyConfig();
+      //expect(instance).to.be();
+    });
+
     it('should have the property ConsentEnabled (base name: "ConsentEnabled")', function() {
       // uncomment below and update the code to test the property ConsentEnabled
       //var instance = new Flipdish.TelephonyConfig();

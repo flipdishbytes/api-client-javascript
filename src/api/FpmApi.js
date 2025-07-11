@@ -74,7 +74,7 @@ export default class FpmApi {
 
       let authNames = ['oauth2'];
       let contentTypes = [];
-      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'TelephonyConfigId', 'ApmEnabled', 'Type', 'ConsentEnabled', 'SendAppLinkSms', 'UseCustomAppLinkSmsMessage', 'UseCustomVoiceMessage', 'ResendApmMessageAfterDays'];
       let returnType = Object;
       return this.apiClient.callApi(
         '/api/v1.0/{storeId}/fpm', 'POST',
@@ -123,6 +123,47 @@ export default class FpmApi {
       let returnType = null;
       return this.apiClient.callApi(
         '/api/v1.0/{storeId}/fpm/edit', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the getFpmForStore operation.
+     * @callback module:api/FpmApi~getFpmForStoreCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/TelephonyConfig} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {Number} storeId 
+     * @param {module:api/FpmApi~getFpmForStoreCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/TelephonyConfig}
+     */
+    getFpmForStore(storeId, callback) {
+      let postBody = null;
+      // verify the required parameter 'storeId' is set
+      if (storeId === undefined || storeId === null) {
+        throw new Error("Missing the required parameter 'storeId' when calling getFpmForStore");
+      }
+
+      let pathParams = {
+        'storeId': storeId
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = [];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'TelephonyConfigId', 'ApmEnabled', 'Type', 'ConsentEnabled', 'SendAppLinkSms', 'UseCustomAppLinkSmsMessage', 'UseCustomVoiceMessage', 'ResendApmMessageAfterDays'];
+      let returnType = TelephonyConfig;
+      return this.apiClient.callApi(
+        '/api/v1.0/{storeId}/fpm', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );
