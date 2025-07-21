@@ -80,7 +80,7 @@ AppConfigSalesChannel.prototype['EmailRequestMode'] = undefined;
 AppConfigSalesChannel.prototype['WebToAppRedirect'] = undefined;
 
 /**
- * Address entry type
+ * Address entry type - TextEntryManualDisallowed is the only supported configuration
  * @member {module:model/AppConfigSalesChannel.AddressEntryTypeEnum} AddressEntryType
  */
 AppConfigSalesChannel.prototype['AddressEntryType'] = undefined;
