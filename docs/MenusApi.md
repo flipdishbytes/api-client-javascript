@@ -22,6 +22,9 @@ Method | HTTP request | Description
 [**getMenusCheckpoints**](MenusApi.md#getMenusCheckpoints) | **GET** /api/v1.0/menus/{menuId}/checkpoints | Get a Menus Checkpoints
 [**menusDeleteTaxRate**](MenusApi.md#menusDeleteTaxRate) | **DELETE** /api/v1.0/menus/{menuId}/tax/{taxId} | Remove a Menus Tax Rate, can only remove a tax rate that does not have items/optionSetItems attached
 [**menusGetMenuBulkShowHide**](MenusApi.md#menusGetMenuBulkShowHide) | **GET** /api/v1.0/menus/{menuId}/bulkshowhide/list | Get bulk show/hide menu items and option set items
+[**menusIsWhiteLabelMigratedToRms**](MenusApi.md#menusIsWhiteLabelMigratedToRms) | **GET** /api/v1.0/menus/isWhiteLabelMigratedToRms | PRIVATE API, TEMPORARY ENDPOINT  RMS can check if a white label is migrated to RMS
+[**menusMarkWhiteLabelAsMigratedToRms**](MenusApi.md#menusMarkWhiteLabelAsMigratedToRms) | **POST** /api/v1.0/menus/markWhiteLabelAsMigratedToRms | PRIVATE API, TEMPORARY ENDPOINT  RMS can set the white label as migrated to RMS, which will block all Menu editing operations via Zeus
+[**menusMarkWhiteLabelAsNotMigratedToRms**](MenusApi.md#menusMarkWhiteLabelAsNotMigratedToRms) | **POST** /api/v1.0/menus/markWhiteLabelAsNotMigratedToRms | PRIVATE API, TEMPORARY ENDPOINT  RMS can set the white label as NOT migrated to RMS, which will unblock all Menu editing operations via Zeus
 [**menusSetDisplayOnMenuTax**](MenusApi.md#menusSetDisplayOnMenuTax) | **POST** /api/v1.0/menus/{menuId}/tax/show/{show} | Set if tax shows for a Menu
 [**menusSetItemDisplayOrders**](MenusApi.md#menusSetItemDisplayOrders) | **POST** /api/v1.0/menus/{menuId}/sectiondisplayorders | Re-arrange Sections within a Menu
 [**menusShowHideBulkItems**](MenusApi.md#menusShowHideBulkItems) | **POST** /api/v1.0/menus/{menuId}/bulkshowhide | Bulk show/hide menu items or option set items
@@ -909,6 +912,159 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**RestApiArrayResultMenuElementListResponse**](RestApiArrayResultMenuElementListResponse.md)
+
+### Authorization
+
+[oauth2](../README.md#oauth2)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml
+
+
+## menusIsWhiteLabelMigratedToRms
+
+> Object menusIsWhiteLabelMigratedToRms(opts)
+
+PRIVATE API, TEMPORARY ENDPOINT  RMS can check if a white label is migrated to RMS
+
+### Example
+
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
+// Configure OAuth2 access token for authorization: oauth2
+let oauth2 = defaultClient.authentications['oauth2'];
+oauth2.accessToken = 'YOUR ACCESS TOKEN';
+
+let apiInstance = new Flipdish.MenusApi();
+let opts = {
+  'whiteLabelId': 56, // Number | white label id (integer)
+  'appId': "appId_example" // String | appId (string)
+};
+apiInstance.menusIsWhiteLabelMigratedToRms(opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **whiteLabelId** | **Number**| white label id (integer) | [optional] 
+ **appId** | **String**| appId (string) | [optional] 
+
+### Return type
+
+**Object**
+
+### Authorization
+
+[oauth2](../README.md#oauth2)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml
+
+
+## menusMarkWhiteLabelAsMigratedToRms
+
+> Object menusMarkWhiteLabelAsMigratedToRms(opts)
+
+PRIVATE API, TEMPORARY ENDPOINT  RMS can set the white label as migrated to RMS, which will block all Menu editing operations via Zeus
+
+### Example
+
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
+// Configure OAuth2 access token for authorization: oauth2
+let oauth2 = defaultClient.authentications['oauth2'];
+oauth2.accessToken = 'YOUR ACCESS TOKEN';
+
+let apiInstance = new Flipdish.MenusApi();
+let opts = {
+  'whiteLabelId': 56, // Number | white label id (integer)
+  'appId': "appId_example" // String | appId (string)
+};
+apiInstance.menusMarkWhiteLabelAsMigratedToRms(opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **whiteLabelId** | **Number**| white label id (integer) | [optional] 
+ **appId** | **String**| appId (string) | [optional] 
+
+### Return type
+
+**Object**
+
+### Authorization
+
+[oauth2](../README.md#oauth2)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml
+
+
+## menusMarkWhiteLabelAsNotMigratedToRms
+
+> Object menusMarkWhiteLabelAsNotMigratedToRms(opts)
+
+PRIVATE API, TEMPORARY ENDPOINT  RMS can set the white label as NOT migrated to RMS, which will unblock all Menu editing operations via Zeus
+
+### Example
+
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
+// Configure OAuth2 access token for authorization: oauth2
+let oauth2 = defaultClient.authentications['oauth2'];
+oauth2.accessToken = 'YOUR ACCESS TOKEN';
+
+let apiInstance = new Flipdish.MenusApi();
+let opts = {
+  'whiteLabelId': 56, // Number | white label id (integer)
+  'appId': "appId_example" // String | appId (string)
+};
+apiInstance.menusMarkWhiteLabelAsNotMigratedToRms(opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **whiteLabelId** | **Number**| white label id (integer) | [optional] 
+ **appId** | **String**| appId (string) | [optional] 
+
+### Return type
+
+**Object**
 
 ### Authorization
 
