@@ -228,6 +228,36 @@
         done();
       });
     });
+    describe('menusIsWhiteLabelMigratedToRms', function() {
+      it('should call menusIsWhiteLabelMigratedToRms successfully', function(done) {
+        //uncomment below and update the code to test menusIsWhiteLabelMigratedToRms
+        //instance.menusIsWhiteLabelMigratedToRms(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('menusMarkWhiteLabelAsMigratedToRms', function() {
+      it('should call menusMarkWhiteLabelAsMigratedToRms successfully', function(done) {
+        //uncomment below and update the code to test menusMarkWhiteLabelAsMigratedToRms
+        //instance.menusMarkWhiteLabelAsMigratedToRms(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('menusMarkWhiteLabelAsNotMigratedToRms', function() {
+      it('should call menusMarkWhiteLabelAsNotMigratedToRms successfully', function(done) {
+        //uncomment below and update the code to test menusMarkWhiteLabelAsNotMigratedToRms
+        //instance.menusMarkWhiteLabelAsNotMigratedToRms(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('menusSetDisplayOnMenuTax', function() {
       it('should call menusSetDisplayOnMenuTax successfully', function(done) {
         //uncomment below and update the code to test menusSetDisplayOnMenuTax

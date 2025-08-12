@@ -902,6 +902,132 @@ export default class MenusApi {
     }
 
     /**
+     * Callback function to receive the result of the menusIsWhiteLabelMigratedToRms operation.
+     * @callback module:api/MenusApi~menusIsWhiteLabelMigratedToRmsCallback
+     * @param {String} error Error message, if any.
+     * @param {Object} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * PRIVATE API, TEMPORARY ENDPOINT  RMS can check if a white label is migrated to RMS
+     * @param {Object} opts Optional parameters
+     * @param {Number} opts.whiteLabelId white label id (integer)
+     * @param {String} opts.appId appId (string)
+     * @param {module:api/MenusApi~menusIsWhiteLabelMigratedToRmsCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link Object}
+     */
+    menusIsWhiteLabelMigratedToRms(opts, callback) {
+      opts = opts || {};
+      let postBody = null;
+
+      let pathParams = {
+      };
+      let queryParams = {
+        'whiteLabelId': opts['whiteLabelId'],
+        'appId': opts['appId']
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = [];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
+      let returnType = Object;
+      return this.apiClient.callApi(
+        '/api/v1.0/menus/isWhiteLabelMigratedToRms', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the menusMarkWhiteLabelAsMigratedToRms operation.
+     * @callback module:api/MenusApi~menusMarkWhiteLabelAsMigratedToRmsCallback
+     * @param {String} error Error message, if any.
+     * @param {Object} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * PRIVATE API, TEMPORARY ENDPOINT  RMS can set the white label as migrated to RMS, which will block all Menu editing operations via Zeus
+     * @param {Object} opts Optional parameters
+     * @param {Number} opts.whiteLabelId white label id (integer)
+     * @param {String} opts.appId appId (string)
+     * @param {module:api/MenusApi~menusMarkWhiteLabelAsMigratedToRmsCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link Object}
+     */
+    menusMarkWhiteLabelAsMigratedToRms(opts, callback) {
+      opts = opts || {};
+      let postBody = null;
+
+      let pathParams = {
+      };
+      let queryParams = {
+        'whiteLabelId': opts['whiteLabelId'],
+        'appId': opts['appId']
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = [];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
+      let returnType = Object;
+      return this.apiClient.callApi(
+        '/api/v1.0/menus/markWhiteLabelAsMigratedToRms', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the menusMarkWhiteLabelAsNotMigratedToRms operation.
+     * @callback module:api/MenusApi~menusMarkWhiteLabelAsNotMigratedToRmsCallback
+     * @param {String} error Error message, if any.
+     * @param {Object} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * PRIVATE API, TEMPORARY ENDPOINT  RMS can set the white label as NOT migrated to RMS, which will unblock all Menu editing operations via Zeus
+     * @param {Object} opts Optional parameters
+     * @param {Number} opts.whiteLabelId white label id (integer)
+     * @param {String} opts.appId appId (string)
+     * @param {module:api/MenusApi~menusMarkWhiteLabelAsNotMigratedToRmsCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link Object}
+     */
+    menusMarkWhiteLabelAsNotMigratedToRms(opts, callback) {
+      opts = opts || {};
+      let postBody = null;
+
+      let pathParams = {
+      };
+      let queryParams = {
+        'whiteLabelId': opts['whiteLabelId'],
+        'appId': opts['appId']
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = [];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
+      let returnType = Object;
+      return this.apiClient.callApi(
+        '/api/v1.0/menus/markWhiteLabelAsNotMigratedToRms', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
      * Callback function to receive the result of the menusSetDisplayOnMenuTax operation.
      * @callback module:api/MenusApi~menusSetDisplayOnMenuTaxCallback
      * @param {String} error Error message, if any.
