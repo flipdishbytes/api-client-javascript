@@ -333,7 +333,7 @@ export default class MenuZonesApi {
      */
 
     /**
-     * Sets a zone to a menu section.
+     * Assigns a zone to a menu section.
      * @param {Number} menuZoneId The menu id.
      * @param {Number} menuSectionId The menu section id.
      * @param {String} menuId 
