@@ -65,6 +65,9 @@ class MenuZone {
             if (data.hasOwnProperty('DisplayOrder')) {
                 obj['DisplayOrder'] = ApiClient.convertToType(data['DisplayOrder'], 'Number');
             }
+            if (data.hasOwnProperty('ImageUrl')) {
+                obj['ImageUrl'] = ApiClient.convertToType(data['ImageUrl'], 'String');
+            }
         }
         return obj;
     }
@@ -101,6 +104,11 @@ MenuZone.prototype['ImageName'] = undefined;
  * @member {Number} DisplayOrder
  */
 MenuZone.prototype['DisplayOrder'] = undefined;
+
+/**
+ * @member {String} ImageUrl
+ */
+MenuZone.prototype['ImageUrl'] = undefined;
 
 
 

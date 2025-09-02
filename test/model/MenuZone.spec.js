@@ -90,6 +90,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property ImageUrl (base name: "ImageUrl")', function() {
+      // uncomment below and update the code to test the property ImageUrl
+      //var instance = new Flipdish.MenuZone();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));

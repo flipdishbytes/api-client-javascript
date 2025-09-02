@@ -10,5 +10,6 @@ Name | Type | Description | Notes
 **Description** | **String** |  | [optional] 
 **ImageName** | **String** |  | [optional] 
 **DisplayOrder** | **Number** |  | [optional] 
+**ImageUrl** | **String** |  | [optional] 
 
 
