@@ -69,7 +69,6 @@ import CampaignStatistics from './model/CampaignStatistics';
 import CancellationToken from './model/CancellationToken';
 import CardReader from './model/CardReader';
 import CardReaderRegistrationRequest from './model/CardReaderRegistrationRequest';
-import Cart from './model/Cart';
 import CatalogGroupArchivedEvent from './model/CatalogGroupArchivedEvent';
 import CatalogGroupCreatedEvent from './model/CatalogGroupCreatedEvent';
 import CatalogGroupReference from './model/CatalogGroupReference';
@@ -83,7 +82,6 @@ import CertificateCreatedEvent from './model/CertificateCreatedEvent';
 import CertificateRenewedEvent from './model/CertificateRenewedEvent';
 import ChangePasswordModel from './model/ChangePasswordModel';
 import Channel from './model/Channel';
-import ChannelStoreMapping from './model/ChannelStoreMapping';
 import ChannelStoresUpdatedEvent from './model/ChannelStoresUpdatedEvent';
 import ChargebackDetails from './model/ChargebackDetails';
 import ClientDevice from './model/ClientDevice';
@@ -92,7 +90,6 @@ import ClientDeviceEnroll from './model/ClientDeviceEnroll';
 import ClientDeviceEnrollmentResult from './model/ClientDeviceEnrollmentResult';
 import ClientDeviceSummary from './model/ClientDeviceSummary';
 import ConfiguredStore from './model/ConfiguredStore';
-import Contact from './model/Contact';
 import Coordinates from './model/Coordinates';
 import CountryFormResponse from './model/CountryFormResponse';
 import CountryWithAccountFieldsDefinitions from './model/CountryWithAccountFieldsDefinitions';
@@ -173,7 +170,6 @@ import FirebaseApp from './model/FirebaseApp';
 import FlipdishEventBase from './model/FlipdishEventBase';
 import FlipdishFeesDetails from './model/FlipdishFeesDetails';
 import FulfillentStatusActionItem from './model/FulfillentStatusActionItem';
-import FulfillmentInfo from './model/FulfillmentInfo';
 import FulfillmentStatesConfiguration from './model/FulfillmentStatesConfiguration';
 import FulfillmentStatesConfigurationSummary from './model/FulfillmentStatesConfigurationSummary';
 import FulfillmentStatesConfiguredStore from './model/FulfillmentStatesConfiguredStore';
@@ -243,10 +239,7 @@ import Language from './model/Language';
 import LastPaymentError from './model/LastPaymentError';
 import LeadTime from './model/LeadTime';
 import LightspeedSettings from './model/LightspeedSettings';
-import LineItem from './model/LineItem';
-import LineItemOption from './model/LineItemOption';
 import LocalisedTimeZone from './model/LocalisedTimeZone';
-import Location from './model/Location';
 import LocationArea from './model/LocationArea';
 import LocationAreaCreatedEvent from './model/LocationAreaCreatedEvent';
 import LocationAreaLocation from './model/LocationAreaLocation';
@@ -353,8 +346,6 @@ import OrderFulfillmentStatusBase from './model/OrderFulfillmentStatusBase';
 import OrderFulfillmentStatusUpdate from './model/OrderFulfillmentStatusUpdate';
 import OrderFulfillmentStatusUpdatedEvent from './model/OrderFulfillmentStatusUpdatedEvent';
 import OrderFulfillmentStatusWithConfigurationActions from './model/OrderFulfillmentStatusWithConfigurationActions';
-import OrderIngestSubmitOrderRequest from './model/OrderIngestSubmitOrderRequest';
-import OrderIngestSubmitOrderResponse from './model/OrderIngestSubmitOrderResponse';
 import OrderItem from './model/OrderItem';
 import OrderItemOption from './model/OrderItemOption';
 import OrderLeadTimes from './model/OrderLeadTimes';
@@ -371,7 +362,6 @@ import OtherChargesDetails from './model/OtherChargesDetails';
 import OwnerEntityConfiguration from './model/OwnerEntityConfiguration';
 import OwnerEntityConfigurations from './model/OwnerEntityConfigurations';
 import PasswordResetModel from './model/PasswordResetModel';
-import PaymentInfo from './model/PaymentInfo';
 import PaymentIntent from './model/PaymentIntent';
 import PaymentTerminalDetails from './model/PaymentTerminalDetails';
 import PaymentTerminalTransactionDetails from './model/PaymentTerminalTransactionDetails';
@@ -408,7 +398,6 @@ import PredefinedAnswer from './model/PredefinedAnswer';
 import PreviousOrder from './model/PreviousOrder';
 import PreviousOrderItem from './model/PreviousOrderItem';
 import PreviousOrderItemOption from './model/PreviousOrderItemOption';
-import Price from './model/Price';
 import Printer from './model/Printer';
 import PrinterAssignedToStoreEvent from './model/PrinterAssignedToStoreEvent';
 import PrinterTurnedOffEvent from './model/PrinterTurnedOffEvent';
@@ -487,7 +476,6 @@ import RestApiArrayResultRestaurantVoucherPayGreenConfigurationSummary from './m
 import RestApiArrayResultRetentionCampaign from './model/RestApiArrayResultRetentionCampaign';
 import RestApiArrayResultSmsProviderCredential from './model/RestApiArrayResultSmsProviderCredential';
 import RestApiArrayResultStoreChannelAssignment from './model/RestApiArrayResultStoreChannelAssignment';
-import RestApiArrayResultStoreChannelStoreMapping from './model/RestApiArrayResultStoreChannelStoreMapping';
 import RestApiArrayResultStoreDeliveryZoneFeeConfig from './model/RestApiArrayResultStoreDeliveryZoneFeeConfig';
 import RestApiArrayResultStoreListItem from './model/RestApiArrayResultStoreListItem';
 import RestApiArrayResultStoreStatistics from './model/RestApiArrayResultStoreStatistics';
@@ -612,7 +600,6 @@ import RestApiResultOrderBatchingConfiguration from './model/RestApiResultOrderB
 import RestApiResultOrderDeliveryInformation from './model/RestApiResultOrderDeliveryInformation';
 import RestApiResultOrderFulfillmentStatus from './model/RestApiResultOrderFulfillmentStatus';
 import RestApiResultOrderFulfillmentStatusWithConfigurationActions from './model/RestApiResultOrderFulfillmentStatusWithConfigurationActions';
-import RestApiResultOrderIngestSubmitOrderResponse from './model/RestApiResultOrderIngestSubmitOrderResponse';
 import RestApiResultOrderLeadTimes from './model/RestApiResultOrderLeadTimes';
 import RestApiResultOrderPaymentInformation from './model/RestApiResultOrderPaymentInformation';
 import RestApiResultPaymentIntent from './model/RestApiResultPaymentIntent';
@@ -691,7 +678,6 @@ import StoreBusinessHoursOverrideCreatedEvent from './model/StoreBusinessHoursOv
 import StoreBusinessHoursOverrideDeletedEvent from './model/StoreBusinessHoursOverrideDeletedEvent';
 import StoreCampaignStartTime from './model/StoreCampaignStartTime';
 import StoreChannelAssignment from './model/StoreChannelAssignment';
-import StoreChannelStoreMapping from './model/StoreChannelStoreMapping';
 import StoreCloneSettings from './model/StoreCloneSettings';
 import StoreConfig from './model/StoreConfig';
 import StoreCreateBase from './model/StoreCreateBase';
@@ -838,7 +824,6 @@ import CatalogImagesApi from './api/CatalogImagesApi';
 import CatalogItemsApi from './api/CatalogItemsApi';
 import CatalogProductsApi from './api/CatalogProductsApi';
 import ChannelsApi from './api/ChannelsApi';
-import ChannelsStoreMappingApi from './api/ChannelsStoreMappingApi';
 import ClientsApi from './api/ClientsApi';
 import ContentSecurityPolicyApi from './api/ContentSecurityPolicyApi';
 import CrossSellApi from './api/CrossSellApi';
@@ -878,7 +863,6 @@ import OAuthClientsApi from './api/OAuthClientsApi';
 import OnboardingApi from './api/OnboardingApi';
 import OrderBatchesApi from './api/OrderBatchesApi';
 import OrderBatchingConfigurationApi from './api/OrderBatchingConfigurationApi';
-import OrderIngestApi from './api/OrderIngestApi';
 import OrdersApi from './api/OrdersApi';
 import PaymentIntentsApi from './api/PaymentIntentsApi';
 import PaymentsApi from './api/PaymentsApi';
@@ -1281,12 +1265,6 @@ export {
     CardReaderRegistrationRequest,
 
     /**
-     * The Cart model constructor.
-     * @property {module:model/Cart}
-     */
-    Cart,
-
-    /**
      * The CatalogGroupArchivedEvent model constructor.
      * @property {module:model/CatalogGroupArchivedEvent}
      */
@@ -1365,12 +1343,6 @@ export {
     Channel,
 
     /**
-     * The ChannelStoreMapping model constructor.
-     * @property {module:model/ChannelStoreMapping}
-     */
-    ChannelStoreMapping,
-
-    /**
      * The ChannelStoresUpdatedEvent model constructor.
      * @property {module:model/ChannelStoresUpdatedEvent}
      */
@@ -1417,12 +1389,6 @@ export {
      * @property {module:model/ConfiguredStore}
      */
     ConfiguredStore,
-
-    /**
-     * The Contact model constructor.
-     * @property {module:model/Contact}
-     */
-    Contact,
 
     /**
      * The Coordinates model constructor.
@@ -1905,12 +1871,6 @@ export {
     FulfillentStatusActionItem,
 
     /**
-     * The FulfillmentInfo model constructor.
-     * @property {module:model/FulfillmentInfo}
-     */
-    FulfillmentInfo,
-
-    /**
      * The FulfillmentStatesConfiguration model constructor.
      * @property {module:model/FulfillmentStatesConfiguration}
      */
@@ -2325,28 +2285,10 @@ export {
     LightspeedSettings,
 
     /**
-     * The LineItem model constructor.
-     * @property {module:model/LineItem}
-     */
-    LineItem,
-
-    /**
-     * The LineItemOption model constructor.
-     * @property {module:model/LineItemOption}
-     */
-    LineItemOption,
-
-    /**
      * The LocalisedTimeZone model constructor.
      * @property {module:model/LocalisedTimeZone}
      */
     LocalisedTimeZone,
-
-    /**
-     * The Location model constructor.
-     * @property {module:model/Location}
-     */
-    Location,
 
     /**
      * The LocationArea model constructor.
@@ -2985,18 +2927,6 @@ export {
     OrderFulfillmentStatusWithConfigurationActions,
 
     /**
-     * The OrderIngestSubmitOrderRequest model constructor.
-     * @property {module:model/OrderIngestSubmitOrderRequest}
-     */
-    OrderIngestSubmitOrderRequest,
-
-    /**
-     * The OrderIngestSubmitOrderResponse model constructor.
-     * @property {module:model/OrderIngestSubmitOrderResponse}
-     */
-    OrderIngestSubmitOrderResponse,
-
-    /**
      * The OrderItem model constructor.
      * @property {module:model/OrderItem}
      */
@@ -3091,12 +3021,6 @@ export {
      * @property {module:model/PasswordResetModel}
      */
     PasswordResetModel,
-
-    /**
-     * The PaymentInfo model constructor.
-     * @property {module:model/PaymentInfo}
-     */
-    PaymentInfo,
 
     /**
      * The PaymentIntent model constructor.
@@ -3313,12 +3237,6 @@ export {
      * @property {module:model/PreviousOrderItemOption}
      */
     PreviousOrderItemOption,
-
-    /**
-     * The Price model constructor.
-     * @property {module:model/Price}
-     */
-    Price,
 
     /**
      * The Printer model constructor.
@@ -3787,12 +3705,6 @@ export {
      * @property {module:model/RestApiArrayResultStoreChannelAssignment}
      */
     RestApiArrayResultStoreChannelAssignment,
-
-    /**
-     * The RestApiArrayResultStoreChannelStoreMapping model constructor.
-     * @property {module:model/RestApiArrayResultStoreChannelStoreMapping}
-     */
-    RestApiArrayResultStoreChannelStoreMapping,
 
     /**
      * The RestApiArrayResultStoreDeliveryZoneFeeConfig model constructor.
@@ -4539,12 +4451,6 @@ export {
     RestApiResultOrderFulfillmentStatusWithConfigurationActions,
 
     /**
-     * The RestApiResultOrderIngestSubmitOrderResponse model constructor.
-     * @property {module:model/RestApiResultOrderIngestSubmitOrderResponse}
-     */
-    RestApiResultOrderIngestSubmitOrderResponse,
-
-    /**
      * The RestApiResultOrderLeadTimes model constructor.
      * @property {module:model/RestApiResultOrderLeadTimes}
      */
@@ -5011,12 +4917,6 @@ export {
      * @property {module:model/StoreChannelAssignment}
      */
     StoreChannelAssignment,
-
-    /**
-     * The StoreChannelStoreMapping model constructor.
-     * @property {module:model/StoreChannelStoreMapping}
-     */
-    StoreChannelStoreMapping,
 
     /**
      * The StoreCloneSettings model constructor.
@@ -5895,12 +5795,6 @@ export {
     ChannelsApi,
 
     /**
-    * The ChannelsStoreMappingApi service constructor.
-    * @property {module:api/ChannelsStoreMappingApi}
-    */
-    ChannelsStoreMappingApi,
-
-    /**
     * The ClientsApi service constructor.
     * @property {module:api/ClientsApi}
     */
@@ -6133,12 +6027,6 @@ export {
     * @property {module:api/OrderBatchingConfigurationApi}
     */
     OrderBatchingConfigurationApi,
-
-    /**
-    * The OrderIngestApi service constructor.
-    * @property {module:api/OrderIngestApi}
-    */
-    OrderIngestApi,
 
     /**
     * The OrdersApi service constructor.

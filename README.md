@@ -263,8 +263,6 @@ Class | Method | HTTP request | Description
 *Flipdish.ChannelsApi* | [**getStoresAssignedToChannel**](docs/ChannelsApi.md#getStoresAssignedToChannel) | **GET** /api/v1.0/{appId}/channels/{channelId}/assigned-stores | 
 *Flipdish.ChannelsApi* | [**getStoresBySalesChannel**](docs/ChannelsApi.md#getStoresBySalesChannel) | **GET** /api/v1.0/{appId}/channels/{channelId}/stores | 
 *Flipdish.ChannelsApi* | [**unassignStoreFromChannel**](docs/ChannelsApi.md#unassignStoreFromChannel) | **DELETE** /api/v1.0/{appId}/channels/unassign-store | 
-*Flipdish.ChannelsStoreMappingApi* | [**channelsGetStoreChannelStoreMapping**](docs/ChannelsStoreMappingApi.md#channelsGetStoreChannelStoreMapping) | **GET** /api/v1.0/{appId}/channels/storemappings | 
-*Flipdish.ChannelsStoreMappingApi* | [**channelsSetStoreChannelStoreMapping**](docs/ChannelsStoreMappingApi.md#channelsSetStoreChannelStoreMapping) | **POST** /api/v1.0/{appId}/channels/storemappings | 
 *Flipdish.ClientsApi* | [**getClient**](docs/ClientsApi.md#getClient) | **GET** /api/v1.0/clients/{clientId} | 
 *Flipdish.ClientsApi* | [**setSalesForceContactId**](docs/ClientsApi.md#setSalesForceContactId) | **POST** /api/v1.0/clients/{clientId}/salesforcecontactid | 
 *Flipdish.ClientsApi* | [**setStripeCustomerId**](docs/ClientsApi.md#setStripeCustomerId) | **POST** /api/v1.0/clients/{clientId}/stripecustomerid | 
@@ -502,7 +500,6 @@ Class | Method | HTTP request | Description
 *Flipdish.OrderBatchesApi* | [**getOrderBatch**](docs/OrderBatchesApi.md#getOrderBatch) | **GET** /api/v1.0/{appId}/order-batches/{orderBatchId} | 
 *Flipdish.OrderBatchingConfigurationApi* | [**get**](docs/OrderBatchingConfigurationApi.md#get) | **GET** /api/v1.0/stores/{storeId}/order-batching-configuration | 
 *Flipdish.OrderBatchingConfigurationApi* | [**post**](docs/OrderBatchingConfigurationApi.md#post) | **POST** /api/v1.0/stores/{storeId}/order-batching-configuration | 
-*Flipdish.OrderIngestApi* | [**orderIngestSubmitNewOrder**](docs/OrderIngestApi.md#orderIngestSubmitNewOrder) | **POST** /api/v1.0/{appNameId}/order-ingest/submit | 
 *Flipdish.OrdersApi* | [**acceptOrder**](docs/OrdersApi.md#acceptOrder) | **POST** /api/v1.0/orders/{id}/accept | 
 *Flipdish.OrdersApi* | [**dispatchOrder**](docs/OrdersApi.md#dispatchOrder) | **POST** /api/v1.0/orders/{id}/dispatch | 
 *Flipdish.OrdersApi* | [**getDeliveryInformation**](docs/OrdersApi.md#getDeliveryInformation) | **GET** /api/v1.0/orders/{orderId}/deliveryinfo | 
@@ -728,7 +725,6 @@ Class | Method | HTTP request | Description
  - [Flipdish.CancellationToken](docs/CancellationToken.md)
  - [Flipdish.CardReader](docs/CardReader.md)
  - [Flipdish.CardReaderRegistrationRequest](docs/CardReaderRegistrationRequest.md)
- - [Flipdish.Cart](docs/Cart.md)
  - [Flipdish.CatalogGroupArchivedEvent](docs/CatalogGroupArchivedEvent.md)
  - [Flipdish.CatalogGroupCreatedEvent](docs/CatalogGroupCreatedEvent.md)
  - [Flipdish.CatalogGroupReference](docs/CatalogGroupReference.md)
@@ -742,7 +738,6 @@ Class | Method | HTTP request | Description
  - [Flipdish.CertificateRenewedEvent](docs/CertificateRenewedEvent.md)
  - [Flipdish.ChangePasswordModel](docs/ChangePasswordModel.md)
  - [Flipdish.Channel](docs/Channel.md)
- - [Flipdish.ChannelStoreMapping](docs/ChannelStoreMapping.md)
  - [Flipdish.ChannelStoresUpdatedEvent](docs/ChannelStoresUpdatedEvent.md)
  - [Flipdish.ChargebackDetails](docs/ChargebackDetails.md)
  - [Flipdish.ClientDevice](docs/ClientDevice.md)
@@ -751,7 +746,6 @@ Class | Method | HTTP request | Description
  - [Flipdish.ClientDeviceEnrollmentResult](docs/ClientDeviceEnrollmentResult.md)
  - [Flipdish.ClientDeviceSummary](docs/ClientDeviceSummary.md)
  - [Flipdish.ConfiguredStore](docs/ConfiguredStore.md)
- - [Flipdish.Contact](docs/Contact.md)
  - [Flipdish.Coordinates](docs/Coordinates.md)
  - [Flipdish.CountryFormResponse](docs/CountryFormResponse.md)
  - [Flipdish.CountryWithAccountFieldsDefinitions](docs/CountryWithAccountFieldsDefinitions.md)
@@ -832,7 +826,6 @@ Class | Method | HTTP request | Description
  - [Flipdish.FlipdishEventBase](docs/FlipdishEventBase.md)
  - [Flipdish.FlipdishFeesDetails](docs/FlipdishFeesDetails.md)
  - [Flipdish.FulfillentStatusActionItem](docs/FulfillentStatusActionItem.md)
- - [Flipdish.FulfillmentInfo](docs/FulfillmentInfo.md)
  - [Flipdish.FulfillmentStatesConfiguration](docs/FulfillmentStatesConfiguration.md)
  - [Flipdish.FulfillmentStatesConfigurationSummary](docs/FulfillmentStatesConfigurationSummary.md)
  - [Flipdish.FulfillmentStatesConfiguredStore](docs/FulfillmentStatesConfiguredStore.md)
@@ -902,10 +895,7 @@ Class | Method | HTTP request | Description
  - [Flipdish.LastPaymentError](docs/LastPaymentError.md)
  - [Flipdish.LeadTime](docs/LeadTime.md)
  - [Flipdish.LightspeedSettings](docs/LightspeedSettings.md)
- - [Flipdish.LineItem](docs/LineItem.md)
- - [Flipdish.LineItemOption](docs/LineItemOption.md)
  - [Flipdish.LocalisedTimeZone](docs/LocalisedTimeZone.md)
- - [Flipdish.Location](docs/Location.md)
  - [Flipdish.LocationArea](docs/LocationArea.md)
  - [Flipdish.LocationAreaCreatedEvent](docs/LocationAreaCreatedEvent.md)
  - [Flipdish.LocationAreaLocation](docs/LocationAreaLocation.md)
@@ -1012,8 +1002,6 @@ Class | Method | HTTP request | Description
  - [Flipdish.OrderFulfillmentStatusUpdate](docs/OrderFulfillmentStatusUpdate.md)
  - [Flipdish.OrderFulfillmentStatusUpdatedEvent](docs/OrderFulfillmentStatusUpdatedEvent.md)
  - [Flipdish.OrderFulfillmentStatusWithConfigurationActions](docs/OrderFulfillmentStatusWithConfigurationActions.md)
- - [Flipdish.OrderIngestSubmitOrderRequest](docs/OrderIngestSubmitOrderRequest.md)
- - [Flipdish.OrderIngestSubmitOrderResponse](docs/OrderIngestSubmitOrderResponse.md)
  - [Flipdish.OrderItem](docs/OrderItem.md)
  - [Flipdish.OrderItemOption](docs/OrderItemOption.md)
  - [Flipdish.OrderLeadTimes](docs/OrderLeadTimes.md)
@@ -1030,7 +1018,6 @@ Class | Method | HTTP request | Description
  - [Flipdish.OwnerEntityConfiguration](docs/OwnerEntityConfiguration.md)
  - [Flipdish.OwnerEntityConfigurations](docs/OwnerEntityConfigurations.md)
  - [Flipdish.PasswordResetModel](docs/PasswordResetModel.md)
- - [Flipdish.PaymentInfo](docs/PaymentInfo.md)
  - [Flipdish.PaymentIntent](docs/PaymentIntent.md)
  - [Flipdish.PaymentTerminalDetails](docs/PaymentTerminalDetails.md)
  - [Flipdish.PaymentTerminalTransactionDetails](docs/PaymentTerminalTransactionDetails.md)
@@ -1067,7 +1054,6 @@ Class | Method | HTTP request | Description
  - [Flipdish.PreviousOrder](docs/PreviousOrder.md)
  - [Flipdish.PreviousOrderItem](docs/PreviousOrderItem.md)
  - [Flipdish.PreviousOrderItemOption](docs/PreviousOrderItemOption.md)
- - [Flipdish.Price](docs/Price.md)
  - [Flipdish.Printer](docs/Printer.md)
  - [Flipdish.PrinterAssignedToStoreEvent](docs/PrinterAssignedToStoreEvent.md)
  - [Flipdish.PrinterTurnedOffEvent](docs/PrinterTurnedOffEvent.md)
@@ -1146,7 +1132,6 @@ Class | Method | HTTP request | Description
  - [Flipdish.RestApiArrayResultRetentionCampaign](docs/RestApiArrayResultRetentionCampaign.md)
  - [Flipdish.RestApiArrayResultSmsProviderCredential](docs/RestApiArrayResultSmsProviderCredential.md)
  - [Flipdish.RestApiArrayResultStoreChannelAssignment](docs/RestApiArrayResultStoreChannelAssignment.md)
- - [Flipdish.RestApiArrayResultStoreChannelStoreMapping](docs/RestApiArrayResultStoreChannelStoreMapping.md)
  - [Flipdish.RestApiArrayResultStoreDeliveryZoneFeeConfig](docs/RestApiArrayResultStoreDeliveryZoneFeeConfig.md)
  - [Flipdish.RestApiArrayResultStoreListItem](docs/RestApiArrayResultStoreListItem.md)
  - [Flipdish.RestApiArrayResultStoreStatistics](docs/RestApiArrayResultStoreStatistics.md)
@@ -1271,7 +1256,6 @@ Class | Method | HTTP request | Description
  - [Flipdish.RestApiResultOrderDeliveryInformation](docs/RestApiResultOrderDeliveryInformation.md)
  - [Flipdish.RestApiResultOrderFulfillmentStatus](docs/RestApiResultOrderFulfillmentStatus.md)
  - [Flipdish.RestApiResultOrderFulfillmentStatusWithConfigurationActions](docs/RestApiResultOrderFulfillmentStatusWithConfigurationActions.md)
- - [Flipdish.RestApiResultOrderIngestSubmitOrderResponse](docs/RestApiResultOrderIngestSubmitOrderResponse.md)
  - [Flipdish.RestApiResultOrderLeadTimes](docs/RestApiResultOrderLeadTimes.md)
  - [Flipdish.RestApiResultOrderPaymentInformation](docs/RestApiResultOrderPaymentInformation.md)
  - [Flipdish.RestApiResultPaymentIntent](docs/RestApiResultPaymentIntent.md)
@@ -1350,7 +1334,6 @@ Class | Method | HTTP request | Description
  - [Flipdish.StoreBusinessHoursOverrideDeletedEvent](docs/StoreBusinessHoursOverrideDeletedEvent.md)
  - [Flipdish.StoreCampaignStartTime](docs/StoreCampaignStartTime.md)
  - [Flipdish.StoreChannelAssignment](docs/StoreChannelAssignment.md)
- - [Flipdish.StoreChannelStoreMapping](docs/StoreChannelStoreMapping.md)
  - [Flipdish.StoreCloneSettings](docs/StoreCloneSettings.md)
  - [Flipdish.StoreConfig](docs/StoreConfig.md)
  - [Flipdish.StoreCreateBase](docs/StoreCreateBase.md)
