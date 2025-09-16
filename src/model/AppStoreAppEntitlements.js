@@ -53,9 +53,6 @@ class AppStoreAppEntitlements {
             if (data.hasOwnProperty('CurrentUsage')) {
                 obj['CurrentUsage'] = ApiClient.convertToType(data['CurrentUsage'], 'Number');
             }
-            if (data.hasOwnProperty('CurrentUsageInBrand')) {
-                obj['CurrentUsageInBrand'] = ApiClient.convertToType(data['CurrentUsageInBrand'], 'Number');
-            }
         }
         return obj;
     }
@@ -72,11 +69,6 @@ AppStoreAppEntitlements.prototype['EntitlementQuantity'] = undefined;
  * @member {Number} CurrentUsage
  */
 AppStoreAppEntitlements.prototype['CurrentUsage'] = undefined;
-
-/**
- * @member {Number} CurrentUsageInBrand
- */
-AppStoreAppEntitlements.prototype['CurrentUsageInBrand'] = undefined;
 
 
 
