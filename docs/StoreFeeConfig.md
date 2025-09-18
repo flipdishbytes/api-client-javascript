@@ -47,5 +47,7 @@ Name | Type | Description | Notes
 **FixedFeeCardPosTransaction** | **Number** | Gets or sets the fixed fee for POS transactions. | [optional] 
 **PercentFeeOrderWithGoogle** | **Number** | Additional percentage fee charged on orders submitted through Order With Google | [optional] 
 **FixedFeeOrderWithGoogle** | **Number** | Additional fixed fee charged on orders submitted through Order With Google | [optional] 
+**ShouldNotAutoIncreaseBefore** | **Date** | Should not auto increase fees before this date | [optional] 
+**Reason** | **String** | Reason for the last fee change (optional) | [optional] 
 
 

@@ -177,6 +177,12 @@ class StoreFeeConfig {
             if (data.hasOwnProperty('FixedFeeOrderWithGoogle')) {
                 obj['FixedFeeOrderWithGoogle'] = ApiClient.convertToType(data['FixedFeeOrderWithGoogle'], 'Number');
             }
+            if (data.hasOwnProperty('ShouldNotAutoIncreaseBefore')) {
+                obj['ShouldNotAutoIncreaseBefore'] = ApiClient.convertToType(data['ShouldNotAutoIncreaseBefore'], 'Date');
+            }
+            if (data.hasOwnProperty('Reason')) {
+                obj['Reason'] = ApiClient.convertToType(data['Reason'], 'String');
+            }
         }
         return obj;
     }
@@ -441,6 +447,18 @@ StoreFeeConfig.prototype['PercentFeeOrderWithGoogle'] = undefined;
  * @member {Number} FixedFeeOrderWithGoogle
  */
 StoreFeeConfig.prototype['FixedFeeOrderWithGoogle'] = undefined;
+
+/**
+ * Should not auto increase fees before this date
+ * @member {Date} ShouldNotAutoIncreaseBefore
+ */
+StoreFeeConfig.prototype['ShouldNotAutoIncreaseBefore'] = undefined;
+
+/**
+ * Reason for the last fee change (optional)
+ * @member {String} Reason
+ */
+StoreFeeConfig.prototype['Reason'] = undefined;
 
 
 

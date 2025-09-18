@@ -312,6 +312,18 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property ShouldNotAutoIncreaseBefore (base name: "ShouldNotAutoIncreaseBefore")', function() {
+      // uncomment below and update the code to test the property ShouldNotAutoIncreaseBefore
+      //var instance = new Flipdish.StoreFeeConfig();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property Reason (base name: "Reason")', function() {
+      // uncomment below and update the code to test the property Reason
+      //var instance = new Flipdish.StoreFeeConfig();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));
