@@ -612,6 +612,7 @@ import RestApiResultProcessingFeeConfig from './model/RestApiResultProcessingFee
 import RestApiResultProduct from './model/RestApiResultProduct';
 import RestApiResultPushNotificationResponse from './model/RestApiResultPushNotificationResponse';
 import RestApiResultRedeemInvitationResult from './model/RestApiResultRedeemInvitationResult';
+import RestApiResultRestApiDefaultResponse from './model/RestApiResultRestApiDefaultResponse';
 import RestApiResultRestApiIntegerResult from './model/RestApiResultRestApiIntegerResult';
 import RestApiResultRestaurantVoucherPayGreenConfiguration from './model/RestApiResultRestaurantVoucherPayGreenConfiguration';
 import RestApiResultRestaurantVoucherPayGreenStoreConfiguration from './model/RestApiResultRestaurantVoucherPayGreenStoreConfiguration';
@@ -679,6 +680,7 @@ import StoreBusinessHoursOverrideDeletedEvent from './model/StoreBusinessHoursOv
 import StoreCampaignStartTime from './model/StoreCampaignStartTime';
 import StoreChannelAssignment from './model/StoreChannelAssignment';
 import StoreCloneSettings from './model/StoreCloneSettings';
+import StoreCollectionSettings from './model/StoreCollectionSettings';
 import StoreConfig from './model/StoreConfig';
 import StoreCreateBase from './model/StoreCreateBase';
 import StoreCreatedEvent from './model/StoreCreatedEvent';
@@ -4523,6 +4525,12 @@ export {
     RestApiResultRedeemInvitationResult,
 
     /**
+     * The RestApiResultRestApiDefaultResponse model constructor.
+     * @property {module:model/RestApiResultRestApiDefaultResponse}
+     */
+    RestApiResultRestApiDefaultResponse,
+
+    /**
      * The RestApiResultRestApiIntegerResult model constructor.
      * @property {module:model/RestApiResultRestApiIntegerResult}
      */
@@ -4923,6 +4931,12 @@ export {
      * @property {module:model/StoreCloneSettings}
      */
     StoreCloneSettings,
+
+    /**
+     * The StoreCollectionSettings model constructor.
+     * @property {module:model/StoreCollectionSettings}
+     */
+    StoreCollectionSettings,
 
     /**
      * The StoreConfig model constructor.

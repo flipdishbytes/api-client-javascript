@@ -348,6 +348,16 @@
         done();
       });
     });
+    describe('setStoreCollectionSettings', function() {
+      it('should call setStoreCollectionSettings successfully', function(done) {
+        //uncomment below and update the code to test setStoreCollectionSettings
+        //instance.setStoreCollectionSettings(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('setStoreLeadTimes', function() {
       it('should call setStoreLeadTimes successfully', function(done) {
         //uncomment below and update the code to test setStoreLeadTimes

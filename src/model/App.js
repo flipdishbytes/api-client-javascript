@@ -104,6 +104,9 @@ class App {
             if (data.hasOwnProperty('SmsRestaurantName')) {
                 obj['SmsRestaurantName'] = ApiClient.convertToType(data['SmsRestaurantName'], 'String');
             }
+            if (data.hasOwnProperty('WebToAppRedirect')) {
+                obj['WebToAppRedirect'] = ApiClient.convertToType(data['WebToAppRedirect'], 'String');
+            }
             if (data.hasOwnProperty('Name')) {
                 obj['Name'] = ApiClient.convertToType(data['Name'], 'String');
             }
@@ -242,6 +245,12 @@ App.prototype['OrgId'] = undefined;
  * @member {String} SmsRestaurantName
  */
 App.prototype['SmsRestaurantName'] = undefined;
+
+/**
+ * Web to App Redirect settings
+ * @member {module:model/App.WebToAppRedirectEnum} WebToAppRedirect
+ */
+App.prototype['WebToAppRedirect'] = undefined;
 
 /**
  * App name.   This is used in various places on the Apple App Store, Google Play Store, mobile apps and websites.
@@ -1618,6 +1627,45 @@ App['AppResourceSetEnum'] = {
      * @const
      */
     "ViewMenuReports": "ViewMenuReports"
+};
+
+
+/**
+ * Allowed values for the <code>WebToAppRedirect</code> property.
+ * @enum {String}
+ * @readonly
+ */
+App['WebToAppRedirectEnum'] = {
+
+    /**
+     * value: "NoRedirect"
+     * @const
+     */
+    "NoRedirect": "NoRedirect",
+
+    /**
+     * value: "RedirectOnce"
+     * @const
+     */
+    "RedirectOnce": "RedirectOnce",
+
+    /**
+     * value: "RedirectAlways"
+     * @const
+     */
+    "RedirectAlways": "RedirectAlways",
+
+    /**
+     * value: "SuggestPwa"
+     * @const
+     */
+    "SuggestPwa": "SuggestPwa",
+
+    /**
+     * value: "ForcePwa"
+     * @const
+     */
+    "ForcePwa": "ForcePwa"
 };
 
 

@@ -162,6 +162,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property WebToAppRedirect (base name: "WebToAppRedirect")', function() {
+      // uncomment below and update the code to test the property WebToAppRedirect
+      //var instance = new Flipdish.App();
+      //expect(instance).to.be();
+    });
+
     it('should have the property Name (base name: "Name")', function() {
       // uncomment below and update the code to test the property Name
       //var instance = new Flipdish.App();

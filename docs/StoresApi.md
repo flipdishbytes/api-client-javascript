@@ -34,6 +34,7 @@ Method | HTTP request | Description
 [**putStoreDeliveryFeeConfig**](StoresApi.md#putStoreDeliveryFeeConfig) | **PUT** /api/v1.0/stores/{storeId}/feeConfig/deliveryZones | 
 [**setBusinessHours**](StoresApi.md#setBusinessHours) | **POST** /api/v1.0/stores/{storeId}/availability/{deliveryType} | 
 [**setPreOrdeEnabled**](StoresApi.md#setPreOrdeEnabled) | **POST** /api/v1.0/stores/{storeId}/preorderconfig/{deliveryType}/enabled | 
+[**setStoreCollectionSettings**](StoresApi.md#setStoreCollectionSettings) | **POST** /api/v1.0/stores/{storeId}/collectionsettings | 
 [**setStoreLeadTimes**](StoresApi.md#setStoreLeadTimes) | **POST** /api/v1.0/stores/{storeId}/leadTimes | 
 [**storesSetPropertyId**](StoresApi.md#storesSetPropertyId) | **POST** /api/v1.0/stores/{storeId}/propertyId/{propertyId} | 
 [**supportedSalesChannelsTypes**](StoresApi.md#supportedSalesChannelsTypes) | **POST** /api/v1.0/properties/{propertyId}/stores/{storeId}/supportedSalesChannels | 
@@ -1574,6 +1575,55 @@ Name | Type | Description  | Notes
 
 - **Content-Type**: Not defined
 - **Accept**: application/json, text/json, application/xml, text/xml
+
+
+## setStoreCollectionSettings
+
+> RestApiResultRestApiDefaultResponse setStoreCollectionSettings(storeId, settings)
+
+
+
+### Example
+
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
+// Configure OAuth2 access token for authorization: oauth2
+let oauth2 = defaultClient.authentications['oauth2'];
+oauth2.accessToken = 'YOUR ACCESS TOKEN';
+
+let apiInstance = new Flipdish.StoresApi();
+let storeId = 56; // Number | 
+let settings = new Flipdish.StoreCollectionSettings(); // StoreCollectionSettings | 
+apiInstance.setStoreCollectionSettings(storeId, settings, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **storeId** | **Number**|  | 
+ **settings** | [**StoreCollectionSettings**](StoreCollectionSettings.md)|  | 
+
+### Return type
+
+[**RestApiResultRestApiDefaultResponse**](RestApiResultRestApiDefaultResponse.md)
+
+### Authorization
+
+[oauth2](../README.md#oauth2)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
+- **Accept**: application/json, text/json, application/xml, text/xml, Data, Message, ErrorCode, StackTrace
 
 
 ## setStoreLeadTimes

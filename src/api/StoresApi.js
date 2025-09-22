@@ -37,6 +37,7 @@ import RestApiResultCoordinates from '../model/RestApiResultCoordinates';
 import RestApiResultOrderLeadTimes from '../model/RestApiResultOrderLeadTimes';
 import RestApiResultPreOrderConfig from '../model/RestApiResultPreOrderConfig';
 import RestApiResultProcessingFeeConfig from '../model/RestApiResultProcessingFeeConfig';
+import RestApiResultRestApiDefaultResponse from '../model/RestApiResultRestApiDefaultResponse';
 import RestApiResultServiceCharge from '../model/RestApiResultServiceCharge';
 import RestApiResultStore from '../model/RestApiResultStore';
 import RestApiResultStoreAddress from '../model/RestApiResultStoreAddress';
@@ -47,6 +48,7 @@ import StoreAddressBase from '../model/StoreAddressBase';
 import StoreAddressForm from '../model/StoreAddressForm';
 import StoreBase from '../model/StoreBase';
 import StoreCloneSettings from '../model/StoreCloneSettings';
+import StoreCollectionSettings from '../model/StoreCollectionSettings';
 import StoreCreateBase from '../model/StoreCreateBase';
 import StoreDeliveryZoneFeeConfigUpdateRequest from '../model/StoreDeliveryZoneFeeConfigUpdateRequest';
 import StoreFeeConfig from '../model/StoreFeeConfig';
@@ -1477,6 +1479,52 @@ export default class StoresApi {
       let returnType = RestApiArrayResultRestApiDefaultResponse;
       return this.apiClient.callApi(
         '/api/v1.0/stores/{storeId}/preorderconfig/{deliveryType}/enabled', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the setStoreCollectionSettings operation.
+     * @callback module:api/StoresApi~setStoreCollectionSettingsCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/RestApiResultRestApiDefaultResponse} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {Number} storeId 
+     * @param {module:model/StoreCollectionSettings} settings 
+     * @param {module:api/StoresApi~setStoreCollectionSettingsCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/RestApiResultRestApiDefaultResponse}
+     */
+    setStoreCollectionSettings(storeId, settings, callback) {
+      let postBody = settings;
+      // verify the required parameter 'storeId' is set
+      if (storeId === undefined || storeId === null) {
+        throw new Error("Missing the required parameter 'storeId' when calling setStoreCollectionSettings");
+      }
+      // verify the required parameter 'settings' is set
+      if (settings === undefined || settings === null) {
+        throw new Error("Missing the required parameter 'settings' when calling setStoreCollectionSettings");
+      }
+
+      let pathParams = {
+        'storeId': storeId
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded'];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'Data', 'Message', 'ErrorCode', 'StackTrace'];
+      let returnType = RestApiResultRestApiDefaultResponse;
+      return this.apiClient.callApi(
+        '/api/v1.0/stores/{storeId}/collectionsettings', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );

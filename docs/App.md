@@ -22,6 +22,7 @@ Name | Type | Description | Notes
 **GoogleMapsApiKeyWeb** | **String** | Key to be passed with Google Maps requests | [optional] 
 **OrgId** | **String** | Org Id | [optional] 
 **SmsRestaurantName** | **String** | SMS Restaurant Name | [optional] 
+**WebToAppRedirect** | **String** | Web to App Redirect settings | [optional] 
 **Name** | **String** | App name.   This is used in various places on the Apple App Store, Google Play Store, mobile apps and websites. | [optional] 
 **HostName** | **String** | HostName on which the web-ordering system is allowed to be hosted or that a Flipdish website is hosted on. | [optional] 
 **MainColor** | **String** | Main color of the web / Android / iOS applications | [optional] 
@@ -477,6 +478,23 @@ Name | Type | Description | Notes
 * `ViewCostReports` (value: `"ViewCostReports"`)
 
 * `ViewMenuReports` (value: `"ViewMenuReports"`)
+
+
+
+
+
+## Enum: WebToAppRedirectEnum
+
+
+* `NoRedirect` (value: `"NoRedirect"`)
+
+* `RedirectOnce` (value: `"RedirectOnce"`)
+
+* `RedirectAlways` (value: `"RedirectAlways"`)
+
+* `SuggestPwa` (value: `"SuggestPwa"`)
+
+* `ForcePwa` (value: `"ForcePwa"`)
 
 
 

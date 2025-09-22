@@ -598,6 +598,7 @@ Class | Method | HTTP request | Description
 *Flipdish.StoresApi* | [**putStoreDeliveryFeeConfig**](docs/StoresApi.md#putStoreDeliveryFeeConfig) | **PUT** /api/v1.0/stores/{storeId}/feeConfig/deliveryZones | 
 *Flipdish.StoresApi* | [**setBusinessHours**](docs/StoresApi.md#setBusinessHours) | **POST** /api/v1.0/stores/{storeId}/availability/{deliveryType} | 
 *Flipdish.StoresApi* | [**setPreOrdeEnabled**](docs/StoresApi.md#setPreOrdeEnabled) | **POST** /api/v1.0/stores/{storeId}/preorderconfig/{deliveryType}/enabled | 
+*Flipdish.StoresApi* | [**setStoreCollectionSettings**](docs/StoresApi.md#setStoreCollectionSettings) | **POST** /api/v1.0/stores/{storeId}/collectionsettings | 
 *Flipdish.StoresApi* | [**setStoreLeadTimes**](docs/StoresApi.md#setStoreLeadTimes) | **POST** /api/v1.0/stores/{storeId}/leadTimes | 
 *Flipdish.StoresApi* | [**storesSetPropertyId**](docs/StoresApi.md#storesSetPropertyId) | **POST** /api/v1.0/stores/{storeId}/propertyId/{propertyId} | 
 *Flipdish.StoresApi* | [**supportedSalesChannelsTypes**](docs/StoresApi.md#supportedSalesChannelsTypes) | **POST** /api/v1.0/properties/{propertyId}/stores/{storeId}/supportedSalesChannels | 
@@ -1268,6 +1269,7 @@ Class | Method | HTTP request | Description
  - [Flipdish.RestApiResultProduct](docs/RestApiResultProduct.md)
  - [Flipdish.RestApiResultPushNotificationResponse](docs/RestApiResultPushNotificationResponse.md)
  - [Flipdish.RestApiResultRedeemInvitationResult](docs/RestApiResultRedeemInvitationResult.md)
+ - [Flipdish.RestApiResultRestApiDefaultResponse](docs/RestApiResultRestApiDefaultResponse.md)
  - [Flipdish.RestApiResultRestApiIntegerResult](docs/RestApiResultRestApiIntegerResult.md)
  - [Flipdish.RestApiResultRestaurantVoucherPayGreenConfiguration](docs/RestApiResultRestaurantVoucherPayGreenConfiguration.md)
  - [Flipdish.RestApiResultRestaurantVoucherPayGreenStoreConfiguration](docs/RestApiResultRestaurantVoucherPayGreenStoreConfiguration.md)
@@ -1335,6 +1337,7 @@ Class | Method | HTTP request | Description
  - [Flipdish.StoreCampaignStartTime](docs/StoreCampaignStartTime.md)
  - [Flipdish.StoreChannelAssignment](docs/StoreChannelAssignment.md)
  - [Flipdish.StoreCloneSettings](docs/StoreCloneSettings.md)
+ - [Flipdish.StoreCollectionSettings](docs/StoreCollectionSettings.md)
  - [Flipdish.StoreConfig](docs/StoreConfig.md)
  - [Flipdish.StoreCreateBase](docs/StoreCreateBase.md)
  - [Flipdish.StoreCreatedEvent](docs/StoreCreatedEvent.md)
