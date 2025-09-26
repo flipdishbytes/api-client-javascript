@@ -1495,10 +1495,13 @@ export default class StoresApi {
     /**
      * @param {Number} storeId 
      * @param {module:model/StoreCollectionSettings} settings 
+     * @param {Object} opts Optional parameters
+     * @param {Boolean} opts.inheritFromProperty 
      * @param {module:api/StoresApi~setStoreCollectionSettingsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/RestApiResultRestApiDefaultResponse}
      */
-    setStoreCollectionSettings(storeId, settings, callback) {
+    setStoreCollectionSettings(storeId, settings, opts, callback) {
+      opts = opts || {};
       let postBody = settings;
       // verify the required parameter 'storeId' is set
       if (storeId === undefined || storeId === null) {
@@ -1513,6 +1516,7 @@ export default class StoresApi {
         'storeId': storeId
       };
       let queryParams = {
+        'inheritFromProperty': opts['inheritFromProperty']
       };
       let headerParams = {
       };

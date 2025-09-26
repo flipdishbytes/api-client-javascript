@@ -1579,7 +1579,7 @@ Name | Type | Description  | Notes
 
 ## setStoreCollectionSettings
 
-> RestApiResultRestApiDefaultResponse setStoreCollectionSettings(storeId, settings)
+> RestApiResultRestApiDefaultResponse setStoreCollectionSettings(storeId, settings, opts)
 
 
 
@@ -1595,7 +1595,10 @@ oauth2.accessToken = 'YOUR ACCESS TOKEN';
 let apiInstance = new Flipdish.StoresApi();
 let storeId = 56; // Number | 
 let settings = new Flipdish.StoreCollectionSettings(); // StoreCollectionSettings | 
-apiInstance.setStoreCollectionSettings(storeId, settings, (error, data, response) => {
+let opts = {
+  'inheritFromProperty': true // Boolean | 
+};
+apiInstance.setStoreCollectionSettings(storeId, settings, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -1611,6 +1614,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **storeId** | **Number**|  | 
  **settings** | [**StoreCollectionSettings**](StoreCollectionSettings.md)|  | 
+ **inheritFromProperty** | **Boolean**|  | [optional] 
 
 ### Return type
 
