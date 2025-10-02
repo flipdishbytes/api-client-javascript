@@ -385,16 +385,10 @@ StoreBase['SalesChannelTypesEnum'] = {
 StoreBase['InheritanceConfigTypesEnum'] = {
 
     /**
-     * value: "CollectionSetting"
+     * value: "CollectionSettings"
      * @const
      */
-    "CollectionSetting": "CollectionSetting",
-
-    /**
-     * value: "DeliverySetting"
-     * @const
-     */
-    "DeliverySetting": "DeliverySetting"
+    "CollectionSettings": "CollectionSettings"
 };
 
 

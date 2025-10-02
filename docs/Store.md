@@ -327,9 +327,7 @@ Name | Type | Description | Notes
 ## Enum: [InheritanceConfigTypesEnum]
 
 
-* `CollectionSetting` (value: `"CollectionSetting"`)
-
-* `DeliverySetting` (value: `"DeliverySetting"`)
+* `CollectionSettings` (value: `"CollectionSettings"`)
 
 
 
