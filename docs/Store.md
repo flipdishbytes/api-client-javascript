@@ -55,6 +55,7 @@ Name | Type | Description | Notes
 **EmailAddress** | **String** | Email address (visible to customers) | [optional] 
 **StaffLanguage** | **String** | Staff Language (used for communication with the staff)  Emails, Printouts etc | [optional] 
 **SalesChannelTypes** | **[String]** | Sales Channel Types | [optional] 
+**InheritanceConfigTypes** | **[String]** | Inheritance Config Types | [optional] 
 
 
 
@@ -318,6 +319,17 @@ Name | Type | Description | Notes
 * `Pos` (value: `"Pos"`)
 
 * `None` (value: `"None"`)
+
+
+
+
+
+## Enum: [InheritanceConfigTypesEnum]
+
+
+* `CollectionSetting` (value: `"CollectionSetting"`)
+
+* `DeliverySetting` (value: `"DeliverySetting"`)
 
 
 

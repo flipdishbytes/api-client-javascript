@@ -360,6 +360,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property InheritanceConfigTypes (base name: "InheritanceConfigTypes")', function() {
+      // uncomment below and update the code to test the property InheritanceConfigTypes
+      //var instance = new Flipdish.Store();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));

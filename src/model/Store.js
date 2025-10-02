@@ -205,6 +205,9 @@ class Store {
             if (data.hasOwnProperty('SalesChannelTypes')) {
                 obj['SalesChannelTypes'] = ApiClient.convertToType(data['SalesChannelTypes'], ['String']);
             }
+            if (data.hasOwnProperty('InheritanceConfigTypes')) {
+                obj['InheritanceConfigTypes'] = ApiClient.convertToType(data['InheritanceConfigTypes'], ['String']);
+            }
         }
         return obj;
     }
@@ -516,6 +519,12 @@ Store.prototype['StaffLanguage'] = undefined;
  * @member {Array.<module:model/Store.SalesChannelTypesEnum>} SalesChannelTypes
  */
 Store.prototype['SalesChannelTypes'] = undefined;
+
+/**
+ * Inheritance Config Types
+ * @member {Array.<module:model/Store.InheritanceConfigTypesEnum>} InheritanceConfigTypes
+ */
+Store.prototype['InheritanceConfigTypes'] = undefined;
 
 
 
@@ -1277,6 +1286,27 @@ Store['SalesChannelTypesEnum'] = {
      * @const
      */
     "None": "None"
+};
+
+
+/**
+ * Allowed values for the <code>InheritanceConfigTypes</code> property.
+ * @enum {String}
+ * @readonly
+ */
+Store['InheritanceConfigTypesEnum'] = {
+
+    /**
+     * value: "CollectionSetting"
+     * @const
+     */
+    "CollectionSetting": "CollectionSetting",
+
+    /**
+     * value: "DeliverySetting"
+     * @const
+     */
+    "DeliverySetting": "DeliverySetting"
 };
 
 
