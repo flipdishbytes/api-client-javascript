@@ -270,6 +270,7 @@ Class | Method | HTTP request | Description
 *Flipdish.CrossSellApi* | [**getCrossSellMenuItems**](docs/CrossSellApi.md#getCrossSellMenuItems) | **GET** /api/v1.0/{appId}/crossSell/menuItems | 
 *Flipdish.CustomersApi* | [**createCustomer**](docs/CustomersApi.md#createCustomer) | **POST** /api/v1.0/{appId}/customers | 
 *Flipdish.CustomersApi* | [**getCustomerById**](docs/CustomersApi.md#getCustomerById) | **GET** /api/v1.0/{appId}/customers/{customerId} | 
+*Flipdish.CustomersApi* | [**getCustomers**](docs/CustomersApi.md#getCustomers) | **GET** /api/v1.0/{appId}/customers | 
 *Flipdish.CustomersApi* | [**updateCustomerById**](docs/CustomersApi.md#updateCustomerById) | **POST** /api/v1.0/{appId}/customers/{customerId} | 
 *Flipdish.DeliveryZoneApi* | [**addDeliveryZone**](docs/DeliveryZoneApi.md#addDeliveryZone) | **POST** /api/v1.0/stores/{storeId}/deliveryzones | 
 *Flipdish.DeliveryZoneApi* | [**getDeliveryZones**](docs/DeliveryZoneApi.md#getDeliveryZones) | **GET** /api/v1.0/stores/{storeId}/deliveryzones | 
@@ -639,6 +640,7 @@ Class | Method | HTTP request | Description
 *Flipdish.TipsApi* | [**tipConfigUpsert**](docs/TipsApi.md#tipConfigUpsert) | **POST** /api/v1.0/stores/{storeId}/tipconfig | 
 *Flipdish.UsersApi* | [**getPreviousOrderCountForStore**](docs/UsersApi.md#getPreviousOrderCountForStore) | **GET** /api/v1.0/users/{userId}/previousordercount/{storeId} | 
 *Flipdish.UsersApi* | [**getRoles**](docs/UsersApi.md#getRoles) | **GET** /api/v1.0/users/roles | 
+*Flipdish.UsersApi* | [**searchUsers**](docs/UsersApi.md#searchUsers) | **GET** /api/v1.0/users/search | 
 *Flipdish.VouchersApi* | [**createVoucher**](docs/VouchersApi.md#createVoucher) | **POST** /api/v1.0/vouchers/{appId} | 
 *Flipdish.VouchersApi* | [**getVoucherByCode**](docs/VouchersApi.md#getVoucherByCode) | **GET** /api/v1.0/{appId}/vouchers/code/{code} | 
 *Flipdish.VouchersApi* | [**getVoucherById**](docs/VouchersApi.md#getVoucherById) | **GET** /api/v1.0/vouchers/{voucherId} | 
@@ -792,6 +794,7 @@ Class | Method | HTTP request | Description
  - [Flipdish.CustomerSummary](docs/CustomerSummary.md)
  - [Flipdish.CustomerUpdateModel](docs/CustomerUpdateModel.md)
  - [Flipdish.CustomerUpdatedEvent](docs/CustomerUpdatedEvent.md)
+ - [Flipdish.Customers](docs/Customers.md)
  - [Flipdish.DashboardEmbed](docs/DashboardEmbed.md)
  - [Flipdish.DeliveryLocation](docs/DeliveryLocation.md)
  - [Flipdish.DeliveryZone](docs/DeliveryZone.md)
@@ -1175,6 +1178,7 @@ Class | Method | HTTP request | Description
  - [Flipdish.RestApiPaginationResultStoreGroupExtended](docs/RestApiPaginationResultStoreGroupExtended.md)
  - [Flipdish.RestApiPaginationResultStoreHeader](docs/RestApiPaginationResultStoreHeader.md)
  - [Flipdish.RestApiPaginationResultStoreValidationConfig](docs/RestApiPaginationResultStoreValidationConfig.md)
+ - [Flipdish.RestApiPaginationResultUser](docs/RestApiPaginationResultUser.md)
  - [Flipdish.RestApiPaginationResultVoucherSummary](docs/RestApiPaginationResultVoucherSummary.md)
  - [Flipdish.RestApiPaginationResultWebhookLog](docs/RestApiPaginationResultWebhookLog.md)
  - [Flipdish.RestApiPaginationResultWebhookSubscription](docs/RestApiPaginationResultWebhookSubscription.md)
@@ -1206,6 +1210,7 @@ Class | Method | HTTP request | Description
  - [Flipdish.RestApiResultCreatedMenuSectionItems](docs/RestApiResultCreatedMenuSectionItems.md)
  - [Flipdish.RestApiResultCrossSellMenuItems](docs/RestApiResultCrossSellMenuItems.md)
  - [Flipdish.RestApiResultCustomer](docs/RestApiResultCustomer.md)
+ - [Flipdish.RestApiResultCustomers](docs/RestApiResultCustomers.md)
  - [Flipdish.RestApiResultDeliveryZone](docs/RestApiResultDeliveryZone.md)
  - [Flipdish.RestApiResultDnsRecordInformation](docs/RestApiResultDnsRecordInformation.md)
  - [Flipdish.RestApiResultExecuteConfigurationActionResult](docs/RestApiResultExecuteConfigurationActionResult.md)
@@ -1432,6 +1437,7 @@ Class | Method | HTTP request | Description
  - [Flipdish.UpdateTipConfiguration](docs/UpdateTipConfiguration.md)
  - [Flipdish.UpdateVoucher](docs/UpdateVoucher.md)
  - [Flipdish.UpdateVoucherUsage](docs/UpdateVoucherUsage.md)
+ - [Flipdish.User](docs/User.md)
  - [Flipdish.UserAnsweredSignupQuestionsEvent](docs/UserAnsweredSignupQuestionsEvent.md)
  - [Flipdish.UserCreatedEvent](docs/UserCreatedEvent.md)
  - [Flipdish.UserDeletedEvent](docs/UserDeletedEvent.md)
@@ -1439,6 +1445,7 @@ Class | Method | HTTP request | Description
  - [Flipdish.UserLoginEvent](docs/UserLoginEvent.md)
  - [Flipdish.UserPasswordCreatedEvent](docs/UserPasswordCreatedEvent.md)
  - [Flipdish.UserUpdatedEvent](docs/UserUpdatedEvent.md)
+ - [Flipdish.UserWhiteLabelConfig](docs/UserWhiteLabelConfig.md)
  - [Flipdish.ValidValue](docs/ValidValue.md)
  - [Flipdish.ValidationErrorResult](docs/ValidationErrorResult.md)
  - [Flipdish.ValidityPeriod](docs/ValidityPeriod.md)

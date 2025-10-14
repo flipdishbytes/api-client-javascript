@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new Flipdish.UsersApi();
+    instance = new Flipdish.Customers();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,37 +47,19 @@
       object[property] = value;
   }
 
-  describe('UsersApi', function() {
-    describe('getPreviousOrderCountForStore', function() {
-      it('should call getPreviousOrderCountForStore successfully', function(done) {
-        //uncomment below and update the code to test getPreviousOrderCountForStore
-        //instance.getPreviousOrderCountForStore(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
+  describe('Customers', function() {
+    it('should create an instance of Customers', function() {
+      // uncomment below and update the code to test Customers
+      //var instane = new Flipdish.Customers();
+      //expect(instance).to.be.a(Flipdish.Customers);
     });
-    describe('getRoles', function() {
-      it('should call getRoles successfully', function(done) {
-        //uncomment below and update the code to test getRoles
-        //instance.getRoles(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
+
+    it('should have the property Items (base name: "Items")', function() {
+      // uncomment below and update the code to test the property Items
+      //var instance = new Flipdish.Customers();
+      //expect(instance).to.be();
     });
-    describe('searchUsers', function() {
-      it('should call searchUsers successfully', function(done) {
-        //uncomment below and update the code to test searchUsers
-        //instance.searchUsers(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
+
   });
 
 }));

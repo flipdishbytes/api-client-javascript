@@ -6,6 +6,7 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**createCustomer**](CustomersApi.md#createCustomer) | **POST** /api/v1.0/{appId}/customers | 
 [**getCustomerById**](CustomersApi.md#getCustomerById) | **GET** /api/v1.0/{appId}/customers/{customerId} | 
+[**getCustomers**](CustomersApi.md#getCustomers) | **GET** /api/v1.0/{appId}/customers | 
 [**updateCustomerById**](CustomersApi.md#updateCustomerById) | **POST** /api/v1.0/{appId}/customers/{customerId} | 
 
 
@@ -97,6 +98,55 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**RestApiResultCustomer**](RestApiResultCustomer.md)
+
+### Authorization
+
+[oauth2](../README.md#oauth2)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, Data, Message, ErrorCode, StackTrace
+
+
+## getCustomers
+
+> RestApiResultCustomers getCustomers(appId, phoneNumber)
+
+
+
+### Example
+
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
+// Configure OAuth2 access token for authorization: oauth2
+let oauth2 = defaultClient.authentications['oauth2'];
+oauth2.accessToken = 'YOUR ACCESS TOKEN';
+
+let apiInstance = new Flipdish.CustomersApi();
+let appId = "appId_example"; // String | 
+let phoneNumber = "phoneNumber_example"; // String | 
+apiInstance.getCustomers(appId, phoneNumber, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **appId** | **String**|  | 
+ **phoneNumber** | **String**|  | 
+
+### Return type
+
+[**RestApiResultCustomers**](RestApiResultCustomers.md)
 
 ### Authorization
 

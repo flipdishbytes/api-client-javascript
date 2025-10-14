@@ -15,6 +15,7 @@
 import ApiClient from "../ApiClient";
 import RestApiErrorResult from '../model/RestApiErrorResult';
 import RestApiForbiddenResult from '../model/RestApiForbiddenResult';
+import RestApiPaginationResultUser from '../model/RestApiPaginationResultUser';
 import RestApiStringArrayResult from '../model/RestApiStringArrayResult';
 import RestApiStringResult from '../model/RestApiStringResult';
 import RestApiUnauthorizedResult from '../model/RestApiUnauthorizedResult';
@@ -115,6 +116,59 @@ export default class UsersApi {
       let returnType = RestApiStringArrayResult;
       return this.apiClient.callApi(
         '/api/v1.0/users/roles', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the searchUsers operation.
+     * @callback module:api/UsersApi~searchUsersCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/RestApiPaginationResultUser} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {String} searchQuery 
+     * @param {Object} opts Optional parameters
+     * @param {Boolean} opts.hasUserLoggedIn 
+     * @param {module:model/String} opts.userDiscriminator 
+     * @param {module:model/String} opts.searchIn 
+     * @param {Number} opts.pageIndex 
+     * @param {Number} opts.pageSize 
+     * @param {module:api/UsersApi~searchUsersCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/RestApiPaginationResultUser}
+     */
+    searchUsers(searchQuery, opts, callback) {
+      opts = opts || {};
+      let postBody = null;
+      // verify the required parameter 'searchQuery' is set
+      if (searchQuery === undefined || searchQuery === null) {
+        throw new Error("Missing the required parameter 'searchQuery' when calling searchUsers");
+      }
+
+      let pathParams = {
+      };
+      let queryParams = {
+        'searchQuery': searchQuery,
+        'hasUserLoggedIn': opts['hasUserLoggedIn'],
+        'userDiscriminator': opts['userDiscriminator'],
+        'searchIn': opts['searchIn'],
+        'pageIndex': opts['pageIndex'],
+        'pageSize': opts['pageSize']
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = [];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'Data', 'Message'];
+      let returnType = RestApiPaginationResultUser;
+      return this.apiClient.callApi(
+        '/api/v1.0/users/search', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );

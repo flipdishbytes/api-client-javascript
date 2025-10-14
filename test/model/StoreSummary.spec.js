@@ -96,6 +96,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property StoreIanaTimezone (base name: "StoreIanaTimezone")', function() {
+      // uncomment below and update the code to test the property StoreIanaTimezone
+      //var instance = new Flipdish.StoreSummary();
+      //expect(instance).to.be();
+    });
+
     it('should have the property StoreGroupId (base name: "StoreGroupId")', function() {
       // uncomment below and update the code to test the property StoreGroupId
       //var instance = new Flipdish.StoreSummary();

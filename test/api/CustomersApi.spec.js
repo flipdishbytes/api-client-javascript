@@ -68,6 +68,16 @@
         done();
       });
     });
+    describe('getCustomers', function() {
+      it('should call getCustomers successfully', function(done) {
+        //uncomment below and update the code to test getCustomers
+        //instance.getCustomers(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('updateCustomerById', function() {
       it('should call updateCustomerById successfully', function(done) {
         //uncomment below and update the code to test updateCustomerById

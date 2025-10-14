@@ -18,6 +18,7 @@ import CustomerUpdateModel from '../model/CustomerUpdateModel';
 import RestApiErrorResult from '../model/RestApiErrorResult';
 import RestApiForbiddenResult from '../model/RestApiForbiddenResult';
 import RestApiResultCustomer from '../model/RestApiResultCustomer';
+import RestApiResultCustomers from '../model/RestApiResultCustomers';
 import RestApiUnauthorizedResult from '../model/RestApiUnauthorizedResult';
 
 /**
@@ -127,6 +128,53 @@ export default class CustomersApi {
       let returnType = RestApiResultCustomer;
       return this.apiClient.callApi(
         '/api/v1.0/{appId}/customers/{customerId}', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the getCustomers operation.
+     * @callback module:api/CustomersApi~getCustomersCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/RestApiResultCustomers} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {String} appId 
+     * @param {String} phoneNumber 
+     * @param {module:api/CustomersApi~getCustomersCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/RestApiResultCustomers}
+     */
+    getCustomers(appId, phoneNumber, callback) {
+      let postBody = null;
+      // verify the required parameter 'appId' is set
+      if (appId === undefined || appId === null) {
+        throw new Error("Missing the required parameter 'appId' when calling getCustomers");
+      }
+      // verify the required parameter 'phoneNumber' is set
+      if (phoneNumber === undefined || phoneNumber === null) {
+        throw new Error("Missing the required parameter 'phoneNumber' when calling getCustomers");
+      }
+
+      let pathParams = {
+        'appId': appId
+      };
+      let queryParams = {
+        'phoneNumber': phoneNumber
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = [];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'Data', 'Message', 'ErrorCode', 'StackTrace'];
+      let returnType = RestApiResultCustomers;
+      return this.apiClient.callApi(
+        '/api/v1.0/{appId}/customers', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );

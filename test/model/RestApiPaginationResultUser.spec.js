@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new Flipdish.UsersApi();
+    instance = new Flipdish.RestApiPaginationResultUser();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,37 +47,37 @@
       object[property] = value;
   }
 
-  describe('UsersApi', function() {
-    describe('getPreviousOrderCountForStore', function() {
-      it('should call getPreviousOrderCountForStore successfully', function(done) {
-        //uncomment below and update the code to test getPreviousOrderCountForStore
-        //instance.getPreviousOrderCountForStore(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
+  describe('RestApiPaginationResultUser', function() {
+    it('should create an instance of RestApiPaginationResultUser', function() {
+      // uncomment below and update the code to test RestApiPaginationResultUser
+      //var instane = new Flipdish.RestApiPaginationResultUser();
+      //expect(instance).to.be.a(Flipdish.RestApiPaginationResultUser);
     });
-    describe('getRoles', function() {
-      it('should call getRoles successfully', function(done) {
-        //uncomment below and update the code to test getRoles
-        //instance.getRoles(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
+
+    it('should have the property Page (base name: "Page")', function() {
+      // uncomment below and update the code to test the property Page
+      //var instance = new Flipdish.RestApiPaginationResultUser();
+      //expect(instance).to.be();
     });
-    describe('searchUsers', function() {
-      it('should call searchUsers successfully', function(done) {
-        //uncomment below and update the code to test searchUsers
-        //instance.searchUsers(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
+
+    it('should have the property Limit (base name: "Limit")', function() {
+      // uncomment below and update the code to test the property Limit
+      //var instance = new Flipdish.RestApiPaginationResultUser();
+      //expect(instance).to.be();
     });
+
+    it('should have the property TotalRecordCount (base name: "TotalRecordCount")', function() {
+      // uncomment below and update the code to test the property TotalRecordCount
+      //var instance = new Flipdish.RestApiPaginationResultUser();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property Data (base name: "Data")', function() {
+      // uncomment below and update the code to test the property Data
+      //var instance = new Flipdish.RestApiPaginationResultUser();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));

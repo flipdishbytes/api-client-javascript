@@ -70,6 +70,9 @@ class StoreSummary {
             if (data.hasOwnProperty('StoreTimezone')) {
                 obj['StoreTimezone'] = ApiClient.convertToType(data['StoreTimezone'], 'String');
             }
+            if (data.hasOwnProperty('StoreIanaTimezone')) {
+                obj['StoreIanaTimezone'] = ApiClient.convertToType(data['StoreIanaTimezone'], 'String');
+            }
             if (data.hasOwnProperty('StoreGroupId')) {
                 obj['StoreGroupId'] = ApiClient.convertToType(data['StoreGroupId'], 'Number');
             }
@@ -126,6 +129,12 @@ StoreSummary.prototype['Coordinates'] = undefined;
  * @member {String} StoreTimezone
  */
 StoreSummary.prototype['StoreTimezone'] = undefined;
+
+/**
+ * IANA Timezone of store
+ * @member {String} StoreIanaTimezone
+ */
+StoreSummary.prototype['StoreIanaTimezone'] = undefined;
 
 /**
  * Store group id of store

@@ -135,6 +135,7 @@ import CustomerMessages from './model/CustomerMessages';
 import CustomerSummary from './model/CustomerSummary';
 import CustomerUpdateModel from './model/CustomerUpdateModel';
 import CustomerUpdatedEvent from './model/CustomerUpdatedEvent';
+import Customers from './model/Customers';
 import DashboardEmbed from './model/DashboardEmbed';
 import DeliveryLocation from './model/DeliveryLocation';
 import DeliveryZone from './model/DeliveryZone';
@@ -518,6 +519,7 @@ import RestApiPaginationResultStoreGroup from './model/RestApiPaginationResultSt
 import RestApiPaginationResultStoreGroupExtended from './model/RestApiPaginationResultStoreGroupExtended';
 import RestApiPaginationResultStoreHeader from './model/RestApiPaginationResultStoreHeader';
 import RestApiPaginationResultStoreValidationConfig from './model/RestApiPaginationResultStoreValidationConfig';
+import RestApiPaginationResultUser from './model/RestApiPaginationResultUser';
 import RestApiPaginationResultVoucherSummary from './model/RestApiPaginationResultVoucherSummary';
 import RestApiPaginationResultWebhookLog from './model/RestApiPaginationResultWebhookLog';
 import RestApiPaginationResultWebhookSubscription from './model/RestApiPaginationResultWebhookSubscription';
@@ -549,6 +551,7 @@ import RestApiResultCountryFormResponse from './model/RestApiResultCountryFormRe
 import RestApiResultCreatedMenuSectionItems from './model/RestApiResultCreatedMenuSectionItems';
 import RestApiResultCrossSellMenuItems from './model/RestApiResultCrossSellMenuItems';
 import RestApiResultCustomer from './model/RestApiResultCustomer';
+import RestApiResultCustomers from './model/RestApiResultCustomers';
 import RestApiResultDeliveryZone from './model/RestApiResultDeliveryZone';
 import RestApiResultDnsRecordInformation from './model/RestApiResultDnsRecordInformation';
 import RestApiResultExecuteConfigurationActionResult from './model/RestApiResultExecuteConfigurationActionResult';
@@ -775,6 +778,7 @@ import UpdateStorePayGreenConfigurationRequest from './model/UpdateStorePayGreen
 import UpdateTipConfiguration from './model/UpdateTipConfiguration';
 import UpdateVoucher from './model/UpdateVoucher';
 import UpdateVoucherUsage from './model/UpdateVoucherUsage';
+import User from './model/User';
 import UserAnsweredSignupQuestionsEvent from './model/UserAnsweredSignupQuestionsEvent';
 import UserCreatedEvent from './model/UserCreatedEvent';
 import UserDeletedEvent from './model/UserDeletedEvent';
@@ -782,6 +786,7 @@ import UserEventInfo from './model/UserEventInfo';
 import UserLoginEvent from './model/UserLoginEvent';
 import UserPasswordCreatedEvent from './model/UserPasswordCreatedEvent';
 import UserUpdatedEvent from './model/UserUpdatedEvent';
+import UserWhiteLabelConfig from './model/UserWhiteLabelConfig';
 import ValidValue from './model/ValidValue';
 import ValidationErrorResult from './model/ValidationErrorResult';
 import ValidityPeriod from './model/ValidityPeriod';
@@ -1661,6 +1666,12 @@ export {
      * @property {module:model/CustomerUpdatedEvent}
      */
     CustomerUpdatedEvent,
+
+    /**
+     * The Customers model constructor.
+     * @property {module:model/Customers}
+     */
+    Customers,
 
     /**
      * The DashboardEmbed model constructor.
@@ -3961,6 +3972,12 @@ export {
     RestApiPaginationResultStoreValidationConfig,
 
     /**
+     * The RestApiPaginationResultUser model constructor.
+     * @property {module:model/RestApiPaginationResultUser}
+     */
+    RestApiPaginationResultUser,
+
+    /**
      * The RestApiPaginationResultVoucherSummary model constructor.
      * @property {module:model/RestApiPaginationResultVoucherSummary}
      */
@@ -4145,6 +4162,12 @@ export {
      * @property {module:model/RestApiResultCustomer}
      */
     RestApiResultCustomer,
+
+    /**
+     * The RestApiResultCustomers model constructor.
+     * @property {module:model/RestApiResultCustomers}
+     */
+    RestApiResultCustomers,
 
     /**
      * The RestApiResultDeliveryZone model constructor.
@@ -5503,6 +5526,12 @@ export {
     UpdateVoucherUsage,
 
     /**
+     * The User model constructor.
+     * @property {module:model/User}
+     */
+    User,
+
+    /**
      * The UserAnsweredSignupQuestionsEvent model constructor.
      * @property {module:model/UserAnsweredSignupQuestionsEvent}
      */
@@ -5543,6 +5572,12 @@ export {
      * @property {module:model/UserUpdatedEvent}
      */
     UserUpdatedEvent,
+
+    /**
+     * The UserWhiteLabelConfig model constructor.
+     * @property {module:model/UserWhiteLabelConfig}
+     */
+    UserWhiteLabelConfig,
 
     /**
      * The ValidValue model constructor.
