@@ -13,10 +13,14 @@
 
 
 import ApiClient from "../ApiClient";
+import RestApiArrayResultUserFlipdishAccount from '../model/RestApiArrayResultUserFlipdishAccount';
+import RestApiArrayResultUserNote from '../model/RestApiArrayResultUserNote';
+import RestApiArrayResultUserStoreInfo from '../model/RestApiArrayResultUserStoreInfo';
 import RestApiErrorResult from '../model/RestApiErrorResult';
 import RestApiForbiddenResult from '../model/RestApiForbiddenResult';
 import RestApiPaginationResultUserSearch from '../model/RestApiPaginationResultUserSearch';
 import RestApiResultUserInfo from '../model/RestApiResultUserInfo';
+import RestApiResultUserRole from '../model/RestApiResultUserRole';
 import RestApiStringArrayResult from '../model/RestApiStringArrayResult';
 import RestApiStringResult from '../model/RestApiStringResult';
 import RestApiUnauthorizedResult from '../model/RestApiUnauthorizedResult';
@@ -88,6 +92,88 @@ export default class UsersApi {
     }
 
     /**
+     * Callback function to receive the result of the getRestaurantUserAccounts operation.
+     * @callback module:api/UsersApi~getRestaurantUserAccountsCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/RestApiArrayResultUserFlipdishAccount} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {Number} userId 
+     * @param {module:api/UsersApi~getRestaurantUserAccountsCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/RestApiArrayResultUserFlipdishAccount}
+     */
+    getRestaurantUserAccounts(userId, callback) {
+      let postBody = null;
+      // verify the required parameter 'userId' is set
+      if (userId === undefined || userId === null) {
+        throw new Error("Missing the required parameter 'userId' when calling getRestaurantUserAccounts");
+      }
+
+      let pathParams = {
+        'userId': userId
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = [];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'Data', 'Message'];
+      let returnType = RestApiArrayResultUserFlipdishAccount;
+      return this.apiClient.callApi(
+        '/api/v1.0/users/{userId}/RestaurantUserAccounts', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the getRestaurantUserStores operation.
+     * @callback module:api/UsersApi~getRestaurantUserStoresCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/RestApiArrayResultUserStoreInfo} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {Number} userId 
+     * @param {module:api/UsersApi~getRestaurantUserStoresCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/RestApiArrayResultUserStoreInfo}
+     */
+    getRestaurantUserStores(userId, callback) {
+      let postBody = null;
+      // verify the required parameter 'userId' is set
+      if (userId === undefined || userId === null) {
+        throw new Error("Missing the required parameter 'userId' when calling getRestaurantUserStores");
+      }
+
+      let pathParams = {
+        'userId': userId
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = [];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'Data', 'Message'];
+      let returnType = RestApiArrayResultUserStoreInfo;
+      return this.apiClient.callApi(
+        '/api/v1.0/users/{userId}/RestaurantUserStores', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
      * Callback function to receive the result of the getRoles operation.
      * @callback module:api/UsersApi~getRolesCallback
      * @param {String} error Error message, if any.
@@ -117,6 +203,47 @@ export default class UsersApi {
       let returnType = RestApiStringArrayResult;
       return this.apiClient.callApi(
         '/api/v1.0/users/roles', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the getRolesAndUnassignedRoles operation.
+     * @callback module:api/UsersApi~getRolesAndUnassignedRolesCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/RestApiResultUserRole} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {Number} userId 
+     * @param {module:api/UsersApi~getRolesAndUnassignedRolesCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/RestApiResultUserRole}
+     */
+    getRolesAndUnassignedRoles(userId, callback) {
+      let postBody = null;
+      // verify the required parameter 'userId' is set
+      if (userId === undefined || userId === null) {
+        throw new Error("Missing the required parameter 'userId' when calling getRolesAndUnassignedRoles");
+      }
+
+      let pathParams = {
+        'userId': userId
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = [];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'Data', 'Message'];
+      let returnType = RestApiResultUserRole;
+      return this.apiClient.callApi(
+        '/api/v1.0/users/{userId}/roles', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );
@@ -158,6 +285,47 @@ export default class UsersApi {
       let returnType = RestApiResultUserInfo;
       return this.apiClient.callApi(
         '/api/v1.0/users/{userId}', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the getUserNotes operation.
+     * @callback module:api/UsersApi~getUserNotesCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/RestApiArrayResultUserNote} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {Number} userId 
+     * @param {module:api/UsersApi~getUserNotesCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/RestApiArrayResultUserNote}
+     */
+    getUserNotes(userId, callback) {
+      let postBody = null;
+      // verify the required parameter 'userId' is set
+      if (userId === undefined || userId === null) {
+        throw new Error("Missing the required parameter 'userId' when calling getUserNotes");
+      }
+
+      let pathParams = {
+        'userId': userId
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = [];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'Data', 'Message'];
+      let returnType = RestApiArrayResultUserNote;
+      return this.apiClient.callApi(
+        '/api/v1.0/users/{userId}/UserNotes', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );

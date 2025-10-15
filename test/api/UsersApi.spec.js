@@ -58,6 +58,26 @@
         done();
       });
     });
+    describe('getRestaurantUserAccounts', function() {
+      it('should call getRestaurantUserAccounts successfully', function(done) {
+        //uncomment below and update the code to test getRestaurantUserAccounts
+        //instance.getRestaurantUserAccounts(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('getRestaurantUserStores', function() {
+      it('should call getRestaurantUserStores successfully', function(done) {
+        //uncomment below and update the code to test getRestaurantUserStores
+        //instance.getRestaurantUserStores(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('getRoles', function() {
       it('should call getRoles successfully', function(done) {
         //uncomment below and update the code to test getRoles
@@ -68,10 +88,30 @@
         done();
       });
     });
+    describe('getRolesAndUnassignedRoles', function() {
+      it('should call getRolesAndUnassignedRoles successfully', function(done) {
+        //uncomment below and update the code to test getRolesAndUnassignedRoles
+        //instance.getRolesAndUnassignedRoles(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('getUserById', function() {
       it('should call getUserById successfully', function(done) {
         //uncomment below and update the code to test getUserById
         //instance.getUserById(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('getUserNotes', function() {
+      it('should call getUserNotes successfully', function(done) {
+        //uncomment below and update the code to test getUserNotes
+        //instance.getUserNotes(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

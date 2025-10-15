@@ -639,8 +639,12 @@ Class | Method | HTTP request | Description
 *Flipdish.TipsApi* | [**tipConfigGet**](docs/TipsApi.md#tipConfigGet) | **GET** /api/v1.0/stores/{storeId}/tipconfig | 
 *Flipdish.TipsApi* | [**tipConfigUpsert**](docs/TipsApi.md#tipConfigUpsert) | **POST** /api/v1.0/stores/{storeId}/tipconfig | 
 *Flipdish.UsersApi* | [**getPreviousOrderCountForStore**](docs/UsersApi.md#getPreviousOrderCountForStore) | **GET** /api/v1.0/users/{userId}/previousordercount/{storeId} | 
+*Flipdish.UsersApi* | [**getRestaurantUserAccounts**](docs/UsersApi.md#getRestaurantUserAccounts) | **GET** /api/v1.0/users/{userId}/RestaurantUserAccounts | 
+*Flipdish.UsersApi* | [**getRestaurantUserStores**](docs/UsersApi.md#getRestaurantUserStores) | **GET** /api/v1.0/users/{userId}/RestaurantUserStores | 
 *Flipdish.UsersApi* | [**getRoles**](docs/UsersApi.md#getRoles) | **GET** /api/v1.0/users/roles | 
+*Flipdish.UsersApi* | [**getRolesAndUnassignedRoles**](docs/UsersApi.md#getRolesAndUnassignedRoles) | **GET** /api/v1.0/users/{userId}/roles | 
 *Flipdish.UsersApi* | [**getUserById**](docs/UsersApi.md#getUserById) | **GET** /api/v1.0/users/{userId} | 
+*Flipdish.UsersApi* | [**getUserNotes**](docs/UsersApi.md#getUserNotes) | **GET** /api/v1.0/users/{userId}/UserNotes | 
 *Flipdish.UsersApi* | [**searchUsers**](docs/UsersApi.md#searchUsers) | **GET** /api/v1.0/users/search | 
 *Flipdish.VouchersApi* | [**createVoucher**](docs/VouchersApi.md#createVoucher) | **POST** /api/v1.0/vouchers/{appId} | 
 *Flipdish.VouchersApi* | [**getVoucherByCode**](docs/VouchersApi.md#getVoucherByCode) | **GET** /api/v1.0/{appId}/vouchers/code/{code} | 
@@ -1146,6 +1150,9 @@ Class | Method | HTTP request | Description
  - [Flipdish.RestApiArrayResultSubscriptionSummary](docs/RestApiArrayResultSubscriptionSummary.md)
  - [Flipdish.RestApiArrayResultSupportedCountry](docs/RestApiArrayResultSupportedCountry.md)
  - [Flipdish.RestApiArrayResultTeammate](docs/RestApiArrayResultTeammate.md)
+ - [Flipdish.RestApiArrayResultUserFlipdishAccount](docs/RestApiArrayResultUserFlipdishAccount.md)
+ - [Flipdish.RestApiArrayResultUserNote](docs/RestApiArrayResultUserNote.md)
+ - [Flipdish.RestApiArrayResultUserStoreInfo](docs/RestApiArrayResultUserStoreInfo.md)
  - [Flipdish.RestApiArrayResultVoucherDataPoint](docs/RestApiArrayResultVoucherDataPoint.md)
  - [Flipdish.RestApiDefaultResponse](docs/RestApiDefaultResponse.md)
  - [Flipdish.RestApiErrorResult](docs/RestApiErrorResult.md)
@@ -1301,6 +1308,7 @@ Class | Method | HTTP request | Description
  - [Flipdish.RestApiResultTipConfiguration](docs/RestApiResultTipConfiguration.md)
  - [Flipdish.RestApiResultUpdateMobileAppsSubmissionStatus](docs/RestApiResultUpdateMobileAppsSubmissionStatus.md)
  - [Flipdish.RestApiResultUserInfo](docs/RestApiResultUserInfo.md)
+ - [Flipdish.RestApiResultUserRole](docs/RestApiResultUserRole.md)
  - [Flipdish.RestApiResultVoucher](docs/RestApiResultVoucher.md)
  - [Flipdish.RestApiResultVoucherWithStats](docs/RestApiResultVoucherWithStats.md)
  - [Flipdish.RestApiResultWebsiteImage](docs/RestApiResultWebsiteImage.md)
@@ -1445,11 +1453,15 @@ Class | Method | HTTP request | Description
  - [Flipdish.UserCreatedEvent](docs/UserCreatedEvent.md)
  - [Flipdish.UserDeletedEvent](docs/UserDeletedEvent.md)
  - [Flipdish.UserEventInfo](docs/UserEventInfo.md)
+ - [Flipdish.UserFlipdishAccount](docs/UserFlipdishAccount.md)
  - [Flipdish.UserInfo](docs/UserInfo.md)
  - [Flipdish.UserLoginEvent](docs/UserLoginEvent.md)
  - [Flipdish.UserMonthlyCommission](docs/UserMonthlyCommission.md)
+ - [Flipdish.UserNote](docs/UserNote.md)
  - [Flipdish.UserPasswordCreatedEvent](docs/UserPasswordCreatedEvent.md)
+ - [Flipdish.UserRole](docs/UserRole.md)
  - [Flipdish.UserSearch](docs/UserSearch.md)
+ - [Flipdish.UserStoreInfo](docs/UserStoreInfo.md)
  - [Flipdish.UserUpdatedEvent](docs/UserUpdatedEvent.md)
  - [Flipdish.UserWhiteLabelConfig](docs/UserWhiteLabelConfig.md)
  - [Flipdish.UserWhiteLabelInfo](docs/UserWhiteLabelInfo.md)

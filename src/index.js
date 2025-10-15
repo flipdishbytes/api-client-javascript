@@ -486,6 +486,9 @@ import RestApiArrayResultStripeCustomConnectedAccount from './model/RestApiArray
 import RestApiArrayResultSubscriptionSummary from './model/RestApiArrayResultSubscriptionSummary';
 import RestApiArrayResultSupportedCountry from './model/RestApiArrayResultSupportedCountry';
 import RestApiArrayResultTeammate from './model/RestApiArrayResultTeammate';
+import RestApiArrayResultUserFlipdishAccount from './model/RestApiArrayResultUserFlipdishAccount';
+import RestApiArrayResultUserNote from './model/RestApiArrayResultUserNote';
+import RestApiArrayResultUserStoreInfo from './model/RestApiArrayResultUserStoreInfo';
 import RestApiArrayResultVoucherDataPoint from './model/RestApiArrayResultVoucherDataPoint';
 import RestApiDefaultResponse from './model/RestApiDefaultResponse';
 import RestApiErrorResult from './model/RestApiErrorResult';
@@ -641,6 +644,7 @@ import RestApiResultTelemetrySeriesResult from './model/RestApiResultTelemetrySe
 import RestApiResultTipConfiguration from './model/RestApiResultTipConfiguration';
 import RestApiResultUpdateMobileAppsSubmissionStatus from './model/RestApiResultUpdateMobileAppsSubmissionStatus';
 import RestApiResultUserInfo from './model/RestApiResultUserInfo';
+import RestApiResultUserRole from './model/RestApiResultUserRole';
 import RestApiResultVoucher from './model/RestApiResultVoucher';
 import RestApiResultVoucherWithStats from './model/RestApiResultVoucherWithStats';
 import RestApiResultWebsiteImage from './model/RestApiResultWebsiteImage';
@@ -785,11 +789,15 @@ import UserAnsweredSignupQuestionsEvent from './model/UserAnsweredSignupQuestion
 import UserCreatedEvent from './model/UserCreatedEvent';
 import UserDeletedEvent from './model/UserDeletedEvent';
 import UserEventInfo from './model/UserEventInfo';
+import UserFlipdishAccount from './model/UserFlipdishAccount';
 import UserInfo from './model/UserInfo';
 import UserLoginEvent from './model/UserLoginEvent';
 import UserMonthlyCommission from './model/UserMonthlyCommission';
+import UserNote from './model/UserNote';
 import UserPasswordCreatedEvent from './model/UserPasswordCreatedEvent';
+import UserRole from './model/UserRole';
 import UserSearch from './model/UserSearch';
+import UserStoreInfo from './model/UserStoreInfo';
 import UserUpdatedEvent from './model/UserUpdatedEvent';
 import UserWhiteLabelConfig from './model/UserWhiteLabelConfig';
 import UserWhiteLabelInfo from './model/UserWhiteLabelInfo';
@@ -3780,6 +3788,24 @@ export {
     RestApiArrayResultTeammate,
 
     /**
+     * The RestApiArrayResultUserFlipdishAccount model constructor.
+     * @property {module:model/RestApiArrayResultUserFlipdishAccount}
+     */
+    RestApiArrayResultUserFlipdishAccount,
+
+    /**
+     * The RestApiArrayResultUserNote model constructor.
+     * @property {module:model/RestApiArrayResultUserNote}
+     */
+    RestApiArrayResultUserNote,
+
+    /**
+     * The RestApiArrayResultUserStoreInfo model constructor.
+     * @property {module:model/RestApiArrayResultUserStoreInfo}
+     */
+    RestApiArrayResultUserStoreInfo,
+
+    /**
      * The RestApiArrayResultVoucherDataPoint model constructor.
      * @property {module:model/RestApiArrayResultVoucherDataPoint}
      */
@@ -4710,6 +4736,12 @@ export {
     RestApiResultUserInfo,
 
     /**
+     * The RestApiResultUserRole model constructor.
+     * @property {module:model/RestApiResultUserRole}
+     */
+    RestApiResultUserRole,
+
+    /**
      * The RestApiResultVoucher model constructor.
      * @property {module:model/RestApiResultVoucher}
      */
@@ -5574,6 +5606,12 @@ export {
     UserEventInfo,
 
     /**
+     * The UserFlipdishAccount model constructor.
+     * @property {module:model/UserFlipdishAccount}
+     */
+    UserFlipdishAccount,
+
+    /**
      * The UserInfo model constructor.
      * @property {module:model/UserInfo}
      */
@@ -5592,16 +5630,34 @@ export {
     UserMonthlyCommission,
 
     /**
+     * The UserNote model constructor.
+     * @property {module:model/UserNote}
+     */
+    UserNote,
+
+    /**
      * The UserPasswordCreatedEvent model constructor.
      * @property {module:model/UserPasswordCreatedEvent}
      */
     UserPasswordCreatedEvent,
 
     /**
+     * The UserRole model constructor.
+     * @property {module:model/UserRole}
+     */
+    UserRole,
+
+    /**
      * The UserSearch model constructor.
      * @property {module:model/UserSearch}
      */
     UserSearch,
+
+    /**
+     * The UserStoreInfo model constructor.
+     * @property {module:model/UserStoreInfo}
+     */
+    UserStoreInfo,
 
     /**
      * The UserUpdatedEvent model constructor.
