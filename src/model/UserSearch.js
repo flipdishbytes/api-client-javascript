@@ -15,19 +15,19 @@ import ApiClient from '../ApiClient';
 import UserWhiteLabelConfig from './UserWhiteLabelConfig';
 
 /**
- * The User model module.
- * @module model/User
+ * The UserSearch model module.
+ * @module model/UserSearch
  * @version 1.0.0
  */
-class User {
+class UserSearch {
     /**
-     * Constructs a new <code>User</code>.
-     * User
-     * @alias module:model/User
+     * Constructs a new <code>UserSearch</code>.
+     * User Search Result
+     * @alias module:model/UserSearch
      */
     constructor() { 
         
-        User.initialize(this);
+        UserSearch.initialize(this);
     }
 
     /**
@@ -39,15 +39,15 @@ class User {
     }
 
     /**
-     * Constructs a <code>User</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>UserSearch</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/User} obj Optional instance to populate.
-     * @return {module:model/User} The populated <code>User</code> instance.
+     * @param {module:model/UserSearch} obj Optional instance to populate.
+     * @return {module:model/UserSearch} The populated <code>UserSearch</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new User();
+            obj = obj || new UserSearch();
 
             if (data.hasOwnProperty('Id')) {
                 obj['Id'] = ApiClient.convertToType(data['Id'], 'Number');
@@ -87,55 +87,55 @@ class User {
  * User Id
  * @member {Number} Id
  */
-User.prototype['Id'] = undefined;
+UserSearch.prototype['Id'] = undefined;
 
 /**
  * Phone Number
  * @member {String} PhoneNumber
  */
-User.prototype['PhoneNumber'] = undefined;
+UserSearch.prototype['PhoneNumber'] = undefined;
 
 /**
  * Email
  * @member {String} Email
  */
-User.prototype['Email'] = undefined;
+UserSearch.prototype['Email'] = undefined;
 
 /**
  * Customer Name
  * @member {String} CustomerName
  */
-User.prototype['CustomerName'] = undefined;
+UserSearch.prototype['CustomerName'] = undefined;
 
 /**
  * Has Logged In
  * @member {Boolean} HasLoggedIn
  */
-User.prototype['HasLoggedIn'] = undefined;
+UserSearch.prototype['HasLoggedIn'] = undefined;
 
 /**
  * User Discriminator
- * @member {module:model/User.UserDiscriminatorEnum} UserDiscriminator
+ * @member {module:model/UserSearch.UserDiscriminatorEnum} UserDiscriminator
  */
-User.prototype['UserDiscriminator'] = undefined;
+UserSearch.prototype['UserDiscriminator'] = undefined;
 
 /**
  * Timestamp Created
  * @member {Date} TsCreate
  */
-User.prototype['TsCreate'] = undefined;
+UserSearch.prototype['TsCreate'] = undefined;
 
 /**
  * WhiteLabel Configs
  * @member {Array.<module:model/UserWhiteLabelConfig>} WhiteLabelConfigs
  */
-User.prototype['WhiteLabelConfigs'] = undefined;
+UserSearch.prototype['WhiteLabelConfigs'] = undefined;
 
 /**
  * User Type
  * @member {String} UserType
  */
-User.prototype['UserType'] = undefined;
+UserSearch.prototype['UserType'] = undefined;
 
 
 
@@ -146,7 +146,7 @@ User.prototype['UserType'] = undefined;
  * @enum {String}
  * @readonly
  */
-User['UserDiscriminatorEnum'] = {
+UserSearch['UserDiscriminatorEnum'] = {
 
     /**
      * value: "All"
@@ -175,5 +175,5 @@ User['UserDiscriminatorEnum'] = {
 
 
 
-export default User;
+export default UserSearch;
 

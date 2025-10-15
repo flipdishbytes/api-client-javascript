@@ -12,26 +12,26 @@
  */
 
 import ApiClient from '../ApiClient';
-import User from './User';
+import UserSearch from './UserSearch';
 
 /**
- * The RestApiPaginationResultUser model module.
- * @module model/RestApiPaginationResultUser
+ * The RestApiPaginationResultUserSearch model module.
+ * @module model/RestApiPaginationResultUserSearch
  * @version 1.0.0
  */
-class RestApiPaginationResultUser {
+class RestApiPaginationResultUserSearch {
     /**
-     * Constructs a new <code>RestApiPaginationResultUser</code>.
+     * Constructs a new <code>RestApiPaginationResultUserSearch</code>.
      * Rest api pagination result
-     * @alias module:model/RestApiPaginationResultUser
+     * @alias module:model/RestApiPaginationResultUserSearch
      * @param Page {Number} Current page index
      * @param Limit {Number} Current page size
      * @param TotalRecordCount {Number} Total record count
-     * @param Data {Array.<module:model/User>} Generic data object.
+     * @param Data {Array.<module:model/UserSearch>} Generic data object.
      */
     constructor(Page, Limit, TotalRecordCount, Data) { 
         
-        RestApiPaginationResultUser.initialize(this, Page, Limit, TotalRecordCount, Data);
+        RestApiPaginationResultUserSearch.initialize(this, Page, Limit, TotalRecordCount, Data);
     }
 
     /**
@@ -47,15 +47,15 @@ class RestApiPaginationResultUser {
     }
 
     /**
-     * Constructs a <code>RestApiPaginationResultUser</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>RestApiPaginationResultUserSearch</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/RestApiPaginationResultUser} obj Optional instance to populate.
-     * @return {module:model/RestApiPaginationResultUser} The populated <code>RestApiPaginationResultUser</code> instance.
+     * @param {module:model/RestApiPaginationResultUserSearch} obj Optional instance to populate.
+     * @return {module:model/RestApiPaginationResultUserSearch} The populated <code>RestApiPaginationResultUserSearch</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new RestApiPaginationResultUser();
+            obj = obj || new RestApiPaginationResultUserSearch();
 
             if (data.hasOwnProperty('Page')) {
                 obj['Page'] = ApiClient.convertToType(data['Page'], 'Number');
@@ -67,7 +67,7 @@ class RestApiPaginationResultUser {
                 obj['TotalRecordCount'] = ApiClient.convertToType(data['TotalRecordCount'], 'Number');
             }
             if (data.hasOwnProperty('Data')) {
-                obj['Data'] = ApiClient.convertToType(data['Data'], [User]);
+                obj['Data'] = ApiClient.convertToType(data['Data'], [UserSearch]);
             }
         }
         return obj;
@@ -80,30 +80,30 @@ class RestApiPaginationResultUser {
  * Current page index
  * @member {Number} Page
  */
-RestApiPaginationResultUser.prototype['Page'] = undefined;
+RestApiPaginationResultUserSearch.prototype['Page'] = undefined;
 
 /**
  * Current page size
  * @member {Number} Limit
  */
-RestApiPaginationResultUser.prototype['Limit'] = undefined;
+RestApiPaginationResultUserSearch.prototype['Limit'] = undefined;
 
 /**
  * Total record count
  * @member {Number} TotalRecordCount
  */
-RestApiPaginationResultUser.prototype['TotalRecordCount'] = undefined;
+RestApiPaginationResultUserSearch.prototype['TotalRecordCount'] = undefined;
 
 /**
  * Generic data object.
- * @member {Array.<module:model/User>} Data
+ * @member {Array.<module:model/UserSearch>} Data
  */
-RestApiPaginationResultUser.prototype['Data'] = undefined;
+RestApiPaginationResultUserSearch.prototype['Data'] = undefined;
 
 
 
 
 
 
-export default RestApiPaginationResultUser;
+export default RestApiPaginationResultUserSearch;
 

@@ -68,6 +68,16 @@
         done();
       });
     });
+    describe('getUserById', function() {
+      it('should call getUserById successfully', function(done) {
+        //uncomment below and update the code to test getUserById
+        //instance.getUserById(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('searchUsers', function() {
       it('should call searchUsers successfully', function(done) {
         //uncomment below and update the code to test searchUsers

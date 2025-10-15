@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new Flipdish.Language();
+    instance = new Flipdish.UserMonthlyCommission();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,34 +47,40 @@
       object[property] = value;
   }
 
-  describe('Language', function() {
-    it('should create an instance of Language', function() {
-      // uncomment below and update the code to test Language
-      //var instane = new Flipdish.Language();
-      //expect(instance).to.be.a(Flipdish.Language);
+  describe('UserMonthlyCommission', function() {
+    it('should create an instance of UserMonthlyCommission', function() {
+      // uncomment below and update the code to test UserMonthlyCommission
+      //var instane = new Flipdish.UserMonthlyCommission();
+      //expect(instance).to.be.a(Flipdish.UserMonthlyCommission);
     });
 
-    it('should have the property LanguageId (base name: "LanguageId")', function() {
-      // uncomment below and update the code to test the property LanguageId
-      //var instance = new Flipdish.Language();
+    it('should have the property UserId (base name: "UserId")', function() {
+      // uncomment below and update the code to test the property UserId
+      //var instance = new Flipdish.UserMonthlyCommission();
       //expect(instance).to.be();
     });
 
-    it('should have the property DisplayOrder (base name: "DisplayOrder")', function() {
-      // uncomment below and update the code to test the property DisplayOrder
-      //var instance = new Flipdish.Language();
+    it('should have the property MonthStart (base name: "MonthStart")', function() {
+      // uncomment below and update the code to test the property MonthStart
+      //var instance = new Flipdish.UserMonthlyCommission();
       //expect(instance).to.be();
     });
 
-    it('should have the property Name (base name: "Name")', function() {
-      // uncomment below and update the code to test the property Name
-      //var instance = new Flipdish.Language();
+    it('should have the property CommissionAmount (base name: "CommissionAmount")', function() {
+      // uncomment below and update the code to test the property CommissionAmount
+      //var instance = new Flipdish.UserMonthlyCommission();
       //expect(instance).to.be();
     });
 
-    it('should have the property Enabled (base name: "Enabled")', function() {
-      // uncomment below and update the code to test the property Enabled
-      //var instance = new Flipdish.Language();
+    it('should have the property Currency (base name: "Currency")', function() {
+      // uncomment below and update the code to test the property Currency
+      //var instance = new Flipdish.UserMonthlyCommission();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property IsoCurrency (base name: "IsoCurrency")', function() {
+      // uncomment below and update the code to test the property IsoCurrency
+      //var instance = new Flipdish.UserMonthlyCommission();
       //expect(instance).to.be();
     });
 

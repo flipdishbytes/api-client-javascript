@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new Flipdish.Language();
+    instance = new Flipdish.UserWhiteLabelInfo();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,34 +47,28 @@
       object[property] = value;
   }
 
-  describe('Language', function() {
-    it('should create an instance of Language', function() {
-      // uncomment below and update the code to test Language
-      //var instane = new Flipdish.Language();
-      //expect(instance).to.be.a(Flipdish.Language);
+  describe('UserWhiteLabelInfo', function() {
+    it('should create an instance of UserWhiteLabelInfo', function() {
+      // uncomment below and update the code to test UserWhiteLabelInfo
+      //var instane = new Flipdish.UserWhiteLabelInfo();
+      //expect(instance).to.be.a(Flipdish.UserWhiteLabelInfo);
     });
 
-    it('should have the property LanguageId (base name: "LanguageId")', function() {
-      // uncomment below and update the code to test the property LanguageId
-      //var instance = new Flipdish.Language();
+    it('should have the property WlConfigId (base name: "WlConfigId")', function() {
+      // uncomment below and update the code to test the property WlConfigId
+      //var instance = new Flipdish.UserWhiteLabelInfo();
       //expect(instance).to.be();
     });
 
-    it('should have the property DisplayOrder (base name: "DisplayOrder")', function() {
-      // uncomment below and update the code to test the property DisplayOrder
-      //var instance = new Flipdish.Language();
+    it('should have the property AppId (base name: "AppId")', function() {
+      // uncomment below and update the code to test the property AppId
+      //var instance = new Flipdish.UserWhiteLabelInfo();
       //expect(instance).to.be();
     });
 
-    it('should have the property Name (base name: "Name")', function() {
-      // uncomment below and update the code to test the property Name
-      //var instance = new Flipdish.Language();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property Enabled (base name: "Enabled")', function() {
-      // uncomment below and update the code to test the property Enabled
-      //var instance = new Flipdish.Language();
+    it('should have the property WhiteLabelName (base name: "WhiteLabelName")', function() {
+      // uncomment below and update the code to test the property WhiteLabelName
+      //var instance = new Flipdish.UserWhiteLabelInfo();
       //expect(instance).to.be();
     });
 

@@ -15,7 +15,8 @@
 import ApiClient from "../ApiClient";
 import RestApiErrorResult from '../model/RestApiErrorResult';
 import RestApiForbiddenResult from '../model/RestApiForbiddenResult';
-import RestApiPaginationResultUser from '../model/RestApiPaginationResultUser';
+import RestApiPaginationResultUserSearch from '../model/RestApiPaginationResultUserSearch';
+import RestApiResultUserInfo from '../model/RestApiResultUserInfo';
 import RestApiStringArrayResult from '../model/RestApiStringArrayResult';
 import RestApiStringResult from '../model/RestApiStringResult';
 import RestApiUnauthorizedResult from '../model/RestApiUnauthorizedResult';
@@ -122,10 +123,51 @@ export default class UsersApi {
     }
 
     /**
+     * Callback function to receive the result of the getUserById operation.
+     * @callback module:api/UsersApi~getUserByIdCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/RestApiResultUserInfo} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {Number} userId 
+     * @param {module:api/UsersApi~getUserByIdCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/RestApiResultUserInfo}
+     */
+    getUserById(userId, callback) {
+      let postBody = null;
+      // verify the required parameter 'userId' is set
+      if (userId === undefined || userId === null) {
+        throw new Error("Missing the required parameter 'userId' when calling getUserById");
+      }
+
+      let pathParams = {
+        'userId': userId
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = [];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'Data', 'Message'];
+      let returnType = RestApiResultUserInfo;
+      return this.apiClient.callApi(
+        '/api/v1.0/users/{userId}', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
      * Callback function to receive the result of the searchUsers operation.
      * @callback module:api/UsersApi~searchUsersCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/RestApiPaginationResultUser} data The data returned by the service call.
+     * @param {module:model/RestApiPaginationResultUserSearch} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -138,7 +180,7 @@ export default class UsersApi {
      * @param {Number} opts.pageIndex 
      * @param {Number} opts.pageSize 
      * @param {module:api/UsersApi~searchUsersCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/RestApiPaginationResultUser}
+     * data is of type: {@link module:model/RestApiPaginationResultUserSearch}
      */
     searchUsers(searchQuery, opts, callback) {
       opts = opts || {};
@@ -166,7 +208,7 @@ export default class UsersApi {
       let authNames = ['oauth2'];
       let contentTypes = [];
       let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'Data', 'Message'];
-      let returnType = RestApiPaginationResultUser;
+      let returnType = RestApiPaginationResultUserSearch;
       return this.apiClient.callApi(
         '/api/v1.0/users/search', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,

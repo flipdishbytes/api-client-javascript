@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new Flipdish.Language();
+    instance = new Flipdish.RestApiPaginationResultUserSearch();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,34 +47,34 @@
       object[property] = value;
   }
 
-  describe('Language', function() {
-    it('should create an instance of Language', function() {
-      // uncomment below and update the code to test Language
-      //var instane = new Flipdish.Language();
-      //expect(instance).to.be.a(Flipdish.Language);
+  describe('RestApiPaginationResultUserSearch', function() {
+    it('should create an instance of RestApiPaginationResultUserSearch', function() {
+      // uncomment below and update the code to test RestApiPaginationResultUserSearch
+      //var instane = new Flipdish.RestApiPaginationResultUserSearch();
+      //expect(instance).to.be.a(Flipdish.RestApiPaginationResultUserSearch);
     });
 
-    it('should have the property LanguageId (base name: "LanguageId")', function() {
-      // uncomment below and update the code to test the property LanguageId
-      //var instance = new Flipdish.Language();
+    it('should have the property Page (base name: "Page")', function() {
+      // uncomment below and update the code to test the property Page
+      //var instance = new Flipdish.RestApiPaginationResultUserSearch();
       //expect(instance).to.be();
     });
 
-    it('should have the property DisplayOrder (base name: "DisplayOrder")', function() {
-      // uncomment below and update the code to test the property DisplayOrder
-      //var instance = new Flipdish.Language();
+    it('should have the property Limit (base name: "Limit")', function() {
+      // uncomment below and update the code to test the property Limit
+      //var instance = new Flipdish.RestApiPaginationResultUserSearch();
       //expect(instance).to.be();
     });
 
-    it('should have the property Name (base name: "Name")', function() {
-      // uncomment below and update the code to test the property Name
-      //var instance = new Flipdish.Language();
+    it('should have the property TotalRecordCount (base name: "TotalRecordCount")', function() {
+      // uncomment below and update the code to test the property TotalRecordCount
+      //var instance = new Flipdish.RestApiPaginationResultUserSearch();
       //expect(instance).to.be();
     });
 
-    it('should have the property Enabled (base name: "Enabled")', function() {
-      // uncomment below and update the code to test the property Enabled
-      //var instance = new Flipdish.Language();
+    it('should have the property Data (base name: "Data")', function() {
+      // uncomment below and update the code to test the property Data
+      //var instance = new Flipdish.RestApiPaginationResultUserSearch();
       //expect(instance).to.be();
     });
 

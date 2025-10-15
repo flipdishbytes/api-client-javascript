@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new Flipdish.User();
+    instance = new Flipdish.UserSearch();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,64 +47,64 @@
       object[property] = value;
   }
 
-  describe('User', function() {
-    it('should create an instance of User', function() {
-      // uncomment below and update the code to test User
-      //var instane = new Flipdish.User();
-      //expect(instance).to.be.a(Flipdish.User);
+  describe('UserSearch', function() {
+    it('should create an instance of UserSearch', function() {
+      // uncomment below and update the code to test UserSearch
+      //var instane = new Flipdish.UserSearch();
+      //expect(instance).to.be.a(Flipdish.UserSearch);
     });
 
     it('should have the property Id (base name: "Id")', function() {
       // uncomment below and update the code to test the property Id
-      //var instance = new Flipdish.User();
+      //var instance = new Flipdish.UserSearch();
       //expect(instance).to.be();
     });
 
     it('should have the property PhoneNumber (base name: "PhoneNumber")', function() {
       // uncomment below and update the code to test the property PhoneNumber
-      //var instance = new Flipdish.User();
+      //var instance = new Flipdish.UserSearch();
       //expect(instance).to.be();
     });
 
     it('should have the property Email (base name: "Email")', function() {
       // uncomment below and update the code to test the property Email
-      //var instance = new Flipdish.User();
+      //var instance = new Flipdish.UserSearch();
       //expect(instance).to.be();
     });
 
     it('should have the property CustomerName (base name: "CustomerName")', function() {
       // uncomment below and update the code to test the property CustomerName
-      //var instance = new Flipdish.User();
+      //var instance = new Flipdish.UserSearch();
       //expect(instance).to.be();
     });
 
     it('should have the property HasLoggedIn (base name: "HasLoggedIn")', function() {
       // uncomment below and update the code to test the property HasLoggedIn
-      //var instance = new Flipdish.User();
+      //var instance = new Flipdish.UserSearch();
       //expect(instance).to.be();
     });
 
     it('should have the property UserDiscriminator (base name: "UserDiscriminator")', function() {
       // uncomment below and update the code to test the property UserDiscriminator
-      //var instance = new Flipdish.User();
+      //var instance = new Flipdish.UserSearch();
       //expect(instance).to.be();
     });
 
     it('should have the property TsCreate (base name: "TsCreate")', function() {
       // uncomment below and update the code to test the property TsCreate
-      //var instance = new Flipdish.User();
+      //var instance = new Flipdish.UserSearch();
       //expect(instance).to.be();
     });
 
     it('should have the property WhiteLabelConfigs (base name: "WhiteLabelConfigs")', function() {
       // uncomment below and update the code to test the property WhiteLabelConfigs
-      //var instance = new Flipdish.User();
+      //var instance = new Flipdish.UserSearch();
       //expect(instance).to.be();
     });
 
     it('should have the property UserType (base name: "UserType")', function() {
       // uncomment below and update the code to test the property UserType
-      //var instance = new Flipdish.User();
+      //var instance = new Flipdish.UserSearch();
       //expect(instance).to.be();
     });
 

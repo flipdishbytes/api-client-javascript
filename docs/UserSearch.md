@@ -1,4 +1,4 @@
-# Flipdish.User
+# Flipdish.UserSearch
 
 ## Properties
 

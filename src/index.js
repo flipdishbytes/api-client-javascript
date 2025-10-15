@@ -36,6 +36,7 @@ import AppCompliance from './model/AppCompliance';
 import AppConfigSalesChannel from './model/AppConfigSalesChannel';
 import AppConfigUpdateModel from './model/AppConfigUpdateModel';
 import AppCreatedEvent from './model/AppCreatedEvent';
+import AppInstall from './model/AppInstall';
 import AppLookup from './model/AppLookup';
 import AppStoreApp from './model/AppStoreApp';
 import AppStoreAppConfiguration from './model/AppStoreAppConfiguration';
@@ -363,6 +364,7 @@ import OtherChargesDetails from './model/OtherChargesDetails';
 import OwnerEntityConfiguration from './model/OwnerEntityConfiguration';
 import OwnerEntityConfigurations from './model/OwnerEntityConfigurations';
 import PasswordResetModel from './model/PasswordResetModel';
+import PaymentAccount from './model/PaymentAccount';
 import PaymentIntent from './model/PaymentIntent';
 import PaymentTerminalDetails from './model/PaymentTerminalDetails';
 import PaymentTerminalTransactionDetails from './model/PaymentTerminalTransactionDetails';
@@ -519,7 +521,7 @@ import RestApiPaginationResultStoreGroup from './model/RestApiPaginationResultSt
 import RestApiPaginationResultStoreGroupExtended from './model/RestApiPaginationResultStoreGroupExtended';
 import RestApiPaginationResultStoreHeader from './model/RestApiPaginationResultStoreHeader';
 import RestApiPaginationResultStoreValidationConfig from './model/RestApiPaginationResultStoreValidationConfig';
-import RestApiPaginationResultUser from './model/RestApiPaginationResultUser';
+import RestApiPaginationResultUserSearch from './model/RestApiPaginationResultUserSearch';
 import RestApiPaginationResultVoucherSummary from './model/RestApiPaginationResultVoucherSummary';
 import RestApiPaginationResultWebhookLog from './model/RestApiPaginationResultWebhookLog';
 import RestApiPaginationResultWebhookSubscription from './model/RestApiPaginationResultWebhookSubscription';
@@ -638,6 +640,7 @@ import RestApiResultTeammate from './model/RestApiResultTeammate';
 import RestApiResultTelemetrySeriesResult from './model/RestApiResultTelemetrySeriesResult';
 import RestApiResultTipConfiguration from './model/RestApiResultTipConfiguration';
 import RestApiResultUpdateMobileAppsSubmissionStatus from './model/RestApiResultUpdateMobileAppsSubmissionStatus';
+import RestApiResultUserInfo from './model/RestApiResultUserInfo';
 import RestApiResultVoucher from './model/RestApiResultVoucher';
 import RestApiResultVoucherWithStats from './model/RestApiResultVoucherWithStats';
 import RestApiResultWebsiteImage from './model/RestApiResultWebsiteImage';
@@ -778,15 +781,18 @@ import UpdateStorePayGreenConfigurationRequest from './model/UpdateStorePayGreen
 import UpdateTipConfiguration from './model/UpdateTipConfiguration';
 import UpdateVoucher from './model/UpdateVoucher';
 import UpdateVoucherUsage from './model/UpdateVoucherUsage';
-import User from './model/User';
 import UserAnsweredSignupQuestionsEvent from './model/UserAnsweredSignupQuestionsEvent';
 import UserCreatedEvent from './model/UserCreatedEvent';
 import UserDeletedEvent from './model/UserDeletedEvent';
 import UserEventInfo from './model/UserEventInfo';
+import UserInfo from './model/UserInfo';
 import UserLoginEvent from './model/UserLoginEvent';
+import UserMonthlyCommission from './model/UserMonthlyCommission';
 import UserPasswordCreatedEvent from './model/UserPasswordCreatedEvent';
+import UserSearch from './model/UserSearch';
 import UserUpdatedEvent from './model/UserUpdatedEvent';
 import UserWhiteLabelConfig from './model/UserWhiteLabelConfig';
+import UserWhiteLabelInfo from './model/UserWhiteLabelInfo';
 import ValidValue from './model/ValidValue';
 import ValidationErrorResult from './model/ValidationErrorResult';
 import ValidityPeriod from './model/ValidityPeriod';
@@ -1072,6 +1078,12 @@ export {
      * @property {module:model/AppCreatedEvent}
      */
     AppCreatedEvent,
+
+    /**
+     * The AppInstall model constructor.
+     * @property {module:model/AppInstall}
+     */
+    AppInstall,
 
     /**
      * The AppLookup model constructor.
@@ -3036,6 +3048,12 @@ export {
     PasswordResetModel,
 
     /**
+     * The PaymentAccount model constructor.
+     * @property {module:model/PaymentAccount}
+     */
+    PaymentAccount,
+
+    /**
      * The PaymentIntent model constructor.
      * @property {module:model/PaymentIntent}
      */
@@ -3972,10 +3990,10 @@ export {
     RestApiPaginationResultStoreValidationConfig,
 
     /**
-     * The RestApiPaginationResultUser model constructor.
-     * @property {module:model/RestApiPaginationResultUser}
+     * The RestApiPaginationResultUserSearch model constructor.
+     * @property {module:model/RestApiPaginationResultUserSearch}
      */
-    RestApiPaginationResultUser,
+    RestApiPaginationResultUserSearch,
 
     /**
      * The RestApiPaginationResultVoucherSummary model constructor.
@@ -4684,6 +4702,12 @@ export {
      * @property {module:model/RestApiResultUpdateMobileAppsSubmissionStatus}
      */
     RestApiResultUpdateMobileAppsSubmissionStatus,
+
+    /**
+     * The RestApiResultUserInfo model constructor.
+     * @property {module:model/RestApiResultUserInfo}
+     */
+    RestApiResultUserInfo,
 
     /**
      * The RestApiResultVoucher model constructor.
@@ -5526,12 +5550,6 @@ export {
     UpdateVoucherUsage,
 
     /**
-     * The User model constructor.
-     * @property {module:model/User}
-     */
-    User,
-
-    /**
      * The UserAnsweredSignupQuestionsEvent model constructor.
      * @property {module:model/UserAnsweredSignupQuestionsEvent}
      */
@@ -5556,16 +5574,34 @@ export {
     UserEventInfo,
 
     /**
+     * The UserInfo model constructor.
+     * @property {module:model/UserInfo}
+     */
+    UserInfo,
+
+    /**
      * The UserLoginEvent model constructor.
      * @property {module:model/UserLoginEvent}
      */
     UserLoginEvent,
 
     /**
+     * The UserMonthlyCommission model constructor.
+     * @property {module:model/UserMonthlyCommission}
+     */
+    UserMonthlyCommission,
+
+    /**
      * The UserPasswordCreatedEvent model constructor.
      * @property {module:model/UserPasswordCreatedEvent}
      */
     UserPasswordCreatedEvent,
+
+    /**
+     * The UserSearch model constructor.
+     * @property {module:model/UserSearch}
+     */
+    UserSearch,
 
     /**
      * The UserUpdatedEvent model constructor.
@@ -5578,6 +5614,12 @@ export {
      * @property {module:model/UserWhiteLabelConfig}
      */
     UserWhiteLabelConfig,
+
+    /**
+     * The UserWhiteLabelInfo model constructor.
+     * @property {module:model/UserWhiteLabelInfo}
+     */
+    UserWhiteLabelInfo,
 
     /**
      * The ValidValue model constructor.

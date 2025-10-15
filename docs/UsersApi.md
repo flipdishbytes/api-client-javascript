@@ -6,6 +6,7 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**getPreviousOrderCountForStore**](UsersApi.md#getPreviousOrderCountForStore) | **GET** /api/v1.0/users/{userId}/previousordercount/{storeId} | 
 [**getRoles**](UsersApi.md#getRoles) | **GET** /api/v1.0/users/roles | 
+[**getUserById**](UsersApi.md#getUserById) | **GET** /api/v1.0/users/{userId} | 
 [**searchUsers**](UsersApi.md#searchUsers) | **GET** /api/v1.0/users/search | 
 
 
@@ -102,9 +103,56 @@ This endpoint does not need any parameter.
 - **Accept**: application/json, text/json, application/xml, text/xml, Data, Message
 
 
+## getUserById
+
+> RestApiResultUserInfo getUserById(userId)
+
+
+
+### Example
+
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
+// Configure OAuth2 access token for authorization: oauth2
+let oauth2 = defaultClient.authentications['oauth2'];
+oauth2.accessToken = 'YOUR ACCESS TOKEN';
+
+let apiInstance = new Flipdish.UsersApi();
+let userId = 56; // Number | 
+apiInstance.getUserById(userId, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **userId** | **Number**|  | 
+
+### Return type
+
+[**RestApiResultUserInfo**](RestApiResultUserInfo.md)
+
+### Authorization
+
+[oauth2](../README.md#oauth2)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, Data, Message
+
+
 ## searchUsers
 
-> RestApiPaginationResultUser searchUsers(searchQuery, opts)
+> RestApiPaginationResultUserSearch searchUsers(searchQuery, opts)
 
 
 
@@ -149,7 +197,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**RestApiPaginationResultUser**](RestApiPaginationResultUser.md)
+[**RestApiPaginationResultUserSearch**](RestApiPaginationResultUserSearch.md)
 
 ### Authorization
 

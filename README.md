@@ -640,6 +640,7 @@ Class | Method | HTTP request | Description
 *Flipdish.TipsApi* | [**tipConfigUpsert**](docs/TipsApi.md#tipConfigUpsert) | **POST** /api/v1.0/stores/{storeId}/tipconfig | 
 *Flipdish.UsersApi* | [**getPreviousOrderCountForStore**](docs/UsersApi.md#getPreviousOrderCountForStore) | **GET** /api/v1.0/users/{userId}/previousordercount/{storeId} | 
 *Flipdish.UsersApi* | [**getRoles**](docs/UsersApi.md#getRoles) | **GET** /api/v1.0/users/roles | 
+*Flipdish.UsersApi* | [**getUserById**](docs/UsersApi.md#getUserById) | **GET** /api/v1.0/users/{userId} | 
 *Flipdish.UsersApi* | [**searchUsers**](docs/UsersApi.md#searchUsers) | **GET** /api/v1.0/users/search | 
 *Flipdish.VouchersApi* | [**createVoucher**](docs/VouchersApi.md#createVoucher) | **POST** /api/v1.0/vouchers/{appId} | 
 *Flipdish.VouchersApi* | [**getVoucherByCode**](docs/VouchersApi.md#getVoucherByCode) | **GET** /api/v1.0/{appId}/vouchers/code/{code} | 
@@ -695,6 +696,7 @@ Class | Method | HTTP request | Description
  - [Flipdish.AppConfigSalesChannel](docs/AppConfigSalesChannel.md)
  - [Flipdish.AppConfigUpdateModel](docs/AppConfigUpdateModel.md)
  - [Flipdish.AppCreatedEvent](docs/AppCreatedEvent.md)
+ - [Flipdish.AppInstall](docs/AppInstall.md)
  - [Flipdish.AppLookup](docs/AppLookup.md)
  - [Flipdish.AppStoreApp](docs/AppStoreApp.md)
  - [Flipdish.AppStoreAppConfiguration](docs/AppStoreAppConfiguration.md)
@@ -1022,6 +1024,7 @@ Class | Method | HTTP request | Description
  - [Flipdish.OwnerEntityConfiguration](docs/OwnerEntityConfiguration.md)
  - [Flipdish.OwnerEntityConfigurations](docs/OwnerEntityConfigurations.md)
  - [Flipdish.PasswordResetModel](docs/PasswordResetModel.md)
+ - [Flipdish.PaymentAccount](docs/PaymentAccount.md)
  - [Flipdish.PaymentIntent](docs/PaymentIntent.md)
  - [Flipdish.PaymentTerminalDetails](docs/PaymentTerminalDetails.md)
  - [Flipdish.PaymentTerminalTransactionDetails](docs/PaymentTerminalTransactionDetails.md)
@@ -1178,7 +1181,7 @@ Class | Method | HTTP request | Description
  - [Flipdish.RestApiPaginationResultStoreGroupExtended](docs/RestApiPaginationResultStoreGroupExtended.md)
  - [Flipdish.RestApiPaginationResultStoreHeader](docs/RestApiPaginationResultStoreHeader.md)
  - [Flipdish.RestApiPaginationResultStoreValidationConfig](docs/RestApiPaginationResultStoreValidationConfig.md)
- - [Flipdish.RestApiPaginationResultUser](docs/RestApiPaginationResultUser.md)
+ - [Flipdish.RestApiPaginationResultUserSearch](docs/RestApiPaginationResultUserSearch.md)
  - [Flipdish.RestApiPaginationResultVoucherSummary](docs/RestApiPaginationResultVoucherSummary.md)
  - [Flipdish.RestApiPaginationResultWebhookLog](docs/RestApiPaginationResultWebhookLog.md)
  - [Flipdish.RestApiPaginationResultWebhookSubscription](docs/RestApiPaginationResultWebhookSubscription.md)
@@ -1297,6 +1300,7 @@ Class | Method | HTTP request | Description
  - [Flipdish.RestApiResultTelemetrySeriesResult](docs/RestApiResultTelemetrySeriesResult.md)
  - [Flipdish.RestApiResultTipConfiguration](docs/RestApiResultTipConfiguration.md)
  - [Flipdish.RestApiResultUpdateMobileAppsSubmissionStatus](docs/RestApiResultUpdateMobileAppsSubmissionStatus.md)
+ - [Flipdish.RestApiResultUserInfo](docs/RestApiResultUserInfo.md)
  - [Flipdish.RestApiResultVoucher](docs/RestApiResultVoucher.md)
  - [Flipdish.RestApiResultVoucherWithStats](docs/RestApiResultVoucherWithStats.md)
  - [Flipdish.RestApiResultWebsiteImage](docs/RestApiResultWebsiteImage.md)
@@ -1437,15 +1441,18 @@ Class | Method | HTTP request | Description
  - [Flipdish.UpdateTipConfiguration](docs/UpdateTipConfiguration.md)
  - [Flipdish.UpdateVoucher](docs/UpdateVoucher.md)
  - [Flipdish.UpdateVoucherUsage](docs/UpdateVoucherUsage.md)
- - [Flipdish.User](docs/User.md)
  - [Flipdish.UserAnsweredSignupQuestionsEvent](docs/UserAnsweredSignupQuestionsEvent.md)
  - [Flipdish.UserCreatedEvent](docs/UserCreatedEvent.md)
  - [Flipdish.UserDeletedEvent](docs/UserDeletedEvent.md)
  - [Flipdish.UserEventInfo](docs/UserEventInfo.md)
+ - [Flipdish.UserInfo](docs/UserInfo.md)
  - [Flipdish.UserLoginEvent](docs/UserLoginEvent.md)
+ - [Flipdish.UserMonthlyCommission](docs/UserMonthlyCommission.md)
  - [Flipdish.UserPasswordCreatedEvent](docs/UserPasswordCreatedEvent.md)
+ - [Flipdish.UserSearch](docs/UserSearch.md)
  - [Flipdish.UserUpdatedEvent](docs/UserUpdatedEvent.md)
  - [Flipdish.UserWhiteLabelConfig](docs/UserWhiteLabelConfig.md)
+ - [Flipdish.UserWhiteLabelInfo](docs/UserWhiteLabelInfo.md)
  - [Flipdish.ValidValue](docs/ValidValue.md)
  - [Flipdish.ValidationErrorResult](docs/ValidationErrorResult.md)
  - [Flipdish.ValidityPeriod](docs/ValidityPeriod.md)

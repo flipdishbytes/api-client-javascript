@@ -57,6 +57,9 @@ class Language {
             if (data.hasOwnProperty('Name')) {
                 obj['Name'] = ApiClient.convertToType(data['Name'], 'String');
             }
+            if (data.hasOwnProperty('Enabled')) {
+                obj['Enabled'] = ApiClient.convertToType(data['Enabled'], 'Boolean');
+            }
         }
         return obj;
     }
@@ -81,6 +84,12 @@ Language.prototype['DisplayOrder'] = undefined;
  * @member {String} Name
  */
 Language.prototype['Name'] = undefined;
+
+/**
+ * Is the language enabled for use.
+ * @member {Boolean} Enabled
+ */
+Language.prototype['Enabled'] = undefined;
 
 
 

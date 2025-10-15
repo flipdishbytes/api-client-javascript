@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new Flipdish.RestApiPaginationResultUser();
+    instance = new Flipdish.RestApiResultUserInfo();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,34 +47,16 @@
       object[property] = value;
   }
 
-  describe('RestApiPaginationResultUser', function() {
-    it('should create an instance of RestApiPaginationResultUser', function() {
-      // uncomment below and update the code to test RestApiPaginationResultUser
-      //var instane = new Flipdish.RestApiPaginationResultUser();
-      //expect(instance).to.be.a(Flipdish.RestApiPaginationResultUser);
-    });
-
-    it('should have the property Page (base name: "Page")', function() {
-      // uncomment below and update the code to test the property Page
-      //var instance = new Flipdish.RestApiPaginationResultUser();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property Limit (base name: "Limit")', function() {
-      // uncomment below and update the code to test the property Limit
-      //var instance = new Flipdish.RestApiPaginationResultUser();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property TotalRecordCount (base name: "TotalRecordCount")', function() {
-      // uncomment below and update the code to test the property TotalRecordCount
-      //var instance = new Flipdish.RestApiPaginationResultUser();
-      //expect(instance).to.be();
+  describe('RestApiResultUserInfo', function() {
+    it('should create an instance of RestApiResultUserInfo', function() {
+      // uncomment below and update the code to test RestApiResultUserInfo
+      //var instane = new Flipdish.RestApiResultUserInfo();
+      //expect(instance).to.be.a(Flipdish.RestApiResultUserInfo);
     });
 
     it('should have the property Data (base name: "Data")', function() {
       // uncomment below and update the code to test the property Data
-      //var instance = new Flipdish.RestApiPaginationResultUser();
+      //var instance = new Flipdish.RestApiResultUserInfo();
       //expect(instance).to.be();
     });
 
