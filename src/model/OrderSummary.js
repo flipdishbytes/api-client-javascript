@@ -511,7 +511,13 @@ OrderSummary['OrderStateEnum'] = {
      * value: "AcceptedAndRefunded"
      * @const
      */
-    "AcceptedAndRefunded": "AcceptedAndRefunded"
+    "AcceptedAndRefunded": "AcceptedAndRefunded",
+
+    /**
+     * value: "PendingPayment"
+     * @const
+     */
+    "PendingPayment": "PendingPayment"
 };
 
 

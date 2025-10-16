@@ -115,6 +115,8 @@ Name | Type | Description | Notes
 
 * `AcceptedAndRefunded` (value: `"AcceptedAndRefunded"`)
 
+* `PendingPayment` (value: `"PendingPayment"`)
+
 
 
 
