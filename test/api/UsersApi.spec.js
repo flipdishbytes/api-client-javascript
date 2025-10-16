@@ -48,6 +48,46 @@
   }
 
   describe('UsersApi', function() {
+    describe('addUserNote', function() {
+      it('should call addUserNote successfully', function(done) {
+        //uncomment below and update the code to test addUserNote
+        //instance.addUserNote(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('addUserToRole', function() {
+      it('should call addUserToRole successfully', function(done) {
+        //uncomment below and update the code to test addUserToRole
+        //instance.addUserToRole(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('anonymizeUser', function() {
+      it('should call anonymizeUser successfully', function(done) {
+        //uncomment below and update the code to test anonymizeUser
+        //instance.anonymizeUser(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('blockUserPhoneNumber', function() {
+      it('should call blockUserPhoneNumber successfully', function(done) {
+        //uncomment below and update the code to test blockUserPhoneNumber
+        //instance.blockUserPhoneNumber(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('getPreviousOrderCountForStore', function() {
       it('should call getPreviousOrderCountForStore successfully', function(done) {
         //uncomment below and update the code to test getPreviousOrderCountForStore
@@ -118,10 +158,80 @@
         done();
       });
     });
+    describe('markUserAsFraudulent', function() {
+      it('should call markUserAsFraudulent successfully', function(done) {
+        //uncomment below and update the code to test markUserAsFraudulent
+        //instance.markUserAsFraudulent(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('markUserAsSuspicious', function() {
+      it('should call markUserAsSuspicious successfully', function(done) {
+        //uncomment below and update the code to test markUserAsSuspicious
+        //instance.markUserAsSuspicious(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('removeUserFromRole', function() {
+      it('should call removeUserFromRole successfully', function(done) {
+        //uncomment below and update the code to test removeUserFromRole
+        //instance.removeUserFromRole(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('resetMfa', function() {
+      it('should call resetMfa successfully', function(done) {
+        //uncomment below and update the code to test resetMfa
+        //instance.resetMfa(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('searchUsers', function() {
       it('should call searchUsers successfully', function(done) {
         //uncomment below and update the code to test searchUsers
         //instance.searchUsers(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('setCustomerName', function() {
+      it('should call setCustomerName successfully', function(done) {
+        //uncomment below and update the code to test setCustomerName
+        //instance.setCustomerName(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('setUserLanguage', function() {
+      it('should call setUserLanguage successfully', function(done) {
+        //uncomment below and update the code to test setUserLanguage
+        //instance.setUserLanguage(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('unblockUserPhoneNumber', function() {
+      it('should call unblockUserPhoneNumber successfully', function(done) {
+        //uncomment below and update the code to test unblockUserPhoneNumber
+        //instance.unblockUserPhoneNumber(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

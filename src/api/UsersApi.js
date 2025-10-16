@@ -16,6 +16,7 @@ import ApiClient from "../ApiClient";
 import RestApiArrayResultUserFlipdishAccount from '../model/RestApiArrayResultUserFlipdishAccount';
 import RestApiArrayResultUserNote from '../model/RestApiArrayResultUserNote';
 import RestApiArrayResultUserStoreInfo from '../model/RestApiArrayResultUserStoreInfo';
+import RestApiDefaultResponse from '../model/RestApiDefaultResponse';
 import RestApiErrorResult from '../model/RestApiErrorResult';
 import RestApiForbiddenResult from '../model/RestApiForbiddenResult';
 import RestApiPaginationResultUserSearch from '../model/RestApiPaginationResultUserSearch';
@@ -43,6 +44,181 @@ export default class UsersApi {
         this.apiClient = apiClient || ApiClient.instance;
     }
 
+
+    /**
+     * Callback function to receive the result of the addUserNote operation.
+     * @callback module:api/UsersApi~addUserNoteCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/RestApiDefaultResponse} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {Number} userId 
+     * @param {String} note 
+     * @param {module:api/UsersApi~addUserNoteCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/RestApiDefaultResponse}
+     */
+    addUserNote(userId, note, callback) {
+      let postBody = note;
+      // verify the required parameter 'userId' is set
+      if (userId === undefined || userId === null) {
+        throw new Error("Missing the required parameter 'userId' when calling addUserNote");
+      }
+      // verify the required parameter 'note' is set
+      if (note === undefined || note === null) {
+        throw new Error("Missing the required parameter 'note' when calling addUserNote");
+      }
+
+      let pathParams = {
+        'userId': userId
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded'];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'Data', 'Message'];
+      let returnType = RestApiDefaultResponse;
+      return this.apiClient.callApi(
+        '/api/v1.0/users/{userId}/AddUserNote', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the addUserToRole operation.
+     * @callback module:api/UsersApi~addUserToRoleCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/RestApiResultUserRole} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {Number} userId 
+     * @param {String} roleName 
+     * @param {module:api/UsersApi~addUserToRoleCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/RestApiResultUserRole}
+     */
+    addUserToRole(userId, roleName, callback) {
+      let postBody = null;
+      // verify the required parameter 'userId' is set
+      if (userId === undefined || userId === null) {
+        throw new Error("Missing the required parameter 'userId' when calling addUserToRole");
+      }
+      // verify the required parameter 'roleName' is set
+      if (roleName === undefined || roleName === null) {
+        throw new Error("Missing the required parameter 'roleName' when calling addUserToRole");
+      }
+
+      let pathParams = {
+        'userId': userId,
+        'roleName': roleName
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = [];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'Data', 'Message'];
+      let returnType = RestApiResultUserRole;
+      return this.apiClient.callApi(
+        '/api/v1.0/users/{userId}/AddUserToRole/{roleName}', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the anonymizeUser operation.
+     * @callback module:api/UsersApi~anonymizeUserCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/RestApiDefaultResponse} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {Number} userId 
+     * @param {module:api/UsersApi~anonymizeUserCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/RestApiDefaultResponse}
+     */
+    anonymizeUser(userId, callback) {
+      let postBody = null;
+      // verify the required parameter 'userId' is set
+      if (userId === undefined || userId === null) {
+        throw new Error("Missing the required parameter 'userId' when calling anonymizeUser");
+      }
+
+      let pathParams = {
+        'userId': userId
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = [];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'Data', 'Message'];
+      let returnType = RestApiDefaultResponse;
+      return this.apiClient.callApi(
+        '/api/v1.0/users/{userId}/AnonymizeUser', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the blockUserPhoneNumber operation.
+     * @callback module:api/UsersApi~blockUserPhoneNumberCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/RestApiDefaultResponse} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {Number} userId 
+     * @param {module:api/UsersApi~blockUserPhoneNumberCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/RestApiDefaultResponse}
+     */
+    blockUserPhoneNumber(userId, callback) {
+      let postBody = null;
+      // verify the required parameter 'userId' is set
+      if (userId === undefined || userId === null) {
+        throw new Error("Missing the required parameter 'userId' when calling blockUserPhoneNumber");
+      }
+
+      let pathParams = {
+        'userId': userId
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = [];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'Data', 'Message'];
+      let returnType = RestApiDefaultResponse;
+      return this.apiClient.callApi(
+        '/api/v1.0/users/{userId}/BlockUserPhoneNumber', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
 
     /**
      * Callback function to receive the result of the getPreviousOrderCountForStore operation.
@@ -332,6 +508,176 @@ export default class UsersApi {
     }
 
     /**
+     * Callback function to receive the result of the markUserAsFraudulent operation.
+     * @callback module:api/UsersApi~markUserAsFraudulentCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/RestApiDefaultResponse} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {Number} userId 
+     * @param {module:api/UsersApi~markUserAsFraudulentCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/RestApiDefaultResponse}
+     */
+    markUserAsFraudulent(userId, callback) {
+      let postBody = null;
+      // verify the required parameter 'userId' is set
+      if (userId === undefined || userId === null) {
+        throw new Error("Missing the required parameter 'userId' when calling markUserAsFraudulent");
+      }
+
+      let pathParams = {
+        'userId': userId
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = [];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'Data', 'Message'];
+      let returnType = RestApiDefaultResponse;
+      return this.apiClient.callApi(
+        '/api/v1.0/users/{userId}/MarkUserAsFraudulent', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the markUserAsSuspicious operation.
+     * @callback module:api/UsersApi~markUserAsSuspiciousCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/RestApiDefaultResponse} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {Number} userId 
+     * @param {module:api/UsersApi~markUserAsSuspiciousCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/RestApiDefaultResponse}
+     */
+    markUserAsSuspicious(userId, callback) {
+      let postBody = null;
+      // verify the required parameter 'userId' is set
+      if (userId === undefined || userId === null) {
+        throw new Error("Missing the required parameter 'userId' when calling markUserAsSuspicious");
+      }
+
+      let pathParams = {
+        'userId': userId
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = [];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'Data', 'Message'];
+      let returnType = RestApiDefaultResponse;
+      return this.apiClient.callApi(
+        '/api/v1.0/users/{userId}/MarkUserAsSuspicious', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the removeUserFromRole operation.
+     * @callback module:api/UsersApi~removeUserFromRoleCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/RestApiResultUserRole} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {Number} userId 
+     * @param {String} roleName 
+     * @param {module:api/UsersApi~removeUserFromRoleCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/RestApiResultUserRole}
+     */
+    removeUserFromRole(userId, roleName, callback) {
+      let postBody = null;
+      // verify the required parameter 'userId' is set
+      if (userId === undefined || userId === null) {
+        throw new Error("Missing the required parameter 'userId' when calling removeUserFromRole");
+      }
+      // verify the required parameter 'roleName' is set
+      if (roleName === undefined || roleName === null) {
+        throw new Error("Missing the required parameter 'roleName' when calling removeUserFromRole");
+      }
+
+      let pathParams = {
+        'userId': userId,
+        'roleName': roleName
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = [];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'Data', 'Message'];
+      let returnType = RestApiResultUserRole;
+      return this.apiClient.callApi(
+        '/api/v1.0/users/{userId}/RemoveUserFromRole/{roleName}', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the resetMfa operation.
+     * @callback module:api/UsersApi~resetMfaCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/RestApiDefaultResponse} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {Number} userId 
+     * @param {module:api/UsersApi~resetMfaCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/RestApiDefaultResponse}
+     */
+    resetMfa(userId, callback) {
+      let postBody = null;
+      // verify the required parameter 'userId' is set
+      if (userId === undefined || userId === null) {
+        throw new Error("Missing the required parameter 'userId' when calling resetMfa");
+      }
+
+      let pathParams = {
+        'userId': userId
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = [];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'Data', 'Message'];
+      let returnType = RestApiDefaultResponse;
+      return this.apiClient.callApi(
+        '/api/v1.0/users/{userId}/ResetMfa', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
      * Callback function to receive the result of the searchUsers operation.
      * @callback module:api/UsersApi~searchUsersCallback
      * @param {String} error Error message, if any.
@@ -379,6 +725,140 @@ export default class UsersApi {
       let returnType = RestApiPaginationResultUserSearch;
       return this.apiClient.callApi(
         '/api/v1.0/users/search', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the setCustomerName operation.
+     * @callback module:api/UsersApi~setCustomerNameCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/RestApiDefaultResponse} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {Number} userId 
+     * @param {String} customerName 
+     * @param {module:api/UsersApi~setCustomerNameCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/RestApiDefaultResponse}
+     */
+    setCustomerName(userId, customerName, callback) {
+      let postBody = customerName;
+      // verify the required parameter 'userId' is set
+      if (userId === undefined || userId === null) {
+        throw new Error("Missing the required parameter 'userId' when calling setCustomerName");
+      }
+      // verify the required parameter 'customerName' is set
+      if (customerName === undefined || customerName === null) {
+        throw new Error("Missing the required parameter 'customerName' when calling setCustomerName");
+      }
+
+      let pathParams = {
+        'userId': userId
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded'];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'Data', 'Message'];
+      let returnType = RestApiDefaultResponse;
+      return this.apiClient.callApi(
+        '/api/v1.0/users/{userId}/SetCustomerName', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the setUserLanguage operation.
+     * @callback module:api/UsersApi~setUserLanguageCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/RestApiDefaultResponse} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {Number} userId 
+     * @param {String} languageId 
+     * @param {module:api/UsersApi~setUserLanguageCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/RestApiDefaultResponse}
+     */
+    setUserLanguage(userId, languageId, callback) {
+      let postBody = null;
+      // verify the required parameter 'userId' is set
+      if (userId === undefined || userId === null) {
+        throw new Error("Missing the required parameter 'userId' when calling setUserLanguage");
+      }
+      // verify the required parameter 'languageId' is set
+      if (languageId === undefined || languageId === null) {
+        throw new Error("Missing the required parameter 'languageId' when calling setUserLanguage");
+      }
+
+      let pathParams = {
+        'userId': userId,
+        'languageId': languageId
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = [];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'Data', 'Message'];
+      let returnType = RestApiDefaultResponse;
+      return this.apiClient.callApi(
+        '/api/v1.0/users/{userId}/SetLanguage/{languageId}', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the unblockUserPhoneNumber operation.
+     * @callback module:api/UsersApi~unblockUserPhoneNumberCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/RestApiDefaultResponse} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {Number} userId 
+     * @param {module:api/UsersApi~unblockUserPhoneNumberCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/RestApiDefaultResponse}
+     */
+    unblockUserPhoneNumber(userId, callback) {
+      let postBody = null;
+      // verify the required parameter 'userId' is set
+      if (userId === undefined || userId === null) {
+        throw new Error("Missing the required parameter 'userId' when calling unblockUserPhoneNumber");
+      }
+
+      let pathParams = {
+        'userId': userId
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = [];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'Data', 'Message'];
+      let returnType = RestApiDefaultResponse;
+      return this.apiClient.callApi(
+        '/api/v1.0/users/{userId}/UnblockUserPhoneNumber', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );

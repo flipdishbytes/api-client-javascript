@@ -638,6 +638,10 @@ Class | Method | HTTP request | Description
 *Flipdish.TerminalIotApi* | [**getTerminalIotConnection**](docs/TerminalIotApi.md#getTerminalIotConnection) | **POST** /api/v1.0/terminaliot/connect | 
 *Flipdish.TipsApi* | [**tipConfigGet**](docs/TipsApi.md#tipConfigGet) | **GET** /api/v1.0/stores/{storeId}/tipconfig | 
 *Flipdish.TipsApi* | [**tipConfigUpsert**](docs/TipsApi.md#tipConfigUpsert) | **POST** /api/v1.0/stores/{storeId}/tipconfig | 
+*Flipdish.UsersApi* | [**addUserNote**](docs/UsersApi.md#addUserNote) | **POST** /api/v1.0/users/{userId}/AddUserNote | 
+*Flipdish.UsersApi* | [**addUserToRole**](docs/UsersApi.md#addUserToRole) | **POST** /api/v1.0/users/{userId}/AddUserToRole/{roleName} | 
+*Flipdish.UsersApi* | [**anonymizeUser**](docs/UsersApi.md#anonymizeUser) | **POST** /api/v1.0/users/{userId}/AnonymizeUser | 
+*Flipdish.UsersApi* | [**blockUserPhoneNumber**](docs/UsersApi.md#blockUserPhoneNumber) | **POST** /api/v1.0/users/{userId}/BlockUserPhoneNumber | 
 *Flipdish.UsersApi* | [**getPreviousOrderCountForStore**](docs/UsersApi.md#getPreviousOrderCountForStore) | **GET** /api/v1.0/users/{userId}/previousordercount/{storeId} | 
 *Flipdish.UsersApi* | [**getRestaurantUserAccounts**](docs/UsersApi.md#getRestaurantUserAccounts) | **GET** /api/v1.0/users/{userId}/RestaurantUserAccounts | 
 *Flipdish.UsersApi* | [**getRestaurantUserStores**](docs/UsersApi.md#getRestaurantUserStores) | **GET** /api/v1.0/users/{userId}/RestaurantUserStores | 
@@ -645,7 +649,14 @@ Class | Method | HTTP request | Description
 *Flipdish.UsersApi* | [**getRolesAndUnassignedRoles**](docs/UsersApi.md#getRolesAndUnassignedRoles) | **GET** /api/v1.0/users/{userId}/roles | 
 *Flipdish.UsersApi* | [**getUserById**](docs/UsersApi.md#getUserById) | **GET** /api/v1.0/users/{userId} | 
 *Flipdish.UsersApi* | [**getUserNotes**](docs/UsersApi.md#getUserNotes) | **GET** /api/v1.0/users/{userId}/UserNotes | 
+*Flipdish.UsersApi* | [**markUserAsFraudulent**](docs/UsersApi.md#markUserAsFraudulent) | **POST** /api/v1.0/users/{userId}/MarkUserAsFraudulent | 
+*Flipdish.UsersApi* | [**markUserAsSuspicious**](docs/UsersApi.md#markUserAsSuspicious) | **POST** /api/v1.0/users/{userId}/MarkUserAsSuspicious | 
+*Flipdish.UsersApi* | [**removeUserFromRole**](docs/UsersApi.md#removeUserFromRole) | **POST** /api/v1.0/users/{userId}/RemoveUserFromRole/{roleName} | 
+*Flipdish.UsersApi* | [**resetMfa**](docs/UsersApi.md#resetMfa) | **POST** /api/v1.0/users/{userId}/ResetMfa | 
 *Flipdish.UsersApi* | [**searchUsers**](docs/UsersApi.md#searchUsers) | **GET** /api/v1.0/users/search | 
+*Flipdish.UsersApi* | [**setCustomerName**](docs/UsersApi.md#setCustomerName) | **POST** /api/v1.0/users/{userId}/SetCustomerName | 
+*Flipdish.UsersApi* | [**setUserLanguage**](docs/UsersApi.md#setUserLanguage) | **POST** /api/v1.0/users/{userId}/SetLanguage/{languageId} | 
+*Flipdish.UsersApi* | [**unblockUserPhoneNumber**](docs/UsersApi.md#unblockUserPhoneNumber) | **POST** /api/v1.0/users/{userId}/UnblockUserPhoneNumber | 
 *Flipdish.VouchersApi* | [**createVoucher**](docs/VouchersApi.md#createVoucher) | **POST** /api/v1.0/vouchers/{appId} | 
 *Flipdish.VouchersApi* | [**getVoucherByCode**](docs/VouchersApi.md#getVoucherByCode) | **GET** /api/v1.0/{appId}/vouchers/code/{code} | 
 *Flipdish.VouchersApi* | [**getVoucherById**](docs/VouchersApi.md#getVoucherById) | **GET** /api/v1.0/vouchers/{voucherId} | 
