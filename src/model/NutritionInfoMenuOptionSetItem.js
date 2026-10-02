@@ -22,6 +22,7 @@ import NutritionInfoLabel from './NutritionInfoLabel';
 class NutritionInfoMenuOptionSetItem {
     /**
      * Constructs a new <code>NutritionInfoMenuOptionSetItem</code>.
+     * NutritionInfoMenuOptionSetItem.
      * @alias module:model/NutritionInfoMenuOptionSetItem
      */
     constructor() { 

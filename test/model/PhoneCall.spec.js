@@ -60,6 +60,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property CallSid (base name: "CallSid")', function() {
+      // uncomment below and update the code to test the property CallSid
+      //var instance = new Flipdish.PhoneCall();
+      //expect(instance).to.be();
+    });
+
     it('should have the property TimeOfCall (base name: "TimeOfCall")', function() {
       // uncomment below and update the code to test the property TimeOfCall
       //var instance = new Flipdish.PhoneCall();

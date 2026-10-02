@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**StoreId** | **Number** |  | [optional] 
-**Name** | **String** |  | [optional] 
+**StoreId** | **Number** | StoreId. | [optional] 
+**Name** | **String** | Name. | [optional] 
 
 

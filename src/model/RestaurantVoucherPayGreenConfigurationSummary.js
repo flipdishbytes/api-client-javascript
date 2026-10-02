@@ -21,6 +21,7 @@ import ApiClient from '../ApiClient';
 class RestaurantVoucherPayGreenConfigurationSummary {
     /**
      * Constructs a new <code>RestaurantVoucherPayGreenConfigurationSummary</code>.
+     * RestaurantVoucherPayGreenConfigurationSummary.
      * @alias module:model/RestaurantVoucherPayGreenConfigurationSummary
      */
     constructor() { 
@@ -61,11 +62,13 @@ class RestaurantVoucherPayGreenConfigurationSummary {
 }
 
 /**
+ * Name.
  * @member {String} Name
  */
 RestaurantVoucherPayGreenConfigurationSummary.prototype['Name'] = undefined;
 
 /**
+ * PayGreenConfigurationId.
  * @member {Number} PayGreenConfigurationId
  */
 RestaurantVoucherPayGreenConfigurationSummary.prototype['PayGreenConfigurationId'] = undefined;

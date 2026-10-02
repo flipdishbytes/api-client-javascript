@@ -234,6 +234,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property IsPromoted (base name: "IsPromoted")', function() {
+      // uncomment below and update the code to test the property IsPromoted
+      //var instance = new Flipdish.VoucherWithStats();
+      //expect(instance).to.be();
+    });
+
     it('should have the property ForceDiscount (base name: "ForceDiscount")', function() {
       // uncomment below and update the code to test the property ForceDiscount
       //var instance = new Flipdish.VoucherWithStats();

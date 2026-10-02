@@ -83,6 +83,12 @@ class MenuSectionItemUpdatedEvent {
             if (data.hasOwnProperty('IpAddress')) {
                 obj['IpAddress'] = ApiClient.convertToType(data['IpAddress'], 'String');
             }
+            if (data.hasOwnProperty('ActivityId')) {
+                obj['ActivityId'] = ApiClient.convertToType(data['ActivityId'], 'String');
+            }
+            if (data.hasOwnProperty('ActivityType')) {
+                obj['ActivityType'] = ApiClient.convertToType(data['ActivityType'], 'String');
+            }
         }
         return obj;
     }
@@ -153,6 +159,18 @@ MenuSectionItemUpdatedEvent.prototype['OrgId'] = undefined;
  * @member {String} IpAddress
  */
 MenuSectionItemUpdatedEvent.prototype['IpAddress'] = undefined;
+
+/**
+ * Activity Id
+ * @member {String} ActivityId
+ */
+MenuSectionItemUpdatedEvent.prototype['ActivityId'] = undefined;
+
+/**
+ * Activity Type
+ * @member {String} ActivityType
+ */
+MenuSectionItemUpdatedEvent.prototype['ActivityType'] = undefined;
 
 
 

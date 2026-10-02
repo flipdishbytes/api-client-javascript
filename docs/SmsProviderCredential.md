@@ -4,12 +4,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**OrgId** | **String** |  | [optional] 
-**BrandId** | **String** |  | [optional] 
-**SmsServiceType** | **String** |  | [optional] 
-**SenderId** | **String** |  | [optional] 
-**Username** | **String** |  | [optional] 
-**AuthToken** | **String** |  | [optional] 
+**OrgId** | **String** | OrgId. | [optional] 
+**BrandId** | **String** | BrandId. | [optional] 
+**SmsServiceType** | **String** | SmsServiceType. | [optional] 
+**SenderId** | **String** | SenderId. | [optional] 
+**Username** | **String** | Username. | [optional] 
+**AuthToken** | **String** | AuthToken. | [optional] 
 
 
 
@@ -23,6 +23,8 @@ Name | Type | Description | Notes
 * `Default` (value: `"Default"`)
 
 * `MessageBird` (value: `"MessageBird"`)
+
+* `CommunicationService` (value: `"CommunicationService"`)
 
 
 

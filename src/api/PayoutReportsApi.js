@@ -19,6 +19,8 @@ import RestApiPaginationResultPayoutReport3RefundedOrder from '../model/RestApiP
 import RestApiResultFileCreationResult from '../model/RestApiResultFileCreationResult';
 import RestApiResultPayoutReport3Details from '../model/RestApiResultPayoutReport3Details';
 import RestApiResultPayoutReport3Overview from '../model/RestApiResultPayoutReport3Overview';
+import RestApiResultPayoutReport3PropertyDetails from '../model/RestApiResultPayoutReport3PropertyDetails';
+import RestApiResultPayoutReport3StorePayouts from '../model/RestApiResultPayoutReport3StorePayouts';
 
 /**
 * PayoutReports service.
@@ -150,6 +152,65 @@ export default class PayoutReportsApi {
     }
 
     /**
+     * Callback function to receive the result of the getPayoutReport3PropertyDetails operation.
+     * @callback module:api/PayoutReportsApi~getPayoutReport3PropertyDetailsCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/RestApiResultPayoutReport3PropertyDetails} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {String} appId 
+     * @param {Number} bankAccountId 
+     * @param {Number} payoutId 
+     * @param {Object} opts Optional parameters
+     * @param {Array.<String>} opts.propertyIds 
+     * @param {Array.<Number>} opts.storeIds 
+     * @param {module:api/PayoutReportsApi~getPayoutReport3PropertyDetailsCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/RestApiResultPayoutReport3PropertyDetails}
+     */
+    getPayoutReport3PropertyDetails(appId, bankAccountId, payoutId, opts, callback) {
+      opts = opts || {};
+      let postBody = null;
+      // verify the required parameter 'appId' is set
+      if (appId === undefined || appId === null) {
+        throw new Error("Missing the required parameter 'appId' when calling getPayoutReport3PropertyDetails");
+      }
+      // verify the required parameter 'bankAccountId' is set
+      if (bankAccountId === undefined || bankAccountId === null) {
+        throw new Error("Missing the required parameter 'bankAccountId' when calling getPayoutReport3PropertyDetails");
+      }
+      // verify the required parameter 'payoutId' is set
+      if (payoutId === undefined || payoutId === null) {
+        throw new Error("Missing the required parameter 'payoutId' when calling getPayoutReport3PropertyDetails");
+      }
+
+      let pathParams = {
+        'appId': appId,
+        'bankAccountId': bankAccountId,
+        'payoutId': payoutId
+      };
+      let queryParams = {
+        'propertyIds': this.apiClient.buildCollectionParam(opts['propertyIds'], 'multi'),
+        'storeIds': this.apiClient.buildCollectionParam(opts['storeIds'], 'multi')
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = [];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'Data', 'Message', 'ErrorCode', 'StackTrace'];
+      let returnType = RestApiResultPayoutReport3PropertyDetails;
+      return this.apiClient.callApi(
+        '/api/v1.0/{appId}/reporting/reports/payouts3/{bankAccountId}/{payoutId}/properties', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
      * Callback function to receive the result of the getPayoutReport3RefundedOrders operation.
      * @callback module:api/PayoutReportsApi~getPayoutReport3RefundedOrdersCallback
      * @param {String} error Error message, if any.
@@ -205,6 +266,63 @@ export default class PayoutReportsApi {
       let returnType = RestApiPaginationResultPayoutReport3RefundedOrder;
       return this.apiClient.callApi(
         '/api/v1.0/{appId}/reporting/reports/payouts3/{bankAccountId}/{payoutId}/refundedOrders', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the getPayoutReport3Stores operation.
+     * @callback module:api/PayoutReportsApi~getPayoutReport3StoresCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/RestApiResultPayoutReport3StorePayouts} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {String} appId 
+     * @param {Number} bankAccountId 
+     * @param {Number} payoutId 
+     * @param {Object} opts Optional parameters
+     * @param {Array.<Number>} opts.stores 
+     * @param {module:api/PayoutReportsApi~getPayoutReport3StoresCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/RestApiResultPayoutReport3StorePayouts}
+     */
+    getPayoutReport3Stores(appId, bankAccountId, payoutId, opts, callback) {
+      opts = opts || {};
+      let postBody = null;
+      // verify the required parameter 'appId' is set
+      if (appId === undefined || appId === null) {
+        throw new Error("Missing the required parameter 'appId' when calling getPayoutReport3Stores");
+      }
+      // verify the required parameter 'bankAccountId' is set
+      if (bankAccountId === undefined || bankAccountId === null) {
+        throw new Error("Missing the required parameter 'bankAccountId' when calling getPayoutReport3Stores");
+      }
+      // verify the required parameter 'payoutId' is set
+      if (payoutId === undefined || payoutId === null) {
+        throw new Error("Missing the required parameter 'payoutId' when calling getPayoutReport3Stores");
+      }
+
+      let pathParams = {
+        'appId': appId,
+        'bankAccountId': bankAccountId,
+        'payoutId': payoutId
+      };
+      let queryParams = {
+        'stores': this.apiClient.buildCollectionParam(opts['stores'], 'multi')
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = [];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'Data', 'Message', 'ErrorCode', 'StackTrace'];
+      let returnType = RestApiResultPayoutReport3StorePayouts;
+      return this.apiClient.callApi(
+        '/api/v1.0/{appId}/reporting/reports/payouts3/{bankAccountId}/{payoutId}/stores', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );
@@ -433,6 +551,63 @@ export default class PayoutReportsApi {
       let returnType = RestApiResultFileCreationResult;
       return this.apiClient.callApi(
         '/api/v1.0/{appId}/reporting/reports/payouts3/{bankAccountId}/{payoutId}/export/refundedOrders', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the payoutReport3ExportPayoutStores operation.
+     * @callback module:api/PayoutReportsApi~payoutReport3ExportPayoutStoresCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/RestApiResultFileCreationResult} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {String} appId 
+     * @param {Number} bankAccountId 
+     * @param {Number} payoutId 
+     * @param {Object} opts Optional parameters
+     * @param {Array.<Number>} opts.stores 
+     * @param {module:api/PayoutReportsApi~payoutReport3ExportPayoutStoresCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/RestApiResultFileCreationResult}
+     */
+    payoutReport3ExportPayoutStores(appId, bankAccountId, payoutId, opts, callback) {
+      opts = opts || {};
+      let postBody = null;
+      // verify the required parameter 'appId' is set
+      if (appId === undefined || appId === null) {
+        throw new Error("Missing the required parameter 'appId' when calling payoutReport3ExportPayoutStores");
+      }
+      // verify the required parameter 'bankAccountId' is set
+      if (bankAccountId === undefined || bankAccountId === null) {
+        throw new Error("Missing the required parameter 'bankAccountId' when calling payoutReport3ExportPayoutStores");
+      }
+      // verify the required parameter 'payoutId' is set
+      if (payoutId === undefined || payoutId === null) {
+        throw new Error("Missing the required parameter 'payoutId' when calling payoutReport3ExportPayoutStores");
+      }
+
+      let pathParams = {
+        'appId': appId,
+        'bankAccountId': bankAccountId,
+        'payoutId': payoutId
+      };
+      let queryParams = {
+        'stores': this.apiClient.buildCollectionParam(opts['stores'], 'multi')
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = [];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'Data', 'Message', 'ErrorCode', 'StackTrace'];
+      let returnType = RestApiResultFileCreationResult;
+      return this.apiClient.callApi(
+        '/api/v1.0/{appId}/reporting/reports/payouts3/{bankAccountId}/{payoutId}/export/stores', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );

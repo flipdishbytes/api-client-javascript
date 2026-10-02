@@ -102,6 +102,18 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property OrgId (base name: "OrgId")', function() {
+      // uncomment below and update the code to test the property OrgId
+      //var instance = new Flipdish.GetReceiptByOrderIdQueryResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property CountryCode (base name: "CountryCode")', function() {
+      // uncomment below and update the code to test the property CountryCode
+      //var instance = new Flipdish.GetReceiptByOrderIdQueryResponse();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));

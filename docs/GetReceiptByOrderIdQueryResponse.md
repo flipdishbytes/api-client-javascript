@@ -12,5 +12,7 @@ Name | Type | Description | Notes
 **Address** | **String** |  | [optional] 
 **VatNumber** | **String** |  | [optional] 
 **PaymentMethodDescription** | **String** |  | [optional] 
+**OrgId** | **String** |  | [optional] 
+**CountryCode** | **String** |  | [optional] 
 
 

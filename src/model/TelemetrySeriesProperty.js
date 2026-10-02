@@ -21,6 +21,7 @@ import ApiClient from '../ApiClient';
 class TelemetrySeriesProperty {
     /**
      * Constructs a new <code>TelemetrySeriesProperty</code>.
+     * TelemetrySeriesProperty.
      * @alias module:model/TelemetrySeriesProperty
      */
     constructor() { 
@@ -70,26 +71,31 @@ class TelemetrySeriesProperty {
 }
 
 /**
+ * Name.
  * @member {String} Name
  */
 TelemetrySeriesProperty.prototype['Name'] = undefined;
 
 /**
+ * Type.
  * @member {String} Type
  */
 TelemetrySeriesProperty.prototype['Type'] = undefined;
 
 /**
+ * IntValues.
  * @member {Array.<Number>} IntValues
  */
 TelemetrySeriesProperty.prototype['IntValues'] = undefined;
 
 /**
+ * StringValues.
  * @member {Array.<String>} StringValues
  */
 TelemetrySeriesProperty.prototype['StringValues'] = undefined;
 
 /**
+ * DoubleValues.
  * @member {Array.<Number>} DoubleValues
  */
 TelemetrySeriesProperty.prototype['DoubleValues'] = undefined;

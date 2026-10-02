@@ -68,10 +68,30 @@
         done();
       });
     });
+    describe('getPayoutReport3PropertyDetails', function() {
+      it('should call getPayoutReport3PropertyDetails successfully', function(done) {
+        //uncomment below and update the code to test getPayoutReport3PropertyDetails
+        //instance.getPayoutReport3PropertyDetails(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('getPayoutReport3RefundedOrders', function() {
       it('should call getPayoutReport3RefundedOrders successfully', function(done) {
         //uncomment below and update the code to test getPayoutReport3RefundedOrders
         //instance.getPayoutReport3RefundedOrders(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('getPayoutReport3Stores', function() {
+      it('should call getPayoutReport3Stores successfully', function(done) {
+        //uncomment below and update the code to test getPayoutReport3Stores
+        //instance.getPayoutReport3Stores(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -112,6 +132,16 @@
       it('should call payoutReport3ExportPayoutRefundedOrders successfully', function(done) {
         //uncomment below and update the code to test payoutReport3ExportPayoutRefundedOrders
         //instance.payoutReport3ExportPayoutRefundedOrders(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('payoutReport3ExportPayoutStores', function() {
+      it('should call payoutReport3ExportPayoutStores successfully', function(done) {
+        //uncomment below and update the code to test payoutReport3ExportPayoutStores
+        //instance.payoutReport3ExportPayoutStores(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

@@ -21,6 +21,7 @@ import ApiClient from '../ApiClient';
 class MenuZone {
     /**
      * Constructs a new <code>MenuZone</code>.
+     * MenuZone.
      * @alias module:model/MenuZone
      */
     constructor() { 
@@ -76,36 +77,43 @@ class MenuZone {
 }
 
 /**
+ * MenuZoneId.
  * @member {Number} MenuZoneId
  */
 MenuZone.prototype['MenuZoneId'] = undefined;
 
 /**
+ * MenuId.
  * @member {Number} MenuId
  */
 MenuZone.prototype['MenuId'] = undefined;
 
 /**
+ * Name.
  * @member {String} Name
  */
 MenuZone.prototype['Name'] = undefined;
 
 /**
+ * Description.
  * @member {String} Description
  */
 MenuZone.prototype['Description'] = undefined;
 
 /**
+ * ImageName.
  * @member {String} ImageName
  */
 MenuZone.prototype['ImageName'] = undefined;
 
 /**
+ * DisplayOrder.
  * @member {Number} DisplayOrder
  */
 MenuZone.prototype['DisplayOrder'] = undefined;
 
 /**
+ * ImageUrl.
  * @member {String} ImageUrl
  */
 MenuZone.prototype['ImageUrl'] = undefined;

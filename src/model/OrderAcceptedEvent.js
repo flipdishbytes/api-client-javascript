@@ -83,6 +83,12 @@ class OrderAcceptedEvent {
             if (data.hasOwnProperty('IpAddress')) {
                 obj['IpAddress'] = ApiClient.convertToType(data['IpAddress'], 'String');
             }
+            if (data.hasOwnProperty('ActivityId')) {
+                obj['ActivityId'] = ApiClient.convertToType(data['ActivityId'], 'String');
+            }
+            if (data.hasOwnProperty('ActivityType')) {
+                obj['ActivityType'] = ApiClient.convertToType(data['ActivityType'], 'String');
+            }
         }
         return obj;
     }
@@ -153,6 +159,18 @@ OrderAcceptedEvent.prototype['AppId'] = undefined;
  * @member {String} IpAddress
  */
 OrderAcceptedEvent.prototype['IpAddress'] = undefined;
+
+/**
+ * Activity Id
+ * @member {String} ActivityId
+ */
+OrderAcceptedEvent.prototype['ActivityId'] = undefined;
+
+/**
+ * Activity Type
+ * @member {String} ActivityType
+ */
+OrderAcceptedEvent.prototype['ActivityType'] = undefined;
 
 
 

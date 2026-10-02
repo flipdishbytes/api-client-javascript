@@ -128,6 +128,9 @@ class Voucher {
             if (data.hasOwnProperty('IsDiscoverable')) {
                 obj['IsDiscoverable'] = ApiClient.convertToType(data['IsDiscoverable'], 'Boolean');
             }
+            if (data.hasOwnProperty('IsPromoted')) {
+                obj['IsPromoted'] = ApiClient.convertToType(data['IsPromoted'], 'Boolean');
+            }
             if (data.hasOwnProperty('ForceDiscount')) {
                 obj['ForceDiscount'] = ApiClient.convertToType(data['ForceDiscount'], 'Boolean');
             }
@@ -304,6 +307,12 @@ Voucher.prototype['IsValidOnlyOnce'] = undefined;
  * @member {Boolean} IsDiscoverable
  */
 Voucher.prototype['IsDiscoverable'] = undefined;
+
+/**
+ * Marks the voucher as promoted
+ * @member {Boolean} IsPromoted
+ */
+Voucher.prototype['IsPromoted'] = undefined;
 
 /**
  * Force the discount to be applied which bypasses some menu restrictions

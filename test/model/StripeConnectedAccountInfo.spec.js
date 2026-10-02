@@ -96,6 +96,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property DisabledReason (base name: "DisabledReason")', function() {
+      // uncomment below and update the code to test the property DisabledReason
+      //var instance = new Flipdish.StripeConnectedAccountInfo();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));

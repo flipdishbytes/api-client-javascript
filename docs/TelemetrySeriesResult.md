@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Timestamps** | **[Date]** |  | [optional] 
-**Properties** | [**[TelemetrySeriesProperty]**](TelemetrySeriesProperty.md) |  | [optional] 
+**Timestamps** | **[Date]** | Timestamps. | [optional] 
+**Properties** | [**[TelemetrySeriesProperty]**](TelemetrySeriesProperty.md) | Properties. | [optional] 
 
 

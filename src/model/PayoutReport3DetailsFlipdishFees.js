@@ -95,6 +95,12 @@ class PayoutReport3DetailsFlipdishFees {
             if (data.hasOwnProperty('OtherIntegrationFees')) {
                 obj['OtherIntegrationFees'] = ApiClient.convertToType(data['OtherIntegrationFees'], 'Number');
             }
+            if (data.hasOwnProperty('OtherIntegrationFeesExcludingVat')) {
+                obj['OtherIntegrationFeesExcludingVat'] = ApiClient.convertToType(data['OtherIntegrationFeesExcludingVat'], 'Number');
+            }
+            if (data.hasOwnProperty('OtherIntegrationFeesVatAmount')) {
+                obj['OtherIntegrationFeesVatAmount'] = ApiClient.convertToType(data['OtherIntegrationFeesVatAmount'], 'Number');
+            }
             if (data.hasOwnProperty('OtherIntegrationTips')) {
                 obj['OtherIntegrationTips'] = ApiClient.convertToType(data['OtherIntegrationTips'], 'Number');
             }
@@ -220,6 +226,16 @@ PayoutReport3DetailsFlipdishFees.prototype['PosCardOnFlipdishOrders'] = undefine
  * @member {Number} OtherIntegrationFees
  */
 PayoutReport3DetailsFlipdishFees.prototype['OtherIntegrationFees'] = undefined;
+
+/**
+ * @member {Number} OtherIntegrationFeesExcludingVat
+ */
+PayoutReport3DetailsFlipdishFees.prototype['OtherIntegrationFeesExcludingVat'] = undefined;
+
+/**
+ * @member {Number} OtherIntegrationFeesVatAmount
+ */
+PayoutReport3DetailsFlipdishFees.prototype['OtherIntegrationFeesVatAmount'] = undefined;
 
 /**
  * @member {Number} OtherIntegrationTips

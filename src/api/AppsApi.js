@@ -505,6 +505,57 @@ export default class AppsApi {
     }
 
     /**
+     * Callback function to receive the result of the sendPushNotification operation.
+     * @callback module:api/AppsApi~sendPushNotificationCallback
+     * @param {String} error Error message, if any.
+     * @param data This operation does not return a value.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {String} appId 
+     * @param {Number} customerId 
+     * @param {String} message 
+     * @param {module:api/AppsApi~sendPushNotificationCallback} callback The callback function, accepting three arguments: error, data, response
+     */
+    sendPushNotification(appId, customerId, message, callback) {
+      let postBody = message;
+      // verify the required parameter 'appId' is set
+      if (appId === undefined || appId === null) {
+        throw new Error("Missing the required parameter 'appId' when calling sendPushNotification");
+      }
+      // verify the required parameter 'customerId' is set
+      if (customerId === undefined || customerId === null) {
+        throw new Error("Missing the required parameter 'customerId' when calling sendPushNotification");
+      }
+      // verify the required parameter 'message' is set
+      if (message === undefined || message === null) {
+        throw new Error("Missing the required parameter 'message' when calling sendPushNotification");
+      }
+
+      let pathParams = {
+        'appId': appId,
+        'customerId': customerId
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded'];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
+      let returnType = null;
+      return this.apiClient.callApi(
+        '/api/v1.0/apps/{appId}/SendPushNotification/{customerId}', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
      * Callback function to receive the result of the setAppConfig operation.
      * @callback module:api/AppsApi~setAppConfigCallback
      * @param {String} error Error message, if any.
@@ -781,6 +832,52 @@ export default class AppsApi {
       let returnType = RestApiStringResult;
       return this.apiClient.callApi(
         '/api/v1.0/apps/{appId}/panacea/url', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the setThirdPartyIntegrations operation.
+     * @callback module:api/AppsApi~setThirdPartyIntegrationsCallback
+     * @param {String} error Error message, if any.
+     * @param data This operation does not return a value.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {String} appId 
+     * @param {Boolean} enabled 
+     * @param {module:api/AppsApi~setThirdPartyIntegrationsCallback} callback The callback function, accepting three arguments: error, data, response
+     */
+    setThirdPartyIntegrations(appId, enabled, callback) {
+      let postBody = null;
+      // verify the required parameter 'appId' is set
+      if (appId === undefined || appId === null) {
+        throw new Error("Missing the required parameter 'appId' when calling setThirdPartyIntegrations");
+      }
+      // verify the required parameter 'enabled' is set
+      if (enabled === undefined || enabled === null) {
+        throw new Error("Missing the required parameter 'enabled' when calling setThirdPartyIntegrations");
+      }
+
+      let pathParams = {
+        'appId': appId
+      };
+      let queryParams = {
+        'enabled': enabled
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = [];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
+      let returnType = null;
+      return this.apiClient.callApi(
+        '/api/v1.0/apps/{appId}/third-party-integrations', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );

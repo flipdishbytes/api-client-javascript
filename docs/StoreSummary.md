@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 **Id** | **Number** | Store identifier | [optional] 
 **Name** | **String** | Store name | [optional] 
 **MenuId** | **Number** | Stores menu identifier | [optional] 
+**MenuPublishId** | **String** | Stores menu publish GUID | [optional] 
 **Metadata** | **{String: String}** | Store metadata | [optional] 
 **Currency** | **String** | Currency which used by the Store | [optional] 
 **Coordinates** | [**Coordinates**](Coordinates.md) |  | [optional] 
@@ -15,6 +16,8 @@ Name | Type | Description | Notes
 **StoreGroupId** | **Number** | Store group id of store | [optional] 
 **TaxId** | **String** | VAT number or generic Tax ID of the store | [optional] 
 **PrettyAddress** | **String** | Address of the store | [optional] 
+**CountryCode** | **String** | Country code of the store address (ISO 3166-1 alpha-2) | [optional] 
+**PropertyId** | **String** | Property identifier | [optional] 
 
 
 

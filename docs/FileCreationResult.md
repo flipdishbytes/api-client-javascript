@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**FileId** | **String** |  | [optional] 
-**Location** | **String** |  | [optional] 
+**FileId** | **String** | FileId. | [optional] 
+**Location** | **String** | Location. | [optional] 
 
 

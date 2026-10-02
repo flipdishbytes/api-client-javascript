@@ -58,6 +58,16 @@
         done();
       });
     });
+    describe('deleteFpmForStore', function() {
+      it('should call deleteFpmForStore successfully', function(done) {
+        //uncomment below and update the code to test deleteFpmForStore
+        //instance.deleteFpmForStore(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('editFpmForStore', function() {
       it('should call editFpmForStore successfully', function(done) {
         //uncomment below and update the code to test editFpmForStore

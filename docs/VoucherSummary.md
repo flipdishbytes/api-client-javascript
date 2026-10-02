@@ -11,6 +11,10 @@ Name | Type | Description | Notes
 **VoucherSubType** | **String** | Voucher Sub Type | [optional] 
 **Description** | **String** | Voucher Description (Visible on printout) | [optional] 
 **IsEnabled** | **Boolean** | Is voucher enabled | [optional] 
+**IsPromoted** | **Boolean** | Marks the voucher as promoted | [optional] 
+**StoreNames** | **[String]** | Store names associated with this voucher | [optional] 
+**IsAvailableOnAllStores** | **Boolean** | True if the voucher is available on all active stores in the app | [optional] 
+**ChannelRestrictions** | **[String]** | Channels the voucher is restricted to | [optional] 
 
 
 
@@ -64,6 +68,25 @@ Name | Type | Description | Notes
 * `SecondaryRetention` (value: `"SecondaryRetention"`)
 
 * `Custom` (value: `"Custom"`)
+
+
+
+
+
+## Enum: [ChannelRestrictionsEnum]
+
+
+* `Ios` (value: `"Ios"`)
+
+* `Android` (value: `"Android"`)
+
+* `Web` (value: `"Web"`)
+
+* `Kiosk` (value: `"Kiosk"`)
+
+* `Pos` (value: `"Pos"`)
+
+* `Google` (value: `"Google"`)
 
 
 

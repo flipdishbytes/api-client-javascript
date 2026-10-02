@@ -6,11 +6,14 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**getPayoutReport3Details**](PayoutReportsApi.md#getPayoutReport3Details) | **GET** /api/v1.0/{appId}/reporting/reports/payouts3/{bankAccountId}/{payoutId}/details | 
 [**getPayoutReport3Overview**](PayoutReportsApi.md#getPayoutReport3Overview) | **GET** /api/v1.0/{appId}/reporting/reports/payouts3/{bankAccountId}/{payoutId}/overview | 
+[**getPayoutReport3PropertyDetails**](PayoutReportsApi.md#getPayoutReport3PropertyDetails) | **GET** /api/v1.0/{appId}/reporting/reports/payouts3/{bankAccountId}/{payoutId}/properties | 
 [**getPayoutReport3RefundedOrders**](PayoutReportsApi.md#getPayoutReport3RefundedOrders) | **GET** /api/v1.0/{appId}/reporting/reports/payouts3/{bankAccountId}/{payoutId}/refundedOrders | 
+[**getPayoutReport3Stores**](PayoutReportsApi.md#getPayoutReport3Stores) | **GET** /api/v1.0/{appId}/reporting/reports/payouts3/{bankAccountId}/{payoutId}/stores | 
 [**payoutReport3ExportPayoutChargebacks**](PayoutReportsApi.md#payoutReport3ExportPayoutChargebacks) | **GET** /api/v1.0/{appId}/reporting/reports/payouts3/{bankAccountId}/{payoutId}/export/chargebacks | 
 [**payoutReport3ExportPayoutOrders**](PayoutReportsApi.md#payoutReport3ExportPayoutOrders) | **GET** /api/v1.0/{appId}/reporting/reports/payouts3/{bankAccountId}/{payoutId}/export/orders | 
 [**payoutReport3ExportPayoutPosSales**](PayoutReportsApi.md#payoutReport3ExportPayoutPosSales) | **GET** /api/v1.0/{appId}/reporting/reports/payouts3/{bankAccountId}/{payoutId}/export/possales | 
 [**payoutReport3ExportPayoutRefundedOrders**](PayoutReportsApi.md#payoutReport3ExportPayoutRefundedOrders) | **GET** /api/v1.0/{appId}/reporting/reports/payouts3/{bankAccountId}/{payoutId}/export/refundedOrders | 
+[**payoutReport3ExportPayoutStores**](PayoutReportsApi.md#payoutReport3ExportPayoutStores) | **GET** /api/v1.0/{appId}/reporting/reports/payouts3/{bankAccountId}/{payoutId}/export/stores | 
 
 
 
@@ -120,6 +123,63 @@ Name | Type | Description  | Notes
 - **Accept**: application/json, text/json, application/xml, text/xml, Data, Message, ErrorCode, StackTrace
 
 
+## getPayoutReport3PropertyDetails
+
+> RestApiResultPayoutReport3PropertyDetails getPayoutReport3PropertyDetails(appId, bankAccountId, payoutId, opts)
+
+
+
+### Example
+
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
+// Configure OAuth2 access token for authorization: oauth2
+let oauth2 = defaultClient.authentications['oauth2'];
+oauth2.accessToken = 'YOUR ACCESS TOKEN';
+
+let apiInstance = new Flipdish.PayoutReportsApi();
+let appId = "appId_example"; // String | 
+let bankAccountId = 56; // Number | 
+let payoutId = 56; // Number | 
+let opts = {
+  'propertyIds': ["null"], // [String] | 
+  'storeIds': [null] // [Number] | 
+};
+apiInstance.getPayoutReport3PropertyDetails(appId, bankAccountId, payoutId, opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **appId** | **String**|  | 
+ **bankAccountId** | **Number**|  | 
+ **payoutId** | **Number**|  | 
+ **propertyIds** | [**[String]**](String.md)|  | [optional] 
+ **storeIds** | [**[Number]**](Number.md)|  | [optional] 
+
+### Return type
+
+[**RestApiResultPayoutReport3PropertyDetails**](RestApiResultPayoutReport3PropertyDetails.md)
+
+### Authorization
+
+[oauth2](../README.md#oauth2)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, Data, Message, ErrorCode, StackTrace
+
+
 ## getPayoutReport3RefundedOrders
 
 > RestApiPaginationResultPayoutReport3RefundedOrder getPayoutReport3RefundedOrders(appId, bankAccountId, payoutId, opts)
@@ -168,6 +228,61 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**RestApiPaginationResultPayoutReport3RefundedOrder**](RestApiPaginationResultPayoutReport3RefundedOrder.md)
+
+### Authorization
+
+[oauth2](../README.md#oauth2)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, Data, Message, ErrorCode, StackTrace
+
+
+## getPayoutReport3Stores
+
+> RestApiResultPayoutReport3StorePayouts getPayoutReport3Stores(appId, bankAccountId, payoutId, opts)
+
+
+
+### Example
+
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
+// Configure OAuth2 access token for authorization: oauth2
+let oauth2 = defaultClient.authentications['oauth2'];
+oauth2.accessToken = 'YOUR ACCESS TOKEN';
+
+let apiInstance = new Flipdish.PayoutReportsApi();
+let appId = "appId_example"; // String | 
+let bankAccountId = 56; // Number | 
+let payoutId = 56; // Number | 
+let opts = {
+  'stores': [null] // [Number] | 
+};
+apiInstance.getPayoutReport3Stores(appId, bankAccountId, payoutId, opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **appId** | **String**|  | 
+ **bankAccountId** | **Number**|  | 
+ **payoutId** | **Number**|  | 
+ **stores** | [**[Number]**](Number.md)|  | [optional] 
+
+### Return type
+
+[**RestApiResultPayoutReport3StorePayouts**](RestApiResultPayoutReport3StorePayouts.md)
 
 ### Authorization
 
@@ -367,6 +482,61 @@ let opts = {
   'stores': [null] // [Number] | 
 };
 apiInstance.payoutReport3ExportPayoutRefundedOrders(appId, bankAccountId, payoutId, opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **appId** | **String**|  | 
+ **bankAccountId** | **Number**|  | 
+ **payoutId** | **Number**|  | 
+ **stores** | [**[Number]**](Number.md)|  | [optional] 
+
+### Return type
+
+[**RestApiResultFileCreationResult**](RestApiResultFileCreationResult.md)
+
+### Authorization
+
+[oauth2](../README.md#oauth2)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, Data, Message, ErrorCode, StackTrace
+
+
+## payoutReport3ExportPayoutStores
+
+> RestApiResultFileCreationResult payoutReport3ExportPayoutStores(appId, bankAccountId, payoutId, opts)
+
+
+
+### Example
+
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
+// Configure OAuth2 access token for authorization: oauth2
+let oauth2 = defaultClient.authentications['oauth2'];
+oauth2.accessToken = 'YOUR ACCESS TOKEN';
+
+let apiInstance = new Flipdish.PayoutReportsApi();
+let appId = "appId_example"; // String | 
+let bankAccountId = 56; // Number | 
+let payoutId = 56; // Number | 
+let opts = {
+  'stores': [null] // [Number] | 
+};
+apiInstance.payoutReport3ExportPayoutStores(appId, bankAccountId, payoutId, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {

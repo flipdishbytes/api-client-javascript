@@ -15,6 +15,7 @@
 import ApiClient from "../ApiClient";
 import CreateVoucher from '../model/CreateVoucher';
 import RestApiArrayResultVoucherDataPoint from '../model/RestApiArrayResultVoucherDataPoint';
+import RestApiArrayResultVoucherSummary from '../model/RestApiArrayResultVoucherSummary';
 import RestApiErrorResult from '../model/RestApiErrorResult';
 import RestApiForbiddenResult from '../model/RestApiForbiddenResult';
 import RestApiPaginationResultVoucherSummary from '../model/RestApiPaginationResultVoucherSummary';
@@ -329,6 +330,53 @@ export default class VouchersApi {
       let returnType = RestApiPaginationResultVoucherSummary;
       return this.apiClient.callApi(
         '/api/v1.0/{appId}/vouchers/summaries', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the getVouchersByCustomerForApp operation.
+     * @callback module:api/VouchersApi~getVouchersByCustomerForAppCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/RestApiArrayResultVoucherSummary} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {String} appId 
+     * @param {Number} customerId 
+     * @param {module:api/VouchersApi~getVouchersByCustomerForAppCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/RestApiArrayResultVoucherSummary}
+     */
+    getVouchersByCustomerForApp(appId, customerId, callback) {
+      let postBody = null;
+      // verify the required parameter 'appId' is set
+      if (appId === undefined || appId === null) {
+        throw new Error("Missing the required parameter 'appId' when calling getVouchersByCustomerForApp");
+      }
+      // verify the required parameter 'customerId' is set
+      if (customerId === undefined || customerId === null) {
+        throw new Error("Missing the required parameter 'customerId' when calling getVouchersByCustomerForApp");
+      }
+
+      let pathParams = {
+        'appId': appId,
+        'customerId': customerId
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = [];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'Data', 'Message', 'ErrorCode', 'StackTrace'];
+      let returnType = RestApiArrayResultVoucherSummary;
+      return this.apiClient.callApi(
+        '/api/v1.0/vouchers/{appId}/customer/{customerId}', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );

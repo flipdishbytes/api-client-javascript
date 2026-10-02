@@ -21,6 +21,7 @@ import ApiClient from '../ApiClient';
 class RestaurantVoucherEligibleStore {
     /**
      * Constructs a new <code>RestaurantVoucherEligibleStore</code>.
+     * RestaurantVoucherEligibleStore.
      * @alias module:model/RestaurantVoucherEligibleStore
      */
     constructor() { 
@@ -61,11 +62,13 @@ class RestaurantVoucherEligibleStore {
 }
 
 /**
+ * StoreId.
  * @member {Number} StoreId
  */
 RestaurantVoucherEligibleStore.prototype['StoreId'] = undefined;
 
 /**
+ * Name.
  * @member {String} Name
  */
 RestaurantVoucherEligibleStore.prototype['Name'] = undefined;

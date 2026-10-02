@@ -65,6 +65,15 @@ class BankAccountSummary {
             if (data.hasOwnProperty('CurrencyCode')) {
                 obj['CurrencyCode'] = ApiClient.convertToType(data['CurrencyCode'], 'String');
             }
+            if (data.hasOwnProperty('VatNumber')) {
+                obj['VatNumber'] = ApiClient.convertToType(data['VatNumber'], 'String');
+            }
+            if (data.hasOwnProperty('AccountHolderAddress')) {
+                obj['AccountHolderAddress'] = ApiClient.convertToType(data['AccountHolderAddress'], 'String');
+            }
+            if (data.hasOwnProperty('AccountHolderCountryCode')) {
+                obj['AccountHolderCountryCode'] = ApiClient.convertToType(data['AccountHolderCountryCode'], 'String');
+            }
             if (data.hasOwnProperty('StripeConnectedAccountInfo')) {
                 obj['StripeConnectedAccountInfo'] = StripeConnectedAccountInfo.constructFromObject(data['StripeConnectedAccountInfo']);
             }
@@ -125,6 +134,24 @@ BankAccountSummary.prototype['AccountState'] = undefined;
  * @member {String} CurrencyCode
  */
 BankAccountSummary.prototype['CurrencyCode'] = undefined;
+
+/**
+ * Account Holders Vat Number
+ * @member {String} VatNumber
+ */
+BankAccountSummary.prototype['VatNumber'] = undefined;
+
+/**
+ * Account Holders Address
+ * @member {String} AccountHolderAddress
+ */
+BankAccountSummary.prototype['AccountHolderAddress'] = undefined;
+
+/**
+ * Account Holders Country Code
+ * @member {String} AccountHolderCountryCode
+ */
+BankAccountSummary.prototype['AccountHolderCountryCode'] = undefined;
 
 /**
  * @member {module:model/StripeConnectedAccountInfo} StripeConnectedAccountInfo

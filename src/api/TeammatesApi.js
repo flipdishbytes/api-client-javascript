@@ -318,6 +318,47 @@ export default class TeammatesApi {
     }
 
     /**
+     * Callback function to receive the result of the teammateMobileRedirect operation.
+     * @callback module:api/TeammatesApi~teammateMobileRedirectCallback
+     * @param {String} error Error message, if any.
+     * @param {Object} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {String} portalUrl 
+     * @param {module:api/TeammatesApi~teammateMobileRedirectCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link Object}
+     */
+    teammateMobileRedirect(portalUrl, callback) {
+      let postBody = null;
+      // verify the required parameter 'portalUrl' is set
+      if (portalUrl === undefined || portalUrl === null) {
+        throw new Error("Missing the required parameter 'portalUrl' when calling teammateMobileRedirect");
+      }
+
+      let pathParams = {
+      };
+      let queryParams = {
+        'portalUrl': portalUrl
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = [];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
+      let returnType = Object;
+      return this.apiClient.callApi(
+        '/api/v1.0/teammates/mobile-redirect', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
      * Callback function to receive the result of the teammatesAcceptInvitation operation.
      * @callback module:api/TeammatesApi~teammatesAcceptInvitationCallback
      * @param {String} error Error message, if any.

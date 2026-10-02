@@ -10,6 +10,7 @@ Method | HTTP request | Description
 [**getTeammatesByAppId**](TeammatesApi.md#getTeammatesByAppId) | **GET** /api/v1.0/{appId}/teammates | 
 [**grantaccess**](TeammatesApi.md#grantaccess) | **POST** /api/v1.0/{appId}/teammates/grantaccess | 
 [**redeemInvitation**](TeammatesApi.md#redeemInvitation) | **GET** /api/v1.0/{appId}/teammates/redeem/{otc} | 
+[**teammateMobileRedirect**](TeammatesApi.md#teammateMobileRedirect) | **GET** /api/v1.0/teammates/mobile-redirect | 
 [**teammatesAcceptInvitation**](TeammatesApi.md#teammatesAcceptInvitation) | **GET** /api/v1.0/{appId}/teammates/accept/{otc} | 
 [**teammatesAcceptInvitations**](TeammatesApi.md#teammatesAcceptInvitations) | **POST** /api/v1.0/teammates/acceptInvitations | 
 [**teammatesPendingInvitations**](TeammatesApi.md#teammatesPendingInvitations) | **GET** /api/v1.0/teammates/pending-invitations | 
@@ -307,6 +308,53 @@ Name | Type | Description  | Notes
 
 - **Content-Type**: Not defined
 - **Accept**: application/json, text/json, application/xml, text/xml, Data
+
+
+## teammateMobileRedirect
+
+> Object teammateMobileRedirect(portalUrl)
+
+
+
+### Example
+
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
+// Configure OAuth2 access token for authorization: oauth2
+let oauth2 = defaultClient.authentications['oauth2'];
+oauth2.accessToken = 'YOUR ACCESS TOKEN';
+
+let apiInstance = new Flipdish.TeammatesApi();
+let portalUrl = "portalUrl_example"; // String | 
+apiInstance.teammateMobileRedirect(portalUrl, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **portalUrl** | **String**|  | 
+
+### Return type
+
+**Object**
+
+### Authorization
+
+[oauth2](../README.md#oauth2)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml
 
 
 ## teammatesAcceptInvitation

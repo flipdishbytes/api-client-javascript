@@ -25,6 +25,8 @@ Name | Type | Description | Notes
 
 * `None` (value: `"None"`)
 
+* `PhoneAgent` (value: `"PhoneAgent"`)
+
 
 
 

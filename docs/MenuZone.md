@@ -4,12 +4,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**MenuZoneId** | **Number** |  | [optional] 
-**MenuId** | **Number** |  | [optional] 
-**Name** | **String** |  | [optional] 
-**Description** | **String** |  | [optional] 
-**ImageName** | **String** |  | [optional] 
-**DisplayOrder** | **Number** |  | [optional] 
-**ImageUrl** | **String** |  | [optional] 
+**MenuZoneId** | **Number** | MenuZoneId. | [optional] 
+**MenuId** | **Number** | MenuId. | [optional] 
+**Name** | **String** | Name. | [optional] 
+**Description** | **String** | Description. | [optional] 
+**ImageName** | **String** | ImageName. | [optional] 
+**DisplayOrder** | **Number** | DisplayOrder. | [optional] 
+**ImageUrl** | **String** | ImageUrl. | [optional] 
 
 

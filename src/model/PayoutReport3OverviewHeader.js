@@ -83,6 +83,9 @@ class PayoutReport3OverviewHeader {
             if (data.hasOwnProperty('Currency')) {
                 obj['Currency'] = ApiClient.convertToType(data['Currency'], 'String');
             }
+            if (data.hasOwnProperty('BankAccountHasChanged')) {
+                obj['BankAccountHasChanged'] = ApiClient.convertToType(data['BankAccountHasChanged'], 'Boolean');
+            }
         }
         return obj;
     }
@@ -149,6 +152,11 @@ PayoutReport3OverviewHeader.prototype['Amount'] = undefined;
  * @member {String} Currency
  */
 PayoutReport3OverviewHeader.prototype['Currency'] = undefined;
+
+/**
+ * @member {Boolean} BankAccountHasChanged
+ */
+PayoutReport3OverviewHeader.prototype['BankAccountHasChanged'] = undefined;
 
 
 

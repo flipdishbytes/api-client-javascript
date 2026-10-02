@@ -438,6 +438,12 @@ AppStoreAppConfiguration['TeammateAppAccessLevelEnum'] = {
     "StoreStaff": "StoreStaff",
 
     /**
+     * value: "StaffMember"
+     * @const
+     */
+    "StaffMember": "StaffMember",
+
+    /**
      * value: "StoreReadOnlyAccess"
      * @const
      */

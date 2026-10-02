@@ -69,6 +69,12 @@ class FlipdishEventBase {
             if (data.hasOwnProperty('IpAddress')) {
                 obj['IpAddress'] = ApiClient.convertToType(data['IpAddress'], 'String');
             }
+            if (data.hasOwnProperty('ActivityId')) {
+                obj['ActivityId'] = ApiClient.convertToType(data['ActivityId'], 'String');
+            }
+            if (data.hasOwnProperty('ActivityType')) {
+                obj['ActivityType'] = ApiClient.convertToType(data['ActivityType'], 'String');
+            }
         }
         return obj;
     }
@@ -117,6 +123,18 @@ FlipdishEventBase.prototype['OrgId'] = undefined;
  * @member {String} IpAddress
  */
 FlipdishEventBase.prototype['IpAddress'] = undefined;
+
+/**
+ * Activity Id
+ * @member {String} ActivityId
+ */
+FlipdishEventBase.prototype['ActivityId'] = undefined;
+
+/**
+ * Activity Type
+ * @member {String} ActivityType
+ */
+FlipdishEventBase.prototype['ActivityType'] = undefined;
 
 
 

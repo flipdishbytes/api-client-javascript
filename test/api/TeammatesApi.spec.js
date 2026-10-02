@@ -108,6 +108,16 @@
         done();
       });
     });
+    describe('teammateMobileRedirect', function() {
+      it('should call teammateMobileRedirect successfully', function(done) {
+        //uncomment below and update the code to test teammateMobileRedirect
+        //instance.teammateMobileRedirect(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('teammatesAcceptInvitation', function() {
       it('should call teammatesAcceptInvitation successfully', function(done) {
         //uncomment below and update the code to test teammatesAcceptInvitation

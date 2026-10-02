@@ -54,6 +54,12 @@
       //expect(instance).to.be.a(Flipdish.UserFlipdishAccount);
     });
 
+    it('should have the property PayeeBankAccountDataId (base name: "PayeeBankAccountDataId")', function() {
+      // uncomment below and update the code to test the property PayeeBankAccountDataId
+      //var instance = new Flipdish.UserFlipdishAccount();
+      //expect(instance).to.be();
+    });
+
     it('should have the property FlipdishAccountId (base name: "FlipdishAccountId")', function() {
       // uncomment below and update the code to test the property FlipdishAccountId
       //var instance = new Flipdish.UserFlipdishAccount();

@@ -62,11 +62,13 @@ class BalanceDetails {
 }
 
 /**
+ * OpeningBalance.
  * @member {Number} OpeningBalance
  */
 BalanceDetails.prototype['OpeningBalance'] = undefined;
 
 /**
+ * ClosingBalance.
  * @member {Number} ClosingBalance
  */
 BalanceDetails.prototype['ClosingBalance'] = undefined;

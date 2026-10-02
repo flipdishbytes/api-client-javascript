@@ -21,6 +21,7 @@ import ApiClient from '../ApiClient';
 class Channel {
     /**
      * Constructs a new <code>Channel</code>.
+     * Channel.
      * @alias module:model/Channel
      */
     constructor() { 

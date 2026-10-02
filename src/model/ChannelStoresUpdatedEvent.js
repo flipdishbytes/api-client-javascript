@@ -79,6 +79,12 @@ class ChannelStoresUpdatedEvent {
             if (data.hasOwnProperty('IpAddress')) {
                 obj['IpAddress'] = ApiClient.convertToType(data['IpAddress'], 'String');
             }
+            if (data.hasOwnProperty('ActivityId')) {
+                obj['ActivityId'] = ApiClient.convertToType(data['ActivityId'], 'String');
+            }
+            if (data.hasOwnProperty('ActivityType')) {
+                obj['ActivityType'] = ApiClient.convertToType(data['ActivityType'], 'String');
+            }
         }
         return obj;
     }
@@ -144,6 +150,18 @@ ChannelStoresUpdatedEvent.prototype['OrgId'] = undefined;
  * @member {String} IpAddress
  */
 ChannelStoresUpdatedEvent.prototype['IpAddress'] = undefined;
+
+/**
+ * Activity Id
+ * @member {String} ActivityId
+ */
+ChannelStoresUpdatedEvent.prototype['ActivityId'] = undefined;
+
+/**
+ * Activity Type
+ * @member {String} ActivityType
+ */
+ChannelStoresUpdatedEvent.prototype['ActivityType'] = undefined;
 
 
 

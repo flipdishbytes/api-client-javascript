@@ -6,6 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Revenue** | **Number** |  | [optional] 
 **RevenueOfWhichCash** | **Number** |  | [optional] 
+**UnpaidRevenue** | **Number** |  | [optional] 
 **RevenueForFeeCalculations** | **Number** |  | [optional] 
 **FlipdishFees** | **Number** |  | [optional] 
 **Adjustments** | **Number** |  | [optional] 

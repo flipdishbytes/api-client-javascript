@@ -46,16 +46,20 @@ export default class CrossSellApi {
      */
 
     /**
+     * @param {String} appId 
      * @param {Number} menuId 
      * @param {Array.<Number>} menuItemId 
      * @param {Number} limit 
      * @param {Number} totalValue 
-     * @param {String} appId 
      * @param {module:api/CrossSellApi~getCrossSellMenuItemsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/RestApiResultCrossSellMenuItems}
      */
-    getCrossSellMenuItems(menuId, menuItemId, limit, totalValue, appId, callback) {
+    getCrossSellMenuItems(appId, menuId, menuItemId, limit, totalValue, callback) {
       let postBody = null;
+      // verify the required parameter 'appId' is set
+      if (appId === undefined || appId === null) {
+        throw new Error("Missing the required parameter 'appId' when calling getCrossSellMenuItems");
+      }
       // verify the required parameter 'menuId' is set
       if (menuId === undefined || menuId === null) {
         throw new Error("Missing the required parameter 'menuId' when calling getCrossSellMenuItems");
@@ -71,10 +75,6 @@ export default class CrossSellApi {
       // verify the required parameter 'totalValue' is set
       if (totalValue === undefined || totalValue === null) {
         throw new Error("Missing the required parameter 'totalValue' when calling getCrossSellMenuItems");
-      }
-      // verify the required parameter 'appId' is set
-      if (appId === undefined || appId === null) {
-        throw new Error("Missing the required parameter 'appId' when calling getCrossSellMenuItems");
       }
 
       let pathParams = {

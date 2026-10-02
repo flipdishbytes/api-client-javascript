@@ -324,6 +324,54 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property PercentFeeCardOrdersPhoneAgent (base name: "PercentFeeCardOrdersPhoneAgent")', function() {
+      // uncomment below and update the code to test the property PercentFeeCardOrdersPhoneAgent
+      //var instance = new Flipdish.StoreFeeConfig();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property PercentFeeCashOrdersPhoneAgent (base name: "PercentFeeCashOrdersPhoneAgent")', function() {
+      // uncomment below and update the code to test the property PercentFeeCashOrdersPhoneAgent
+      //var instance = new Flipdish.StoreFeeConfig();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property FixedFeeCardOrdersPhoneAgent (base name: "FixedFeeCardOrdersPhoneAgent")', function() {
+      // uncomment below and update the code to test the property FixedFeeCardOrdersPhoneAgent
+      //var instance = new Flipdish.StoreFeeConfig();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property FixedFeeCashOrdersPhoneAgent (base name: "FixedFeeCashOrdersPhoneAgent")', function() {
+      // uncomment below and update the code to test the property FixedFeeCashOrdersPhoneAgent
+      //var instance = new Flipdish.StoreFeeConfig();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property PercentFeeCardOrdersPhoneAgentChargedToCustomerIncludingVat (base name: "PercentFeeCardOrdersPhoneAgentChargedToCustomerIncludingVat")', function() {
+      // uncomment below and update the code to test the property PercentFeeCardOrdersPhoneAgentChargedToCustomerIncludingVat
+      //var instance = new Flipdish.StoreFeeConfig();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property PercentFeeCashOrdersPhoneAgentChargedToCustomerIncludingVat (base name: "PercentFeeCashOrdersPhoneAgentChargedToCustomerIncludingVat")', function() {
+      // uncomment below and update the code to test the property PercentFeeCashOrdersPhoneAgentChargedToCustomerIncludingVat
+      //var instance = new Flipdish.StoreFeeConfig();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property FixedFeeCardOrdersPhoneAgentChargedToCustomerIncludingVat (base name: "FixedFeeCardOrdersPhoneAgentChargedToCustomerIncludingVat")', function() {
+      // uncomment below and update the code to test the property FixedFeeCardOrdersPhoneAgentChargedToCustomerIncludingVat
+      //var instance = new Flipdish.StoreFeeConfig();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property FixedFeeCashOrdersPhoneAgentChargedToCustomerIncludingVat (base name: "FixedFeeCashOrdersPhoneAgentChargedToCustomerIncludingVat")', function() {
+      // uncomment below and update the code to test the property FixedFeeCashOrdersPhoneAgentChargedToCustomerIncludingVat
+      //var instance = new Flipdish.StoreFeeConfig();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));

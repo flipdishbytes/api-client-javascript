@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**SenderId** | **String** |  | [optional] 
-**Username** | **String** |  | [optional] 
-**AuthToken** | **String** |  | [optional] 
+**SenderId** | **String** | SenderId. | [optional] 
+**Username** | **String** | Username. | [optional] 
+**AuthToken** | **String** | AuthToken. | [optional] 
 
 

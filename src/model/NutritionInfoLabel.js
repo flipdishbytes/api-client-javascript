@@ -21,6 +21,7 @@ import ApiClient from '../ApiClient';
 class NutritionInfoLabel {
     /**
      * Constructs a new <code>NutritionInfoLabel</code>.
+     * NutritionInfoLabel.
      * @alias module:model/NutritionInfoLabel
      */
     constructor() { 

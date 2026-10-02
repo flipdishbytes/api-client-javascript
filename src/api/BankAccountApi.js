@@ -53,9 +53,12 @@ export default class BankAccountApi {
      * @param {String} appId 
      * @param {Number} bankAccountId 
      * @param {Number} storeId 
+     * @param {Object} opts Optional parameters
+     * @param {Boolean} opts.skipBankAccountUpdateWarningEmail 
      * @param {module:api/BankAccountApi~attachBankAccountToStoreCallback} callback The callback function, accepting three arguments: error, data, response
      */
-    attachBankAccountToStore(appId, bankAccountId, storeId, callback) {
+    attachBankAccountToStore(appId, bankAccountId, storeId, opts, callback) {
+      opts = opts || {};
       let postBody = null;
       // verify the required parameter 'appId' is set
       if (appId === undefined || appId === null) {
@@ -76,6 +79,7 @@ export default class BankAccountApi {
         'storeId': storeId
       };
       let queryParams = {
+        'skipBankAccountUpdateWarningEmail': opts['skipBankAccountUpdateWarningEmail']
       };
       let headerParams = {
       };

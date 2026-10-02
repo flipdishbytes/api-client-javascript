@@ -372,6 +372,12 @@ App['AppAccessLevelEnum'] = {
     "StoreStaff": "StoreStaff",
 
     /**
+     * value: "StaffMember"
+     * @const
+     */
+    "StaffMember": "StaffMember",
+
+    /**
      * value: "StoreReadOnlyAccess"
      * @const
      */
@@ -517,6 +523,12 @@ App['AppResourceSetEnum'] = {
      * @const
      */
     "CreateTeammatePropertyOwner": "CreateTeammatePropertyOwner",
+
+    /**
+     * value: "CreateTeammateStaffMember"
+     * @const
+     */
+    "CreateTeammateStaffMember": "CreateTeammateStaffMember",
 
     /**
      * value: "ViewApmConfigurations"

@@ -236,53 +236,6 @@ export default class StripeCustomConnectApi {
     }
 
     /**
-     * Callback function to receive the result of the getVerificationStatus operation.
-     * @callback module:api/StripeCustomConnectApi~getVerificationStatusCallback
-     * @param {String} error Error message, if any.
-     * @param {module:model/RestApiResultStripeConnectedAccount} data The data returned by the service call.
-     * @param {String} response The complete HTTP response.
-     */
-
-    /**
-     * @param {String} appId 
-     * @param {String} stripeConnectedAccountId 
-     * @param {module:api/StripeCustomConnectApi~getVerificationStatusCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/RestApiResultStripeConnectedAccount}
-     */
-    getVerificationStatus(appId, stripeConnectedAccountId, callback) {
-      let postBody = null;
-      // verify the required parameter 'appId' is set
-      if (appId === undefined || appId === null) {
-        throw new Error("Missing the required parameter 'appId' when calling getVerificationStatus");
-      }
-      // verify the required parameter 'stripeConnectedAccountId' is set
-      if (stripeConnectedAccountId === undefined || stripeConnectedAccountId === null) {
-        throw new Error("Missing the required parameter 'stripeConnectedAccountId' when calling getVerificationStatus");
-      }
-
-      let pathParams = {
-        'appId': appId
-      };
-      let queryParams = {
-        'stripeConnectedAccountId': stripeConnectedAccountId
-      };
-      let headerParams = {
-      };
-      let formParams = {
-      };
-
-      let authNames = ['oauth2'];
-      let contentTypes = [];
-      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'Data'];
-      let returnType = RestApiResultStripeConnectedAccount;
-      return this.apiClient.callApi(
-        '/api/v1.0/{appId}/customconnect/verification-status', 'GET',
-        pathParams, queryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType, null, callback
-      );
-    }
-
-    /**
      * Callback function to receive the result of the setBankAccountBusinessType operation.
      * @callback module:api/StripeCustomConnectApi~setBankAccountBusinessTypeCallback
      * @param {String} error Error message, if any.

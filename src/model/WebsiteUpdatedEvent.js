@@ -79,6 +79,12 @@ class WebsiteUpdatedEvent {
             if (data.hasOwnProperty('IpAddress')) {
                 obj['IpAddress'] = ApiClient.convertToType(data['IpAddress'], 'String');
             }
+            if (data.hasOwnProperty('ActivityId')) {
+                obj['ActivityId'] = ApiClient.convertToType(data['ActivityId'], 'String');
+            }
+            if (data.hasOwnProperty('ActivityType')) {
+                obj['ActivityType'] = ApiClient.convertToType(data['ActivityType'], 'String');
+            }
         }
         return obj;
     }
@@ -144,6 +150,18 @@ WebsiteUpdatedEvent.prototype['OrgId'] = undefined;
  * @member {String} IpAddress
  */
 WebsiteUpdatedEvent.prototype['IpAddress'] = undefined;
+
+/**
+ * Activity Id
+ * @member {String} ActivityId
+ */
+WebsiteUpdatedEvent.prototype['ActivityId'] = undefined;
+
+/**
+ * Activity Type
+ * @member {String} ActivityType
+ */
+WebsiteUpdatedEvent.prototype['ActivityType'] = undefined;
 
 
 

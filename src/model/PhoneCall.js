@@ -51,6 +51,9 @@ class PhoneCall {
             if (data.hasOwnProperty('PhoneCallId')) {
                 obj['PhoneCallId'] = ApiClient.convertToType(data['PhoneCallId'], 'Number');
             }
+            if (data.hasOwnProperty('CallSid')) {
+                obj['CallSid'] = ApiClient.convertToType(data['CallSid'], 'String');
+            }
             if (data.hasOwnProperty('TimeOfCall')) {
                 obj['TimeOfCall'] = ApiClient.convertToType(data['TimeOfCall'], 'Date');
             }
@@ -90,6 +93,12 @@ class PhoneCall {
  * @member {Number} PhoneCallId
  */
 PhoneCall.prototype['PhoneCallId'] = undefined;
+
+/**
+ * Twilio Call SID
+ * @member {String} CallSid
+ */
+PhoneCall.prototype['CallSid'] = undefined;
 
 /**
  * Time of the call

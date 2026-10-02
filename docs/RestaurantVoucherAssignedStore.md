@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**StoreId** | **Number** |  | [optional] 
-**Name** | **String** |  | [optional] 
-**Active** | **Boolean** |  | [optional] 
+**StoreId** | **Number** | StoreId. | [optional] 
+**Name** | **String** | Name. | [optional] 
+**Active** | **Boolean** | Active. | [optional] 
 
 

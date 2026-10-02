@@ -69,7 +69,7 @@ Name | Type | Description  | Notes
 
 ## deleteMenuZone
 
-> deleteMenuZone(menuZoneId, menuId)
+> deleteMenuZone(menuId, menuZoneId)
 
 Deletes a menu zone.
 
@@ -83,9 +83,9 @@ let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 let apiInstance = new Flipdish.MenuZonesApi();
+let menuId = 56; // Number | Menu id.
 let menuZoneId = 56; // Number | The menu zone id.
-let menuId = "menuId_example"; // String | 
-apiInstance.deleteMenuZone(menuZoneId, menuId, (error, data, response) => {
+apiInstance.deleteMenuZone(menuId, menuZoneId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -99,8 +99,8 @@ apiInstance.deleteMenuZone(menuZoneId, menuId, (error, data, response) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **menuId** | **Number**| Menu id. | 
  **menuZoneId** | **Number**| The menu zone id. | 
- **menuId** | **String**|  | 
 
 ### Return type
 
@@ -118,7 +118,7 @@ null (empty response body)
 
 ## deleteMenuZoneImage
 
-> deleteMenuZoneImage(menuZoneId, menuId)
+> deleteMenuZoneImage(menuId, menuZoneId)
 
 Deletes a menu zone image.
 
@@ -132,9 +132,9 @@ let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 let apiInstance = new Flipdish.MenuZonesApi();
+let menuId = 56; // Number | Menu id.
 let menuZoneId = 56; // Number | The zone Id/
-let menuId = "menuId_example"; // String | 
-apiInstance.deleteMenuZoneImage(menuZoneId, menuId, (error, data, response) => {
+apiInstance.deleteMenuZoneImage(menuId, menuZoneId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -148,8 +148,8 @@ apiInstance.deleteMenuZoneImage(menuZoneId, menuId, (error, data, response) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **menuId** | **Number**| Menu id. | 
  **menuZoneId** | **Number**| The zone Id/ | 
- **menuId** | **String**|  | 
 
 ### Return type
 
@@ -167,7 +167,7 @@ null (empty response body)
 
 ## flipMenuZones
 
-> flipMenuZones(menuZoneId, menuZoneI2, menuId)
+> flipMenuZones(menuId, menuZoneId, menuZoneI2)
 
 Flips the order of two menu zones.
 
@@ -181,10 +181,10 @@ let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 let apiInstance = new Flipdish.MenuZonesApi();
+let menuId = 56; // Number | 
 let menuZoneId = 56; // Number | Source.
 let menuZoneI2 = 56; // Number | Destination.
-let menuId = "menuId_example"; // String | 
-apiInstance.flipMenuZones(menuZoneId, menuZoneI2, menuId, (error, data, response) => {
+apiInstance.flipMenuZones(menuId, menuZoneId, menuZoneI2, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -198,9 +198,9 @@ apiInstance.flipMenuZones(menuZoneId, menuZoneI2, menuId, (error, data, response
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **menuId** | **Number**|  | 
  **menuZoneId** | **Number**| Source. | 
  **menuZoneI2** | **Number**| Destination. | 
- **menuId** | **String**|  | 
 
 ### Return type
 
@@ -314,7 +314,7 @@ Name | Type | Description  | Notes
 
 ## setMenuSectionMenuZone
 
-> setMenuSectionMenuZone(menuZoneId, menuSectionId, menuId)
+> setMenuSectionMenuZone(menuId, menuZoneId, menuSectionId)
 
 Assigns a zone to a menu section.
 
@@ -328,10 +328,10 @@ let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 let apiInstance = new Flipdish.MenuZonesApi();
+let menuId = 56; // Number | Menu id.
 let menuZoneId = 56; // Number | The menu id.
 let menuSectionId = 56; // Number | The menu section id.
-let menuId = "menuId_example"; // String | 
-apiInstance.setMenuSectionMenuZone(menuZoneId, menuSectionId, menuId, (error, data, response) => {
+apiInstance.setMenuSectionMenuZone(menuId, menuZoneId, menuSectionId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -345,9 +345,9 @@ apiInstance.setMenuSectionMenuZone(menuZoneId, menuSectionId, menuId, (error, da
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **menuId** | **Number**| Menu id. | 
  **menuZoneId** | **Number**| The menu id. | 
  **menuSectionId** | **Number**| The menu section id. | 
- **menuId** | **String**|  | 
 
 ### Return type
 
@@ -365,7 +365,7 @@ null (empty response body)
 
 ## setMenuZoneDescription
 
-> setMenuZoneDescription(menuZoneId, menuId, description)
+> setMenuZoneDescription(menuId, menuZoneId, description)
 
 Sets the description of a menu zone.
 
@@ -379,10 +379,10 @@ let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 let apiInstance = new Flipdish.MenuZonesApi();
+let menuId = 56; // Number | Menu id.
 let menuZoneId = 56; // Number | The zone id.
-let menuId = "menuId_example"; // String | 
 let description = "description_example"; // String | The new description. Add as a raw string in the request, without any JSON wrapper.
-apiInstance.setMenuZoneDescription(menuZoneId, menuId, description, (error, data, response) => {
+apiInstance.setMenuZoneDescription(menuId, menuZoneId, description, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -396,8 +396,8 @@ apiInstance.setMenuZoneDescription(menuZoneId, menuId, description, (error, data
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **menuId** | **Number**| Menu id. | 
  **menuZoneId** | **Number**| The zone id. | 
- **menuId** | **String**|  | 
  **description** | **String**| The new description. Add as a raw string in the request, without any JSON wrapper. | 
 
 ### Return type
@@ -416,7 +416,7 @@ null (empty response body)
 
 ## setMenuZoneName
 
-> setMenuZoneName(menuZoneId, menuZoneName, menuId)
+> setMenuZoneName(menuId, menuZoneId, menuZoneName)
 
 Sets the name of a menu zone.
 
@@ -430,10 +430,10 @@ let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 let apiInstance = new Flipdish.MenuZonesApi();
+let menuId = 56; // Number | Menu id.
 let menuZoneId = 56; // Number | The menu zone id.
 let menuZoneName = "menuZoneName_example"; // String | The new name.
-let menuId = "menuId_example"; // String | 
-apiInstance.setMenuZoneName(menuZoneId, menuZoneName, menuId, (error, data, response) => {
+apiInstance.setMenuZoneName(menuId, menuZoneId, menuZoneName, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -447,9 +447,9 @@ apiInstance.setMenuZoneName(menuZoneId, menuZoneName, menuId, (error, data, resp
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **menuId** | **Number**| Menu id. | 
  **menuZoneId** | **Number**| The menu zone id. | 
  **menuZoneName** | **String**| The new name. | 
- **menuId** | **String**|  | 
 
 ### Return type
 
@@ -518,7 +518,7 @@ null (empty response body)
 
 ## uploadMenuZoneImage
 
-> uploadMenuZoneImage(menuZoneId, menuId, file)
+> uploadMenuZoneImage(menuId, menuZoneId, file)
 
 Uploads an image for a menu zone.
 
@@ -532,10 +532,10 @@ let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 let apiInstance = new Flipdish.MenuZonesApi();
+let menuId = 56; // Number | Menu id.
 let menuZoneId = 56; // Number | The zone id.
-let menuId = "menuId_example"; // String | 
 let file = [new Flipdish.HttpPostedFileBase()]; // [HttpPostedFileBase] | The file to upload.
-apiInstance.uploadMenuZoneImage(menuZoneId, menuId, file, (error, data, response) => {
+apiInstance.uploadMenuZoneImage(menuId, menuZoneId, file, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -549,8 +549,8 @@ apiInstance.uploadMenuZoneImage(menuZoneId, menuId, file, (error, data, response
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **menuId** | **Number**| Menu id. | 
  **menuZoneId** | **Number**| The zone id. | 
- **menuId** | **String**|  | 
  **file** | [**[HttpPostedFileBase]**](HttpPostedFileBase.md)| The file to upload. | 
 
 ### Return type

@@ -80,6 +80,12 @@ class CatalogItemCreatedEvent {
             if (data.hasOwnProperty('IpAddress')) {
                 obj['IpAddress'] = ApiClient.convertToType(data['IpAddress'], 'String');
             }
+            if (data.hasOwnProperty('ActivityId')) {
+                obj['ActivityId'] = ApiClient.convertToType(data['ActivityId'], 'String');
+            }
+            if (data.hasOwnProperty('ActivityType')) {
+                obj['ActivityType'] = ApiClient.convertToType(data['ActivityType'], 'String');
+            }
         }
         return obj;
     }
@@ -144,6 +150,18 @@ CatalogItemCreatedEvent.prototype['OrgId'] = undefined;
  * @member {String} IpAddress
  */
 CatalogItemCreatedEvent.prototype['IpAddress'] = undefined;
+
+/**
+ * Activity Id
+ * @member {String} ActivityId
+ */
+CatalogItemCreatedEvent.prototype['ActivityId'] = undefined;
+
+/**
+ * Activity Type
+ * @member {String} ActivityType
+ */
+CatalogItemCreatedEvent.prototype['ActivityType'] = undefined;
 
 
 

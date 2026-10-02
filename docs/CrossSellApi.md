@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 ## getCrossSellMenuItems
 
-> RestApiResultCrossSellMenuItems getCrossSellMenuItems(menuId, menuItemId, limit, totalValue, appId)
+> RestApiResultCrossSellMenuItems getCrossSellMenuItems(appId, menuId, menuItemId, limit, totalValue)
 
 
 
@@ -24,12 +24,12 @@ let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 let apiInstance = new Flipdish.CrossSellApi();
+let appId = "appId_example"; // String | 
 let menuId = 56; // Number | 
 let menuItemId = [null]; // [Number] | 
 let limit = 56; // Number | 
 let totalValue = 3.4; // Number | 
-let appId = "appId_example"; // String | 
-apiInstance.getCrossSellMenuItems(menuId, menuItemId, limit, totalValue, appId, (error, data, response) => {
+apiInstance.getCrossSellMenuItems(appId, menuId, menuItemId, limit, totalValue, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -43,11 +43,11 @@ apiInstance.getCrossSellMenuItems(menuId, menuItemId, limit, totalValue, appId, 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **appId** | **String**|  | 
  **menuId** | **Number**|  | 
  **menuItemId** | [**[Number]**](Number.md)|  | 
  **limit** | **Number**|  | 
  **totalValue** | **Number**|  | 
- **appId** | **String**|  | 
 
 ### Return type
 

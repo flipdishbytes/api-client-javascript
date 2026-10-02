@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **NextInvoiceAmount** | **Number** | Next invoice amount | [optional] 
 **NextInvoiceBillingDate** | **Date** | Next invoice billing date | [optional] 
 **SubscriptionId** | **String** | The subscription identifier | 
-**Name** | **String** |  | 
+**Name** | **String** | Name | 
 **Status** | **String** | Status | 
 **Currency** | **String** | Currency | 
 **User** | **String** | User | 

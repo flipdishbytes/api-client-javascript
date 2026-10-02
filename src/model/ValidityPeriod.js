@@ -21,6 +21,7 @@ import ApiClient from '../ApiClient';
 class ValidityPeriod {
     /**
      * Constructs a new <code>ValidityPeriod</code>.
+     * ValidityPeriod.
      * @alias module:model/ValidityPeriod
      */
     constructor() { 
@@ -64,16 +65,19 @@ class ValidityPeriod {
 }
 
 /**
+ * DayOfWeek.
  * @member {module:model/ValidityPeriod.DayOfWeekEnum} DayOfWeek
  */
 ValidityPeriod.prototype['DayOfWeek'] = undefined;
 
 /**
+ * StartTime.
  * @member {String} StartTime
  */
 ValidityPeriod.prototype['StartTime'] = undefined;
 
 /**
+ * EndTime.
  * @member {String} EndTime
  */
 ValidityPeriod.prototype['EndTime'] = undefined;

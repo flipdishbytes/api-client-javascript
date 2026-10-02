@@ -138,11 +138,13 @@ MenuItemOptionSetItem.prototype['CatalogItemId'] = undefined;
 MenuItemOptionSetItem.prototype['TaxRateName'] = undefined;
 
 /**
+ * TaxRateId.
  * @member {Number} TaxRateId
  */
 MenuItemOptionSetItem.prototype['TaxRateId'] = undefined;
 
 /**
+ * TaxValue.
  * @member {Number} TaxValue
  */
 MenuItemOptionSetItem.prototype['TaxValue'] = undefined;

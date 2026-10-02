@@ -96,6 +96,30 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property IsPromoted (base name: "IsPromoted")', function() {
+      // uncomment below and update the code to test the property IsPromoted
+      //var instance = new Flipdish.VoucherSummary();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property StoreNames (base name: "StoreNames")', function() {
+      // uncomment below and update the code to test the property StoreNames
+      //var instance = new Flipdish.VoucherSummary();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property IsAvailableOnAllStores (base name: "IsAvailableOnAllStores")', function() {
+      // uncomment below and update the code to test the property IsAvailableOnAllStores
+      //var instance = new Flipdish.VoucherSummary();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property ChannelRestrictions (base name: "ChannelRestrictions")', function() {
+      // uncomment below and update the code to test the property ChannelRestrictions
+      //var instance = new Flipdish.VoucherSummary();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));

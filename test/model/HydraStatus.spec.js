@@ -66,6 +66,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property PropertyIds (base name: "PropertyIds")', function() {
+      // uncomment below and update the code to test the property PropertyIds
+      //var instance = new Flipdish.HydraStatus();
+      //expect(instance).to.be();
+    });
+
     it('should have the property IsRegistered (base name: "IsRegistered")', function() {
       // uncomment below and update the code to test the property IsRegistered
       //var instance = new Flipdish.HydraStatus();
@@ -86,6 +92,18 @@
 
     it('should have the property UserType (base name: "UserType")', function() {
       // uncomment below and update the code to test the property UserType
+      //var instance = new Flipdish.HydraStatus();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property DeviceType (base name: "DeviceType")', function() {
+      // uncomment below and update the code to test the property DeviceType
+      //var instance = new Flipdish.HydraStatus();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property HydraUserId (base name: "HydraUserId")', function() {
+      // uncomment below and update the code to test the property HydraUserId
       //var instance = new Flipdish.HydraStatus();
       //expect(instance).to.be();
     });

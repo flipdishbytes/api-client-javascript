@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**WhitelabelId** | **Number** |  | [optional] 
-**PackageId** | **String** |  | [optional] 
-**FirebaseAppId** | **String** |  | [optional] 
-**FirebaseProjectId** | **String** |  | [optional] 
+**WhitelabelId** | **Number** | WhitelabelId. | [optional] 
+**PackageId** | **String** | PackageId. | [optional] 
+**FirebaseAppId** | **String** | FirebaseAppId. | [optional] 
+**FirebaseProjectId** | **String** | FirebaseProjectId. | [optional] 
 
 

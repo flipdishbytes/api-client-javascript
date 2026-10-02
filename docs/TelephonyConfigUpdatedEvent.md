@@ -8,11 +8,14 @@ Name | Type | Description | Notes
 **Description** | **String** | Description | [optional] 
 **StoreId** | **Number** | Store Id | [optional] 
 **TelephonyConfig** | [**TelephonyConfig**](TelephonyConfig.md) |  | [optional] 
+**PropertyId** | **String** | Property Id | [optional] 
 **FlipdishEventId** | **String** | The identitfier of the event | [optional] 
 **CreateTime** | **Date** | The time of creation of the event | [optional] 
 **Position** | **Number** | Position | [optional] 
 **AppId** | **String** | App id | [optional] 
 **OrgId** | **String** | Org id | [optional] 
 **IpAddress** | **String** | Ip Address | [optional] 
+**ActivityId** | **String** | Activity Id | [optional] 
+**ActivityType** | **String** | Activity Type | [optional] 
 
 

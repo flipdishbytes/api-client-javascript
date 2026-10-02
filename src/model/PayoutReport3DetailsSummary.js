@@ -53,6 +53,9 @@ class PayoutReport3DetailsSummary {
             if (data.hasOwnProperty('RevenueOfWhichCash')) {
                 obj['RevenueOfWhichCash'] = ApiClient.convertToType(data['RevenueOfWhichCash'], 'Number');
             }
+            if (data.hasOwnProperty('UnpaidRevenue')) {
+                obj['UnpaidRevenue'] = ApiClient.convertToType(data['UnpaidRevenue'], 'Number');
+            }
             if (data.hasOwnProperty('RevenueForFeeCalculations')) {
                 obj['RevenueForFeeCalculations'] = ApiClient.convertToType(data['RevenueForFeeCalculations'], 'Number');
             }
@@ -84,6 +87,11 @@ PayoutReport3DetailsSummary.prototype['Revenue'] = undefined;
  * @member {Number} RevenueOfWhichCash
  */
 PayoutReport3DetailsSummary.prototype['RevenueOfWhichCash'] = undefined;
+
+/**
+ * @member {Number} UnpaidRevenue
+ */
+PayoutReport3DetailsSummary.prototype['UnpaidRevenue'] = undefined;
 
 /**
  * @member {Number} RevenueForFeeCalculations

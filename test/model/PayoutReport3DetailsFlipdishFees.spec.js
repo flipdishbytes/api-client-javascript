@@ -150,6 +150,18 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property OtherIntegrationFeesExcludingVat (base name: "OtherIntegrationFeesExcludingVat")', function() {
+      // uncomment below and update the code to test the property OtherIntegrationFeesExcludingVat
+      //var instance = new Flipdish.PayoutReport3DetailsFlipdishFees();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property OtherIntegrationFeesVatAmount (base name: "OtherIntegrationFeesVatAmount")', function() {
+      // uncomment below and update the code to test the property OtherIntegrationFeesVatAmount
+      //var instance = new Flipdish.PayoutReport3DetailsFlipdishFees();
+      //expect(instance).to.be();
+    });
+
     it('should have the property OtherIntegrationTips (base name: "OtherIntegrationTips")', function() {
       // uncomment below and update the code to test the property OtherIntegrationTips
       //var instance = new Flipdish.PayoutReport3DetailsFlipdishFees();

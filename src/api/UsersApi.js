@@ -13,18 +13,29 @@
 
 
 import ApiClient from "../ApiClient";
+import CreateUserDeliveryLocationRequest from '../model/CreateUserDeliveryLocationRequest';
+import RestApiArrayResultFlipdishAccountName from '../model/RestApiArrayResultFlipdishAccountName';
+import RestApiArrayResultUserDeliveryLocationAdmin from '../model/RestApiArrayResultUserDeliveryLocationAdmin';
 import RestApiArrayResultUserFlipdishAccount from '../model/RestApiArrayResultUserFlipdishAccount';
 import RestApiArrayResultUserNote from '../model/RestApiArrayResultUserNote';
+import RestApiArrayResultUserOrderSummary from '../model/RestApiArrayResultUserOrderSummary';
+import RestApiArrayResultUserSmsChatItem from '../model/RestApiArrayResultUserSmsChatItem';
 import RestApiArrayResultUserStoreInfo from '../model/RestApiArrayResultUserStoreInfo';
 import RestApiDefaultResponse from '../model/RestApiDefaultResponse';
 import RestApiErrorResult from '../model/RestApiErrorResult';
 import RestApiForbiddenResult from '../model/RestApiForbiddenResult';
 import RestApiPaginationResultUserSearch from '../model/RestApiPaginationResultUserSearch';
+import RestApiResultOrder from '../model/RestApiResultOrder';
 import RestApiResultUserInfo from '../model/RestApiResultUserInfo';
+import RestApiResultUserPushNotificationSentResult from '../model/RestApiResultUserPushNotificationSentResult';
 import RestApiResultUserRole from '../model/RestApiResultUserRole';
 import RestApiStringArrayResult from '../model/RestApiStringArrayResult';
 import RestApiStringResult from '../model/RestApiStringResult';
 import RestApiUnauthorizedResult from '../model/RestApiUnauthorizedResult';
+import SendUserPushNotificationRequest from '../model/SendUserPushNotificationRequest';
+import SendUserSmsRequest from '../model/SendUserSmsRequest';
+import SetUserDeliveryLocationCoordinatesRequest from '../model/SetUserDeliveryLocationCoordinatesRequest';
+import SetUserDeliveryLocationFieldRequest from '../model/SetUserDeliveryLocationFieldRequest';
 
 /**
 * Users service.
@@ -215,6 +226,52 @@ export default class UsersApi {
       let returnType = RestApiDefaultResponse;
       return this.apiClient.callApi(
         '/api/v1.0/users/{userId}/BlockUserPhoneNumber', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the createUserDeliveryLocation operation.
+     * @callback module:api/UsersApi~createUserDeliveryLocationCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/RestApiDefaultResponse} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {Number} userId 
+     * @param {module:model/CreateUserDeliveryLocationRequest} request 
+     * @param {module:api/UsersApi~createUserDeliveryLocationCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/RestApiDefaultResponse}
+     */
+    createUserDeliveryLocation(userId, request, callback) {
+      let postBody = request;
+      // verify the required parameter 'userId' is set
+      if (userId === undefined || userId === null) {
+        throw new Error("Missing the required parameter 'userId' when calling createUserDeliveryLocation");
+      }
+      // verify the required parameter 'request' is set
+      if (request === undefined || request === null) {
+        throw new Error("Missing the required parameter 'request' when calling createUserDeliveryLocation");
+      }
+
+      let pathParams = {
+        'userId': userId
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded'];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
+      let returnType = RestApiDefaultResponse;
+      return this.apiClient.callApi(
+        '/api/v1.0/users/{userId}/deliveryLocations', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );
@@ -467,6 +524,51 @@ export default class UsersApi {
     }
 
     /**
+     * Callback function to receive the result of the getUserDeliveryLocationsForAdmin operation.
+     * @callback module:api/UsersApi~getUserDeliveryLocationsForAdminCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/RestApiArrayResultUserDeliveryLocationAdmin} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {Number} userId 
+     * @param {Object} opts Optional parameters
+     * @param {Number} opts.whiteLabelId 
+     * @param {module:api/UsersApi~getUserDeliveryLocationsForAdminCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/RestApiArrayResultUserDeliveryLocationAdmin}
+     */
+    getUserDeliveryLocationsForAdmin(userId, opts, callback) {
+      opts = opts || {};
+      let postBody = null;
+      // verify the required parameter 'userId' is set
+      if (userId === undefined || userId === null) {
+        throw new Error("Missing the required parameter 'userId' when calling getUserDeliveryLocationsForAdmin");
+      }
+
+      let pathParams = {
+        'userId': userId
+      };
+      let queryParams = {
+        'whiteLabelId': opts['whiteLabelId']
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = [];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
+      let returnType = RestApiArrayResultUserDeliveryLocationAdmin;
+      return this.apiClient.callApi(
+        '/api/v1.0/users/{userId}/deliveryLocations', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
      * Callback function to receive the result of the getUserNotes operation.
      * @callback module:api/UsersApi~getUserNotesCallback
      * @param {String} error Error message, if any.
@@ -502,6 +604,194 @@ export default class UsersApi {
       let returnType = RestApiArrayResultUserNote;
       return this.apiClient.callApi(
         '/api/v1.0/users/{userId}/UserNotes', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the getUserOrderByIdForAdmin operation.
+     * @callback module:api/UsersApi~getUserOrderByIdForAdminCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/RestApiResultOrder} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {Number} userId 
+     * @param {Number} orderId 
+     * @param {module:api/UsersApi~getUserOrderByIdForAdminCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/RestApiResultOrder}
+     */
+    getUserOrderByIdForAdmin(userId, orderId, callback) {
+      let postBody = null;
+      // verify the required parameter 'userId' is set
+      if (userId === undefined || userId === null) {
+        throw new Error("Missing the required parameter 'userId' when calling getUserOrderByIdForAdmin");
+      }
+      // verify the required parameter 'orderId' is set
+      if (orderId === undefined || orderId === null) {
+        throw new Error("Missing the required parameter 'orderId' when calling getUserOrderByIdForAdmin");
+      }
+
+      let pathParams = {
+        'userId': userId,
+        'orderId': orderId
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = [];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'Data'];
+      let returnType = RestApiResultOrder;
+      return this.apiClient.callApi(
+        '/api/v1.0/users/{userId}/orders/{orderId}', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the getUserOrdersForAdmin operation.
+     * @callback module:api/UsersApi~getUserOrdersForAdminCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/RestApiArrayResultUserOrderSummary} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {Number} userId 
+     * @param {Object} opts Optional parameters
+     * @param {Number} opts.skip 
+     * @param {Number} opts.take 
+     * @param {String} opts.brandId 
+     * @param {module:api/UsersApi~getUserOrdersForAdminCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/RestApiArrayResultUserOrderSummary}
+     */
+    getUserOrdersForAdmin(userId, opts, callback) {
+      opts = opts || {};
+      let postBody = null;
+      // verify the required parameter 'userId' is set
+      if (userId === undefined || userId === null) {
+        throw new Error("Missing the required parameter 'userId' when calling getUserOrdersForAdmin");
+      }
+
+      let pathParams = {
+        'userId': userId
+      };
+      let queryParams = {
+        'skip': opts['skip'],
+        'take': opts['take'],
+        'brandId': opts['brandId']
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = [];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
+      let returnType = RestApiArrayResultUserOrderSummary;
+      return this.apiClient.callApi(
+        '/api/v1.0/users/{userId}/orders', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the getUserSmsConversationItems operation.
+     * @callback module:api/UsersApi~getUserSmsConversationItemsCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/RestApiArrayResultUserSmsChatItem} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {Number} userId 
+     * @param {Object} opts Optional parameters
+     * @param {Number} opts.mostRecentCount 
+     * @param {module:api/UsersApi~getUserSmsConversationItemsCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/RestApiArrayResultUserSmsChatItem}
+     */
+    getUserSmsConversationItems(userId, opts, callback) {
+      opts = opts || {};
+      let postBody = null;
+      // verify the required parameter 'userId' is set
+      if (userId === undefined || userId === null) {
+        throw new Error("Missing the required parameter 'userId' when calling getUserSmsConversationItems");
+      }
+
+      let pathParams = {
+        'userId': userId
+      };
+      let queryParams = {
+        'mostRecentCount': opts['mostRecentCount']
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = [];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
+      let returnType = RestApiArrayResultUserSmsChatItem;
+      return this.apiClient.callApi(
+        '/api/v1.0/users/{userId}/smsConversationItems', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the hideUserDeliveryLocation operation.
+     * @callback module:api/UsersApi~hideUserDeliveryLocationCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/RestApiDefaultResponse} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {Number} userId 
+     * @param {Number} deliveryLocationId 
+     * @param {module:api/UsersApi~hideUserDeliveryLocationCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/RestApiDefaultResponse}
+     */
+    hideUserDeliveryLocation(userId, deliveryLocationId, callback) {
+      let postBody = null;
+      // verify the required parameter 'userId' is set
+      if (userId === undefined || userId === null) {
+        throw new Error("Missing the required parameter 'userId' when calling hideUserDeliveryLocation");
+      }
+      // verify the required parameter 'deliveryLocationId' is set
+      if (deliveryLocationId === undefined || deliveryLocationId === null) {
+        throw new Error("Missing the required parameter 'deliveryLocationId' when calling hideUserDeliveryLocation");
+      }
+
+      let pathParams = {
+        'userId': userId,
+        'deliveryLocationId': deliveryLocationId
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = [];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
+      let returnType = RestApiDefaultResponse;
+      return this.apiClient.callApi(
+        '/api/v1.0/users/{userId}/deliveryLocations/{deliveryLocationId}/hide', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );
@@ -584,6 +874,53 @@ export default class UsersApi {
       let returnType = RestApiDefaultResponse;
       return this.apiClient.callApi(
         '/api/v1.0/users/{userId}/MarkUserAsSuspicious', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the removeFlipdishAccountIdForUser operation.
+     * @callback module:api/UsersApi~removeFlipdishAccountIdForUserCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/RestApiDefaultResponse} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {Number} userId 
+     * @param {Number} accountId 
+     * @param {module:api/UsersApi~removeFlipdishAccountIdForUserCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/RestApiDefaultResponse}
+     */
+    removeFlipdishAccountIdForUser(userId, accountId, callback) {
+      let postBody = null;
+      // verify the required parameter 'userId' is set
+      if (userId === undefined || userId === null) {
+        throw new Error("Missing the required parameter 'userId' when calling removeFlipdishAccountIdForUser");
+      }
+      // verify the required parameter 'accountId' is set
+      if (accountId === undefined || accountId === null) {
+        throw new Error("Missing the required parameter 'accountId' when calling removeFlipdishAccountIdForUser");
+      }
+
+      let pathParams = {
+        'userId': userId,
+        'accountId': accountId
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = [];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'Data', 'Message'];
+      let returnType = RestApiDefaultResponse;
+      return this.apiClient.callApi(
+        '/api/v1.0/users/{userId}/RemoveFlipdishAccountId/{accountId}', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );
@@ -678,6 +1015,47 @@ export default class UsersApi {
     }
 
     /**
+     * Callback function to receive the result of the searchFlipdishAccounts operation.
+     * @callback module:api/UsersApi~searchFlipdishAccountsCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/RestApiArrayResultFlipdishAccountName} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {String} searchPattern 
+     * @param {module:api/UsersApi~searchFlipdishAccountsCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/RestApiArrayResultFlipdishAccountName}
+     */
+    searchFlipdishAccounts(searchPattern, callback) {
+      let postBody = null;
+      // verify the required parameter 'searchPattern' is set
+      if (searchPattern === undefined || searchPattern === null) {
+        throw new Error("Missing the required parameter 'searchPattern' when calling searchFlipdishAccounts");
+      }
+
+      let pathParams = {
+      };
+      let queryParams = {
+        'searchPattern': searchPattern
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = [];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'Data', 'Message'];
+      let returnType = RestApiArrayResultFlipdishAccountName;
+      return this.apiClient.callApi(
+        '/api/v1.0/users/searchFlipdishAccounts', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
      * Callback function to receive the result of the searchUsers operation.
      * @callback module:api/UsersApi~searchUsersCallback
      * @param {String} error Error message, if any.
@@ -731,6 +1109,98 @@ export default class UsersApi {
     }
 
     /**
+     * Callback function to receive the result of the sendUserPushNotification operation.
+     * @callback module:api/UsersApi~sendUserPushNotificationCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/RestApiResultUserPushNotificationSentResult} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {Number} userId 
+     * @param {module:model/SendUserPushNotificationRequest} request 
+     * @param {module:api/UsersApi~sendUserPushNotificationCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/RestApiResultUserPushNotificationSentResult}
+     */
+    sendUserPushNotification(userId, request, callback) {
+      let postBody = request;
+      // verify the required parameter 'userId' is set
+      if (userId === undefined || userId === null) {
+        throw new Error("Missing the required parameter 'userId' when calling sendUserPushNotification");
+      }
+      // verify the required parameter 'request' is set
+      if (request === undefined || request === null) {
+        throw new Error("Missing the required parameter 'request' when calling sendUserPushNotification");
+      }
+
+      let pathParams = {
+        'userId': userId
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded'];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
+      let returnType = RestApiResultUserPushNotificationSentResult;
+      return this.apiClient.callApi(
+        '/api/v1.0/users/{userId}/pushNotifications', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the sendUserSms operation.
+     * @callback module:api/UsersApi~sendUserSmsCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/RestApiDefaultResponse} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {Number} userId 
+     * @param {module:model/SendUserSmsRequest} request 
+     * @param {module:api/UsersApi~sendUserSmsCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/RestApiDefaultResponse}
+     */
+    sendUserSms(userId, request, callback) {
+      let postBody = request;
+      // verify the required parameter 'userId' is set
+      if (userId === undefined || userId === null) {
+        throw new Error("Missing the required parameter 'userId' when calling sendUserSms");
+      }
+      // verify the required parameter 'request' is set
+      if (request === undefined || request === null) {
+        throw new Error("Missing the required parameter 'request' when calling sendUserSms");
+      }
+
+      let pathParams = {
+        'userId': userId
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded'];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
+      let returnType = RestApiDefaultResponse;
+      return this.apiClient.callApi(
+        '/api/v1.0/users/{userId}/sms', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
      * Callback function to receive the result of the setCustomerName operation.
      * @callback module:api/UsersApi~setCustomerNameCallback
      * @param {String} error Error message, if any.
@@ -771,6 +1241,157 @@ export default class UsersApi {
       let returnType = RestApiDefaultResponse;
       return this.apiClient.callApi(
         '/api/v1.0/users/{userId}/SetCustomerName', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the setFlipdishAccountIdForUser operation.
+     * @callback module:api/UsersApi~setFlipdishAccountIdForUserCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/RestApiDefaultResponse} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {Number} userId 
+     * @param {Number} accountId 
+     * @param {module:api/UsersApi~setFlipdishAccountIdForUserCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/RestApiDefaultResponse}
+     */
+    setFlipdishAccountIdForUser(userId, accountId, callback) {
+      let postBody = null;
+      // verify the required parameter 'userId' is set
+      if (userId === undefined || userId === null) {
+        throw new Error("Missing the required parameter 'userId' when calling setFlipdishAccountIdForUser");
+      }
+      // verify the required parameter 'accountId' is set
+      if (accountId === undefined || accountId === null) {
+        throw new Error("Missing the required parameter 'accountId' when calling setFlipdishAccountIdForUser");
+      }
+
+      let pathParams = {
+        'userId': userId,
+        'accountId': accountId
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = [];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'Data', 'Message'];
+      let returnType = RestApiDefaultResponse;
+      return this.apiClient.callApi(
+        '/api/v1.0/users/{userId}/SetFlipdishAccountId/{accountId}', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the setUserDeliveryLocationCoordinates operation.
+     * @callback module:api/UsersApi~setUserDeliveryLocationCoordinatesCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/RestApiDefaultResponse} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {Number} userId 
+     * @param {Number} deliveryLocationId 
+     * @param {module:model/SetUserDeliveryLocationCoordinatesRequest} request 
+     * @param {module:api/UsersApi~setUserDeliveryLocationCoordinatesCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/RestApiDefaultResponse}
+     */
+    setUserDeliveryLocationCoordinates(userId, deliveryLocationId, request, callback) {
+      let postBody = request;
+      // verify the required parameter 'userId' is set
+      if (userId === undefined || userId === null) {
+        throw new Error("Missing the required parameter 'userId' when calling setUserDeliveryLocationCoordinates");
+      }
+      // verify the required parameter 'deliveryLocationId' is set
+      if (deliveryLocationId === undefined || deliveryLocationId === null) {
+        throw new Error("Missing the required parameter 'deliveryLocationId' when calling setUserDeliveryLocationCoordinates");
+      }
+      // verify the required parameter 'request' is set
+      if (request === undefined || request === null) {
+        throw new Error("Missing the required parameter 'request' when calling setUserDeliveryLocationCoordinates");
+      }
+
+      let pathParams = {
+        'userId': userId,
+        'deliveryLocationId': deliveryLocationId
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded'];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
+      let returnType = RestApiDefaultResponse;
+      return this.apiClient.callApi(
+        '/api/v1.0/users/{userId}/deliveryLocations/{deliveryLocationId}/coordinates', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the setUserDeliveryLocationField operation.
+     * @callback module:api/UsersApi~setUserDeliveryLocationFieldCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/RestApiDefaultResponse} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {Number} userId 
+     * @param {Number} deliveryLocationId 
+     * @param {module:model/SetUserDeliveryLocationFieldRequest} request 
+     * @param {module:api/UsersApi~setUserDeliveryLocationFieldCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/RestApiDefaultResponse}
+     */
+    setUserDeliveryLocationField(userId, deliveryLocationId, request, callback) {
+      let postBody = request;
+      // verify the required parameter 'userId' is set
+      if (userId === undefined || userId === null) {
+        throw new Error("Missing the required parameter 'userId' when calling setUserDeliveryLocationField");
+      }
+      // verify the required parameter 'deliveryLocationId' is set
+      if (deliveryLocationId === undefined || deliveryLocationId === null) {
+        throw new Error("Missing the required parameter 'deliveryLocationId' when calling setUserDeliveryLocationField");
+      }
+      // verify the required parameter 'request' is set
+      if (request === undefined || request === null) {
+        throw new Error("Missing the required parameter 'request' when calling setUserDeliveryLocationField");
+      }
+
+      let pathParams = {
+        'userId': userId,
+        'deliveryLocationId': deliveryLocationId
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded'];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
+      let returnType = RestApiDefaultResponse;
+      return this.apiClient.callApi(
+        '/api/v1.0/users/{userId}/deliveryLocations/{deliveryLocationId}/fields', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );

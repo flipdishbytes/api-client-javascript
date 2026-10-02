@@ -88,16 +88,6 @@
         done();
       });
     });
-    describe('getVerificationStatus', function() {
-      it('should call getVerificationStatus successfully', function(done) {
-        //uncomment below and update the code to test getVerificationStatus
-        //instance.getVerificationStatus(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
     describe('setBankAccountBusinessType', function() {
       it('should call setBankAccountBusinessType successfully', function(done) {
         //uncomment below and update the code to test setBankAccountBusinessType

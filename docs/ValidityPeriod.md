@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**DayOfWeek** | **String** |  | [optional] 
-**StartTime** | **String** |  | [optional] 
-**EndTime** | **String** |  | [optional] 
+**DayOfWeek** | **String** | DayOfWeek. | [optional] 
+**StartTime** | **String** | StartTime. | [optional] 
+**EndTime** | **String** | EndTime. | [optional] 
 
 
 

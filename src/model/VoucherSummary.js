@@ -69,6 +69,18 @@ class VoucherSummary {
             if (data.hasOwnProperty('IsEnabled')) {
                 obj['IsEnabled'] = ApiClient.convertToType(data['IsEnabled'], 'Boolean');
             }
+            if (data.hasOwnProperty('IsPromoted')) {
+                obj['IsPromoted'] = ApiClient.convertToType(data['IsPromoted'], 'Boolean');
+            }
+            if (data.hasOwnProperty('StoreNames')) {
+                obj['StoreNames'] = ApiClient.convertToType(data['StoreNames'], ['String']);
+            }
+            if (data.hasOwnProperty('IsAvailableOnAllStores')) {
+                obj['IsAvailableOnAllStores'] = ApiClient.convertToType(data['IsAvailableOnAllStores'], 'Boolean');
+            }
+            if (data.hasOwnProperty('ChannelRestrictions')) {
+                obj['ChannelRestrictions'] = ApiClient.convertToType(data['ChannelRestrictions'], ['String']);
+            }
         }
         return obj;
     }
@@ -117,6 +129,30 @@ VoucherSummary.prototype['Description'] = undefined;
  * @member {Boolean} IsEnabled
  */
 VoucherSummary.prototype['IsEnabled'] = undefined;
+
+/**
+ * Marks the voucher as promoted
+ * @member {Boolean} IsPromoted
+ */
+VoucherSummary.prototype['IsPromoted'] = undefined;
+
+/**
+ * Store names associated with this voucher
+ * @member {Array.<String>} StoreNames
+ */
+VoucherSummary.prototype['StoreNames'] = undefined;
+
+/**
+ * True if the voucher is available on all active stores in the app
+ * @member {Boolean} IsAvailableOnAllStores
+ */
+VoucherSummary.prototype['IsAvailableOnAllStores'] = undefined;
+
+/**
+ * Channels the voucher is restricted to
+ * @member {Array.<module:model/VoucherSummary.ChannelRestrictionsEnum>} ChannelRestrictions
+ */
+VoucherSummary.prototype['ChannelRestrictions'] = undefined;
 
 
 
@@ -248,6 +284,51 @@ VoucherSummary['VoucherSubTypeEnum'] = {
      * @const
      */
     "Custom": "Custom"
+};
+
+
+/**
+ * Allowed values for the <code>ChannelRestrictions</code> property.
+ * @enum {String}
+ * @readonly
+ */
+VoucherSummary['ChannelRestrictionsEnum'] = {
+
+    /**
+     * value: "Ios"
+     * @const
+     */
+    "Ios": "Ios",
+
+    /**
+     * value: "Android"
+     * @const
+     */
+    "Android": "Android",
+
+    /**
+     * value: "Web"
+     * @const
+     */
+    "Web": "Web",
+
+    /**
+     * value: "Kiosk"
+     * @const
+     */
+    "Kiosk": "Kiosk",
+
+    /**
+     * value: "Pos"
+     * @const
+     */
+    "Pos": "Pos",
+
+    /**
+     * value: "Google"
+     * @const
+     */
+    "Google": "Google"
 };
 
 

@@ -84,6 +84,24 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property VatNumber (base name: "VatNumber")', function() {
+      // uncomment below and update the code to test the property VatNumber
+      //var instance = new Flipdish.BankAccountSummary();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property AccountHolderAddress (base name: "AccountHolderAddress")', function() {
+      // uncomment below and update the code to test the property AccountHolderAddress
+      //var instance = new Flipdish.BankAccountSummary();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property AccountHolderCountryCode (base name: "AccountHolderCountryCode")', function() {
+      // uncomment below and update the code to test the property AccountHolderCountryCode
+      //var instance = new Flipdish.BankAccountSummary();
+      //expect(instance).to.be();
+    });
+
     it('should have the property StripeConnectedAccountInfo (base name: "StripeConnectedAccountInfo")', function() {
       // uncomment below and update the code to test the property StripeConnectedAccountInfo
       //var instance = new Flipdish.BankAccountSummary();

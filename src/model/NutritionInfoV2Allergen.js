@@ -21,6 +21,7 @@ import ApiClient from '../ApiClient';
 class NutritionInfoV2Allergen {
     /**
      * Constructs a new <code>NutritionInfoV2Allergen</code>.
+     * NutritionInfoV2Allergen.
      * @alias module:model/NutritionInfoV2Allergen
      */
     constructor() { 

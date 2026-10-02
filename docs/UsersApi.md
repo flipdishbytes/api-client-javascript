@@ -8,19 +8,32 @@ Method | HTTP request | Description
 [**addUserToRole**](UsersApi.md#addUserToRole) | **POST** /api/v1.0/users/{userId}/AddUserToRole/{roleName} | 
 [**anonymizeUser**](UsersApi.md#anonymizeUser) | **POST** /api/v1.0/users/{userId}/AnonymizeUser | 
 [**blockUserPhoneNumber**](UsersApi.md#blockUserPhoneNumber) | **POST** /api/v1.0/users/{userId}/BlockUserPhoneNumber | 
+[**createUserDeliveryLocation**](UsersApi.md#createUserDeliveryLocation) | **POST** /api/v1.0/users/{userId}/deliveryLocations | 
 [**getPreviousOrderCountForStore**](UsersApi.md#getPreviousOrderCountForStore) | **GET** /api/v1.0/users/{userId}/previousordercount/{storeId} | 
 [**getRestaurantUserAccounts**](UsersApi.md#getRestaurantUserAccounts) | **GET** /api/v1.0/users/{userId}/RestaurantUserAccounts | 
 [**getRestaurantUserStores**](UsersApi.md#getRestaurantUserStores) | **GET** /api/v1.0/users/{userId}/RestaurantUserStores | 
 [**getRoles**](UsersApi.md#getRoles) | **GET** /api/v1.0/users/roles | 
 [**getRolesAndUnassignedRoles**](UsersApi.md#getRolesAndUnassignedRoles) | **GET** /api/v1.0/users/{userId}/roles | 
 [**getUserById**](UsersApi.md#getUserById) | **GET** /api/v1.0/users/{userId} | 
+[**getUserDeliveryLocationsForAdmin**](UsersApi.md#getUserDeliveryLocationsForAdmin) | **GET** /api/v1.0/users/{userId}/deliveryLocations | 
 [**getUserNotes**](UsersApi.md#getUserNotes) | **GET** /api/v1.0/users/{userId}/UserNotes | 
+[**getUserOrderByIdForAdmin**](UsersApi.md#getUserOrderByIdForAdmin) | **GET** /api/v1.0/users/{userId}/orders/{orderId} | 
+[**getUserOrdersForAdmin**](UsersApi.md#getUserOrdersForAdmin) | **GET** /api/v1.0/users/{userId}/orders | 
+[**getUserSmsConversationItems**](UsersApi.md#getUserSmsConversationItems) | **GET** /api/v1.0/users/{userId}/smsConversationItems | 
+[**hideUserDeliveryLocation**](UsersApi.md#hideUserDeliveryLocation) | **POST** /api/v1.0/users/{userId}/deliveryLocations/{deliveryLocationId}/hide | 
 [**markUserAsFraudulent**](UsersApi.md#markUserAsFraudulent) | **POST** /api/v1.0/users/{userId}/MarkUserAsFraudulent | 
 [**markUserAsSuspicious**](UsersApi.md#markUserAsSuspicious) | **POST** /api/v1.0/users/{userId}/MarkUserAsSuspicious | 
+[**removeFlipdishAccountIdForUser**](UsersApi.md#removeFlipdishAccountIdForUser) | **POST** /api/v1.0/users/{userId}/RemoveFlipdishAccountId/{accountId} | 
 [**removeUserFromRole**](UsersApi.md#removeUserFromRole) | **POST** /api/v1.0/users/{userId}/RemoveUserFromRole/{roleName} | 
 [**resetMfa**](UsersApi.md#resetMfa) | **POST** /api/v1.0/users/{userId}/ResetMfa | 
+[**searchFlipdishAccounts**](UsersApi.md#searchFlipdishAccounts) | **GET** /api/v1.0/users/searchFlipdishAccounts | 
 [**searchUsers**](UsersApi.md#searchUsers) | **GET** /api/v1.0/users/search | 
+[**sendUserPushNotification**](UsersApi.md#sendUserPushNotification) | **POST** /api/v1.0/users/{userId}/pushNotifications | 
+[**sendUserSms**](UsersApi.md#sendUserSms) | **POST** /api/v1.0/users/{userId}/sms | 
 [**setCustomerName**](UsersApi.md#setCustomerName) | **POST** /api/v1.0/users/{userId}/SetCustomerName | 
+[**setFlipdishAccountIdForUser**](UsersApi.md#setFlipdishAccountIdForUser) | **POST** /api/v1.0/users/{userId}/SetFlipdishAccountId/{accountId} | 
+[**setUserDeliveryLocationCoordinates**](UsersApi.md#setUserDeliveryLocationCoordinates) | **POST** /api/v1.0/users/{userId}/deliveryLocations/{deliveryLocationId}/coordinates | 
+[**setUserDeliveryLocationField**](UsersApi.md#setUserDeliveryLocationField) | **POST** /api/v1.0/users/{userId}/deliveryLocations/{deliveryLocationId}/fields | 
 [**setUserLanguage**](UsersApi.md#setUserLanguage) | **POST** /api/v1.0/users/{userId}/SetLanguage/{languageId} | 
 [**unblockUserPhoneNumber**](UsersApi.md#unblockUserPhoneNumber) | **POST** /api/v1.0/users/{userId}/UnblockUserPhoneNumber | 
 
@@ -216,6 +229,55 @@ Name | Type | Description  | Notes
 
 - **Content-Type**: Not defined
 - **Accept**: application/json, text/json, application/xml, text/xml, Data, Message
+
+
+## createUserDeliveryLocation
+
+> RestApiDefaultResponse createUserDeliveryLocation(userId, request)
+
+
+
+### Example
+
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
+// Configure OAuth2 access token for authorization: oauth2
+let oauth2 = defaultClient.authentications['oauth2'];
+oauth2.accessToken = 'YOUR ACCESS TOKEN';
+
+let apiInstance = new Flipdish.UsersApi();
+let userId = 56; // Number | 
+let request = new Flipdish.CreateUserDeliveryLocationRequest(); // CreateUserDeliveryLocationRequest | 
+apiInstance.createUserDeliveryLocation(userId, request, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **userId** | **Number**|  | 
+ **request** | [**CreateUserDeliveryLocationRequest**](CreateUserDeliveryLocationRequest.md)|  | 
+
+### Return type
+
+[**RestApiDefaultResponse**](RestApiDefaultResponse.md)
+
+### Authorization
+
+[oauth2](../README.md#oauth2)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
+- **Accept**: application/json, text/json, application/xml, text/xml
 
 
 ## getPreviousOrderCountForStore
@@ -498,6 +560,57 @@ Name | Type | Description  | Notes
 - **Accept**: application/json, text/json, application/xml, text/xml, Data, Message
 
 
+## getUserDeliveryLocationsForAdmin
+
+> RestApiArrayResultUserDeliveryLocationAdmin getUserDeliveryLocationsForAdmin(userId, opts)
+
+
+
+### Example
+
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
+// Configure OAuth2 access token for authorization: oauth2
+let oauth2 = defaultClient.authentications['oauth2'];
+oauth2.accessToken = 'YOUR ACCESS TOKEN';
+
+let apiInstance = new Flipdish.UsersApi();
+let userId = 56; // Number | 
+let opts = {
+  'whiteLabelId': 56 // Number | 
+};
+apiInstance.getUserDeliveryLocationsForAdmin(userId, opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **userId** | **Number**|  | 
+ **whiteLabelId** | **Number**|  | [optional] 
+
+### Return type
+
+[**RestApiArrayResultUserDeliveryLocationAdmin**](RestApiArrayResultUserDeliveryLocationAdmin.md)
+
+### Authorization
+
+[oauth2](../README.md#oauth2)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml
+
+
 ## getUserNotes
 
 > RestApiArrayResultUserNote getUserNotes(userId)
@@ -543,6 +656,210 @@ Name | Type | Description  | Notes
 
 - **Content-Type**: Not defined
 - **Accept**: application/json, text/json, application/xml, text/xml, Data, Message
+
+
+## getUserOrderByIdForAdmin
+
+> RestApiResultOrder getUserOrderByIdForAdmin(userId, orderId)
+
+
+
+### Example
+
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
+// Configure OAuth2 access token for authorization: oauth2
+let oauth2 = defaultClient.authentications['oauth2'];
+oauth2.accessToken = 'YOUR ACCESS TOKEN';
+
+let apiInstance = new Flipdish.UsersApi();
+let userId = 56; // Number | 
+let orderId = 56; // Number | 
+apiInstance.getUserOrderByIdForAdmin(userId, orderId, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **userId** | **Number**|  | 
+ **orderId** | **Number**|  | 
+
+### Return type
+
+[**RestApiResultOrder**](RestApiResultOrder.md)
+
+### Authorization
+
+[oauth2](../README.md#oauth2)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, Data
+
+
+## getUserOrdersForAdmin
+
+> RestApiArrayResultUserOrderSummary getUserOrdersForAdmin(userId, opts)
+
+
+
+### Example
+
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
+// Configure OAuth2 access token for authorization: oauth2
+let oauth2 = defaultClient.authentications['oauth2'];
+oauth2.accessToken = 'YOUR ACCESS TOKEN';
+
+let apiInstance = new Flipdish.UsersApi();
+let userId = 56; // Number | 
+let opts = {
+  'skip': 56, // Number | 
+  'take': 56, // Number | 
+  'brandId': "brandId_example" // String | 
+};
+apiInstance.getUserOrdersForAdmin(userId, opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **userId** | **Number**|  | 
+ **skip** | **Number**|  | [optional] 
+ **take** | **Number**|  | [optional] 
+ **brandId** | **String**|  | [optional] 
+
+### Return type
+
+[**RestApiArrayResultUserOrderSummary**](RestApiArrayResultUserOrderSummary.md)
+
+### Authorization
+
+[oauth2](../README.md#oauth2)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml
+
+
+## getUserSmsConversationItems
+
+> RestApiArrayResultUserSmsChatItem getUserSmsConversationItems(userId, opts)
+
+
+
+### Example
+
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
+// Configure OAuth2 access token for authorization: oauth2
+let oauth2 = defaultClient.authentications['oauth2'];
+oauth2.accessToken = 'YOUR ACCESS TOKEN';
+
+let apiInstance = new Flipdish.UsersApi();
+let userId = 56; // Number | 
+let opts = {
+  'mostRecentCount': 56 // Number | 
+};
+apiInstance.getUserSmsConversationItems(userId, opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **userId** | **Number**|  | 
+ **mostRecentCount** | **Number**|  | [optional] 
+
+### Return type
+
+[**RestApiArrayResultUserSmsChatItem**](RestApiArrayResultUserSmsChatItem.md)
+
+### Authorization
+
+[oauth2](../README.md#oauth2)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml
+
+
+## hideUserDeliveryLocation
+
+> RestApiDefaultResponse hideUserDeliveryLocation(userId, deliveryLocationId)
+
+
+
+### Example
+
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
+// Configure OAuth2 access token for authorization: oauth2
+let oauth2 = defaultClient.authentications['oauth2'];
+oauth2.accessToken = 'YOUR ACCESS TOKEN';
+
+let apiInstance = new Flipdish.UsersApi();
+let userId = 56; // Number | 
+let deliveryLocationId = 56; // Number | 
+apiInstance.hideUserDeliveryLocation(userId, deliveryLocationId, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **userId** | **Number**|  | 
+ **deliveryLocationId** | **Number**|  | 
+
+### Return type
+
+[**RestApiDefaultResponse**](RestApiDefaultResponse.md)
+
+### Authorization
+
+[oauth2](../README.md#oauth2)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml
 
 
 ## markUserAsFraudulent
@@ -624,6 +941,55 @@ apiInstance.markUserAsSuspicious(userId, (error, data, response) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **userId** | **Number**|  | 
+
+### Return type
+
+[**RestApiDefaultResponse**](RestApiDefaultResponse.md)
+
+### Authorization
+
+[oauth2](../README.md#oauth2)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, Data, Message
+
+
+## removeFlipdishAccountIdForUser
+
+> RestApiDefaultResponse removeFlipdishAccountIdForUser(userId, accountId)
+
+
+
+### Example
+
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
+// Configure OAuth2 access token for authorization: oauth2
+let oauth2 = defaultClient.authentications['oauth2'];
+oauth2.accessToken = 'YOUR ACCESS TOKEN';
+
+let apiInstance = new Flipdish.UsersApi();
+let userId = 56; // Number | 
+let accountId = 56; // Number | 
+apiInstance.removeFlipdishAccountIdForUser(userId, accountId, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **userId** | **Number**|  | 
+ **accountId** | **Number**|  | 
 
 ### Return type
 
@@ -735,6 +1101,53 @@ Name | Type | Description  | Notes
 - **Accept**: application/json, text/json, application/xml, text/xml, Data, Message
 
 
+## searchFlipdishAccounts
+
+> RestApiArrayResultFlipdishAccountName searchFlipdishAccounts(searchPattern)
+
+
+
+### Example
+
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
+// Configure OAuth2 access token for authorization: oauth2
+let oauth2 = defaultClient.authentications['oauth2'];
+oauth2.accessToken = 'YOUR ACCESS TOKEN';
+
+let apiInstance = new Flipdish.UsersApi();
+let searchPattern = "searchPattern_example"; // String | 
+apiInstance.searchFlipdishAccounts(searchPattern, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **searchPattern** | **String**|  | 
+
+### Return type
+
+[**RestApiArrayResultFlipdishAccountName**](RestApiArrayResultFlipdishAccountName.md)
+
+### Authorization
+
+[oauth2](../README.md#oauth2)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, Data, Message
+
+
 ## searchUsers
 
 > RestApiPaginationResultUserSearch searchUsers(searchQuery, opts)
@@ -794,6 +1207,104 @@ Name | Type | Description  | Notes
 - **Accept**: application/json, text/json, application/xml, text/xml, Data, Message
 
 
+## sendUserPushNotification
+
+> RestApiResultUserPushNotificationSentResult sendUserPushNotification(userId, request)
+
+
+
+### Example
+
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
+// Configure OAuth2 access token for authorization: oauth2
+let oauth2 = defaultClient.authentications['oauth2'];
+oauth2.accessToken = 'YOUR ACCESS TOKEN';
+
+let apiInstance = new Flipdish.UsersApi();
+let userId = 56; // Number | 
+let request = new Flipdish.SendUserPushNotificationRequest(); // SendUserPushNotificationRequest | 
+apiInstance.sendUserPushNotification(userId, request, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **userId** | **Number**|  | 
+ **request** | [**SendUserPushNotificationRequest**](SendUserPushNotificationRequest.md)|  | 
+
+### Return type
+
+[**RestApiResultUserPushNotificationSentResult**](RestApiResultUserPushNotificationSentResult.md)
+
+### Authorization
+
+[oauth2](../README.md#oauth2)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
+- **Accept**: application/json, text/json, application/xml, text/xml
+
+
+## sendUserSms
+
+> RestApiDefaultResponse sendUserSms(userId, request)
+
+
+
+### Example
+
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
+// Configure OAuth2 access token for authorization: oauth2
+let oauth2 = defaultClient.authentications['oauth2'];
+oauth2.accessToken = 'YOUR ACCESS TOKEN';
+
+let apiInstance = new Flipdish.UsersApi();
+let userId = 56; // Number | 
+let request = new Flipdish.SendUserSmsRequest(); // SendUserSmsRequest | 
+apiInstance.sendUserSms(userId, request, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **userId** | **Number**|  | 
+ **request** | [**SendUserSmsRequest**](SendUserSmsRequest.md)|  | 
+
+### Return type
+
+[**RestApiDefaultResponse**](RestApiDefaultResponse.md)
+
+### Authorization
+
+[oauth2](../README.md#oauth2)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
+- **Accept**: application/json, text/json, application/xml, text/xml
+
+
 ## setCustomerName
 
 > RestApiDefaultResponse setCustomerName(userId, customerName)
@@ -841,6 +1352,157 @@ Name | Type | Description  | Notes
 
 - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
 - **Accept**: application/json, text/json, application/xml, text/xml, Data, Message
+
+
+## setFlipdishAccountIdForUser
+
+> RestApiDefaultResponse setFlipdishAccountIdForUser(userId, accountId)
+
+
+
+### Example
+
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
+// Configure OAuth2 access token for authorization: oauth2
+let oauth2 = defaultClient.authentications['oauth2'];
+oauth2.accessToken = 'YOUR ACCESS TOKEN';
+
+let apiInstance = new Flipdish.UsersApi();
+let userId = 56; // Number | 
+let accountId = 56; // Number | 
+apiInstance.setFlipdishAccountIdForUser(userId, accountId, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **userId** | **Number**|  | 
+ **accountId** | **Number**|  | 
+
+### Return type
+
+[**RestApiDefaultResponse**](RestApiDefaultResponse.md)
+
+### Authorization
+
+[oauth2](../README.md#oauth2)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, Data, Message
+
+
+## setUserDeliveryLocationCoordinates
+
+> RestApiDefaultResponse setUserDeliveryLocationCoordinates(userId, deliveryLocationId, request)
+
+
+
+### Example
+
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
+// Configure OAuth2 access token for authorization: oauth2
+let oauth2 = defaultClient.authentications['oauth2'];
+oauth2.accessToken = 'YOUR ACCESS TOKEN';
+
+let apiInstance = new Flipdish.UsersApi();
+let userId = 56; // Number | 
+let deliveryLocationId = 56; // Number | 
+let request = new Flipdish.SetUserDeliveryLocationCoordinatesRequest(); // SetUserDeliveryLocationCoordinatesRequest | 
+apiInstance.setUserDeliveryLocationCoordinates(userId, deliveryLocationId, request, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **userId** | **Number**|  | 
+ **deliveryLocationId** | **Number**|  | 
+ **request** | [**SetUserDeliveryLocationCoordinatesRequest**](SetUserDeliveryLocationCoordinatesRequest.md)|  | 
+
+### Return type
+
+[**RestApiDefaultResponse**](RestApiDefaultResponse.md)
+
+### Authorization
+
+[oauth2](../README.md#oauth2)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
+- **Accept**: application/json, text/json, application/xml, text/xml
+
+
+## setUserDeliveryLocationField
+
+> RestApiDefaultResponse setUserDeliveryLocationField(userId, deliveryLocationId, request)
+
+
+
+### Example
+
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
+// Configure OAuth2 access token for authorization: oauth2
+let oauth2 = defaultClient.authentications['oauth2'];
+oauth2.accessToken = 'YOUR ACCESS TOKEN';
+
+let apiInstance = new Flipdish.UsersApi();
+let userId = 56; // Number | 
+let deliveryLocationId = 56; // Number | 
+let request = new Flipdish.SetUserDeliveryLocationFieldRequest(); // SetUserDeliveryLocationFieldRequest | 
+apiInstance.setUserDeliveryLocationField(userId, deliveryLocationId, request, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **userId** | **Number**|  | 
+ **deliveryLocationId** | **Number**|  | 
+ **request** | [**SetUserDeliveryLocationFieldRequest**](SetUserDeliveryLocationFieldRequest.md)|  | 
+
+### Return type
+
+[**RestApiDefaultResponse**](RestApiDefaultResponse.md)
+
+### Authorization
+
+[oauth2](../README.md#oauth2)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
+- **Accept**: application/json, text/json, application/xml, text/xml
 
 
 ## setUserLanguage

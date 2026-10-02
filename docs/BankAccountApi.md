@@ -18,7 +18,7 @@ Method | HTTP request | Description
 
 ## attachBankAccountToStore
 
-> attachBankAccountToStore(appId, bankAccountId, storeId)
+> attachBankAccountToStore(appId, bankAccountId, storeId, opts)
 
 
 
@@ -35,7 +35,10 @@ let apiInstance = new Flipdish.BankAccountApi();
 let appId = "appId_example"; // String | 
 let bankAccountId = 56; // Number | 
 let storeId = 56; // Number | 
-apiInstance.attachBankAccountToStore(appId, bankAccountId, storeId, (error, data, response) => {
+let opts = {
+  'skipBankAccountUpdateWarningEmail': true // Boolean | 
+};
+apiInstance.attachBankAccountToStore(appId, bankAccountId, storeId, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -52,6 +55,7 @@ Name | Type | Description  | Notes
  **appId** | **String**|  | 
  **bankAccountId** | **Number**|  | 
  **storeId** | **Number**|  | 
+ **skipBankAccountUpdateWarningEmail** | **Boolean**|  | [optional] 
 
 ### Return type
 

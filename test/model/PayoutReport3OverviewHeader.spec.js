@@ -126,6 +126,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property BankAccountHasChanged (base name: "BankAccountHasChanged")', function() {
+      // uncomment below and update the code to test the property BankAccountHasChanged
+      //var instance = new Flipdish.PayoutReport3OverviewHeader();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));

@@ -158,6 +158,16 @@
         done();
       });
     });
+    describe('sendPushNotification', function() {
+      it('should call sendPushNotification successfully', function(done) {
+        //uncomment below and update the code to test sendPushNotification
+        //instance.sendPushNotification(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('setAppConfig', function() {
       it('should call setAppConfig successfully', function(done) {
         //uncomment below and update the code to test setAppConfig
@@ -212,6 +222,16 @@
       it('should call setPanaceaVanityUrl successfully', function(done) {
         //uncomment below and update the code to test setPanaceaVanityUrl
         //instance.setPanaceaVanityUrl(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('setThirdPartyIntegrations', function() {
+      it('should call setThirdPartyIntegrations successfully', function(done) {
+        //uncomment below and update the code to test setThirdPartyIntegrations
+        //instance.setThirdPartyIntegrations(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

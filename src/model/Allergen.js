@@ -21,6 +21,7 @@ import ApiClient from '../ApiClient';
 class Allergen {
     /**
      * Constructs a new <code>Allergen</code>.
+     * Allergen.
      * @alias module:model/Allergen
      */
     constructor() { 

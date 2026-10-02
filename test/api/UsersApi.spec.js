@@ -88,6 +88,16 @@
         done();
       });
     });
+    describe('createUserDeliveryLocation', function() {
+      it('should call createUserDeliveryLocation successfully', function(done) {
+        //uncomment below and update the code to test createUserDeliveryLocation
+        //instance.createUserDeliveryLocation(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('getPreviousOrderCountForStore', function() {
       it('should call getPreviousOrderCountForStore successfully', function(done) {
         //uncomment below and update the code to test getPreviousOrderCountForStore
@@ -148,10 +158,60 @@
         done();
       });
     });
+    describe('getUserDeliveryLocationsForAdmin', function() {
+      it('should call getUserDeliveryLocationsForAdmin successfully', function(done) {
+        //uncomment below and update the code to test getUserDeliveryLocationsForAdmin
+        //instance.getUserDeliveryLocationsForAdmin(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('getUserNotes', function() {
       it('should call getUserNotes successfully', function(done) {
         //uncomment below and update the code to test getUserNotes
         //instance.getUserNotes(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('getUserOrderByIdForAdmin', function() {
+      it('should call getUserOrderByIdForAdmin successfully', function(done) {
+        //uncomment below and update the code to test getUserOrderByIdForAdmin
+        //instance.getUserOrderByIdForAdmin(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('getUserOrdersForAdmin', function() {
+      it('should call getUserOrdersForAdmin successfully', function(done) {
+        //uncomment below and update the code to test getUserOrdersForAdmin
+        //instance.getUserOrdersForAdmin(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('getUserSmsConversationItems', function() {
+      it('should call getUserSmsConversationItems successfully', function(done) {
+        //uncomment below and update the code to test getUserSmsConversationItems
+        //instance.getUserSmsConversationItems(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('hideUserDeliveryLocation', function() {
+      it('should call hideUserDeliveryLocation successfully', function(done) {
+        //uncomment below and update the code to test hideUserDeliveryLocation
+        //instance.hideUserDeliveryLocation(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -178,6 +238,16 @@
         done();
       });
     });
+    describe('removeFlipdishAccountIdForUser', function() {
+      it('should call removeFlipdishAccountIdForUser successfully', function(done) {
+        //uncomment below and update the code to test removeFlipdishAccountIdForUser
+        //instance.removeFlipdishAccountIdForUser(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('removeUserFromRole', function() {
       it('should call removeUserFromRole successfully', function(done) {
         //uncomment below and update the code to test removeUserFromRole
@@ -198,6 +268,16 @@
         done();
       });
     });
+    describe('searchFlipdishAccounts', function() {
+      it('should call searchFlipdishAccounts successfully', function(done) {
+        //uncomment below and update the code to test searchFlipdishAccounts
+        //instance.searchFlipdishAccounts(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('searchUsers', function() {
       it('should call searchUsers successfully', function(done) {
         //uncomment below and update the code to test searchUsers
@@ -208,10 +288,60 @@
         done();
       });
     });
+    describe('sendUserPushNotification', function() {
+      it('should call sendUserPushNotification successfully', function(done) {
+        //uncomment below and update the code to test sendUserPushNotification
+        //instance.sendUserPushNotification(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('sendUserSms', function() {
+      it('should call sendUserSms successfully', function(done) {
+        //uncomment below and update the code to test sendUserSms
+        //instance.sendUserSms(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('setCustomerName', function() {
       it('should call setCustomerName successfully', function(done) {
         //uncomment below and update the code to test setCustomerName
         //instance.setCustomerName(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('setFlipdishAccountIdForUser', function() {
+      it('should call setFlipdishAccountIdForUser successfully', function(done) {
+        //uncomment below and update the code to test setFlipdishAccountIdForUser
+        //instance.setFlipdishAccountIdForUser(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('setUserDeliveryLocationCoordinates', function() {
+      it('should call setUserDeliveryLocationCoordinates successfully', function(done) {
+        //uncomment below and update the code to test setUserDeliveryLocationCoordinates
+        //instance.setUserDeliveryLocationCoordinates(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('setUserDeliveryLocationField', function() {
+      it('should call setUserDeliveryLocationField successfully', function(done) {
+        //uncomment below and update the code to test setUserDeliveryLocationField
+        //instance.setUserDeliveryLocationField(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

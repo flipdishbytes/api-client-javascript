@@ -72,6 +72,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property MenuPublishId (base name: "MenuPublishId")', function() {
+      // uncomment below and update the code to test the property MenuPublishId
+      //var instance = new Flipdish.StoreSummary();
+      //expect(instance).to.be();
+    });
+
     it('should have the property Metadata (base name: "Metadata")', function() {
       // uncomment below and update the code to test the property Metadata
       //var instance = new Flipdish.StoreSummary();
@@ -116,6 +122,18 @@
 
     it('should have the property PrettyAddress (base name: "PrettyAddress")', function() {
       // uncomment below and update the code to test the property PrettyAddress
+      //var instance = new Flipdish.StoreSummary();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property CountryCode (base name: "CountryCode")', function() {
+      // uncomment below and update the code to test the property CountryCode
+      //var instance = new Flipdish.StoreSummary();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property PropertyId (base name: "PropertyId")', function() {
+      // uncomment below and update the code to test the property PropertyId
       //var instance = new Flipdish.StoreSummary();
       //expect(instance).to.be();
     });

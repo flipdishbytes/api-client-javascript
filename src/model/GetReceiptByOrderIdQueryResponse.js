@@ -73,6 +73,12 @@ class GetReceiptByOrderIdQueryResponse {
             if (data.hasOwnProperty('PaymentMethodDescription')) {
                 obj['PaymentMethodDescription'] = ApiClient.convertToType(data['PaymentMethodDescription'], 'String');
             }
+            if (data.hasOwnProperty('OrgId')) {
+                obj['OrgId'] = ApiClient.convertToType(data['OrgId'], 'String');
+            }
+            if (data.hasOwnProperty('CountryCode')) {
+                obj['CountryCode'] = ApiClient.convertToType(data['CountryCode'], 'String');
+            }
         }
         return obj;
     }
@@ -119,6 +125,16 @@ GetReceiptByOrderIdQueryResponse.prototype['VatNumber'] = undefined;
  * @member {String} PaymentMethodDescription
  */
 GetReceiptByOrderIdQueryResponse.prototype['PaymentMethodDescription'] = undefined;
+
+/**
+ * @member {String} OrgId
+ */
+GetReceiptByOrderIdQueryResponse.prototype['OrgId'] = undefined;
+
+/**
+ * @member {String} CountryCode
+ */
+GetReceiptByOrderIdQueryResponse.prototype['CountryCode'] = undefined;
 
 
 

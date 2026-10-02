@@ -21,6 +21,7 @@ import ApiClient from '../ApiClient';
 class ItemNutritionInfoV2AddUpdateModel {
     /**
      * Constructs a new <code>ItemNutritionInfoV2AddUpdateModel</code>.
+     * ItemNutritionInfoV2AddUpdateModel.
      * @alias module:model/ItemNutritionInfoV2AddUpdateModel
      */
     constructor() { 
@@ -58,6 +59,7 @@ class ItemNutritionInfoV2AddUpdateModel {
 }
 
 /**
+ * AllergenIds.
  * @member {Array.<String>} AllergenIds
  */
 ItemNutritionInfoV2AddUpdateModel.prototype['AllergenIds'] = undefined;

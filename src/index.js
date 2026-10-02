@@ -36,6 +36,7 @@ import AppCompliance from './model/AppCompliance';
 import AppConfigSalesChannel from './model/AppConfigSalesChannel';
 import AppConfigUpdateModel from './model/AppConfigUpdateModel';
 import AppCreatedEvent from './model/AppCreatedEvent';
+import AppGeneralConfigModel from './model/AppGeneralConfigModel';
 import AppInstall from './model/AppInstall';
 import AppLookup from './model/AppLookup';
 import AppStoreApp from './model/AppStoreApp';
@@ -46,9 +47,11 @@ import AppStoreAppSummary from './model/AppStoreAppSummary';
 import AppStoreAppSupportInfo from './model/AppStoreAppSupportInfo';
 import AppStoreConfigCreatedEvent from './model/AppStoreConfigCreatedEvent';
 import AppStoreConfigDeletedEvent from './model/AppStoreConfigDeletedEvent';
+import AppStoreConfigModel from './model/AppStoreConfigModel';
 import AppStoreConfigUpdatedEvent from './model/AppStoreConfigUpdatedEvent';
 import AppStoreSubscriptionChangeJobUpdatedEvent from './model/AppStoreSubscriptionChangeJobUpdatedEvent';
 import AppUpdatedEvent from './model/AppUpdatedEvent';
+import AssetResultModel from './model/AssetResultModel';
 import AssignedBankAccount from './model/AssignedBankAccount';
 import AuditLogFieldChangeInformation from './model/AuditLogFieldChangeInformation';
 import BalanceDetails from './model/BalanceDetails';
@@ -62,6 +65,7 @@ import BankAccountDetailsUpdateRequest from './model/BankAccountDetailsUpdateReq
 import BankAccountSummary from './model/BankAccountSummary';
 import BankAccountUpdatedEvent from './model/BankAccountUpdatedEvent';
 import BluetoothTerminalStatus from './model/BluetoothTerminalStatus';
+import BuildResultModel from './model/BuildResultModel';
 import BusinessHoursOverride from './model/BusinessHoursOverride';
 import BusinessHoursOverrideBase from './model/BusinessHoursOverrideBase';
 import BusinessHoursPeriod from './model/BusinessHoursPeriod';
@@ -100,6 +104,7 @@ import CreateAppStoreApp from './model/CreateAppStoreApp';
 import CreateBasicAccountModel from './model/CreateBasicAccountModel';
 import CreateCatalogGroupReference from './model/CreateCatalogGroupReference';
 import CreateCatalogItem from './model/CreateCatalogItem';
+import CreateEndUserFeeConfig from './model/CreateEndUserFeeConfig';
 import CreateFulfillmentStatesConfiguration from './model/CreateFulfillmentStatesConfiguration';
 import CreateFullMenu from './model/CreateFullMenu';
 import CreateFullMenuItemOptionSet from './model/CreateFullMenuItemOptionSet';
@@ -119,6 +124,7 @@ import CreateProduct from './model/CreateProduct';
 import CreateProductReference from './model/CreateProductReference';
 import CreatePromotion from './model/CreatePromotion';
 import CreateTeammate from './model/CreateTeammate';
+import CreateUserDeliveryLocationRequest from './model/CreateUserDeliveryLocationRequest';
 import CreateVoucher from './model/CreateVoucher';
 import CreatedMenuSectionItems from './model/CreatedMenuSectionItems';
 import CreditNoteDetails from './model/CreditNoteDetails';
@@ -157,6 +163,7 @@ import DynamicFormRules from './model/DynamicFormRules';
 import EmvNotificationEvent from './model/EmvNotificationEvent';
 import EmvTerminal from './model/EmvTerminal';
 import EmvTerminalWithAssignments from './model/EmvTerminalWithAssignments';
+import EndUserFeeConfig from './model/EndUserFeeConfig';
 import EventSearchResult from './model/EventSearchResult';
 import ExecuteConfigurationActionRequest from './model/ExecuteConfigurationActionRequest';
 import ExecuteConfigurationActionResult from './model/ExecuteConfigurationActionResult';
@@ -169,6 +176,7 @@ import FieldGroup from './model/FieldGroup';
 import FileCreationResult from './model/FileCreationResult';
 import FileDownloadResult from './model/FileDownloadResult';
 import FirebaseApp from './model/FirebaseApp';
+import FlipdishAccountName from './model/FlipdishAccountName';
 import FlipdishEventBase from './model/FlipdishEventBase';
 import FlipdishFeesDetails from './model/FlipdishFeesDetails';
 import FulfillentStatusActionItem from './model/FulfillentStatusActionItem';
@@ -177,6 +185,7 @@ import FulfillmentStatesConfigurationSummary from './model/FulfillmentStatesConf
 import FulfillmentStatesConfiguredStore from './model/FulfillmentStatesConfiguredStore';
 import FulfillmentStatusConfigurationItem from './model/FulfillmentStatusConfigurationItem';
 import GeoPointRequest from './model/GeoPointRequest';
+import GetEndUserFeeConfigsResponse from './model/GetEndUserFeeConfigsResponse';
 import GetReceiptByOrderIdQueryResponse from './model/GetReceiptByOrderIdQueryResponse';
 import GoogleAddress from './model/GoogleAddress';
 import GoogleAddressComponent from './model/GoogleAddressComponent';
@@ -195,6 +204,7 @@ import HttpPostedFileBase from './model/HttpPostedFileBase';
 import HydraAssignedEvent from './model/HydraAssignedEvent';
 import HydraConfig from './model/HydraConfig';
 import HydraConnectionStatusChangedEvent from './model/HydraConnectionStatusChangedEvent';
+import HydraCreatedEvent from './model/HydraCreatedEvent';
 import HydraDeviceDetails from './model/HydraDeviceDetails';
 import HydraRegistrationRequest from './model/HydraRegistrationRequest';
 import HydraRequestResetEvent from './model/HydraRequestResetEvent';
@@ -382,8 +392,12 @@ import PayoutReport3DetailsSalesLine from './model/PayoutReport3DetailsSalesLine
 import PayoutReport3DetailsSummary from './model/PayoutReport3DetailsSummary';
 import PayoutReport3Overview from './model/PayoutReport3Overview';
 import PayoutReport3OverviewHeader from './model/PayoutReport3OverviewHeader';
+import PayoutReport3PropertyDetails from './model/PayoutReport3PropertyDetails';
+import PayoutReport3PropertyFilterOption from './model/PayoutReport3PropertyFilterOption';
 import PayoutReport3RefundedOrder from './model/PayoutReport3RefundedOrder';
 import PayoutReport3Store from './model/PayoutReport3Store';
+import PayoutReport3StorePayout from './model/PayoutReport3StorePayout';
+import PayoutReport3StorePayouts from './model/PayoutReport3StorePayouts';
 import PayoutRequestIds from './model/PayoutRequestIds';
 import PayoutStore from './model/PayoutStore';
 import PayoutSummary from './model/PayoutSummary';
@@ -394,6 +408,8 @@ import PercentDiscountDetails from './model/PercentDiscountDetails';
 import PhoneCall from './model/PhoneCall';
 import PhoneCallEndedEvent from './model/PhoneCallEndedEvent';
 import PhoneCallStartedEvent from './model/PhoneCallStartedEvent';
+import PixelPointProductCatalogue from './model/PixelPointProductCatalogue';
+import PlayStoreConfigModel from './model/PlayStoreConfigModel';
 import PosRevenueDetails from './model/PosRevenueDetails';
 import PreOrderConfig from './model/PreOrderConfig';
 import PreOrderTime from './model/PreOrderTime';
@@ -442,6 +458,7 @@ import RestApiArrayResultClientDeviceSummary from './model/RestApiArrayResultCli
 import RestApiArrayResultCountryWithAccountFieldsDefinitions from './model/RestApiArrayResultCountryWithAccountFieldsDefinitions';
 import RestApiArrayResultDeliveryZone from './model/RestApiArrayResultDeliveryZone';
 import RestApiArrayResultEmvTerminalWithAssignments from './model/RestApiArrayResultEmvTerminalWithAssignments';
+import RestApiArrayResultFlipdishAccountName from './model/RestApiArrayResultFlipdishAccountName';
 import RestApiArrayResultFulfillmentStatesConfigurationSummary from './model/RestApiArrayResultFulfillmentStatesConfigurationSummary';
 import RestApiArrayResultHomeAction from './model/RestApiArrayResultHomeAction';
 import RestApiArrayResultKioskCashPaymentSettings from './model/RestApiArrayResultKioskCashPaymentSettings';
@@ -486,10 +503,14 @@ import RestApiArrayResultStripeCustomConnectedAccount from './model/RestApiArray
 import RestApiArrayResultSubscriptionSummary from './model/RestApiArrayResultSubscriptionSummary';
 import RestApiArrayResultSupportedCountry from './model/RestApiArrayResultSupportedCountry';
 import RestApiArrayResultTeammate from './model/RestApiArrayResultTeammate';
+import RestApiArrayResultUserDeliveryLocationAdmin from './model/RestApiArrayResultUserDeliveryLocationAdmin';
 import RestApiArrayResultUserFlipdishAccount from './model/RestApiArrayResultUserFlipdishAccount';
 import RestApiArrayResultUserNote from './model/RestApiArrayResultUserNote';
+import RestApiArrayResultUserOrderSummary from './model/RestApiArrayResultUserOrderSummary';
+import RestApiArrayResultUserSmsChatItem from './model/RestApiArrayResultUserSmsChatItem';
 import RestApiArrayResultUserStoreInfo from './model/RestApiArrayResultUserStoreInfo';
 import RestApiArrayResultVoucherDataPoint from './model/RestApiArrayResultVoucherDataPoint';
+import RestApiArrayResultVoucherSummary from './model/RestApiArrayResultVoucherSummary';
 import RestApiDefaultResponse from './model/RestApiDefaultResponse';
 import RestApiErrorResult from './model/RestApiErrorResult';
 import RestApiEventSearchPaginationResult from './model/RestApiEventSearchPaginationResult';
@@ -538,12 +559,16 @@ import RestApiResultApp from './model/RestApiResultApp';
 import RestApiResultAppChannelAssignment from './model/RestApiResultAppChannelAssignment';
 import RestApiResultAppCompliance from './model/RestApiResultAppCompliance';
 import RestApiResultAppConfigSalesChannel from './model/RestApiResultAppConfigSalesChannel';
+import RestApiResultAppGeneralConfigModel from './model/RestApiResultAppGeneralConfigModel';
 import RestApiResultAppStoreApp from './model/RestApiResultAppStoreApp';
 import RestApiResultAppStoreAppConfiguration from './model/RestApiResultAppStoreAppConfiguration';
 import RestApiResultAppStoreAppEntitlements from './model/RestApiResultAppStoreAppEntitlements';
+import RestApiResultAppStoreConfigModel from './model/RestApiResultAppStoreConfigModel';
+import RestApiResultAssetResultModel from './model/RestApiResultAssetResultModel';
 import RestApiResultAssignedBankAccount from './model/RestApiResultAssignedBankAccount';
 import RestApiResultBankAccountDetail from './model/RestApiResultBankAccountDetail';
 import RestApiResultBluetoothTerminalStatus from './model/RestApiResultBluetoothTerminalStatus';
+import RestApiResultBuildResultModel from './model/RestApiResultBuildResultModel';
 import RestApiResultBusinessHoursOverride from './model/RestApiResultBusinessHoursOverride';
 import RestApiResultBusinessHoursPeriod from './model/RestApiResultBusinessHoursPeriod';
 import RestApiResultCardReader from './model/RestApiResultCardReader';
@@ -559,10 +584,12 @@ import RestApiResultCustomer from './model/RestApiResultCustomer';
 import RestApiResultCustomers from './model/RestApiResultCustomers';
 import RestApiResultDeliveryZone from './model/RestApiResultDeliveryZone';
 import RestApiResultDnsRecordInformation from './model/RestApiResultDnsRecordInformation';
+import RestApiResultEndUserFeeConfig from './model/RestApiResultEndUserFeeConfig';
 import RestApiResultExecuteConfigurationActionResult from './model/RestApiResultExecuteConfigurationActionResult';
 import RestApiResultFileCreationResult from './model/RestApiResultFileCreationResult';
 import RestApiResultFileDownloadResult from './model/RestApiResultFileDownloadResult';
 import RestApiResultFulfillmentStatesConfiguration from './model/RestApiResultFulfillmentStatesConfiguration';
+import RestApiResultGetEndUserFeeConfigsResponse from './model/RestApiResultGetEndUserFeeConfigsResponse';
 import RestApiResultGroup from './model/RestApiResultGroup';
 import RestApiResultHasPaymentMethodResponse from './model/RestApiResultHasPaymentMethodResponse';
 import RestApiResultHomeStatistics from './model/RestApiResultHomeStatistics';
@@ -615,6 +642,10 @@ import RestApiResultPaymentTerminalDetails from './model/RestApiResultPaymentTer
 import RestApiResultPaymentTerminalTransactionDetails from './model/RestApiResultPaymentTerminalTransactionDetails';
 import RestApiResultPayoutReport3Details from './model/RestApiResultPayoutReport3Details';
 import RestApiResultPayoutReport3Overview from './model/RestApiResultPayoutReport3Overview';
+import RestApiResultPayoutReport3PropertyDetails from './model/RestApiResultPayoutReport3PropertyDetails';
+import RestApiResultPayoutReport3StorePayouts from './model/RestApiResultPayoutReport3StorePayouts';
+import RestApiResultPixelPointProductCatalogue from './model/RestApiResultPixelPointProductCatalogue';
+import RestApiResultPlayStoreConfigModel from './model/RestApiResultPlayStoreConfigModel';
 import RestApiResultPreOrderConfig from './model/RestApiResultPreOrderConfig';
 import RestApiResultProcessingFeeConfig from './model/RestApiResultProcessingFeeConfig';
 import RestApiResultProduct from './model/RestApiResultProduct';
@@ -626,6 +657,7 @@ import RestApiResultRestaurantVoucherPayGreenConfiguration from './model/RestApi
 import RestApiResultRestaurantVoucherPayGreenStoreConfiguration from './model/RestApiResultRestaurantVoucherPayGreenStoreConfiguration';
 import RestApiResultRetentionCampaign from './model/RestApiResultRetentionCampaign';
 import RestApiResultServiceCharge from './model/RestApiResultServiceCharge';
+import RestApiResultSetV2FeeCalculationRequest from './model/RestApiResultSetV2FeeCalculationRequest';
 import RestApiResultSmsProviderCredential from './model/RestApiResultSmsProviderCredential';
 import RestApiResultStore from './model/RestApiResultStore';
 import RestApiResultStoreAddress from './model/RestApiResultStoreAddress';
@@ -644,11 +676,13 @@ import RestApiResultTelemetrySeriesResult from './model/RestApiResultTelemetrySe
 import RestApiResultTipConfiguration from './model/RestApiResultTipConfiguration';
 import RestApiResultUpdateMobileAppsSubmissionStatus from './model/RestApiResultUpdateMobileAppsSubmissionStatus';
 import RestApiResultUserInfo from './model/RestApiResultUserInfo';
+import RestApiResultUserPushNotificationSentResult from './model/RestApiResultUserPushNotificationSentResult';
 import RestApiResultUserRole from './model/RestApiResultUserRole';
 import RestApiResultVoucher from './model/RestApiResultVoucher';
 import RestApiResultVoucherWithStats from './model/RestApiResultVoucherWithStats';
 import RestApiResultWebsiteImage from './model/RestApiResultWebsiteImage';
 import RestApiResultWebsiteTestimonial from './model/RestApiResultWebsiteTestimonial';
+import RestApiResultWhiteLabelConfigModel from './model/RestApiResultWhiteLabelConfigModel';
 import RestApiStringArrayResult from './model/RestApiStringArrayResult';
 import RestApiStringResult from './model/RestApiStringResult';
 import RestApiUnauthorizedResult from './model/RestApiUnauthorizedResult';
@@ -667,9 +701,14 @@ import RevenueAdjustmentsDetails from './model/RevenueAdjustmentsDetails';
 import RevenueDetail from './model/RevenueDetail';
 import SafeWaitHandle from './model/SafeWaitHandle';
 import SearchCriteria from './model/SearchCriteria';
+import SendUserPushNotificationRequest from './model/SendUserPushNotificationRequest';
+import SendUserSmsRequest from './model/SendUserSmsRequest';
 import ServiceCharge from './model/ServiceCharge';
 import SetOrderBatchingConfiguration from './model/SetOrderBatchingConfiguration';
 import SetPasswordWithPinModel from './model/SetPasswordWithPinModel';
+import SetUserDeliveryLocationCoordinatesRequest from './model/SetUserDeliveryLocationCoordinatesRequest';
+import SetUserDeliveryLocationFieldRequest from './model/SetUserDeliveryLocationFieldRequest';
+import SetV2FeeCalculationRequest from './model/SetV2FeeCalculationRequest';
 import SetVoucherValidityPeriodsSimplifiedRequest from './model/SetVoucherValidityPeriodsSimplifiedRequest';
 import Setting from './model/Setting';
 import SignupStep from './model/SignupStep';
@@ -788,15 +827,19 @@ import UpdateVoucherUsage from './model/UpdateVoucherUsage';
 import UserAnsweredSignupQuestionsEvent from './model/UserAnsweredSignupQuestionsEvent';
 import UserCreatedEvent from './model/UserCreatedEvent';
 import UserDeletedEvent from './model/UserDeletedEvent';
+import UserDeliveryLocationAdmin from './model/UserDeliveryLocationAdmin';
 import UserEventInfo from './model/UserEventInfo';
 import UserFlipdishAccount from './model/UserFlipdishAccount';
 import UserInfo from './model/UserInfo';
 import UserLoginEvent from './model/UserLoginEvent';
 import UserMonthlyCommission from './model/UserMonthlyCommission';
 import UserNote from './model/UserNote';
+import UserOrderSummary from './model/UserOrderSummary';
 import UserPasswordCreatedEvent from './model/UserPasswordCreatedEvent';
+import UserPushNotificationSentResult from './model/UserPushNotificationSentResult';
 import UserRole from './model/UserRole';
 import UserSearch from './model/UserSearch';
+import UserSmsChatItem from './model/UserSmsChatItem';
 import UserStoreInfo from './model/UserStoreInfo';
 import UserUpdatedEvent from './model/UserUpdatedEvent';
 import UserWhiteLabelConfig from './model/UserWhiteLabelConfig';
@@ -825,7 +868,11 @@ import WebsiteTestimonial from './model/WebsiteTestimonial';
 import WebsiteTestimonialBase from './model/WebsiteTestimonialBase';
 import WebsiteUpdatedEvent from './model/WebsiteUpdatedEvent';
 import WebsiteVanityUrlUpdatedEvent from './model/WebsiteVanityUrlUpdatedEvent';
+import WhiteLabelAssetModel from './model/WhiteLabelAssetModel';
+import WhiteLabelColorSchemeModel from './model/WhiteLabelColorSchemeModel';
 import WhiteLabelConfig from './model/WhiteLabelConfig';
+import WhiteLabelConfigModel from './model/WhiteLabelConfigModel';
+import WhiteLabelLanguageModel from './model/WhiteLabelLanguageModel';
 import AccountsApi from './api/AccountsApi';
 import AddressApi from './api/AddressApi';
 import ApmApi from './api/ApmApi';
@@ -852,6 +899,7 @@ import CustomersApi from './api/CustomersApi';
 import DeliveryZoneApi from './api/DeliveryZoneApi';
 import DeviceApi from './api/DeviceApi';
 import DriversApi from './api/DriversApi';
+import EndUserFeesApi from './api/EndUserFeesApi';
 import EventsApi from './api/EventsApi';
 import FeaturesApi from './api/FeaturesApi';
 import FilesApi from './api/FilesApi';
@@ -861,6 +909,7 @@ import FulfillmentStateConfigurationApi from './api/FulfillmentStateConfiguratio
 import HeartbeatApi from './api/HeartbeatApi';
 import HomeApi from './api/HomeApi';
 import HydraApi from './api/HydraApi';
+import IntegrationMetadataCatalogueApi from './api/IntegrationMetadataCatalogueApi';
 import IntercomApi from './api/IntercomApi';
 import InvoicesApi from './api/InvoicesApi';
 import KioskEntitlementsApi from './api/KioskEntitlementsApi';
@@ -909,6 +958,8 @@ import UsersApi from './api/UsersApi';
 import VouchersApi from './api/VouchersApi';
 import WebhooksApi from './api/WebhooksApi';
 import WebsiteApi from './api/WebsiteApi';
+import WhiteLabelBuildsApi from './api/WhiteLabelBuildsApi';
+import WhiteLabelConfigApi from './api/WhiteLabelConfigApi';
 
 
 /**
@@ -1088,6 +1139,12 @@ export {
     AppCreatedEvent,
 
     /**
+     * The AppGeneralConfigModel model constructor.
+     * @property {module:model/AppGeneralConfigModel}
+     */
+    AppGeneralConfigModel,
+
+    /**
      * The AppInstall model constructor.
      * @property {module:model/AppInstall}
      */
@@ -1148,6 +1205,12 @@ export {
     AppStoreConfigDeletedEvent,
 
     /**
+     * The AppStoreConfigModel model constructor.
+     * @property {module:model/AppStoreConfigModel}
+     */
+    AppStoreConfigModel,
+
+    /**
      * The AppStoreConfigUpdatedEvent model constructor.
      * @property {module:model/AppStoreConfigUpdatedEvent}
      */
@@ -1164,6 +1227,12 @@ export {
      * @property {module:model/AppUpdatedEvent}
      */
     AppUpdatedEvent,
+
+    /**
+     * The AssetResultModel model constructor.
+     * @property {module:model/AssetResultModel}
+     */
+    AssetResultModel,
 
     /**
      * The AssignedBankAccount model constructor.
@@ -1242,6 +1311,12 @@ export {
      * @property {module:model/BluetoothTerminalStatus}
      */
     BluetoothTerminalStatus,
+
+    /**
+     * The BuildResultModel model constructor.
+     * @property {module:model/BuildResultModel}
+     */
+    BuildResultModel,
 
     /**
      * The BusinessHoursOverride model constructor.
@@ -1472,6 +1547,12 @@ export {
     CreateCatalogItem,
 
     /**
+     * The CreateEndUserFeeConfig model constructor.
+     * @property {module:model/CreateEndUserFeeConfig}
+     */
+    CreateEndUserFeeConfig,
+
+    /**
      * The CreateFulfillmentStatesConfiguration model constructor.
      * @property {module:model/CreateFulfillmentStatesConfiguration}
      */
@@ -1584,6 +1665,12 @@ export {
      * @property {module:model/CreateTeammate}
      */
     CreateTeammate,
+
+    /**
+     * The CreateUserDeliveryLocationRequest model constructor.
+     * @property {module:model/CreateUserDeliveryLocationRequest}
+     */
+    CreateUserDeliveryLocationRequest,
 
     /**
      * The CreateVoucher model constructor.
@@ -1814,6 +1901,12 @@ export {
     EmvTerminalWithAssignments,
 
     /**
+     * The EndUserFeeConfig model constructor.
+     * @property {module:model/EndUserFeeConfig}
+     */
+    EndUserFeeConfig,
+
+    /**
      * The EventSearchResult model constructor.
      * @property {module:model/EventSearchResult}
      */
@@ -1886,6 +1979,12 @@ export {
     FirebaseApp,
 
     /**
+     * The FlipdishAccountName model constructor.
+     * @property {module:model/FlipdishAccountName}
+     */
+    FlipdishAccountName,
+
+    /**
      * The FlipdishEventBase model constructor.
      * @property {module:model/FlipdishEventBase}
      */
@@ -1932,6 +2031,12 @@ export {
      * @property {module:model/GeoPointRequest}
      */
     GeoPointRequest,
+
+    /**
+     * The GetEndUserFeeConfigsResponse model constructor.
+     * @property {module:model/GetEndUserFeeConfigsResponse}
+     */
+    GetEndUserFeeConfigsResponse,
 
     /**
      * The GetReceiptByOrderIdQueryResponse model constructor.
@@ -2040,6 +2145,12 @@ export {
      * @property {module:model/HydraConnectionStatusChangedEvent}
      */
     HydraConnectionStatusChangedEvent,
+
+    /**
+     * The HydraCreatedEvent model constructor.
+     * @property {module:model/HydraCreatedEvent}
+     */
+    HydraCreatedEvent,
 
     /**
      * The HydraDeviceDetails model constructor.
@@ -3164,6 +3275,18 @@ export {
     PayoutReport3OverviewHeader,
 
     /**
+     * The PayoutReport3PropertyDetails model constructor.
+     * @property {module:model/PayoutReport3PropertyDetails}
+     */
+    PayoutReport3PropertyDetails,
+
+    /**
+     * The PayoutReport3PropertyFilterOption model constructor.
+     * @property {module:model/PayoutReport3PropertyFilterOption}
+     */
+    PayoutReport3PropertyFilterOption,
+
+    /**
      * The PayoutReport3RefundedOrder model constructor.
      * @property {module:model/PayoutReport3RefundedOrder}
      */
@@ -3174,6 +3297,18 @@ export {
      * @property {module:model/PayoutReport3Store}
      */
     PayoutReport3Store,
+
+    /**
+     * The PayoutReport3StorePayout model constructor.
+     * @property {module:model/PayoutReport3StorePayout}
+     */
+    PayoutReport3StorePayout,
+
+    /**
+     * The PayoutReport3StorePayouts model constructor.
+     * @property {module:model/PayoutReport3StorePayouts}
+     */
+    PayoutReport3StorePayouts,
 
     /**
      * The PayoutRequestIds model constructor.
@@ -3234,6 +3369,18 @@ export {
      * @property {module:model/PhoneCallStartedEvent}
      */
     PhoneCallStartedEvent,
+
+    /**
+     * The PixelPointProductCatalogue model constructor.
+     * @property {module:model/PixelPointProductCatalogue}
+     */
+    PixelPointProductCatalogue,
+
+    /**
+     * The PlayStoreConfigModel model constructor.
+     * @property {module:model/PlayStoreConfigModel}
+     */
+    PlayStoreConfigModel,
 
     /**
      * The PosRevenueDetails model constructor.
@@ -3524,6 +3671,12 @@ export {
     RestApiArrayResultEmvTerminalWithAssignments,
 
     /**
+     * The RestApiArrayResultFlipdishAccountName model constructor.
+     * @property {module:model/RestApiArrayResultFlipdishAccountName}
+     */
+    RestApiArrayResultFlipdishAccountName,
+
+    /**
      * The RestApiArrayResultFulfillmentStatesConfigurationSummary model constructor.
      * @property {module:model/RestApiArrayResultFulfillmentStatesConfigurationSummary}
      */
@@ -3788,6 +3941,12 @@ export {
     RestApiArrayResultTeammate,
 
     /**
+     * The RestApiArrayResultUserDeliveryLocationAdmin model constructor.
+     * @property {module:model/RestApiArrayResultUserDeliveryLocationAdmin}
+     */
+    RestApiArrayResultUserDeliveryLocationAdmin,
+
+    /**
      * The RestApiArrayResultUserFlipdishAccount model constructor.
      * @property {module:model/RestApiArrayResultUserFlipdishAccount}
      */
@@ -3800,6 +3959,18 @@ export {
     RestApiArrayResultUserNote,
 
     /**
+     * The RestApiArrayResultUserOrderSummary model constructor.
+     * @property {module:model/RestApiArrayResultUserOrderSummary}
+     */
+    RestApiArrayResultUserOrderSummary,
+
+    /**
+     * The RestApiArrayResultUserSmsChatItem model constructor.
+     * @property {module:model/RestApiArrayResultUserSmsChatItem}
+     */
+    RestApiArrayResultUserSmsChatItem,
+
+    /**
      * The RestApiArrayResultUserStoreInfo model constructor.
      * @property {module:model/RestApiArrayResultUserStoreInfo}
      */
@@ -3810,6 +3981,12 @@ export {
      * @property {module:model/RestApiArrayResultVoucherDataPoint}
      */
     RestApiArrayResultVoucherDataPoint,
+
+    /**
+     * The RestApiArrayResultVoucherSummary model constructor.
+     * @property {module:model/RestApiArrayResultVoucherSummary}
+     */
+    RestApiArrayResultVoucherSummary,
 
     /**
      * The RestApiDefaultResponse model constructor.
@@ -4100,6 +4277,12 @@ export {
     RestApiResultAppConfigSalesChannel,
 
     /**
+     * The RestApiResultAppGeneralConfigModel model constructor.
+     * @property {module:model/RestApiResultAppGeneralConfigModel}
+     */
+    RestApiResultAppGeneralConfigModel,
+
+    /**
      * The RestApiResultAppStoreApp model constructor.
      * @property {module:model/RestApiResultAppStoreApp}
      */
@@ -4118,6 +4301,18 @@ export {
     RestApiResultAppStoreAppEntitlements,
 
     /**
+     * The RestApiResultAppStoreConfigModel model constructor.
+     * @property {module:model/RestApiResultAppStoreConfigModel}
+     */
+    RestApiResultAppStoreConfigModel,
+
+    /**
+     * The RestApiResultAssetResultModel model constructor.
+     * @property {module:model/RestApiResultAssetResultModel}
+     */
+    RestApiResultAssetResultModel,
+
+    /**
      * The RestApiResultAssignedBankAccount model constructor.
      * @property {module:model/RestApiResultAssignedBankAccount}
      */
@@ -4134,6 +4329,12 @@ export {
      * @property {module:model/RestApiResultBluetoothTerminalStatus}
      */
     RestApiResultBluetoothTerminalStatus,
+
+    /**
+     * The RestApiResultBuildResultModel model constructor.
+     * @property {module:model/RestApiResultBuildResultModel}
+     */
+    RestApiResultBuildResultModel,
 
     /**
      * The RestApiResultBusinessHoursOverride model constructor.
@@ -4226,6 +4427,12 @@ export {
     RestApiResultDnsRecordInformation,
 
     /**
+     * The RestApiResultEndUserFeeConfig model constructor.
+     * @property {module:model/RestApiResultEndUserFeeConfig}
+     */
+    RestApiResultEndUserFeeConfig,
+
+    /**
      * The RestApiResultExecuteConfigurationActionResult model constructor.
      * @property {module:model/RestApiResultExecuteConfigurationActionResult}
      */
@@ -4248,6 +4455,12 @@ export {
      * @property {module:model/RestApiResultFulfillmentStatesConfiguration}
      */
     RestApiResultFulfillmentStatesConfiguration,
+
+    /**
+     * The RestApiResultGetEndUserFeeConfigsResponse model constructor.
+     * @property {module:model/RestApiResultGetEndUserFeeConfigsResponse}
+     */
+    RestApiResultGetEndUserFeeConfigsResponse,
 
     /**
      * The RestApiResultGroup model constructor.
@@ -4562,6 +4775,30 @@ export {
     RestApiResultPayoutReport3Overview,
 
     /**
+     * The RestApiResultPayoutReport3PropertyDetails model constructor.
+     * @property {module:model/RestApiResultPayoutReport3PropertyDetails}
+     */
+    RestApiResultPayoutReport3PropertyDetails,
+
+    /**
+     * The RestApiResultPayoutReport3StorePayouts model constructor.
+     * @property {module:model/RestApiResultPayoutReport3StorePayouts}
+     */
+    RestApiResultPayoutReport3StorePayouts,
+
+    /**
+     * The RestApiResultPixelPointProductCatalogue model constructor.
+     * @property {module:model/RestApiResultPixelPointProductCatalogue}
+     */
+    RestApiResultPixelPointProductCatalogue,
+
+    /**
+     * The RestApiResultPlayStoreConfigModel model constructor.
+     * @property {module:model/RestApiResultPlayStoreConfigModel}
+     */
+    RestApiResultPlayStoreConfigModel,
+
+    /**
      * The RestApiResultPreOrderConfig model constructor.
      * @property {module:model/RestApiResultPreOrderConfig}
      */
@@ -4626,6 +4863,12 @@ export {
      * @property {module:model/RestApiResultServiceCharge}
      */
     RestApiResultServiceCharge,
+
+    /**
+     * The RestApiResultSetV2FeeCalculationRequest model constructor.
+     * @property {module:model/RestApiResultSetV2FeeCalculationRequest}
+     */
+    RestApiResultSetV2FeeCalculationRequest,
 
     /**
      * The RestApiResultSmsProviderCredential model constructor.
@@ -4736,6 +4979,12 @@ export {
     RestApiResultUserInfo,
 
     /**
+     * The RestApiResultUserPushNotificationSentResult model constructor.
+     * @property {module:model/RestApiResultUserPushNotificationSentResult}
+     */
+    RestApiResultUserPushNotificationSentResult,
+
+    /**
      * The RestApiResultUserRole model constructor.
      * @property {module:model/RestApiResultUserRole}
      */
@@ -4764,6 +5013,12 @@ export {
      * @property {module:model/RestApiResultWebsiteTestimonial}
      */
     RestApiResultWebsiteTestimonial,
+
+    /**
+     * The RestApiResultWhiteLabelConfigModel model constructor.
+     * @property {module:model/RestApiResultWhiteLabelConfigModel}
+     */
+    RestApiResultWhiteLabelConfigModel,
 
     /**
      * The RestApiStringArrayResult model constructor.
@@ -4874,6 +5129,18 @@ export {
     SearchCriteria,
 
     /**
+     * The SendUserPushNotificationRequest model constructor.
+     * @property {module:model/SendUserPushNotificationRequest}
+     */
+    SendUserPushNotificationRequest,
+
+    /**
+     * The SendUserSmsRequest model constructor.
+     * @property {module:model/SendUserSmsRequest}
+     */
+    SendUserSmsRequest,
+
+    /**
      * The ServiceCharge model constructor.
      * @property {module:model/ServiceCharge}
      */
@@ -4890,6 +5157,24 @@ export {
      * @property {module:model/SetPasswordWithPinModel}
      */
     SetPasswordWithPinModel,
+
+    /**
+     * The SetUserDeliveryLocationCoordinatesRequest model constructor.
+     * @property {module:model/SetUserDeliveryLocationCoordinatesRequest}
+     */
+    SetUserDeliveryLocationCoordinatesRequest,
+
+    /**
+     * The SetUserDeliveryLocationFieldRequest model constructor.
+     * @property {module:model/SetUserDeliveryLocationFieldRequest}
+     */
+    SetUserDeliveryLocationFieldRequest,
+
+    /**
+     * The SetV2FeeCalculationRequest model constructor.
+     * @property {module:model/SetV2FeeCalculationRequest}
+     */
+    SetV2FeeCalculationRequest,
 
     /**
      * The SetVoucherValidityPeriodsSimplifiedRequest model constructor.
@@ -5600,6 +5885,12 @@ export {
     UserDeletedEvent,
 
     /**
+     * The UserDeliveryLocationAdmin model constructor.
+     * @property {module:model/UserDeliveryLocationAdmin}
+     */
+    UserDeliveryLocationAdmin,
+
+    /**
      * The UserEventInfo model constructor.
      * @property {module:model/UserEventInfo}
      */
@@ -5636,10 +5927,22 @@ export {
     UserNote,
 
     /**
+     * The UserOrderSummary model constructor.
+     * @property {module:model/UserOrderSummary}
+     */
+    UserOrderSummary,
+
+    /**
      * The UserPasswordCreatedEvent model constructor.
      * @property {module:model/UserPasswordCreatedEvent}
      */
     UserPasswordCreatedEvent,
+
+    /**
+     * The UserPushNotificationSentResult model constructor.
+     * @property {module:model/UserPushNotificationSentResult}
+     */
+    UserPushNotificationSentResult,
 
     /**
      * The UserRole model constructor.
@@ -5652,6 +5955,12 @@ export {
      * @property {module:model/UserSearch}
      */
     UserSearch,
+
+    /**
+     * The UserSmsChatItem model constructor.
+     * @property {module:model/UserSmsChatItem}
+     */
+    UserSmsChatItem,
 
     /**
      * The UserStoreInfo model constructor.
@@ -5822,10 +6131,34 @@ export {
     WebsiteVanityUrlUpdatedEvent,
 
     /**
+     * The WhiteLabelAssetModel model constructor.
+     * @property {module:model/WhiteLabelAssetModel}
+     */
+    WhiteLabelAssetModel,
+
+    /**
+     * The WhiteLabelColorSchemeModel model constructor.
+     * @property {module:model/WhiteLabelColorSchemeModel}
+     */
+    WhiteLabelColorSchemeModel,
+
+    /**
      * The WhiteLabelConfig model constructor.
      * @property {module:model/WhiteLabelConfig}
      */
     WhiteLabelConfig,
+
+    /**
+     * The WhiteLabelConfigModel model constructor.
+     * @property {module:model/WhiteLabelConfigModel}
+     */
+    WhiteLabelConfigModel,
+
+    /**
+     * The WhiteLabelLanguageModel model constructor.
+     * @property {module:model/WhiteLabelLanguageModel}
+     */
+    WhiteLabelLanguageModel,
 
     /**
     * The AccountsApi service constructor.
@@ -5984,6 +6317,12 @@ export {
     DriversApi,
 
     /**
+    * The EndUserFeesApi service constructor.
+    * @property {module:api/EndUserFeesApi}
+    */
+    EndUserFeesApi,
+
+    /**
     * The EventsApi service constructor.
     * @property {module:api/EventsApi}
     */
@@ -6036,6 +6375,12 @@ export {
     * @property {module:api/HydraApi}
     */
     HydraApi,
+
+    /**
+    * The IntegrationMetadataCatalogueApi service constructor.
+    * @property {module:api/IntegrationMetadataCatalogueApi}
+    */
+    IntegrationMetadataCatalogueApi,
 
     /**
     * The IntercomApi service constructor.
@@ -6323,5 +6668,17 @@ export {
     * The WebsiteApi service constructor.
     * @property {module:api/WebsiteApi}
     */
-    WebsiteApi
+    WebsiteApi,
+
+    /**
+    * The WhiteLabelBuildsApi service constructor.
+    * @property {module:api/WhiteLabelBuildsApi}
+    */
+    WhiteLabelBuildsApi,
+
+    /**
+    * The WhiteLabelConfigApi service constructor.
+    * @property {module:api/WhiteLabelConfigApi}
+    */
+    WhiteLabelConfigApi
 };

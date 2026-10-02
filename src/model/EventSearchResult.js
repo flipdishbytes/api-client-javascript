@@ -43,6 +43,7 @@ import EmvNotificationEvent from './EmvNotificationEvent';
 import ExternalStoreEvent from './ExternalStoreEvent';
 import HydraAssignedEvent from './HydraAssignedEvent';
 import HydraConnectionStatusChangedEvent from './HydraConnectionStatusChangedEvent';
+import HydraCreatedEvent from './HydraCreatedEvent';
 import HydraRequestResetEvent from './HydraRequestResetEvent';
 import HydraSettingChangedEvent from './HydraSettingChangedEvent';
 import HydraStoreAssignedEvent from './HydraStoreAssignedEvent';
@@ -473,6 +474,9 @@ class EventSearchResult {
             }
             if (data.hasOwnProperty('HydraAssignedEvent')) {
                 obj['HydraAssignedEvent'] = ApiClient.convertToType(data['HydraAssignedEvent'], [HydraAssignedEvent]);
+            }
+            if (data.hasOwnProperty('HydraCreatedEvent')) {
+                obj['HydraCreatedEvent'] = ApiClient.convertToType(data['HydraCreatedEvent'], [HydraCreatedEvent]);
             }
             if (data.hasOwnProperty('HydraRequestResetEvent')) {
                 obj['HydraRequestResetEvent'] = ApiClient.convertToType(data['HydraRequestResetEvent'], [HydraRequestResetEvent]);
@@ -1188,6 +1192,12 @@ EventSearchResult.prototype['BankAccountAssignedEvent'] = undefined;
  * @member {Array.<module:model/HydraAssignedEvent>} HydraAssignedEvent
  */
 EventSearchResult.prototype['HydraAssignedEvent'] = undefined;
+
+/**
+ * Hydra created event
+ * @member {Array.<module:model/HydraCreatedEvent>} HydraCreatedEvent
+ */
+EventSearchResult.prototype['HydraCreatedEvent'] = undefined;
 
 /**
  * Hydra reset requested event

@@ -21,6 +21,7 @@ import ApiClient from '../ApiClient';
 class SmsProviderCredentialUpdateRequest {
     /**
      * Constructs a new <code>SmsProviderCredentialUpdateRequest</code>.
+     * SmsProviderCredentialUpdateRequest.
      * @alias module:model/SmsProviderCredentialUpdateRequest
      */
     constructor() { 
@@ -64,16 +65,19 @@ class SmsProviderCredentialUpdateRequest {
 }
 
 /**
+ * SenderId.
  * @member {String} SenderId
  */
 SmsProviderCredentialUpdateRequest.prototype['SenderId'] = undefined;
 
 /**
+ * Username.
  * @member {String} Username
  */
 SmsProviderCredentialUpdateRequest.prototype['Username'] = undefined;
 
 /**
+ * AuthToken.
  * @member {String} AuthToken
  */
 SmsProviderCredentialUpdateRequest.prototype['AuthToken'] = undefined;

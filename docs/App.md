@@ -56,6 +56,8 @@ Name | Type | Description | Notes
 
 * `StoreStaff` (value: `"StoreStaff"`)
 
+* `StaffMember` (value: `"StaffMember"`)
+
 * `StoreReadOnlyAccess` (value: `"StoreReadOnlyAccess"`)
 
 * `FinanceManger` (value: `"FinanceManger"`)
@@ -108,6 +110,8 @@ Name | Type | Description | Notes
 * `CreateTeammatePropertyManager` (value: `"CreateTeammatePropertyManager"`)
 
 * `CreateTeammatePropertyOwner` (value: `"CreateTeammatePropertyOwner"`)
+
+* `CreateTeammateStaffMember` (value: `"CreateTeammateStaffMember"`)
 
 * `ViewApmConfigurations` (value: `"ViewApmConfigurations"`)
 

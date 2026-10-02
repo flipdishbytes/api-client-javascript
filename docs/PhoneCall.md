@@ -5,6 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **PhoneCallId** | **Number** | Phone call id | [optional] 
+**CallSid** | **String** | Twilio Call SID | [optional] 
 **TimeOfCall** | **Date** | Time of the call | [optional] 
 **TimeOfCallLocal** | **Date** | Time of the call, local to the store to which the call was made | [optional] 
 **StoreId** | **Number** | ID of the store that the call was TO | [optional] 

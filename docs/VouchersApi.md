@@ -10,6 +10,7 @@ Method | HTTP request | Description
 [**getVoucherStatsById**](VouchersApi.md#getVoucherStatsById) | **GET** /api/v1.0/vouchers/stats/{voucherId} | 
 [**getVoucherValidityPeriods**](VouchersApi.md#getVoucherValidityPeriods) | **GET** /api/v1.0/{appId}/vouchers/{voucherId}/validity-periods | 
 [**getVouchers**](VouchersApi.md#getVouchers) | **GET** /api/v1.0/{appId}/vouchers/summaries | 
+[**getVouchersByCustomerForApp**](VouchersApi.md#getVouchersByCustomerForApp) | **GET** /api/v1.0/vouchers/{appId}/customer/{customerId} | 
 [**setVoucherValidityPeriodsSimplified**](VouchersApi.md#setVoucherValidityPeriodsSimplified) | **POST** /api/v1.0/{appId}/vouchers/{voucherId}/validity-periods-simplified | 
 [**updateVoucher**](VouchersApi.md#updateVoucher) | **POST** /api/v1.0/vouchers/{voucherId} | 
 [**updateVoucherUsage**](VouchersApi.md#updateVoucherUsage) | **POST** /api/v1.0/{appId}/vouchers/{voucherId}/usage | 
@@ -317,6 +318,55 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**RestApiPaginationResultVoucherSummary**](RestApiPaginationResultVoucherSummary.md)
+
+### Authorization
+
+[oauth2](../README.md#oauth2)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, Data, Message, ErrorCode, StackTrace
+
+
+## getVouchersByCustomerForApp
+
+> RestApiArrayResultVoucherSummary getVouchersByCustomerForApp(appId, customerId)
+
+
+
+### Example
+
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
+// Configure OAuth2 access token for authorization: oauth2
+let oauth2 = defaultClient.authentications['oauth2'];
+oauth2.accessToken = 'YOUR ACCESS TOKEN';
+
+let apiInstance = new Flipdish.VouchersApi();
+let appId = "appId_example"; // String | 
+let customerId = 56; // Number | 
+apiInstance.getVouchersByCustomerForApp(appId, customerId, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **appId** | **String**|  | 
+ **customerId** | **Number**|  | 
+
+### Return type
+
+[**RestApiArrayResultVoucherSummary**](RestApiArrayResultVoucherSummary.md)
 
 ### Authorization
 

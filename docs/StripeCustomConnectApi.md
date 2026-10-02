@@ -8,7 +8,6 @@ Method | HTTP request | Description
 [**createStripeConnectedAccount**](StripeCustomConnectApi.md#createStripeConnectedAccount) | **POST** /api/v1.0/{appId}/customconnect/{bankAccountId}/create-update-account | 
 [**createStripeConnectedAccountLink**](StripeCustomConnectApi.md#createStripeConnectedAccountLink) | **POST** /api/v1.0/{appId}/customconnect/{stripeConnectedAccountId}/create-account-link | 
 [**getCustomConnect**](StripeCustomConnectApi.md#getCustomConnect) | **GET** /api/v1.0/{appId}/customconnect/{storeId} | 
-[**getVerificationStatus**](StripeCustomConnectApi.md#getVerificationStatus) | **GET** /api/v1.0/{appId}/customconnect/verification-status | 
 [**setBankAccountBusinessType**](StripeCustomConnectApi.md#setBankAccountBusinessType) | **POST** /api/v1.0/{appId}/customconnect/bank-account/{bankAccountId}/businesstype | 
 [**stripeCustomConnectRefresh**](StripeCustomConnectApi.md#stripeCustomConnectRefresh) | **GET** /api/v1.0/{appId}/customconnect/refresh-link | 
 [**updateBankAccountDetails**](StripeCustomConnectApi.md#updateBankAccountDetails) | **POST** /api/v1.0/{appId}/customconnect/{bankAccountId}/update-bank-account-details | 
@@ -203,55 +202,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**RestApiArrayResultStripeCustomConnectedAccount**](RestApiArrayResultStripeCustomConnectedAccount.md)
-
-### Authorization
-
-[oauth2](../README.md#oauth2)
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json, text/json, application/xml, text/xml, Data
-
-
-## getVerificationStatus
-
-> RestApiResultStripeConnectedAccount getVerificationStatus(appId, stripeConnectedAccountId)
-
-
-
-### Example
-
-```javascript
-import Flipdish from '@flipdish/api-client-javascript';
-let defaultClient = Flipdish.ApiClient.instance;
-// Configure OAuth2 access token for authorization: oauth2
-let oauth2 = defaultClient.authentications['oauth2'];
-oauth2.accessToken = 'YOUR ACCESS TOKEN';
-
-let apiInstance = new Flipdish.StripeCustomConnectApi();
-let appId = "appId_example"; // String | 
-let stripeConnectedAccountId = "stripeConnectedAccountId_example"; // String | 
-apiInstance.getVerificationStatus(appId, stripeConnectedAccountId, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **appId** | **String**|  | 
- **stripeConnectedAccountId** | **String**|  | 
-
-### Return type
-
-[**RestApiResultStripeConnectedAccount**](RestApiResultStripeConnectedAccount.md)
 
 ### Authorization
 

@@ -33,6 +33,8 @@ Name | Type | Description | Notes
 
 * `StoreStaff` (value: `"StoreStaff"`)
 
+* `StaffMember` (value: `"StaffMember"`)
+
 * `StoreReadOnlyAccess` (value: `"StoreReadOnlyAccess"`)
 
 * `FinanceManager` (value: `"FinanceManager"`)

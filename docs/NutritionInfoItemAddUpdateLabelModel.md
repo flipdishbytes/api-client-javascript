@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Name** | **String** |  | [optional] 
-**Values** | **[String]** |  | [optional] 
-**IconUrl** | **String** |  | [optional] 
+**Name** | **String** | Name. | [optional] 
+**Values** | **[String]** | Values. | [optional] 
+**IconUrl** | **String** | IconUrl. | [optional] 
 
 

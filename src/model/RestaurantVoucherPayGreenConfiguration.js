@@ -22,6 +22,7 @@ import RestaurantVoucherAssignedStore from './RestaurantVoucherAssignedStore';
 class RestaurantVoucherPayGreenConfiguration {
     /**
      * Constructs a new <code>RestaurantVoucherPayGreenConfiguration</code>.
+     * RestaurantVoucherPayGreenConfiguration.
      * @alias module:model/RestaurantVoucherPayGreenConfiguration
      */
     constructor() { 
@@ -68,21 +69,25 @@ class RestaurantVoucherPayGreenConfiguration {
 }
 
 /**
+ * Name.
  * @member {String} Name
  */
 RestaurantVoucherPayGreenConfiguration.prototype['Name'] = undefined;
 
 /**
+ * PayGreenId.
  * @member {String} PayGreenId
  */
 RestaurantVoucherPayGreenConfiguration.prototype['PayGreenId'] = undefined;
 
 /**
+ * PayGreenConfigurationId.
  * @member {Number} PayGreenConfigurationId
  */
 RestaurantVoucherPayGreenConfiguration.prototype['PayGreenConfigurationId'] = undefined;
 
 /**
+ * AssignedStores.
  * @member {Array.<module:model/RestaurantVoucherAssignedStore>} AssignedStores
  */
 RestaurantVoucherPayGreenConfiguration.prototype['AssignedStores'] = undefined;

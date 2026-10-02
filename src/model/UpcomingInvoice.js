@@ -23,6 +23,7 @@ import InvoiceItem from './InvoiceItem';
 class UpcomingInvoice {
     /**
      * Constructs a new <code>UpcomingInvoice</code>.
+     * UpcomingInvoice.
      * @alias module:model/UpcomingInvoice
      * @param Subtotal {Number} Subtotal
      * @param AmountDue {Number} Amount due

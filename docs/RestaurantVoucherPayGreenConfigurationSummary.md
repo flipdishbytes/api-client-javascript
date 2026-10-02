@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Name** | **String** |  | [optional] 
-**PayGreenConfigurationId** | **Number** |  | [optional] 
+**Name** | **String** | Name. | [optional] 
+**PayGreenConfigurationId** | **Number** | PayGreenConfigurationId. | [optional] 
 
 

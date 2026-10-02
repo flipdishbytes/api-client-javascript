@@ -61,6 +61,9 @@ class PreviousOrder {
             if (data.hasOwnProperty('OrderId')) {
                 obj['OrderId'] = ApiClient.convertToType(data['OrderId'], 'Number');
             }
+            if (data.hasOwnProperty('ReceiptCode')) {
+                obj['ReceiptCode'] = ApiClient.convertToType(data['ReceiptCode'], 'String');
+            }
             if (data.hasOwnProperty('RestaurantName')) {
                 obj['RestaurantName'] = ApiClient.convertToType(data['RestaurantName'], 'String');
             }
@@ -144,6 +147,11 @@ PreviousOrder.prototype['PaymentAccountType'] = undefined;
  * @member {Number} OrderId
  */
 PreviousOrder.prototype['OrderId'] = undefined;
+
+/**
+ * @member {String} ReceiptCode
+ */
+PreviousOrder.prototype['ReceiptCode'] = undefined;
 
 /**
  * @member {String} RestaurantName

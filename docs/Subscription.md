@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **UpcomingInvoiceDiscounts** | [**[InvoiceDiscount]**](InvoiceDiscount.md) | Upcoming invoice discounts | [optional] 
 **UpcomingInvoice** | [**UpcomingInvoice**](UpcomingInvoice.md) |  | [optional] 
 **SubscriptionId** | **String** | The subscription identifier | 
-**Name** | **String** |  | 
+**Name** | **String** | Name | 
 **Status** | **String** | Status | 
 **Currency** | **String** | Currency | 
 **User** | **String** | User | 

@@ -21,6 +21,7 @@ import ApiClient from '../ApiClient';
 class FirebaseApp {
     /**
      * Constructs a new <code>FirebaseApp</code>.
+     * FirebaseApp.
      * @alias module:model/FirebaseApp
      */
     constructor() { 
@@ -67,21 +68,25 @@ class FirebaseApp {
 }
 
 /**
+ * WhitelabelId.
  * @member {Number} WhitelabelId
  */
 FirebaseApp.prototype['WhitelabelId'] = undefined;
 
 /**
+ * PackageId.
  * @member {String} PackageId
  */
 FirebaseApp.prototype['PackageId'] = undefined;
 
 /**
+ * FirebaseAppId.
  * @member {String} FirebaseAppId
  */
 FirebaseApp.prototype['FirebaseAppId'] = undefined;
 
 /**
+ * FirebaseProjectId.
  * @member {String} FirebaseProjectId
  */
 FirebaseApp.prototype['FirebaseProjectId'] = undefined;

@@ -21,6 +21,7 @@ import ApiClient from '../ApiClient';
 class FileCreationResult {
     /**
      * Constructs a new <code>FileCreationResult</code>.
+     * FileCreationResult.
      * @alias module:model/FileCreationResult
      */
     constructor() { 
@@ -61,11 +62,13 @@ class FileCreationResult {
 }
 
 /**
+ * FileId.
  * @member {String} FileId
  */
 FileCreationResult.prototype['FileId'] = undefined;
 
 /**
+ * Location.
  * @member {String} Location
  */
 FileCreationResult.prototype['Location'] = undefined;

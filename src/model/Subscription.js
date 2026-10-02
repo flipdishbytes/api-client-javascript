@@ -29,7 +29,7 @@ class Subscription {
      * @alias module:model/Subscription
      * @param Products {Array.<module:model/SubscriptionProduct>} Products
      * @param SubscriptionId {String} The subscription identifier
-     * @param Name {String} 
+     * @param Name {String} Name
      * @param Status {module:model/Subscription.StatusEnum} Status
      * @param Currency {module:model/Subscription.CurrencyEnum} Currency
      * @param User {String} User
@@ -155,6 +155,7 @@ Subscription.prototype['UpcomingInvoice'] = undefined;
 Subscription.prototype['SubscriptionId'] = undefined;
 
 /**
+ * Name
  * @member {String} Name
  */
 Subscription.prototype['Name'] = undefined;

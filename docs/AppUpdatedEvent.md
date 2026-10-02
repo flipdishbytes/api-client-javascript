@@ -17,5 +17,7 @@ Name | Type | Description | Notes
 **Position** | **Number** | Position | [optional] 
 **AppId** | **String** | App id | [optional] 
 **IpAddress** | **String** | Ip Address | [optional] 
+**ActivityId** | **String** | Activity Id | [optional] 
+**ActivityType** | **String** | Activity Type | [optional] 
 
 

@@ -139,7 +139,13 @@ StoreCreateBase['SalesChannelTypeEnum'] = {
      * value: "None"
      * @const
      */
-    "None": "None"
+    "None": "None",
+
+    /**
+     * value: "PhoneAgent"
+     * @const
+     */
+    "PhoneAgent": "PhoneAgent"
 };
 
 

@@ -4,10 +4,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Name** | **String** |  | [optional] 
-**Type** | **String** |  | [optional] 
-**IntValues** | **[Number]** |  | [optional] 
-**StringValues** | **[String]** |  | [optional] 
-**DoubleValues** | **[Number]** |  | [optional] 
+**Name** | **String** | Name. | [optional] 
+**Type** | **String** | Type. | [optional] 
+**IntValues** | **[Number]** | IntValues. | [optional] 
+**StringValues** | **[String]** | StringValues. | [optional] 
+**DoubleValues** | **[Number]** | DoubleValues. | [optional] 
 
 

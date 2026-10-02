@@ -66,6 +66,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property UnpaidRevenue (base name: "UnpaidRevenue")', function() {
+      // uncomment below and update the code to test the property UnpaidRevenue
+      //var instance = new Flipdish.PayoutReport3DetailsSummary();
+      //expect(instance).to.be();
+    });
+
     it('should have the property RevenueForFeeCalculations (base name: "RevenueForFeeCalculations")', function() {
       // uncomment below and update the code to test the property RevenueForFeeCalculations
       //var instance = new Flipdish.PayoutReport3DetailsSummary();

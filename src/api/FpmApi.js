@@ -84,6 +84,46 @@ export default class FpmApi {
     }
 
     /**
+     * Callback function to receive the result of the deleteFpmForStore operation.
+     * @callback module:api/FpmApi~deleteFpmForStoreCallback
+     * @param {String} error Error message, if any.
+     * @param data This operation does not return a value.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {Number} storeId 
+     * @param {module:api/FpmApi~deleteFpmForStoreCallback} callback The callback function, accepting three arguments: error, data, response
+     */
+    deleteFpmForStore(storeId, callback) {
+      let postBody = null;
+      // verify the required parameter 'storeId' is set
+      if (storeId === undefined || storeId === null) {
+        throw new Error("Missing the required parameter 'storeId' when calling deleteFpmForStore");
+      }
+
+      let pathParams = {
+        'storeId': storeId
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = [];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
+      let returnType = null;
+      return this.apiClient.callApi(
+        '/api/v1.0/{storeId}/fpm', 'DELETE',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
      * Callback function to receive the result of the editFpmForStore operation.
      * @callback module:api/FpmApi~editFpmForStoreCallback
      * @param {String} error Error message, if any.

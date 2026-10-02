@@ -58,6 +58,9 @@ class HydraStatus {
             if (data.hasOwnProperty('StoreIds')) {
                 obj['StoreIds'] = ApiClient.convertToType(data['StoreIds'], ['Number']);
             }
+            if (data.hasOwnProperty('PropertyIds')) {
+                obj['PropertyIds'] = ApiClient.convertToType(data['PropertyIds'], ['String']);
+            }
             if (data.hasOwnProperty('IsRegistered')) {
                 obj['IsRegistered'] = ApiClient.convertToType(data['IsRegistered'], 'Boolean');
             }
@@ -69,6 +72,12 @@ class HydraStatus {
             }
             if (data.hasOwnProperty('UserType')) {
                 obj['UserType'] = ApiClient.convertToType(data['UserType'], 'String');
+            }
+            if (data.hasOwnProperty('DeviceType')) {
+                obj['DeviceType'] = ApiClient.convertToType(data['DeviceType'], 'String');
+            }
+            if (data.hasOwnProperty('HydraUserId')) {
+                obj['HydraUserId'] = ApiClient.convertToType(data['HydraUserId'], 'Number');
             }
         }
         return obj;
@@ -90,6 +99,12 @@ HydraStatus.prototype['AppId'] = undefined;
 HydraStatus.prototype['StoreIds'] = undefined;
 
 /**
+ * AuthZ Property ids for assigned stores
+ * @member {Array.<String>} PropertyIds
+ */
+HydraStatus.prototype['PropertyIds'] = undefined;
+
+/**
  * The device has been already registered
  * @member {Boolean} IsRegistered
  */
@@ -108,10 +123,22 @@ HydraStatus.prototype['PinCode'] = undefined;
 HydraStatus.prototype['Images'] = undefined;
 
 /**
- * Hydra User Type
+ * Hydra User Type as integer. Prefer {Flipdish.PublicModels.V1.Hydra.HydraStatus.DeviceType}.
  * @member {module:model/HydraStatus.UserTypeEnum} UserType
  */
 HydraStatus.prototype['UserType'] = undefined;
+
+/**
+ * Hydra device type (Kiosk / Terminal), serialized as string.
+ * @member {module:model/HydraStatus.DeviceTypeEnum} DeviceType
+ */
+HydraStatus.prototype['DeviceType'] = undefined;
+
+/**
+ * Zeus Hydra user id
+ * @member {Number} HydraUserId
+ */
+HydraStatus.prototype['HydraUserId'] = undefined;
 
 
 
@@ -123,6 +150,33 @@ HydraStatus.prototype['UserType'] = undefined;
  * @readonly
  */
 HydraStatus['UserTypeEnum'] = {
+
+    /**
+     * value: "Kiosk"
+     * @const
+     */
+    "Kiosk": "Kiosk",
+
+    /**
+     * value: "Terminal"
+     * @const
+     */
+    "Terminal": "Terminal",
+
+    /**
+     * value: "LegacyPrinter"
+     * @const
+     */
+    "LegacyPrinter": "LegacyPrinter"
+};
+
+
+/**
+ * Allowed values for the <code>DeviceType</code> property.
+ * @enum {String}
+ * @readonly
+ */
+HydraStatus['DeviceTypeEnum'] = {
 
     /**
      * value: "Kiosk"

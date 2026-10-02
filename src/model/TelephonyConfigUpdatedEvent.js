@@ -61,6 +61,9 @@ class TelephonyConfigUpdatedEvent {
             if (data.hasOwnProperty('TelephonyConfig')) {
                 obj['TelephonyConfig'] = TelephonyConfig.constructFromObject(data['TelephonyConfig']);
             }
+            if (data.hasOwnProperty('PropertyId')) {
+                obj['PropertyId'] = ApiClient.convertToType(data['PropertyId'], 'String');
+            }
             if (data.hasOwnProperty('FlipdishEventId')) {
                 obj['FlipdishEventId'] = ApiClient.convertToType(data['FlipdishEventId'], 'String');
             }
@@ -78,6 +81,12 @@ class TelephonyConfigUpdatedEvent {
             }
             if (data.hasOwnProperty('IpAddress')) {
                 obj['IpAddress'] = ApiClient.convertToType(data['IpAddress'], 'String');
+            }
+            if (data.hasOwnProperty('ActivityId')) {
+                obj['ActivityId'] = ApiClient.convertToType(data['ActivityId'], 'String');
+            }
+            if (data.hasOwnProperty('ActivityType')) {
+                obj['ActivityType'] = ApiClient.convertToType(data['ActivityType'], 'String');
             }
         }
         return obj;
@@ -108,6 +117,12 @@ TelephonyConfigUpdatedEvent.prototype['StoreId'] = undefined;
  * @member {module:model/TelephonyConfig} TelephonyConfig
  */
 TelephonyConfigUpdatedEvent.prototype['TelephonyConfig'] = undefined;
+
+/**
+ * Property Id
+ * @member {String} PropertyId
+ */
+TelephonyConfigUpdatedEvent.prototype['PropertyId'] = undefined;
 
 /**
  * The identitfier of the event
@@ -144,6 +159,18 @@ TelephonyConfigUpdatedEvent.prototype['OrgId'] = undefined;
  * @member {String} IpAddress
  */
 TelephonyConfigUpdatedEvent.prototype['IpAddress'] = undefined;
+
+/**
+ * Activity Id
+ * @member {String} ActivityId
+ */
+TelephonyConfigUpdatedEvent.prototype['ActivityId'] = undefined;
+
+/**
+ * Activity Type
+ * @member {String} ActivityType
+ */
+TelephonyConfigUpdatedEvent.prototype['ActivityType'] = undefined;
 
 
 

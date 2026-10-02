@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Name** | **String** |  | [optional] 
-**PayGreenId** | **String** |  | [optional] 
-**PayGreenConfigurationId** | **Number** |  | [optional] 
-**AssignedStores** | [**[RestaurantVoucherAssignedStore]**](RestaurantVoucherAssignedStore.md) |  | [optional] 
+**Name** | **String** | Name. | [optional] 
+**PayGreenId** | **String** | PayGreenId. | [optional] 
+**PayGreenConfigurationId** | **Number** | PayGreenConfigurationId. | [optional] 
+**AssignedStores** | [**[RestaurantVoucherAssignedStore]**](RestaurantVoucherAssignedStore.md) | AssignedStores. | [optional] 
 
 

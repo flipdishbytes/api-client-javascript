@@ -78,6 +78,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property ReceiptCode (base name: "ReceiptCode")', function() {
+      // uncomment below and update the code to test the property ReceiptCode
+      //var instance = new Flipdish.PreviousOrder();
+      //expect(instance).to.be();
+    });
+
     it('should have the property RestaurantName (base name: "RestaurantName")', function() {
       // uncomment below and update the code to test the property RestaurantName
       //var instance = new Flipdish.PreviousOrder();

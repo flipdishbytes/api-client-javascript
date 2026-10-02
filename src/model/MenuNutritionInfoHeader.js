@@ -21,6 +21,7 @@ import ApiClient from '../ApiClient';
 class MenuNutritionInfoHeader {
     /**
      * Constructs a new <code>MenuNutritionInfoHeader</code>.
+     * MenuNutritionInfoHeader.
      * @alias module:model/MenuNutritionInfoHeader
      */
     constructor() { 

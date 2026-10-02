@@ -21,6 +21,7 @@ import ApiClient from '../ApiClient';
 class UpdateStorePayGreenConfigurationRequest {
     /**
      * Constructs a new <code>UpdateStorePayGreenConfigurationRequest</code>.
+     * UpdateStorePayGreenConfigurationRequest.
      * @alias module:model/UpdateStorePayGreenConfigurationRequest
      */
     constructor() { 
@@ -61,11 +62,13 @@ class UpdateStorePayGreenConfigurationRequest {
 }
 
 /**
+ * Active.
  * @member {Boolean} Active
  */
 UpdateStorePayGreenConfigurationRequest.prototype['Active'] = undefined;
 
 /**
+ * PayGreenConfigurationId.
  * @member {Number} PayGreenConfigurationId
  */
 UpdateStorePayGreenConfigurationRequest.prototype['PayGreenConfigurationId'] = undefined;

@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Active** | **Boolean** |  | [optional] 
-**PayGreenConfigurationId** | **Number** |  | [optional] 
+**Active** | **Boolean** | Active. | [optional] 
+**PayGreenConfigurationId** | **Number** | PayGreenConfigurationId. | [optional] 
 
 

@@ -22,6 +22,7 @@ import NutritionInfoV2Allergen from './NutritionInfoV2Allergen';
 class NutritionInfoV2Item {
     /**
      * Constructs a new <code>NutritionInfoV2Item</code>.
+     * NutritionInfoV2Item.
      * @alias module:model/NutritionInfoV2Item
      */
     constructor() { 

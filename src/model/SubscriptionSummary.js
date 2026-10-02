@@ -24,7 +24,7 @@ class SubscriptionSummary {
      * Subscription Summary
      * @alias module:model/SubscriptionSummary
      * @param SubscriptionId {String} The subscription identifier
-     * @param Name {String} 
+     * @param Name {String} Name
      * @param Status {module:model/SubscriptionSummary.StatusEnum} Status
      * @param Currency {module:model/SubscriptionSummary.CurrencyEnum} Currency
      * @param User {String} User
@@ -114,6 +114,7 @@ SubscriptionSummary.prototype['NextInvoiceBillingDate'] = undefined;
 SubscriptionSummary.prototype['SubscriptionId'] = undefined;
 
 /**
+ * Name
  * @member {String} Name
  */
 SubscriptionSummary.prototype['Name'] = undefined;

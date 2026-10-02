@@ -21,6 +21,7 @@ import ApiClient from '../ApiClient';
 class TelemetrySeriesQueryParameters {
     /**
      * Constructs a new <code>TelemetrySeriesQueryParameters</code>.
+     * TelemetrySeriesQueryParameters.
      * @alias module:model/TelemetrySeriesQueryParameters
      */
     constructor() { 
@@ -67,21 +68,25 @@ class TelemetrySeriesQueryParameters {
 }
 
 /**
+ * KioskId.
  * @member {String} KioskId
  */
 TelemetrySeriesQueryParameters.prototype['KioskId'] = undefined;
 
 /**
+ * Variables.
  * @member {Array.<String>} Variables
  */
 TelemetrySeriesQueryParameters.prototype['Variables'] = undefined;
 
 /**
+ * StartDate.
  * @member {Date} StartDate
  */
 TelemetrySeriesQueryParameters.prototype['StartDate'] = undefined;
 
 /**
+ * EndDate.
  * @member {Date} EndDate
  */
 TelemetrySeriesQueryParameters.prototype['EndDate'] = undefined;

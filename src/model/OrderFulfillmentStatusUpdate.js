@@ -21,6 +21,7 @@ import ApiClient from '../ApiClient';
 class OrderFulfillmentStatusUpdate {
     /**
      * Constructs a new <code>OrderFulfillmentStatusUpdate</code>.
+     * OrderFulfillmentStatusUpdate.
      * @alias module:model/OrderFulfillmentStatusUpdate
      */
     constructor() { 

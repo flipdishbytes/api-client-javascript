@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Name** | **String** |  | [optional] 
-**AssignedStores** | **[Number]** |  | [optional] 
+**Name** | **String** | Name. | [optional] 
+**AssignedStores** | **[Number]** | AssignedStores. | [optional] 
 
 

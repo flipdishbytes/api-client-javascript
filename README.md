@@ -185,12 +185,14 @@ Class | Method | HTTP request | Description
 *Flipdish.AppsApi* | [**getSupportedCountries**](docs/AppsApi.md#getSupportedCountries) | **GET** /api/v1.0/apps/supportedcountries | 
 *Flipdish.AppsApi* | [**isPanaceaVanityUrlAvailable**](docs/AppsApi.md#isPanaceaVanityUrlAvailable) | **GET** /api/v1.0/apps/{appId}/panacea/url/available | 
 *Flipdish.AppsApi* | [**lookupByWhitelabelId**](docs/AppsApi.md#lookupByWhitelabelId) | **GET** /api/v1.0/apps/{whitelabelId}/lookup | 
+*Flipdish.AppsApi* | [**sendPushNotification**](docs/AppsApi.md#sendPushNotification) | **POST** /api/v1.0/apps/{appId}/SendPushNotification/{customerId} | 
 *Flipdish.AppsApi* | [**setAppConfig**](docs/AppsApi.md#setAppConfig) | **POST** /api/v1.0/apps/{appId}/config | 
 *Flipdish.AppsApi* | [**setAppHostname**](docs/AppsApi.md#setAppHostname) | **POST** /api/v1.0/apps/{appId}/hostname | 
 *Flipdish.AppsApi* | [**setAppLanguages**](docs/AppsApi.md#setAppLanguages) | **POST** /api/v1.0/apps/{appId}/config/languages | 
 *Flipdish.AppsApi* | [**setAppStoreName**](docs/AppsApi.md#setAppStoreName) | **POST** /api/v1.0/apps/{appId}/appstorename | 
 *Flipdish.AppsApi* | [**setCompliance**](docs/AppsApi.md#setCompliance) | **POST** /api/v1.0/apps/{appId}/compliance | 
 *Flipdish.AppsApi* | [**setPanaceaVanityUrl**](docs/AppsApi.md#setPanaceaVanityUrl) | **POST** /api/v1.0/apps/{appId}/panacea/url | 
+*Flipdish.AppsApi* | [**setThirdPartyIntegrations**](docs/AppsApi.md#setThirdPartyIntegrations) | **POST** /api/v1.0/apps/{appId}/third-party-integrations | 
 *Flipdish.AppsApi* | [**toggleNextGenWeb**](docs/AppsApi.md#toggleNextGenWeb) | **POST** /api/v1.0/apps/{appId}/nextgenweb | 
 *Flipdish.AppsApi* | [**uploadAppLogo**](docs/AppsApi.md#uploadAppLogo) | **POST** /api/v1.0/apps/{appId}/logo | 
 *Flipdish.AuditLogsApi* | [**addOrderAuditLog**](docs/AuditLogsApi.md#addOrderAuditLog) | **POST** /api/v1.0/auditlogs/orders/{orderId} | 
@@ -291,6 +293,9 @@ Class | Method | HTTP request | Description
 *Flipdish.DriversApi* | [**driversSetDriverProfileImage**](docs/DriversApi.md#driversSetDriverProfileImage) | **POST** /api/v1.0/drivers/profile/image | 
 *Flipdish.DriversApi* | [**driversUpdateDeliveryTrackingStatus**](docs/DriversApi.md#driversUpdateDeliveryTrackingStatus) | **POST** /api/v1.0/orders/{orderId}/tracking/{deliveryTrackingStatus} | 
 *Flipdish.DriversApi* | [**driversUpdateDriverProfile**](docs/DriversApi.md#driversUpdateDriverProfile) | **POST** /api/v1.0/drivers/profile | 
+*Flipdish.EndUserFeesApi* | [**createEndUserFeeConfig**](docs/EndUserFeesApi.md#createEndUserFeeConfig) | **POST** /api/v1.0/{appId}/stores/{storeId}/end-user-fees | 
+*Flipdish.EndUserFeesApi* | [**getEndUserFeesForStore**](docs/EndUserFeesApi.md#getEndUserFeesForStore) | **GET** /api/v1.0/{appId}/stores/{storeId}/end-user-fees | 
+*Flipdish.EndUserFeesApi* | [**setV2FeeCalculation**](docs/EndUserFeesApi.md#setV2FeeCalculation) | **POST** /api/v1.0/{appId}/stores/{storeId}/end-user-fees/v2-fee-calculation | 
 *Flipdish.EventsApi* | [**getCustomerEvents**](docs/EventsApi.md#getCustomerEvents) | **GET** /api/v1.0/{appId}/events/customer/{customerId} | 
 *Flipdish.EventsApi* | [**getEvents**](docs/EventsApi.md#getEvents) | **GET** /api/v1.0/{appId}/events | 
 *Flipdish.EventsApi* | [**getEventsById**](docs/EventsApi.md#getEventsById) | **GET** /api/v1.0/{appId}/events/{eventId} | 
@@ -307,6 +312,7 @@ Class | Method | HTTP request | Description
 *Flipdish.FirebaseAppsApi* | [**firebaseAppsDeleteFirebaseApp**](docs/FirebaseAppsApi.md#firebaseAppsDeleteFirebaseApp) | **DELETE** /api/v1.0/FirebaseApp/{whiteLabelId} | 
 *Flipdish.FirebaseAppsApi* | [**firebaseAppsGetFirebaseApp**](docs/FirebaseAppsApi.md#firebaseAppsGetFirebaseApp) | **GET** /api/v1.0/FirebaseApp/{whitelabelId} | 
 *Flipdish.FpmApi* | [**createFpmForStore**](docs/FpmApi.md#createFpmForStore) | **POST** /api/v1.0/{storeId}/fpm | 
+*Flipdish.FpmApi* | [**deleteFpmForStore**](docs/FpmApi.md#deleteFpmForStore) | **DELETE** /api/v1.0/{storeId}/fpm | 
 *Flipdish.FpmApi* | [**editFpmForStore**](docs/FpmApi.md#editFpmForStore) | **POST** /api/v1.0/{storeId}/fpm/edit | 
 *Flipdish.FpmApi* | [**getFpmForStore**](docs/FpmApi.md#getFpmForStore) | **GET** /api/v1.0/{storeId}/fpm | 
 *Flipdish.FulfillmentStateConfigurationApi* | [**createFulfillmentStatesConfig**](docs/FulfillmentStateConfigurationApi.md#createFulfillmentStatesConfig) | **POST** /api/v1.0/{appId}/fulfillment/configuration/states | 
@@ -347,6 +353,7 @@ Class | Method | HTTP request | Description
 *Flipdish.HydraApi* | [**unassignEmv**](docs/HydraApi.md#unassignEmv) | **POST** /api/v1.0/{appId}/hydra/emvterminal/unassign/{hydraConfigId} | 
 *Flipdish.HydraApi* | [**updateKioskCashVisibilitySettings**](docs/HydraApi.md#updateKioskCashVisibilitySettings) | **POST** /api/v1.0/{appId}/kioskupdatecashsettings | 
 *Flipdish.HydraApi* | [**updateKioskSettings**](docs/HydraApi.md#updateKioskSettings) | **POST** /api/v1.0/{appId}/kiosksettings/{deviceId} | 
+*Flipdish.IntegrationMetadataCatalogueApi* | [**integrationMetadataCatalogueGetPixelPointProducts**](docs/IntegrationMetadataCatalogueApi.md#integrationMetadataCatalogueGetPixelPointProducts) | **GET** /api/v1.0/integrationmetadatacatalogue/pixelpoint/stores/{storeId}/products | 
 *Flipdish.IntercomApi* | [**userHash**](docs/IntercomApi.md#userHash) | **GET** /api/v1.0/intercom/userHash | 
 *Flipdish.InvoicesApi* | [**getInvoices**](docs/InvoicesApi.md#getInvoices) | **GET** /api/v1.0/{appId}/invoices | 
 *Flipdish.InvoicesApi* | [**invoicePdf**](docs/InvoicesApi.md#invoicePdf) | **GET** /api/v1.0/{appId}/invoices/InvoicePdf | 
@@ -435,9 +442,6 @@ Class | Method | HTTP request | Description
 *Flipdish.MenusApi* | [**getMenusCheckpoints**](docs/MenusApi.md#getMenusCheckpoints) | **GET** /api/v1.0/menus/{menuId}/checkpoints | Get a Menus Checkpoints
 *Flipdish.MenusApi* | [**menusDeleteTaxRate**](docs/MenusApi.md#menusDeleteTaxRate) | **DELETE** /api/v1.0/menus/{menuId}/tax/{taxId} | Remove a Menus Tax Rate, can only remove a tax rate that does not have items/optionSetItems attached
 *Flipdish.MenusApi* | [**menusGetMenuBulkShowHide**](docs/MenusApi.md#menusGetMenuBulkShowHide) | **GET** /api/v1.0/menus/{menuId}/bulkshowhide/list | Get bulk show/hide menu items and option set items
-*Flipdish.MenusApi* | [**menusIsWhiteLabelMigratedToRms**](docs/MenusApi.md#menusIsWhiteLabelMigratedToRms) | **GET** /api/v1.0/menus/isWhiteLabelMigratedToRms | PRIVATE API, TEMPORARY ENDPOINT  RMS can check if a white label is migrated to RMS
-*Flipdish.MenusApi* | [**menusMarkWhiteLabelAsMigratedToRms**](docs/MenusApi.md#menusMarkWhiteLabelAsMigratedToRms) | **POST** /api/v1.0/menus/markWhiteLabelAsMigratedToRms | PRIVATE API, TEMPORARY ENDPOINT  RMS can set the white label as migrated to RMS, which will block all Menu editing operations via Zeus
-*Flipdish.MenusApi* | [**menusMarkWhiteLabelAsNotMigratedToRms**](docs/MenusApi.md#menusMarkWhiteLabelAsNotMigratedToRms) | **POST** /api/v1.0/menus/markWhiteLabelAsNotMigratedToRms | PRIVATE API, TEMPORARY ENDPOINT  RMS can set the white label as NOT migrated to RMS, which will unblock all Menu editing operations via Zeus
 *Flipdish.MenusApi* | [**menusSetDisplayOnMenuTax**](docs/MenusApi.md#menusSetDisplayOnMenuTax) | **POST** /api/v1.0/menus/{menuId}/tax/show/{show} | Set if tax shows for a Menu
 *Flipdish.MenusApi* | [**menusSetItemDisplayOrders**](docs/MenusApi.md#menusSetItemDisplayOrders) | **POST** /api/v1.0/menus/{menuId}/sectiondisplayorders | Re-arrange Sections within a Menu
 *Flipdish.MenusApi* | [**menusShowHideBulkItems**](docs/MenusApi.md#menusShowHideBulkItems) | **POST** /api/v1.0/menus/{menuId}/bulkshowhide | Bulk show/hide menu items or option set items
@@ -520,11 +524,14 @@ Class | Method | HTTP request | Description
 *Flipdish.PaymentsApi* | [**getOrderPaymentInformation**](docs/PaymentsApi.md#getOrderPaymentInformation) | **GET** /api/v1.0/payments/payment/{orderId}/refundable | 
 *Flipdish.PayoutReportsApi* | [**getPayoutReport3Details**](docs/PayoutReportsApi.md#getPayoutReport3Details) | **GET** /api/v1.0/{appId}/reporting/reports/payouts3/{bankAccountId}/{payoutId}/details | 
 *Flipdish.PayoutReportsApi* | [**getPayoutReport3Overview**](docs/PayoutReportsApi.md#getPayoutReport3Overview) | **GET** /api/v1.0/{appId}/reporting/reports/payouts3/{bankAccountId}/{payoutId}/overview | 
+*Flipdish.PayoutReportsApi* | [**getPayoutReport3PropertyDetails**](docs/PayoutReportsApi.md#getPayoutReport3PropertyDetails) | **GET** /api/v1.0/{appId}/reporting/reports/payouts3/{bankAccountId}/{payoutId}/properties | 
 *Flipdish.PayoutReportsApi* | [**getPayoutReport3RefundedOrders**](docs/PayoutReportsApi.md#getPayoutReport3RefundedOrders) | **GET** /api/v1.0/{appId}/reporting/reports/payouts3/{bankAccountId}/{payoutId}/refundedOrders | 
+*Flipdish.PayoutReportsApi* | [**getPayoutReport3Stores**](docs/PayoutReportsApi.md#getPayoutReport3Stores) | **GET** /api/v1.0/{appId}/reporting/reports/payouts3/{bankAccountId}/{payoutId}/stores | 
 *Flipdish.PayoutReportsApi* | [**payoutReport3ExportPayoutChargebacks**](docs/PayoutReportsApi.md#payoutReport3ExportPayoutChargebacks) | **GET** /api/v1.0/{appId}/reporting/reports/payouts3/{bankAccountId}/{payoutId}/export/chargebacks | 
 *Flipdish.PayoutReportsApi* | [**payoutReport3ExportPayoutOrders**](docs/PayoutReportsApi.md#payoutReport3ExportPayoutOrders) | **GET** /api/v1.0/{appId}/reporting/reports/payouts3/{bankAccountId}/{payoutId}/export/orders | 
 *Flipdish.PayoutReportsApi* | [**payoutReport3ExportPayoutPosSales**](docs/PayoutReportsApi.md#payoutReport3ExportPayoutPosSales) | **GET** /api/v1.0/{appId}/reporting/reports/payouts3/{bankAccountId}/{payoutId}/export/possales | 
 *Flipdish.PayoutReportsApi* | [**payoutReport3ExportPayoutRefundedOrders**](docs/PayoutReportsApi.md#payoutReport3ExportPayoutRefundedOrders) | **GET** /api/v1.0/{appId}/reporting/reports/payouts3/{bankAccountId}/{payoutId}/export/refundedOrders | 
+*Flipdish.PayoutReportsApi* | [**payoutReport3ExportPayoutStores**](docs/PayoutReportsApi.md#payoutReport3ExportPayoutStores) | **GET** /api/v1.0/{appId}/reporting/reports/payouts3/{bankAccountId}/{payoutId}/export/stores | 
 *Flipdish.PayoutsApi* | [**getPayout**](docs/PayoutsApi.md#getPayout) | **GET** /api/v1.0/{appId}/bankaccounts/{bankAccountId}/payouts/{payoutId} | 
 *Flipdish.PayoutsApi* | [**getPayoutChargebacks**](docs/PayoutsApi.md#getPayoutChargebacks) | **GET** /api/v1.0/{appId}/bankaccounts/{bankAccountId}/payouts/{payoutId}/chargebacks | 
 *Flipdish.PayoutsApi* | [**getPayoutOrders**](docs/PayoutsApi.md#getPayoutOrders) | **GET** /api/v1.0/{appId}/bankaccounts/{bankAccountId}/payouts/{payoutId}/orders | 
@@ -613,7 +620,6 @@ Class | Method | HTTP request | Description
 *Flipdish.StripeCustomConnectApi* | [**createStripeConnectedAccount**](docs/StripeCustomConnectApi.md#createStripeConnectedAccount) | **POST** /api/v1.0/{appId}/customconnect/{bankAccountId}/create-update-account | 
 *Flipdish.StripeCustomConnectApi* | [**createStripeConnectedAccountLink**](docs/StripeCustomConnectApi.md#createStripeConnectedAccountLink) | **POST** /api/v1.0/{appId}/customconnect/{stripeConnectedAccountId}/create-account-link | 
 *Flipdish.StripeCustomConnectApi* | [**getCustomConnect**](docs/StripeCustomConnectApi.md#getCustomConnect) | **GET** /api/v1.0/{appId}/customconnect/{storeId} | 
-*Flipdish.StripeCustomConnectApi* | [**getVerificationStatus**](docs/StripeCustomConnectApi.md#getVerificationStatus) | **GET** /api/v1.0/{appId}/customconnect/verification-status | 
 *Flipdish.StripeCustomConnectApi* | [**setBankAccountBusinessType**](docs/StripeCustomConnectApi.md#setBankAccountBusinessType) | **POST** /api/v1.0/{appId}/customconnect/bank-account/{bankAccountId}/businesstype | 
 *Flipdish.StripeCustomConnectApi* | [**stripeCustomConnectRefresh**](docs/StripeCustomConnectApi.md#stripeCustomConnectRefresh) | **GET** /api/v1.0/{appId}/customconnect/refresh-link | 
 *Flipdish.StripeCustomConnectApi* | [**updateBankAccountDetails**](docs/StripeCustomConnectApi.md#updateBankAccountDetails) | **POST** /api/v1.0/{appId}/customconnect/{bankAccountId}/update-bank-account-details | 
@@ -631,6 +637,7 @@ Class | Method | HTTP request | Description
 *Flipdish.TeammatesApi* | [**getTeammatesByAppId**](docs/TeammatesApi.md#getTeammatesByAppId) | **GET** /api/v1.0/{appId}/teammates | 
 *Flipdish.TeammatesApi* | [**grantaccess**](docs/TeammatesApi.md#grantaccess) | **POST** /api/v1.0/{appId}/teammates/grantaccess | 
 *Flipdish.TeammatesApi* | [**redeemInvitation**](docs/TeammatesApi.md#redeemInvitation) | **GET** /api/v1.0/{appId}/teammates/redeem/{otc} | 
+*Flipdish.TeammatesApi* | [**teammateMobileRedirect**](docs/TeammatesApi.md#teammateMobileRedirect) | **GET** /api/v1.0/teammates/mobile-redirect | 
 *Flipdish.TeammatesApi* | [**teammatesAcceptInvitation**](docs/TeammatesApi.md#teammatesAcceptInvitation) | **GET** /api/v1.0/{appId}/teammates/accept/{otc} | 
 *Flipdish.TeammatesApi* | [**teammatesAcceptInvitations**](docs/TeammatesApi.md#teammatesAcceptInvitations) | **POST** /api/v1.0/teammates/acceptInvitations | 
 *Flipdish.TeammatesApi* | [**teammatesPendingInvitations**](docs/TeammatesApi.md#teammatesPendingInvitations) | **GET** /api/v1.0/teammates/pending-invitations | 
@@ -642,19 +649,32 @@ Class | Method | HTTP request | Description
 *Flipdish.UsersApi* | [**addUserToRole**](docs/UsersApi.md#addUserToRole) | **POST** /api/v1.0/users/{userId}/AddUserToRole/{roleName} | 
 *Flipdish.UsersApi* | [**anonymizeUser**](docs/UsersApi.md#anonymizeUser) | **POST** /api/v1.0/users/{userId}/AnonymizeUser | 
 *Flipdish.UsersApi* | [**blockUserPhoneNumber**](docs/UsersApi.md#blockUserPhoneNumber) | **POST** /api/v1.0/users/{userId}/BlockUserPhoneNumber | 
+*Flipdish.UsersApi* | [**createUserDeliveryLocation**](docs/UsersApi.md#createUserDeliveryLocation) | **POST** /api/v1.0/users/{userId}/deliveryLocations | 
 *Flipdish.UsersApi* | [**getPreviousOrderCountForStore**](docs/UsersApi.md#getPreviousOrderCountForStore) | **GET** /api/v1.0/users/{userId}/previousordercount/{storeId} | 
 *Flipdish.UsersApi* | [**getRestaurantUserAccounts**](docs/UsersApi.md#getRestaurantUserAccounts) | **GET** /api/v1.0/users/{userId}/RestaurantUserAccounts | 
 *Flipdish.UsersApi* | [**getRestaurantUserStores**](docs/UsersApi.md#getRestaurantUserStores) | **GET** /api/v1.0/users/{userId}/RestaurantUserStores | 
 *Flipdish.UsersApi* | [**getRoles**](docs/UsersApi.md#getRoles) | **GET** /api/v1.0/users/roles | 
 *Flipdish.UsersApi* | [**getRolesAndUnassignedRoles**](docs/UsersApi.md#getRolesAndUnassignedRoles) | **GET** /api/v1.0/users/{userId}/roles | 
 *Flipdish.UsersApi* | [**getUserById**](docs/UsersApi.md#getUserById) | **GET** /api/v1.0/users/{userId} | 
+*Flipdish.UsersApi* | [**getUserDeliveryLocationsForAdmin**](docs/UsersApi.md#getUserDeliveryLocationsForAdmin) | **GET** /api/v1.0/users/{userId}/deliveryLocations | 
 *Flipdish.UsersApi* | [**getUserNotes**](docs/UsersApi.md#getUserNotes) | **GET** /api/v1.0/users/{userId}/UserNotes | 
+*Flipdish.UsersApi* | [**getUserOrderByIdForAdmin**](docs/UsersApi.md#getUserOrderByIdForAdmin) | **GET** /api/v1.0/users/{userId}/orders/{orderId} | 
+*Flipdish.UsersApi* | [**getUserOrdersForAdmin**](docs/UsersApi.md#getUserOrdersForAdmin) | **GET** /api/v1.0/users/{userId}/orders | 
+*Flipdish.UsersApi* | [**getUserSmsConversationItems**](docs/UsersApi.md#getUserSmsConversationItems) | **GET** /api/v1.0/users/{userId}/smsConversationItems | 
+*Flipdish.UsersApi* | [**hideUserDeliveryLocation**](docs/UsersApi.md#hideUserDeliveryLocation) | **POST** /api/v1.0/users/{userId}/deliveryLocations/{deliveryLocationId}/hide | 
 *Flipdish.UsersApi* | [**markUserAsFraudulent**](docs/UsersApi.md#markUserAsFraudulent) | **POST** /api/v1.0/users/{userId}/MarkUserAsFraudulent | 
 *Flipdish.UsersApi* | [**markUserAsSuspicious**](docs/UsersApi.md#markUserAsSuspicious) | **POST** /api/v1.0/users/{userId}/MarkUserAsSuspicious | 
+*Flipdish.UsersApi* | [**removeFlipdishAccountIdForUser**](docs/UsersApi.md#removeFlipdishAccountIdForUser) | **POST** /api/v1.0/users/{userId}/RemoveFlipdishAccountId/{accountId} | 
 *Flipdish.UsersApi* | [**removeUserFromRole**](docs/UsersApi.md#removeUserFromRole) | **POST** /api/v1.0/users/{userId}/RemoveUserFromRole/{roleName} | 
 *Flipdish.UsersApi* | [**resetMfa**](docs/UsersApi.md#resetMfa) | **POST** /api/v1.0/users/{userId}/ResetMfa | 
+*Flipdish.UsersApi* | [**searchFlipdishAccounts**](docs/UsersApi.md#searchFlipdishAccounts) | **GET** /api/v1.0/users/searchFlipdishAccounts | 
 *Flipdish.UsersApi* | [**searchUsers**](docs/UsersApi.md#searchUsers) | **GET** /api/v1.0/users/search | 
+*Flipdish.UsersApi* | [**sendUserPushNotification**](docs/UsersApi.md#sendUserPushNotification) | **POST** /api/v1.0/users/{userId}/pushNotifications | 
+*Flipdish.UsersApi* | [**sendUserSms**](docs/UsersApi.md#sendUserSms) | **POST** /api/v1.0/users/{userId}/sms | 
 *Flipdish.UsersApi* | [**setCustomerName**](docs/UsersApi.md#setCustomerName) | **POST** /api/v1.0/users/{userId}/SetCustomerName | 
+*Flipdish.UsersApi* | [**setFlipdishAccountIdForUser**](docs/UsersApi.md#setFlipdishAccountIdForUser) | **POST** /api/v1.0/users/{userId}/SetFlipdishAccountId/{accountId} | 
+*Flipdish.UsersApi* | [**setUserDeliveryLocationCoordinates**](docs/UsersApi.md#setUserDeliveryLocationCoordinates) | **POST** /api/v1.0/users/{userId}/deliveryLocations/{deliveryLocationId}/coordinates | 
+*Flipdish.UsersApi* | [**setUserDeliveryLocationField**](docs/UsersApi.md#setUserDeliveryLocationField) | **POST** /api/v1.0/users/{userId}/deliveryLocations/{deliveryLocationId}/fields | 
 *Flipdish.UsersApi* | [**setUserLanguage**](docs/UsersApi.md#setUserLanguage) | **POST** /api/v1.0/users/{userId}/SetLanguage/{languageId} | 
 *Flipdish.UsersApi* | [**unblockUserPhoneNumber**](docs/UsersApi.md#unblockUserPhoneNumber) | **POST** /api/v1.0/users/{userId}/UnblockUserPhoneNumber | 
 *Flipdish.VouchersApi* | [**createVoucher**](docs/VouchersApi.md#createVoucher) | **POST** /api/v1.0/vouchers/{appId} | 
@@ -663,6 +683,7 @@ Class | Method | HTTP request | Description
 *Flipdish.VouchersApi* | [**getVoucherStatsById**](docs/VouchersApi.md#getVoucherStatsById) | **GET** /api/v1.0/vouchers/stats/{voucherId} | 
 *Flipdish.VouchersApi* | [**getVoucherValidityPeriods**](docs/VouchersApi.md#getVoucherValidityPeriods) | **GET** /api/v1.0/{appId}/vouchers/{voucherId}/validity-periods | 
 *Flipdish.VouchersApi* | [**getVouchers**](docs/VouchersApi.md#getVouchers) | **GET** /api/v1.0/{appId}/vouchers/summaries | 
+*Flipdish.VouchersApi* | [**getVouchersByCustomerForApp**](docs/VouchersApi.md#getVouchersByCustomerForApp) | **GET** /api/v1.0/vouchers/{appId}/customer/{customerId} | 
 *Flipdish.VouchersApi* | [**setVoucherValidityPeriodsSimplified**](docs/VouchersApi.md#setVoucherValidityPeriodsSimplified) | **POST** /api/v1.0/{appId}/vouchers/{voucherId}/validity-periods-simplified | 
 *Flipdish.VouchersApi* | [**updateVoucher**](docs/VouchersApi.md#updateVoucher) | **POST** /api/v1.0/vouchers/{voucherId} | 
 *Flipdish.VouchersApi* | [**updateVoucherUsage**](docs/VouchersApi.md#updateVoucherUsage) | **POST** /api/v1.0/{appId}/vouchers/{voucherId}/usage | 
@@ -684,6 +705,21 @@ Class | Method | HTTP request | Description
 *Flipdish.WebsiteApi* | [**setIndexConfiguration**](docs/WebsiteApi.md#setIndexConfiguration) | **POST** /api/v1.0/{appId}/website/index | 
 *Flipdish.WebsiteApi* | [**uploadWebsiteImage**](docs/WebsiteApi.md#uploadWebsiteImage) | **POST** /api/v1.0/{appId}/website/image/{imageLocation} | 
 *Flipdish.WebsiteApi* | [**websiteCheckNow**](docs/WebsiteApi.md#websiteCheckNow) | **GET** /api/v1.0/{appId}/website/dnscheck | 
+*Flipdish.WhiteLabelBuildsApi* | [**healthCheck**](docs/WhiteLabelBuildsApi.md#healthCheck) | **GET** /api/v1.0/whitelabelbuilds/health | 
+*Flipdish.WhiteLabelBuildsApi* | [**submitAndroidApps**](docs/WhiteLabelBuildsApi.md#submitAndroidApps) | **POST** /api/v1.0/whitelabelbuilds/android/multiple | 
+*Flipdish.WhiteLabelBuildsApi* | [**submitAndroidBuild**](docs/WhiteLabelBuildsApi.md#submitAndroidBuild) | **POST** /api/v1.0/whitelabelbuilds/{appId}/android | 
+*Flipdish.WhiteLabelBuildsApi* | [**submitIosApps**](docs/WhiteLabelBuildsApi.md#submitIosApps) | **POST** /api/v1.0/whitelabelbuilds/ios/multiple | 
+*Flipdish.WhiteLabelBuildsApi* | [**submitIosBuild**](docs/WhiteLabelBuildsApi.md#submitIosBuild) | **POST** /api/v1.0/whitelabelbuilds/{appId}/ios | 
+*Flipdish.WhiteLabelConfigApi* | [**getAppGeneralConfig**](docs/WhiteLabelConfigApi.md#getAppGeneralConfig) | **GET** /api/v1.0/whitelabelconfig/{appId}/general | 
+*Flipdish.WhiteLabelConfigApi* | [**getAppStoreConfig**](docs/WhiteLabelConfigApi.md#getAppStoreConfig) | **GET** /api/v1.0/whitelabelconfig/{appId}/appstore | 
+*Flipdish.WhiteLabelConfigApi* | [**getPlayStoreConfig**](docs/WhiteLabelConfigApi.md#getPlayStoreConfig) | **GET** /api/v1.0/whitelabelconfig/{appId}/playstore | 
+*Flipdish.WhiteLabelConfigApi* | [**getWhiteLabelConfig**](docs/WhiteLabelConfigApi.md#getWhiteLabelConfig) | **GET** /api/v1.0/whitelabelconfig/id/{wlid} | 
+*Flipdish.WhiteLabelConfigApi* | [**getWhiteLabelConfigByAppNameId**](docs/WhiteLabelConfigApi.md#getWhiteLabelConfigByAppNameId) | **GET** /api/v1.0/whitelabelconfig/name/{appId} | 
+*Flipdish.WhiteLabelConfigApi* | [**healthCheck**](docs/WhiteLabelConfigApi.md#healthCheck) | **GET** /api/v1.0/whitelabelconfig/health | 
+*Flipdish.WhiteLabelConfigApi* | [**updateAppGeneralConfig**](docs/WhiteLabelConfigApi.md#updateAppGeneralConfig) | **POST** /api/v1.0/whitelabelconfig/{appId}/general | 
+*Flipdish.WhiteLabelConfigApi* | [**updateAppStoreConfig**](docs/WhiteLabelConfigApi.md#updateAppStoreConfig) | **POST** /api/v1.0/whitelabelconfig/{appId}/appstore | 
+*Flipdish.WhiteLabelConfigApi* | [**updatePlayStoreConfig**](docs/WhiteLabelConfigApi.md#updatePlayStoreConfig) | **POST** /api/v1.0/whitelabelconfig/{appId}/playstore | 
+*Flipdish.WhiteLabelConfigApi* | [**uploadAppStoreIcon**](docs/WhiteLabelConfigApi.md#uploadAppStoreIcon) | **POST** /api/v1.0/whitelabelconfig/{appId}/app-store-icon | 
 
 
 ## Documentation for Models
@@ -711,6 +747,7 @@ Class | Method | HTTP request | Description
  - [Flipdish.AppConfigSalesChannel](docs/AppConfigSalesChannel.md)
  - [Flipdish.AppConfigUpdateModel](docs/AppConfigUpdateModel.md)
  - [Flipdish.AppCreatedEvent](docs/AppCreatedEvent.md)
+ - [Flipdish.AppGeneralConfigModel](docs/AppGeneralConfigModel.md)
  - [Flipdish.AppInstall](docs/AppInstall.md)
  - [Flipdish.AppLookup](docs/AppLookup.md)
  - [Flipdish.AppStoreApp](docs/AppStoreApp.md)
@@ -721,9 +758,11 @@ Class | Method | HTTP request | Description
  - [Flipdish.AppStoreAppSupportInfo](docs/AppStoreAppSupportInfo.md)
  - [Flipdish.AppStoreConfigCreatedEvent](docs/AppStoreConfigCreatedEvent.md)
  - [Flipdish.AppStoreConfigDeletedEvent](docs/AppStoreConfigDeletedEvent.md)
+ - [Flipdish.AppStoreConfigModel](docs/AppStoreConfigModel.md)
  - [Flipdish.AppStoreConfigUpdatedEvent](docs/AppStoreConfigUpdatedEvent.md)
  - [Flipdish.AppStoreSubscriptionChangeJobUpdatedEvent](docs/AppStoreSubscriptionChangeJobUpdatedEvent.md)
  - [Flipdish.AppUpdatedEvent](docs/AppUpdatedEvent.md)
+ - [Flipdish.AssetResultModel](docs/AssetResultModel.md)
  - [Flipdish.AssignedBankAccount](docs/AssignedBankAccount.md)
  - [Flipdish.AuditLogFieldChangeInformation](docs/AuditLogFieldChangeInformation.md)
  - [Flipdish.BalanceDetails](docs/BalanceDetails.md)
@@ -737,6 +776,7 @@ Class | Method | HTTP request | Description
  - [Flipdish.BankAccountSummary](docs/BankAccountSummary.md)
  - [Flipdish.BankAccountUpdatedEvent](docs/BankAccountUpdatedEvent.md)
  - [Flipdish.BluetoothTerminalStatus](docs/BluetoothTerminalStatus.md)
+ - [Flipdish.BuildResultModel](docs/BuildResultModel.md)
  - [Flipdish.BusinessHoursOverride](docs/BusinessHoursOverride.md)
  - [Flipdish.BusinessHoursOverrideBase](docs/BusinessHoursOverrideBase.md)
  - [Flipdish.BusinessHoursPeriod](docs/BusinessHoursPeriod.md)
@@ -775,6 +815,7 @@ Class | Method | HTTP request | Description
  - [Flipdish.CreateBasicAccountModel](docs/CreateBasicAccountModel.md)
  - [Flipdish.CreateCatalogGroupReference](docs/CreateCatalogGroupReference.md)
  - [Flipdish.CreateCatalogItem](docs/CreateCatalogItem.md)
+ - [Flipdish.CreateEndUserFeeConfig](docs/CreateEndUserFeeConfig.md)
  - [Flipdish.CreateFulfillmentStatesConfiguration](docs/CreateFulfillmentStatesConfiguration.md)
  - [Flipdish.CreateFullMenu](docs/CreateFullMenu.md)
  - [Flipdish.CreateFullMenuItemOptionSet](docs/CreateFullMenuItemOptionSet.md)
@@ -794,6 +835,7 @@ Class | Method | HTTP request | Description
  - [Flipdish.CreateProductReference](docs/CreateProductReference.md)
  - [Flipdish.CreatePromotion](docs/CreatePromotion.md)
  - [Flipdish.CreateTeammate](docs/CreateTeammate.md)
+ - [Flipdish.CreateUserDeliveryLocationRequest](docs/CreateUserDeliveryLocationRequest.md)
  - [Flipdish.CreateVoucher](docs/CreateVoucher.md)
  - [Flipdish.CreatedMenuSectionItems](docs/CreatedMenuSectionItems.md)
  - [Flipdish.CreditNoteDetails](docs/CreditNoteDetails.md)
@@ -832,6 +874,7 @@ Class | Method | HTTP request | Description
  - [Flipdish.EmvNotificationEvent](docs/EmvNotificationEvent.md)
  - [Flipdish.EmvTerminal](docs/EmvTerminal.md)
  - [Flipdish.EmvTerminalWithAssignments](docs/EmvTerminalWithAssignments.md)
+ - [Flipdish.EndUserFeeConfig](docs/EndUserFeeConfig.md)
  - [Flipdish.EventSearchResult](docs/EventSearchResult.md)
  - [Flipdish.ExecuteConfigurationActionRequest](docs/ExecuteConfigurationActionRequest.md)
  - [Flipdish.ExecuteConfigurationActionResult](docs/ExecuteConfigurationActionResult.md)
@@ -844,6 +887,7 @@ Class | Method | HTTP request | Description
  - [Flipdish.FileCreationResult](docs/FileCreationResult.md)
  - [Flipdish.FileDownloadResult](docs/FileDownloadResult.md)
  - [Flipdish.FirebaseApp](docs/FirebaseApp.md)
+ - [Flipdish.FlipdishAccountName](docs/FlipdishAccountName.md)
  - [Flipdish.FlipdishEventBase](docs/FlipdishEventBase.md)
  - [Flipdish.FlipdishFeesDetails](docs/FlipdishFeesDetails.md)
  - [Flipdish.FulfillentStatusActionItem](docs/FulfillentStatusActionItem.md)
@@ -852,6 +896,7 @@ Class | Method | HTTP request | Description
  - [Flipdish.FulfillmentStatesConfiguredStore](docs/FulfillmentStatesConfiguredStore.md)
  - [Flipdish.FulfillmentStatusConfigurationItem](docs/FulfillmentStatusConfigurationItem.md)
  - [Flipdish.GeoPointRequest](docs/GeoPointRequest.md)
+ - [Flipdish.GetEndUserFeeConfigsResponse](docs/GetEndUserFeeConfigsResponse.md)
  - [Flipdish.GetReceiptByOrderIdQueryResponse](docs/GetReceiptByOrderIdQueryResponse.md)
  - [Flipdish.GoogleAddress](docs/GoogleAddress.md)
  - [Flipdish.GoogleAddressComponent](docs/GoogleAddressComponent.md)
@@ -870,6 +915,7 @@ Class | Method | HTTP request | Description
  - [Flipdish.HydraAssignedEvent](docs/HydraAssignedEvent.md)
  - [Flipdish.HydraConfig](docs/HydraConfig.md)
  - [Flipdish.HydraConnectionStatusChangedEvent](docs/HydraConnectionStatusChangedEvent.md)
+ - [Flipdish.HydraCreatedEvent](docs/HydraCreatedEvent.md)
  - [Flipdish.HydraDeviceDetails](docs/HydraDeviceDetails.md)
  - [Flipdish.HydraRegistrationRequest](docs/HydraRegistrationRequest.md)
  - [Flipdish.HydraRequestResetEvent](docs/HydraRequestResetEvent.md)
@@ -1057,8 +1103,12 @@ Class | Method | HTTP request | Description
  - [Flipdish.PayoutReport3DetailsSummary](docs/PayoutReport3DetailsSummary.md)
  - [Flipdish.PayoutReport3Overview](docs/PayoutReport3Overview.md)
  - [Flipdish.PayoutReport3OverviewHeader](docs/PayoutReport3OverviewHeader.md)
+ - [Flipdish.PayoutReport3PropertyDetails](docs/PayoutReport3PropertyDetails.md)
+ - [Flipdish.PayoutReport3PropertyFilterOption](docs/PayoutReport3PropertyFilterOption.md)
  - [Flipdish.PayoutReport3RefundedOrder](docs/PayoutReport3RefundedOrder.md)
  - [Flipdish.PayoutReport3Store](docs/PayoutReport3Store.md)
+ - [Flipdish.PayoutReport3StorePayout](docs/PayoutReport3StorePayout.md)
+ - [Flipdish.PayoutReport3StorePayouts](docs/PayoutReport3StorePayouts.md)
  - [Flipdish.PayoutRequestIds](docs/PayoutRequestIds.md)
  - [Flipdish.PayoutStore](docs/PayoutStore.md)
  - [Flipdish.PayoutSummary](docs/PayoutSummary.md)
@@ -1069,6 +1119,8 @@ Class | Method | HTTP request | Description
  - [Flipdish.PhoneCall](docs/PhoneCall.md)
  - [Flipdish.PhoneCallEndedEvent](docs/PhoneCallEndedEvent.md)
  - [Flipdish.PhoneCallStartedEvent](docs/PhoneCallStartedEvent.md)
+ - [Flipdish.PixelPointProductCatalogue](docs/PixelPointProductCatalogue.md)
+ - [Flipdish.PlayStoreConfigModel](docs/PlayStoreConfigModel.md)
  - [Flipdish.PosRevenueDetails](docs/PosRevenueDetails.md)
  - [Flipdish.PreOrderConfig](docs/PreOrderConfig.md)
  - [Flipdish.PreOrderTime](docs/PreOrderTime.md)
@@ -1117,6 +1169,7 @@ Class | Method | HTTP request | Description
  - [Flipdish.RestApiArrayResultCountryWithAccountFieldsDefinitions](docs/RestApiArrayResultCountryWithAccountFieldsDefinitions.md)
  - [Flipdish.RestApiArrayResultDeliveryZone](docs/RestApiArrayResultDeliveryZone.md)
  - [Flipdish.RestApiArrayResultEmvTerminalWithAssignments](docs/RestApiArrayResultEmvTerminalWithAssignments.md)
+ - [Flipdish.RestApiArrayResultFlipdishAccountName](docs/RestApiArrayResultFlipdishAccountName.md)
  - [Flipdish.RestApiArrayResultFulfillmentStatesConfigurationSummary](docs/RestApiArrayResultFulfillmentStatesConfigurationSummary.md)
  - [Flipdish.RestApiArrayResultHomeAction](docs/RestApiArrayResultHomeAction.md)
  - [Flipdish.RestApiArrayResultKioskCashPaymentSettings](docs/RestApiArrayResultKioskCashPaymentSettings.md)
@@ -1161,10 +1214,14 @@ Class | Method | HTTP request | Description
  - [Flipdish.RestApiArrayResultSubscriptionSummary](docs/RestApiArrayResultSubscriptionSummary.md)
  - [Flipdish.RestApiArrayResultSupportedCountry](docs/RestApiArrayResultSupportedCountry.md)
  - [Flipdish.RestApiArrayResultTeammate](docs/RestApiArrayResultTeammate.md)
+ - [Flipdish.RestApiArrayResultUserDeliveryLocationAdmin](docs/RestApiArrayResultUserDeliveryLocationAdmin.md)
  - [Flipdish.RestApiArrayResultUserFlipdishAccount](docs/RestApiArrayResultUserFlipdishAccount.md)
  - [Flipdish.RestApiArrayResultUserNote](docs/RestApiArrayResultUserNote.md)
+ - [Flipdish.RestApiArrayResultUserOrderSummary](docs/RestApiArrayResultUserOrderSummary.md)
+ - [Flipdish.RestApiArrayResultUserSmsChatItem](docs/RestApiArrayResultUserSmsChatItem.md)
  - [Flipdish.RestApiArrayResultUserStoreInfo](docs/RestApiArrayResultUserStoreInfo.md)
  - [Flipdish.RestApiArrayResultVoucherDataPoint](docs/RestApiArrayResultVoucherDataPoint.md)
+ - [Flipdish.RestApiArrayResultVoucherSummary](docs/RestApiArrayResultVoucherSummary.md)
  - [Flipdish.RestApiDefaultResponse](docs/RestApiDefaultResponse.md)
  - [Flipdish.RestApiErrorResult](docs/RestApiErrorResult.md)
  - [Flipdish.RestApiEventSearchPaginationResult](docs/RestApiEventSearchPaginationResult.md)
@@ -1213,12 +1270,16 @@ Class | Method | HTTP request | Description
  - [Flipdish.RestApiResultAppChannelAssignment](docs/RestApiResultAppChannelAssignment.md)
  - [Flipdish.RestApiResultAppCompliance](docs/RestApiResultAppCompliance.md)
  - [Flipdish.RestApiResultAppConfigSalesChannel](docs/RestApiResultAppConfigSalesChannel.md)
+ - [Flipdish.RestApiResultAppGeneralConfigModel](docs/RestApiResultAppGeneralConfigModel.md)
  - [Flipdish.RestApiResultAppStoreApp](docs/RestApiResultAppStoreApp.md)
  - [Flipdish.RestApiResultAppStoreAppConfiguration](docs/RestApiResultAppStoreAppConfiguration.md)
  - [Flipdish.RestApiResultAppStoreAppEntitlements](docs/RestApiResultAppStoreAppEntitlements.md)
+ - [Flipdish.RestApiResultAppStoreConfigModel](docs/RestApiResultAppStoreConfigModel.md)
+ - [Flipdish.RestApiResultAssetResultModel](docs/RestApiResultAssetResultModel.md)
  - [Flipdish.RestApiResultAssignedBankAccount](docs/RestApiResultAssignedBankAccount.md)
  - [Flipdish.RestApiResultBankAccountDetail](docs/RestApiResultBankAccountDetail.md)
  - [Flipdish.RestApiResultBluetoothTerminalStatus](docs/RestApiResultBluetoothTerminalStatus.md)
+ - [Flipdish.RestApiResultBuildResultModel](docs/RestApiResultBuildResultModel.md)
  - [Flipdish.RestApiResultBusinessHoursOverride](docs/RestApiResultBusinessHoursOverride.md)
  - [Flipdish.RestApiResultBusinessHoursPeriod](docs/RestApiResultBusinessHoursPeriod.md)
  - [Flipdish.RestApiResultCardReader](docs/RestApiResultCardReader.md)
@@ -1234,10 +1295,12 @@ Class | Method | HTTP request | Description
  - [Flipdish.RestApiResultCustomers](docs/RestApiResultCustomers.md)
  - [Flipdish.RestApiResultDeliveryZone](docs/RestApiResultDeliveryZone.md)
  - [Flipdish.RestApiResultDnsRecordInformation](docs/RestApiResultDnsRecordInformation.md)
+ - [Flipdish.RestApiResultEndUserFeeConfig](docs/RestApiResultEndUserFeeConfig.md)
  - [Flipdish.RestApiResultExecuteConfigurationActionResult](docs/RestApiResultExecuteConfigurationActionResult.md)
  - [Flipdish.RestApiResultFileCreationResult](docs/RestApiResultFileCreationResult.md)
  - [Flipdish.RestApiResultFileDownloadResult](docs/RestApiResultFileDownloadResult.md)
  - [Flipdish.RestApiResultFulfillmentStatesConfiguration](docs/RestApiResultFulfillmentStatesConfiguration.md)
+ - [Flipdish.RestApiResultGetEndUserFeeConfigsResponse](docs/RestApiResultGetEndUserFeeConfigsResponse.md)
  - [Flipdish.RestApiResultGroup](docs/RestApiResultGroup.md)
  - [Flipdish.RestApiResultHasPaymentMethodResponse](docs/RestApiResultHasPaymentMethodResponse.md)
  - [Flipdish.RestApiResultHomeStatistics](docs/RestApiResultHomeStatistics.md)
@@ -1290,6 +1353,10 @@ Class | Method | HTTP request | Description
  - [Flipdish.RestApiResultPaymentTerminalTransactionDetails](docs/RestApiResultPaymentTerminalTransactionDetails.md)
  - [Flipdish.RestApiResultPayoutReport3Details](docs/RestApiResultPayoutReport3Details.md)
  - [Flipdish.RestApiResultPayoutReport3Overview](docs/RestApiResultPayoutReport3Overview.md)
+ - [Flipdish.RestApiResultPayoutReport3PropertyDetails](docs/RestApiResultPayoutReport3PropertyDetails.md)
+ - [Flipdish.RestApiResultPayoutReport3StorePayouts](docs/RestApiResultPayoutReport3StorePayouts.md)
+ - [Flipdish.RestApiResultPixelPointProductCatalogue](docs/RestApiResultPixelPointProductCatalogue.md)
+ - [Flipdish.RestApiResultPlayStoreConfigModel](docs/RestApiResultPlayStoreConfigModel.md)
  - [Flipdish.RestApiResultPreOrderConfig](docs/RestApiResultPreOrderConfig.md)
  - [Flipdish.RestApiResultProcessingFeeConfig](docs/RestApiResultProcessingFeeConfig.md)
  - [Flipdish.RestApiResultProduct](docs/RestApiResultProduct.md)
@@ -1301,6 +1368,7 @@ Class | Method | HTTP request | Description
  - [Flipdish.RestApiResultRestaurantVoucherPayGreenStoreConfiguration](docs/RestApiResultRestaurantVoucherPayGreenStoreConfiguration.md)
  - [Flipdish.RestApiResultRetentionCampaign](docs/RestApiResultRetentionCampaign.md)
  - [Flipdish.RestApiResultServiceCharge](docs/RestApiResultServiceCharge.md)
+ - [Flipdish.RestApiResultSetV2FeeCalculationRequest](docs/RestApiResultSetV2FeeCalculationRequest.md)
  - [Flipdish.RestApiResultSmsProviderCredential](docs/RestApiResultSmsProviderCredential.md)
  - [Flipdish.RestApiResultStore](docs/RestApiResultStore.md)
  - [Flipdish.RestApiResultStoreAddress](docs/RestApiResultStoreAddress.md)
@@ -1319,11 +1387,13 @@ Class | Method | HTTP request | Description
  - [Flipdish.RestApiResultTipConfiguration](docs/RestApiResultTipConfiguration.md)
  - [Flipdish.RestApiResultUpdateMobileAppsSubmissionStatus](docs/RestApiResultUpdateMobileAppsSubmissionStatus.md)
  - [Flipdish.RestApiResultUserInfo](docs/RestApiResultUserInfo.md)
+ - [Flipdish.RestApiResultUserPushNotificationSentResult](docs/RestApiResultUserPushNotificationSentResult.md)
  - [Flipdish.RestApiResultUserRole](docs/RestApiResultUserRole.md)
  - [Flipdish.RestApiResultVoucher](docs/RestApiResultVoucher.md)
  - [Flipdish.RestApiResultVoucherWithStats](docs/RestApiResultVoucherWithStats.md)
  - [Flipdish.RestApiResultWebsiteImage](docs/RestApiResultWebsiteImage.md)
  - [Flipdish.RestApiResultWebsiteTestimonial](docs/RestApiResultWebsiteTestimonial.md)
+ - [Flipdish.RestApiResultWhiteLabelConfigModel](docs/RestApiResultWhiteLabelConfigModel.md)
  - [Flipdish.RestApiStringArrayResult](docs/RestApiStringArrayResult.md)
  - [Flipdish.RestApiStringResult](docs/RestApiStringResult.md)
  - [Flipdish.RestApiUnauthorizedResult](docs/RestApiUnauthorizedResult.md)
@@ -1342,9 +1412,14 @@ Class | Method | HTTP request | Description
  - [Flipdish.RevenueDetail](docs/RevenueDetail.md)
  - [Flipdish.SafeWaitHandle](docs/SafeWaitHandle.md)
  - [Flipdish.SearchCriteria](docs/SearchCriteria.md)
+ - [Flipdish.SendUserPushNotificationRequest](docs/SendUserPushNotificationRequest.md)
+ - [Flipdish.SendUserSmsRequest](docs/SendUserSmsRequest.md)
  - [Flipdish.ServiceCharge](docs/ServiceCharge.md)
  - [Flipdish.SetOrderBatchingConfiguration](docs/SetOrderBatchingConfiguration.md)
  - [Flipdish.SetPasswordWithPinModel](docs/SetPasswordWithPinModel.md)
+ - [Flipdish.SetUserDeliveryLocationCoordinatesRequest](docs/SetUserDeliveryLocationCoordinatesRequest.md)
+ - [Flipdish.SetUserDeliveryLocationFieldRequest](docs/SetUserDeliveryLocationFieldRequest.md)
+ - [Flipdish.SetV2FeeCalculationRequest](docs/SetV2FeeCalculationRequest.md)
  - [Flipdish.SetVoucherValidityPeriodsSimplifiedRequest](docs/SetVoucherValidityPeriodsSimplifiedRequest.md)
  - [Flipdish.Setting](docs/Setting.md)
  - [Flipdish.SignupStep](docs/SignupStep.md)
@@ -1463,15 +1538,19 @@ Class | Method | HTTP request | Description
  - [Flipdish.UserAnsweredSignupQuestionsEvent](docs/UserAnsweredSignupQuestionsEvent.md)
  - [Flipdish.UserCreatedEvent](docs/UserCreatedEvent.md)
  - [Flipdish.UserDeletedEvent](docs/UserDeletedEvent.md)
+ - [Flipdish.UserDeliveryLocationAdmin](docs/UserDeliveryLocationAdmin.md)
  - [Flipdish.UserEventInfo](docs/UserEventInfo.md)
  - [Flipdish.UserFlipdishAccount](docs/UserFlipdishAccount.md)
  - [Flipdish.UserInfo](docs/UserInfo.md)
  - [Flipdish.UserLoginEvent](docs/UserLoginEvent.md)
  - [Flipdish.UserMonthlyCommission](docs/UserMonthlyCommission.md)
  - [Flipdish.UserNote](docs/UserNote.md)
+ - [Flipdish.UserOrderSummary](docs/UserOrderSummary.md)
  - [Flipdish.UserPasswordCreatedEvent](docs/UserPasswordCreatedEvent.md)
+ - [Flipdish.UserPushNotificationSentResult](docs/UserPushNotificationSentResult.md)
  - [Flipdish.UserRole](docs/UserRole.md)
  - [Flipdish.UserSearch](docs/UserSearch.md)
+ - [Flipdish.UserSmsChatItem](docs/UserSmsChatItem.md)
  - [Flipdish.UserStoreInfo](docs/UserStoreInfo.md)
  - [Flipdish.UserUpdatedEvent](docs/UserUpdatedEvent.md)
  - [Flipdish.UserWhiteLabelConfig](docs/UserWhiteLabelConfig.md)
@@ -1500,7 +1579,11 @@ Class | Method | HTTP request | Description
  - [Flipdish.WebsiteTestimonialBase](docs/WebsiteTestimonialBase.md)
  - [Flipdish.WebsiteUpdatedEvent](docs/WebsiteUpdatedEvent.md)
  - [Flipdish.WebsiteVanityUrlUpdatedEvent](docs/WebsiteVanityUrlUpdatedEvent.md)
+ - [Flipdish.WhiteLabelAssetModel](docs/WhiteLabelAssetModel.md)
+ - [Flipdish.WhiteLabelColorSchemeModel](docs/WhiteLabelColorSchemeModel.md)
  - [Flipdish.WhiteLabelConfig](docs/WhiteLabelConfig.md)
+ - [Flipdish.WhiteLabelConfigModel](docs/WhiteLabelConfigModel.md)
+ - [Flipdish.WhiteLabelLanguageModel](docs/WhiteLabelLanguageModel.md)
 
 
 ## Documentation for Authorization

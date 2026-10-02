@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**KioskId** | **String** |  | [optional] 
-**Variables** | **[String]** |  | [optional] 
-**StartDate** | **Date** |  | [optional] 
-**EndDate** | **Date** |  | [optional] 
+**KioskId** | **String** | KioskId. | [optional] 
+**Variables** | **[String]** | Variables. | [optional] 
+**StartDate** | **Date** | StartDate. | [optional] 
+**EndDate** | **Date** | EndDate. | [optional] 
 
 

@@ -22,6 +22,7 @@ import TelemetrySeriesProperty from './TelemetrySeriesProperty';
 class TelemetrySeriesResult {
     /**
      * Constructs a new <code>TelemetrySeriesResult</code>.
+     * TelemetrySeriesResult.
      * @alias module:model/TelemetrySeriesResult
      */
     constructor() { 
@@ -62,11 +63,13 @@ class TelemetrySeriesResult {
 }
 
 /**
+ * Timestamps.
  * @member {Array.<Date>} Timestamps
  */
 TelemetrySeriesResult.prototype['Timestamps'] = undefined;
 
 /**
+ * Properties.
  * @member {Array.<module:model/TelemetrySeriesProperty>} Properties
  */
 TelemetrySeriesResult.prototype['Properties'] = undefined;

@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**OpeningBalance** | **Number** |  | [optional] 
-**ClosingBalance** | **Number** |  | [optional] 
+**OpeningBalance** | **Number** | OpeningBalance. | [optional] 
+**ClosingBalance** | **Number** | ClosingBalance. | [optional] 
 
 

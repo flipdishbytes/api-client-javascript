@@ -48,6 +48,7 @@ Name | Type | Description | Notes
 **PosSalesAmount** | **Number** | POS sales amount | [optional] 
 **PosSalesTax** | **Number** | POS sales tax | [optional] 
 **TipsOnPosSales** | **Number** | Tips on POS sales | [optional] 
+**BankAccountHasChanged** | **Boolean** | Indicates whether the bank account has changed since the previous payout | [optional] 
 
 
 

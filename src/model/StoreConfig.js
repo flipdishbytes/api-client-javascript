@@ -21,6 +21,7 @@ import ApiClient from '../ApiClient';
 class StoreConfig {
     /**
      * Constructs a new <code>StoreConfig</code>.
+     * StoreConfig.
      * @alias module:model/StoreConfig
      */
     constructor() { 

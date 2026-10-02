@@ -48,6 +48,9 @@ class UserFlipdishAccount {
         if (data) {
             obj = obj || new UserFlipdishAccount();
 
+            if (data.hasOwnProperty('PayeeBankAccountDataId')) {
+                obj['PayeeBankAccountDataId'] = ApiClient.convertToType(data['PayeeBankAccountDataId'], 'Number');
+            }
             if (data.hasOwnProperty('FlipdishAccountId')) {
                 obj['FlipdishAccountId'] = ApiClient.convertToType(data['FlipdishAccountId'], 'Number');
             }
@@ -60,6 +63,12 @@ class UserFlipdishAccount {
 
 
 }
+
+/**
+ * Payee Bank Account Data Id
+ * @member {Number} PayeeBankAccountDataId
+ */
+UserFlipdishAccount.prototype['PayeeBankAccountDataId'] = undefined;
 
 /**
  * Flipdish Account Id

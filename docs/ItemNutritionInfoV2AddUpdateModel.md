@@ -4,6 +4,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**AllergenIds** | **[String]** |  | [optional] 
+**AllergenIds** | **[String]** | AllergenIds. | [optional] 
 
 

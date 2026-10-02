@@ -58,6 +58,9 @@ class StoreSummary {
             if (data.hasOwnProperty('MenuId')) {
                 obj['MenuId'] = ApiClient.convertToType(data['MenuId'], 'Number');
             }
+            if (data.hasOwnProperty('MenuPublishId')) {
+                obj['MenuPublishId'] = ApiClient.convertToType(data['MenuPublishId'], 'String');
+            }
             if (data.hasOwnProperty('Metadata')) {
                 obj['Metadata'] = ApiClient.convertToType(data['Metadata'], {'String': 'String'});
             }
@@ -81,6 +84,12 @@ class StoreSummary {
             }
             if (data.hasOwnProperty('PrettyAddress')) {
                 obj['PrettyAddress'] = ApiClient.convertToType(data['PrettyAddress'], 'String');
+            }
+            if (data.hasOwnProperty('CountryCode')) {
+                obj['CountryCode'] = ApiClient.convertToType(data['CountryCode'], 'String');
+            }
+            if (data.hasOwnProperty('PropertyId')) {
+                obj['PropertyId'] = ApiClient.convertToType(data['PropertyId'], 'String');
             }
         }
         return obj;
@@ -106,6 +115,12 @@ StoreSummary.prototype['Name'] = undefined;
  * @member {Number} MenuId
  */
 StoreSummary.prototype['MenuId'] = undefined;
+
+/**
+ * Stores menu publish GUID
+ * @member {String} MenuPublishId
+ */
+StoreSummary.prototype['MenuPublishId'] = undefined;
 
 /**
  * Store metadata
@@ -153,6 +168,18 @@ StoreSummary.prototype['TaxId'] = undefined;
  * @member {String} PrettyAddress
  */
 StoreSummary.prototype['PrettyAddress'] = undefined;
+
+/**
+ * Country code of the store address (ISO 3166-1 alpha-2)
+ * @member {String} CountryCode
+ */
+StoreSummary.prototype['CountryCode'] = undefined;
+
+/**
+ * Property identifier
+ * @member {String} PropertyId
+ */
+StoreSummary.prototype['PropertyId'] = undefined;
 
 
 

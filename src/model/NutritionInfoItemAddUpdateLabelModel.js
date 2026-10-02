@@ -21,6 +21,7 @@ import ApiClient from '../ApiClient';
 class NutritionInfoItemAddUpdateLabelModel {
     /**
      * Constructs a new <code>NutritionInfoItemAddUpdateLabelModel</code>.
+     * NutritionInfoItemAddUpdateLabelModel.
      * @alias module:model/NutritionInfoItemAddUpdateLabelModel
      */
     constructor() { 
@@ -64,16 +65,19 @@ class NutritionInfoItemAddUpdateLabelModel {
 }
 
 /**
+ * Name.
  * @member {String} Name
  */
 NutritionInfoItemAddUpdateLabelModel.prototype['Name'] = undefined;
 
 /**
+ * Values.
  * @member {Array.<String>} Values
  */
 NutritionInfoItemAddUpdateLabelModel.prototype['Values'] = undefined;
 
 /**
+ * IconUrl.
  * @member {String} IconUrl
  */
 NutritionInfoItemAddUpdateLabelModel.prototype['IconUrl'] = undefined;

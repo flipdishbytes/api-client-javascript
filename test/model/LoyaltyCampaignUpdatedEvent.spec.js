@@ -120,6 +120,18 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property ActivityId (base name: "ActivityId")', function() {
+      // uncomment below and update the code to test the property ActivityId
+      //var instance = new Flipdish.LoyaltyCampaignUpdatedEvent();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property ActivityType (base name: "ActivityType")', function() {
+      // uncomment below and update the code to test the property ActivityType
+      //var instance = new Flipdish.LoyaltyCampaignUpdatedEvent();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));

@@ -21,6 +21,7 @@ import ApiClient from '../ApiClient';
 class SmsProviderCredential {
     /**
      * Constructs a new <code>SmsProviderCredential</code>.
+     * SmsProviderCredential.
      * @alias module:model/SmsProviderCredential
      */
     constructor() { 
@@ -73,31 +74,37 @@ class SmsProviderCredential {
 }
 
 /**
+ * OrgId.
  * @member {String} OrgId
  */
 SmsProviderCredential.prototype['OrgId'] = undefined;
 
 /**
+ * BrandId.
  * @member {String} BrandId
  */
 SmsProviderCredential.prototype['BrandId'] = undefined;
 
 /**
+ * SmsServiceType.
  * @member {module:model/SmsProviderCredential.SmsServiceTypeEnum} SmsServiceType
  */
 SmsProviderCredential.prototype['SmsServiceType'] = undefined;
 
 /**
+ * SenderId.
  * @member {String} SenderId
  */
 SmsProviderCredential.prototype['SenderId'] = undefined;
 
 /**
+ * Username.
  * @member {String} Username
  */
 SmsProviderCredential.prototype['Username'] = undefined;
 
 /**
+ * AuthToken.
  * @member {String} AuthToken
  */
 SmsProviderCredential.prototype['AuthToken'] = undefined;
@@ -135,7 +142,13 @@ SmsProviderCredential['SmsServiceTypeEnum'] = {
      * value: "MessageBird"
      * @const
      */
-    "MessageBird": "MessageBird"
+    "MessageBird": "MessageBird",
+
+    /**
+     * value: "CommunicationService"
+     * @const
+     */
+    "CommunicationService": "CommunicationService"
 };
 
 

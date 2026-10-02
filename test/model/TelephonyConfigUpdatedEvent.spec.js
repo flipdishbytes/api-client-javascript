@@ -78,6 +78,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property PropertyId (base name: "PropertyId")', function() {
+      // uncomment below and update the code to test the property PropertyId
+      //var instance = new Flipdish.TelephonyConfigUpdatedEvent();
+      //expect(instance).to.be();
+    });
+
     it('should have the property FlipdishEventId (base name: "FlipdishEventId")', function() {
       // uncomment below and update the code to test the property FlipdishEventId
       //var instance = new Flipdish.TelephonyConfigUpdatedEvent();
@@ -110,6 +116,18 @@
 
     it('should have the property IpAddress (base name: "IpAddress")', function() {
       // uncomment below and update the code to test the property IpAddress
+      //var instance = new Flipdish.TelephonyConfigUpdatedEvent();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property ActivityId (base name: "ActivityId")', function() {
+      // uncomment below and update the code to test the property ActivityId
+      //var instance = new Flipdish.TelephonyConfigUpdatedEvent();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property ActivityType (base name: "ActivityType")', function() {
+      // uncomment below and update the code to test the property ActivityType
       //var instance = new Flipdish.TelephonyConfigUpdatedEvent();
       //expect(instance).to.be();
     });

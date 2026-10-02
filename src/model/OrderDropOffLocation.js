@@ -21,6 +21,7 @@ import ApiClient from '../ApiClient';
 class OrderDropOffLocation {
     /**
      * Constructs a new <code>OrderDropOffLocation</code>.
+     * OrderDropOffLocation.
      * @alias module:model/OrderDropOffLocation
      */
     constructor() { 
@@ -73,31 +74,37 @@ class OrderDropOffLocation {
 }
 
 /**
+ * OrderId.
  * @member {Number} OrderId
  */
 OrderDropOffLocation.prototype['OrderId'] = undefined;
 
 /**
+ * LocationName.
  * @member {String} LocationName
  */
 OrderDropOffLocation.prototype['LocationName'] = undefined;
 
 /**
+ * LocationAreaName.
  * @member {String} LocationAreaName
  */
 OrderDropOffLocation.prototype['LocationAreaName'] = undefined;
 
 /**
+ * LocationId.
  * @member {Number} LocationId
  */
 OrderDropOffLocation.prototype['LocationId'] = undefined;
 
 /**
+ * LocationAreaId.
  * @member {Number} LocationAreaId
  */
 OrderDropOffLocation.prototype['LocationAreaId'] = undefined;
 
 /**
+ * ExternalLocationId.
  * @member {String} ExternalLocationId
  */
 OrderDropOffLocation.prototype['ExternalLocationId'] = undefined;

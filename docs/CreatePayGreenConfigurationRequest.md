@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Name** | **String** |  | [optional] 
-**PayGreenId** | **String** |  | [optional] 
-**PayGreenPrivateKey** | **String** |  | [optional] 
-**AssignedStores** | **[Number]** |  | [optional] 
+**Name** | **String** | Name. | [optional] 
+**PayGreenId** | **String** | PayGreenId. | [optional] 
+**PayGreenPrivateKey** | **String** | PayGreenPrivateKey. | [optional] 
+**AssignedStores** | **[Number]** | AssignedStores. | [optional] 
 
 

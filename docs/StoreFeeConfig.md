@@ -49,5 +49,13 @@ Name | Type | Description | Notes
 **FixedFeeOrderWithGoogle** | **Number** | Additional fixed fee charged on orders submitted through Order With Google | [optional] 
 **ShouldNotAutoIncreaseBefore** | **Date** | Should not auto increase fees before this date | [optional] 
 **Reason** | **String** | Reason for the last fee change (optional) | [optional] 
+**PercentFeeCardOrdersPhoneAgent** | **Number** | Gets or sets the percent fee card orders phone agent. | [optional] 
+**PercentFeeCashOrdersPhoneAgent** | **Number** | Gets or sets the percent fee cash orders phone agent. | [optional] 
+**FixedFeeCardOrdersPhoneAgent** | **Number** | Gets or sets the fixed fee card orders phone agent. | [optional] 
+**FixedFeeCashOrdersPhoneAgent** | **Number** | Gets or sets the fixed fee cash orders phone agent. | [optional] 
+**PercentFeeCardOrdersPhoneAgentChargedToCustomerIncludingVat** | **Number** | Gets or sets the percent fee card orders phone agent charged to customer including vat. | [optional] 
+**PercentFeeCashOrdersPhoneAgentChargedToCustomerIncludingVat** | **Number** | Gets or sets the percent fee cash orders phone agent charged to customer including vat. | [optional] 
+**FixedFeeCardOrdersPhoneAgentChargedToCustomerIncludingVat** | **Number** | Gets or sets the fixed fee card orders phone agent charged to customer including vat. | [optional] 
+**FixedFeeCashOrdersPhoneAgentChargedToCustomerIncludingVat** | **Number** | Gets or sets the fixed fee cash orders phone agent charged to customer including vat. | [optional] 
 
 

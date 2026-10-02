@@ -22,6 +22,7 @@ import NutritionInfoItemAddUpdateLabelModel from './NutritionInfoItemAddUpdateLa
 class ItemNutritionInfoAddUpdateModel {
     /**
      * Constructs a new <code>ItemNutritionInfoAddUpdateModel</code>.
+     * ItemNutritionInfoAddUpdateModel.
      * @alias module:model/ItemNutritionInfoAddUpdateModel
      */
     constructor() { 
@@ -59,6 +60,7 @@ class ItemNutritionInfoAddUpdateModel {
 }
 
 /**
+ * Labels.
  * @member {Array.<module:model/NutritionInfoItemAddUpdateLabelModel>} Labels
  */
 ItemNutritionInfoAddUpdateModel.prototype['Labels'] = undefined;

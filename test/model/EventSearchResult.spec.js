@@ -624,6 +624,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property HydraCreatedEvent (base name: "HydraCreatedEvent")', function() {
+      // uncomment below and update the code to test the property HydraCreatedEvent
+      //var instance = new Flipdish.EventSearchResult();
+      //expect(instance).to.be();
+    });
+
     it('should have the property HydraRequestResetEvent (base name: "HydraRequestResetEvent")', function() {
       // uncomment below and update the code to test the property HydraRequestResetEvent
       //var instance = new Flipdish.EventSearchResult();

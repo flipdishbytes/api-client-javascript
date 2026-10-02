@@ -183,6 +183,30 @@ class StoreFeeConfig {
             if (data.hasOwnProperty('Reason')) {
                 obj['Reason'] = ApiClient.convertToType(data['Reason'], 'String');
             }
+            if (data.hasOwnProperty('PercentFeeCardOrdersPhoneAgent')) {
+                obj['PercentFeeCardOrdersPhoneAgent'] = ApiClient.convertToType(data['PercentFeeCardOrdersPhoneAgent'], 'Number');
+            }
+            if (data.hasOwnProperty('PercentFeeCashOrdersPhoneAgent')) {
+                obj['PercentFeeCashOrdersPhoneAgent'] = ApiClient.convertToType(data['PercentFeeCashOrdersPhoneAgent'], 'Number');
+            }
+            if (data.hasOwnProperty('FixedFeeCardOrdersPhoneAgent')) {
+                obj['FixedFeeCardOrdersPhoneAgent'] = ApiClient.convertToType(data['FixedFeeCardOrdersPhoneAgent'], 'Number');
+            }
+            if (data.hasOwnProperty('FixedFeeCashOrdersPhoneAgent')) {
+                obj['FixedFeeCashOrdersPhoneAgent'] = ApiClient.convertToType(data['FixedFeeCashOrdersPhoneAgent'], 'Number');
+            }
+            if (data.hasOwnProperty('PercentFeeCardOrdersPhoneAgentChargedToCustomerIncludingVat')) {
+                obj['PercentFeeCardOrdersPhoneAgentChargedToCustomerIncludingVat'] = ApiClient.convertToType(data['PercentFeeCardOrdersPhoneAgentChargedToCustomerIncludingVat'], 'Number');
+            }
+            if (data.hasOwnProperty('PercentFeeCashOrdersPhoneAgentChargedToCustomerIncludingVat')) {
+                obj['PercentFeeCashOrdersPhoneAgentChargedToCustomerIncludingVat'] = ApiClient.convertToType(data['PercentFeeCashOrdersPhoneAgentChargedToCustomerIncludingVat'], 'Number');
+            }
+            if (data.hasOwnProperty('FixedFeeCardOrdersPhoneAgentChargedToCustomerIncludingVat')) {
+                obj['FixedFeeCardOrdersPhoneAgentChargedToCustomerIncludingVat'] = ApiClient.convertToType(data['FixedFeeCardOrdersPhoneAgentChargedToCustomerIncludingVat'], 'Number');
+            }
+            if (data.hasOwnProperty('FixedFeeCashOrdersPhoneAgentChargedToCustomerIncludingVat')) {
+                obj['FixedFeeCashOrdersPhoneAgentChargedToCustomerIncludingVat'] = ApiClient.convertToType(data['FixedFeeCashOrdersPhoneAgentChargedToCustomerIncludingVat'], 'Number');
+            }
         }
         return obj;
     }
@@ -459,6 +483,54 @@ StoreFeeConfig.prototype['ShouldNotAutoIncreaseBefore'] = undefined;
  * @member {String} Reason
  */
 StoreFeeConfig.prototype['Reason'] = undefined;
+
+/**
+ * Gets or sets the percent fee card orders phone agent.
+ * @member {Number} PercentFeeCardOrdersPhoneAgent
+ */
+StoreFeeConfig.prototype['PercentFeeCardOrdersPhoneAgent'] = undefined;
+
+/**
+ * Gets or sets the percent fee cash orders phone agent.
+ * @member {Number} PercentFeeCashOrdersPhoneAgent
+ */
+StoreFeeConfig.prototype['PercentFeeCashOrdersPhoneAgent'] = undefined;
+
+/**
+ * Gets or sets the fixed fee card orders phone agent.
+ * @member {Number} FixedFeeCardOrdersPhoneAgent
+ */
+StoreFeeConfig.prototype['FixedFeeCardOrdersPhoneAgent'] = undefined;
+
+/**
+ * Gets or sets the fixed fee cash orders phone agent.
+ * @member {Number} FixedFeeCashOrdersPhoneAgent
+ */
+StoreFeeConfig.prototype['FixedFeeCashOrdersPhoneAgent'] = undefined;
+
+/**
+ * Gets or sets the percent fee card orders phone agent charged to customer including vat.
+ * @member {Number} PercentFeeCardOrdersPhoneAgentChargedToCustomerIncludingVat
+ */
+StoreFeeConfig.prototype['PercentFeeCardOrdersPhoneAgentChargedToCustomerIncludingVat'] = undefined;
+
+/**
+ * Gets or sets the percent fee cash orders phone agent charged to customer including vat.
+ * @member {Number} PercentFeeCashOrdersPhoneAgentChargedToCustomerIncludingVat
+ */
+StoreFeeConfig.prototype['PercentFeeCashOrdersPhoneAgentChargedToCustomerIncludingVat'] = undefined;
+
+/**
+ * Gets or sets the fixed fee card orders phone agent charged to customer including vat.
+ * @member {Number} FixedFeeCardOrdersPhoneAgentChargedToCustomerIncludingVat
+ */
+StoreFeeConfig.prototype['FixedFeeCardOrdersPhoneAgentChargedToCustomerIncludingVat'] = undefined;
+
+/**
+ * Gets or sets the fixed fee cash orders phone agent charged to customer including vat.
+ * @member {Number} FixedFeeCashOrdersPhoneAgentChargedToCustomerIncludingVat
+ */
+StoreFeeConfig.prototype['FixedFeeCashOrdersPhoneAgentChargedToCustomerIncludingVat'] = undefined;
 
 
 

@@ -180,6 +180,9 @@ class Payout {
             if (data.hasOwnProperty('TipsOnPosSales')) {
                 obj['TipsOnPosSales'] = ApiClient.convertToType(data['TipsOnPosSales'], 'Number');
             }
+            if (data.hasOwnProperty('BankAccountHasChanged')) {
+                obj['BankAccountHasChanged'] = ApiClient.convertToType(data['BankAccountHasChanged'], 'Boolean');
+            }
         }
         return obj;
     }
@@ -450,6 +453,12 @@ Payout.prototype['PosSalesTax'] = undefined;
  * @member {Number} TipsOnPosSales
  */
 Payout.prototype['TipsOnPosSales'] = undefined;
+
+/**
+ * Indicates whether the bank account has changed since the previous payout
+ * @member {Boolean} BankAccountHasChanged
+ */
+Payout.prototype['BankAccountHasChanged'] = undefined;
 
 
 

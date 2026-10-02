@@ -97,24 +97,24 @@ export default class MenuZonesApi {
 
     /**
      * Deletes a menu zone.
+     * @param {Number} menuId Menu id.
      * @param {Number} menuZoneId The menu zone id.
-     * @param {String} menuId 
      * @param {module:api/MenuZonesApi~deleteMenuZoneCallback} callback The callback function, accepting three arguments: error, data, response
      */
-    deleteMenuZone(menuZoneId, menuId, callback) {
+    deleteMenuZone(menuId, menuZoneId, callback) {
       let postBody = null;
-      // verify the required parameter 'menuZoneId' is set
-      if (menuZoneId === undefined || menuZoneId === null) {
-        throw new Error("Missing the required parameter 'menuZoneId' when calling deleteMenuZone");
-      }
       // verify the required parameter 'menuId' is set
       if (menuId === undefined || menuId === null) {
         throw new Error("Missing the required parameter 'menuId' when calling deleteMenuZone");
       }
+      // verify the required parameter 'menuZoneId' is set
+      if (menuZoneId === undefined || menuZoneId === null) {
+        throw new Error("Missing the required parameter 'menuZoneId' when calling deleteMenuZone");
+      }
 
       let pathParams = {
-        'menuZoneId': menuZoneId,
-        'menuId': menuId
+        'menuId': menuId,
+        'menuZoneId': menuZoneId
       };
       let queryParams = {
       };
@@ -144,24 +144,24 @@ export default class MenuZonesApi {
 
     /**
      * Deletes a menu zone image.
+     * @param {Number} menuId Menu id.
      * @param {Number} menuZoneId The zone Id/
-     * @param {String} menuId 
      * @param {module:api/MenuZonesApi~deleteMenuZoneImageCallback} callback The callback function, accepting three arguments: error, data, response
      */
-    deleteMenuZoneImage(menuZoneId, menuId, callback) {
+    deleteMenuZoneImage(menuId, menuZoneId, callback) {
       let postBody = null;
-      // verify the required parameter 'menuZoneId' is set
-      if (menuZoneId === undefined || menuZoneId === null) {
-        throw new Error("Missing the required parameter 'menuZoneId' when calling deleteMenuZoneImage");
-      }
       // verify the required parameter 'menuId' is set
       if (menuId === undefined || menuId === null) {
         throw new Error("Missing the required parameter 'menuId' when calling deleteMenuZoneImage");
       }
+      // verify the required parameter 'menuZoneId' is set
+      if (menuZoneId === undefined || menuZoneId === null) {
+        throw new Error("Missing the required parameter 'menuZoneId' when calling deleteMenuZoneImage");
+      }
 
       let pathParams = {
-        'menuZoneId': menuZoneId,
-        'menuId': menuId
+        'menuId': menuId,
+        'menuZoneId': menuZoneId
       };
       let queryParams = {
       };
@@ -191,13 +191,17 @@ export default class MenuZonesApi {
 
     /**
      * Flips the order of two menu zones.
+     * @param {Number} menuId 
      * @param {Number} menuZoneId Source.
      * @param {Number} menuZoneI2 Destination.
-     * @param {String} menuId 
      * @param {module:api/MenuZonesApi~flipMenuZonesCallback} callback The callback function, accepting three arguments: error, data, response
      */
-    flipMenuZones(menuZoneId, menuZoneI2, menuId, callback) {
+    flipMenuZones(menuId, menuZoneId, menuZoneI2, callback) {
       let postBody = null;
+      // verify the required parameter 'menuId' is set
+      if (menuId === undefined || menuId === null) {
+        throw new Error("Missing the required parameter 'menuId' when calling flipMenuZones");
+      }
       // verify the required parameter 'menuZoneId' is set
       if (menuZoneId === undefined || menuZoneId === null) {
         throw new Error("Missing the required parameter 'menuZoneId' when calling flipMenuZones");
@@ -206,15 +210,11 @@ export default class MenuZonesApi {
       if (menuZoneI2 === undefined || menuZoneI2 === null) {
         throw new Error("Missing the required parameter 'menuZoneI2' when calling flipMenuZones");
       }
-      // verify the required parameter 'menuId' is set
-      if (menuId === undefined || menuId === null) {
-        throw new Error("Missing the required parameter 'menuId' when calling flipMenuZones");
-      }
 
       let pathParams = {
+        'menuId': menuId,
         'menuZoneId': menuZoneId,
-        'menuZoneI2': menuZoneI2,
-        'menuId': menuId
+        'menuZoneI2': menuZoneI2
       };
       let queryParams = {
       };
@@ -334,13 +334,17 @@ export default class MenuZonesApi {
 
     /**
      * Assigns a zone to a menu section.
+     * @param {Number} menuId Menu id.
      * @param {Number} menuZoneId The menu id.
      * @param {Number} menuSectionId The menu section id.
-     * @param {String} menuId 
      * @param {module:api/MenuZonesApi~setMenuSectionMenuZoneCallback} callback The callback function, accepting three arguments: error, data, response
      */
-    setMenuSectionMenuZone(menuZoneId, menuSectionId, menuId, callback) {
+    setMenuSectionMenuZone(menuId, menuZoneId, menuSectionId, callback) {
       let postBody = null;
+      // verify the required parameter 'menuId' is set
+      if (menuId === undefined || menuId === null) {
+        throw new Error("Missing the required parameter 'menuId' when calling setMenuSectionMenuZone");
+      }
       // verify the required parameter 'menuZoneId' is set
       if (menuZoneId === undefined || menuZoneId === null) {
         throw new Error("Missing the required parameter 'menuZoneId' when calling setMenuSectionMenuZone");
@@ -349,15 +353,11 @@ export default class MenuZonesApi {
       if (menuSectionId === undefined || menuSectionId === null) {
         throw new Error("Missing the required parameter 'menuSectionId' when calling setMenuSectionMenuZone");
       }
-      // verify the required parameter 'menuId' is set
-      if (menuId === undefined || menuId === null) {
-        throw new Error("Missing the required parameter 'menuId' when calling setMenuSectionMenuZone");
-      }
 
       let pathParams = {
+        'menuId': menuId,
         'menuZoneId': menuZoneId,
-        'menuSectionId': menuSectionId,
-        'menuId': menuId
+        'menuSectionId': menuSectionId
       };
       let queryParams = {
       };
@@ -387,20 +387,20 @@ export default class MenuZonesApi {
 
     /**
      * Sets the description of a menu zone.
+     * @param {Number} menuId Menu id.
      * @param {Number} menuZoneId The zone id.
-     * @param {String} menuId 
      * @param {String} description The new description. Add as a raw string in the request, without any JSON wrapper.
      * @param {module:api/MenuZonesApi~setMenuZoneDescriptionCallback} callback The callback function, accepting three arguments: error, data, response
      */
-    setMenuZoneDescription(menuZoneId, menuId, description, callback) {
+    setMenuZoneDescription(menuId, menuZoneId, description, callback) {
       let postBody = description;
-      // verify the required parameter 'menuZoneId' is set
-      if (menuZoneId === undefined || menuZoneId === null) {
-        throw new Error("Missing the required parameter 'menuZoneId' when calling setMenuZoneDescription");
-      }
       // verify the required parameter 'menuId' is set
       if (menuId === undefined || menuId === null) {
         throw new Error("Missing the required parameter 'menuId' when calling setMenuZoneDescription");
+      }
+      // verify the required parameter 'menuZoneId' is set
+      if (menuZoneId === undefined || menuZoneId === null) {
+        throw new Error("Missing the required parameter 'menuZoneId' when calling setMenuZoneDescription");
       }
       // verify the required parameter 'description' is set
       if (description === undefined || description === null) {
@@ -408,8 +408,8 @@ export default class MenuZonesApi {
       }
 
       let pathParams = {
-        'menuZoneId': menuZoneId,
-        'menuId': menuId
+        'menuId': menuId,
+        'menuZoneId': menuZoneId
       };
       let queryParams = {
       };
@@ -439,13 +439,17 @@ export default class MenuZonesApi {
 
     /**
      * Sets the name of a menu zone.
+     * @param {Number} menuId Menu id.
      * @param {Number} menuZoneId The menu zone id.
      * @param {String} menuZoneName The new name.
-     * @param {String} menuId 
      * @param {module:api/MenuZonesApi~setMenuZoneNameCallback} callback The callback function, accepting three arguments: error, data, response
      */
-    setMenuZoneName(menuZoneId, menuZoneName, menuId, callback) {
+    setMenuZoneName(menuId, menuZoneId, menuZoneName, callback) {
       let postBody = null;
+      // verify the required parameter 'menuId' is set
+      if (menuId === undefined || menuId === null) {
+        throw new Error("Missing the required parameter 'menuId' when calling setMenuZoneName");
+      }
       // verify the required parameter 'menuZoneId' is set
       if (menuZoneId === undefined || menuZoneId === null) {
         throw new Error("Missing the required parameter 'menuZoneId' when calling setMenuZoneName");
@@ -454,15 +458,11 @@ export default class MenuZonesApi {
       if (menuZoneName === undefined || menuZoneName === null) {
         throw new Error("Missing the required parameter 'menuZoneName' when calling setMenuZoneName");
       }
-      // verify the required parameter 'menuId' is set
-      if (menuId === undefined || menuId === null) {
-        throw new Error("Missing the required parameter 'menuId' when calling setMenuZoneName");
-      }
 
       let pathParams = {
+        'menuId': menuId,
         'menuZoneId': menuZoneId,
-        'menuZoneName': menuZoneName,
-        'menuId': menuId
+        'menuZoneName': menuZoneName
       };
       let queryParams = {
       };
@@ -544,20 +544,20 @@ export default class MenuZonesApi {
 
     /**
      * Uploads an image for a menu zone.
+     * @param {Number} menuId Menu id.
      * @param {Number} menuZoneId The zone id.
-     * @param {String} menuId 
      * @param {Array.<module:model/HttpPostedFileBase>} file The file to upload.
      * @param {module:api/MenuZonesApi~uploadMenuZoneImageCallback} callback The callback function, accepting three arguments: error, data, response
      */
-    uploadMenuZoneImage(menuZoneId, menuId, file, callback) {
+    uploadMenuZoneImage(menuId, menuZoneId, file, callback) {
       let postBody = file;
-      // verify the required parameter 'menuZoneId' is set
-      if (menuZoneId === undefined || menuZoneId === null) {
-        throw new Error("Missing the required parameter 'menuZoneId' when calling uploadMenuZoneImage");
-      }
       // verify the required parameter 'menuId' is set
       if (menuId === undefined || menuId === null) {
         throw new Error("Missing the required parameter 'menuId' when calling uploadMenuZoneImage");
+      }
+      // verify the required parameter 'menuZoneId' is set
+      if (menuZoneId === undefined || menuZoneId === null) {
+        throw new Error("Missing the required parameter 'menuZoneId' when calling uploadMenuZoneImage");
       }
       // verify the required parameter 'file' is set
       if (file === undefined || file === null) {
@@ -565,8 +565,8 @@ export default class MenuZonesApi {
       }
 
       let pathParams = {
-        'menuZoneId': menuZoneId,
-        'menuId': menuId
+        'menuId': menuId,
+        'menuZoneId': menuZoneId
       };
       let queryParams = {
       };
