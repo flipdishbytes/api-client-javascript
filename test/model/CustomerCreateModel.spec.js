@@ -72,6 +72,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property MarketingEnabled (base name: "MarketingEnabled")', function() {
+      // uncomment below and update the code to test the property MarketingEnabled
+      //var instance = new Flipdish.CustomerCreateModel();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));

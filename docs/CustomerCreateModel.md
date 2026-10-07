@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 **PhoneNumber** | **String** | Customer Phone Number | [optional] 
 **AppType** | **String** | Customer AppType | [optional] 
 **Name** | **String** | Customer Name | [optional] 
+**MarketingEnabled** | **Boolean** |  | [optional] 
 
 
 

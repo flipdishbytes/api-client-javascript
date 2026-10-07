@@ -57,6 +57,9 @@ class CustomerCreateModel {
             if (data.hasOwnProperty('Name')) {
                 obj['Name'] = ApiClient.convertToType(data['Name'], 'String');
             }
+            if (data.hasOwnProperty('MarketingEnabled')) {
+                obj['MarketingEnabled'] = ApiClient.convertToType(data['MarketingEnabled'], 'Boolean');
+            }
         }
         return obj;
     }
@@ -81,6 +84,11 @@ CustomerCreateModel.prototype['AppType'] = undefined;
  * @member {String} Name
  */
 CustomerCreateModel.prototype['Name'] = undefined;
+
+/**
+ * @member {Boolean} MarketingEnabled
+ */
+CustomerCreateModel.prototype['MarketingEnabled'] = undefined;
 
 
 
