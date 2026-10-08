@@ -174,7 +174,6 @@ import Field from './model/Field';
 import FieldChangeInformation from './model/FieldChangeInformation';
 import FieldGroup from './model/FieldGroup';
 import FileCreationResult from './model/FileCreationResult';
-import FileDownloadResult from './model/FileDownloadResult';
 import FirebaseApp from './model/FirebaseApp';
 import FlipdishAccountName from './model/FlipdishAccountName';
 import FlipdishEventBase from './model/FlipdishEventBase';
@@ -587,7 +586,6 @@ import RestApiResultDnsRecordInformation from './model/RestApiResultDnsRecordInf
 import RestApiResultEndUserFeeConfig from './model/RestApiResultEndUserFeeConfig';
 import RestApiResultExecuteConfigurationActionResult from './model/RestApiResultExecuteConfigurationActionResult';
 import RestApiResultFileCreationResult from './model/RestApiResultFileCreationResult';
-import RestApiResultFileDownloadResult from './model/RestApiResultFileDownloadResult';
 import RestApiResultFulfillmentStatesConfiguration from './model/RestApiResultFulfillmentStatesConfiguration';
 import RestApiResultGetEndUserFeeConfigsResponse from './model/RestApiResultGetEndUserFeeConfigsResponse';
 import RestApiResultGroup from './model/RestApiResultGroup';
@@ -902,7 +900,6 @@ import DriversApi from './api/DriversApi';
 import EndUserFeesApi from './api/EndUserFeesApi';
 import EventsApi from './api/EventsApi';
 import FeaturesApi from './api/FeaturesApi';
-import FilesApi from './api/FilesApi';
 import FirebaseAppsApi from './api/FirebaseAppsApi';
 import FpmApi from './api/FpmApi';
 import FulfillmentStateConfigurationApi from './api/FulfillmentStateConfigurationApi';
@@ -1965,12 +1962,6 @@ export {
      * @property {module:model/FileCreationResult}
      */
     FileCreationResult,
-
-    /**
-     * The FileDownloadResult model constructor.
-     * @property {module:model/FileDownloadResult}
-     */
-    FileDownloadResult,
 
     /**
      * The FirebaseApp model constructor.
@@ -4445,12 +4436,6 @@ export {
     RestApiResultFileCreationResult,
 
     /**
-     * The RestApiResultFileDownloadResult model constructor.
-     * @property {module:model/RestApiResultFileDownloadResult}
-     */
-    RestApiResultFileDownloadResult,
-
-    /**
      * The RestApiResultFulfillmentStatesConfiguration model constructor.
      * @property {module:model/RestApiResultFulfillmentStatesConfiguration}
      */
@@ -6333,12 +6318,6 @@ export {
     * @property {module:api/FeaturesApi}
     */
     FeaturesApi,
-
-    /**
-    * The FilesApi service constructor.
-    * @property {module:api/FilesApi}
-    */
-    FilesApi,
 
     /**
     * The FirebaseAppsApi service constructor.

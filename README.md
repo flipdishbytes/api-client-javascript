@@ -307,7 +307,6 @@ Class | Method | HTTP request | Description
 *Flipdish.EventsApi* | [**getWhiteLabelEvents**](docs/EventsApi.md#getWhiteLabelEvents) | **GET** /api/v1.0/{appId}/events/whitelabel/{whitelabelId} | 
 *Flipdish.FeaturesApi* | [**disableFeatures**](docs/FeaturesApi.md#disableFeatures) | **POST** /api/v1.0/{appId}/features/disable | 
 *Flipdish.FeaturesApi* | [**enableFeatures**](docs/FeaturesApi.md#enableFeatures) | **POST** /api/v1.0/{appId}/features/enable | 
-*Flipdish.FilesApi* | [**downloadFile**](docs/FilesApi.md#downloadFile) | **GET** /api/v1.0/{appId}/files/download/{fileId} | 
 *Flipdish.FirebaseAppsApi* | [**firebaseAppsAddFirebaseApp**](docs/FirebaseAppsApi.md#firebaseAppsAddFirebaseApp) | **POST** /api/v1.0/FirebaseApp | 
 *Flipdish.FirebaseAppsApi* | [**firebaseAppsDeleteFirebaseApp**](docs/FirebaseAppsApi.md#firebaseAppsDeleteFirebaseApp) | **DELETE** /api/v1.0/FirebaseApp/{whiteLabelId} | 
 *Flipdish.FirebaseAppsApi* | [**firebaseAppsGetFirebaseApp**](docs/FirebaseAppsApi.md#firebaseAppsGetFirebaseApp) | **GET** /api/v1.0/FirebaseApp/{whitelabelId} | 
@@ -885,7 +884,6 @@ Class | Method | HTTP request | Description
  - [Flipdish.FieldChangeInformation](docs/FieldChangeInformation.md)
  - [Flipdish.FieldGroup](docs/FieldGroup.md)
  - [Flipdish.FileCreationResult](docs/FileCreationResult.md)
- - [Flipdish.FileDownloadResult](docs/FileDownloadResult.md)
  - [Flipdish.FirebaseApp](docs/FirebaseApp.md)
  - [Flipdish.FlipdishAccountName](docs/FlipdishAccountName.md)
  - [Flipdish.FlipdishEventBase](docs/FlipdishEventBase.md)
@@ -1298,7 +1296,6 @@ Class | Method | HTTP request | Description
  - [Flipdish.RestApiResultEndUserFeeConfig](docs/RestApiResultEndUserFeeConfig.md)
  - [Flipdish.RestApiResultExecuteConfigurationActionResult](docs/RestApiResultExecuteConfigurationActionResult.md)
  - [Flipdish.RestApiResultFileCreationResult](docs/RestApiResultFileCreationResult.md)
- - [Flipdish.RestApiResultFileDownloadResult](docs/RestApiResultFileDownloadResult.md)
  - [Flipdish.RestApiResultFulfillmentStatesConfiguration](docs/RestApiResultFulfillmentStatesConfiguration.md)
  - [Flipdish.RestApiResultGetEndUserFeeConfigsResponse](docs/RestApiResultGetEndUserFeeConfigsResponse.md)
  - [Flipdish.RestApiResultGroup](docs/RestApiResultGroup.md)
