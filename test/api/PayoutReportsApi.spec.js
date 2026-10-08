@@ -98,56 +98,6 @@
         done();
       });
     });
-    describe('payoutReport3ExportPayoutChargebacks', function() {
-      it('should call payoutReport3ExportPayoutChargebacks successfully', function(done) {
-        //uncomment below and update the code to test payoutReport3ExportPayoutChargebacks
-        //instance.payoutReport3ExportPayoutChargebacks(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
-    describe('payoutReport3ExportPayoutOrders', function() {
-      it('should call payoutReport3ExportPayoutOrders successfully', function(done) {
-        //uncomment below and update the code to test payoutReport3ExportPayoutOrders
-        //instance.payoutReport3ExportPayoutOrders(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
-    describe('payoutReport3ExportPayoutPosSales', function() {
-      it('should call payoutReport3ExportPayoutPosSales successfully', function(done) {
-        //uncomment below and update the code to test payoutReport3ExportPayoutPosSales
-        //instance.payoutReport3ExportPayoutPosSales(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
-    describe('payoutReport3ExportPayoutRefundedOrders', function() {
-      it('should call payoutReport3ExportPayoutRefundedOrders successfully', function(done) {
-        //uncomment below and update the code to test payoutReport3ExportPayoutRefundedOrders
-        //instance.payoutReport3ExportPayoutRefundedOrders(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
-    describe('payoutReport3ExportPayoutStores', function() {
-      it('should call payoutReport3ExportPayoutStores successfully', function(done) {
-        //uncomment below and update the code to test payoutReport3ExportPayoutStores
-        //instance.payoutReport3ExportPayoutStores(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
   });
 
 }));

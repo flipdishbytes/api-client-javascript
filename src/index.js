@@ -173,7 +173,6 @@ import FeeSummary from './model/FeeSummary';
 import Field from './model/Field';
 import FieldChangeInformation from './model/FieldChangeInformation';
 import FieldGroup from './model/FieldGroup';
-import FileCreationResult from './model/FileCreationResult';
 import FirebaseApp from './model/FirebaseApp';
 import FlipdishAccountName from './model/FlipdishAccountName';
 import FlipdishEventBase from './model/FlipdishEventBase';
@@ -585,7 +584,6 @@ import RestApiResultDeliveryZone from './model/RestApiResultDeliveryZone';
 import RestApiResultDnsRecordInformation from './model/RestApiResultDnsRecordInformation';
 import RestApiResultEndUserFeeConfig from './model/RestApiResultEndUserFeeConfig';
 import RestApiResultExecuteConfigurationActionResult from './model/RestApiResultExecuteConfigurationActionResult';
-import RestApiResultFileCreationResult from './model/RestApiResultFileCreationResult';
 import RestApiResultFulfillmentStatesConfiguration from './model/RestApiResultFulfillmentStatesConfiguration';
 import RestApiResultGetEndUserFeeConfigsResponse from './model/RestApiResultGetEndUserFeeConfigsResponse';
 import RestApiResultGroup from './model/RestApiResultGroup';
@@ -935,7 +933,6 @@ import PaymentIntentsApi from './api/PaymentIntentsApi';
 import PaymentsApi from './api/PaymentsApi';
 import PayoutReportsApi from './api/PayoutReportsApi';
 import PayoutsApi from './api/PayoutsApi';
-import PayoutsExportApi from './api/PayoutsExportApi';
 import ProcessingFeeConfigsApi from './api/ProcessingFeeConfigsApi';
 import PushNotificationsApi from './api/PushNotificationsApi';
 import ReceiptsApi from './api/ReceiptsApi';
@@ -1956,12 +1953,6 @@ export {
      * @property {module:model/FieldGroup}
      */
     FieldGroup,
-
-    /**
-     * The FileCreationResult model constructor.
-     * @property {module:model/FileCreationResult}
-     */
-    FileCreationResult,
 
     /**
      * The FirebaseApp model constructor.
@@ -4430,12 +4421,6 @@ export {
     RestApiResultExecuteConfigurationActionResult,
 
     /**
-     * The RestApiResultFileCreationResult model constructor.
-     * @property {module:model/RestApiResultFileCreationResult}
-     */
-    RestApiResultFileCreationResult,
-
-    /**
      * The RestApiResultFulfillmentStatesConfiguration model constructor.
      * @property {module:model/RestApiResultFulfillmentStatesConfiguration}
      */
@@ -6528,12 +6513,6 @@ export {
     * @property {module:api/PayoutsApi}
     */
     PayoutsApi,
-
-    /**
-    * The PayoutsExportApi service constructor.
-    * @property {module:api/PayoutsExportApi}
-    */
-    PayoutsExportApi,
 
     /**
     * The ProcessingFeeConfigsApi service constructor.

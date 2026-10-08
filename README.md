@@ -526,11 +526,6 @@ Class | Method | HTTP request | Description
 *Flipdish.PayoutReportsApi* | [**getPayoutReport3PropertyDetails**](docs/PayoutReportsApi.md#getPayoutReport3PropertyDetails) | **GET** /api/v1.0/{appId}/reporting/reports/payouts3/{bankAccountId}/{payoutId}/properties | 
 *Flipdish.PayoutReportsApi* | [**getPayoutReport3RefundedOrders**](docs/PayoutReportsApi.md#getPayoutReport3RefundedOrders) | **GET** /api/v1.0/{appId}/reporting/reports/payouts3/{bankAccountId}/{payoutId}/refundedOrders | 
 *Flipdish.PayoutReportsApi* | [**getPayoutReport3Stores**](docs/PayoutReportsApi.md#getPayoutReport3Stores) | **GET** /api/v1.0/{appId}/reporting/reports/payouts3/{bankAccountId}/{payoutId}/stores | 
-*Flipdish.PayoutReportsApi* | [**payoutReport3ExportPayoutChargebacks**](docs/PayoutReportsApi.md#payoutReport3ExportPayoutChargebacks) | **GET** /api/v1.0/{appId}/reporting/reports/payouts3/{bankAccountId}/{payoutId}/export/chargebacks | 
-*Flipdish.PayoutReportsApi* | [**payoutReport3ExportPayoutOrders**](docs/PayoutReportsApi.md#payoutReport3ExportPayoutOrders) | **GET** /api/v1.0/{appId}/reporting/reports/payouts3/{bankAccountId}/{payoutId}/export/orders | 
-*Flipdish.PayoutReportsApi* | [**payoutReport3ExportPayoutPosSales**](docs/PayoutReportsApi.md#payoutReport3ExportPayoutPosSales) | **GET** /api/v1.0/{appId}/reporting/reports/payouts3/{bankAccountId}/{payoutId}/export/possales | 
-*Flipdish.PayoutReportsApi* | [**payoutReport3ExportPayoutRefundedOrders**](docs/PayoutReportsApi.md#payoutReport3ExportPayoutRefundedOrders) | **GET** /api/v1.0/{appId}/reporting/reports/payouts3/{bankAccountId}/{payoutId}/export/refundedOrders | 
-*Flipdish.PayoutReportsApi* | [**payoutReport3ExportPayoutStores**](docs/PayoutReportsApi.md#payoutReport3ExportPayoutStores) | **GET** /api/v1.0/{appId}/reporting/reports/payouts3/{bankAccountId}/{payoutId}/export/stores | 
 *Flipdish.PayoutsApi* | [**getPayout**](docs/PayoutsApi.md#getPayout) | **GET** /api/v1.0/{appId}/bankaccounts/{bankAccountId}/payouts/{payoutId} | 
 *Flipdish.PayoutsApi* | [**getPayoutChargebacks**](docs/PayoutsApi.md#getPayoutChargebacks) | **GET** /api/v1.0/{appId}/bankaccounts/{bankAccountId}/payouts/{payoutId}/chargebacks | 
 *Flipdish.PayoutsApi* | [**getPayoutOrders**](docs/PayoutsApi.md#getPayoutOrders) | **GET** /api/v1.0/{appId}/bankaccounts/{bankAccountId}/payouts/{payoutId}/orders | 
@@ -538,12 +533,6 @@ Class | Method | HTTP request | Description
 *Flipdish.PayoutsApi* | [**getPayoutRefunds**](docs/PayoutsApi.md#getPayoutRefunds) | **GET** /api/v1.0/{appId}/bankaccounts/{bankAccountId}/payouts/{payoutId}/refunds | 
 *Flipdish.PayoutsApi* | [**getPayoutSummaries**](docs/PayoutsApi.md#getPayoutSummaries) | **GET** /api/v1.0/{appId}/payouts/summaries | 
 *Flipdish.PayoutsApi* | [**getPayouts**](docs/PayoutsApi.md#getPayouts) | **GET** /api/v1.0/{appId}/payouts | 
-*Flipdish.PayoutsExportApi* | [**exportPayoutChargebacks**](docs/PayoutsExportApi.md#exportPayoutChargebacks) | **GET** /api/v1.0/{appId}/bankaccounts/{bankAccountId}/payouts/{payoutId}/chargebacks/export | 
-*Flipdish.PayoutsExportApi* | [**exportPayoutOrders**](docs/PayoutsExportApi.md#exportPayoutOrders) | **GET** /api/v1.0/{appId}/bankaccounts/{bankAccountId}/payouts/{payoutId}/orders/export | 
-*Flipdish.PayoutsExportApi* | [**exportPayoutOtherCharges**](docs/PayoutsExportApi.md#exportPayoutOtherCharges) | **GET** /api/v1.0/{appId}/bankaccounts/{bankAccountId}/payouts/{payoutId}/othercharges/export | 
-*Flipdish.PayoutsExportApi* | [**exportPayoutRefunds**](docs/PayoutsExportApi.md#exportPayoutRefunds) | **GET** /api/v1.0/{appId}/bankaccounts/{bankAccountId}/payouts/{payoutId}/refunds/export | 
-*Flipdish.PayoutsExportApi* | [**exportPayoutStores**](docs/PayoutsExportApi.md#exportPayoutStores) | **GET** /api/v1.0/{appId}/bankaccounts/{bankAccountId}/payouts/{payoutId}/export | 
-*Flipdish.PayoutsExportApi* | [**exportPayouts**](docs/PayoutsExportApi.md#exportPayouts) | **GET** /api/v1.0/{appId}/payouts/export | 
 *Flipdish.ProcessingFeeConfigsApi* | [**getProcessingFeeConfigsByStoreIds**](docs/ProcessingFeeConfigsApi.md#getProcessingFeeConfigsByStoreIds) | **GET** /api/v1.0/processingfeeconfigs | 
 *Flipdish.PushNotificationsApi* | [**deletePushNotification**](docs/PushNotificationsApi.md#deletePushNotification) | **DELETE** /api/v1.0/{appId}/pushnotifications/{scheduledPushNotificationId} | 
 *Flipdish.PushNotificationsApi* | [**getPushNotifications**](docs/PushNotificationsApi.md#getPushNotifications) | **GET** /api/v1.0/{appId}/pushnotifications | 
@@ -883,7 +872,6 @@ Class | Method | HTTP request | Description
  - [Flipdish.Field](docs/Field.md)
  - [Flipdish.FieldChangeInformation](docs/FieldChangeInformation.md)
  - [Flipdish.FieldGroup](docs/FieldGroup.md)
- - [Flipdish.FileCreationResult](docs/FileCreationResult.md)
  - [Flipdish.FirebaseApp](docs/FirebaseApp.md)
  - [Flipdish.FlipdishAccountName](docs/FlipdishAccountName.md)
  - [Flipdish.FlipdishEventBase](docs/FlipdishEventBase.md)
@@ -1295,7 +1283,6 @@ Class | Method | HTTP request | Description
  - [Flipdish.RestApiResultDnsRecordInformation](docs/RestApiResultDnsRecordInformation.md)
  - [Flipdish.RestApiResultEndUserFeeConfig](docs/RestApiResultEndUserFeeConfig.md)
  - [Flipdish.RestApiResultExecuteConfigurationActionResult](docs/RestApiResultExecuteConfigurationActionResult.md)
- - [Flipdish.RestApiResultFileCreationResult](docs/RestApiResultFileCreationResult.md)
  - [Flipdish.RestApiResultFulfillmentStatesConfiguration](docs/RestApiResultFulfillmentStatesConfiguration.md)
  - [Flipdish.RestApiResultGetEndUserFeeConfigsResponse](docs/RestApiResultGetEndUserFeeConfigsResponse.md)
  - [Flipdish.RestApiResultGroup](docs/RestApiResultGroup.md)
