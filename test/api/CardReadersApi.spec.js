@@ -98,6 +98,16 @@
         done();
       });
     });
+    describe('getKioskStripeLocation', function() {
+      it('should call getKioskStripeLocation successfully', function(done) {
+        //uncomment below and update the code to test getKioskStripeLocation
+        //instance.getKioskStripeLocation(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('getStripeConnectionToken', function() {
       it('should call getStripeConnectionToken successfully', function(done) {
         //uncomment below and update the code to test getStripeConnectionToken

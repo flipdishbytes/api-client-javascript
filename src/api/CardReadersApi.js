@@ -20,6 +20,7 @@ import RestApiErrorResult from '../model/RestApiErrorResult';
 import RestApiForbiddenResult from '../model/RestApiForbiddenResult';
 import RestApiResultBluetoothTerminalStatus from '../model/RestApiResultBluetoothTerminalStatus';
 import RestApiResultCardReader from '../model/RestApiResultCardReader';
+import RestApiResultKioskStripeLocation from '../model/RestApiResultKioskStripeLocation';
 import RestApiResultStripeTerminalConnectionToken from '../model/RestApiResultStripeTerminalConnectionToken';
 import RestApiResultStripeTerminalLocation from '../model/RestApiResultStripeTerminalLocation';
 import RestApiUnauthorizedResult from '../model/RestApiUnauthorizedResult';
@@ -278,6 +279,53 @@ export default class CardReadersApi {
       let returnType = RestApiResultBluetoothTerminalStatus;
       return this.apiClient.callApi(
         '/api/v1.0/{appId}/cardreaders/kiosk/{deviceId}/bluetooth/status', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the getKioskStripeLocation operation.
+     * @callback module:api/CardReadersApi~getKioskStripeLocationCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/RestApiResultKioskStripeLocation} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {String} appId 
+     * @param {String} deviceId 
+     * @param {module:api/CardReadersApi~getKioskStripeLocationCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/RestApiResultKioskStripeLocation}
+     */
+    getKioskStripeLocation(appId, deviceId, callback) {
+      let postBody = null;
+      // verify the required parameter 'appId' is set
+      if (appId === undefined || appId === null) {
+        throw new Error("Missing the required parameter 'appId' when calling getKioskStripeLocation");
+      }
+      // verify the required parameter 'deviceId' is set
+      if (deviceId === undefined || deviceId === null) {
+        throw new Error("Missing the required parameter 'deviceId' when calling getKioskStripeLocation");
+      }
+
+      let pathParams = {
+        'appId': appId,
+        'deviceId': deviceId
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = [];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'Data'];
+      let returnType = RestApiResultKioskStripeLocation;
+      return this.apiClient.callApi(
+        '/api/v1.0/{appId}/cardreaders/kiosk/{deviceId}/stripe-location', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );

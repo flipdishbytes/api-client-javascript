@@ -223,6 +223,7 @@ Class | Method | HTTP request | Description
 *Flipdish.CardReadersApi* | [**cardReadersGetReader**](docs/CardReadersApi.md#cardReadersGetReader) | **GET** /api/v1.0/{appId}/payments/terminals/stripe/{readerId} | 
 *Flipdish.CardReadersApi* | [**generateStripeTerminalLocation**](docs/CardReadersApi.md#generateStripeTerminalLocation) | **POST** /api/v1.0/{appId}/stripeterminal/location | 
 *Flipdish.CardReadersApi* | [**getBluetoothTerminalStatus**](docs/CardReadersApi.md#getBluetoothTerminalStatus) | **GET** /api/v1.0/{appId}/cardreaders/kiosk/{deviceId}/bluetooth/status | 
+*Flipdish.CardReadersApi* | [**getKioskStripeLocation**](docs/CardReadersApi.md#getKioskStripeLocation) | **GET** /api/v1.0/{appId}/cardreaders/kiosk/{deviceId}/stripe-location | 
 *Flipdish.CardReadersApi* | [**getStripeConnectionToken**](docs/CardReadersApi.md#getStripeConnectionToken) | **GET** /api/v1.0/{appId}/stripeterminal/connectiontoken | 
 *Flipdish.CardReadersApi* | [**initiateBluetoothTerminalDeviceUpdateCheck**](docs/CardReadersApi.md#initiateBluetoothTerminalDeviceUpdateCheck) | **POST** /api/v1.0/{appId}/cardreaders/kiosk/{deviceId}/bluetooth/{terminalType}/checkForUpdate | 
 *Flipdish.CardReadersApi* | [**initiateKioskBluetoothPairingMode**](docs/CardReadersApi.md#initiateKioskBluetoothPairingMode) | **POST** /api/v1.0/{appId}/cardreaders/kiosk/{deviceId}/bluetooth/{terminalType}/pair | 
@@ -943,6 +944,7 @@ Class | Method | HTTP request | Description
  - [Flipdish.KioskEntitlementsResult](docs/KioskEntitlementsResult.md)
  - [Flipdish.KioskIotConnectionParameters](docs/KioskIotConnectionParameters.md)
  - [Flipdish.KioskSettings](docs/KioskSettings.md)
+ - [Flipdish.KioskStripeLocation](docs/KioskStripeLocation.md)
  - [Flipdish.KioskTerminalActionStateChangedEvent](docs/KioskTerminalActionStateChangedEvent.md)
  - [Flipdish.Language](docs/Language.md)
  - [Flipdish.LastPaymentError](docs/LastPaymentError.md)
@@ -1298,6 +1300,7 @@ Class | Method | HTTP request | Description
  - [Flipdish.RestApiResultKioskEntitlementsResult](docs/RestApiResultKioskEntitlementsResult.md)
  - [Flipdish.RestApiResultKioskIotConnectionParameters](docs/RestApiResultKioskIotConnectionParameters.md)
  - [Flipdish.RestApiResultKioskSettings](docs/RestApiResultKioskSettings.md)
+ - [Flipdish.RestApiResultKioskStripeLocation](docs/RestApiResultKioskStripeLocation.md)
  - [Flipdish.RestApiResultLightspeedSettings](docs/RestApiResultLightspeedSettings.md)
  - [Flipdish.RestApiResultLocationArea](docs/RestApiResultLocationArea.md)
  - [Flipdish.RestApiResultLocationAreaLocation](docs/RestApiResultLocationAreaLocation.md)

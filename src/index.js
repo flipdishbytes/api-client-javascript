@@ -244,6 +244,7 @@ import KioskCashPaymentSettings from './model/KioskCashPaymentSettings';
 import KioskEntitlementsResult from './model/KioskEntitlementsResult';
 import KioskIotConnectionParameters from './model/KioskIotConnectionParameters';
 import KioskSettings from './model/KioskSettings';
+import KioskStripeLocation from './model/KioskStripeLocation';
 import KioskTerminalActionStateChangedEvent from './model/KioskTerminalActionStateChangedEvent';
 import Language from './model/Language';
 import LastPaymentError from './model/LastPaymentError';
@@ -599,6 +600,7 @@ import RestApiResultJobResponse from './model/RestApiResultJobResponse';
 import RestApiResultKioskEntitlementsResult from './model/RestApiResultKioskEntitlementsResult';
 import RestApiResultKioskIotConnectionParameters from './model/RestApiResultKioskIotConnectionParameters';
 import RestApiResultKioskSettings from './model/RestApiResultKioskSettings';
+import RestApiResultKioskStripeLocation from './model/RestApiResultKioskStripeLocation';
 import RestApiResultLightspeedSettings from './model/RestApiResultLightspeedSettings';
 import RestApiResultLocationArea from './model/RestApiResultLocationArea';
 import RestApiResultLocationAreaLocation from './model/RestApiResultLocationAreaLocation';
@@ -2379,6 +2381,12 @@ export {
      * @property {module:model/KioskSettings}
      */
     KioskSettings,
+
+    /**
+     * The KioskStripeLocation model constructor.
+     * @property {module:model/KioskStripeLocation}
+     */
+    KioskStripeLocation,
 
     /**
      * The KioskTerminalActionStateChangedEvent model constructor.
@@ -4509,6 +4517,12 @@ export {
      * @property {module:model/RestApiResultKioskSettings}
      */
     RestApiResultKioskSettings,
+
+    /**
+     * The RestApiResultKioskStripeLocation model constructor.
+     * @property {module:model/RestApiResultKioskStripeLocation}
+     */
+    RestApiResultKioskStripeLocation,
 
     /**
      * The RestApiResultLightspeedSettings model constructor.
