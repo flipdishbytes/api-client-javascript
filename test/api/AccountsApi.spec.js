@@ -138,16 +138,6 @@
         done();
       });
     });
-    describe('loginWithPin', function() {
-      it('should call loginWithPin successfully', function(done) {
-        //uncomment below and update the code to test loginWithPin
-        //instance.loginWithPin(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
     describe('logout', function() {
       it('should call logout successfully', function(done) {
         //uncomment below and update the code to test logout
@@ -172,16 +162,6 @@
       it('should call recaptchaValidate successfully', function(done) {
         //uncomment below and update the code to test recaptchaValidate
         //instance.recaptchaValidate(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
-    describe('requestLoginPin', function() {
-      it('should call requestLoginPin successfully', function(done) {
-        //uncomment below and update the code to test requestLoginPin
-        //instance.requestLoginPin(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

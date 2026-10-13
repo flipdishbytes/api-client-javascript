@@ -134,11 +134,9 @@ Class | Method | HTTP request | Description
 *Flipdish.AccountsApi* | [**getLocalisedTimeZones**](docs/AccountsApi.md#getLocalisedTimeZones) | **GET** /api/v1.0/accounts/timezones | 
 *Flipdish.AccountsApi* | [**login**](docs/AccountsApi.md#login) | **POST** /api/v1.0/accounts/login | 
 *Flipdish.AccountsApi* | [**loginSso**](docs/AccountsApi.md#loginSso) | **POST** /api/v1.0/accounts/login/sso | 
-*Flipdish.AccountsApi* | [**loginWithPin**](docs/AccountsApi.md#loginWithPin) | **POST** /api/v1.0/accounts/login/pin | 
 *Flipdish.AccountsApi* | [**logout**](docs/AccountsApi.md#logout) | **POST** /api/v1.0/accounts/logout | 
 *Flipdish.AccountsApi* | [**passwordResetWithToken**](docs/AccountsApi.md#passwordResetWithToken) | **POST** /api/v1.0/accounts/password | 
 *Flipdish.AccountsApi* | [**recaptchaValidate**](docs/AccountsApi.md#recaptchaValidate) | **POST** /api/v1.0/accounts/recaptcha | 
-*Flipdish.AccountsApi* | [**requestLoginPin**](docs/AccountsApi.md#requestLoginPin) | **POST** /api/v1.0/accounts/pin | 
 *Flipdish.AccountsApi* | [**requestPasswordReset**](docs/AccountsApi.md#requestPasswordReset) | **POST** /api/v1.0/accounts/passwordreset | 
 *Flipdish.AccountsApi* | [**sendPinForPasswordReset**](docs/AccountsApi.md#sendPinForPasswordReset) | **POST** /api/v1.0/accounts/password/resetpin | 
 *Flipdish.AccountsApi* | [**skipSignupStep**](docs/AccountsApi.md#skipSignupStep) | **POST** /api/v1.0/accounts/signupstep/{signupStepAction}/skip | 
@@ -959,7 +957,6 @@ Class | Method | HTTP request | Description
  - [Flipdish.LocationCreatedEvent](docs/LocationCreatedEvent.md)
  - [Flipdish.LocationDeletedEvent](docs/LocationDeletedEvent.md)
  - [Flipdish.LoginModel](docs/LoginModel.md)
- - [Flipdish.LoginWithPinModel](docs/LoginWithPinModel.md)
  - [Flipdish.LoyaltyCampaign](docs/LoyaltyCampaign.md)
  - [Flipdish.LoyaltyCampaignBase](docs/LoyaltyCampaignBase.md)
  - [Flipdish.LoyaltyCampaignCreatedEvent](docs/LoyaltyCampaignCreatedEvent.md)
@@ -1138,8 +1135,6 @@ Class | Method | HTTP request | Description
  - [Flipdish.RedeemInvitationResult](docs/RedeemInvitationResult.md)
  - [Flipdish.Refund](docs/Refund.md)
  - [Flipdish.Reject](docs/Reject.md)
- - [Flipdish.RequestLoginPinModel](docs/RequestLoginPinModel.md)
- - [Flipdish.RequestLoginPinResponse](docs/RequestLoginPinResponse.md)
  - [Flipdish.RequestPasswordResetModel](docs/RequestPasswordResetModel.md)
  - [Flipdish.RequestPasswordResetPinResponse](docs/RequestPasswordResetPinResponse.md)
  - [Flipdish.Response](docs/Response.md)

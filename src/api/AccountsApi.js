@@ -18,10 +18,7 @@ import ChangePasswordModel from '../model/ChangePasswordModel';
 import CreateAccountModel from '../model/CreateAccountModel';
 import CreateBasicAccountModel from '../model/CreateBasicAccountModel';
 import LoginModel from '../model/LoginModel';
-import LoginWithPinModel from '../model/LoginWithPinModel';
 import PasswordResetModel from '../model/PasswordResetModel';
-import RequestLoginPinModel from '../model/RequestLoginPinModel';
-import RequestLoginPinResponse from '../model/RequestLoginPinResponse';
 import RequestPasswordResetModel from '../model/RequestPasswordResetModel';
 import RequestPasswordResetPinResponse from '../model/RequestPasswordResetPinResponse';
 import RestApiArrayResultLocalisedTimeZone from '../model/RestApiArrayResultLocalisedTimeZone';
@@ -396,45 +393,6 @@ export default class AccountsApi {
     }
 
     /**
-     * Callback function to receive the result of the loginWithPin operation.
-     * @callback module:api/AccountsApi~loginWithPinCallback
-     * @param {String} error Error message, if any.
-     * @param data This operation does not return a value.
-     * @param {String} response The complete HTTP response.
-     */
-
-    /**
-     * @param {module:model/LoginWithPinModel} loginModel 
-     * @param {module:api/AccountsApi~loginWithPinCallback} callback The callback function, accepting three arguments: error, data, response
-     */
-    loginWithPin(loginModel, callback) {
-      let postBody = loginModel;
-      // verify the required parameter 'loginModel' is set
-      if (loginModel === undefined || loginModel === null) {
-        throw new Error("Missing the required parameter 'loginModel' when calling loginWithPin");
-      }
-
-      let pathParams = {
-      };
-      let queryParams = {
-      };
-      let headerParams = {
-      };
-      let formParams = {
-      };
-
-      let authNames = ['oauth2'];
-      let contentTypes = ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded'];
-      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'Message', 'ErrorCode', 'StackTrace'];
-      let returnType = null;
-      return this.apiClient.callApi(
-        '/api/v1.0/accounts/login/pin', 'POST',
-        pathParams, queryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType, null, callback
-      );
-    }
-
-    /**
      * Callback function to receive the result of the logout operation.
      * @callback module:api/AccountsApi~logoutCallback
      * @param {String} error Error message, if any.
@@ -542,46 +500,6 @@ export default class AccountsApi {
       let returnType = null;
       return this.apiClient.callApi(
         '/api/v1.0/accounts/recaptcha', 'POST',
-        pathParams, queryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType, null, callback
-      );
-    }
-
-    /**
-     * Callback function to receive the result of the requestLoginPin operation.
-     * @callback module:api/AccountsApi~requestLoginPinCallback
-     * @param {String} error Error message, if any.
-     * @param {module:model/RequestLoginPinResponse} data The data returned by the service call.
-     * @param {String} response The complete HTTP response.
-     */
-
-    /**
-     * @param {module:model/RequestLoginPinModel} requestLoginPinRequest 
-     * @param {module:api/AccountsApi~requestLoginPinCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/RequestLoginPinResponse}
-     */
-    requestLoginPin(requestLoginPinRequest, callback) {
-      let postBody = requestLoginPinRequest;
-      // verify the required parameter 'requestLoginPinRequest' is set
-      if (requestLoginPinRequest === undefined || requestLoginPinRequest === null) {
-        throw new Error("Missing the required parameter 'requestLoginPinRequest' when calling requestLoginPin");
-      }
-
-      let pathParams = {
-      };
-      let queryParams = {
-      };
-      let headerParams = {
-      };
-      let formParams = {
-      };
-
-      let authNames = ['oauth2'];
-      let contentTypes = ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded'];
-      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'Data', 'Message', 'ErrorCode', 'StackTrace'];
-      let returnType = RequestLoginPinResponse;
-      return this.apiClient.callApi(
-        '/api/v1.0/accounts/pin', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );

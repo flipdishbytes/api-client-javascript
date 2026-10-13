@@ -13,11 +13,9 @@ Method | HTTP request | Description
 [**getLocalisedTimeZones**](AccountsApi.md#getLocalisedTimeZones) | **GET** /api/v1.0/accounts/timezones | 
 [**login**](AccountsApi.md#login) | **POST** /api/v1.0/accounts/login | 
 [**loginSso**](AccountsApi.md#loginSso) | **POST** /api/v1.0/accounts/login/sso | 
-[**loginWithPin**](AccountsApi.md#loginWithPin) | **POST** /api/v1.0/accounts/login/pin | 
 [**logout**](AccountsApi.md#logout) | **POST** /api/v1.0/accounts/logout | 
 [**passwordResetWithToken**](AccountsApi.md#passwordResetWithToken) | **POST** /api/v1.0/accounts/password | 
 [**recaptchaValidate**](AccountsApi.md#recaptchaValidate) | **POST** /api/v1.0/accounts/recaptcha | 
-[**requestLoginPin**](AccountsApi.md#requestLoginPin) | **POST** /api/v1.0/accounts/pin | 
 [**requestPasswordReset**](AccountsApi.md#requestPasswordReset) | **POST** /api/v1.0/accounts/passwordreset | 
 [**sendPinForPasswordReset**](AccountsApi.md#sendPinForPasswordReset) | **POST** /api/v1.0/accounts/password/resetpin | 
 [**skipSignupStep**](AccountsApi.md#skipSignupStep) | **POST** /api/v1.0/accounts/signupstep/{signupStepAction}/skip | 
@@ -438,53 +436,6 @@ null (empty response body)
 - **Accept**: application/json, text/json, application/xml, text/xml, Message, ErrorCode, StackTrace
 
 
-## loginWithPin
-
-> loginWithPin(loginModel)
-
-
-
-### Example
-
-```javascript
-import Flipdish from '@flipdish/api-client-javascript';
-let defaultClient = Flipdish.ApiClient.instance;
-// Configure OAuth2 access token for authorization: oauth2
-let oauth2 = defaultClient.authentications['oauth2'];
-oauth2.accessToken = 'YOUR ACCESS TOKEN';
-
-let apiInstance = new Flipdish.AccountsApi();
-let loginModel = new Flipdish.LoginWithPinModel(); // LoginWithPinModel | 
-apiInstance.loginWithPin(loginModel, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully.');
-  }
-});
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **loginModel** | [**LoginWithPinModel**](LoginWithPinModel.md)|  | 
-
-### Return type
-
-null (empty response body)
-
-### Authorization
-
-[oauth2](../README.md#oauth2)
-
-### HTTP request headers
-
-- **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
-- **Accept**: application/json, text/json, application/xml, text/xml, Message, ErrorCode, StackTrace
-
-
 ## logout
 
 > logout()
@@ -620,53 +571,6 @@ null (empty response body)
 
 - **Content-Type**: Not defined
 - **Accept**: Message, ErrorCode, StackTrace, application/json, text/json, application/xml, text/xml
-
-
-## requestLoginPin
-
-> RequestLoginPinResponse requestLoginPin(requestLoginPinRequest)
-
-
-
-### Example
-
-```javascript
-import Flipdish from '@flipdish/api-client-javascript';
-let defaultClient = Flipdish.ApiClient.instance;
-// Configure OAuth2 access token for authorization: oauth2
-let oauth2 = defaultClient.authentications['oauth2'];
-oauth2.accessToken = 'YOUR ACCESS TOKEN';
-
-let apiInstance = new Flipdish.AccountsApi();
-let requestLoginPinRequest = new Flipdish.RequestLoginPinModel(); // RequestLoginPinModel | 
-apiInstance.requestLoginPin(requestLoginPinRequest, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **requestLoginPinRequest** | [**RequestLoginPinModel**](RequestLoginPinModel.md)|  | 
-
-### Return type
-
-[**RequestLoginPinResponse**](RequestLoginPinResponse.md)
-
-### Authorization
-
-[oauth2](../README.md#oauth2)
-
-### HTTP request headers
-
-- **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
-- **Accept**: application/json, text/json, application/xml, text/xml, Data, Message, ErrorCode, StackTrace
 
 
 ## requestPasswordReset

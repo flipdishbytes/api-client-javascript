@@ -259,7 +259,6 @@ import LocationAreaWithLocations from './model/LocationAreaWithLocations';
 import LocationCreatedEvent from './model/LocationCreatedEvent';
 import LocationDeletedEvent from './model/LocationDeletedEvent';
 import LoginModel from './model/LoginModel';
-import LoginWithPinModel from './model/LoginWithPinModel';
 import LoyaltyCampaign from './model/LoyaltyCampaign';
 import LoyaltyCampaignBase from './model/LoyaltyCampaignBase';
 import LoyaltyCampaignCreatedEvent from './model/LoyaltyCampaignCreatedEvent';
@@ -438,8 +437,6 @@ import ReaderActionStateInfo from './model/ReaderActionStateInfo';
 import RedeemInvitationResult from './model/RedeemInvitationResult';
 import Refund from './model/Refund';
 import Reject from './model/Reject';
-import RequestLoginPinModel from './model/RequestLoginPinModel';
-import RequestLoginPinResponse from './model/RequestLoginPinResponse';
 import RequestPasswordResetModel from './model/RequestPasswordResetModel';
 import RequestPasswordResetPinResponse from './model/RequestPasswordResetPinResponse';
 import Response from './model/Response';
@@ -2473,12 +2470,6 @@ export {
     LoginModel,
 
     /**
-     * The LoginWithPinModel model constructor.
-     * @property {module:model/LoginWithPinModel}
-     */
-    LoginWithPinModel,
-
-    /**
      * The LoyaltyCampaign model constructor.
      * @property {module:model/LoyaltyCampaign}
      */
@@ -3545,18 +3536,6 @@ export {
      * @property {module:model/Reject}
      */
     Reject,
-
-    /**
-     * The RequestLoginPinModel model constructor.
-     * @property {module:model/RequestLoginPinModel}
-     */
-    RequestLoginPinModel,
-
-    /**
-     * The RequestLoginPinResponse model constructor.
-     * @property {module:model/RequestLoginPinResponse}
-     */
-    RequestLoginPinResponse,
 
     /**
      * The RequestPasswordResetModel model constructor.
