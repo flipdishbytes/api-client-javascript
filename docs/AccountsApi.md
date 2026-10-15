@@ -6,7 +6,6 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**answerSignUpQuestion**](AccountsApi.md#answerSignUpQuestion) | **POST** /api/v1.0/accounts/signupstep/{signupStepAction}/answer | 
 [**changePassword**](AccountsApi.md#changePassword) | **PUT** /api/v1.0/accounts/password | 
-[**changePasswordWithPin**](AccountsApi.md#changePasswordWithPin) | **PUT** /api/v1.0/accounts/password/pin | 
 [**createAccount**](AccountsApi.md#createAccount) | **POST** /api/v1.0/accounts | 
 [**createBasicAccount**](AccountsApi.md#createBasicAccount) | **POST** /api/v1.0/accounts/basic-account | 
 [**getAccountDetails**](AccountsApi.md#getAccountDetails) | **GET** /api/v1.0/accounts | 
@@ -17,7 +16,6 @@ Method | HTTP request | Description
 [**passwordResetWithToken**](AccountsApi.md#passwordResetWithToken) | **POST** /api/v1.0/accounts/password | 
 [**recaptchaValidate**](AccountsApi.md#recaptchaValidate) | **POST** /api/v1.0/accounts/recaptcha | 
 [**requestPasswordReset**](AccountsApi.md#requestPasswordReset) | **POST** /api/v1.0/accounts/passwordreset | 
-[**sendPinForPasswordReset**](AccountsApi.md#sendPinForPasswordReset) | **POST** /api/v1.0/accounts/password/resetpin | 
 [**skipSignupStep**](AccountsApi.md#skipSignupStep) | **POST** /api/v1.0/accounts/signupstep/{signupStepAction}/skip | 
 [**updateAccount**](AccountsApi.md#updateAccount) | **PUT** /api/v1.0/accounts | 
 
@@ -104,53 +102,6 @@ apiInstance.changePassword(changePasswordModel, (error, data, response) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **changePasswordModel** | [**ChangePasswordModel**](ChangePasswordModel.md)|  | 
-
-### Return type
-
-null (empty response body)
-
-### Authorization
-
-[oauth2](../README.md#oauth2)
-
-### HTTP request headers
-
-- **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
-- **Accept**: application/json, text/json, application/xml, text/xml, Message, ErrorCode, StackTrace
-
-
-## changePasswordWithPin
-
-> changePasswordWithPin(changePasswordModel)
-
-
-
-### Example
-
-```javascript
-import Flipdish from '@flipdish/api-client-javascript';
-let defaultClient = Flipdish.ApiClient.instance;
-// Configure OAuth2 access token for authorization: oauth2
-let oauth2 = defaultClient.authentications['oauth2'];
-oauth2.accessToken = 'YOUR ACCESS TOKEN';
-
-let apiInstance = new Flipdish.AccountsApi();
-let changePasswordModel = new Flipdish.SetPasswordWithPinModel(); // SetPasswordWithPinModel | 
-apiInstance.changePasswordWithPin(changePasswordModel, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully.');
-  }
-});
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **changePasswordModel** | [**SetPasswordWithPinModel**](SetPasswordWithPinModel.md)|  | 
 
 ### Return type
 
@@ -618,53 +569,6 @@ null (empty response body)
 
 - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
 - **Accept**: Message, ErrorCode, StackTrace, application/json, text/json, application/xml, text/xml
-
-
-## sendPinForPasswordReset
-
-> RequestPasswordResetPinResponse sendPinForPasswordReset(requestPasswordResetRequest)
-
-
-
-### Example
-
-```javascript
-import Flipdish from '@flipdish/api-client-javascript';
-let defaultClient = Flipdish.ApiClient.instance;
-// Configure OAuth2 access token for authorization: oauth2
-let oauth2 = defaultClient.authentications['oauth2'];
-oauth2.accessToken = 'YOUR ACCESS TOKEN';
-
-let apiInstance = new Flipdish.AccountsApi();
-let requestPasswordResetRequest = new Flipdish.RequestPasswordResetModel(); // RequestPasswordResetModel | 
-apiInstance.sendPinForPasswordReset(requestPasswordResetRequest, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **requestPasswordResetRequest** | [**RequestPasswordResetModel**](RequestPasswordResetModel.md)|  | 
-
-### Return type
-
-[**RequestPasswordResetPinResponse**](RequestPasswordResetPinResponse.md)
-
-### Authorization
-
-[oauth2](../README.md#oauth2)
-
-### HTTP request headers
-
-- **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
-- **Accept**: application/json, text/json, application/xml, text/xml, Data, Message, ErrorCode, StackTrace
 
 
 ## skipSignupStep

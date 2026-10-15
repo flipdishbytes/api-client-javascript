@@ -20,13 +20,11 @@ import CreateBasicAccountModel from '../model/CreateBasicAccountModel';
 import LoginModel from '../model/LoginModel';
 import PasswordResetModel from '../model/PasswordResetModel';
 import RequestPasswordResetModel from '../model/RequestPasswordResetModel';
-import RequestPasswordResetPinResponse from '../model/RequestPasswordResetPinResponse';
 import RestApiArrayResultLocalisedTimeZone from '../model/RestApiArrayResultLocalisedTimeZone';
 import RestApiErrorResult from '../model/RestApiErrorResult';
 import RestApiForbiddenResult from '../model/RestApiForbiddenResult';
 import RestApiResultAccountDetail from '../model/RestApiResultAccountDetail';
 import RestApiUnauthorizedResult from '../model/RestApiUnauthorizedResult';
-import SetPasswordWithPinModel from '../model/SetPasswordWithPinModel';
 
 /**
 * Accounts service.
@@ -126,45 +124,6 @@ export default class AccountsApi {
       let returnType = null;
       return this.apiClient.callApi(
         '/api/v1.0/accounts/password', 'PUT',
-        pathParams, queryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType, null, callback
-      );
-    }
-
-    /**
-     * Callback function to receive the result of the changePasswordWithPin operation.
-     * @callback module:api/AccountsApi~changePasswordWithPinCallback
-     * @param {String} error Error message, if any.
-     * @param data This operation does not return a value.
-     * @param {String} response The complete HTTP response.
-     */
-
-    /**
-     * @param {module:model/SetPasswordWithPinModel} changePasswordModel 
-     * @param {module:api/AccountsApi~changePasswordWithPinCallback} callback The callback function, accepting three arguments: error, data, response
-     */
-    changePasswordWithPin(changePasswordModel, callback) {
-      let postBody = changePasswordModel;
-      // verify the required parameter 'changePasswordModel' is set
-      if (changePasswordModel === undefined || changePasswordModel === null) {
-        throw new Error("Missing the required parameter 'changePasswordModel' when calling changePasswordWithPin");
-      }
-
-      let pathParams = {
-      };
-      let queryParams = {
-      };
-      let headerParams = {
-      };
-      let formParams = {
-      };
-
-      let authNames = ['oauth2'];
-      let contentTypes = ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded'];
-      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'Message', 'ErrorCode', 'StackTrace'];
-      let returnType = null;
-      return this.apiClient.callApi(
-        '/api/v1.0/accounts/password/pin', 'PUT',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );
@@ -539,46 +498,6 @@ export default class AccountsApi {
       let returnType = null;
       return this.apiClient.callApi(
         '/api/v1.0/accounts/passwordreset', 'POST',
-        pathParams, queryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType, null, callback
-      );
-    }
-
-    /**
-     * Callback function to receive the result of the sendPinForPasswordReset operation.
-     * @callback module:api/AccountsApi~sendPinForPasswordResetCallback
-     * @param {String} error Error message, if any.
-     * @param {module:model/RequestPasswordResetPinResponse} data The data returned by the service call.
-     * @param {String} response The complete HTTP response.
-     */
-
-    /**
-     * @param {module:model/RequestPasswordResetModel} requestPasswordResetRequest 
-     * @param {module:api/AccountsApi~sendPinForPasswordResetCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/RequestPasswordResetPinResponse}
-     */
-    sendPinForPasswordReset(requestPasswordResetRequest, callback) {
-      let postBody = requestPasswordResetRequest;
-      // verify the required parameter 'requestPasswordResetRequest' is set
-      if (requestPasswordResetRequest === undefined || requestPasswordResetRequest === null) {
-        throw new Error("Missing the required parameter 'requestPasswordResetRequest' when calling sendPinForPasswordReset");
-      }
-
-      let pathParams = {
-      };
-      let queryParams = {
-      };
-      let headerParams = {
-      };
-      let formParams = {
-      };
-
-      let authNames = ['oauth2'];
-      let contentTypes = ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded'];
-      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'Data', 'Message', 'ErrorCode', 'StackTrace'];
-      let returnType = RequestPasswordResetPinResponse;
-      return this.apiClient.callApi(
-        '/api/v1.0/accounts/password/resetpin', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );

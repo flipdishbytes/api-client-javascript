@@ -127,7 +127,6 @@ Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *Flipdish.AccountsApi* | [**answerSignUpQuestion**](docs/AccountsApi.md#answerSignUpQuestion) | **POST** /api/v1.0/accounts/signupstep/{signupStepAction}/answer | 
 *Flipdish.AccountsApi* | [**changePassword**](docs/AccountsApi.md#changePassword) | **PUT** /api/v1.0/accounts/password | 
-*Flipdish.AccountsApi* | [**changePasswordWithPin**](docs/AccountsApi.md#changePasswordWithPin) | **PUT** /api/v1.0/accounts/password/pin | 
 *Flipdish.AccountsApi* | [**createAccount**](docs/AccountsApi.md#createAccount) | **POST** /api/v1.0/accounts | 
 *Flipdish.AccountsApi* | [**createBasicAccount**](docs/AccountsApi.md#createBasicAccount) | **POST** /api/v1.0/accounts/basic-account | 
 *Flipdish.AccountsApi* | [**getAccountDetails**](docs/AccountsApi.md#getAccountDetails) | **GET** /api/v1.0/accounts | 
@@ -138,7 +137,6 @@ Class | Method | HTTP request | Description
 *Flipdish.AccountsApi* | [**passwordResetWithToken**](docs/AccountsApi.md#passwordResetWithToken) | **POST** /api/v1.0/accounts/password | 
 *Flipdish.AccountsApi* | [**recaptchaValidate**](docs/AccountsApi.md#recaptchaValidate) | **POST** /api/v1.0/accounts/recaptcha | 
 *Flipdish.AccountsApi* | [**requestPasswordReset**](docs/AccountsApi.md#requestPasswordReset) | **POST** /api/v1.0/accounts/passwordreset | 
-*Flipdish.AccountsApi* | [**sendPinForPasswordReset**](docs/AccountsApi.md#sendPinForPasswordReset) | **POST** /api/v1.0/accounts/password/resetpin | 
 *Flipdish.AccountsApi* | [**skipSignupStep**](docs/AccountsApi.md#skipSignupStep) | **POST** /api/v1.0/accounts/signupstep/{signupStepAction}/skip | 
 *Flipdish.AccountsApi* | [**updateAccount**](docs/AccountsApi.md#updateAccount) | **PUT** /api/v1.0/accounts | 
 *Flipdish.AddressApi* | [**addressTemplates**](docs/AddressApi.md#addressTemplates) | **POST** /api/v1.0/address/templates | 
@@ -1136,7 +1134,6 @@ Class | Method | HTTP request | Description
  - [Flipdish.Refund](docs/Refund.md)
  - [Flipdish.Reject](docs/Reject.md)
  - [Flipdish.RequestPasswordResetModel](docs/RequestPasswordResetModel.md)
- - [Flipdish.RequestPasswordResetPinResponse](docs/RequestPasswordResetPinResponse.md)
  - [Flipdish.Response](docs/Response.md)
  - [Flipdish.RestApiArrayResultAllMetadataResult](docs/RestApiArrayResultAllMetadataResult.md)
  - [Flipdish.RestApiArrayResultAllergen](docs/RestApiArrayResultAllergen.md)
@@ -1398,7 +1395,6 @@ Class | Method | HTTP request | Description
  - [Flipdish.SendUserSmsRequest](docs/SendUserSmsRequest.md)
  - [Flipdish.ServiceCharge](docs/ServiceCharge.md)
  - [Flipdish.SetOrderBatchingConfiguration](docs/SetOrderBatchingConfiguration.md)
- - [Flipdish.SetPasswordWithPinModel](docs/SetPasswordWithPinModel.md)
  - [Flipdish.SetUserDeliveryLocationCoordinatesRequest](docs/SetUserDeliveryLocationCoordinatesRequest.md)
  - [Flipdish.SetUserDeliveryLocationFieldRequest](docs/SetUserDeliveryLocationFieldRequest.md)
  - [Flipdish.SetV2FeeCalculationRequest](docs/SetV2FeeCalculationRequest.md)

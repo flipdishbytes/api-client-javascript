@@ -68,16 +68,6 @@
         done();
       });
     });
-    describe('changePasswordWithPin', function() {
-      it('should call changePasswordWithPin successfully', function(done) {
-        //uncomment below and update the code to test changePasswordWithPin
-        //instance.changePasswordWithPin(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
     describe('createAccount', function() {
       it('should call createAccount successfully', function(done) {
         //uncomment below and update the code to test createAccount
@@ -172,16 +162,6 @@
       it('should call requestPasswordReset successfully', function(done) {
         //uncomment below and update the code to test requestPasswordReset
         //instance.requestPasswordReset(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
-    describe('sendPinForPasswordReset', function() {
-      it('should call sendPinForPasswordReset successfully', function(done) {
-        //uncomment below and update the code to test sendPinForPasswordReset
-        //instance.sendPinForPasswordReset(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

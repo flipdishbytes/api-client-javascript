@@ -438,7 +438,6 @@ import RedeemInvitationResult from './model/RedeemInvitationResult';
 import Refund from './model/Refund';
 import Reject from './model/Reject';
 import RequestPasswordResetModel from './model/RequestPasswordResetModel';
-import RequestPasswordResetPinResponse from './model/RequestPasswordResetPinResponse';
 import Response from './model/Response';
 import RestApiArrayResultAllMetadataResult from './model/RestApiArrayResultAllMetadataResult';
 import RestApiArrayResultAllergen from './model/RestApiArrayResultAllergen';
@@ -700,7 +699,6 @@ import SendUserPushNotificationRequest from './model/SendUserPushNotificationReq
 import SendUserSmsRequest from './model/SendUserSmsRequest';
 import ServiceCharge from './model/ServiceCharge';
 import SetOrderBatchingConfiguration from './model/SetOrderBatchingConfiguration';
-import SetPasswordWithPinModel from './model/SetPasswordWithPinModel';
 import SetUserDeliveryLocationCoordinatesRequest from './model/SetUserDeliveryLocationCoordinatesRequest';
 import SetUserDeliveryLocationFieldRequest from './model/SetUserDeliveryLocationFieldRequest';
 import SetV2FeeCalculationRequest from './model/SetV2FeeCalculationRequest';
@@ -3544,12 +3542,6 @@ export {
     RequestPasswordResetModel,
 
     /**
-     * The RequestPasswordResetPinResponse model constructor.
-     * @property {module:model/RequestPasswordResetPinResponse}
-     */
-    RequestPasswordResetPinResponse,
-
-    /**
      * The Response model constructor.
      * @property {module:model/Response}
      */
@@ -5114,12 +5106,6 @@ export {
      * @property {module:model/SetOrderBatchingConfiguration}
      */
     SetOrderBatchingConfiguration,
-
-    /**
-     * The SetPasswordWithPinModel model constructor.
-     * @property {module:model/SetPasswordWithPinModel}
-     */
-    SetPasswordWithPinModel,
 
     /**
      * The SetUserDeliveryLocationCoordinatesRequest model constructor.
