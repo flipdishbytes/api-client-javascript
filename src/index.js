@@ -95,6 +95,7 @@ import ClientDeviceEnroll from './model/ClientDeviceEnroll';
 import ClientDeviceEnrollmentResult from './model/ClientDeviceEnrollmentResult';
 import ClientDeviceSummary from './model/ClientDeviceSummary';
 import ConfiguredStore from './model/ConfiguredStore';
+import ContactFormTypeConfigModel from './model/ContactFormTypeConfigModel';
 import Coordinates from './model/Coordinates';
 import CountryFormResponse from './model/CountryFormResponse';
 import CountryWithAccountFieldsDefinitions from './model/CountryWithAccountFieldsDefinitions';
@@ -571,6 +572,7 @@ import RestApiResultCatalogItem from './model/RestApiResultCatalogItem';
 import RestApiResultChannel from './model/RestApiResultChannel';
 import RestApiResultClientDevice from './model/RestApiResultClientDevice';
 import RestApiResultClientDeviceEnrollmentResult from './model/RestApiResultClientDeviceEnrollmentResult';
+import RestApiResultContactFormTypeConfigModel from './model/RestApiResultContactFormTypeConfigModel';
 import RestApiResultCoordinates from './model/RestApiResultCoordinates';
 import RestApiResultCountryFormResponse from './model/RestApiResultCountryFormResponse';
 import RestApiResultCreatedMenuSectionItems from './model/RestApiResultCreatedMenuSectionItems';
@@ -951,6 +953,7 @@ import WebhooksApi from './api/WebhooksApi';
 import WebsiteApi from './api/WebsiteApi';
 import WhiteLabelBuildsApi from './api/WhiteLabelBuildsApi';
 import WhiteLabelConfigApi from './api/WhiteLabelConfigApi';
+import WhiteLabelContactFormTypeApi from './api/WhiteLabelContactFormTypeApi';
 
 
 /**
@@ -1482,6 +1485,12 @@ export {
      * @property {module:model/ConfiguredStore}
      */
     ConfiguredStore,
+
+    /**
+     * The ContactFormTypeConfigModel model constructor.
+     * @property {module:model/ContactFormTypeConfigModel}
+     */
+    ContactFormTypeConfigModel,
 
     /**
      * The Coordinates model constructor.
@@ -4340,6 +4349,12 @@ export {
     RestApiResultClientDeviceEnrollmentResult,
 
     /**
+     * The RestApiResultContactFormTypeConfigModel model constructor.
+     * @property {module:model/RestApiResultContactFormTypeConfigModel}
+     */
+    RestApiResultContactFormTypeConfigModel,
+
+    /**
      * The RestApiResultCoordinates model constructor.
      * @property {module:model/RestApiResultCoordinates}
      */
@@ -6617,5 +6632,11 @@ export {
     * The WhiteLabelConfigApi service constructor.
     * @property {module:api/WhiteLabelConfigApi}
     */
-    WhiteLabelConfigApi
+    WhiteLabelConfigApi,
+
+    /**
+    * The WhiteLabelContactFormTypeApi service constructor.
+    * @property {module:api/WhiteLabelContactFormTypeApi}
+    */
+    WhiteLabelContactFormTypeApi
 };

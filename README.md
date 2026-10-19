@@ -705,6 +705,8 @@ Class | Method | HTTP request | Description
 *Flipdish.WhiteLabelConfigApi* | [**updateAppStoreConfig**](docs/WhiteLabelConfigApi.md#updateAppStoreConfig) | **POST** /api/v1.0/whitelabelconfig/{appId}/appstore | 
 *Flipdish.WhiteLabelConfigApi* | [**updatePlayStoreConfig**](docs/WhiteLabelConfigApi.md#updatePlayStoreConfig) | **POST** /api/v1.0/whitelabelconfig/{appId}/playstore | 
 *Flipdish.WhiteLabelConfigApi* | [**uploadAppStoreIcon**](docs/WhiteLabelConfigApi.md#uploadAppStoreIcon) | **POST** /api/v1.0/whitelabelconfig/{appId}/app-store-icon | 
+*Flipdish.WhiteLabelContactFormTypeApi* | [**getAppContactFormType**](docs/WhiteLabelContactFormTypeApi.md#getAppContactFormType) | **GET** /api/v1.0/whitelabelconfig/{appId}/contact-form-type | 
+*Flipdish.WhiteLabelContactFormTypeApi* | [**updateAppContactFormType**](docs/WhiteLabelContactFormTypeApi.md#updateAppContactFormType) | **POST** /api/v1.0/whitelabelconfig/{appId}/contact-form-type | 
 
 
 ## Documentation for Models
@@ -791,6 +793,7 @@ Class | Method | HTTP request | Description
  - [Flipdish.ClientDeviceEnrollmentResult](docs/ClientDeviceEnrollmentResult.md)
  - [Flipdish.ClientDeviceSummary](docs/ClientDeviceSummary.md)
  - [Flipdish.ConfiguredStore](docs/ConfiguredStore.md)
+ - [Flipdish.ContactFormTypeConfigModel](docs/ContactFormTypeConfigModel.md)
  - [Flipdish.Coordinates](docs/Coordinates.md)
  - [Flipdish.CountryFormResponse](docs/CountryFormResponse.md)
  - [Flipdish.CountryWithAccountFieldsDefinitions](docs/CountryWithAccountFieldsDefinitions.md)
@@ -1267,6 +1270,7 @@ Class | Method | HTTP request | Description
  - [Flipdish.RestApiResultChannel](docs/RestApiResultChannel.md)
  - [Flipdish.RestApiResultClientDevice](docs/RestApiResultClientDevice.md)
  - [Flipdish.RestApiResultClientDeviceEnrollmentResult](docs/RestApiResultClientDeviceEnrollmentResult.md)
+ - [Flipdish.RestApiResultContactFormTypeConfigModel](docs/RestApiResultContactFormTypeConfigModel.md)
  - [Flipdish.RestApiResultCoordinates](docs/RestApiResultCoordinates.md)
  - [Flipdish.RestApiResultCountryFormResponse](docs/RestApiResultCountryFormResponse.md)
  - [Flipdish.RestApiResultCreatedMenuSectionItems](docs/RestApiResultCreatedMenuSectionItems.md)
