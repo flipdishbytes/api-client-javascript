@@ -672,6 +672,8 @@ Class | Method | HTTP request | Description
 *Flipdish.VouchersApi* | [**setVoucherValidityPeriodsSimplified**](docs/VouchersApi.md#setVoucherValidityPeriodsSimplified) | **POST** /api/v1.0/{appId}/vouchers/{voucherId}/validity-periods-simplified | 
 *Flipdish.VouchersApi* | [**updateVoucher**](docs/VouchersApi.md#updateVoucher) | **POST** /api/v1.0/vouchers/{voucherId} | 
 *Flipdish.VouchersApi* | [**updateVoucherUsage**](docs/VouchersApi.md#updateVoucherUsage) | **POST** /api/v1.0/{appId}/vouchers/{voucherId}/usage | 
+*Flipdish.WebOrderPageApi* | [**getWebOrderPage**](docs/WebOrderPageApi.md#getWebOrderPage) | **GET** /api/v1.0/apps/{appId}/weborderpage | 
+*Flipdish.WebOrderPageApi* | [**setWebOrderPage**](docs/WebOrderPageApi.md#setWebOrderPage) | **POST** /api/v1.0/apps/{appId}/weborderpage | 
 *Flipdish.WebhooksApi* | [**createWebhookSubscription**](docs/WebhooksApi.md#createWebhookSubscription) | **POST** /api/v1.0/{appId}/webhooks/{oauthAppId}/subscriptions | 
 *Flipdish.WebhooksApi* | [**createWebhookSubscriptionEventNames**](docs/WebhooksApi.md#createWebhookSubscriptionEventNames) | **POST** /api/v1.0/{appId}/webhooks/{oauthAppId}/subscriptions/{webhookSubscriptionId}/events/{eventName} | 
 *Flipdish.WebhooksApi* | [**deleteWebhookSubscription**](docs/WebhooksApi.md#deleteWebhookSubscription) | **DELETE** /api/v1.0/{appId}/webhooks/{oauthAppId}/subscriptions/{webhookSubscriptionId} | 
@@ -1374,6 +1376,7 @@ Class | Method | HTTP request | Description
  - [Flipdish.RestApiResultUserRole](docs/RestApiResultUserRole.md)
  - [Flipdish.RestApiResultVoucher](docs/RestApiResultVoucher.md)
  - [Flipdish.RestApiResultVoucherWithStats](docs/RestApiResultVoucherWithStats.md)
+ - [Flipdish.RestApiResultWebOrderPage](docs/RestApiResultWebOrderPage.md)
  - [Flipdish.RestApiResultWebsiteImage](docs/RestApiResultWebsiteImage.md)
  - [Flipdish.RestApiResultWebsiteTestimonial](docs/RestApiResultWebsiteTestimonial.md)
  - [Flipdish.RestApiResultWhiteLabelConfigModel](docs/RestApiResultWhiteLabelConfigModel.md)
@@ -1403,6 +1406,7 @@ Class | Method | HTTP request | Description
  - [Flipdish.SetUserDeliveryLocationFieldRequest](docs/SetUserDeliveryLocationFieldRequest.md)
  - [Flipdish.SetV2FeeCalculationRequest](docs/SetV2FeeCalculationRequest.md)
  - [Flipdish.SetVoucherValidityPeriodsSimplifiedRequest](docs/SetVoucherValidityPeriodsSimplifiedRequest.md)
+ - [Flipdish.SetWebOrderPage](docs/SetWebOrderPage.md)
  - [Flipdish.Setting](docs/Setting.md)
  - [Flipdish.SignupStep](docs/SignupStep.md)
  - [Flipdish.SmsInfo](docs/SmsInfo.md)
@@ -1549,6 +1553,7 @@ Class | Method | HTTP request | Description
  - [Flipdish.VoucherUpdatedEvent](docs/VoucherUpdatedEvent.md)
  - [Flipdish.VoucherWithStats](docs/VoucherWithStats.md)
  - [Flipdish.WaitHandle](docs/WaitHandle.md)
+ - [Flipdish.WebOrderPage](docs/WebOrderPage.md)
  - [Flipdish.WebhookEventSample](docs/WebhookEventSample.md)
  - [Flipdish.WebhookLog](docs/WebhookLog.md)
  - [Flipdish.WebhookSubscription](docs/WebhookSubscription.md)

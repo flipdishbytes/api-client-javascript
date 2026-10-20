@@ -676,6 +676,7 @@ import RestApiResultUserPushNotificationSentResult from './model/RestApiResultUs
 import RestApiResultUserRole from './model/RestApiResultUserRole';
 import RestApiResultVoucher from './model/RestApiResultVoucher';
 import RestApiResultVoucherWithStats from './model/RestApiResultVoucherWithStats';
+import RestApiResultWebOrderPage from './model/RestApiResultWebOrderPage';
 import RestApiResultWebsiteImage from './model/RestApiResultWebsiteImage';
 import RestApiResultWebsiteTestimonial from './model/RestApiResultWebsiteTestimonial';
 import RestApiResultWhiteLabelConfigModel from './model/RestApiResultWhiteLabelConfigModel';
@@ -705,6 +706,7 @@ import SetUserDeliveryLocationCoordinatesRequest from './model/SetUserDeliveryLo
 import SetUserDeliveryLocationFieldRequest from './model/SetUserDeliveryLocationFieldRequest';
 import SetV2FeeCalculationRequest from './model/SetV2FeeCalculationRequest';
 import SetVoucherValidityPeriodsSimplifiedRequest from './model/SetVoucherValidityPeriodsSimplifiedRequest';
+import SetWebOrderPage from './model/SetWebOrderPage';
 import Setting from './model/Setting';
 import SignupStep from './model/SignupStep';
 import SmsInfo from './model/SmsInfo';
@@ -851,6 +853,7 @@ import VoucherSummary from './model/VoucherSummary';
 import VoucherUpdatedEvent from './model/VoucherUpdatedEvent';
 import VoucherWithStats from './model/VoucherWithStats';
 import WaitHandle from './model/WaitHandle';
+import WebOrderPage from './model/WebOrderPage';
 import WebhookEventSample from './model/WebhookEventSample';
 import WebhookLog from './model/WebhookLog';
 import WebhookSubscription from './model/WebhookSubscription';
@@ -949,6 +952,7 @@ import TerminalIotApi from './api/TerminalIotApi';
 import TipsApi from './api/TipsApi';
 import UsersApi from './api/UsersApi';
 import VouchersApi from './api/VouchersApi';
+import WebOrderPageApi from './api/WebOrderPageApi';
 import WebhooksApi from './api/WebhooksApi';
 import WebsiteApi from './api/WebsiteApi';
 import WhiteLabelBuildsApi from './api/WhiteLabelBuildsApi';
@@ -4973,6 +4977,12 @@ export {
     RestApiResultVoucherWithStats,
 
     /**
+     * The RestApiResultWebOrderPage model constructor.
+     * @property {module:model/RestApiResultWebOrderPage}
+     */
+    RestApiResultWebOrderPage,
+
+    /**
      * The RestApiResultWebsiteImage model constructor.
      * @property {module:model/RestApiResultWebsiteImage}
      */
@@ -5145,6 +5155,12 @@ export {
      * @property {module:model/SetVoucherValidityPeriodsSimplifiedRequest}
      */
     SetVoucherValidityPeriodsSimplifiedRequest,
+
+    /**
+     * The SetWebOrderPage model constructor.
+     * @property {module:model/SetWebOrderPage}
+     */
+    SetWebOrderPage,
 
     /**
      * The Setting model constructor.
@@ -6023,6 +6039,12 @@ export {
     WaitHandle,
 
     /**
+     * The WebOrderPage model constructor.
+     * @property {module:model/WebOrderPage}
+     */
+    WebOrderPage,
+
+    /**
      * The WebhookEventSample model constructor.
      * @property {module:model/WebhookEventSample}
      */
@@ -6609,6 +6631,12 @@ export {
     * @property {module:api/VouchersApi}
     */
     VouchersApi,
+
+    /**
+    * The WebOrderPageApi service constructor.
+    * @property {module:api/WebOrderPageApi}
+    */
+    WebOrderPageApi,
 
     /**
     * The WebhooksApi service constructor.
