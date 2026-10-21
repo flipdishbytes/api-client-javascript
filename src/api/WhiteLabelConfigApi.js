@@ -87,47 +87,6 @@ export default class WhiteLabelConfigApi {
     }
 
     /**
-     * Callback function to receive the result of the getAppStoreConfig operation.
-     * @callback module:api/WhiteLabelConfigApi~getAppStoreConfigCallback
-     * @param {String} error Error message, if any.
-     * @param {module:model/RestApiResultAppStoreConfigModel} data The data returned by the service call.
-     * @param {String} response The complete HTTP response.
-     */
-
-    /**
-     * @param {String} appId 
-     * @param {module:api/WhiteLabelConfigApi~getAppStoreConfigCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/RestApiResultAppStoreConfigModel}
-     */
-    getAppStoreConfig(appId, callback) {
-      let postBody = null;
-      // verify the required parameter 'appId' is set
-      if (appId === undefined || appId === null) {
-        throw new Error("Missing the required parameter 'appId' when calling getAppStoreConfig");
-      }
-
-      let pathParams = {
-        'appId': appId
-      };
-      let queryParams = {
-      };
-      let headerParams = {
-      };
-      let formParams = {
-      };
-
-      let authNames = ['oauth2'];
-      let contentTypes = [];
-      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
-      let returnType = RestApiResultAppStoreConfigModel;
-      return this.apiClient.callApi(
-        '/api/v1.0/whitelabelconfig/{appId}/appstore', 'GET',
-        pathParams, queryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType, null, callback
-      );
-    }
-
-    /**
      * Callback function to receive the result of the getPlayStoreConfig operation.
      * @callback module:api/WhiteLabelConfigApi~getPlayStoreConfigCallback
      * @param {String} error Error message, if any.
@@ -163,6 +122,47 @@ export default class WhiteLabelConfigApi {
       let returnType = RestApiResultPlayStoreConfigModel;
       return this.apiClient.callApi(
         '/api/v1.0/whitelabelconfig/{appId}/playstore', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the getWhiteLabelAppStoreConfig operation.
+     * @callback module:api/WhiteLabelConfigApi~getWhiteLabelAppStoreConfigCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/RestApiResultAppStoreConfigModel} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {String} appId 
+     * @param {module:api/WhiteLabelConfigApi~getWhiteLabelAppStoreConfigCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/RestApiResultAppStoreConfigModel}
+     */
+    getWhiteLabelAppStoreConfig(appId, callback) {
+      let postBody = null;
+      // verify the required parameter 'appId' is set
+      if (appId === undefined || appId === null) {
+        throw new Error("Missing the required parameter 'appId' when calling getWhiteLabelAppStoreConfig");
+      }
+
+      let pathParams = {
+        'appId': appId
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = [];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
+      let returnType = RestApiResultAppStoreConfigModel;
+      return this.apiClient.callApi(
+        '/api/v1.0/whitelabelconfig/{appId}/appstore', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );
@@ -251,41 +251,6 @@ export default class WhiteLabelConfigApi {
     }
 
     /**
-     * Callback function to receive the result of the healthCheck operation.
-     * @callback module:api/WhiteLabelConfigApi~healthCheckCallback
-     * @param {String} error Error message, if any.
-     * @param {String} data The data returned by the service call.
-     * @param {String} response The complete HTTP response.
-     */
-
-    /**
-     * @param {module:api/WhiteLabelConfigApi~healthCheckCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link String}
-     */
-    healthCheck(callback) {
-      let postBody = null;
-
-      let pathParams = {
-      };
-      let queryParams = {
-      };
-      let headerParams = {
-      };
-      let formParams = {
-      };
-
-      let authNames = ['oauth2'];
-      let contentTypes = [];
-      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
-      let returnType = 'String';
-      return this.apiClient.callApi(
-        '/api/v1.0/whitelabelconfig/health', 'GET',
-        pathParams, queryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType, null, callback
-      );
-    }
-
-    /**
      * Callback function to receive the result of the updateAppGeneralConfig operation.
      * @callback module:api/WhiteLabelConfigApi~updateAppGeneralConfigCallback
      * @param {String} error Error message, if any.
@@ -326,52 +291,6 @@ export default class WhiteLabelConfigApi {
       let returnType = RestApiResultAppGeneralConfigModel;
       return this.apiClient.callApi(
         '/api/v1.0/whitelabelconfig/{appId}/general', 'POST',
-        pathParams, queryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType, null, callback
-      );
-    }
-
-    /**
-     * Callback function to receive the result of the updateAppStoreConfig operation.
-     * @callback module:api/WhiteLabelConfigApi~updateAppStoreConfigCallback
-     * @param {String} error Error message, if any.
-     * @param {module:model/RestApiResultAppStoreConfigModel} data The data returned by the service call.
-     * @param {String} response The complete HTTP response.
-     */
-
-    /**
-     * @param {String} appId 
-     * @param {module:model/AppStoreConfigModel} appStoreConfig 
-     * @param {module:api/WhiteLabelConfigApi~updateAppStoreConfigCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/RestApiResultAppStoreConfigModel}
-     */
-    updateAppStoreConfig(appId, appStoreConfig, callback) {
-      let postBody = appStoreConfig;
-      // verify the required parameter 'appId' is set
-      if (appId === undefined || appId === null) {
-        throw new Error("Missing the required parameter 'appId' when calling updateAppStoreConfig");
-      }
-      // verify the required parameter 'appStoreConfig' is set
-      if (appStoreConfig === undefined || appStoreConfig === null) {
-        throw new Error("Missing the required parameter 'appStoreConfig' when calling updateAppStoreConfig");
-      }
-
-      let pathParams = {
-        'appId': appId
-      };
-      let queryParams = {
-      };
-      let headerParams = {
-      };
-      let formParams = {
-      };
-
-      let authNames = ['oauth2'];
-      let contentTypes = ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded'];
-      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
-      let returnType = RestApiResultAppStoreConfigModel;
-      return this.apiClient.callApi(
-        '/api/v1.0/whitelabelconfig/{appId}/appstore', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );
@@ -424,6 +343,52 @@ export default class WhiteLabelConfigApi {
     }
 
     /**
+     * Callback function to receive the result of the updateWhiteLabelAppStoreConfig operation.
+     * @callback module:api/WhiteLabelConfigApi~updateWhiteLabelAppStoreConfigCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/RestApiResultAppStoreConfigModel} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {String} appId 
+     * @param {module:model/AppStoreConfigModel} appStoreConfig 
+     * @param {module:api/WhiteLabelConfigApi~updateWhiteLabelAppStoreConfigCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/RestApiResultAppStoreConfigModel}
+     */
+    updateWhiteLabelAppStoreConfig(appId, appStoreConfig, callback) {
+      let postBody = appStoreConfig;
+      // verify the required parameter 'appId' is set
+      if (appId === undefined || appId === null) {
+        throw new Error("Missing the required parameter 'appId' when calling updateWhiteLabelAppStoreConfig");
+      }
+      // verify the required parameter 'appStoreConfig' is set
+      if (appStoreConfig === undefined || appStoreConfig === null) {
+        throw new Error("Missing the required parameter 'appStoreConfig' when calling updateWhiteLabelAppStoreConfig");
+      }
+
+      let pathParams = {
+        'appId': appId
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded'];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
+      let returnType = RestApiResultAppStoreConfigModel;
+      return this.apiClient.callApi(
+        '/api/v1.0/whitelabelconfig/{appId}/appstore', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
      * Callback function to receive the result of the uploadAppStoreIcon operation.
      * @callback module:api/WhiteLabelConfigApi~uploadAppStoreIconCallback
      * @param {String} error Error message, if any.
@@ -464,6 +429,41 @@ export default class WhiteLabelConfigApi {
       let returnType = RestApiResultAssetResultModel;
       return this.apiClient.callApi(
         '/api/v1.0/whitelabelconfig/{appId}/app-store-icon', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the whiteLabelConfigHealthCheck operation.
+     * @callback module:api/WhiteLabelConfigApi~whiteLabelConfigHealthCheckCallback
+     * @param {String} error Error message, if any.
+     * @param {String} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {module:api/WhiteLabelConfigApi~whiteLabelConfigHealthCheckCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link String}
+     */
+    whiteLabelConfigHealthCheck(callback) {
+      let postBody = null;
+
+      let pathParams = {
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = [];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
+      let returnType = 'String';
+      return this.apiClient.callApi(
+        '/api/v1.0/whitelabelconfig/health', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );

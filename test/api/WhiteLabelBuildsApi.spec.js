@@ -48,16 +48,6 @@
   }
 
   describe('WhiteLabelBuildsApi', function() {
-    describe('healthCheck', function() {
-      it('should call healthCheck successfully', function(done) {
-        //uncomment below and update the code to test healthCheck
-        //instance.healthCheck(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
     describe('submitAndroidApps', function() {
       it('should call submitAndroidApps successfully', function(done) {
         //uncomment below and update the code to test submitAndroidApps
@@ -92,6 +82,16 @@
       it('should call submitIosBuild successfully', function(done) {
         //uncomment below and update the code to test submitIosBuild
         //instance.submitIosBuild(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('whiteLabelBuildsHealthCheck', function() {
+      it('should call whiteLabelBuildsHealthCheck successfully', function(done) {
+        //uncomment below and update the code to test whiteLabelBuildsHealthCheck
+        //instance.whiteLabelBuildsHealthCheck(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

@@ -692,21 +692,21 @@ Class | Method | HTTP request | Description
 *Flipdish.WebsiteApi* | [**setIndexConfiguration**](docs/WebsiteApi.md#setIndexConfiguration) | **POST** /api/v1.0/{appId}/website/index | 
 *Flipdish.WebsiteApi* | [**uploadWebsiteImage**](docs/WebsiteApi.md#uploadWebsiteImage) | **POST** /api/v1.0/{appId}/website/image/{imageLocation} | 
 *Flipdish.WebsiteApi* | [**websiteCheckNow**](docs/WebsiteApi.md#websiteCheckNow) | **GET** /api/v1.0/{appId}/website/dnscheck | 
-*Flipdish.WhiteLabelBuildsApi* | [**healthCheck**](docs/WhiteLabelBuildsApi.md#healthCheck) | **GET** /api/v1.0/whitelabelbuilds/health | 
 *Flipdish.WhiteLabelBuildsApi* | [**submitAndroidApps**](docs/WhiteLabelBuildsApi.md#submitAndroidApps) | **POST** /api/v1.0/whitelabelbuilds/android/multiple | 
 *Flipdish.WhiteLabelBuildsApi* | [**submitAndroidBuild**](docs/WhiteLabelBuildsApi.md#submitAndroidBuild) | **POST** /api/v1.0/whitelabelbuilds/{appId}/android | 
 *Flipdish.WhiteLabelBuildsApi* | [**submitIosApps**](docs/WhiteLabelBuildsApi.md#submitIosApps) | **POST** /api/v1.0/whitelabelbuilds/ios/multiple | 
 *Flipdish.WhiteLabelBuildsApi* | [**submitIosBuild**](docs/WhiteLabelBuildsApi.md#submitIosBuild) | **POST** /api/v1.0/whitelabelbuilds/{appId}/ios | 
+*Flipdish.WhiteLabelBuildsApi* | [**whiteLabelBuildsHealthCheck**](docs/WhiteLabelBuildsApi.md#whiteLabelBuildsHealthCheck) | **GET** /api/v1.0/whitelabelbuilds/health | 
 *Flipdish.WhiteLabelConfigApi* | [**getAppGeneralConfig**](docs/WhiteLabelConfigApi.md#getAppGeneralConfig) | **GET** /api/v1.0/whitelabelconfig/{appId}/general | 
-*Flipdish.WhiteLabelConfigApi* | [**getAppStoreConfig**](docs/WhiteLabelConfigApi.md#getAppStoreConfig) | **GET** /api/v1.0/whitelabelconfig/{appId}/appstore | 
 *Flipdish.WhiteLabelConfigApi* | [**getPlayStoreConfig**](docs/WhiteLabelConfigApi.md#getPlayStoreConfig) | **GET** /api/v1.0/whitelabelconfig/{appId}/playstore | 
+*Flipdish.WhiteLabelConfigApi* | [**getWhiteLabelAppStoreConfig**](docs/WhiteLabelConfigApi.md#getWhiteLabelAppStoreConfig) | **GET** /api/v1.0/whitelabelconfig/{appId}/appstore | 
 *Flipdish.WhiteLabelConfigApi* | [**getWhiteLabelConfig**](docs/WhiteLabelConfigApi.md#getWhiteLabelConfig) | **GET** /api/v1.0/whitelabelconfig/id/{wlid} | 
 *Flipdish.WhiteLabelConfigApi* | [**getWhiteLabelConfigByAppNameId**](docs/WhiteLabelConfigApi.md#getWhiteLabelConfigByAppNameId) | **GET** /api/v1.0/whitelabelconfig/name/{appId} | 
-*Flipdish.WhiteLabelConfigApi* | [**healthCheck**](docs/WhiteLabelConfigApi.md#healthCheck) | **GET** /api/v1.0/whitelabelconfig/health | 
 *Flipdish.WhiteLabelConfigApi* | [**updateAppGeneralConfig**](docs/WhiteLabelConfigApi.md#updateAppGeneralConfig) | **POST** /api/v1.0/whitelabelconfig/{appId}/general | 
-*Flipdish.WhiteLabelConfigApi* | [**updateAppStoreConfig**](docs/WhiteLabelConfigApi.md#updateAppStoreConfig) | **POST** /api/v1.0/whitelabelconfig/{appId}/appstore | 
 *Flipdish.WhiteLabelConfigApi* | [**updatePlayStoreConfig**](docs/WhiteLabelConfigApi.md#updatePlayStoreConfig) | **POST** /api/v1.0/whitelabelconfig/{appId}/playstore | 
+*Flipdish.WhiteLabelConfigApi* | [**updateWhiteLabelAppStoreConfig**](docs/WhiteLabelConfigApi.md#updateWhiteLabelAppStoreConfig) | **POST** /api/v1.0/whitelabelconfig/{appId}/appstore | 
 *Flipdish.WhiteLabelConfigApi* | [**uploadAppStoreIcon**](docs/WhiteLabelConfigApi.md#uploadAppStoreIcon) | **POST** /api/v1.0/whitelabelconfig/{appId}/app-store-icon | 
+*Flipdish.WhiteLabelConfigApi* | [**whiteLabelConfigHealthCheck**](docs/WhiteLabelConfigApi.md#whiteLabelConfigHealthCheck) | **GET** /api/v1.0/whitelabelconfig/health | 
 *Flipdish.WhiteLabelContactFormTypeApi* | [**getAppContactFormType**](docs/WhiteLabelContactFormTypeApi.md#getAppContactFormType) | **GET** /api/v1.0/whitelabelconfig/{appId}/contact-form-type | 
 *Flipdish.WhiteLabelContactFormTypeApi* | [**updateAppContactFormType**](docs/WhiteLabelContactFormTypeApi.md#updateAppContactFormType) | **POST** /api/v1.0/whitelabelconfig/{appId}/contact-form-type | 
 

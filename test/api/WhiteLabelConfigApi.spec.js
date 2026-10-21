@@ -58,20 +58,20 @@
         done();
       });
     });
-    describe('getAppStoreConfig', function() {
-      it('should call getAppStoreConfig successfully', function(done) {
-        //uncomment below and update the code to test getAppStoreConfig
-        //instance.getAppStoreConfig(function(error) {
+    describe('getPlayStoreConfig', function() {
+      it('should call getPlayStoreConfig successfully', function(done) {
+        //uncomment below and update the code to test getPlayStoreConfig
+        //instance.getPlayStoreConfig(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
         done();
       });
     });
-    describe('getPlayStoreConfig', function() {
-      it('should call getPlayStoreConfig successfully', function(done) {
-        //uncomment below and update the code to test getPlayStoreConfig
-        //instance.getPlayStoreConfig(function(error) {
+    describe('getWhiteLabelAppStoreConfig', function() {
+      it('should call getWhiteLabelAppStoreConfig successfully', function(done) {
+        //uncomment below and update the code to test getWhiteLabelAppStoreConfig
+        //instance.getWhiteLabelAppStoreConfig(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -98,30 +98,10 @@
         done();
       });
     });
-    describe('healthCheck', function() {
-      it('should call healthCheck successfully', function(done) {
-        //uncomment below and update the code to test healthCheck
-        //instance.healthCheck(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
     describe('updateAppGeneralConfig', function() {
       it('should call updateAppGeneralConfig successfully', function(done) {
         //uncomment below and update the code to test updateAppGeneralConfig
         //instance.updateAppGeneralConfig(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
-    describe('updateAppStoreConfig', function() {
-      it('should call updateAppStoreConfig successfully', function(done) {
-        //uncomment below and update the code to test updateAppStoreConfig
-        //instance.updateAppStoreConfig(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -138,10 +118,30 @@
         done();
       });
     });
+    describe('updateWhiteLabelAppStoreConfig', function() {
+      it('should call updateWhiteLabelAppStoreConfig successfully', function(done) {
+        //uncomment below and update the code to test updateWhiteLabelAppStoreConfig
+        //instance.updateWhiteLabelAppStoreConfig(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('uploadAppStoreIcon', function() {
       it('should call uploadAppStoreIcon successfully', function(done) {
         //uncomment below and update the code to test uploadAppStoreIcon
         //instance.uploadAppStoreIcon(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('whiteLabelConfigHealthCheck', function() {
+      it('should call whiteLabelConfigHealthCheck successfully', function(done) {
+        //uncomment below and update the code to test whiteLabelConfigHealthCheck
+        //instance.whiteLabelConfigHealthCheck(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

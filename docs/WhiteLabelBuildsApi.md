@@ -4,55 +4,12 @@ All URIs are relative to *https://api.flipdish.co*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**healthCheck**](WhiteLabelBuildsApi.md#healthCheck) | **GET** /api/v1.0/whitelabelbuilds/health | 
 [**submitAndroidApps**](WhiteLabelBuildsApi.md#submitAndroidApps) | **POST** /api/v1.0/whitelabelbuilds/android/multiple | 
 [**submitAndroidBuild**](WhiteLabelBuildsApi.md#submitAndroidBuild) | **POST** /api/v1.0/whitelabelbuilds/{appId}/android | 
 [**submitIosApps**](WhiteLabelBuildsApi.md#submitIosApps) | **POST** /api/v1.0/whitelabelbuilds/ios/multiple | 
 [**submitIosBuild**](WhiteLabelBuildsApi.md#submitIosBuild) | **POST** /api/v1.0/whitelabelbuilds/{appId}/ios | 
+[**whiteLabelBuildsHealthCheck**](WhiteLabelBuildsApi.md#whiteLabelBuildsHealthCheck) | **GET** /api/v1.0/whitelabelbuilds/health | 
 
-
-
-## healthCheck
-
-> String healthCheck()
-
-
-
-### Example
-
-```javascript
-import Flipdish from '@flipdish/api-client-javascript';
-let defaultClient = Flipdish.ApiClient.instance;
-// Configure OAuth2 access token for authorization: oauth2
-let oauth2 = defaultClient.authentications['oauth2'];
-oauth2.accessToken = 'YOUR ACCESS TOKEN';
-
-let apiInstance = new Flipdish.WhiteLabelBuildsApi();
-apiInstance.healthCheck((error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
-
-### Parameters
-
-This endpoint does not need any parameter.
-
-### Return type
-
-**String**
-
-### Authorization
-
-[oauth2](../README.md#oauth2)
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json, text/json, application/xml, text/xml
 
 
 ## submitAndroidApps
@@ -258,6 +215,49 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**RestApiResultBuildResultModel**](RestApiResultBuildResultModel.md)
+
+### Authorization
+
+[oauth2](../README.md#oauth2)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml
+
+
+## whiteLabelBuildsHealthCheck
+
+> String whiteLabelBuildsHealthCheck()
+
+
+
+### Example
+
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
+// Configure OAuth2 access token for authorization: oauth2
+let oauth2 = defaultClient.authentications['oauth2'];
+oauth2.accessToken = 'YOUR ACCESS TOKEN';
+
+let apiInstance = new Flipdish.WhiteLabelBuildsApi();
+apiInstance.whiteLabelBuildsHealthCheck((error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+This endpoint does not need any parameter.
+
+### Return type
+
+**String**
 
 ### Authorization
 

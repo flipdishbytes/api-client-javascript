@@ -38,41 +38,6 @@ export default class WhiteLabelBuildsApi {
 
 
     /**
-     * Callback function to receive the result of the healthCheck operation.
-     * @callback module:api/WhiteLabelBuildsApi~healthCheckCallback
-     * @param {String} error Error message, if any.
-     * @param {String} data The data returned by the service call.
-     * @param {String} response The complete HTTP response.
-     */
-
-    /**
-     * @param {module:api/WhiteLabelBuildsApi~healthCheckCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link String}
-     */
-    healthCheck(callback) {
-      let postBody = null;
-
-      let pathParams = {
-      };
-      let queryParams = {
-      };
-      let headerParams = {
-      };
-      let formParams = {
-      };
-
-      let authNames = ['oauth2'];
-      let contentTypes = [];
-      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
-      let returnType = 'String';
-      return this.apiClient.callApi(
-        '/api/v1.0/whitelabelbuilds/health', 'GET',
-        pathParams, queryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType, null, callback
-      );
-    }
-
-    /**
      * Callback function to receive the result of the submitAndroidApps operation.
      * @callback module:api/WhiteLabelBuildsApi~submitAndroidAppsCallback
      * @param {String} error Error message, if any.
@@ -277,6 +242,41 @@ export default class WhiteLabelBuildsApi {
       let returnType = RestApiResultBuildResultModel;
       return this.apiClient.callApi(
         '/api/v1.0/whitelabelbuilds/{appId}/ios', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the whiteLabelBuildsHealthCheck operation.
+     * @callback module:api/WhiteLabelBuildsApi~whiteLabelBuildsHealthCheckCallback
+     * @param {String} error Error message, if any.
+     * @param {String} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {module:api/WhiteLabelBuildsApi~whiteLabelBuildsHealthCheckCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link String}
+     */
+    whiteLabelBuildsHealthCheck(callback) {
+      let postBody = null;
+
+      let pathParams = {
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = [];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
+      let returnType = 'String';
+      return this.apiClient.callApi(
+        '/api/v1.0/whitelabelbuilds/health', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );
