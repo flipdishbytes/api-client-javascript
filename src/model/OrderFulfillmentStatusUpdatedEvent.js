@@ -12,6 +12,8 @@
  */
 
 import ApiClient from '../ApiClient';
+import FulfillmentStatusEventCustomer from './FulfillmentStatusEventCustomer';
+import FulfillmentStatusEventStore from './FulfillmentStatusEventStore';
 
 /**
  * The OrderFulfillmentStatusUpdatedEvent model module.
@@ -65,6 +67,15 @@ class OrderFulfillmentStatusUpdatedEvent {
             }
             if (data.hasOwnProperty('StatusId')) {
                 obj['StatusId'] = ApiClient.convertToType(data['StatusId'], 'String');
+            }
+            if (data.hasOwnProperty('Customer')) {
+                obj['Customer'] = FulfillmentStatusEventCustomer.constructFromObject(data['Customer']);
+            }
+            if (data.hasOwnProperty('Store')) {
+                obj['Store'] = FulfillmentStatusEventStore.constructFromObject(data['Store']);
+            }
+            if (data.hasOwnProperty('AppType')) {
+                obj['AppType'] = ApiClient.convertToType(data['AppType'], 'String');
             }
             if (data.hasOwnProperty('FlipdishEventId')) {
                 obj['FlipdishEventId'] = ApiClient.convertToType(data['FlipdishEventId'], 'String');
@@ -132,6 +143,22 @@ OrderFulfillmentStatusUpdatedEvent.prototype['StatusName'] = undefined;
  * @member {String} StatusId
  */
 OrderFulfillmentStatusUpdatedEvent.prototype['StatusId'] = undefined;
+
+/**
+ * @member {module:model/FulfillmentStatusEventCustomer} Customer
+ */
+OrderFulfillmentStatusUpdatedEvent.prototype['Customer'] = undefined;
+
+/**
+ * @member {module:model/FulfillmentStatusEventStore} Store
+ */
+OrderFulfillmentStatusUpdatedEvent.prototype['Store'] = undefined;
+
+/**
+ * Order app type (e.g. Ios, Android) when known
+ * @member {String} AppType
+ */
+OrderFulfillmentStatusUpdatedEvent.prototype['AppType'] = undefined;
 
 /**
  * The identitfier of the event

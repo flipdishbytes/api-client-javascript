@@ -883,6 +883,8 @@ Class | Method | HTTP request | Description
  - [Flipdish.FulfillmentStatesConfigurationSummary](docs/FulfillmentStatesConfigurationSummary.md)
  - [Flipdish.FulfillmentStatesConfiguredStore](docs/FulfillmentStatesConfiguredStore.md)
  - [Flipdish.FulfillmentStatusConfigurationItem](docs/FulfillmentStatusConfigurationItem.md)
+ - [Flipdish.FulfillmentStatusEventCustomer](docs/FulfillmentStatusEventCustomer.md)
+ - [Flipdish.FulfillmentStatusEventStore](docs/FulfillmentStatusEventStore.md)
  - [Flipdish.GeoPointRequest](docs/GeoPointRequest.md)
  - [Flipdish.GetEndUserFeeConfigsResponse](docs/GetEndUserFeeConfigsResponse.md)
  - [Flipdish.GetReceiptByOrderIdQueryResponse](docs/GetReceiptByOrderIdQueryResponse.md)

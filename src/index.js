@@ -183,6 +183,8 @@ import FulfillmentStatesConfiguration from './model/FulfillmentStatesConfigurati
 import FulfillmentStatesConfigurationSummary from './model/FulfillmentStatesConfigurationSummary';
 import FulfillmentStatesConfiguredStore from './model/FulfillmentStatesConfiguredStore';
 import FulfillmentStatusConfigurationItem from './model/FulfillmentStatusConfigurationItem';
+import FulfillmentStatusEventCustomer from './model/FulfillmentStatusEventCustomer';
+import FulfillmentStatusEventStore from './model/FulfillmentStatusEventStore';
 import GeoPointRequest from './model/GeoPointRequest';
 import GetEndUserFeeConfigsResponse from './model/GetEndUserFeeConfigsResponse';
 import GetReceiptByOrderIdQueryResponse from './model/GetReceiptByOrderIdQueryResponse';
@@ -2017,6 +2019,18 @@ export {
      * @property {module:model/FulfillmentStatusConfigurationItem}
      */
     FulfillmentStatusConfigurationItem,
+
+    /**
+     * The FulfillmentStatusEventCustomer model constructor.
+     * @property {module:model/FulfillmentStatusEventCustomer}
+     */
+    FulfillmentStatusEventCustomer,
+
+    /**
+     * The FulfillmentStatusEventStore model constructor.
+     * @property {module:model/FulfillmentStatusEventStore}
+     */
+    FulfillmentStatusEventStore,
 
     /**
      * The GeoPointRequest model constructor.

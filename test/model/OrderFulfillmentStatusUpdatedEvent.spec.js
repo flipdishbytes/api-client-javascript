@@ -90,6 +90,24 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property Customer (base name: "Customer")', function() {
+      // uncomment below and update the code to test the property Customer
+      //var instance = new Flipdish.OrderFulfillmentStatusUpdatedEvent();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property Store (base name: "Store")', function() {
+      // uncomment below and update the code to test the property Store
+      //var instance = new Flipdish.OrderFulfillmentStatusUpdatedEvent();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property AppType (base name: "AppType")', function() {
+      // uncomment below and update the code to test the property AppType
+      //var instance = new Flipdish.OrderFulfillmentStatusUpdatedEvent();
+      //expect(instance).to.be();
+    });
+
     it('should have the property FlipdishEventId (base name: "FlipdishEventId")', function() {
       // uncomment below and update the code to test the property FlipdishEventId
       //var instance = new Flipdish.OrderFulfillmentStatusUpdatedEvent();
