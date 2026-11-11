@@ -171,7 +171,7 @@ null (empty response body)
 
 ## getBankAccountById
 
-> RestApiResultBankAccountDetail getBankAccountById(bankAccountId, appId)
+> RestApiResultBankAccountDetail getBankAccountById(appId, bankAccountId)
 
 
 
@@ -185,9 +185,9 @@ let oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = 'YOUR ACCESS TOKEN';
 
 let apiInstance = new Flipdish.BankAccountApi();
-let bankAccountId = 56; // Number | 
 let appId = "appId_example"; // String | 
-apiInstance.getBankAccountById(bankAccountId, appId, (error, data, response) => {
+let bankAccountId = 56; // Number | 
+apiInstance.getBankAccountById(appId, bankAccountId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -201,8 +201,8 @@ apiInstance.getBankAccountById(bankAccountId, appId, (error, data, response) => 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **bankAccountId** | **Number**|  | 
  **appId** | **String**|  | 
+ **bankAccountId** | **Number**|  | 
 
 ### Return type
 

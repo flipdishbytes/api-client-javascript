@@ -198,25 +198,25 @@ export default class BankAccountApi {
      */
 
     /**
-     * @param {Number} bankAccountId 
      * @param {String} appId 
+     * @param {Number} bankAccountId 
      * @param {module:api/BankAccountApi~getBankAccountByIdCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/RestApiResultBankAccountDetail}
      */
-    getBankAccountById(bankAccountId, appId, callback) {
+    getBankAccountById(appId, bankAccountId, callback) {
       let postBody = null;
-      // verify the required parameter 'bankAccountId' is set
-      if (bankAccountId === undefined || bankAccountId === null) {
-        throw new Error("Missing the required parameter 'bankAccountId' when calling getBankAccountById");
-      }
       // verify the required parameter 'appId' is set
       if (appId === undefined || appId === null) {
         throw new Error("Missing the required parameter 'appId' when calling getBankAccountById");
       }
+      // verify the required parameter 'bankAccountId' is set
+      if (bankAccountId === undefined || bankAccountId === null) {
+        throw new Error("Missing the required parameter 'bankAccountId' when calling getBankAccountById");
+      }
 
       let pathParams = {
-        'bankAccountId': bankAccountId,
-        'appId': appId
+        'appId': appId,
+        'bankAccountId': bankAccountId
       };
       let queryParams = {
       };
