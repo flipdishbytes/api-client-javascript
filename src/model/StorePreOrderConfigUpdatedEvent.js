@@ -62,6 +62,9 @@ class StorePreOrderConfigUpdatedEvent {
             if (data.hasOwnProperty('Description')) {
                 obj['Description'] = ApiClient.convertToType(data['Description'], 'String');
             }
+            if (data.hasOwnProperty('DeliveryType')) {
+                obj['DeliveryType'] = ApiClient.convertToType(data['DeliveryType'], 'String');
+            }
             if (data.hasOwnProperty('PreOrderConfig')) {
                 obj['PreOrderConfig'] = PreOrderConfig.constructFromObject(data['PreOrderConfig']);
             }
@@ -123,6 +126,12 @@ StorePreOrderConfigUpdatedEvent.prototype['User'] = undefined;
 StorePreOrderConfigUpdatedEvent.prototype['Description'] = undefined;
 
 /**
+ * Type of pre order configuration Delivery / Pickup
+ * @member {module:model/StorePreOrderConfigUpdatedEvent.DeliveryTypeEnum} DeliveryType
+ */
+StorePreOrderConfigUpdatedEvent.prototype['DeliveryType'] = undefined;
+
+/**
  * @member {module:model/PreOrderConfig} PreOrderConfig
  */
 StorePreOrderConfigUpdatedEvent.prototype['PreOrderConfig'] = undefined;
@@ -182,6 +191,27 @@ StorePreOrderConfigUpdatedEvent.prototype['ActivityType'] = undefined;
 
 
 
+
+
+/**
+ * Allowed values for the <code>DeliveryType</code> property.
+ * @enum {String}
+ * @readonly
+ */
+StorePreOrderConfigUpdatedEvent['DeliveryTypeEnum'] = {
+
+    /**
+     * value: "Delivery"
+     * @const
+     */
+    "Delivery": "Delivery",
+
+    /**
+     * value: "Pickup"
+     * @const
+     */
+    "Pickup": "Pickup"
+};
 
 
 

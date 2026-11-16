@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 **StoreId** | **Number** | Store Id | [optional] 
 **User** | [**UserEventInfo**](UserEventInfo.md) |  | [optional] 
 **Description** | **String** | Description | [optional] 
+**DeliveryType** | **String** | Type of pre order configuration Delivery / Pickup | [optional] 
 **PreOrderConfig** | [**PreOrderConfig**](PreOrderConfig.md) |  | [optional] 
 **OldPreOrderConfig** | [**PreOrderConfig**](PreOrderConfig.md) |  | [optional] 
 **FlipdishEventId** | **String** | The identitfier of the event | [optional] 
@@ -18,5 +19,16 @@ Name | Type | Description | Notes
 **IpAddress** | **String** | Ip Address | [optional] 
 **ActivityId** | **String** | Activity Id | [optional] 
 **ActivityType** | **String** | Activity Type | [optional] 
+
+
+
+## Enum: DeliveryTypeEnum
+
+
+* `Delivery` (value: `"Delivery"`)
+
+* `Pickup` (value: `"Pickup"`)
+
+
 
 

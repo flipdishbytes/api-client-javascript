@@ -78,6 +78,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property DeliveryType (base name: "DeliveryType")', function() {
+      // uncomment below and update the code to test the property DeliveryType
+      //var instance = new Flipdish.StorePreOrderConfigUpdatedEvent();
+      //expect(instance).to.be();
+    });
+
     it('should have the property PreOrderConfig (base name: "PreOrderConfig")', function() {
       // uncomment below and update the code to test the property PreOrderConfig
       //var instance = new Flipdish.StorePreOrderConfigUpdatedEvent();
