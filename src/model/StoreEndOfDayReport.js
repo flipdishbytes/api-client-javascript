@@ -120,6 +120,15 @@ class StoreEndOfDayReport {
             if (data.hasOwnProperty('CashOrderValueExcludingDeliveryFees')) {
                 obj['CashOrderValueExcludingDeliveryFees'] = ApiClient.convertToType(data['CashOrderValueExcludingDeliveryFees'], 'Number');
             }
+            if (data.hasOwnProperty('UserEndFee')) {
+                obj['UserEndFee'] = ApiClient.convertToType(data['UserEndFee'], 'Number');
+            }
+            if (data.hasOwnProperty('CashUserEndFee')) {
+                obj['CashUserEndFee'] = ApiClient.convertToType(data['CashUserEndFee'], 'Number');
+            }
+            if (data.hasOwnProperty('PaidOnlineUserEndFee')) {
+                obj['PaidOnlineUserEndFee'] = ApiClient.convertToType(data['PaidOnlineUserEndFee'], 'Number');
+            }
             if (data.hasOwnProperty('StartTime')) {
                 obj['StartTime'] = ApiClient.convertToType(data['StartTime'], 'Date');
             }
@@ -276,6 +285,24 @@ StoreEndOfDayReport.prototype['PaidOnlineOrderValueExcludingDeliveryFees'] = und
  * @member {Number} CashOrderValueExcludingDeliveryFees
  */
 StoreEndOfDayReport.prototype['CashOrderValueExcludingDeliveryFees'] = undefined;
+
+/**
+ * Total user end fee (processing fee charged to the customer, including VAT)
+ * @member {Number} UserEndFee
+ */
+StoreEndOfDayReport.prototype['UserEndFee'] = undefined;
+
+/**
+ * User end fee charged on cash orders
+ * @member {Number} CashUserEndFee
+ */
+StoreEndOfDayReport.prototype['CashUserEndFee'] = undefined;
+
+/**
+ * User end fee charged on paid online (card) orders
+ * @member {Number} PaidOnlineUserEndFee
+ */
+StoreEndOfDayReport.prototype['PaidOnlineUserEndFee'] = undefined;
 
 /**
  * Start Time

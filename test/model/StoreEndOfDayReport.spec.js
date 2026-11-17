@@ -198,6 +198,24 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property UserEndFee (base name: "UserEndFee")', function() {
+      // uncomment below and update the code to test the property UserEndFee
+      //var instance = new Flipdish.StoreEndOfDayReport();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property CashUserEndFee (base name: "CashUserEndFee")', function() {
+      // uncomment below and update the code to test the property CashUserEndFee
+      //var instance = new Flipdish.StoreEndOfDayReport();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property PaidOnlineUserEndFee (base name: "PaidOnlineUserEndFee")', function() {
+      // uncomment below and update the code to test the property PaidOnlineUserEndFee
+      //var instance = new Flipdish.StoreEndOfDayReport();
+      //expect(instance).to.be();
+    });
+
     it('should have the property StartTime (base name: "StartTime")', function() {
       // uncomment below and update the code to test the property StartTime
       //var instance = new Flipdish.StoreEndOfDayReport();
