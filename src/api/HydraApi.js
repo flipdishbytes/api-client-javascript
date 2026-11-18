@@ -14,6 +14,7 @@
 
 import ApiClient from "../ApiClient";
 import EmvTerminal from '../model/EmvTerminal';
+import HydraRegistrationRequest from '../model/HydraRegistrationRequest';
 import KioskSettings from '../model/KioskSettings';
 import RestApiArrayResultEmvTerminalWithAssignments from '../model/RestApiArrayResultEmvTerminalWithAssignments';
 import RestApiArrayResultKioskCashPaymentSettings from '../model/RestApiArrayResultKioskCashPaymentSettings';
@@ -22,6 +23,7 @@ import RestApiForbiddenResult from '../model/RestApiForbiddenResult';
 import RestApiPaginationResultHydraDeviceDetails from '../model/RestApiPaginationResultHydraDeviceDetails';
 import RestApiResultHydraConfig from '../model/RestApiResultHydraConfig';
 import RestApiResultHydraDeviceDetails from '../model/RestApiResultHydraDeviceDetails';
+import RestApiResultHydraRegistrationStatus from '../model/RestApiResultHydraRegistrationStatus';
 import RestApiResultHydraStatus from '../model/RestApiResultHydraStatus';
 import RestApiResultKioskSettings from '../model/RestApiResultKioskSettings';
 import RestApiResultPaymentTerminalDetails from '../model/RestApiResultPaymentTerminalDetails';
@@ -94,6 +96,59 @@ export default class HydraApi {
       let returnType = null;
       return this.apiClient.callApi(
         '/api/v1.0/{appId}/hydra/emvterminal/assign/{hydraConfigId}/{emvTerminalId}', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the attachStoreToKiosk operation.
+     * @callback module:api/HydraApi~attachStoreToKioskCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/RestApiResultHydraStatus} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {String} appId 
+     * @param {Number} storeId 
+     * @param {String} deviceId 
+     * @param {module:api/HydraApi~attachStoreToKioskCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/RestApiResultHydraStatus}
+     */
+    attachStoreToKiosk(appId, storeId, deviceId, callback) {
+      let postBody = null;
+      // verify the required parameter 'appId' is set
+      if (appId === undefined || appId === null) {
+        throw new Error("Missing the required parameter 'appId' when calling attachStoreToKiosk");
+      }
+      // verify the required parameter 'storeId' is set
+      if (storeId === undefined || storeId === null) {
+        throw new Error("Missing the required parameter 'storeId' when calling attachStoreToKiosk");
+      }
+      // verify the required parameter 'deviceId' is set
+      if (deviceId === undefined || deviceId === null) {
+        throw new Error("Missing the required parameter 'deviceId' when calling attachStoreToKiosk");
+      }
+
+      let pathParams = {
+        'appId': appId,
+        'storeId': storeId,
+        'deviceId': deviceId
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = [];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'Data'];
+      let returnType = RestApiResultHydraStatus;
+      return this.apiClient.callApi(
+        '/api/v1.0/{appId}/AttachStoreToKiosk/{deviceId}/store/{storeId}', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );
@@ -743,6 +798,59 @@ export default class HydraApi {
     }
 
     /**
+     * Callback function to receive the result of the hydraDetachStoreFromKiosk operation.
+     * @callback module:api/HydraApi~hydraDetachStoreFromKioskCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/RestApiResultHydraStatus} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {String} appId 
+     * @param {Number} storeId 
+     * @param {String} deviceId 
+     * @param {module:api/HydraApi~hydraDetachStoreFromKioskCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/RestApiResultHydraStatus}
+     */
+    hydraDetachStoreFromKiosk(appId, storeId, deviceId, callback) {
+      let postBody = null;
+      // verify the required parameter 'appId' is set
+      if (appId === undefined || appId === null) {
+        throw new Error("Missing the required parameter 'appId' when calling hydraDetachStoreFromKiosk");
+      }
+      // verify the required parameter 'storeId' is set
+      if (storeId === undefined || storeId === null) {
+        throw new Error("Missing the required parameter 'storeId' when calling hydraDetachStoreFromKiosk");
+      }
+      // verify the required parameter 'deviceId' is set
+      if (deviceId === undefined || deviceId === null) {
+        throw new Error("Missing the required parameter 'deviceId' when calling hydraDetachStoreFromKiosk");
+      }
+
+      let pathParams = {
+        'appId': appId,
+        'storeId': storeId,
+        'deviceId': deviceId
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = [];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'Data'];
+      let returnType = RestApiResultHydraStatus;
+      return this.apiClient.callApi(
+        '/api/v1.0/{appId}/DetachStoreFromKiosk/{deviceId}/store/{storeId}', 'DELETE',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
      * Callback function to receive the result of the hydraGetEmvsForAppId operation.
      * @callback module:api/HydraApi~hydraGetEmvsForAppIdCallback
      * @param {String} error Error message, if any.
@@ -824,6 +932,98 @@ export default class HydraApi {
       let returnType = null;
       return this.apiClient.callApi(
         '/api/v1.0/hydra/{deviceId}/login', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the register operation.
+     * @callback module:api/HydraApi~registerCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/RestApiResultHydraRegistrationStatus} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {String} appId 
+     * @param {module:model/HydraRegistrationRequest} hydraRegistration 
+     * @param {module:api/HydraApi~registerCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/RestApiResultHydraRegistrationStatus}
+     */
+    register(appId, hydraRegistration, callback) {
+      let postBody = hydraRegistration;
+      // verify the required parameter 'appId' is set
+      if (appId === undefined || appId === null) {
+        throw new Error("Missing the required parameter 'appId' when calling register");
+      }
+      // verify the required parameter 'hydraRegistration' is set
+      if (hydraRegistration === undefined || hydraRegistration === null) {
+        throw new Error("Missing the required parameter 'hydraRegistration' when calling register");
+      }
+
+      let pathParams = {
+        'appId': appId
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded'];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'Data'];
+      let returnType = RestApiResultHydraRegistrationStatus;
+      return this.apiClient.callApi(
+        '/api/v1.0/{appId}/hydra/registration', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the unAssign operation.
+     * @callback module:api/HydraApi~unAssignCallback
+     * @param {String} error Error message, if any.
+     * @param data This operation does not return a value.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * @param {String} appId 
+     * @param {String} deviceId 
+     * @param {module:api/HydraApi~unAssignCallback} callback The callback function, accepting three arguments: error, data, response
+     */
+    unAssign(appId, deviceId, callback) {
+      let postBody = null;
+      // verify the required parameter 'appId' is set
+      if (appId === undefined || appId === null) {
+        throw new Error("Missing the required parameter 'appId' when calling unAssign");
+      }
+      // verify the required parameter 'deviceId' is set
+      if (deviceId === undefined || deviceId === null) {
+        throw new Error("Missing the required parameter 'deviceId' when calling unAssign");
+      }
+
+      let pathParams = {
+        'appId': appId,
+        'deviceId': deviceId
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['oauth2'];
+      let contentTypes = [];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
+      let returnType = null;
+      return this.apiClient.callApi(
+        '/api/v1.0/{appId}/hydra/{deviceId}/registration', 'DELETE',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );

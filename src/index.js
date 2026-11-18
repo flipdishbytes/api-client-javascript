@@ -207,6 +207,8 @@ import HydraConfig from './model/HydraConfig';
 import HydraConnectionStatusChangedEvent from './model/HydraConnectionStatusChangedEvent';
 import HydraCreatedEvent from './model/HydraCreatedEvent';
 import HydraDeviceDetails from './model/HydraDeviceDetails';
+import HydraRegistrationRequest from './model/HydraRegistrationRequest';
+import HydraRegistrationStatus from './model/HydraRegistrationStatus';
 import HydraRequestResetEvent from './model/HydraRequestResetEvent';
 import HydraSettingChangedEvent from './model/HydraSettingChangedEvent';
 import HydraStatus from './model/HydraStatus';
@@ -591,6 +593,7 @@ import RestApiResultHasPaymentMethodResponse from './model/RestApiResultHasPayme
 import RestApiResultHomeStatistics from './model/RestApiResultHomeStatistics';
 import RestApiResultHydraConfig from './model/RestApiResultHydraConfig';
 import RestApiResultHydraDeviceDetails from './model/RestApiResultHydraDeviceDetails';
+import RestApiResultHydraRegistrationStatus from './model/RestApiResultHydraRegistrationStatus';
 import RestApiResultHydraStatus from './model/RestApiResultHydraStatus';
 import RestApiResultIndexPage from './model/RestApiResultIndexPage';
 import RestApiResultIndexPageBase from './model/RestApiResultIndexPageBase';
@@ -2162,6 +2165,18 @@ export {
      * @property {module:model/HydraDeviceDetails}
      */
     HydraDeviceDetails,
+
+    /**
+     * The HydraRegistrationRequest model constructor.
+     * @property {module:model/HydraRegistrationRequest}
+     */
+    HydraRegistrationRequest,
+
+    /**
+     * The HydraRegistrationStatus model constructor.
+     * @property {module:model/HydraRegistrationStatus}
+     */
+    HydraRegistrationStatus,
 
     /**
      * The HydraRequestResetEvent model constructor.
@@ -4466,6 +4481,12 @@ export {
      * @property {module:model/RestApiResultHydraDeviceDetails}
      */
     RestApiResultHydraDeviceDetails,
+
+    /**
+     * The RestApiResultHydraRegistrationStatus model constructor.
+     * @property {module:model/RestApiResultHydraRegistrationStatus}
+     */
+    RestApiResultHydraRegistrationStatus,
 
     /**
      * The RestApiResultHydraStatus model constructor.

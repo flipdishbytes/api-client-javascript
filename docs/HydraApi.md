@@ -5,6 +5,7 @@ All URIs are relative to *https://api.flipdish.co*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**assignEmv**](HydraApi.md#assignEmv) | **POST** /api/v1.0/{appId}/hydra/emvterminal/assign/{hydraConfigId}/{emvTerminalId} | 
+[**attachStoreToKiosk**](HydraApi.md#attachStoreToKiosk) | **POST** /api/v1.0/{appId}/AttachStoreToKiosk/{deviceId}/store/{storeId} | 
 [**attachStoreToTerminal**](HydraApi.md#attachStoreToTerminal) | **POST** /api/v1.0/{appId}/hydra/{deviceId}/attach/{storeId} | 
 [**cancelEmvPayment**](HydraApi.md#cancelEmvPayment) | **POST** /api/v1.0/{appId}/hydra/cancelemvpayment/{orderId} | 
 [**detachStoreFromTerminal**](HydraApi.md#detachStoreFromTerminal) | **POST** /api/v1.0/{appId}/hydra/{deviceId}/detach/{storeId} | 
@@ -19,8 +20,11 @@ Method | HTTP request | Description
 [**getSettings**](HydraApi.md#getSettings) | **GET** /api/v1.0/hydra/settings | 
 [**hydraCreateEmv**](HydraApi.md#hydraCreateEmv) | **POST** /api/v1.0/{appId}/emvterminals | 
 [**hydraDeleteEmv**](HydraApi.md#hydraDeleteEmv) | **DELETE** /api/v1.0/{appId}/emvterminals/{id} | 
+[**hydraDetachStoreFromKiosk**](HydraApi.md#hydraDetachStoreFromKiosk) | **DELETE** /api/v1.0/{appId}/DetachStoreFromKiosk/{deviceId}/store/{storeId} | 
 [**hydraGetEmvsForAppId**](HydraApi.md#hydraGetEmvsForAppId) | **GET** /api/v1.0/{appId}/emvterminals | 
 [**loginWithDeviceId**](HydraApi.md#loginWithDeviceId) | **POST** /api/v1.0/hydra/{deviceId}/login | 
+[**register**](HydraApi.md#register) | **POST** /api/v1.0/{appId}/hydra/registration | 
+[**unAssign**](HydraApi.md#unAssign) | **DELETE** /api/v1.0/{appId}/hydra/{deviceId}/registration | 
 [**unassignEmv**](HydraApi.md#unassignEmv) | **POST** /api/v1.0/{appId}/hydra/emvterminal/unassign/{hydraConfigId} | 
 [**updateKioskCashVisibilitySettings**](HydraApi.md#updateKioskCashVisibilitySettings) | **POST** /api/v1.0/{appId}/kioskupdatecashsettings | 
 [**updateKioskSettings**](HydraApi.md#updateKioskSettings) | **POST** /api/v1.0/{appId}/kiosksettings/{deviceId} | 
@@ -76,6 +80,57 @@ null (empty response body)
 
 - **Content-Type**: Not defined
 - **Accept**: application/json, text/json, application/xml, text/xml
+
+
+## attachStoreToKiosk
+
+> RestApiResultHydraStatus attachStoreToKiosk(appId, storeId, deviceId)
+
+
+
+### Example
+
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
+// Configure OAuth2 access token for authorization: oauth2
+let oauth2 = defaultClient.authentications['oauth2'];
+oauth2.accessToken = 'YOUR ACCESS TOKEN';
+
+let apiInstance = new Flipdish.HydraApi();
+let appId = "appId_example"; // String | 
+let storeId = 56; // Number | 
+let deviceId = "deviceId_example"; // String | 
+apiInstance.attachStoreToKiosk(appId, storeId, deviceId, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **appId** | **String**|  | 
+ **storeId** | **Number**|  | 
+ **deviceId** | **String**|  | 
+
+### Return type
+
+[**RestApiResultHydraStatus**](RestApiResultHydraStatus.md)
+
+### Authorization
+
+[oauth2](../README.md#oauth2)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, Data
 
 
 ## attachStoreToTerminal
@@ -762,6 +817,57 @@ Name | Type | Description  | Notes
 - **Accept**: application/json, text/json, application/xml, text/xml
 
 
+## hydraDetachStoreFromKiosk
+
+> RestApiResultHydraStatus hydraDetachStoreFromKiosk(appId, storeId, deviceId)
+
+
+
+### Example
+
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
+// Configure OAuth2 access token for authorization: oauth2
+let oauth2 = defaultClient.authentications['oauth2'];
+oauth2.accessToken = 'YOUR ACCESS TOKEN';
+
+let apiInstance = new Flipdish.HydraApi();
+let appId = "appId_example"; // String | 
+let storeId = 56; // Number | 
+let deviceId = "deviceId_example"; // String | 
+apiInstance.hydraDetachStoreFromKiosk(appId, storeId, deviceId, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **appId** | **String**|  | 
+ **storeId** | **Number**|  | 
+ **deviceId** | **String**|  | 
+
+### Return type
+
+[**RestApiResultHydraStatus**](RestApiResultHydraStatus.md)
+
+### Authorization
+
+[oauth2](../README.md#oauth2)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, Data
+
+
 ## hydraGetEmvsForAppId
 
 > RestApiArrayResultEmvTerminalWithAssignments hydraGetEmvsForAppId(appId)
@@ -847,6 +953,104 @@ Name | Type | Description  | Notes
  **deviceId** | **String**|  | 
  **hydraUserType** | **String**|  | [optional] 
  **serialNumber** | **String**|  | [optional] 
+
+### Return type
+
+null (empty response body)
+
+### Authorization
+
+[oauth2](../README.md#oauth2)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml
+
+
+## register
+
+> RestApiResultHydraRegistrationStatus register(appId, hydraRegistration)
+
+
+
+### Example
+
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
+// Configure OAuth2 access token for authorization: oauth2
+let oauth2 = defaultClient.authentications['oauth2'];
+oauth2.accessToken = 'YOUR ACCESS TOKEN';
+
+let apiInstance = new Flipdish.HydraApi();
+let appId = "appId_example"; // String | 
+let hydraRegistration = new Flipdish.HydraRegistrationRequest(); // HydraRegistrationRequest | 
+apiInstance.register(appId, hydraRegistration, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **appId** | **String**|  | 
+ **hydraRegistration** | [**HydraRegistrationRequest**](HydraRegistrationRequest.md)|  | 
+
+### Return type
+
+[**RestApiResultHydraRegistrationStatus**](RestApiResultHydraRegistrationStatus.md)
+
+### Authorization
+
+[oauth2](../README.md#oauth2)
+
+### HTTP request headers
+
+- **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
+- **Accept**: application/json, text/json, application/xml, text/xml, Data
+
+
+## unAssign
+
+> unAssign(appId, deviceId)
+
+
+
+### Example
+
+```javascript
+import Flipdish from '@flipdish/api-client-javascript';
+let defaultClient = Flipdish.ApiClient.instance;
+// Configure OAuth2 access token for authorization: oauth2
+let oauth2 = defaultClient.authentications['oauth2'];
+oauth2.accessToken = 'YOUR ACCESS TOKEN';
+
+let apiInstance = new Flipdish.HydraApi();
+let appId = "appId_example"; // String | 
+let deviceId = "deviceId_example"; // String | 
+apiInstance.unAssign(appId, deviceId, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully.');
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **appId** | **String**|  | 
+ **deviceId** | **String**|  | 
 
 ### Return type
 
