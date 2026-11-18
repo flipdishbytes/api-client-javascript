@@ -58,16 +58,6 @@
         done();
       });
     });
-    describe('attachStoreToKiosk', function() {
-      it('should call attachStoreToKiosk successfully', function(done) {
-        //uncomment below and update the code to test attachStoreToKiosk
-        //instance.attachStoreToKiosk(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
     describe('attachStoreToTerminal', function() {
       it('should call attachStoreToTerminal successfully', function(done) {
         //uncomment below and update the code to test attachStoreToTerminal
@@ -208,16 +198,6 @@
         done();
       });
     });
-    describe('hydraDetachStoreFromKiosk', function() {
-      it('should call hydraDetachStoreFromKiosk successfully', function(done) {
-        //uncomment below and update the code to test hydraDetachStoreFromKiosk
-        //instance.hydraDetachStoreFromKiosk(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
     describe('hydraGetEmvsForAppId', function() {
       it('should call hydraGetEmvsForAppId successfully', function(done) {
         //uncomment below and update the code to test hydraGetEmvsForAppId
@@ -232,26 +212,6 @@
       it('should call loginWithDeviceId successfully', function(done) {
         //uncomment below and update the code to test loginWithDeviceId
         //instance.loginWithDeviceId(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
-    describe('register', function() {
-      it('should call register successfully', function(done) {
-        //uncomment below and update the code to test register
-        //instance.register(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
-    describe('unAssign', function() {
-      it('should call unAssign successfully', function(done) {
-        //uncomment below and update the code to test unAssign
-        //instance.unAssign(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

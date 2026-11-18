@@ -326,7 +326,6 @@ Class | Method | HTTP request | Description
 *Flipdish.HomeApi* | [**getHomeStatistics**](docs/HomeApi.md#getHomeStatistics) | **GET** /api/v1.0/{appId}/home/stats | 
 *Flipdish.HomeApi* | [**getOktaPortalFeatureFlag**](docs/HomeApi.md#getOktaPortalFeatureFlag) | **GET** /api/v1.0/home/okta-portal | 
 *Flipdish.HydraApi* | [**assignEmv**](docs/HydraApi.md#assignEmv) | **POST** /api/v1.0/{appId}/hydra/emvterminal/assign/{hydraConfigId}/{emvTerminalId} | 
-*Flipdish.HydraApi* | [**attachStoreToKiosk**](docs/HydraApi.md#attachStoreToKiosk) | **POST** /api/v1.0/{appId}/AttachStoreToKiosk/{deviceId}/store/{storeId} | 
 *Flipdish.HydraApi* | [**attachStoreToTerminal**](docs/HydraApi.md#attachStoreToTerminal) | **POST** /api/v1.0/{appId}/hydra/{deviceId}/attach/{storeId} | 
 *Flipdish.HydraApi* | [**cancelEmvPayment**](docs/HydraApi.md#cancelEmvPayment) | **POST** /api/v1.0/{appId}/hydra/cancelemvpayment/{orderId} | 
 *Flipdish.HydraApi* | [**detachStoreFromTerminal**](docs/HydraApi.md#detachStoreFromTerminal) | **POST** /api/v1.0/{appId}/hydra/{deviceId}/detach/{storeId} | 
@@ -341,11 +340,8 @@ Class | Method | HTTP request | Description
 *Flipdish.HydraApi* | [**getSettings**](docs/HydraApi.md#getSettings) | **GET** /api/v1.0/hydra/settings | 
 *Flipdish.HydraApi* | [**hydraCreateEmv**](docs/HydraApi.md#hydraCreateEmv) | **POST** /api/v1.0/{appId}/emvterminals | 
 *Flipdish.HydraApi* | [**hydraDeleteEmv**](docs/HydraApi.md#hydraDeleteEmv) | **DELETE** /api/v1.0/{appId}/emvterminals/{id} | 
-*Flipdish.HydraApi* | [**hydraDetachStoreFromKiosk**](docs/HydraApi.md#hydraDetachStoreFromKiosk) | **DELETE** /api/v1.0/{appId}/DetachStoreFromKiosk/{deviceId}/store/{storeId} | 
 *Flipdish.HydraApi* | [**hydraGetEmvsForAppId**](docs/HydraApi.md#hydraGetEmvsForAppId) | **GET** /api/v1.0/{appId}/emvterminals | 
 *Flipdish.HydraApi* | [**loginWithDeviceId**](docs/HydraApi.md#loginWithDeviceId) | **POST** /api/v1.0/hydra/{deviceId}/login | 
-*Flipdish.HydraApi* | [**register**](docs/HydraApi.md#register) | **POST** /api/v1.0/{appId}/hydra/registration | 
-*Flipdish.HydraApi* | [**unAssign**](docs/HydraApi.md#unAssign) | **DELETE** /api/v1.0/{appId}/hydra/{deviceId}/registration | 
 *Flipdish.HydraApi* | [**unassignEmv**](docs/HydraApi.md#unassignEmv) | **POST** /api/v1.0/{appId}/hydra/emvterminal/unassign/{hydraConfigId} | 
 *Flipdish.HydraApi* | [**updateKioskCashVisibilitySettings**](docs/HydraApi.md#updateKioskCashVisibilitySettings) | **POST** /api/v1.0/{appId}/kioskupdatecashsettings | 
 *Flipdish.HydraApi* | [**updateKioskSettings**](docs/HydraApi.md#updateKioskSettings) | **POST** /api/v1.0/{appId}/kiosksettings/{deviceId} | 
@@ -907,7 +903,6 @@ Class | Method | HTTP request | Description
  - [Flipdish.HydraConnectionStatusChangedEvent](docs/HydraConnectionStatusChangedEvent.md)
  - [Flipdish.HydraCreatedEvent](docs/HydraCreatedEvent.md)
  - [Flipdish.HydraDeviceDetails](docs/HydraDeviceDetails.md)
- - [Flipdish.HydraRegistrationRequest](docs/HydraRegistrationRequest.md)
  - [Flipdish.HydraRequestResetEvent](docs/HydraRequestResetEvent.md)
  - [Flipdish.HydraSettingChangedEvent](docs/HydraSettingChangedEvent.md)
  - [Flipdish.HydraStatus](docs/HydraStatus.md)

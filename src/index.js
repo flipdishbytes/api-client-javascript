@@ -207,7 +207,6 @@ import HydraConfig from './model/HydraConfig';
 import HydraConnectionStatusChangedEvent from './model/HydraConnectionStatusChangedEvent';
 import HydraCreatedEvent from './model/HydraCreatedEvent';
 import HydraDeviceDetails from './model/HydraDeviceDetails';
-import HydraRegistrationRequest from './model/HydraRegistrationRequest';
 import HydraRequestResetEvent from './model/HydraRequestResetEvent';
 import HydraSettingChangedEvent from './model/HydraSettingChangedEvent';
 import HydraStatus from './model/HydraStatus';
@@ -2163,12 +2162,6 @@ export {
      * @property {module:model/HydraDeviceDetails}
      */
     HydraDeviceDetails,
-
-    /**
-     * The HydraRegistrationRequest model constructor.
-     * @property {module:model/HydraRegistrationRequest}
-     */
-    HydraRegistrationRequest,
 
     /**
      * The HydraRequestResetEvent model constructor.
